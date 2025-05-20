@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Briefcase, FileText } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-// import HomeProjects from "@/components/home/projects";
-// import HomeSkills from "@/components/home/skills";
-// import Contact from "@/components/contact/contact-form";
+import HomeProjects from "@/components/home/projects";
+import HomeSkills from "@/components/home/skills";
+import Contact from "@/components/contact/contact-form";
 
 export default function Home() {
   return (
@@ -61,7 +61,7 @@ export default function Home() {
             <div className="md:col-span-5 flex justify-center md:justify-end">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl">
                 <Image
-                  src="../images/syedalinaqihasni.jpg"
+                  src="/images/syedalinaqihasni.jpg"
                   alt="Syed Ali Naqi Hasni - Web Developer"
                   fill
                   className="object-cover"
@@ -85,7 +85,7 @@ export default function Home() {
               </Button>
             </Link>
           </div>
-          {/* <HomeProjects /> */}
+          <HomeProjects />
         </div>
       </section>
       
@@ -93,7 +93,7 @@ export default function Home() {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-10 text-center">Skills & Expertise</h2>
-          {/* <HomeSkills /> */}
+          <HomeSkills />
           <div className="text-center mt-10">
             <Link href="/skills">
               <Button>
@@ -112,7 +112,7 @@ export default function Home() {
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
             Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Let's make something great together.
           </p>
-          {/* <Contact /> */}
+          <Contact />
         </div>
       </section>
     </div>
