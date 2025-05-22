@@ -13,8 +13,20 @@ export const metadata: Metadata = {
   description: "Check out my upcoming speaking engagements, workshops, and other events",
 };
 
+type Event = {
+  _id: string;
+  slug: string;
+  image: string;
+  title: string;
+  description: string;
+  type: string;
+  date: string;
+  location: string;
+  virtual?: boolean;
+};
+
 export default async function EventsPage() {
-  const events = await sanityFetch({ query: eventsQuery });
+  const events: Event[] = await sanityFetch({ query: eventsQuery });
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", {

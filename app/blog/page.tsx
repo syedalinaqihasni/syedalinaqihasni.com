@@ -8,8 +8,9 @@ export const metadata: Metadata = {
   description: "Read my latest articles about web development, design, and technology",
 };
 
+
 export default async function BlogPage() {
-  const posts = await sanityFetch({ query: postsQuery });
+  const posts  = await sanityFetch({ query: postsQuery });
 
   return (
     <div className="container mx-auto px-4 py-32 md:py-40">
@@ -21,7 +22,9 @@ export default async function BlogPage() {
           </p>
         </div>
         
-        <BlogList posts={posts} />
+        <BlogList 
+        // posts={posts} 
+        />
       </div>
     </div>
   );

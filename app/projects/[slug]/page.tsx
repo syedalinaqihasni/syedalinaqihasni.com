@@ -1,11 +1,10 @@
-"use client";
-
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Calendar } from "lucide-react";
 import Image from "next/image";
+import { id } from "date-fns/locale";
 
 // Mock data - in a real app, this would come from Sanity
 const project = {
@@ -220,4 +219,12 @@ export default function ProjectPage() {
       </div>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  return [
+    { slug: "e-commerce-platform", id: "1" },
+    { slug: "task-management-app",  id: "2" },
+    { slug: "portfolio-website",  id: "3" },
+  ];
 }

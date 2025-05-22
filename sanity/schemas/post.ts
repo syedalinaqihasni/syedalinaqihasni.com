@@ -66,12 +66,12 @@ export default {
             },
           ],
         },
-        {
-          type: 'code',
-          options: {
-            withFilename: true,
-          },
-        },
+        // {
+        //   type: 'code',
+        //   options: {
+        //     withFilename: true,
+        //   },
+        // },
       ],
     },
     {

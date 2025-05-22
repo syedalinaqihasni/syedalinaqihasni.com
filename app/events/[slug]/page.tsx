@@ -6,17 +6,29 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Share2 } from "lucide-react";
 import Image from "next/image";
-import { PortableText } from "@portabletext/react";
+import { PortableText, PortableTextBlock } from "@portabletext/react";
 
 export async function generateStaticParams() {
-  const events = await sanityFetch({ query: eventsQuery });
-  return events.map((event: { slug: { current: string } }) => ({
+  const events: Event[] = await sanityFetch({ query: eventsQuery });
+  return events.map((event) => ({
     slug: event.slug.current,
   }));
 }
 
+type Event = {
+  title: string;
+  description: string;
+  type: string;
+  slug: { current: string };
+  image: string;
+  date: string;
+  location: string;
+  virtual: boolean;
+  content: PortableTextBlock[];
+};
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const event = await sanityFetch({
+  const event: Event = await sanityFetch({
     query: eventBySlugQuery,
     params: { slug: params.slug },
   });
@@ -28,7 +40,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 export default async function EventPage({ params }: { params: { slug: string } }) {
-  const event = await sanityFetch({
+  const event: Event = await sanityFetch({
     query: eventBySlugQuery,
     params: { slug: params.slug },
   });

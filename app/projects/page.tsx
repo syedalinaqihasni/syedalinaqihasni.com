@@ -22,7 +22,9 @@ export default async function ProjectsPage() {
           </p>
         </div>
         
-        <ProjectList projects={projects} />
+        <ProjectList
+        //  projects={projects}
+          />
       </div>
     </div>
   );
