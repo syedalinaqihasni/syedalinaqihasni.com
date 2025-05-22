@@ -10,7 +10,20 @@ import ThemeToggle from "@/components/theme-toggle";
 
 const navItems = [
   { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Projects", path: "/projects" },
+  // { name: "Archive", path: "/archive" },
+  // { name: "Events", path: "/events" },
+  // { name: "Experience", path: "/experience" },
+  // { name: "Gallery", path: "/gallery" },
+  // { name: "Skills", path: "/skills" },
+  // { name: "Socials", path: "/socials" },
+  { name: "Links", path: "/links" },
+  { name: "Resume", path: "/resume" },
+  { name: "Blog", path: "/blog" },
+  { name: "Contact", path: "/contact" },
 ];
+
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

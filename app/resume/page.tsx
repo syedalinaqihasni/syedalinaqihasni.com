@@ -1,13 +1,14 @@
+"use client"
 import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Download, Mail, Phone, MapPin } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Resume | Portfolio",
-  description: "View or download my professional resume",
-};
+// export const metadata: Metadata = {
+//   title: "Resume | Portfolio",
+//   description: "View or download my professional resume",
+// };
 
 export default function ResumePage() {
   return (

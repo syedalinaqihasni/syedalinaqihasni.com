@@ -1,3 +1,4 @@
+"use client"
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -5,10 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Development Archive | Portfolio",
-  description: "Archive of my external development content and contributions",
-};
+// export const metadata: Metadata = {
+//   title: "Development Archive | Portfolio",
+//   description: "Archive of my external development content and contributions",
+// };
 
 // Mock data - in a real app, this would come from an API or CMS
 const content = {

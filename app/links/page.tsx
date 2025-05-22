@@ -1,13 +1,14 @@
+"use client"
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Twitter, Youtube, Instagram, Facebook, MessageSquare } from "lucide-react";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Links | Portfolio",
-  description: "Find all my social media profiles and important links in one place",
-};
+// export const metadata: Metadata = {
+//   title: "Links | Portfolio",
+//   description: "Find all my social media profiles and important links in one place",
+// };
 
 // Mock data - in a real app, this would come from Sanity
 const links = [

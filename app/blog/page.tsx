@@ -1,16 +1,18 @@
+"use client"
 import { Metadata } from "next";
 import { sanityFetch } from "@/lib/sanity";
 import { postsQuery } from "@/lib/sanity.queries";
 import BlogList from "@/components/blog/blog-list";
 
-export const metadata: Metadata = {
-  title: "Blog | Portfolio",
-  description: "Read my latest articles about web development, design, and technology",
-};
+// export const metadata: Metadata = {
+//   title: "Blog | Portfolio",
+//   description: "Read my latest articles about web development, design, and technology",
+// };
 
+import type { Post } from "@/components/blog/blog-list";
 
 export default async function BlogPage() {
-  const posts  = await sanityFetch({ query: postsQuery });
+  const posts:Post[]  = await sanityFetch({ query: postsQuery });
 
   return (
     <div className="container mx-auto px-4 py-32 md:py-40">
@@ -23,7 +25,7 @@ export default async function BlogPage() {
         </div>
         
         <BlogList 
-        // posts={posts} 
+        posts={posts} 
         />
       </div>
     </div>

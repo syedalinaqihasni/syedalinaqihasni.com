@@ -1,10 +1,11 @@
+"use client"
 import { Metadata } from "next";
 import GalleryGrid from "@/components/gallery/gallery-grid";
 
-export const metadata: Metadata = {
-  title: "Gallery | Portfolio",
-  description: "Browse my photo gallery showcasing events, projects, and creative work",
-};
+// export const metadata: Metadata = {
+//   title: "Gallery | Portfolio",
+//   description: "Browse my photo gallery showcasing events, projects, and creative work",
+// };
 
 export default function GalleryPage() {
   return (

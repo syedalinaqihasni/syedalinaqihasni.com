@@ -1,12 +1,13 @@
+"use client"
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Experience | Portfolio",
-  description: "My professional experience and work history",
-};
+// export const metadata: Metadata = {
+//   title: "Experience | Portfolio",
+//   description: "My professional experience and work history",
+// };
 
 // Mock data - in a real app, this would come from Sanity
 const experiences = [

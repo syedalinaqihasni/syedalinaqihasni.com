@@ -1,12 +1,13 @@
+"use client"
 import { Metadata } from "next";
 import Contact from "@/components/contact/contact-form";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-export const metadata: Metadata = {
-  title: "Contact | Portfolio",
-  description: "Get in touch with me for collaborations, job opportunities, or just to say hello",
-};
+// export const metadata: Metadata = {
+//   title: "Contact | Portfolio",
+//   description: "Get in touch with me for collaborations, job opportunities, or just to say hello",
+// };
 
 export default function ContactPage() {
   return (

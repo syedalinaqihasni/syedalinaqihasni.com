@@ -1,13 +1,14 @@
 
+"use client"
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 
-export const metadata: Metadata = {
-  title: "Social Media | Portfolio",
-  description: "My social media posts and updates from various platforms",
-};
+// export const metadata: Metadata = {
+//   title: "Social Media | Portfolio",
+//   description: "My social media posts and updates from various platforms",
+// };
 
 // Mock data - in a real app, this would come from social media APIs
 const socialPosts = {

@@ -19,24 +19,24 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-export const metadata: Metadata = {
-  title: 'Portfolio | Creative Developer',
-  description: 'Personal portfolio website showcasing my projects, skills, and experience',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://portfolio-website.com',
-    title: 'Portfolio | Creative Developer',
-    description: 'Personal portfolio website showcasing my projects, skills, and experience',
-    siteName: 'Portfolio Website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Portfolio | Creative Developer',
-    description: 'Personal portfolio website showcasing my projects, skills, and experience',
-  },
-  metadataBase: new URL('https://portfolio-website.com'),
-};
+// export const metadata: Metadata = {
+//   title: 'Portfolio | Creative Developer',
+//   description: 'Personal portfolio website showcasing my projects, skills, and experience',
+//   openGraph: {
+//     type: 'website',
+//     locale: 'en_US',
+//     url: 'https://portfolio-website.com',
+//     title: 'Portfolio | Creative Developer',
+//     description: 'Personal portfolio website showcasing my projects, skills, and experience',
+//     siteName: 'Portfolio Website',
+//   },
+//   twitter: {
+//     card: 'summary_large_image',
+//     title: 'Portfolio | Creative Developer',
+//     description: 'Personal portfolio website showcasing my projects, skills, and experience',
+//   },
+//   metadataBase: new URL('https://portfolio-website.com'),
+// };
 
 export default function RootLayout({
   children,

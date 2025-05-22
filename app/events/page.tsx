@@ -1,3 +1,4 @@
+"use client"
 import { Metadata } from "next";
 import { sanityFetch } from "@/lib/sanity";
 import { eventsQuery } from "@/lib/sanity.queries";
@@ -8,10 +9,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: "Events | Portfolio",
-  description: "Check out my upcoming speaking engagements, workshops, and other events",
-};
+// export const metadata: Metadata = {
+//   title: "Events | Portfolio",
+//   description: "Check out my upcoming speaking engagements, workshops, and other events",
+// };
 
 type Event = {
   _id: string;

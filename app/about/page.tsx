@@ -1,12 +1,13 @@
+"use client"
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "About | Portfolio",
-  description: "Learn more about my journey, experience, and the tools I use",
-};
+// export const metadata: Metadata = {
+//   title: "About | Portfolio",
+//   description: "Learn more about my journey, experience, and the tools I use",
+// };
 
 const tools = [
   { category: "Languages", items: ["JavaScript", "TypeScript", "Python", "SQL"] },

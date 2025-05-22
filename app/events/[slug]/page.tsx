@@ -1,3 +1,4 @@
+"use client"
 import { Metadata } from "next";
 import { sanityFetch } from "@/lib/sanity";
 import { eventBySlugQuery, eventsQuery } from "@/lib/sanity.queries";
@@ -8,12 +9,12 @@ import { Calendar, MapPin, Share2 } from "lucide-react";
 import Image from "next/image";
 import { PortableText, PortableTextBlock } from "@portabletext/react";
 
-export async function generateStaticParams() {
-  const events: Event[] = await sanityFetch({ query: eventsQuery });
-  return events.map((event) => ({
-    slug: event.slug.current,
-  }));
-}
+// export async function generateStaticParams() {
+//   const events: Event[] = await sanityFetch({ query: eventsQuery });
+//   return events.map((event) => ({
+//     slug: event.slug.current,
+//   }));
+// }
 
 type Event = {
   title: string;
@@ -27,17 +28,17 @@ type Event = {
   content: PortableTextBlock[];
 };
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const event: Event = await sanityFetch({
-    query: eventBySlugQuery,
-    params: { slug: params.slug },
-  });
+// export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+//   const event: Event = await sanityFetch({
+//     query: eventBySlugQuery,
+//     params: { slug: params.slug },
+//   });
 
-  return {
-    title: `${event.title} | Events`,
-    description: event.description,
-  };
-}
+//   return {
+//     title: `${event.title} | Events`,
+//     description: event.description,
+//   };
+// }
 
 export default async function EventPage({ params }: { params: { slug: string } }) {
   const event: Event = await sanityFetch({

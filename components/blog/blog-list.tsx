@@ -10,66 +10,81 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 
 // Mock data - in a real app, this would come from Sanity
-const posts = [
-  {
-    id: "1",
-    title: "Getting Started with Next.js and Tailwind",
-    excerpt: "Learn how to set up a new Next.js project with Tailwind CSS for rapid development.",
-    slug: "getting-started-nextjs-tailwind",
-    publishedAt: "2023-05-15",
-    readingTime: "5 min read",
-    image: "https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg",
-    categories: ["Next.js", "Tailwind CSS", "Web Development"],
-  },
-  {
-    id: "2",
-    title: "Building Responsive UIs with Tailwind CSS",
-    excerpt: "Explore techniques for creating fully responsive user interfaces using Tailwind CSS.",
-    slug: "responsive-ui-tailwind",
-    publishedAt: "2023-06-10",
-    readingTime: "7 min read",
-    image: "https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg",
-    categories: ["CSS", "Tailwind CSS", "Responsive Design"],
-  },
-  {
-    id: "3",
-    title: "State Management in React Applications",
-    excerpt: "An overview of different state management approaches in modern React applications.",
-    slug: "state-management-react",
-    publishedAt: "2023-07-22",
-    readingTime: "10 min read",
-    image: "https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg",
-    categories: ["React", "State Management", "JavaScript"],
-  },
-  {
-    id: "4",
-    title: "Creating Animations with Framer Motion",
-    excerpt: "Learn how to add beautiful animations to your React applications using Framer Motion.",
-    slug: "framer-motion-animations",
-    publishedAt: "2023-08-05",
-    readingTime: "8 min read",
-    image: "https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg",
-    categories: ["React", "Animation", "Framer Motion"],
-  },
-  {
-    id: "5",
-    title: "Serverless Functions with Next.js API Routes",
-    excerpt: "Explore how to use Next.js API routes to create serverless functions for your applications.",
-    slug: "nextjs-api-routes",
-    publishedAt: "2023-09-18",
-    readingTime: "6 min read",
-    image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
-    categories: ["Next.js", "Serverless", "API"],
-  },
-];
+// const posts = [
+//   {
+//     id: "1",
+//     title: "Getting Started with Next.js and Tailwind",
+//     excerpt: "Learn how to set up a new Next.js project with Tailwind CSS for rapid development.",
+//     slug: "getting-started-nextjs-tailwind",
+//     publishedAt: "2023-05-15",
+//     readingTime: "5 min read",
+//     image: "https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg",
+//     categories: ["Next.js", "Tailwind CSS", "Web Development"],
+//   },
+//   {
+//     id: "2",
+//     title: "Building Responsive UIs with Tailwind CSS",
+//     excerpt: "Explore techniques for creating fully responsive user interfaces using Tailwind CSS.",
+//     slug: "responsive-ui-tailwind",
+//     publishedAt: "2023-06-10",
+//     readingTime: "7 min read",
+//     image: "https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg",
+//     categories: ["CSS", "Tailwind CSS", "Responsive Design"],
+//   },
+//   {
+//     id: "3",
+//     title: "State Management in React Applications",
+//     excerpt: "An overview of different state management approaches in modern React applications.",
+//     slug: "state-management-react",
+//     publishedAt: "2023-07-22",
+//     readingTime: "10 min read",
+//     image: "https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg",
+//     categories: ["React", "State Management", "JavaScript"],
+//   },
+//   {
+//     id: "4",
+//     title: "Creating Animations with Framer Motion",
+//     excerpt: "Learn how to add beautiful animations to your React applications using Framer Motion.",
+//     slug: "framer-motion-animations",
+//     publishedAt: "2023-08-05",
+//     readingTime: "8 min read",
+//     image: "https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg",
+//     categories: ["React", "Animation", "Framer Motion"],
+//   },
+//   {
+//     id: "5",
+//     title: "Serverless Functions with Next.js API Routes",
+//     excerpt: "Explore how to use Next.js API routes to create serverless functions for your applications.",
+//     slug: "nextjs-api-routes",
+//     publishedAt: "2023-09-18",
+//     readingTime: "6 min read",
+//     image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg",
+//     categories: ["Next.js", "Serverless", "API"],
+//   },
+// ];
 
-export default function BlogList() {
+export type Post = {
+  id: string;
+  title: string;
+  excerpt: string;
+  slug: string;
+  publishedAt: string;
+  readingTime: string;
+  image: string;
+  categories: string[];
+};
+
+interface BlogListProps {
+  posts: Post[];
+}
+
+export default function BlogList({ posts }: BlogListProps) {
   const [searchQuery, setSearchQuery] = useState("");
-  
-  const filteredPosts = posts.filter(post => 
+
+  const filteredPosts = posts.filter(post =>
     post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
     post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    post.categories.some(category => 
+    post.categories.some(category =>
       category.toLowerCase().includes(searchQuery.toLowerCase())
     )
   );
@@ -89,7 +104,7 @@ export default function BlogList() {
           className="max-w-md mx-auto"
         />
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {filteredPosts.map((post, index) => (
           <motion.div
@@ -122,17 +137,17 @@ export default function BlogList() {
                     </Badge>
                   )}
                 </div>
-                
+
                 <Link href={`/blog/${post.slug}`}>
                   <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">
                     {post.title}
                   </h3>
                 </Link>
-                
+
                 <p className="text-muted-foreground mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
-                
+
                 <div className="flex items-center text-sm text-muted-foreground">
                   <div className="flex items-center mr-4">
                     <Calendar className="h-4 w-4 mr-1" />

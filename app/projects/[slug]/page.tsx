@@ -1,3 +1,4 @@
+"use client"
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -219,12 +220,4 @@ export default function ProjectPage() {
       </div>
     </div>
   );
-}
-
-export async function generateStaticParams() {
-  return [
-    { slug: "e-commerce-platform", id: "1" },
-    { slug: "task-management-app",  id: "2" },
-    { slug: "portfolio-website",  id: "3" },
-  ];
 }

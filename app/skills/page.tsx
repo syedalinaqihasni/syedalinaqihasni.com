@@ -1,10 +1,11 @@
+"use client"
 import { Metadata } from "next";
 import SkillsList from "@/components/skills/skills-list";
 
-export const metadata: Metadata = {
-  title: "Skills | Portfolio",
-  description: "Explore my technical skills and competencies",
-};
+// export const metadata: Metadata = {
+//   title: "Skills | Portfolio",
+//   description: "Explore my technical skills and competencies",
+// };
 
 export default function SkillsPage() {
   return (

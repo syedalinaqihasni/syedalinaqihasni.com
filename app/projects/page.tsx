@@ -1,12 +1,13 @@
+"use client"
 import { Metadata } from "next";
 import { sanityFetch } from "@/lib/sanity";
 import { projectsQuery } from "@/lib/sanity.queries";
 import ProjectList from "@/components/projects/project-list";
 
-export const metadata: Metadata = {
-  title: "Projects | Portfolio",
-  description: "View my latest web development and design projects",
-};
+// export const metadata: Metadata = {
+//   title: "Projects | Portfolio",
+//   description: "View my latest web development and design projects",
+// };
 
 export default async function ProjectsPage() {
   const projects = await sanityFetch({ query: projectsQuery });

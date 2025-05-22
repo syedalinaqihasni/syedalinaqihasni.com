@@ -1,4 +1,5 @@
 // app/blog/[slug]/page.tsx
+"use client"
 import { Metadata } from "next";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
@@ -49,29 +50,29 @@ const formatDate = (dateString: string): string =>
   });
 
 // Static Params
-export const generateStaticParams = async () => {
-  const posts: Post[] = await sanityFetch({ query: postsQuery });
-  return posts.map((post) => ({
-    slug: post.slug.current,
-  }));
-};
+// export const generateStaticParams = async () => {
+//   const posts: Post[] = await sanityFetch({ query: postsQuery });
+//   return posts.map((post) => ({
+//     slug: post.slug.current,
+//   }));
+// };
 
 // Metadata
-export const generateMetadata = async ({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> => {
-  const post: Post = await sanityFetch({
-    query: postBySlugQuery,
-    params: { slug: params.slug },
-  });
+// export const generateMetadata = async ({
+//   params,
+// }: {
+//   params: { slug: string };
+// }): Promise<Metadata> => {
+//   const post: Post = await sanityFetch({
+//     query: postBySlugQuery,
+//     params: { slug: params.slug },
+//   });
 
-  return {
-    title: `${post.title}${TEXT.blogTitleSuffix}`,
-    description: post.excerpt,
-  };
-};
+//   return {
+//     title: `${post.title}${TEXT.blogTitleSuffix}`,
+//     description: post.excerpt,
+//   };
+// };
 
 // Page Component
 const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
