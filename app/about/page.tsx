@@ -81,7 +81,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
-              src="https://raw.githubusercontent.com/syedalinaqihasni/syedalinaqihasni.com/refs/heads/main/images/syedalinaqihasni.jpg?token=GHSAT0AAAAAADDHF65SLQPE5N2DTIFLI2WC2BQ6BUQ"
+              src="/images/syedalinaqihasni.jpg"
               alt="Profile"
               fill
               className="object-cover"

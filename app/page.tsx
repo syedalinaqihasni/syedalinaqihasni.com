@@ -71,7 +71,7 @@ export default function Home() {
             <div className="md:col-span-5 flex justify-center md:justify-end">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl">
                 <Image
-                  src="https://raw.githubusercontent.com/syedalinaqihasni/syedalinaqihasni.com/refs/heads/main/images/syedalinaqihasni.jpg?token=GHSAT0AAAAAADDHF65SLQPE5N2DTIFLI2WC2BQ6BUQ"
+                  src="/images/syedalinaqihasni.jpg"
                   alt="Syed Ali Naqi Hasni - Web Developer"
                   fill
                   className="object-cover"
