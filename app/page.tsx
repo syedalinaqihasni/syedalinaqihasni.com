@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Briefcase, FileText } from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-import HomeProjects from "@/components/home/projects";
-import HomeSkills from "@/components/home/skills";
-import Contact from "@/components/contact/contact-form";
+import { Button } from '@/components/ui/button';
+import { ArrowRight, Github, Briefcase, FileText } from 'lucide-react';
+import Link from 'next/link';
+import Image from 'next/image';
+import HomeProjects from '@/components/home/projects';
+import HomeSkills from '@/components/home/skills';
+import Contact from '@/components/contact/contact-form';
 
 export default function Home() {
   return (
@@ -20,10 +20,12 @@ export default function Home() {
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-medium mb-6">
-                Frontend Web Designer 
+                Frontend Web Designer
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg">
-                I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.
+                I build exceptional digital experiences that are fast,
+                accessible, and visually appealing. Let's create something
+                amazing together.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="#">
@@ -38,14 +40,22 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-              
+
               <div className="flex gap-4 mt-8">
-                <a href="https://github.com/syedalinaqihasni" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/syedalinaqihasni"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button variant="ghost" size="icon" aria-label="GitHub">
                     <Github className="h-5 w-5" />
                   </Button>
                 </a>
-                <a href="https://www.linkedin.com/in/syedalinaqihasni" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/syedalinaqihasni"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button variant="ghost" size="icon" aria-label="LinkedIn">
                     <Briefcase className="h-5 w-5" />
                   </Button>
@@ -57,11 +67,11 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            
+
             <div className="md:col-span-5 flex justify-center md:justify-end">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl">
                 <Image
-                  src="/images/syedalinaqihasni.jpg"
+                  src="https://raw.githubusercontent.com/syedalinaqihasni/syedalinaqihasni.com/refs/heads/main/images/syedalinaqihasni.jpg?token=GHSAT0AAAAAADDHF65SLQPE5N2DTIFLI2WC2BQ6BUQ"
                   alt="Syed Ali Naqi Hasni - Web Developer"
                   fill
                   className="object-cover"
@@ -72,7 +82,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Featured Projects Section */}
       <section className="py-16 px-4 bg-muted/50">
         <div className="container mx-auto max-w-6xl">
@@ -88,11 +98,13 @@ export default function Home() {
           <HomeProjects />
         </div>
       </section>
-      
+
       {/* Skills Overview */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold mb-10 text-center">Skills & Expertise</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">
+            Skills & Expertise
+          </h2>
           <HomeSkills />
           <div className="text-center mt-10">
             <Link href="/skills">
@@ -104,13 +116,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Contact Section */}
       <section className="py-16 px-4 bg-muted/50">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Let's make something great together.
+            Have a project in mind or want to discuss potential opportunities?
+            I'd love to hear from you. Let's make something great together.
           </p>
           <Contact />
         </div>

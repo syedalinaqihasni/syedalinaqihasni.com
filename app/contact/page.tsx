@@ -25,8 +25,8 @@ export default function ContactPage() {
           <ContactCard 
             icon={<Mail className="h-10 w-10 text-primary" />}
             title="Email"
-            details="hello@example.com"
-            link="mailto:hello@example.com"
+            details="syedhasni151214@gmail.com"
+            link="mailto:syedhasni151214@gmail.com"
           />
           <ContactCard 
             icon={<Phone className="h-10 w-10 text-primary" />}

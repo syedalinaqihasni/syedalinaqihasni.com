@@ -39,7 +39,7 @@ export default function Footer() {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
               </a>
-              <a href="mailto:hello@example.com" aria-label="Email">
+              <a href="mailto:syedhasni151214@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
               </a>
             </div>
