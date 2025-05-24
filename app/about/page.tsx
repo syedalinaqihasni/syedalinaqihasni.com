@@ -1,14 +1,12 @@
-'use client';
-// import { Metadata } from 'next';
+import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
-// import { ProfileImage } from '@/images/syedalinaqihasni.jpg';
 
-// export const metadata: Metadata = {
-//   title: "About | Portfolio",
-//   description: "Learn more about my journey, experience, and the tools I use",
-// };
+export const metadata: Metadata = {
+  title: 'About | Portfolio',
+  description: 'Learn more about my journey, experience, and the tools I use',
+};
 
 const tools = [
   {
@@ -70,10 +68,10 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-32 md:py-40">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Me</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{`About Me`}</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            A passionate developer with a love for creating beautiful,
-            functional, and user-friendly applications.
+            {`A passionate developer with a love for creating beautiful,
+            functional, and user-friendly applications.`}
           </p>
         </div>
 
@@ -91,20 +89,20 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-6">My Story</h2>
             <div className="prose dark:prose-invert">
               <p className="text-lg mb-4">
-                Hello! I&#39;m John, a full-stack developer based in San
+                {`Hello! I&#39;m Syed Hasni, a full-stack developer based in San
                 Francisco. I specialize in building exceptional digital
                 experiences that combine beautiful design with powerful
-                functionality.
+                functionality.`}
               </p>
               <p className="text-lg mb-4">
-                With over 5 years of experience in web development, I&#39;ve had
+                {`With over 5 years of experience in web development, I&#39;ve had
                 the pleasure of working with startups, agencies, and large
-                corporations, helping them bring their visions to life.
+                corporations, helping them bring their visions to life.`}
               </p>
               <p className="text-lg">
-                When I&#39;m not coding, you can find me exploring new
+                {`When I&#39;m not coding, you can find me exploring new
                 technologies, contributing to open-source projects, or sharing
-                my knowledge through writing and speaking at tech conferences.
+                my knowledge through writing and speaking at tech conferences.`}
               </p>
             </div>
           </div>
@@ -145,7 +143,7 @@ export default function AboutPage() {
         {/* Tools & Technologies */}
         <div>
           <h2 className="text-3xl font-bold text-center mb-12">
-            Tools & Technologies
+            {`Tools & Technologies`}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {tools.map((category) => (

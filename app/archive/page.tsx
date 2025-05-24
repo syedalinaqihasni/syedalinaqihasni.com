@@ -1,4 +1,4 @@
-"use client"
+
 import { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,10 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
-// export const metadata: Metadata = {
-//   title: "Development Archive | Portfolio",
-//   description: "Archive of my external development content and contributions",
-// };
+export const metadata: Metadata = {
+  title: "Development Archive | Portfolio",
+  description: "Archive of my external development content and contributions",
+};
 
 // Mock data - in a real app, this would come from an API or CMS
 const content = {
@@ -80,17 +80,17 @@ export default function ArchivePage() {
     <div className="container mx-auto px-4 py-32 md:py-40">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Development Archive</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{`Development Archive`}</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            A collection of my articles, discussions, and contributions across various platforms.
+            {`A collection of my articles, discussions, and contributions across various platforms.`}
           </p>
         </div>
 
         <Tabs defaultValue="medium" className="space-y-8">
           <TabsList className="grid w-full grid-cols-3 max-w-md mx-auto">
-            <TabsTrigger value="medium">Medium</TabsTrigger>
-            <TabsTrigger value="devto">Dev.to</TabsTrigger>
-            <TabsTrigger value="reddit">Reddit</TabsTrigger>
+            <TabsTrigger value="medium">{`Medium`}</TabsTrigger>
+            <TabsTrigger value="devto">{`Dev.to`}</TabsTrigger>
+            <TabsTrigger value="reddit">{`Reddit`}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="medium" className="space-y-6">

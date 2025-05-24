@@ -6,6 +6,7 @@ import category from './category';
 import gallery from './gallery';
 import event from './event';
 import social from './social';
+import aboutPage from './aboutPage';
 
 export const schemaTypes = [
   project,
@@ -16,4 +17,5 @@ export const schemaTypes = [
   gallery,
   event,
   social,
+  aboutPage,
 ];

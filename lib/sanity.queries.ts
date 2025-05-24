@@ -126,3 +126,13 @@ export const socialLinksQuery = groq`*[_type == "social"] | order(order asc) {
   displayOnHomepage,
   displayOnLinkTree
 }`;
+
+export const aboutPageQuery = `*[_type == "aboutPage"][0]{
+  heroTitle,
+  "aboutImage": aboutImage.asset->url,
+  heroDescription,
+  storyTitle,
+  storyParagraphs,
+  journey,
+  tools
+}`;

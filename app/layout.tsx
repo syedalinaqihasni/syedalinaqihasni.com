@@ -6,37 +6,40 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 });
 
-const poppins = Poppins({ 
+const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-poppins',
   display: 'swap',
 });
 
-// export const metadata: Metadata = {
-//   title: 'Portfolio | Creative Developer',
-//   description: 'Personal portfolio website showcasing my projects, skills, and experience',
-//   openGraph: {
-//     type: 'website',
-//     locale: 'en_US',
-//     url: 'https://portfolio-website.com',
-//     title: 'Portfolio | Creative Developer',
-//     description: 'Personal portfolio website showcasing my projects, skills, and experience',
-//     siteName: 'Portfolio Website',
-//   },
-//   twitter: {
-//     card: 'summary_large_image',
-//     title: 'Portfolio | Creative Developer',
-//     description: 'Personal portfolio website showcasing my projects, skills, and experience',
-//   },
-//   metadataBase: new URL('https://portfolio-website.com'),
-// };
+export const metadata: Metadata = {
+  title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+  description:
+    'Personal portfolio website showcasing my projects, skills, and experience',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://syedalinaqihasni.com',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+    siteName: 'Syed Ali Naqi Hasni',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+  },
+  metadataBase: new URL('https://syedalinaqihasni.com'),
+};
 
 export default function RootLayout({
   children,
@@ -45,7 +48,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${poppins.variable} font-sans min-h-screen bg-background text-foreground`}>
+      <body
+        className={`${inter.variable} ${poppins.variable} font-sans min-h-screen bg-background text-foreground`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

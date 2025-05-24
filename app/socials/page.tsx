@@ -1,64 +1,69 @@
+import { Metadata } from 'next';
+import { Card, CardContent } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { motion } from 'framer-motion';
 
-"use client"
-import { Metadata } from "next";
-import { Card, CardContent } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { motion } from "framer-motion";
-
-// export const metadata: Metadata = {
-//   title: "Social Media | Portfolio",
-//   description: "My social media posts and updates from various platforms",
-// };
+export const metadata: Metadata = {
+  title: 'Social Media | Portfolio',
+  description: 'My social media posts and updates from various platforms',
+};
 
 // Mock data - in a real app, this would come from social media APIs
 const socialPosts = {
   twitter: [
     {
-      id: "1",
-      content: "Just launched a new React component library! Check it out on GitHub 🚀",
-      date: "2024-02-15T10:30:00Z",
+      id: '1',
+      content:
+        'Just launched a new React component library! Check it out on GitHub 🚀',
+      date: '2024-02-15T10:30:00Z',
       likes: 42,
       retweets: 12,
     },
     {
-      id: "2",
-      content: "Working on an exciting new project with Next.js 14 and Tailwind CSS. Stay tuned! 👨‍💻",
-      date: "2024-02-14T15:45:00Z",
+      id: '2',
+      content:
+        'Working on an exciting new project with Next.js 14 and Tailwind CSS. Stay tuned! 👨‍💻',
+      date: '2024-02-14T15:45:00Z',
       likes: 38,
       retweets: 8,
     },
   ],
   linkedin: [
     {
-      id: "1",
-      title: "New Blog Post: Building Scalable Web Applications",
-      content: "Excited to share my latest blog post about building scalable web applications using modern technologies...",
-      date: "2024-02-13T09:15:00Z",
+      id: '1',
+      title: 'New Blog Post: Building Scalable Web Applications',
+      content:
+        'Excited to share my latest blog post about building scalable web applications using modern technologies...',
+      date: '2024-02-13T09:15:00Z',
       likes: 156,
       comments: 23,
     },
     {
-      id: "2",
-      title: "Speaking at TechConf 2024",
-      content: "Looking forward to speaking about frontend architecture at TechConf 2024 next month...",
-      date: "2024-02-12T14:20:00Z",
+      id: '2',
+      title: 'Speaking at TechConf 2024',
+      content:
+        'Looking forward to speaking about frontend architecture at TechConf 2024 next month...',
+      date: '2024-02-12T14:20:00Z',
       likes: 234,
       comments: 45,
     },
   ],
   instagram: [
     {
-      id: "1",
-      image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
-      caption: "Another day at the office! #coding #developer #tech",
-      date: "2024-02-11T11:30:00Z",
+      id: '1',
+      image:
+        'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg',
+      caption: 'Another day at the office! #coding #developer #tech',
+      date: '2024-02-11T11:30:00Z',
       likes: 89,
     },
     {
-      id: "2",
-      image: "https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg",
-      caption: "Team lunch after shipping a major feature! 🎉 #teamwork #success",
-      date: "2024-02-10T13:45:00Z",
+      id: '2',
+      image:
+        'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
+      caption:
+        'Team lunch after shipping a major feature! 🎉 #teamwork #success',
+      date: '2024-02-10T13:45:00Z',
       likes: 124,
     },
   ],
@@ -66,10 +71,10 @@ const socialPosts = {
 
 export default function SocialsPage() {
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
+    return new Date(dateString).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
     });
   };
 
@@ -79,7 +84,8 @@ export default function SocialsPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Social Media</h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Stay updated with my latest posts and activities across social media platforms.
+            Stay updated with my latest posts and activities across social media
+            platforms.
           </p>
         </div>
 
@@ -139,7 +145,10 @@ export default function SocialsPage() {
             ))}
           </TabsContent>
 
-          <TabsContent value="instagram" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <TabsContent
+            value="instagram"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
             {socialPosts.instagram.map((post, index) => (
               <motion.div
                 key={post.id}

@@ -16,27 +16,27 @@ export default function Home() {
             <div className="md:col-span-7">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400">
-                  Hi, I'm Syed Hasni
+                  {`Hi, I'm Syed Hasni`}
                 </span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-medium mb-6">
-                Frontend Web Designer
+                {`Frontend Web Designer`}
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg">
-                I build exceptional digital experiences that are fast,
+                {`I build exceptional digital experiences that are fast,
                 accessible, and visually appealing. Let's create something
-                amazing together.
+                amazing together.`}
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="#">
                   <Button size="lg" className="rounded-full">
-                    View Projects
+                    {`View Projects`}
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="#">
                   <Button size="lg" variant="outline" className="rounded-full">
-                    Hire Me
+                    {`Hire Me`}
                   </Button>
                 </Link>
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
             <div className="md:col-span-5 flex justify-center md:justify-end">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl">
                 <Image
-                  src="/images/syedalinaqihasni.jpg"
+                  src="/images/syedalinaqihasni.webp"
                   alt="Syed Ali Naqi Hasni - Web Developer"
                   fill
                   className="object-cover"
@@ -87,10 +87,10 @@ export default function Home() {
       <section className="py-16 px-4 bg-muted/50">
         <div className="container mx-auto max-w-6xl">
           <div className="flex justify-between items-center mb-10">
-            <h2 className="text-3xl font-bold">Featured Projects</h2>
+            <h2 className="text-3xl font-bold">{`Featured Projects`}</h2>
             <Link href="/projects">
               <Button variant="outline">
-                View All
+                {`View All`}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
@@ -103,7 +103,7 @@ export default function Home() {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-10 text-center">
-            Skills & Expertise
+            {`Skills & Expertise`}
           </h2>
           <HomeSkills />
           <div className="text-center mt-10">
@@ -122,8 +122,8 @@ export default function Home() {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss potential opportunities?
-            I'd love to hear from you. Let's make something great together.
+            {`Have a project in mind or want to discuss potential opportunities?
+            I'd love to hear from you. Let's make something great together.`}
           </p>
           <Contact />
         </div>

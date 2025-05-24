@@ -1,20 +1,19 @@
-"use client"
-import { Metadata } from "next";
-import { sanityFetch } from "@/lib/sanity";
-import { eventBySlugQuery, eventsQuery } from "@/lib/sanity.queries";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, Share2 } from "lucide-react";
-import Image from "next/image";
-import { PortableText, PortableTextBlock } from "@portabletext/react";
+import { Metadata } from 'next';
+import { sanityFetch } from '@/lib/sanity';
+import { eventBySlugQuery, eventsQuery } from '@/lib/sanity.queries';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Calendar, MapPin, Share2 } from 'lucide-react';
+import Image from 'next/image';
+import { PortableText, PortableTextBlock } from '@portabletext/react';
 
-// export async function generateStaticParams() {
-//   const events: Event[] = await sanityFetch({ query: eventsQuery });
-//   return events.map((event) => ({
-//     slug: event.slug.current,
-//   }));
-// }
+export async function generateStaticParams() {
+  const events: Event[] = await sanityFetch({ query: eventsQuery });
+  return events.map((event) => ({
+    slug: event.slug.current,
+  }));
+}
 
 type Event = {
   title: string;
@@ -28,31 +27,39 @@ type Event = {
   content: PortableTextBlock[];
 };
 
-// export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-//   const event: Event = await sanityFetch({
-//     query: eventBySlugQuery,
-//     params: { slug: params.slug },
-//   });
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const event: Event = await sanityFetch({
+    query: eventBySlugQuery,
+    params: { slug: params.slug },
+  });
 
-//   return {
-//     title: `${event.title} | Events`,
-//     description: event.description,
-//   };
-// }
+  return {
+    title: `${event.title} | Events`,
+    description: event.description,
+  };
+}
 
-export default async function EventPage({ params }: { params: { slug: string } }) {
+export default async function EventPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const event: Event = await sanityFetch({
     query: eventBySlugQuery,
     params: { slug: params.slug },
   });
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
+    return new Date(dateString).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
     });
   };
 
@@ -65,7 +72,9 @@ export default async function EventPage({ params }: { params: { slug: string } }
             {event.type}
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">{event.title}</h1>
-          <p className="text-xl text-muted-foreground mb-8">{event.description}</p>
+          <p className="text-xl text-muted-foreground mb-8">
+            {event.description}
+          </p>
           <Button>
             <Share2 className="h-4 w-4 mr-2" />
             Share Event

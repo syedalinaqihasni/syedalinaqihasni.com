@@ -1,29 +1,28 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import ThemeToggle from "@/components/theme-toggle";
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { motion } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import ThemeToggle from '@/components/theme-toggle';
 
 const navItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
-  // { name: "Archive", path: "/archive" },
-  // { name: "Events", path: "/events" },
-  // { name: "Experience", path: "/experience" },
-  // { name: "Gallery", path: "/gallery" },
-  // { name: "Skills", path: "/skills" },
-  // { name: "Socials", path: "/socials" },
-  { name: "Links", path: "/links" },
-  { name: "Resume", path: "/resume" },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Projects', path: '/projects' },
+  { name: 'Archive', path: '/archive' },
+  { name: 'Events', path: '/events' },
+  { name: 'Experience', path: '/experience' },
+  { name: 'Gallery', path: '/gallery' },
+  { name: 'Skills', path: '/skills' },
+  { name: 'Socials', path: '/socials' },
+  { name: 'Links', path: '/links' },
+  { name: 'Resume', path: '/resume' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Contact', path: '/contact' },
 ];
-
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,16 +34,16 @@ export default function Header() {
       setIsScrolled(window.scrollY > 10);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-md shadow-sm py-3"
-          : "bg-transparent py-5"
+          ? 'bg-background/80 backdrop-blur-md shadow-sm py-3'
+          : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -56,7 +55,7 @@ export default function Header() {
               transition={{ duration: 0.5 }}
               className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400"
             >
-              {"Syed Ali Naqi Hasni"}
+              {'Syed Ali Naqi Hasni'}
             </motion.span>
           </Link>
 
@@ -65,9 +64,9 @@ export default function Header() {
             {navItems.map((item) => (
               <Link key={item.path} href={item.path}>
                 <Button
-                  variant={pathname === item.path ? "default" : "ghost"}
+                  variant={pathname === item.path ? 'default' : 'ghost'}
                   size="sm"
-                  className={pathname === item.path ? "" : "hover:bg-muted"}
+                  className={pathname === item.path ? '' : 'hover:bg-muted'}
                 >
                   {item.name}
                 </Button>
@@ -98,16 +97,20 @@ export default function Header() {
         {mobileMenuOpen && (
           <motion.nav
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="md:hidden mt-4 pb-4"
           >
             <div className="flex flex-col space-y-2">
               {navItems.map((item) => (
-                <Link key={item.path} href={item.path} onClick={() => setMobileMenuOpen(false)}>
+                <Link
+                  key={item.path}
+                  href={item.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
                   <Button
-                    variant={pathname === item.path ? "default" : "ghost"}
+                    variant={pathname === item.path ? 'default' : 'ghost'}
                     size="sm"
                     className="w-full justify-start"
                   >

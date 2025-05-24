@@ -1,14 +1,13 @@
-"use client"
-import { Metadata } from "next";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Download, Mail, Phone, MapPin } from "lucide-react";
+import { Metadata } from 'next';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Download, Mail, Phone, MapPin } from 'lucide-react';
 
-// export const metadata: Metadata = {
-//   title: "Resume | Portfolio",
-//   description: "View or download my professional resume",
-// };
+export const metadata: Metadata = {
+  title: 'Resume | Portfolio',
+  description: 'View or download my professional resume',
+};
 
 export default function ResumePage() {
   return (
@@ -16,12 +15,16 @@ export default function ResumePage() {
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-start mb-12">
           <div>
-            <h1 className="text-4xl font-bold mb-4">John Doe</h1>
-            <h2 className="text-xl text-muted-foreground mb-4">Senior Full Stack Developer</h2>
+            <h1 className="text-4xl font-bold mb-4">Syed Ali Naqi Hasni</h1>
+            <h2 className="text-xl text-muted-foreground mb-4">
+              Senior Full Stack Developer
+            </h2>
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:john@example.com">john@example.com</a>
+                <a href="mailto:syedhasni151214@gmail.com">
+                  syedhasni151214@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -44,9 +47,10 @@ export default function ResumePage() {
           <CardContent className="p-6">
             <h3 className="text-xl font-semibold mb-4">Professional Summary</h3>
             <p className="text-muted-foreground">
-              Senior Full Stack Developer with 5+ years of experience building scalable web applications.
-              Specialized in React, Node.js, and cloud technologies. Strong focus on code quality,
-              performance optimization, and team collaboration.
+              Senior Full Stack Developer with 5+ years of experience building
+              scalable web applications. Specialized in React, Node.js, and
+              cloud technologies. Strong focus on code quality, performance
+              optimization, and team collaboration.
             </p>
           </CardContent>
         </Card>
@@ -61,12 +65,22 @@ export default function ResumePage() {
                   <h4 className="font-semibold">Senior Full Stack Developer</h4>
                   <span className="text-muted-foreground">2021 - Present</span>
                 </div>
-                <div className="text-muted-foreground mb-2">Tech Solutions Inc., San Francisco</div>
+                <div className="text-muted-foreground mb-2">
+                  Tech Solutions Inc., San Francisco
+                </div>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                  <li>Led development of multiple high-impact projects using React and Node.js</li>
+                  <li>
+                    Led development of multiple high-impact projects using React
+                    and Node.js
+                  </li>
                   <li>Mentored junior developers and conducted code reviews</li>
-                  <li>Implemented CI/CD pipelines and improved deployment processes</li>
-                  <li>Reduced application load time by 40% through optimization</li>
+                  <li>
+                    Implemented CI/CD pipelines and improved deployment
+                    processes
+                  </li>
+                  <li>
+                    Reduced application load time by 40% through optimization
+                  </li>
                 </ul>
               </div>
 
@@ -75,10 +89,16 @@ export default function ResumePage() {
                   <h4 className="font-semibold">Frontend Developer</h4>
                   <span className="text-muted-foreground">2019 - 2021</span>
                 </div>
-                <div className="text-muted-foreground mb-2">Digital Agency XYZ, New York</div>
+                <div className="text-muted-foreground mb-2">
+                  Digital Agency XYZ, New York
+                </div>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                  <li>Developed responsive web applications using React and Vue.js</li>
-                  <li>Collaborated with designers to implement pixel-perfect UIs</li>
+                  <li>
+                    Developed responsive web applications using React and Vue.js
+                  </li>
+                  <li>
+                    Collaborated with designers to implement pixel-perfect UIs
+                  </li>
                   <li>Integrated third-party APIs and services</li>
                   <li>Improved site performance and accessibility</li>
                 </ul>
@@ -93,10 +113,14 @@ export default function ResumePage() {
             <h3 className="text-xl font-semibold mb-6">Education</h3>
             <div>
               <div className="flex justify-between mb-2">
-                <h4 className="font-semibold">Bachelor of Science in Computer Science</h4>
+                <h4 className="font-semibold">
+                  Bachelor of Science in Computer Science
+                </h4>
                 <span className="text-muted-foreground">2015 - 2019</span>
               </div>
-              <div className="text-muted-foreground">University of Technology</div>
+              <div className="text-muted-foreground">
+                University of Technology
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -109,25 +133,47 @@ export default function ResumePage() {
               <div>
                 <h4 className="font-medium mb-2">Frontend</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS", "SCSS"].map((skill) => (
-                    <Badge key={skill} variant="secondary">{skill}</Badge>
+                  {[
+                    'React',
+                    'Next.js',
+                    'Vue.js',
+                    'TypeScript',
+                    'Tailwind CSS',
+                    'SCSS',
+                  ].map((skill) => (
+                    <Badge key={skill} variant="secondary">
+                      {skill}
+                    </Badge>
                   ))}
                 </div>
               </div>
               <div>
                 <h4 className="font-medium mb-2">Backend</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"].map((skill) => (
-                    <Badge key={skill} variant="secondary">{skill}</Badge>
+                  {[
+                    'Node.js',
+                    'Express',
+                    'Python',
+                    'Django',
+                    'PostgreSQL',
+                    'MongoDB',
+                  ].map((skill) => (
+                    <Badge key={skill} variant="secondary">
+                      {skill}
+                    </Badge>
                   ))}
                 </div>
               </div>
               <div>
                 <h4 className="font-medium mb-2">Tools & Technologies</h4>
                 <div className="flex flex-wrap gap-2">
-                  {["Git", "Docker", "AWS", "CI/CD", "Jest", "Webpack"].map((skill) => (
-                    <Badge key={skill} variant="secondary">{skill}</Badge>
-                  ))}
+                  {['Git', 'Docker', 'AWS', 'CI/CD', 'Jest', 'Webpack'].map(
+                    (skill) => (
+                      <Badge key={skill} variant="secondary">
+                        {skill}
+                      </Badge>
+                    )
+                  )}
                 </div>
               </div>
             </div>
