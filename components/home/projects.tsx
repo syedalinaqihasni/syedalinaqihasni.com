@@ -6,45 +6,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-
-// Mock data - in a real app, this would come from Sanity
-const featuredProjects = [
-  {
-    id: '1',
-    title: 'E-Commerce Platform',
-    description:
-      'A full-featured e-commerce platform with cart, checkout, and payment integration.',
-    image: 'https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-  },
-  {
-    id: '2',
-    title: 'Task Management App',
-    description:
-      'A collaborative task management application with real-time updates.',
-    image: 'https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg',
-    tags: ['React', 'Firebase', 'Tailwind CSS'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-  },
-  {
-    id: '3',
-    title: 'Syed Ali Naqi Hasni',
-    description:
-      'A beautiful portfolio website showcasing projects and skills.',
-    image: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg',
-    tags: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-  },
-];
+import { FEATURED_PROJECTS } from '@/constants';
 
 export default function HomeProjects() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {featuredProjects.map((project, index) => (
+      {FEATURED_PROJECTS.map((project, index) => (
         <motion.div
           key={project.id}
           initial={{ opacity: 0, y: 20 }}

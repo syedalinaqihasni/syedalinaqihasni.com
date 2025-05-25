@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-
+import { Project } from '@/types';
 
 // Mock data - in a real app, this would come from Sanity
 

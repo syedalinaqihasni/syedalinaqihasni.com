@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { JOURNEY, TOOLS } from '@/constants';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -8,70 +9,36 @@ export const metadata: Metadata = {
   description: 'Learn more about my journey, experience, and the tools I use',
 };
 
-const tools = [
-  {
-    category: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Python', 'SQL'],
+const ABOUT_PAGE_TEXT = {
+  title: 'About Me',
+  description:
+    'A passionate developer dedicated to crafting impactful digital experiences across WordPress, React, and Front-end ecosystems.',
+  profile: {
+    heading: 'My Story',
+    paragraphs: [
+      `Hello! I&#39;m Syed Ali Naqi Hasni, a Front-end web developer based in Karachi, Pakistan. I specialize in building high-performance web applications using WordPress, React, and Next.js, blending design with seamless functionality.`,
+      `With over 5 years of experience, including 3+ years working remotely with a UK-based company, I&#39;ve delivered solutions ranging from e-commerce platforms and custom web apps to SEO-optimized sites and SaaS products.`,
+      `Beyond development, I actively explore emerging technologies like AI, Web3, and the Metaverse, and I love sharing knowledge through LinkedIn content and open-source contributions.`,
+    ],
   },
-  {
-    category: 'Frontend',
-    items: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS'],
+  journey: {
+    heading: 'My Journey',
   },
-  {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'Django', 'PostgreSQL'],
+  tools: {
+    heading: 'Tools & Technologies',
   },
-  { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
-];
-
-const journey = [
-  {
-    year: '2018',
-    title: 'Started Programming',
-    description:
-      'Began my journey with web development, learning HTML, CSS, and JavaScript.',
-  },
-  {
-    year: '2019',
-    title: 'First Developer Role',
-    description:
-      'Joined a startup as a junior frontend developer, working with React.',
-  },
-  {
-    year: '2020',
-    title: 'Full Stack Development',
-    description:
-      'Expanded my skills to include backend development with Node.js and databases.',
-  },
-  {
-    year: '2021',
-    title: 'Senior Developer',
-    description:
-      'Promoted to senior developer, leading team projects and mentoring juniors.',
-  },
-  {
-    year: '2022',
-    title: 'Tech Lead',
-    description:
-      'Became a tech lead, architecting solutions and managing development teams.',
-  },
-  {
-    year: '2023',
-    title: 'Independent Consultant',
-    description:
-      'Started working as an independent consultant, helping businesses scale their tech.',
-  },
-];
+};
 
 export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-32 md:py-40">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{`About Me`}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            {ABOUT_PAGE_TEXT.title}
+          </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            {`A passionate developer with a love for creating beautiful,
-            functional, and user-friendly applications.`}
+            {ABOUT_PAGE_TEXT.description}
           </p>
         </div>
 
@@ -86,35 +53,30 @@ export default function AboutPage() {
             />
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-6">My Story</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              {ABOUT_PAGE_TEXT.profile.heading}
+            </h2>
             <div className="prose dark:prose-invert">
-              <p className="text-lg mb-4">
-                {`Hello! I&#39;m Syed Hasni, a full-stack developer based in San
-                Francisco. I specialize in building exceptional digital
-                experiences that combine beautiful design with powerful
-                functionality.`}
-              </p>
-              <p className="text-lg mb-4">
-                {`With over 5 years of experience in web development, I&#39;ve had
-                the pleasure of working with startups, agencies, and large
-                corporations, helping them bring their visions to life.`}
-              </p>
-              <p className="text-lg">
-                {`When I&#39;m not coding, you can find me exploring new
-                technologies, contributing to open-source projects, or sharing
-                my knowledge through writing and speaking at tech conferences.`}
-              </p>
+              {ABOUT_PAGE_TEXT.profile.paragraphs.map((text, idx) => (
+                <p
+                  className="text-lg mb-4"
+                  key={idx}
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
+              ))}
             </div>
           </div>
         </div>
 
         {/* Journey Timeline */}
         <div className="mb-20">
-          <h2 className="text-3xl font-bold text-center mb-12">My Journey</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            {ABOUT_PAGE_TEXT.journey.heading}
+          </h2>
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-border" />
             <div className="space-y-12">
-              {journey.map((event, index) => (
+              {JOURNEY.map((event, index) => (
                 <div
                   key={event.year}
                   className={`relative flex items-center ${
@@ -143,10 +105,10 @@ export default function AboutPage() {
         {/* Tools & Technologies */}
         <div>
           <h2 className="text-3xl font-bold text-center mb-12">
-            {`Tools & Technologies`}
+            {ABOUT_PAGE_TEXT.tools.heading}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {tools.map((category) => (
+            {TOOLS.map((category) => (
               <Card key={category.category}>
                 <CardContent className="p-6">
                   <h3 className="font-bold text-xl mb-4">

@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import { sanityFetch } from '@/lib/sanity';
-import { eventBySlugQuery, eventsQuery } from '@/lib/sanity.queries';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -8,12 +6,30 @@ import { Calendar, MapPin, Share2 } from 'lucide-react';
 import Image from 'next/image';
 import { PortableText, PortableTextBlock } from '@portabletext/react';
 
-export async function generateStaticParams() {
-  const events: Event[] = await sanityFetch({ query: eventsQuery });
-  return events.map((event) => ({
-    slug: event.slug.current,
-  }));
-}
+const EVENT: Event = {
+  title: 'Sample Event Title',
+  description: 'This is a sample event description.',
+  type: 'Conference',
+  slug: { current: 'sample-event' },
+  image: '/sample-event.jpg',
+  date: '2024-07-01T18:00:00Z',
+  location: '123 Main St, City, Country',
+  virtual: false,
+  content: [
+    {
+      _type: 'block',
+      children: [
+        {
+          _type: 'span',
+          text: 'This is the event content. Add more details here.',
+        },
+      ],
+      markDefs: [],
+      style: 'normal',
+      _key: 'block1',
+    },
+  ],
+};
 
 type Event = {
   title: string;
@@ -27,31 +43,15 @@ type Event = {
   content: PortableTextBlock[];
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const event: Event = await sanityFetch({
-    query: eventBySlugQuery,
-    params: { slug: params.slug },
-  });
-
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: `${event.title} | Events`,
-    description: event.description,
+    title: `${EVENT.title} | Events`,
+    description: EVENT.description,
   };
 }
 
-export default async function EventPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const event: Event = await sanityFetch({
-    query: eventBySlugQuery,
-    params: { slug: params.slug },
-  });
+export default async function EventPage() {
+  const event = EVENT;
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
