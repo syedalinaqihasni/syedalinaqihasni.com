@@ -40,13 +40,13 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
         className="mb-8"
         onValueChange={setActiveCategory}
       >
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
+        {/* <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
           {categories.map((category) => (
             <TabsTrigger key={category.id} value={category.id}>
               {category.name}
             </TabsTrigger>
           ))}
-        </TabsList>
+        </TabsList> */}
       </Tabs>
 
       <AnimatePresence mode="wait">

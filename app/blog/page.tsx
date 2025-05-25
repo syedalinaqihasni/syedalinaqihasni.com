@@ -1,6 +1,4 @@
 import { Metadata } from 'next';
-import { sanityFetch } from '@/lib/sanity';
-import { postsQuery } from '@/lib/sanity.queries';
 import BlogList from '@/components/blog/blog-list';
 import { Post } from '@/types';
 
@@ -11,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogPage() {
-  const posts: Post[] = await sanityFetch({ query: postsQuery });
+  // const posts: Post[] = await sanityFetch({ query: postsQuery });
 
   return (
     <div className="container mx-auto px-4 py-32 md:py-40">
@@ -23,7 +21,7 @@ export default async function BlogPage() {
           </p>
         </div>
 
-        <BlogList posts={posts} />
+        {/* <BlogList posts={posts} /> */}
       </div>
     </div>
   );

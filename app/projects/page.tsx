@@ -22,7 +22,7 @@ export default async function ProjectsPage() {
           </p>
         </div>
 
-        <ProjectList />
+        {/* <ProjectList /> */}
       </div>
     </div>
   );

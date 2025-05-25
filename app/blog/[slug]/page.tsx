@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import { Calendar, Clock, Share2 } from 'lucide-react';
 
-import { sanityFetch } from '@/lib/sanity';
-import { postBySlugQuery, postsQuery } from '@/lib/sanity.queries';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Post } from '@/types';
@@ -39,91 +37,97 @@ const formatDate = (dateString: string): string =>
   });
 
 // Static Params
-export const generateStaticParams = async () => {
-  const posts: Post[] = await sanityFetch({ query: postsQuery });
-  return posts.map((post) => ({
-    slug: post?.slug.current,
-  }));
-};
+// export const generateStaticParams = async () => {
+// const posts: Post[] = await sanityFetch({ query: postsQuery });
+// return posts.map((post) => ({
+//   slug: post?.slug.current,
+// }));
+// };
 
 // Metadata
-export const generateMetadata = async ({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> => {
-  const post: Post = await sanityFetch({
-    query: postBySlugQuery,
-    params: { slug: params.slug },
-  });
+// export const generateMetadata = async ({
+//   params,
+// }: {
+//   params: { slug: string };
+// }): Promise<Metadata> => {
+//   const post: Post = await sanityFetch({
+//     query: postBySlugQuery,
+//     params: { slug: params.slug },
+//   });
 
-  return {
-    title: `${post?.title}${TEXT.blogTitleSuffix}`,
-    description: post?.excerpt,
-  };
-};
+//   return {
+//     title: `${post?.title}${TEXT.blogTitleSuffix}`,
+//     description: post?.excerpt,
+//   };
+// };
 
 // Page Component
-const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
-  const post: Post = await sanityFetch({
-    query: postBySlugQuery,
-    params: { slug: params.slug },
-  });
+// const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
+// const post: Post = await sanityFetch({
+//   query: postBySlugQuery,
+//   params: { slug: params.slug },
+// });
 
-  return (
-    <div className={STYLES.container}>
-      <div className={STYLES.wrapper}>
-        {/* Header */}
-        <div className="mb-8">
-          <div className={STYLES.categoryWrapper}>
-            {post?.categories?.map((category: string) => (
-              <Badge key={category} variant="secondary">
-                {category}
-              </Badge>
-            ))}
-          </div>
+// return (
+// <div className={STYLES.container}>
+//   <div className={STYLES.wrapper}>
+//     {/* Header */}
+//     <div className="mb-8">
+//       <div className={STYLES.categoryWrapper}>
+//         {post?.categories?.map((category: string) => (
+//           <Badge key={category} variant="secondary">
+//             {category}
+//           </Badge>
+//         ))}
+//       </div>
 
-          <h1 className={STYLES.title}>{post?.title}</h1>
+//       <h1 className={STYLES.title}>{post?.title}</h1>
 
-          <div className={STYLES.metaRow}>
-            <div className={STYLES.metaItem}>
-              <Calendar className="h-4 w-4" />
-              {formatDate(post?.publishedAt)}
-            </div>
-            <div className={STYLES.metaItem}>
-              <Clock className="h-4 w-4" />
-              {post?.estimatedReadingTime} {TEXT.readUnit}
-            </div>
-          </div>
-        </div>
+//       <div className={STYLES.metaRow}>
+//         <div className={STYLES.metaItem}>
+//           <Calendar className="h-4 w-4" />
+//           {formatDate(post?.publishedAt)}
+//         </div>
+//         <div className={STYLES.metaItem}>
+//           <Clock className="h-4 w-4" />
+//           {post?.estimatedReadingTime} {TEXT.readUnit}
+//         </div>
+//       </div>
+//     </div>
 
-        {/* Featured Image */}
-        {post?.mainImage && (
-          <div className={STYLES.imageWrapper}>
-            <Image
-              src={post.mainImage}
-              alt={post?.title}
-              fill
-              className={STYLES.imageClass}
-            />
-          </div>
-        )}
+//     {/* Featured Image */}
+//     {post?.mainImage && (
+//       <div className={STYLES.imageWrapper}>
+//         <Image
+//           src={post.mainImage}
+//           alt={post?.title}
+//           fill
+//           className={STYLES.imageClass}
+//         />
+//       </div>
+//     )}
 
-        {/* Content */}
-        <div className={STYLES.content}>
-          <PortableText value={post?.content} />
-        </div>
+//     {/* Content */}
+//     <div className={STYLES.content}>
+//       <PortableText value={post?.content} />
+//     </div>
 
-        {/* Share Button */}
-        <div className={STYLES.shareWrapper}>
-          <Button variant="outline">
-            <Share2 className="h-4 w-4 mr-2" />
-            {TEXT.shareButton}
-          </Button>
-        </div>
-      </div>
-    </div>
-  );
+//     {/* Share Button */}
+//     <div className={STYLES.shareWrapper}>
+//       <Button variant="outline">
+//         <Share2 className="h-4 w-4 mr-2" />
+//         {TEXT.shareButton}
+//       </Button>
+//     </div>
+//   </div>
+// </div>
+//   );
+// };
+
+// export default BlogPostPage;
+
+const page = () => {
+  return <div></div>;
 };
 
-export default BlogPostPage;
+export default page;
