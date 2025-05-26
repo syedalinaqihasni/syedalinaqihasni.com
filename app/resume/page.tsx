@@ -6,7 +6,7 @@ import { Download, Mail, Phone, MapPin } from 'lucide-react';
 import { RESUME } from '@/constants/resume';
 
 export const metadata: Metadata = {
-  title: 'Resume | Portfolio',
+  title: 'Resume | Syed Ali Naqi Hasni',
   description: 'View or download my professional resume',
 };
 

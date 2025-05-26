@@ -3,7 +3,7 @@ import ProjectList from '@/components/projects/project-list';
 import { FEATURED_PROJECTS } from '@/constants';
 
 export const metadata: Metadata = {
-  title: 'Projects | Portfolio',
+  title: 'Projects | Syed Ali Naqi Hasni',
   description: 'View my latest web development and design projects',
 };
 

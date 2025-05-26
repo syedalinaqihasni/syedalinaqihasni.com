@@ -4,7 +4,7 @@ import { CONTACT_CARDS } from '@/constants';
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Contact | Portfolio',
+  title: 'Contact | Syed Ali Naqi Hasni',
   description:
     'Get in touch with me for collaborations, job opportunities, or just to say hello',
 };

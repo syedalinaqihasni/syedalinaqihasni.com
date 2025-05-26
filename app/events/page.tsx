@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 const PAGE_TITLE = 'Upcoming Events';
 const PAGE_DESCRIPTION =
   "Join me at these upcoming events where I'll be speaking, teaching, and sharing knowledge about web development and technology.";
-const METADATA_TITLE = 'Events | Portfolio';
+const METADATA_TITLE = 'Events | Syed Ali Naqi Hasni';
 const METADATA_DESCRIPTION =
   'Check out my upcoming speaking engagements, workshops, and other events';
 

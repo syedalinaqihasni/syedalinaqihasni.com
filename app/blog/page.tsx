@@ -3,7 +3,7 @@ import BlogList from '@/components/blog/blog-list';
 import { Post } from '@/types';
 
 export const metadata: Metadata = {
-  title: 'Blog | Portfolio',
+  title: 'Blog | Syed Ali Naqi Hasni',
   description:
     'Read my latest articles about web development, design, and technology',
 };

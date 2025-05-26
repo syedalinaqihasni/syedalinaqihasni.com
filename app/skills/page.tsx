@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import SkillsList from '@/components/skills/skills-list';
 
-const PAGE_TITLE = 'Skills | Portfolio';
+const PAGE_TITLE = 'Skills | Syed Ali Naqi Hasni';
 const PAGE_DESCRIPTION = 'Explore my technical skills and competencies';
 const HEADING = 'My Skills';
 const SUBHEADING =

@@ -5,7 +5,7 @@ import { JOURNEY, TOOLS } from '@/constants';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'About | Portfolio',
+  title: 'About Me | Syed Ali Naqi Hasni',
   description: 'Learn more about my journey, experience, and the tools I use',
 };
 
