@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
 
           <div className={styles.container}>
-            <h3 className={styles.heading}>{TEXT.heading}</h3>
+            <h3 className={styles.heading}>{TEXT.quickLinksHeading}</h3>
             <div className={styles.grid}>
               <ul className={styles.list}>
                 {LINKS_GROUP_1.map((link) => (
