@@ -6,19 +6,25 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 
-const inter = Inter({
+/**
+ * Google Fonts configuration extracted for reuse and clarity.
+ */
+const interFont = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 });
 
-const poppins = Poppins({
+const poppinsFont = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-poppins',
   display: 'swap',
 });
 
+/**
+ * Metadata configuration for SEO and social sharing.
+ */
 export const metadata: Metadata = {
   title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
   description:
@@ -41,6 +47,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
+/**
+ * RootLayout component wraps all pages with global providers,
+ * theme, fonts, header, footer, and Toaster notifications.
+ *
+ * @param {object} props
+ * @param {React.ReactNode} props.children - The page content
+ */
 export default function RootLayout({
   children,
 }: {
@@ -49,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${poppins.variable} font-sans min-h-screen bg-background text-foreground`}
+        className={`${interFont.variable} ${poppinsFont.variable} font-sans min-h-screen bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="class"

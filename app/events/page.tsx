@@ -57,78 +57,99 @@ const events: Event[] = [
   },
 ];
 
+// Class name constants
+const containerClass = 'container mx-auto px-4 py-32 md:py-40';
+const maxWidthWrapperClass = 'max-w-6xl mx-auto';
+const headerClass = 'text-center mb-16';
+const titleClass = 'text-4xl md:text-5xl font-bold mb-6';
+const descriptionClass =
+  'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
+
+const gridClass = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8';
+const cardClass = 'overflow-hidden';
+const imageWrapperClass = 'relative block h-48 w-full';
+const imageClass = 'object-cover';
+
+const virtualBadgeClass = 'absolute top-4 right-4';
+
+const badgeClass = 'mb-2';
+
+const eventTitleClass =
+  'text-xl font-semibold mb-2 block hover:text-primary transition-colors';
+const eventDescriptionClass = 'text-muted-foreground mb-4';
+
+const eventDetailsClass = 'space-y-2 text-sm text-muted-foreground mb-4';
+const eventDetailRowClass = 'flex items-center gap-2';
+
+const buttonClass = 'w-full';
+
 export default function EventsPage() {
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
+  const formatDate = (dateString: string) =>
+    new Date(dateString).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
       hour: 'numeric',
       minute: 'numeric',
     });
-  };
 
   return (
-    <div className="container mx-auto px-4 py-32 md:py-40">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{PAGE_TITLE}</h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            {PAGE_DESCRIPTION}
-          </p>
-        </div>
+    <main className={containerClass}>
+      <div className={maxWidthWrapperClass}>
+        <header className={headerClass}>
+          <h1 className={titleClass}>{PAGE_TITLE}</h1>
+          <p className={descriptionClass}>{PAGE_DESCRIPTION}</p>
+        </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className={gridClass}>
           {events.map((event) => (
-            <Card key={event._id} className="overflow-hidden">
-              <Link href={`/events/${event.slug}`}>
-                <div className="relative h-48 w-full">
+            <Card key={event._id} className={cardClass}>
+              <Link href={`/events/${event.slug}`} passHref>
+                <a className={imageWrapperClass}>
                   <Image
                     src={event.image}
                     alt={event.title}
                     fill
-                    className="object-cover"
+                    className={imageClass}
                   />
                   {event.virtual && (
-                    <Badge
-                      className="absolute top-4 right-4"
-                      variant="secondary"
-                    >
+                    <Badge className={virtualBadgeClass} variant="secondary">
                       Virtual Event
                     </Badge>
                   )}
-                </div>
+                </a>
               </Link>
+
               <CardContent className="p-6">
-                <Badge variant="outline" className="mb-2">
+                <Badge variant="outline" className={badgeClass}>
                   {event.type}
                 </Badge>
-                <Link href={`/events/${event.slug}`}>
-                  <h3 className="text-xl font-semibold mb-2 hover:text-primary transition-colors">
-                    {event.title}
-                  </h3>
+
+                <Link href={`/events/${event.slug}`} passHref>
+                  <a className={eventTitleClass}>{event.title}</a>
                 </Link>
-                <p className="text-muted-foreground mb-4">
-                  {event.description}
-                </p>
-                <div className="space-y-2 text-sm text-muted-foreground mb-4">
-                  <div className="flex items-center gap-2">
+
+                <p className={eventDescriptionClass}>{event.description}</p>
+
+                <div className={eventDetailsClass}>
+                  <div className={eventDetailRowClass}>
                     <Calendar className="h-4 w-4" />
-                    {formatDate(event.date)}
+                    <time dateTime={event.date}>{formatDate(event.date)}</time>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className={eventDetailRowClass}>
                     <MapPin className="h-4 w-4" />
                     {event.location}
                   </div>
                 </div>
-                <Button asChild className="w-full">
+
+                <Button asChild className={buttonClass}>
                   <Link href={`/events/${event.slug}`}>View Details</Link>
                 </Button>
               </CardContent>
             </Card>
           ))}
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }

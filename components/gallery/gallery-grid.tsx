@@ -8,7 +8,32 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Masonry from 'react-masonry-css';
 
-// Mock data - in a real app, this would come from Sanity
+/**
+ * Image type definition for gallery images.
+ */
+type GalleryImage = {
+  id: string;
+  src: string;
+  alt: string;
+  caption: string;
+  album: string;
+  tags: string[];
+};
+
+// /**
+//  * Albums definition for filtering images.
+//  */
+const albums = [
+  { id: 'all', name: 'All Photos' },
+  { id: 'work', name: 'Work' },
+  { id: 'events', name: 'Events' },
+  { id: 'personal', name: 'Personal' },
+];
+
+/**
+ * Mock image data for the gallery.
+ * In a real app, this would be fetched from a CMS like Sanity.
+ */
 const images = [
   {
     id: '1',
@@ -84,24 +109,27 @@ const images = [
   },
 ];
 
-const albums = [
-  { id: 'all', name: 'All Photos' },
-  { id: 'work', name: 'Work' },
-  { id: 'events', name: 'Events' },
-  { id: 'personal', name: 'Personal' },
-];
-
+/**
+ * GalleryGrid Component
+ *
+ * Displays a masonry grid of images with tabs to filter by album.
+ * Clicking an image opens a modal dialog with a larger view and details.
+ *
+ * @returns JSX.Element
+ */
 export default function GalleryGrid() {
-  const [selectedImage, setSelectedImage] = useState<(typeof images)[0] | null>(
-    null
-  );
+  // State for currently selected image in modal
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+  // State for active album filter
   const [activeAlbum, setActiveAlbum] = useState('all');
 
+  // Filter images based on active album or show all if 'all' selected
   const filteredImages =
     activeAlbum === 'all'
       ? images
       : images.filter((image) => image.album === activeAlbum);
 
+  // Responsive breakpoints for masonry layout
   const breakpointColumnsObj = {
     default: 3,
     1024: 3,
@@ -111,6 +139,7 @@ export default function GalleryGrid() {
 
   return (
     <div>
+      {/* Album filter tabs */}
       <Tabs defaultValue="all" className="mb-8" onValueChange={setActiveAlbum}>
         <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 max-w-lg mx-auto">
           {albums.map((album) => (
@@ -121,6 +150,7 @@ export default function GalleryGrid() {
         </TabsList>
       </Tabs>
 
+      {/* AnimatePresence for smooth tab content transitions */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeAlbum}
@@ -129,6 +159,7 @@ export default function GalleryGrid() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
+          {/* Masonry grid for responsive image layout */}
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className="flex w-auto -ml-4"
@@ -154,15 +185,12 @@ export default function GalleryGrid() {
                     }
                     className="w-full h-auto object-cover"
                   />
+                  {/* Overlay with caption and tags on hover */}
                   <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                     <p className="text-white font-medium">{image.caption}</p>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {image.tags.map((tag) => (
-                        <Badge
-                          key={tag}
-                          variant="secondary"
-                          className="text-xs"
-                        >
+                        <Badge key={tag} variant="secondary" className="text-xs">
                           {tag}
                         </Badge>
                       ))}
@@ -175,6 +203,7 @@ export default function GalleryGrid() {
         </motion.div>
       </AnimatePresence>
 
+      {/* Modal dialog for selected image details */}
       <Dialog
         open={!!selectedImage}
         onOpenChange={(open) => !open && setSelectedImage(null)}

@@ -8,26 +8,29 @@ import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Tabs } from '@/components/ui/tabs';
 import { Project } from '@/types';
 
-// Mock data - in a real app, this would come from Sanity
-
-const categories = [
-  { id: 'all', name: 'All Projects' },
-  { id: 'web', name: 'Web Apps' },
-  { id: 'mobile', name: 'Mobile Apps' },
-  { id: 'design', name: 'Design' },
-  { id: 'other', name: 'Other' },
-];
+/**
+ * ProjectList Component
+ *
+ * Displays a list of projects with category-based filtering and animated transitions.
+ *
+ * @param {Object} props
+ * @param {Project[]} props.projects - Array of project objects to be displayed.
+ * @returns JSX.Element
+ */
 const ProjectList = ({ projects }: { projects: Project[] }) => {
+  // State to track currently selected category tab
   const [activeCategory, setActiveCategory] = useState('all');
 
+  // Dynamically derive category list from provided projects
   const categories = [
     'all',
     ...Array.from(new Set(projects.map((project) => project.category))),
   ];
 
+  // Filter projects based on selected category
   const filteredProjects =
     activeCategory === 'all'
       ? projects
@@ -35,6 +38,8 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
 
   return (
     <div>
+      {/* Tabs are defined here, but hidden or disabled for now.
+          Uncomment TabsList and TabsTrigger if dynamic tab navigation is needed. */}
       <Tabs
         defaultValue="all"
         className="mb-8"
@@ -42,13 +47,14 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
       >
         {/* <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
           {categories.map((category) => (
-            <TabsTrigger key={category.id} value={category.id}>
-              {category.name}
+            <TabsTrigger key={category} value={category}>
+              {category.charAt(0).toUpperCase() + category.slice(1)}
             </TabsTrigger>
           ))}
         </TabsList> */}
       </Tabs>
 
+      {/* AnimatePresence handles smooth transitions between category views */}
       <AnimatePresence mode="wait">
         <motion.div
           key={activeCategory}
@@ -68,6 +74,7 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
               className="h-full"
             >
               <Card className="h-full overflow-hidden">
+                {/* Project image */}
                 <div className="relative h-56 w-full">
                   <Image
                     src={project?.image}
@@ -76,6 +83,8 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
                     className="object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
+
+                {/* Project content */}
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     {project?.title}
@@ -84,6 +93,7 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
                     {project?.description}
                   </p>
 
+                  {/* Project tags */}
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project?.tags.map((tag) => (
                       <Badge key={tag} variant="secondary">
@@ -92,6 +102,7 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
                     ))}
                   </div>
 
+                  {/* External links: GitHub & Demo */}
                   <div className="flex gap-3">
                     <Button size="sm" variant="outline" asChild>
                       <a

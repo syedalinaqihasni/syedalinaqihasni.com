@@ -7,11 +7,18 @@ const HEADING = 'My Skills';
 const SUBHEADING =
   'A comprehensive overview of my technical skills, tools, and competencies.';
 
+/**
+ * SEO metadata for the Skills page
+ */
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
 };
 
+/**
+ * SkillsPage Component
+ * Displays a summary of technical skills and competencies
+ */
 export default function SkillsPage() {
   return (
     <div className="container mx-auto px-4 py-32 md:py-40">

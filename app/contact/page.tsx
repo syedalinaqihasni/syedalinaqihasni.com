@@ -3,30 +3,49 @@ import Contact from '@/components/contact/contact-form';
 import { CONTACT_CARDS } from '@/constants';
 import { Card, CardContent } from '@/components/ui/card';
 
+// --- Metadata ---
 export const metadata: Metadata = {
   title: 'Contact | Syed Ali Naqi Hasni',
   description:
     'Get in touch with me for collaborations, job opportunities, or just to say hello',
 };
 
-const PAGE_TITLE = 'Get In Touch';
-const PAGE_DESCRIPTION = `Have a project in mind or want to discuss potential opportunities? 
-I'd love to hear from you. Let's make something great together.`;
-const SEND_MESSAGE_TITLE = 'Send a Message';
+// --- Static Text ---
+const TEXT = {
+  pageTitle: 'Get In Touch',
+  pageDescription: `Have a project in mind or want to discuss potential opportunities? 
+I'd love to hear from you. Let's make something great together.`,
+  sendMessageTitle: 'Send a Message',
+};
+
+// --- Static Class Names ---
+const CLASSES = {
+  container: 'container mx-auto px-4 py-32 md:py-40',
+  wrapper: 'max-w-6xl mx-auto',
+  header: 'text-center mb-16',
+  title: 'text-4xl md:text-5xl font-bold mb-6',
+  description: 'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto',
+  cardsGrid: 'grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12',
+  messageBox: 'bg-muted/50 rounded-lg p-6 md:p-10',
+  messageTitle: 'text-2xl font-bold mb-8 text-center',
+  card: 'text-center',
+  cardContent: 'pt-6',
+  iconWrapper: 'flex justify-center mb-4',
+  cardTitle: 'text-xl font-medium mb-2',
+  cardLink: 'text-muted-foreground hover:text-primary transition-colors',
+};
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto px-4 py-32 md:py-40">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{PAGE_TITLE}</h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            {PAGE_DESCRIPTION}
-          </p>
+    <div className={CLASSES.container}>
+      <div className={CLASSES.wrapper}>
+        <div className={CLASSES.header}>
+          <h1 className={CLASSES.title}>{TEXT.pageTitle}</h1>
+          <p className={CLASSES.description}>{TEXT.pageDescription}</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {CONTACT_CARDS.map((card, idx) => (
+        <div className={CLASSES.cardsGrid}>
+          {CONTACT_CARDS.map((card) => (
             <ContactCard
               key={card.title}
               icon={card.icon}
@@ -37,10 +56,8 @@ export default function ContactPage() {
           ))}
         </div>
 
-        <div className="bg-muted/50 rounded-lg p-6 md:p-10">
-          <h2 className="text-2xl font-bold mb-8 text-center">
-            {SEND_MESSAGE_TITLE}
-          </h2>
+        <div className={CLASSES.messageBox}>
+          <h2 className={CLASSES.messageTitle}>{TEXT.sendMessageTitle}</h2>
           <Contact />
         </div>
       </div>
@@ -60,13 +77,13 @@ function ContactCard({
   link: string;
 }) {
   return (
-    <Card className="text-center">
-      <CardContent className="pt-6">
-        <div className="flex justify-center mb-4">{icon}</div>
-        <h3 className="text-xl font-medium mb-2">{title}</h3>
+    <Card className={CLASSES.card}>
+      <CardContent className={CLASSES.cardContent}>
+        <div className={CLASSES.iconWrapper}>{icon}</div>
+        <h3 className={CLASSES.cardTitle}>{title}</h3>
         <a
           href={link}
-          className="text-muted-foreground hover:text-primary transition-colors"
+          className={CLASSES.cardLink}
           target={link.startsWith('http') ? '_blank' : undefined}
           rel={link.startsWith('http') ? 'noopener noreferrer' : undefined}
         >

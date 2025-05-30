@@ -8,6 +8,14 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { FEATURED_PROJECTS } from '@/constants';
 
+/**
+ * HomeProjects Component
+ *
+ * Displays a responsive grid of featured projects with animated entrance.
+ * Each project card shows image, title, description, tags, and links to GitHub & live demo.
+ *
+ * @returns JSX.Element
+ */
 export default function HomeProjects() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -19,6 +27,7 @@ export default function HomeProjects() {
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
           <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            {/* Project image */}
             <div className="relative h-48 w-full">
               <Image
                 src={project.image}
@@ -27,12 +36,18 @@ export default function HomeProjects() {
                 className="object-cover"
               />
             </div>
+
+            {/* Card content with project details */}
             <CardContent className="p-6">
+              {/* Project title */}
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+
+              {/* Project description with line clamp */}
               <p className="text-muted-foreground mb-4 line-clamp-2">
                 {project.description}
               </p>
 
+              {/* Project tags */}
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.tags.map((tag) => (
                   <Badge key={tag} variant="secondary">
@@ -41,6 +56,7 @@ export default function HomeProjects() {
                 ))}
               </div>
 
+              {/* Links to GitHub repo and live demo */}
               <div className="flex gap-3">
                 <Button size="sm" variant="outline" asChild>
                   <a

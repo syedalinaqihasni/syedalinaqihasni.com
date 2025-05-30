@@ -3,7 +3,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ExternalLink } from 'lucide-react';
-import { ARCHIVE } from '@/constants';
 import Link from 'next/link';
 
 const PAGE_TITLE = 'Development Archive';
@@ -21,6 +20,44 @@ export const metadata: Metadata = {
   description: PAGE_DESCRIPTION,
 };
 
+const archivePosts = {
+  medium: [
+    {
+      id: '1',
+      title: 'Optimizing React Apps with useMemo',
+      excerpt:
+        'Understand when and how to use useMemo to avoid unnecessary re-renders.',
+      tags: ['React', 'Performance'],
+      url: 'https://medium.com/example',
+      readTime: '4 min read',
+      date: '2024-01-12T00:00:00Z',
+    },
+  ],
+  devto: [
+    {
+      id: '2',
+      title: 'Demystifying Server Components in Next.js',
+      excerpt:
+        'Server components are here. Let’s unpack what they really mean.',
+      tags: ['Next.js', 'React'],
+      url: 'https://dev.to/example',
+      readTime: '6 min read',
+      date: '2024-02-03T00:00:00Z',
+    },
+  ],
+  reddit: [
+    {
+      id: '3',
+      title: 'I built my portfolio using Next.js 14. Feedback appreciated!',
+      excerpt: 'Check it out and let me know your thoughts.',
+      tags: ['Next.js', 'Portfolio'],
+      url: 'https://reddit.com/example',
+      upvotes: 230,
+      date: '2024-03-18T00:00:00Z',
+    },
+  ],
+};
+
 const socialPosts = {
   twitter: [
     {
@@ -30,14 +67,6 @@ const socialPosts = {
       date: '2024-02-15T10:30:00Z',
       likes: 42,
       retweets: 12,
-    },
-    {
-      id: '2',
-      content:
-        'Working on an exciting new project with Next.js 14 and Tailwind CSS. Stay tuned! 👨‍💻',
-      date: '2024-02-14T15:45:00Z',
-      likes: 38,
-      retweets: 8,
     },
   ],
   linkedin: [
@@ -50,15 +79,6 @@ const socialPosts = {
       likes: 156,
       comments: 23,
     },
-    {
-      id: '2',
-      title: 'Speaking at TechConf 2024',
-      content:
-        'Looking forward to speaking about frontend architecture at TechConf 2024 next month...',
-      date: '2024-02-12T14:20:00Z',
-      likes: 234,
-      comments: 45,
-    },
   ],
   instagram: [
     {
@@ -69,20 +89,8 @@ const socialPosts = {
       date: '2024-02-11T11:30:00Z',
       likes: 89,
     },
-    {
-      id: '2',
-      image:
-        'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-      caption:
-        'Team lunch after shipping a major feature! 🎉 #teamwork #success',
-      date: '2024-02-10T13:45:00Z',
-      likes: 124,
-    },
   ],
 };
-const SOCIALS_TITLE = 'Social Media';
-const SOCIALS_DESCRIPTION =
-  'Stay updated with my latest posts and activities across social media platforms.';
 
 const TAB_TITLES = {
   twitter: 'Twitter',
@@ -90,14 +98,18 @@ const TAB_TITLES = {
   instagram: 'Instagram',
 };
 
+const SOCIALS_TITLE = 'Social Media';
+const SOCIALS_DESCRIPTION =
+  'Stay updated with my latest posts and activities across social media platforms.';
+
+const formatDate = (dateString: string) =>
+  new Date(dateString).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
 export default function ArchivePage() {
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-  };
   return (
     <>
       <div className="container mx-auto px-4 py-32 md:pt-40 md:pb-10">
@@ -119,7 +131,7 @@ export default function ArchivePage() {
             </TabsList>
 
             <TabsContent value="medium" className="space-y-6">
-              {ARCHIVE.medium.map((post) => (
+              {archivePosts.medium.map((post) => (
                 <Card key={post.id}>
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
@@ -146,11 +158,7 @@ export default function ArchivePage() {
                       ))}
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      })}
+                      {formatDate(post.date)}
                     </div>
                   </CardContent>
                 </Card>
@@ -158,7 +166,7 @@ export default function ArchivePage() {
             </TabsContent>
 
             <TabsContent value="devto" className="space-y-6">
-              {ARCHIVE.devto.map((post) => (
+              {archivePosts.devto.map((post) => (
                 <Card key={post.id}>
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
@@ -185,11 +193,7 @@ export default function ArchivePage() {
                       ))}
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      })}
+                      {formatDate(post.date)}
                     </div>
                   </CardContent>
                 </Card>
@@ -197,7 +201,7 @@ export default function ArchivePage() {
             </TabsContent>
 
             <TabsContent value="reddit" className="space-y-6">
-              {ARCHIVE.reddit.map((post) => (
+              {archivePosts.reddit.map((post) => (
                 <Card key={post.id}>
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
@@ -224,11 +228,7 @@ export default function ArchivePage() {
                       ))}
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric',
-                      })}
+                      {formatDate(post.date)}
                     </div>
                   </CardContent>
                 </Card>
@@ -237,6 +237,8 @@ export default function ArchivePage() {
           </Tabs>
         </div>
       </div>
+
+      {/* Social section */}
       <div className="container mx-auto px-4 py-32 md:pt-5 md:pb-40">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -258,7 +260,7 @@ export default function ArchivePage() {
             </TabsList>
 
             <TabsContent value="twitter" className="space-y-6">
-              {socialPosts.twitter.map((post, index) => (
+              {socialPosts.twitter.map((post) => (
                 <Card key={post.id}>
                   <CardContent className="p-6">
                     <p className="text-lg mb-4">{post.content}</p>
@@ -275,7 +277,7 @@ export default function ArchivePage() {
             </TabsContent>
 
             <TabsContent value="linkedin" className="space-y-6">
-              {socialPosts.linkedin.map((post, index) => (
+              {socialPosts.linkedin.map((post) => (
                 <Card key={post.id}>
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
@@ -296,7 +298,7 @@ export default function ArchivePage() {
               value="instagram"
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
-              {socialPosts.instagram.map((post, index) => (
+              {socialPosts.instagram.map((post) => (
                 <Card key={post.id} className="overflow-hidden">
                   <div className="relative h-64 w-full">
                     <img

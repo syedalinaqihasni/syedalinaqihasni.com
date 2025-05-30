@@ -8,20 +8,34 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/theme-toggle';
 
-const navItems = [
+// Static Content
+const TEXT = {
+  brandName: 'Syed Ali Naqi Hasni',
+  menuToggleAriaLabel: 'Toggle Menu',
+};
+
+const NAV_ITEMS = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
-  // { name: 'Archive', path: '/archive' },
-  // { name: 'Events', path: '/events' },
-  // { name: 'Experience', path: '/experience' },
-  // { name: 'Skills', path: '/skills' },
-  // { name: 'Gallery', path: '/gallery' },
   { name: 'Blog', path: '/blog' },
   { name: 'Resume', path: '/resume' },
   { name: 'Links', path: '/links' },
   { name: 'Contact', path: '/contact' },
 ];
+
+// Tailwind Classes
+const STYLES = {
+  header: 'fixed top-0 w-full z-50 transition-all duration-300',
+  container: 'container mx-auto px-4 md:px-6',
+  brand: 'font-bold text-2xl',
+  brandGradient:
+    'bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400',
+  desktopNav: 'hidden md:flex items-center space-x-1',
+  mobileControls: 'flex items-center md:hidden gap-2',
+  mobileNav: 'md:hidden mt-4 pb-4',
+  mobileNavItem: 'w-full justify-start',
+};
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,59 +43,70 @@ export default function Header() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const renderNavItems = (isMobile = false) =>
+    NAV_ITEMS.map((item) => (
+      <Link
+        key={item.path}
+        href={item.path}
+        onClick={() => isMobile && setMobileMenuOpen(false)}
+      >
+        <Button
+          variant={pathname === item.path ? 'default' : 'ghost'}
+          size="sm"
+          className={
+            isMobile
+              ? STYLES.mobileNavItem
+              : pathname !== item.path
+                ? 'hover:bg-muted'
+                : ''
+          }
+        >
+          {item.name}
+        </Button>
+      </Link>
+    ));
+
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`${STYLES.header} ${
         isScrolled
           ? 'bg-background/80 backdrop-blur-md shadow-sm py-3'
           : 'bg-transparent py-5'
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className={STYLES.container}>
         <div className="flex items-center justify-between">
-          <Link href="/" className="font-bold text-2xl">
+          {/* Brand */}
+          <Link href="/" className={STYLES.brand}>
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400"
+              className={STYLES.brandGradient}
             >
-              {'Syed Ali Naqi Hasni'}
+              {TEXT.brandName}
             </motion.span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <Link key={item.path} href={item.path}>
-                <Button
-                  variant={pathname === item.path ? 'default' : 'ghost'}
-                  size="sm"
-                  className={pathname === item.path ? '' : 'hover:bg-muted'}
-                >
-                  {item.name}
-                </Button>
-              </Link>
-            ))}
+          <nav className={STYLES.desktopNav}>
+            {renderNavItems()}
             <ThemeToggle />
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center md:hidden gap-2">
+          <div className={STYLES.mobileControls}>
             <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle Menu"
+              aria-label={TEXT.menuToggleAriaLabel}
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -99,24 +124,10 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden mt-4 pb-4"
+            className={STYLES.mobileNav}
           >
             <div className="flex flex-col space-y-2">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  href={item.path}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <Button
-                    variant={pathname === item.path ? 'default' : 'ghost'}
-                    size="sm"
-                    className="w-full justify-start"
-                  >
-                    {item.name}
-                  </Button>
-                </Link>
-              ))}
+              {renderNavItems(true)}
             </div>
           </motion.nav>
         )}

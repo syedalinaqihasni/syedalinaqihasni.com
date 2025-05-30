@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { Post } from '@/types';
 
-// Static fallback data
+// Static fallback blog post data
 const DATA = {
   posts: [
     {
@@ -73,10 +73,12 @@ const DATA = {
   ],
 };
 
+// UI text constants
 const TEXT = {
   searchPlaceholder: 'Search articles...',
 };
 
+// Tailwind CSS class groups for styling
 const styles = {
   inputWrapper: 'mb-8',
   inputField: 'max-w-md mx-auto',
@@ -93,13 +95,16 @@ const styles = {
 };
 
 interface BlogListProps {
-  posts?: Post[];
+  posts?: Post[]; // Optional posts prop to override default static data
 }
 
 const BlogList = ({ posts }: BlogListProps) => {
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Use provided posts or fallback to static data
   const postList = posts?.length ? posts : DATA.posts;
 
+  // Helper to format published date to a human-readable string
   const formatDate = (date: string) =>
     new Date(date).toLocaleDateString('en-US', {
       year: 'numeric',
@@ -107,17 +112,19 @@ const BlogList = ({ posts }: BlogListProps) => {
       day: 'numeric',
     });
 
-  const filteredPosts = postList.filter(
-    (post) =>
-      post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      post.categories.some((cat) =>
-        cat.toLowerCase().includes(searchQuery.toLowerCase())
-      )
-  );
+  // Filter posts based on search query matching title, excerpt, or categories
+  const filteredPosts = postList.filter((post) => {
+    const query = searchQuery.toLowerCase();
+    return (
+      post.title.toLowerCase().includes(query) ||
+      post.excerpt.toLowerCase().includes(query) ||
+      post.categories.some((cat) => cat.toLowerCase().includes(query))
+    );
+  });
 
   return (
     <div>
+      {/* Search input */}
       <div className={styles.inputWrapper}>
         <Input
           placeholder={TEXT.searchPlaceholder}
@@ -127,6 +134,7 @@ const BlogList = ({ posts }: BlogListProps) => {
         />
       </div>
 
+      {/* Blog post grid */}
       <div className={styles.grid}>
         {filteredPosts.map((post, index) => (
           <motion.div
@@ -137,16 +145,18 @@ const BlogList = ({ posts }: BlogListProps) => {
           >
             <Card className={styles.card}>
               <Link href={`/blog/${post.slug}`}>
-                <div className="relative h-48 w-full">
+                <a className="relative block h-48 w-full">
                   <Image
                     src={post.image}
                     alt={post.title}
-                    fill
+                    layout="fill"
                     className={styles.image}
+                    priority={index < 3} // Prioritize images of first few posts
                   />
-                </div>
+                </a>
               </Link>
               <CardContent className="p-6">
+                {/* Categories badges */}
                 <div className={styles.categoriesWrapper}>
                   {post.categories.slice(0, 2).map((cat) => (
                     <Badge
@@ -164,12 +174,17 @@ const BlogList = ({ posts }: BlogListProps) => {
                   )}
                 </div>
 
+                {/* Title */}
                 <Link href={`/blog/${post.slug}`}>
-                  <h3 className={styles.title}>{post.title}</h3>
+                  <a>
+                    <h3 className={styles.title}>{post.title}</h3>
+                  </a>
                 </Link>
 
+                {/* Excerpt */}
                 <p className={styles.excerpt}>{post.excerpt}</p>
 
+                {/* Meta info: date and reading time */}
                 <div className={styles.metaWrapper}>
                   <div className={styles.metaItem}>
                     <Calendar className={styles.icon} />

@@ -1,8 +1,10 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { motion } from 'framer-motion';
 
+/**
+ * Metadata for SEO and sharing
+ */
 export const metadata: Metadata = {
   title: 'Social Media | Portfolio',
   description: 'My social media posts and updates from various platforms',
@@ -18,7 +20,38 @@ const TAB_TITLES = {
   instagram: 'Instagram',
 };
 
-const socialPosts = {
+/** Interfaces describing shape of each social post */
+interface TwitterPost {
+  id: string;
+  content: string;
+  date: string;
+  likes: number;
+  retweets: number;
+}
+interface LinkedInPost {
+  id: string;
+  title: string;
+  content: string;
+  date: string;
+  likes: number;
+  comments: number;
+}
+interface InstagramPost {
+  id: string;
+  image: string;
+  caption: string;
+  date: string;
+  likes: number;
+}
+
+interface SocialPosts {
+  twitter: TwitterPost[];
+  linkedin: LinkedInPost[];
+  instagram: InstagramPost[];
+}
+
+/** Data for social posts */
+const socialPosts: SocialPosts = {
   twitter: [
     {
       id: '1',
@@ -78,15 +111,86 @@ const socialPosts = {
   ],
 };
 
-export default function SocialsPage() {
-  const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-  };
+/**
+ * Formats ISO date strings into human-readable format
+ * @param dateString - ISO date string
+ * @returns formatted date string like "February 15, 2024"
+ */
+const formatDate = (dateString: string) =>
+  new Date(dateString).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
+/**
+ * Renders posts for a given social media type
+ * @param type - 'twitter' | 'linkedin' | 'instagram'
+ * @returns JSX element with mapped posts
+ */
+function renderPostsByType(type: keyof SocialPosts) {
+  switch (type) {
+    case 'twitter':
+      return socialPosts.twitter.map((post) => (
+        <Card key={post.id}>
+          <CardContent className="p-6">
+            <p className="text-lg mb-4">{post.content}</p>
+            <div className="flex items-center justify-between text-sm text-muted-foreground">
+              <div>{formatDate(post.date)}</div>
+              <div className="flex gap-4">
+                <span>❤️ {post.likes}</span>
+                <span>🔄 {post.retweets}</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      ));
+    case 'linkedin':
+      return socialPosts.linkedin.map((post) => (
+        <Card key={post.id}>
+          <CardContent className="p-6">
+            <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
+            <p className="text-muted-foreground mb-4">{post.content}</p>
+            <div className="flex items-center justify-between text-sm text-muted-foreground">
+              <div>{formatDate(post.date)}</div>
+              <div className="flex gap-4">
+                <span>👍 {post.likes}</span>
+                <span>💬 {post.comments}</span>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      ));
+    case 'instagram':
+      return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {socialPosts.instagram.map((post) => (
+            <Card key={post.id} className="overflow-hidden">
+              <div className="relative h-64 w-full">
+                <img
+                  src={post.image}
+                  alt={post.caption}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6">
+                <p className="text-muted-foreground mb-4">{post.caption}</p>
+                <div className="flex items-center justify-between text-sm text-muted-foreground">
+                  <div>{formatDate(post.date)}</div>
+                  <div>❤️ {post.likes}</div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      );
+  }
+}
+
+/**
+ * Main social media page component displaying tabs with posts
+ */
+export default function SocialsPage() {
   return (
     <div className="container mx-auto px-4 py-32 md:py-40">
       <div className="max-w-6xl mx-auto">
@@ -101,69 +205,20 @@ export default function SocialsPage() {
 
         <Tabs defaultValue="twitter" className="space-y-8">
           <TabsList className="grid w-full grid-cols-3 max-w-md mx-auto">
-            <TabsTrigger value="twitter">{TAB_TITLES.twitter}</TabsTrigger>
-            <TabsTrigger value="linkedin">{TAB_TITLES.linkedin}</TabsTrigger>
-            <TabsTrigger value="instagram">{TAB_TITLES.instagram}</TabsTrigger>
+            {(Object.keys(TAB_TITLES) as (keyof typeof TAB_TITLES)[]).map(
+              (key) => (
+                <TabsTrigger key={key} value={key}>
+                  {TAB_TITLES[key]}
+                </TabsTrigger>
+              )
+            )}
           </TabsList>
 
-          <TabsContent value="twitter" className="space-y-6">
-            {socialPosts.twitter.map((post, index) => (
-              <Card key={post.id}>
-                <CardContent className="p-6">
-                  <p className="text-lg mb-4">{post.content}</p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <div>{formatDate(post.date)}</div>
-                    <div className="flex gap-4">
-                      <span>❤️ {post.likes}</span>
-                      <span>🔄 {post.retweets}</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </TabsContent>
-
-          <TabsContent value="linkedin" className="space-y-6">
-            {socialPosts.linkedin.map((post, index) => (
-              <Card key={post.id}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
-                  <p className="text-muted-foreground mb-4">{post.content}</p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <div>{formatDate(post.date)}</div>
-                    <div className="flex gap-4">
-                      <span>👍 {post.likes}</span>
-                      <span>💬 {post.comments}</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </TabsContent>
-
-          <TabsContent
-            value="instagram"
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          >
-            {socialPosts.instagram.map((post, index) => (
-              <Card key={post.id} className="overflow-hidden">
-                <div className="relative h-64 w-full">
-                  <img
-                    src={post.image}
-                    alt={post.caption}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <p className="text-muted-foreground mb-4">{post.caption}</p>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <div>{formatDate(post.date)}</div>
-                    <div>❤️ {post.likes}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </TabsContent>
+          {(Object.keys(socialPosts) as (keyof SocialPosts)[]).map((key) => (
+            <TabsContent key={key} value={key}>
+              {renderPostsByType(key)}
+            </TabsContent>
+          ))}
         </Tabs>
       </div>
     </div>

@@ -1,13 +1,28 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Progress } from '@/components/ui/progress';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 
-// Mock data - in a real app, this would come from Sanity
-const skills = {
+/**
+ * Static text labels for skill categories.
+ */
+const TEXT = {
+  categories: {
+    frontend: 'Frontend',
+    backend: 'Backend',
+    devops: 'DevOps',
+    design: 'Design',
+    soft: 'Soft Skills',
+  },
+};
+
+/**
+ * Skill data for each category.
+ * @type {{ [key: string]: { name: string; level: number }[] }}
+ */
+const SKILLS_DATA = {
   frontend: [
     { name: 'HTML/CSS', level: 95 },
     { name: 'JavaScript', level: 90 },
@@ -52,42 +67,50 @@ const skills = {
   ],
 };
 
+/**
+ * Centralized Tailwind styles for consistency and easier maintenance.
+ */
+const STYLES = {
+  tabsList: 'grid max-w-3xl mx-auto w-full grid-cols-2 md:grid-cols-5 mb-12',
+  grid: 'grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6',
+  header: 'flex justify-between mb-2',
+  cardContent: 'p-6 md:p-10',
+};
+
+/**
+ * SkillsList Component
+ *
+ * Renders a tabbed interface for displaying categorized skills.
+ */
 export default function SkillsList() {
   return (
-    <div>
-      <Tabs defaultValue="frontend" className="w-full">
-        <TabsList className="grid max-w-3xl mx-auto w-full grid-cols-2 md:grid-cols-5 mb-12">
-          <TabsTrigger value="frontend">Frontend</TabsTrigger>
-          <TabsTrigger value="backend">Backend</TabsTrigger>
-          <TabsTrigger value="devops">DevOps</TabsTrigger>
-          <TabsTrigger value="design">Design</TabsTrigger>
-          <TabsTrigger value="soft">Soft Skills</TabsTrigger>
-        </TabsList>
+    <Tabs defaultValue="frontend" className="w-full">
+      {/* Render tab triggers based on category labels */}
+      <TabsList className={STYLES.tabsList}>
+        {Object.entries(TEXT.categories).map(([key, label]) => (
+          <TabsTrigger key={key} value={key}>
+            {label}
+          </TabsTrigger>
+        ))}
+      </TabsList>
 
-        <TabsContent value="frontend" className="mt-0">
-          <SkillsCategory skills={skills.frontend} />
+      {/* Render each skill group as tab content */}
+      {Object.entries(SKILLS_DATA).map(([key, skills]) => (
+        <TabsContent key={key} value={key} className="mt-0">
+          <SkillsCategory skills={skills} />
         </TabsContent>
-
-        <TabsContent value="backend" className="mt-0">
-          <SkillsCategory skills={skills.backend} />
-        </TabsContent>
-
-        <TabsContent value="devops" className="mt-0">
-          <SkillsCategory skills={skills.devops} />
-        </TabsContent>
-
-        <TabsContent value="design" className="mt-0">
-          <SkillsCategory skills={skills.design} />
-        </TabsContent>
-
-        <TabsContent value="soft" className="mt-0">
-          <SkillsCategory skills={skills.soft} />
-        </TabsContent>
-      </Tabs>
-    </div>
+      ))}
+    </Tabs>
   );
 }
 
+/**
+ * SkillsCategory Component
+ *
+ * @param {Object} props
+ * @param {{ name: string; level: number }[]} props.skills - Array of skill objects.
+ * @returns JSX.Element
+ */
 function SkillsCategory({
   skills,
 }: {
@@ -95,8 +118,8 @@ function SkillsCategory({
 }) {
   return (
     <Card>
-      <CardContent className="p-6 md:p-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
+      <CardContent className={STYLES.cardContent}>
+        <div className={STYLES.grid}>
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -104,10 +127,13 @@ function SkillsCategory({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <div className="flex justify-between mb-2">
+              {/* Skill header with name and level */}
+              <div className={STYLES.header}>
                 <h3 className="font-medium">{skill.name}</h3>
                 <span className="text-muted-foreground">{skill.level}%</span>
               </div>
+
+              {/* Animated progress bar */}
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: '100%' }}
