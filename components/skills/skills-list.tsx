@@ -70,7 +70,7 @@ const SKILLS_DATA = {
 /**
  * Centralized Tailwind styles for consistency and easier maintenance.
  */
-const STYLES = {
+const styles = {
   tabsList: 'grid max-w-3xl mx-auto w-full grid-cols-2 md:grid-cols-5 mb-12',
   grid: 'grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6',
   header: 'flex justify-between mb-2',
@@ -84,9 +84,9 @@ const STYLES = {
  */
 export default function SkillsList() {
   return (
-    <Tabs defaultValue="frontend" className="w-full">
+    <Tabs defaultValue={'frontend'}className={'w-full'}>
       {/* Render tab triggers based on category labels */}
-      <TabsList className={STYLES.tabsList}>
+      <TabsList className={styles?.tabsList}>
         {Object.entries(TEXT.categories).map(([key, label]) => (
           <TabsTrigger key={key} value={key}>
             {label}
@@ -96,7 +96,7 @@ export default function SkillsList() {
 
       {/* Render each skill group as tab content */}
       {Object.entries(SKILLS_DATA).map(([key, skills]) => (
-        <TabsContent key={key} value={key} className="mt-0">
+        <TabsContent key={key} value={key} className={'mt-0'}>
           <SkillsCategory skills={skills} />
         </TabsContent>
       ))}
@@ -118,8 +118,8 @@ function SkillsCategory({
 }) {
   return (
     <Card>
-      <CardContent className={STYLES.cardContent}>
-        <div className={STYLES.grid}>
+      <CardContent className={styles?.cardContent}>
+        <div className={styles?.grid}>
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -128,9 +128,9 @@ function SkillsCategory({
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               {/* Skill header with name and level */}
-              <div className={STYLES.header}>
-                <h3 className="font-medium">{skill.name}</h3>
-                <span className="text-muted-foreground">{skill.level}%</span>
+              <div className={styles?.header}>
+                <h3 className={'font-medium'}>{skill.name}</h3>
+                <span className={'text-muted-foreground'}>{skill.level}%</span>
               </div>
 
               {/* Animated progress bar */}
@@ -139,7 +139,7 @@ function SkillsCategory({
                 animate={{ width: '100%' }}
                 transition={{ duration: 1, delay: 0.2 + index * 0.1 }}
               >
-                <Progress value={skill.level} className="h-2" />
+                <Progress value={skill.level} className={'h-2'}/>
               </motion.div>
             </motion.div>
           ))}

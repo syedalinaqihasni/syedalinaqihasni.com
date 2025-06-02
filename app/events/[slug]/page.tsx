@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Share2 } from 'lucide-react';
 import Image from 'next/image';
 import { PortableText, PortableTextBlock } from '@portabletext/react';
+import { formatDateTime } from '@/lib/utils';
 
 // --- Types ---
 type Event = {
@@ -25,7 +26,7 @@ const EVENT: Event = {
   description: 'This is a sample event description.',
   type: 'Conference',
   slug: { current: 'sample-event' },
-  image: '/sample-event.jpg',
+  image: '/sample-event?.jpg',
   date: '2024-07-01T18:00:00Z',
   location: '123 Main St, City, Country',
   virtual: false,
@@ -46,7 +47,7 @@ const EVENT: Event = {
 };
 
 // --- Static Class Names ---
-const CLASSES = {
+const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
   wrapper: 'max-w-6xl mx-auto',
   header: 'mb-12',
@@ -81,64 +82,57 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function EventPage() {
   const event = EVENT;
 
-  const formatDate = (dateString: string) =>
-    new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-    });
+
 
   return (
-    <div className={CLASSES.container}>
-      <div className={CLASSES.wrapper}>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
         {/* Header */}
-        <div className={CLASSES.header}>
-          <Badge variant="secondary" className={CLASSES.badge}>
-            {event.type}
+        <div className={styles.header}>
+          <Badge variant={'secondary'}className={styles.badge}>
+            {event?.type}
           </Badge>
-          <h1 className={CLASSES.title}>{event.title}</h1>
-          <p className={CLASSES.description}>{event.description}</p>
+          <h1 className={styles.title}>{event?.title}</h1>
+          <p className={styles.description}>{event?.description}</p>
           <Button>
-            <Share2 className="h-4 w-4 mr-2" />
+            <Share2 className={'h-4 w-4 mr-2'}/>
             Share Event
           </Button>
         </div>
 
         {/* Event Image */}
-        <div className={CLASSES.imageWrapper}>
+        <div className={styles.imageWrapper}>
           <Image
-            src={event.image}
-            alt={event.title}
+            src={event?.image}
+            alt={event?.title}
             fill
-            className={CLASSES.image}
+            className={styles.image}
           />
         </div>
 
         {/* Event Details Card */}
-        <Card className={CLASSES.card}>
-          <CardContent className={CLASSES.cardContent}>
-            <div className={CLASSES.grid}>
+        <Card className={styles.card}>
+          <CardContent className={styles.cardContent}>
+            <div className={styles.grid}>
               <div>
-                <h2 className={CLASSES.sectionTitle}>Event Details</h2>
-                <div className={CLASSES.detailGroup}>
-                  <div className={CLASSES.detailRow}>
-                    <Calendar className={CLASSES.icon} />
+                <h2 className={styles.sectionTitle}>Event Details</h2>
+                <div className={styles.detailGroup}>
+                  <div className={styles.detailRow}>
+                    <Calendar className={styles.icon} />
                     <div>
-                      <h3 className={CLASSES.label}>Date & Time</h3>
-                      <p className={CLASSES.text}>{formatDate(event.date)}</p>
+                      <h3 className={styles.label}>Date & Time</h3>
+                      <p className={styles.text}>{formatDateTime(event?.date)}</p>
                     </div>
                   </div>
-                  <div className={CLASSES.detailRow}>
-                    <MapPin className={CLASSES.icon} />
+                  <div className={styles.detailRow}>
+                    <MapPin className={styles.icon} />
                     <div>
-                      <h3 className={CLASSES.label}>Location</h3>
-                      <p className={CLASSES.text}>{event.location}</p>
-                      {event.virtual && (
+                      <h3 className={styles.label}>Location</h3>
+                      <p className={styles.text}>{event?.location}</p>
+                      {event?.virtual && (
                         <Badge
-                          variant="secondary"
-                          className={CLASSES.virtualBadge}
+                          variant={'secondary'}
+                          className={styles.virtualBadge}
                         >
                           Virtual Event
                         </Badge>
@@ -147,18 +141,18 @@ export default async function EventPage() {
                   </div>
                 </div>
               </div>
-              {!event.virtual && (
+              {!event?.virtual && (
                 <div>
                   <iframe
-                    title="Event Location"
-                    width="100%"
-                    height="300"
-                    frameBorder="0"
+                    title={'Event Location'}
+                    width={'100%'}
+                    height={'300'}
+                    frameBorder={'0'}
                     src={`https://www.google.com/maps/embed/v1/place?key=${
                       process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
-                    }&q=${encodeURIComponent(event.location)}`}
+                    }&q=${encodeURIComponent(event?.location)}`}
                     allowFullScreen
-                    className={CLASSES.map}
+                    className={styles.map}
                   />
                 </div>
               )}
@@ -168,9 +162,9 @@ export default async function EventPage() {
 
         {/* Event Content */}
         <Card>
-          <CardContent className={CLASSES.cardContent}>
-            <div className={CLASSES.content}>
-              <PortableText value={event.content} />
+          <CardContent className={styles.cardContent}>
+            <div className={styles.content}>
+              <PortableText value={event?.content} />
             </div>
           </CardContent>
         </Card>

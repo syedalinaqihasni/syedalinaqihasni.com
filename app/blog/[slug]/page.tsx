@@ -6,7 +6,7 @@ import { Calendar, Clock, Share2 } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Post } from '@/types';
+import { Post } from '@/types/blogs';
 
 // Constants
 const TEXT = {
@@ -15,7 +15,7 @@ const TEXT = {
   readUnit: 'min read',
 };
 
-const STYLES = {
+const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
   wrapper: 'max-w-4xl mx-auto',
   categoryWrapper: 'flex flex-wrap gap-2 mb-4',
@@ -69,27 +69,27 @@ const formatDate = (dateString: string): string =>
 // });
 
 // return (
-// <div className={STYLES.container}>
-//   <div className={STYLES.wrapper}>
+// <div className={styles?.container}>
+//   <div className={styles?.wrapper}>
 //     {/* Header */}
-//     <div className="mb-8">
-//       <div className={STYLES.categoryWrapper}>
+//     <div className={'mb-8'}>
+//       <div className={styles?.categoryWrapper}>
 //         {post?.categories?.map((category: string) => (
-//           <Badge key={category} variant="secondary">
+//           <Badge key={category} variant={'secondary'}>
 //             {category}
 //           </Badge>
 //         ))}
 //       </div>
 
-//       <h1 className={STYLES.title}>{post?.title}</h1>
+//       <h1 className={styles?.title}>{post?.title}</h1>
 
-//       <div className={STYLES.metaRow}>
-//         <div className={STYLES.metaItem}>
-//           <Calendar className="h-4 w-4" />
+//       <div className={styles?.metaRow}>
+//         <div className={styles?.metaItem}>
+//           <Calendar className={'h-4 w-4'}/>
 //           {formatDate(post?.publishedAt)}
 //         </div>
-//         <div className={STYLES.metaItem}>
-//           <Clock className="h-4 w-4" />
+//         <div className={styles?.metaItem}>
+//           <Clock className={'h-4 w-4'}/>
 //           {post?.estimatedReadingTime} {TEXT.readUnit}
 //         </div>
 //       </div>
@@ -97,25 +97,25 @@ const formatDate = (dateString: string): string =>
 
 //     {/* Featured Image */}
 //     {post?.mainImage && (
-//       <div className={STYLES.imageWrapper}>
+//       <div className={styles?.imageWrapper}>
 //         <Image
-//           src={post.mainImage}
+//           src={post?.mainImage}
 //           alt={post?.title}
 //           fill
-//           className={STYLES.imageClass}
+//           className={styles?.image}
 //         />
 //       </div>
 //     )}
 
 //     {/* Content */}
-//     <div className={STYLES.content}>
+//     <div className={styles?.content}>
 //       <PortableText value={post?.content} />
 //     </div>
 
 //     {/* Share Button */}
-//     <div className={STYLES.shareWrapper}>
-//       <Button variant="outline">
-//         <Share2 className="h-4 w-4 mr-2" />
+//     <div className={styles?.shareWrapper}>
+//       <Button variant={'outline'}>
+//         <Share2 className={'h-4 w-4 mr-2'}/>
 //         {TEXT.shareButton}
 //       </Button>
 //     </div>

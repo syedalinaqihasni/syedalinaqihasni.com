@@ -7,9 +7,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Project } from '@/types';
+import { Project } from '@/types/projects';
 
 /**
  * ProjectList Component
@@ -41,11 +40,11 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
       {/* Tabs are defined here, but hidden or disabled for now.
           Uncomment TabsList and TabsTrigger if dynamic tab navigation is needed. */}
       <Tabs
-        defaultValue="all"
-        className="mb-8"
+        defaultValue={'all'}
+        className={'mb-8'}
         onValueChange={setActiveCategory}
       >
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
+        <TabsList className={'grid w-full grid-cols-2 md:grid-cols-5'}>
           {categories.map((category) => (
             <TabsTrigger key={category} value={category}>
               {category?.charAt(0).toUpperCase() + category?.slice(1)}
@@ -55,14 +54,14 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
       </Tabs>
 
       {/* AnimatePresence handles smooth transitions between category views */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode={'wait'}>
         <motion.div
           key={activeCategory}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'}
         >
           {filteredProjects.map((project) => (
             <motion.div
@@ -71,56 +70,56 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               whileHover={{ y: -5 }}
-              className="h-full"
+              className={'h-full'}
             >
-              <Card className="h-full overflow-hidden">
+              <Card className={'h-full overflow-hidden'}>
                 {/* Project image */}
-                <div className="relative h-56 w-full">
+                <div className={'relative h-56 w-full'}>
                   <Image
                     src={project?.image}
                     alt={project?.title}
                     fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    className={'object-cover transition-transform duration-300 hover:scale-105'}
                   />
                 </div>
 
                 {/* Project content */}
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">
+                <CardContent className={'p-6'}>
+                  <h3 className={'text-xl font-semibold mb-2'}>
                     {project?.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className={'text-muted-foreground mb-4'}>
                     {project?.description}
                   </p>
 
                   {/* Project tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className={'flex flex-wrap gap-2 mb-6'}>
                     {project?.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary">
+                      <Badge key={tag} variant={'secondary'}>
                         {tag}
                       </Badge>
                     ))}
                   </div>
 
                   {/* External links: GitHub & Demo */}
-                  <div className="flex gap-3">
-                    <Button size="sm" variant="outline" asChild>
+                  <div className={'flex gap-3'}>
+                    <Button size={'sm'}variant={'outline'}asChild>
                       <a
                         href={project?.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
                       >
-                        <Github className="h-4 w-4 mr-2" />
+                        <Github className={'h-4 w-4 mr-2'}/>
                         Code
                       </a>
                     </Button>
-                    <Button size="sm" asChild>
+                    <Button size={'sm'}asChild>
                       <a
                         href={project?.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
                       >
-                        <ExternalLink className="h-4 w-4 mr-2" />
+                        <ExternalLink className={'h-4 w-4 mr-2'}/>
                         Demo
                       </a>
                     </Button>

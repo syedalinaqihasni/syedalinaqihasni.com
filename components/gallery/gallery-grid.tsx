@@ -140,8 +140,8 @@ export default function GalleryGrid() {
   return (
     <div>
       {/* Album filter tabs */}
-      <Tabs defaultValue="all" className="mb-8" onValueChange={setActiveAlbum}>
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 max-w-lg mx-auto">
+      <Tabs defaultValue={'all'}className={'mb-8'}onValueChange={setActiveAlbum}>
+        <TabsList className={'grid w-full grid-cols-2 md:grid-cols-4 max-w-lg mx-auto'}>
           {albums.map((album) => (
             <TabsTrigger key={album.id} value={album.id}>
               {album.name}
@@ -151,7 +151,7 @@ export default function GalleryGrid() {
       </Tabs>
 
       {/* AnimatePresence for smooth tab content transitions */}
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode={'wait'}>
         <motion.div
           key={activeAlbum}
           initial={{ opacity: 0 }}
@@ -162,18 +162,18 @@ export default function GalleryGrid() {
           {/* Masonry grid for responsive image layout */}
           <Masonry
             breakpointCols={breakpointColumnsObj}
-            className="flex w-auto -ml-4"
-            columnClassName="pl-4 bg-clip-padding"
+            className={'flex w-auto -ml-4'}
+            columnClassName={'pl-4 bg-clip-padding'}
           >
             {filteredImages.map((image) => (
               <motion.div
                 key={image.id}
-                className="mb-4 cursor-pointer"
+                className={'mb-4 cursor-pointer'}
                 onClick={() => setSelectedImage(image)}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="relative rounded-lg overflow-hidden">
+                <div className={'relative rounded-lg overflow-hidden'}>
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -183,14 +183,14 @@ export default function GalleryGrid() {
                         ? 400
                         : 300
                     }
-                    className="w-full h-auto object-cover"
+                    className={'w-full h-auto object-cover'}
                   />
                   {/* Overlay with caption and tags on hover */}
-                  <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                    <p className="text-white font-medium">{image.caption}</p>
-                    <div className="flex flex-wrap gap-2 mt-2">
+                  <div className={'absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'}>
+                    <p className={'text-white font-medium'}>{image.caption}</p>
+                    <div className={'flex flex-wrap gap-2 mt-2'}>
                       {image.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary" className="text-xs">
+                        <Badge key={tag} variant={'secondary'}className={'text-xs'}>
                           {tag}
                         </Badge>
                       ))}
@@ -208,24 +208,24 @@ export default function GalleryGrid() {
         open={!!selectedImage}
         onOpenChange={(open) => !open && setSelectedImage(null)}
       >
-        <DialogContent className="max-w-3xl">
+        <DialogContent className={'max-w-3xl'}>
           {selectedImage && (
             <div>
-              <div className="relative w-full h-[60vh]">
+              <div className={'relative w-full h-[60vh]'}>
                 <Image
                   src={selectedImage.src}
                   alt={selectedImage.alt}
                   fill
-                  className="object-contain"
+                  className={'object-contain'}
                 />
               </div>
-              <div className="mt-4">
-                <h3 className="text-xl font-medium mb-2">
+              <div className={'mt-4'}>
+                <h3 className={'text-xl font-medium mb-2'}>
                   {selectedImage.caption}
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className={'flex flex-wrap gap-2'}>
                   {selectedImage.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary">
+                    <Badge key={tag} variant={'secondary'}>
                       {tag}
                     </Badge>
                   ))}

@@ -1,0 +1,65 @@
+
+import {  Github, Briefcase, FileText } from 'lucide-react';
+
+/**
+ * Static content data: texts, image URLs, social links.
+ */
+const HOME = {
+  hero: {
+    name: 'Syed Hasni',
+    title: 'Frontend Web Designer',
+    description:
+      "I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.",
+    imageSrc: '/images/syedalinaqihasni.webp',
+    imageAlt: 'Syed Ali Naqi Hasni - Web Developer',
+  },
+  buttons: {
+    projects: {
+      label: 'View Projects',
+      href: '#projects',
+    },
+    hireMe: {
+      label: 'Hire Me',
+      href: '#contact',
+    },
+  },
+  socialLinks: [
+    {
+      label: 'GitHub',
+      href: 'https://github.com/syedalinaqihasni',
+      icon: Github,
+    },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/syedalinaqihasni',
+      icon: Briefcase,
+    },
+    {
+      label: 'Resume',
+      href: '/resume.pdf',
+      icon: FileText,
+      isExternal: true,
+    },
+  ],
+  sections: {
+    featuredProjects: {
+      title: 'Featured Projects',
+      viewAllLabel: 'View All',
+      viewAllHref: '/projects',
+    },
+    skills: {
+      title: 'Skills & Expertise',
+      seeAllLabel: 'See All Skills',
+      seeAllHref: '/skills',
+    },
+    contact: {
+      title: 'Get In Touch',
+      description:
+        "Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Let's make something great together.",
+    },
+  },
+};
+
+export {
+    HOME
+}

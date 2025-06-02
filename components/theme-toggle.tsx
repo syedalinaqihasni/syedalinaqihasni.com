@@ -27,12 +27,12 @@ export default function ThemeToggle() {
   if (!mounted) {
     return (
       <Button
-        variant="ghost"
-        size="icon"
+        variant={'ghost'}
+        size={'icon'}
         disabled
-        aria-label="Toggle theme (loading)"
+        aria-label={'Toggle theme (loading)'}
       >
-        <Sun className="h-5 w-5" />
+        <Sun className={'h-5 w-5'}/>
       </Button>
     );
   }
@@ -46,15 +46,15 @@ export default function ThemeToggle() {
 
   return (
     <Button
-      variant="ghost"
-      size="icon"
+      variant={'ghost'}
+      size={'icon'}
       onClick={handleToggle}
-      aria-label="Toggle theme"
+      aria-label={'Toggle theme'}
     >
       {theme === 'dark' ? (
-        <Sun className="h-5 w-5 transition-all" />
+        <Sun className={'h-5 w-5 transition-all'}/>
       ) : (
-        <Moon className="h-5 w-5 transition-all" />
+        <Moon className={'h-5 w-5 transition-all'}/>
       )}
     </Button>
   );
