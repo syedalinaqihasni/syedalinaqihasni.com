@@ -15,10 +15,10 @@ import { SKILLS } from '@/constants/skills';
  */
 export default function HomeSkills() {
   return (
-    <div className={'grid grid-cols-1 md:grid-cols-3 gap-8'}>
-      <SkillCategory title={'Frontend'}skills={SKILLS.frontend} delay={0} />
-      <SkillCategory title={'Backend'}skills={SKILLS.backend} delay={0.2} />
-      <SkillCategory title={'Other'}skills={SKILLS.other} delay={0.4} />
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <SkillCategory title="Frontend" skills={SKILLS.frontend} delay={0} />
+      <SkillCategory title="Backend" skills={SKILLS.backend} delay={0.2} />
+      <SkillCategory title="Other" skills={SKILLS.other} delay={0.4} />
     </div>
   );
 }
@@ -52,17 +52,17 @@ function SkillCategory({
       <Card>
         {/* Header section with category title */}
         <CardHeader>
-          <CardTitle className={'text-xl text-center'}>{title}</CardTitle>
+          <CardTitle className="text-xl text-center">{title}</CardTitle>
         </CardHeader>
 
         {/* Skill items list */}
-        <CardContent className={'space-y-4'}>
+        <CardContent className="space-y-4">
           {skills.map((skill, index) => (
             <div key={skill.name}>
               {/* Skill label and percentage */}
-              <div className={'flex justify-between mb-1'}>
+              <div className="flex justify-between mb-1">
                 <span>{skill.name}</span>
-                <span className={'text-muted-foreground'}>{skill.level}%</span>
+                <span className="text-muted-foreground">{skill.level}%</span>
               </div>
 
               {/* Progress bar with delay based on index */}
@@ -74,7 +74,7 @@ function SkillCategory({
                   delay: delay + index * 0.1,
                 }}
               >
-                <Progress value={skill.level} className={'h-2'}/>
+                <Progress value={skill.level} className="h-2" />
               </motion.div>
             </div>
           ))}

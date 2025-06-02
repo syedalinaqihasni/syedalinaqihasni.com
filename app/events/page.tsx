@@ -1,28 +1,26 @@
-import { Metadata } from "next";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { events } from "@/constants/events";
-import { formatDateTime } from "@/lib/utils";
-import { styles } from "@/styles/event";
+import { Metadata } from 'next';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Calendar, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 // Text constants
-const PAGE_TITLE = "Upcoming Events";
+const PAGE_TITLE = 'Upcoming Events';
 const PAGE_DESCRIPTION =
   "Join me at these upcoming events where I'll be speaking, teaching, and sharing knowledge about web development and technology.";
-const METADATA_TITLE = "Events | Syed Ali Naqi Hasni";
+const METADATA_TITLE = 'Events | Syed Ali Naqi Hasni';
 const METADATA_DESCRIPTION =
-  "Check out my upcoming speaking engagements, workshops, and other events";
+  'Check out my upcoming speaking engagements, workshops, and other events';
 
 export const metadata: Metadata = {
   title: METADATA_TITLE,
   description: METADATA_DESCRIPTION,
 };
+
 type Event = {
-  id: string;
+  _id: string;
   slug: string;
   image: string;
   title: string;
@@ -33,65 +31,119 @@ type Event = {
   virtual?: boolean;
 };
 
-export type { Event };
+// Dummy events data (replace with your own data source)
+const events: Event[] = [
+  {
+    _id: '1',
+    slug: 'react-workshop',
+    image: '/images/react-workshop.jpg',
+    title: 'React Workshop',
+    description: 'A hands-on workshop on React fundamentals.',
+    type: 'Workshop',
+    date: '2024-07-15T10:00:00',
+    location: 'New York, NY',
+    virtual: false,
+  },
+  {
+    _id: '2',
+    slug: 'webinar-ai',
+    image: '/images/webinar-ai.jpg',
+    title: 'AI in Web Development',
+    description: 'Exploring AI tools for modern web development.',
+    type: 'Webinar',
+    date: '2024-08-01T18:00:00',
+    location: 'Online',
+    virtual: true,
+  },
+];
+
+// Class name constants
+const containerClass = 'container mx-auto px-4 py-32 md:py-40';
+const maxWidthWrapperClass = 'max-w-6xl mx-auto';
+const headerClass = 'text-center mb-16';
+const titleClass = 'text-4xl md:text-5xl font-bold mb-6';
+const descriptionClass =
+  'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
+
+const gridClass = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8';
+const cardClass = 'overflow-hidden';
+const imageWrapperClass = 'relative block h-48 w-full';
+const imageClass = 'object-cover';
+
+const virtualBadgeClass = 'absolute top-4 right-4';
+
+const badgeClass = 'mb-2';
+
+const eventTitleClass =
+  'text-xl font-semibold mb-2 block hover:text-primary transition-colors';
+const eventDescriptionClass = 'text-muted-foreground mb-4';
+
+const eventDetailsClass = 'space-y-2 text-sm text-muted-foreground mb-4';
+const eventDetailRowClass = 'flex items-center gap-2';
+
+const buttonClass = 'w-full';
 
 export default function EventsPage() {
+  const formatDate = (dateString: string) =>
+    new Date(dateString).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+    });
+
   return (
-    <main className={styles.container}>
-      <div className={styles.maxWidthWrapper}>
-        <header className={styles.header}>
-          <h1 className={styles.title}>{PAGE_TITLE}</h1>
-          <p className={styles.description}>{PAGE_DESCRIPTION}</p>
+    <main className={containerClass}>
+      <div className={maxWidthWrapperClass}>
+        <header className={headerClass}>
+          <h1 className={titleClass}>{PAGE_TITLE}</h1>
+          <p className={descriptionClass}>{PAGE_DESCRIPTION}</p>
         </header>
 
-        <section className={styles.grid}>
+        <section className={gridClass}>
           {events.map((event) => (
-            <Card key={event?.id} className={styles.card}>
-              <Link href={`/events/${event?.slug}`} passHref>
-                <a className={styles.imageWrapper}>
+            <Card key={event._id} className={cardClass}>
+              <Link href={`/events/${event.slug}`} passHref>
+                <a className={imageWrapperClass}>
                   <Image
-                    src={event?.image}
-                    alt={event?.title}
+                    src={event.image}
+                    alt={event.title}
                     fill
-                    className={styles.image}
+                    className={imageClass}
                   />
-                  {event?.virtual && (
-                    <Badge
-                      className={styles.virtualBadge}
-                      variant={"secondary"}
-                    >
+                  {event.virtual && (
+                    <Badge className={virtualBadgeClass} variant="secondary">
                       Virtual Event
                     </Badge>
                   )}
                 </a>
               </Link>
 
-              <CardContent className={"p-6"}>
-                <Badge variant={"outline"} className={styles.badge}>
-                  {event?.type}
+              <CardContent className="p-6">
+                <Badge variant="outline" className={badgeClass}>
+                  {event.type}
                 </Badge>
 
-                <Link href={`/events/${event?.slug}`} passHref>
-                  <a className={styles.eventTitle}>{event?.title}</a>
+                <Link href={`/events/${event.slug}`} passHref>
+                  <a className={eventTitleClass}>{event.title}</a>
                 </Link>
 
-                <p className={styles.eventDescription}>{event?.description}</p>
+                <p className={eventDescriptionClass}>{event.description}</p>
 
-                <div className={styles.eventDetails}>
-                  <div className={styles.eventDetailRow}>
-                    <Calendar className={"h-4 w-4"} />
-                    <time dateTime={event?.date}>
-                      {formatDateTime(event?.date)}
-                    </time>
+                <div className={eventDetailsClass}>
+                  <div className={eventDetailRowClass}>
+                    <Calendar className="h-4 w-4" />
+                    <time dateTime={event.date}>{formatDate(event.date)}</time>
                   </div>
-                  <div className={styles.eventDetailRow}>
-                    <MapPin className={"h-4 w-4"} />
-                    {event?.location}
+                  <div className={eventDetailRowClass}>
+                    <MapPin className="h-4 w-4" />
+                    {event.location}
                   </div>
                 </div>
 
-                <Button asChild className={styles.button}>
-                  <Link href={`/events/${event?.slug}`}>View Details</Link>
+                <Button asChild className={buttonClass}>
+                  <Link href={`/events/${event.slug}`}>View Details</Link>
                 </Button>
               </CardContent>
             </Card>

@@ -69,7 +69,7 @@ const SOCIAL_LINKS = [
 ];
 
 // Tailwind classes
-const styles = {
+const STYLES = {
   container: 'w-full',
   heading: 'text-lg font-semibold mb-4',
   grid: 'grid grid-cols-2 gap-4',
@@ -86,29 +86,29 @@ const styles = {
 
 export default function Footer() {
   return (
-    <footer className={'bg-muted py-12 mt-20'}>
-      <div className={'container mx-auto px-4 md:px-6'}>
-        <div className={'grid grid-cols-1 md:grid-cols-3 gap-8'}>
+    <footer className="bg-muted py-12 mt-20">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand and Description */}
           <div>
-            <Link href={'/'}className={'font-bold text-2xl mb-4'}>
-              <h3 className={'mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400'}>
+            <Link href="/" className="font-bold text-2xl mb-4">
+              <h3 className="mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400">
                 {TEXT.brandName}
               </h3>
             </Link>
-            <p className={'text-muted-foreground'}>{TEXT.description}</p>
+            <p className="text-muted-foreground">{TEXT.description}</p>
           </div>
 
           {/* Navigation Links */}
-          <div className={styles?.container}>
-            <h3 className={styles?.heading}>{TEXT.quickLinksHeading}</h3>
-            <div className={styles?.grid}>
+          <div className={STYLES.container}>
+            <h3 className={STYLES.heading}>{TEXT.quickLinksHeading}</h3>
+            <div className={STYLES.grid}>
               {LINKS_GROUPS.map((group, i) => (
-                <ul className={styles?.list} key={i}>
+                <ul className={STYLES.list} key={i}>
                   {group.map((link) => (
-                    <li key={link?.path}>
-                      <Link href={link?.path} className={styles?.link}>
-                        {link?.name}
+                    <li key={link.path}>
+                      <Link href={link.path} className={STYLES.link}>
+                        {link.name}
                       </Link>
                     </li>
                   ))}
@@ -119,9 +119,9 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <div className={styles?.contactBlock}>
-              <h3 className={styles?.heading}>{TEXT.connectHeading}</h3>
-              <ul className={styles?.contactList}>
+            <div className={STYLES.contactBlock}>
+              <h3 className={STYLES.heading}>{TEXT.connectHeading}</h3>
+              <ul className={STYLES.contactList}>
                 {CONTACT_INFO.map((item, idx) => (
                   <li key={idx}>
                     {item.label}: {item.value}
@@ -133,19 +133,19 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className={styles?.footerBase}>
-          <p className={'text-sm text-muted-foreground'}>{TEXT.copyright}</p>
-          <div className={'mt-2 md:mt-0'}>
-            <div className={styles?.socialIcons}>
+        <div className={STYLES.footerBase}>
+          <p className="text-sm text-muted-foreground">{TEXT.copyright}</p>
+          <div className="mt-2 md:mt-0">
+            <div className={STYLES.socialIcons}>
               {SOCIAL_LINKS.map(({ icon: Icon, url, label }) => (
                 <a
                   key={label}
                   href={url}
-                  target={'_blank'}
-                  rel={'noopener noreferrer'}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                 >
-                  <Icon className={styles?.socialIcon} />
+                  <Icon className={STYLES.socialIcon} />
                 </a>
               ))}
             </div>

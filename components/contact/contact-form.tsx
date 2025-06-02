@@ -91,21 +91,21 @@ export default function Contact() {
   }
 
   return (
-    <div className={'bg-card rounded-lg shadow-sm p-6 md:p-8'}>
+    <div className="bg-card rounded-lg shadow-sm p-6 md:p-8">
       {/* Form context provider for controlled form components */}
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className={'space-y-6'}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           {/* Grid layout for name and email inputs side-by-side on md+ screens */}
-          <div className={'grid grid-cols-1 md:grid-cols-2 gap-6'}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Name field */}
             <FormField
               control={form.control}
-              name={'name'}
+              name="name"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Name</FormLabel>
                   <FormControl>
-                    <Input placeholder={'Your name'}{...field} />
+                    <Input placeholder="Your name" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -115,12 +115,12 @@ export default function Contact() {
             {/* Email field */}
             <FormField
               control={form.control}
-              name={'email'}
+              name="email"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder={'Your email'}type={'email'}{...field} />
+                    <Input placeholder="Your email" type="email" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -131,12 +131,12 @@ export default function Contact() {
           {/* Subject field */}
           <FormField
             control={form.control}
-            name={'subject'}
+            name="subject"
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Subject</FormLabel>
                 <FormControl>
-                  <Input placeholder={'Subject of your message'}{...field} />
+                  <Input placeholder="Subject of your message" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -146,14 +146,14 @@ export default function Contact() {
           {/* Message textarea field */}
           <FormField
             control={form.control}
-            name={'message'}
+            name="message"
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder={'Your message'}
-                    className={'min-h-[120px] resize-y'}
+                    placeholder="Your message"
+                    className="min-h-[120px] resize-y"
                     {...field}
                   />
                 </FormControl>
@@ -164,16 +164,16 @@ export default function Contact() {
 
           {/* Submit button with loading state */}
           <Button
-            type={'submit'}
+            type="submit"
             disabled={isSubmitting}
-            className={'w-full md:w-auto'}
+            className="w-full md:w-auto"
           >
             {isSubmitting ? (
               <>Sending...</>
             ) : (
               <>
                 Send Message
-                <Send className={'ml-2 h-4 w-4'}/>
+                <Send className="ml-2 h-4 w-4" />
               </>
             )}
           </Button>

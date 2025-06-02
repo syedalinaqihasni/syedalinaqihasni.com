@@ -8,7 +8,7 @@ import { Calendar, Clock } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
-import { Post } from '@/types/blogs';
+import { Post } from '@/types';
 
 // Static fallback blog post data
 const DATA = {
@@ -116,83 +116,83 @@ const BlogList = ({ posts }: BlogListProps) => {
   const filteredPosts = postList.filter((post) => {
     const query = searchQuery.toLowerCase();
     return (
-      post?.title.toLowerCase().includes(query) ||
-      post?.excerpt.toLowerCase().includes(query) ||
-      post?.categories.some((cat) => cat.toLowerCase().includes(query))
+      post.title.toLowerCase().includes(query) ||
+      post.excerpt.toLowerCase().includes(query) ||
+      post.categories.some((cat) => cat.toLowerCase().includes(query))
     );
   });
 
   return (
     <div>
       {/* Search input */}
-      <div className={styles?.inputWrapper}>
+      <div className={styles.inputWrapper}>
         <Input
           placeholder={TEXT.searchPlaceholder}
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className={styles?.inputField}
+          className={styles.inputField}
         />
       </div>
 
       {/* Blog post grid */}
-      <div className={styles?.grid}>
+      <div className={styles.grid}>
         {filteredPosts.map((post, index) => (
           <motion.div
-            key={post?.id}
+            key={post.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Card className={styles?.card}>
-              <Link href={`/blog/${post?.slug}`}>
-                <a className={'relative block h-48 w-full'}>
+            <Card className={styles.card}>
+              <Link href={`/blog/${post.slug}`}>
+                <a className="relative block h-48 w-full">
                   <Image
-                    src={post?.image}
-                    alt={post?.title}
-                    layout={'fill'}
-                    className={styles?.image}
+                    src={post.image}
+                    alt={post.title}
+                    layout="fill"
+                    className={styles.image}
                     priority={index < 3} // Prioritize images of first few posts
                   />
                 </a>
               </Link>
-              <CardContent className={'p-6'}>
+              <CardContent className="p-6">
                 {/* Categories badges */}
-                <div className={styles?.categoriesWrapper}>
-                  {post?.categories.slice(0, 2).map((cat) => (
+                <div className={styles.categoriesWrapper}>
+                  {post.categories.slice(0, 2).map((cat) => (
                     <Badge
                       key={cat}
-                      variant={'secondary'}
-                      className={styles?.categoryBadge}
+                      variant="secondary"
+                      className={styles.categoryBadge}
                     >
                       {cat}
                     </Badge>
                   ))}
-                  {post?.categories.length > 2 && (
-                    <Badge variant={'outline'}className={styles?.categoryBadge}>
-                      +{post?.categories.length - 2}
+                  {post.categories.length > 2 && (
+                    <Badge variant="outline" className={styles.categoryBadge}>
+                      +{post.categories.length - 2}
                     </Badge>
                   )}
                 </div>
 
                 {/* Title */}
-                <Link href={`/blog/${post?.slug}`}>
+                <Link href={`/blog/${post.slug}`}>
                   <a>
-                    <h3 className={styles?.title}>{post?.title}</h3>
+                    <h3 className={styles.title}>{post.title}</h3>
                   </a>
                 </Link>
 
                 {/* Excerpt */}
-                <p className={styles?.excerpt}>{post?.excerpt}</p>
+                <p className={styles.excerpt}>{post.excerpt}</p>
 
                 {/* Meta info: date and reading time */}
-                <div className={styles?.metaWrapper}>
-                  <div className={styles?.metaItem}>
-                    <Calendar className={styles?.icon} />
-                    {formatDate(post?.publishedAt)}
+                <div className={styles.metaWrapper}>
+                  <div className={styles.metaItem}>
+                    <Calendar className={styles.icon} />
+                    {formatDate(post.publishedAt)}
                   </div>
-                  <div className={'flex items-center'}>
-                    <Clock className={styles?.icon} />
-                    {post?.readingTime}
+                  <div className="flex items-center">
+                    <Clock className={styles.icon} />
+                    {post.readingTime}
                   </div>
                 </div>
               </CardContent>

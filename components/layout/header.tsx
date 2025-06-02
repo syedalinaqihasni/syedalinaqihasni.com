@@ -25,7 +25,7 @@ const NAV_ITEMS = [
 ];
 
 // Tailwind Classes
-const styles = {
+const STYLES = {
   header: 'fixed top-0 w-full z-50 transition-all duration-300',
   container: 'container mx-auto px-4 md:px-6',
   brand: 'font-bold text-2xl',
@@ -57,10 +57,10 @@ export default function Header() {
       >
         <Button
           variant={pathname === item.path ? 'default' : 'ghost'}
-          size={'sm'}
+          size="sm"
           className={
             isMobile
-              ? styles?.mobileNavItem
+              ? STYLES.mobileNavItem
               : pathname !== item.path
                 ? 'hover:bg-muted'
                 : ''
@@ -73,45 +73,45 @@ export default function Header() {
 
   return (
     <header
-      className={`${styles?.header} ${
+      className={`${STYLES.header} ${
         isScrolled
           ? 'bg-background/80 backdrop-blur-md shadow-sm py-3'
           : 'bg-transparent py-5'
       }`}
     >
-      <div className={styles?.container}>
-        <div className={'flex items-center justify-between'}>
+      <div className={STYLES.container}>
+        <div className="flex items-center justify-between">
           {/* Brand */}
-          <Link href={'/'}className={styles?.brand}>
+          <Link href="/" className={STYLES.brand}>
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className={styles?.brandGradient}
+              className={STYLES.brandGradient}
             >
               {TEXT.brandName}
             </motion.span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className={styles?.desktopNav}>
+          <nav className={STYLES.desktopNav}>
             {renderNavItems()}
             <ThemeToggle />
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className={styles?.mobileControls}>
+          <div className={STYLES.mobileControls}>
             <ThemeToggle />
             <Button
-              variant={'ghost'}
-              size={'icon'}
+              variant="ghost"
+              size="icon"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label={TEXT.menuToggleAriaLabel}
             >
               {mobileMenuOpen ? (
-                <X className={'h-6 w-6'}/>
+                <X className="h-6 w-6" />
               ) : (
-                <Menu className={'h-6 w-6'}/>
+                <Menu className="h-6 w-6" />
               )}
             </Button>
           </div>
@@ -124,9 +124,9 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className={styles?.mobileNav}
+            className={STYLES.mobileNav}
           >
-            <div className={'flex flex-col space-y-2'}>
+            <div className="flex flex-col space-y-2">
               {renderNavItems(true)}
             </div>
           </motion.nav>

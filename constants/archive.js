@@ -1,4 +1,4 @@
-const ARCHIVE = {
+export const ARCHIVE = {
   medium: [
     {
       id: '1',
@@ -64,79 +64,3 @@ const ARCHIVE = {
     },
   ],
 };
-
-const archivePosts = {
-  medium: [
-    {
-      id: '1',
-      title: 'Optimizing React Apps with useMemo',
-      excerpt:
-        'Understand when and how to use useMemo to avoid unnecessary re-renders.',
-      tags: ['React', 'Performance'],
-      url: 'https://medium.com/example',
-      readTime: '4 min read',
-      date: '2024-01-12T00:00:00Z',
-    },
-  ],
-  devto: [
-    {
-      id: '2',
-      title: 'Demystifying Server Components in Next.js',
-      excerpt:
-        'Server components are here. Let’s unpack what they really mean.',
-      tags: ['Next.js', 'React'],
-      url: 'https://dev.to/example',
-      readTime: '6 min read',
-      date: '2024-02-03T00:00:00Z',
-    },
-  ],
-  reddit: [
-    {
-      id: '3',
-      title: 'I built my portfolio using Next.js 14. Feedback appreciated!',
-      excerpt: 'Check it out and let me know your thoughts.',
-      tags: ['Next.js', 'Portfolio'],
-      url: 'https://reddit.com/example',
-      upvotes: 230,
-      date: '2024-03-18T00:00:00Z',
-    },
-  ],
-};
-
-const socialPosts = {
-  twitter: [
-    {
-      id: '1',
-      content:
-        'Just launched a new React component library! Check it out on GitHub 🚀',
-      date: '2024-02-15T10:30:00Z',
-      likes: 42,
-      retweets: 12,
-    },
-  ],
-  linkedin: [
-    {
-      id: '1',
-      title: 'New Blog Post: Building Scalable Web Applications',
-      content:
-        'Excited to share my latest blog post about building scalable web applications using modern technologies...',
-      date: '2024-02-13T09:15:00Z',
-      likes: 156,
-      comments: 23,
-    },
-  ],
-  instagram: [
-    {
-      id: '1',
-      image:
-        'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg',
-      caption: 'Another day at the office! #coding #developer #tech',
-      date: '2024-02-11T11:30:00Z',
-      likes: 89,
-    },
-  ],
-};
-
-export {
-  socialPosts,archivePosts,ARCHIVE
-}

@@ -11,7 +11,7 @@ import { twMerge } from 'tailwind-merge';
  * @example
  * ```typescript
  * cn('btn', { 'btn-active': isActive }, ['extra-class']);
- * // => "btn btn-active extra-class'}
+ * // => "btn btn-active extra-class"
  * ```
  *
  * @remarks
@@ -21,23 +21,3 @@ import { twMerge } from 'tailwind-merge';
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
-/**
- * Formats ISO date strings into human-readable format
- * @param dateString - ISO date string
- * @returns formatted date string like "February 15, 2024'}
- */
-export const formatDate = (dateString: string) =>
-  new Date(dateString).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-
-  export const formatDateTime = (dateString: string) =>
-    new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-    });
