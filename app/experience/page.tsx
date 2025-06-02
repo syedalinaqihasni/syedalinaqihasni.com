@@ -3,7 +3,7 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { EXPERIENCES } from '@/constants';
+import { EXPERIENCES } from '@/constants/experience';
 import Image from 'next/image';
 
 export const metadata: Metadata = {

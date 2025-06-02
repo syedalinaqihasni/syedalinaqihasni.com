@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Contact from '@/components/contact/contact-form';
-import { CONTACT_CARDS } from '@/constants';
+import { CONTACT_CARDS } from '@/constants/contact';
 import { Card, CardContent } from '@/components/ui/card';
 
 // --- Metadata ---

@@ -4,7 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink, Calendar } from 'lucide-react';
 import Image from 'next/image';
-import { PROJECT } from '@/constants';
+import { PROJECT } from '@/constants/projects';
 
 export default function ProjectPage() {
   const formatDate = (dateString: string) =>

@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { FEATURED_PROJECTS } from '@/constants';
+import { FEATURED_PROJECTS } from '@/constants/projects';
 
 /**
  * HomeProjects Component

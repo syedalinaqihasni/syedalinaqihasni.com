@@ -8,7 +8,7 @@ import { Github, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Tabs } from '@/components/ui/tabs';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Project } from '@/types';
 
 /**
@@ -27,14 +27,14 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
   // Dynamically derive category list from provided projects
   const categories = [
     'all',
-    ...Array.from(new Set(projects.map((project) => project.category))),
+    ...Array.from(new Set(projects.map((project) => project?.category))),
   ];
 
   // Filter projects based on selected category
   const filteredProjects =
     activeCategory === 'all'
       ? projects
-      : projects.filter((project) => project.category === activeCategory);
+      : projects.filter((project) => project?.category === activeCategory);
 
   return (
     <div>
@@ -45,13 +45,13 @@ const ProjectList = ({ projects }: { projects: Project[] }) => {
         className="mb-8"
         onValueChange={setActiveCategory}
       >
-        {/* <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
           {categories.map((category) => (
             <TabsTrigger key={category} value={category}>
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {category?.charAt(0).toUpperCase() + category?.slice(1)}
             </TabsTrigger>
           ))}
-        </TabsList> */}
+        </TabsList>
       </Tabs>
 
       {/* AnimatePresence handles smooth transitions between category views */}

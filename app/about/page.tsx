@@ -1,32 +1,13 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { JOURNEY, TOOLS } from '@/constants';
+import { ABOUT_PAGE_TEXT, JOURNEY, TOOLS } from '@/constants/about';
+import { SEO } from '@/constants/seo';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'About Me | Syed Ali Naqi Hasni',
-  description: 'Learn more about my journey, experience, and the tools I use',
-};
-
-const ABOUT_PAGE_TEXT = {
-  title: 'About Me',
-  description:
-    'A passionate developer dedicated to crafting impactful digital experiences across WordPress, React, and Front-end ecosystems.',
-  profile: {
-    heading: 'My Story',
-    paragraphs: [
-      `Hello! I&#39;m Syed Ali Naqi Hasni, a Front-end web developer based in Karachi, Pakistan. I specialize in building high-performance web applications using WordPress, React, and Next.js, blending design with seamless functionality.`,
-      `With over 5 years of experience, including 3+ years working remotely with a UK-based company, I&#39;ve delivered solutions ranging from e-commerce platforms and custom web apps to SEO-optimized sites and SaaS products.`,
-      `Beyond development, I actively explore emerging technologies like AI, Web3, and the Metaverse, and I love sharing knowledge through LinkedIn content and open-source contributions.`,
-    ],
-  },
-  journey: {
-    heading: 'My Journey',
-  },
-  tools: {
-    heading: 'Tools & Technologies',
-  },
+  title: SEO.about.title,
+  description: SEO.about.description,
 };
 
 export default function AboutPage() {

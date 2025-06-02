@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { FEATURED_PROJECTS } from '@/constants';
+import { FEATURED_PROJECTS } from '@/constants/projects';
 import ProjectList from '@/components/projects/project-list';
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default async function ProjectsPage() {
           <p className={DESCRIPTION_CLASSES}>{PAGE_DESCRIPTION}</p>
         </div>
 
-        <ProjectList projects={FEATURED_PROJECTS} />
+        {/* <ProjectList projects={FEATURED_PROJECTS} /> */}
       </div>
     </div>
   );
