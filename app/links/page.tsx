@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'Find all my social media profiles and important links in one place',
 };
 
-const TEXT = {
+const CONSTANT = {
   profileAlt: 'Syed Ali Naqi Hasni Profile Picture',
 };
 
@@ -213,8 +213,8 @@ export default function LinksPage() {
             <a
               key={link.id}
               href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={'_blank'}
+              rel={'noopener noreferrer'}
               className={`${ICON_WRAPPER_BASE} ${link.color}`}
               aria-label={link.title}
             >
@@ -228,9 +228,9 @@ export default function LinksPage() {
           <div className={PROFILE_IMAGE_WRAPPER}>
             <Image
               src={PROFILE.image}
-              alt={TEXT.profileAlt}
+              alt={CONSTANT?.profileAlt}
               fill
-              className="object-cover"
+              className={'object-cover'}
             />
           </div>
           <h1 className={PROFILE_NAME}>{PROFILE.name}</h1>
@@ -245,11 +245,11 @@ export default function LinksPage() {
                 <Button
                   key={link.id}
                   asChild
-                  variant="outline"
+                  variant={'outline'}
                   className={`${BUTTON_BASE} ${link.color}`}
                 >
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    <span className="mr-2">{link.icon}</span>
+                  <a href={link.url} target={'_blank'} rel={'noopener noreferrer'}>
+                    <span className={'mr-2'}>{link.icon}</span>
                     {link.title}
                   </a>
                 </Button>

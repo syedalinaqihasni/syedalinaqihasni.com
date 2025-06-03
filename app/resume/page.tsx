@@ -74,25 +74,25 @@ export default function ResumePage() {
             <h2 className={titleClass}>{RESUME.profile.title}</h2>
             <address className={contactInfoClass}>
               <div className={contactItemClass}>
-                <Mail className="h-4 w-4" />
+                <Mail className={'h-4 w-4'} />
                 <a href={`mailto:${RESUME.profile.email}`}>
                   {RESUME.profile.email}
                 </a>
               </div>
               <div className={contactItemClass}>
-                <Phone className="h-4 w-4" />
+                <Phone className={'h-4 w-4'} />
                 <a href={`tel:${RESUME.profile.phone}`}>
                   {RESUME.profile.phone}
                 </a>
               </div>
               <div className={contactItemClass}>
-                <MapPin className="h-4 w-4" />
+                <MapPin className={'h-4 w-4'} />
                 <span>{RESUME.profile.location}</span>
               </div>
             </address>
           </div>
           <Button>
-            <Download className="mr-2 h-4 w-4" />
+            <Download className={'mr-2 h-4 w-4'} />
             Download PDF
           </Button>
         </header>
@@ -154,13 +154,13 @@ export default function ResumePage() {
         <Card className={summaryCardClass}>
           <CardContent className={cardContentClass}>
             <h3 className={sectionTitleClass}>{SECTION_TITLES.skills}</h3>
-            <div className="space-y-4">
+            <div className={'space-y-4'}>
               {SKILL_CATEGORIES.map((category) => (
                 <div key={category}>
                   <h4 className={skillCategoryClass}>{category}</h4>
                   <div className={skillBadgeContainerClass}>
                     {RESUME.skills[category].map((skill) => (
-                      <Badge key={skill} variant="secondary">
+                      <Badge key={skill} variant={'secondary'}>
                         {skill}
                       </Badge>
                     ))}

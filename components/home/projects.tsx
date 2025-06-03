@@ -18,7 +18,7 @@ import { FEATURED_PROJECTS } from '@/constants/projects';
  */
 export default function HomeProjects() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'}>
       {FEATURED_PROJECTS.map((project, index) => (
         <motion.div
           key={project.id}
@@ -26,55 +26,55 @@ export default function HomeProjects() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
-          <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <Card className={'h-full overflow-hidden hover:shadow-lg transition-shadow duration-300'}>
             {/* Project image */}
-            <div className="relative h-48 w-full">
+            <div className={'relative h-48 w-full'}>
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover"
+                className={'object-cover'}
               />
             </div>
 
             {/* Card content with project details */}
-            <CardContent className="p-6">
+            <CardContent className={'p-6'}>
               {/* Project title */}
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className={'text-xl font-semibold mb-2'}>{project.title}</h3>
 
               {/* Project description with line clamp */}
-              <p className="text-muted-foreground mb-4 line-clamp-2">
+              <p className={'text-muted-foreground mb-4 line-clamp-2'}>
                 {project.description}
               </p>
 
               {/* Project tags */}
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className={'flex flex-wrap gap-2 mb-6'}>
                 {project.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">
+                  <Badge key={tag} variant={'secondary'}>
                     {tag}
                   </Badge>
                 ))}
               </div>
 
               {/* Links to GitHub repo and live demo */}
-              <div className="flex gap-3">
-                <Button size="sm" variant="outline" asChild>
+              <div className={'flex gap-3'}>
+                <Button size={'sm'} variant={'outline'} asChild>
                   <a
                     href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={'_blank'}
+                    rel={'noopener noreferrer'}
                   >
-                    <Github className="h-4 w-4 mr-2" />
+                    <Github className={'h-4 w-4 mr-2'} />
                     Code
                   </a>
                 </Button>
-                <Button size="sm" asChild>
+                <Button size={'sm'} asChild>
                   <a
                     href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={'_blank'}
+                    rel={'noopener noreferrer'}
                   >
-                    <ExternalLink className="h-4 w-4 mr-2" />
+                    <ExternalLink className={'h-4 w-4 mr-2'} />
                     Demo
                   </a>
                 </Button>

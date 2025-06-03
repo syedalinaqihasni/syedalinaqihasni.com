@@ -60,19 +60,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={'en'} suppressHydrationWarning>
       <body
         className={`${interFont.variable} ${poppinsFont.variable} font-sans min-h-screen bg-background text-foreground`}
       >
         <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
+          attribute={'class'}
+          defaultTheme={'system'}
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex min-h-screen flex-col">
+          <div className={'flex min-h-screen flex-col'}>
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className={'flex-1'}>{children}</main>
             <Footer />
           </div>
           <Toaster />

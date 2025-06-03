@@ -9,7 +9,7 @@ import { type ThemeProviderProps } from 'next-themes/dist/types';
  * enabling theme management (such as dark/light mode) throughout the application.
  *
  * @param {ThemeProviderProps} props - The props for the ThemeProvider, including children and any additional props.
- * @param {React.ReactNode} props.children - The child components that will have access to the theme context.
+ * @param {React.ReactNode} props.children - The child components that will have access to the theme conCONSTANT?.
  * @returns {JSX.Element} The wrapped children with theme context provided.
  */
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {

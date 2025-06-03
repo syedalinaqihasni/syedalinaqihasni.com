@@ -96,7 +96,7 @@ const CONTENT = {
  */
 function SocialButtons({ links }: { links: typeof CONTENT.socialLinks }) {
   return (
-    <div className={styles.socialButtons}>
+    <div className={styles?.socialButtons}>
       {links.map(({ label, href, icon: Icon, isExternal }, index) => {
         // If external (like resume), render as anchor tag with target=_blank
         if (isExternal) {
@@ -104,12 +104,12 @@ function SocialButtons({ links }: { links: typeof CONTENT.socialLinks }) {
             <a
               key={index}
               href={href}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={'_blank'}
+              rel={'noopener noreferrer'}
               aria-label={label}
             >
-              <Button variant="ghost" size="icon" aria-label={label}>
-                <Icon className="h-5 w-5" />
+              <Button variant={'ghost'} size={'icon'} aria-label={label}>
+                <Icon className={'h-5 w-5'} />
               </Button>
             </a>
           );
@@ -119,12 +119,12 @@ function SocialButtons({ links }: { links: typeof CONTENT.socialLinks }) {
           <a
             key={index}
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={'_blank'}
+            rel={'noopener noreferrer'}
             aria-label={label}
           >
-            <Button variant="ghost" size="icon" aria-label={label}>
-              <Icon className="h-5 w-5" />
+            <Button variant={'ghost'} size={'icon'} aria-label={label}>
+              <Icon className={'h-5 w-5'} />
             </Button>
           </a>
         );
@@ -149,24 +149,24 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className={styles.heroPadding}>
-        <div className={styles.containerMedium}>
-          <div className={styles.heroGrid}>
+      <section className={styles?.heroPadding}>
+        <div className={styles?.containerMedium}>
+          <div className={styles?.heroGrid}>
             {/* Text Column */}
-            <div className={styles.heroTextCol}>
-              <h1 className={styles.heroTitle}>{`Hi, I'm `}{hero.name}</h1>
-              <h2 className={styles.heroSubtitle}>{hero.title}</h2>
-              <p className={styles.heroDescription}>{hero.description}</p>
+            <div className={styles?.heroTextCol}>
+              <h1 className={styles?.heroTitle}>{`Hi, I'm `}{hero.name}</h1>
+              <h2 className={styles?.heroSubtitle}>{hero.title}</h2>
+              <p className={styles?.heroDescription}>{hero.description}</p>
 
-              <div className={styles.heroButtons}>
+              <div className={styles?.heroButtons}>
                 <Link href={buttons.projects.href}>
-                  <Button size="lg" className="rounded-full">
+                  <Button size={'lg'} className={'rounded-full'}>
                     {buttons.projects.label}
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className={'ml-2 h-4 w-4'} />
                   </Button>
                 </Link>
                 <Link href={buttons.hireMe.href}>
-                  <Button size="lg" variant="outline" className="rounded-full">
+                  <Button size={'lg'} variant={'outline'} className={'rounded-full'}>
                     {buttons.hireMe.label}
                   </Button>
                 </Link>
@@ -176,13 +176,13 @@ export default function Home() {
             </div>
 
             {/* Image Column */}
-            <div className={styles.heroImageCol}>
-              <div className={styles.heroImageWrapper}>
+            <div className={styles?.heroImageCol}>
+              <div className={styles?.heroImageWrapper}>
                 <Image
                   src={hero.imageSrc}
                   alt={hero.imageAlt}
                   fill
-                  className="object-cover"
+                  className={'object-cover'}
                   priority
                 />
               </div>
@@ -192,16 +192,16 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className={`${styles.sectionPadding} bg-muted/50`} id="projects">
-        <div className={styles.containerLarge}>
-          <div className={styles.projectsHeaderWrapper}>
-            <h2 className={styles.sectionHeaderLeft}>
+      <section className={`${styles?.sectionPadding} bg-muted/50`} id={'projects'}>
+        <div className={styles?.containerLarge}>
+          <div className={styles?.projectsHeaderWrapper}>
+            <h2 className={styles?.sectionHeaderLeft}>
               {featuredProjects.title}
             </h2>
             <Link href={featuredProjects.viewAllHref}>
-              <Button variant="outline">
+              <Button variant={'outline'}>
                 {featuredProjects.viewAllLabel}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className={'ml-2 h-4 w-4'} />
               </Button>
             </Link>
           </div>
@@ -210,15 +210,15 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className={styles.sectionPadding}>
-        <div className={styles.containerLarge}>
-          <h2 className={styles.sectionHeader}>{skills.title}</h2>
+      <section className={styles?.sectionPadding}>
+        <div className={styles?.containerLarge}>
+          <h2 className={styles?.sectionHeader}>{skills.title}</h2>
           <HomeSkills />
-          <div className={styles.centerText}>
+          <div className={styles?.centerText}>
             <Link href={skills.seeAllHref}>
               <Button>
                 {skills.seeAllLabel}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className={'ml-2 h-4 w-4'} />
               </Button>
             </Link>
           </div>
@@ -226,10 +226,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className={`${styles.sectionPadding} bg-muted/50`} id="contact">
-        <div className={styles.containerSmall}>
-          <h2 className={styles.sectionHeader}>{contact.title}</h2>
-          <p className={styles.contactText}>{contact.description}</p>
+      <section className={`${styles?.sectionPadding} bg-muted/50`} id={'contact'}>
+        <div className={styles?.containerSmall}>
+          <h2 className={styles?.sectionHeader}>{contact.title}</h2>
+          <p className={styles?.contactText}>{contact.description}</p>
           <Contact />
         </div>
       </section>

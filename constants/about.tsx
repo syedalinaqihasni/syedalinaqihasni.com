@@ -1,4 +1,4 @@
-const ABOUT_PAGE_TEXT = {
+const ABOUT_PAGE_CONSTANT = {
   title: 'About Me',
   description:
     'A passionate developer dedicated to crafting impactful digital experiences across WordPress, React, and Front-end ecosystems.',
@@ -71,4 +71,4 @@ const TOOLS = [
   },
   { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
 ];
-export { ABOUT_PAGE_TEXT, JOURNEY, TOOLS };
+export { ABOUT_PAGE_CONSTANT, JOURNEY, TOOLS };

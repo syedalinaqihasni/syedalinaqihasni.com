@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 // --- Static Text ---
-const TEXT = {
+const CONSTANT = {
   pageTitle: 'Get In Touch',
   pageDescription: `Have a project in mind or want to discuss potential opportunities? 
 I'd love to hear from you. Let's make something great together.`,
@@ -19,7 +19,7 @@ I'd love to hear from you. Let's make something great together.`,
 };
 
 // --- Static Class Names ---
-const CLASSES = {
+const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
   wrapper: 'max-w-6xl mx-auto',
   header: 'text-center mb-16',
@@ -37,14 +37,14 @@ const CLASSES = {
 
 export default function ContactPage() {
   return (
-    <div className={CLASSES.container}>
-      <div className={CLASSES.wrapper}>
-        <div className={CLASSES.header}>
-          <h1 className={CLASSES.title}>{TEXT.pageTitle}</h1>
-          <p className={CLASSES.description}>{TEXT.pageDescription}</p>
+    <div className={styles?.container}>
+      <div className={styles?.wrapper}>
+        <div className={styles?.header}>
+          <h1 className={styles?.title}>{CONSTANT?.pageTitle}</h1>
+          <p className={styles?.description}>{CONSTANT?.pageDescription}</p>
         </div>
 
-        <div className={CLASSES.cardsGrid}>
+        <div className={styles?.cardsGrid}>
           {CONTACT_CARDS.map((card) => (
             <ContactCard
               key={card.title}
@@ -56,8 +56,8 @@ export default function ContactPage() {
           ))}
         </div>
 
-        <div className={CLASSES.messageBox}>
-          <h2 className={CLASSES.messageTitle}>{TEXT.sendMessageTitle}</h2>
+        <div className={styles?.messageBox}>
+          <h2 className={styles?.messageTitle}>{CONSTANT?.sendMessageTitle}</h2>
           <Contact />
         </div>
       </div>
@@ -77,13 +77,13 @@ function ContactCard({
   link: string;
 }) {
   return (
-    <Card className={CLASSES.card}>
-      <CardContent className={CLASSES.cardContent}>
-        <div className={CLASSES.iconWrapper}>{icon}</div>
-        <h3 className={CLASSES.cardTitle}>{title}</h3>
+    <Card className={styles?.card}>
+      <CardContent className={styles?.cardContent}>
+        <div className={styles?.iconWrapper}>{icon}</div>
+        <h3 className={styles?.cardTitle}>{title}</h3>
         <a
           href={link}
-          className={CLASSES.cardLink}
+          className={styles?.cardLink}
           target={link.startsWith('http') ? '_blank' : undefined}
           rel={link.startsWith('http') ? 'noopener noreferrer' : undefined}
         >

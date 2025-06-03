@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: 'My professional experience and work history',
 };
 
-const TEXT = {
+const CONSTANT = {
   pageTitle: 'Experience',
   pageDescription:
     "My professional journey and the companies I've had the pleasure to work with.",
@@ -46,14 +46,14 @@ const ExperiencePage = () => (
   <div className={CONTAINER}>
     <div className={INNER_WRAPPER}>
       <header className={HEADER}>
-        <h1 className={TITLE}>{TEXT.pageTitle}</h1>
-        <p className={DESCRIPTION}>{TEXT.pageDescription}</p>
+        <h1 className={TITLE}>{CONSTANT?.pageTitle}</h1>
+        <p className={DESCRIPTION}>{CONSTANT?.pageDescription}</p>
       </header>
 
       <section className={CARD_SPACING}>
         {EXPERIENCES.map((experience) => (
-          <Card key={experience.id} className="overflow-hidden">
-            <CardContent className="p-0">
+          <Card key={experience.id} className={'overflow-hidden'}>
+            <CardContent className={'p-0'}>
               <div className={CARD_GRID}>
                 <aside className={SIDEBAR}>
                   <div className={LOGO_WRAPPER}>
@@ -67,14 +67,14 @@ const ExperiencePage = () => (
                   <h3 className={COMPANY_NAME}>{experience.company}</h3>
                   <p className={COMPANY_PERIOD}>{experience.period}</p>
                   <p className={COMPANY_LOCATION}>{experience.location}</p>
-                  <Badge variant="secondary" className={BADGE_MARGIN}>
+                  <Badge variant={'secondary'} className={BADGE_MARGIN}>
                     {experience.type}
                   </Badge>
                 </aside>
 
                 <div className={CONTENT_SECTION}>
                   {experience.positions.map((position, idx) => (
-                    <article key={idx} className="mb-8 last:mb-0">
+                    <article key={idx} className={'mb-8 last:mb-0'}>
                       <h3 className={ROLE_TITLE}>{position.role}</h3>
                       <ul className={DESCRIPTION_LIST}>
                         {position.description.map((descItem, i) => (
@@ -83,7 +83,7 @@ const ExperiencePage = () => (
                       </ul>
                       <div className={SKILL_BADGE_WRAPPER}>
                         {position.skills.map((skill) => (
-                          <Badge key={skill} variant="outline">
+                          <Badge key={skill} variant={'outline'}>
                             {skill}
                           </Badge>
                         ))}

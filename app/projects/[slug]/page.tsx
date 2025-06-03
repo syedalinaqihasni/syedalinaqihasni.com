@@ -61,7 +61,7 @@ export default function ProjectPage() {
         <div className={HEADER}>
           <div className={TECH_BADGES}>
             {PROJECT.technologies.map((tech) => (
-              <Badge key={tech} variant="secondary">
+              <Badge key={tech} variant={'secondary'}>
                 {tech}
               </Badge>
             ))}
@@ -74,19 +74,19 @@ export default function ProjectPage() {
             <Button asChild>
               <a
                 href={PROJECT.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={'_blank'}
+                rel={'noopener noreferrer'}
               >
                 <ExternalLink className={BUTTON_ICON} />
                 View Live
               </a>
             </Button>
 
-            <Button variant="outline" asChild>
+            <Button variant={'outline'} asChild>
               <a
                 href={PROJECT.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={'_blank'}
+                rel={'noopener noreferrer'}
               >
                 <Github className={BUTTON_ICON} />
                 View Code
@@ -132,7 +132,7 @@ export default function ProjectPage() {
           <CardContent className={DETAILS_CARD_CONTENT}>
             <div className={DETAILS_HEADER}>
               <div className={DETAILS_DATE}>
-                <Calendar className="h-4 w-4" />
+                <Calendar className={'h-4 w-4'} />
                 {formatDate(PROJECT.publishedAt)}
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function ProjectPage() {
                   </p>
                   <div className={RELATED_BADGES}>
                     {relatedProject.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary">
+                      <Badge key={tech} variant={'secondary'}>
                         {tech}
                       </Badge>
                     ))}

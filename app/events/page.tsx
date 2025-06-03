@@ -113,15 +113,15 @@ export default function EventsPage() {
                     className={imageClass}
                   />
                   {event.virtual && (
-                    <Badge className={virtualBadgeClass} variant="secondary">
+                    <Badge className={virtualBadgeClass} variant={'secondary'}>
                       Virtual Event
                     </Badge>
                   )}
                 </a>
               </Link>
 
-              <CardContent className="p-6">
-                <Badge variant="outline" className={badgeClass}>
+              <CardContent className={'p-6'}>
+                <Badge variant={'outline'} className={badgeClass}>
                   {event.type}
                 </Badge>
 
@@ -133,11 +133,11 @@ export default function EventsPage() {
 
                 <div className={eventDetailsClass}>
                   <div className={eventDetailRowClass}>
-                    <Calendar className="h-4 w-4" />
+                    <Calendar className={'h-4 w-4'} />
                     <time dateTime={event.date}>{formatDate(event.date)}</time>
                   </div>
                   <div className={eventDetailRowClass}>
-                    <MapPin className="h-4 w-4" />
+                    <MapPin className={'h-4 w-4'} />
                     {event.location}
                   </div>
                 </div>

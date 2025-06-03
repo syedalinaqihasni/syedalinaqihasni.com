@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 };
 
 // --- Static Text ---
-const TEXT = {
+const CONSTANT = {
   pageTitle: 'My Blog',
   pageDescription:
     'Thoughts, tutorials, and insights about web development, design, and technology.',
 };
 
 // --- Static Class Names ---
-const CLASSES = {
+const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
   wrapper: 'max-w-6xl mx-auto',
   header: 'text-center mb-16',
@@ -29,11 +29,11 @@ export default async function BlogPage() {
   // const posts: Post[] = await sanityFetch({ query: postsQuery });
 
   return (
-    <div className={CLASSES.container}>
-      <div className={CLASSES.wrapper}>
-        <div className={CLASSES.header}>
-          <h1 className={CLASSES.title}>{TEXT.pageTitle}</h1>
-          <p className={CLASSES.description}>{TEXT.pageDescription}</p>
+    <div className={styles?.container}>
+      <div className={styles?.wrapper}>
+        <div className={styles?.header}>
+          <h1 className={styles?.title}>{CONSTANT?.pageTitle}</h1>
+          <p className={styles?.description}>{CONSTANT?.pageDescription}</p>
         </div>
 
         {/* <BlogList posts={posts} /> */}
