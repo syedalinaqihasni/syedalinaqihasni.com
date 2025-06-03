@@ -17,6 +17,7 @@ import {   TAB_TITLES,
   ARCHIVE,
   archivePosts,
   socialPosts,} from '@/constants/archive';
+import { formatDate } from '@/lib/utils';
 
 
 export const metadata: Metadata = {
@@ -40,12 +41,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
-const formatDate = (dateString: string) =>
-  new Date(dateString).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+
 
 export default function ArchivePage() {
   return (

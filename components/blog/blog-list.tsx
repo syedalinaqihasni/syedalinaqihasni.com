@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { CONSTANT, posts } from '@/constants/blogs';
+import { formatDate } from '@/lib/utils';
 
 
 // Tailwind CSS class groups for styling
@@ -31,13 +32,7 @@ const styles = {
 const BlogList = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Helper to format published date to a human-readable string
-  const formatDate = (date: string) =>
-    new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
+ 
 
   // Filter posts based on search query matching title, excerpt, or categories
   const filteredPosts = posts.filter((post) => {

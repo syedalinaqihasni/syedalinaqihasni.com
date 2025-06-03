@@ -6,7 +6,29 @@ import { Download, Mail, Phone, MapPin } from "lucide-react";
 import { CONSTANT, SECTION_TITLES, SKILL_CATEGORIES } from "@/constants/resume";
 import Link from "next/link";
 
-
+/**
+ * Metadata for CONSTANT Page
+ */
+export const metadata: Metadata = {
+  title: "CONSTANT | Syed Ali Naqi Hasni",
+  description: "View or download my professional CONSTANT",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://syedalinaqihasni.com",
+    title: "Syed Ali Naqi Hasni | Frontend Web Developer",
+    description:
+      "Personal portfolio website showcasing my projects, skills, and experience",
+    siteName: "Syed Ali Naqi Hasni",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Syed Ali Naqi Hasni | Frontend Web Developer",
+    description:
+      "Personal portfolio website showcasing my projects, skills, and experience",
+  },
+  metadataBase: new URL("https://syedalinaqihasni.com"),
+};
 
 /** CSS classes */
 const containerClass = "container mx-auto px-4 py-32 md:py-40";
@@ -36,30 +58,6 @@ const skillCategoryClass = "font-medium mb-2 capitalize";
 const skillBadgeContainerClass = "flex flex-wrap gap-2";
 
 const certificationsListClass = "space-y-2 text-muted-foreground";
-
-/**
- * Metadata for CONSTANT Page
- */
-export const metadata: Metadata = {
-  title: "CONSTANT | Syed Ali Naqi Hasni",
-  description: "View or download my professional CONSTANT",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://syedalinaqihasni.com",
-    title: "Syed Ali Naqi Hasni | Frontend Web Developer",
-    description:
-      "Personal portfolio website showcasing my projects, skills, and experience",
-    siteName: "Syed Ali Naqi Hasni",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Syed Ali Naqi Hasni | Frontend Web Developer",
-    description:
-      "Personal portfolio website showcasing my projects, skills, and experience",
-  },
-  metadataBase: new URL("https://syedalinaqihasni.com"),
-};
 
 /**
  * CONSTANTPage Component

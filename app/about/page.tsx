@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { CONSTANT, JOURNEY, TOOLS } from '@/constants/about';
-import { SEO } from '@/constants/seo';
+
 import Image from 'next/image';
 
 export const metadata: Metadata = {

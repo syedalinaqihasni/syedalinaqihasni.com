@@ -110,4 +110,8 @@ export const FEATURED_PROJECTS = [
       liveUrl: 'https://example.com',
     },
   ];
+ export  const CONSTANT ={
+  title:'My Projects',
+  description:"Here's a selection of my best work across web development, design, and software engineering.",
+}
   

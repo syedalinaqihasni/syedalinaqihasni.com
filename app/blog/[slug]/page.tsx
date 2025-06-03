@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { CONSTANT, posts } from '@/constants/blogs';
 import { Post } from '@/types/blogs';
 import { notFound } from 'next/navigation';
+import { formatDate } from '@/lib/utils';
 
 
 export async function generateMetadata({
@@ -58,13 +59,6 @@ const styles = {
   shareWrapper: 'text-center',
 };
 
-// Utils
-const formatDate = (dateString: string): string =>
-  new Date(dateString).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
 
 
 const BlogPostPage = async ({ params }: { params: { slug: string } }) => {

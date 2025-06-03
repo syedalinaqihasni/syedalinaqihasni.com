@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { Event } from '@/types/events';
 import { notFound } from 'next/navigation';
 import { events } from '@/constants/events';
+import { formatDateTime } from '@/lib/utils';
 
 
 export async function generateMetadata({
@@ -71,15 +72,6 @@ const styles = {
 const EventPage = async ({ params }: { params: { slug: string } }) => {
 const event:Event=events.filter ((event) => event.slug === params.slug)[0];
 
-  const formatDate = (dateString: string) =>
-    new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-    });
-
   return (
     <div className={styles?.container}>
       <div className={styles?.wrapper}>
@@ -117,7 +109,7 @@ const event:Event=events.filter ((event) => event.slug === params.slug)[0];
                     <Calendar className={styles?.icon} />
                     <div>
                       <h3 className={styles?.label}>Date & Time</h3>
-                      <p className={styles?.text}>{formatDate(event.date)}</p>
+                      <p className={styles?.text}>{formatDateTime(event.date)}</p>
                     </div>
                   </div>
                   <div className={styles?.detailRow}>

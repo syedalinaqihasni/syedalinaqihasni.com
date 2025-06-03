@@ -6,14 +6,9 @@ import { Github, ExternalLink, Calendar } from 'lucide-react';
 import Image from 'next/image';
 import { PROJECT } from '@/constants/projects';
 import Link from 'next/link';
+import { formatDate } from '@/lib/utils';
 
 export default function ProjectPage() {
-  const formatDate = (dateString: string) =>
-    new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
 
   // CSS Class Constants
   const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';

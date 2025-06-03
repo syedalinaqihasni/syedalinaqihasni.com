@@ -3,6 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { SocialPosts } from '@/types/social';
 import { socialPosts,TAB_TITLES,CONSTANT } from '@/constants/social';
+import { formatDate } from '@/lib/utils';
 
 /**
  * Metadata for SEO and sharing
@@ -27,19 +28,6 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://syedalinaqihasni.com'),
 };
-
-
-/**
- * Formats ISO date strings into human-readable format
- * @param dateString - ISO date string
- * @returns formatted date string like "February 15, 2024"
- */
-const formatDate = (dateString: string) =>
-  new Date(dateString).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
 
 /**
  * Renders posts for a given social media type

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Event } from "@/types/events";
 import { events } from "@/constants/events";
+import { formatDateTime } from "@/lib/utils";
 
 // Text constants
 const PAGE_TITLE = "Upcoming Events";
@@ -65,14 +66,6 @@ const eventDetailRowClass = "flex items-center gap-2";
 const buttonClass = "w-full";
 
 export default function EventsPage() {
-  const formatDate = (dateString: string) =>
-    new Date(dateString).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-    });
 
   return (
     <main className={containerClass}>
@@ -112,7 +105,7 @@ export default function EventsPage() {
                 <div className={eventDetailsClass}>
                   <div className={eventDetailRowClass}>
                     <Calendar className={"h-4 w-4"} />
-                    <time dateTime={event.date}>{formatDate(event.date)}</time>
+                    <time dateTime={event.date}>{formatDateTime(event.date)}</time>
                   </div>
                   <div className={eventDetailRowClass}>
                     <MapPin className={"h-4 w-4"} />
