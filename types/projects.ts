@@ -12,15 +12,37 @@
  * @property {string} githubUrl - URL to the project's GitHub repository.
  * @property {string} liveUrl - URL to the live version of the project.
  */
+
 type Projects = {
-  id: string;
+  id?: string; 
+  slug: string;
   title: string;
+  excerpt?: string;
   description: string;
+  longDescription: string; 
   image: string;
-  category: string;
-  tags: string[];
+  categories?: string; 
+  tags?: string[]; 
   githubUrl: string;
   liveUrl: string;
+  technologies?: string[];
+  date?: string;
+  publishedAt: string;
+  stats: {
+    users: number | string;
+    orders: number | string;
+    revenue: number | string;
+  };
+  gallery?: string[];
+  relatedProjects?: {
+    id: string;
+    title: string;
+    slug: string;
+    description: string;
+    image: string;
+    technologies?: string[];
+  }[];
 };
+
 
 export type { Projects };

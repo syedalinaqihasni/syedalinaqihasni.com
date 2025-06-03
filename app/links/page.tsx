@@ -7,6 +7,9 @@ import Link from 'next/link';
 import { CONSTANT, LINKS, PROFILE } from '@/constants/links';
 import { styles } from '@/styles/links';
 
+// Force static generation
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Links | Syed Ali Naqi Hasni',
   description:

@@ -6,6 +6,9 @@ import { CONSTANT} from '@/constants/about';
 import Image from 'next/image';
 import { styles } from '@/styles/about';
 
+// Force static generation
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'About Me | Syed Ali Naqi Hasni',
   description: 'Learn more about my journey, experience, and the tools I use.',

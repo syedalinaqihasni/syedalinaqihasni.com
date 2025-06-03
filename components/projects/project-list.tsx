@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Projects } from '@/types/projects';
+import { projects } from '@/constants/projects';
 
 /**
  * ProjectList Component
@@ -20,21 +21,21 @@ import { Projects } from '@/types/projects';
  * @param {Projects[]} props.projects - Array of project objects to be displayed.
  * @returns JSX.Element
  */
-const ProjectList = ({ projects }: { projects: Projects[] }) => {
+const ProjectList = () => {
   // State to track currently selected category tab
   const [activeCategory, setActiveCategory] = useState('all');
 
   // Dynamically derive category list from provided projects
   const categories = [
     'all',
-    ...Array.from(new Set(projects?.map((project) => project?.category))),
+    ...Array.from(new Set(projects?.map((project) => project?.categories))),
   ];
 
   // Filter projects based on selected category
   const filteredProjects =
     activeCategory === 'all'
       ? projects
-      : projects.filter((project) => project?.category === activeCategory);
+      : projects.filter((project) => project?.categories === activeCategory);
 
   return (
     <div>

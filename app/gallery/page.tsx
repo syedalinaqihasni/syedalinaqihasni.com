@@ -3,6 +3,9 @@ import GalleryGrid from '@/components/gallery/gallery-grid';
 import { CONSTANT } from '@/constants/gallery';
 import { styles } from '@/styles/gallery';
 
+// Force static generation
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Gallery | Syed Ali Naqi Hasni',
   description:

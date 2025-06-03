@@ -45,8 +45,12 @@ export async function generateMetadata({
   };
 }
 
+export async function generateStaticParams() {
+  return events.map((event) => ({
+    slug: event.slug,
+  }));
+}
 
-// --- Component ---
 const EventPage = async ({ params }: { params: { slug: string } }) => {
 const event:Event=events.filter ((event) => event.slug === params.slug)[0];
 

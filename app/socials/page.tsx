@@ -9,6 +9,9 @@ import { styles } from '@/styles/social';
 /**
  * Metadata for SEO and sharing
  */
+// Force static generation
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = {
   title: 'Social Media | Portfolio',
   description: 'My social media posts and updates from various platforms',

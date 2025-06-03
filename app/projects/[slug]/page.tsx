@@ -4,32 +4,76 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink, Calendar } from 'lucide-react';
 import Image from 'next/image';
-import { PROJECT } from '@/constants/projects';
+import { projects } from '@/constants/projects';
 import Link from 'next/link';
 import { formatDate } from '@/lib/utils';
 import { styles } from '@/styles/projectsSingle';
+import { notFound } from 'next/navigation';
+import { Projects } from '@/types/projects';
 
-export default function ProjectPage() {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const project: Projects | undefined = projects.find((e) => e.slug === params.slug);
+
+  if (!project) return notFound();
+
+  return {
+    title: project.title,
+    description: project.excerpt || project.title,
+    openGraph: {
+      title: project.title,
+      description: project.excerpt || project.title,
+      type: 'article',
+      publishedTime: project.date,
+      images: project.image
+        ? [
+            {
+              url: project.image,
+              alt: project.title,
+            },
+          ]
+        : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: project.title,
+      description: project.excerpt || project.title,
+      images: project.image ? [project.image] : [],
+    },
+  };
+}
+
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
+const ProjectPage = async ({ params }: { params: { slug: string } }) => {
+const project:Projects=projects.filter ((p) => p.slug === params.slug)[0];
   return (
     <div className={styles?.CONTAINER}>
       <div className={styles?.CONTENT_WRAPPER}>
         {/* Header */}
         <div className={styles?.HEADER}>
           <div className={styles?.TECH_BADGES}>
-            {PROJECT.technologies?.map((tech) => (
+            {project.technologies?.map((tech) => (
               <Badge key={tech} variant={'secondary'}>
                 {tech}
               </Badge>
             ))}
           </div>
 
-          <h1 className={styles?.TITLE}>{PROJECT.title}</h1>
-          <p className={styles?.DESCRIPTION}>{PROJECT.description}</p>
+          <h1 className={styles?.TITLE}>{project.title}</h1>
+          <p className={styles?.DESCRIPTION}>{project.description}</p>
 
           <div className={styles?.BUTTON_GROUP}>
             <Button asChild>
               <Link
-                href={PROJECT.liveUrl}
+                href={project.liveUrl}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
@@ -40,7 +84,7 @@ export default function ProjectPage() {
 
             <Button variant={'outline'} asChild>
               <Link
-                href={PROJECT.githubUrl}
+                href={project.githubUrl}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
@@ -54,8 +98,8 @@ export default function ProjectPage() {
         {/* Main Image */}
         <div className={styles?.IMAGE_WRAPPER}>
           <Image
-            src={PROJECT.image}
-            alt={PROJECT.title}
+            src={project.image}
+            alt={project.title}
             fill
             className={styles?.IMAGE_CLASS}
           />
@@ -65,19 +109,19 @@ export default function ProjectPage() {
         <div className={styles?.STATS_GRID}>
           <Card>
             <CardContent className={styles?.CARD_CONTENT_CENTERED}>
-              <h3 className={styles?.STAT_NUMBER}>{PROJECT.stats.users}</h3>
+              <h3 className={styles?.STAT_NUMBER}>{project.stats.users}</h3>
               <p className={styles?.STAT_LABEL}>Active Users</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className={styles?.CARD_CONTENT_CENTERED}>
-              <h3 className={styles?.STAT_NUMBER}>{PROJECT.stats.orders}</h3>
+              <h3 className={styles?.STAT_NUMBER}>{project.stats.orders}</h3>
               <p className={styles?.STAT_LABEL}>Orders Processed</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className={styles?.CARD_CONTENT_CENTERED}>
-              <h3 className={styles?.STAT_NUMBER}>{PROJECT.stats.revenue}</h3>
+              <h3 className={styles?.STAT_NUMBER}>{project.stats.revenue}</h3>
               <p className={styles?.STAT_LABEL}>Revenue Generated</p>
             </CardContent>
           </Card>
@@ -89,12 +133,12 @@ export default function ProjectPage() {
             <div className={styles?.DETAILS_HEADER}>
               <div className={styles?.DETAILS_DATE}>
                 <Calendar className={'h-4 w-4'} />
-                {formatDate(PROJECT.publishedAt)}
+                {formatDate(project.publishedAt)}
               </div>
             </div>
             <div
               className={styles?.LONG_DESCRIPTION}
-              dangerouslySetInnerHTML={{ __html: PROJECT.longDescription }}
+              dangerouslySetInnerHTML={{ __html: project.longDescription }}
             />
           </CardContent>
         </Card>
@@ -103,11 +147,11 @@ export default function ProjectPage() {
         <div className={styles?.GALLERY_SECTION}>
           <h2 className={styles?.GALLERY_TITLE}>Project Gallery</h2>
           <div className={styles?.GALLERY_GRID}>
-            {PROJECT.gallery?.map((image, index) => (
+            {project.gallery?.map((image, index) => (
               <div key={index} className={styles?.GALLERY_IMAGE_WRAPPER}>
                 <Image
                   src={image}
-                  alt={`${PROJECT.title} gallery image ${index + 1}`}
+                  alt={`${project.title} gallery image ${index + 1}`}
                   fill
                   className={styles?.IMAGE_CLASS}
                 />
@@ -120,7 +164,7 @@ export default function ProjectPage() {
         <div className={styles?.RELATED_SECTION}>
           <h2 className={styles?.RELATED_TITLE}>Related Projects</h2>
           <div className={styles?.RELATED_GRID}>
-            {PROJECT.relatedProjects?.map((relatedProject) => (
+            {project.relatedProjects?.map((relatedProject) => (
               <Card key={relatedProject.id}>
                 <div className={styles?.RELATED_CARD_IMAGE_WRAPPER}>
                   <Image
@@ -151,3 +195,5 @@ export default function ProjectPage() {
     </div>
   );
 }
+
+export default ProjectPage;

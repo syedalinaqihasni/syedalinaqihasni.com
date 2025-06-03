@@ -1,7 +1,10 @@
 import { Metadata } from 'next';
-import { CONSTANT, FEATURED_PROJECTS } from '@/constants/projects';
+import { CONSTANT, projects } from '@/constants/projects';
 import ProjectList from '@/components/projects/project-list';
 import { styles } from '@/styles/projects';
+
+// Force static generation
+export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: 'Projects | Syed Ali Naqi Hasni',
@@ -23,7 +26,6 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://syedalinaqihasni.com'),
 };
-
 export default async function ProjectsPage() {
   return (
     <div className={styles?.CONTAINER_styles}>
@@ -33,7 +35,7 @@ export default async function ProjectsPage() {
           <p className={styles?.DESCRIPTION_styles}>{CONSTANT.description}</p>
         </div>
 
-        {/* <ProjectList projects={FEATURED_PROJECTS} /> */}
+        <ProjectList  />
       </div>
     </div>
   );

@@ -47,8 +47,11 @@ export async function generateMetadata({
   };
 }
 
-
-
+export async function generateStaticParams() {
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
 const post:Post=posts.filter ((post) => post.slug === params.slug)[0];

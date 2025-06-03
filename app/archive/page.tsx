@@ -14,11 +14,13 @@ import {   TAB_TITLES,
   MEDIUM,
   DEVTO,
   REDDIT,
-  ARCHIVE,
   archivePosts,
   socialPosts,} from '@/constants/archive';
 import { formatDate } from '@/lib/utils';
 
+
+// Force static generation
+export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
   title: PAGE_TITLE_FULL,

@@ -1,5 +1,7 @@
 // Mock data - in a real app, this would come from Sanity
-export const PROJECT = {
+export const projects = [
+  {
+    id:'1',
   title: 'E-Commerce Platform',
   slug: 'e-commerce-platform',
   description:
@@ -46,6 +48,8 @@ export const PROJECT = {
     'https://images.pexels.com/photos/6956906/pexels-photo-6956906.jpeg',
   ],
   technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'AWS', 'Docker'],
+  tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+  categories:  'React', 
   githubUrl: 'https://github.com',
   liveUrl: 'https://example.com',
   publishedAt: '2024-01-15',
@@ -75,7 +79,7 @@ export const PROJECT = {
       technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
     },
   ],
-};
+}];
 
 // Mock data - in a real app, this would come from Sanity
 export const FEATURED_PROJECTS = [
