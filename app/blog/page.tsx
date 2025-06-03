@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import BlogList from '@/components/blog/blog-list';
-import { Post } from '@/types';
+import { Post } from '@/types/blogs';
 
 // --- Metadata ---
 export const metadata: Metadata = {
@@ -14,6 +14,22 @@ const CONSTANT = {
   pageTitle: 'My Blog',
   pageDescription:
     'Thoughts, tutorials, and insights about web development, design, and technology.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://syedalinaqihasni.com',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+    siteName: 'Syed Ali Naqi Hasni',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+  },
+  metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
 // --- Static Class Names ---

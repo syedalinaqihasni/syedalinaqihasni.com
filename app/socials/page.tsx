@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { SocialPosts } from '@/types/social';
 
 /**
  * Metadata for SEO and sharing
@@ -8,6 +9,22 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 export const metadata: Metadata = {
   title: 'Social Media | Portfolio',
   description: 'My social media posts and updates from various platforms',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://syedalinaqihasni.com',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+    siteName: 'Syed Ali Naqi Hasni',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+  },
+  metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
 const SOCIALS_TITLE = 'Social Media';
@@ -19,36 +36,6 @@ const TAB_TITLES = {
   linkedin: 'LinkedIn',
   instagram: 'Instagram',
 };
-
-/** Interfaces describing shape of each social post */
-interface TwitterPost {
-  id: string;
-  content: string;
-  date: string;
-  likes: number;
-  retweets: number;
-}
-interface LinkedInPost {
-  id: string;
-  title: string;
-  content: string;
-  date: string;
-  likes: number;
-  comments: number;
-}
-interface InstagramPost {
-  id: string;
-  image: string;
-  caption: string;
-  date: string;
-  likes: number;
-}
-
-interface SocialPosts {
-  twitter: TwitterPost[];
-  linkedin: LinkedInPost[];
-  instagram: InstagramPost[];
-}
 
 /** Data for social posts */
 const socialPosts: SocialPosts = {

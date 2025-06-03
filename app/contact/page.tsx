@@ -8,6 +8,22 @@ export const metadata: Metadata = {
   title: 'Contact | Syed Ali Naqi Hasni',
   description:
     'Get in touch with me for collaborations, job opportunities, or just to say hello',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://syedalinaqihasni.com',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+    siteName: 'Syed Ali Naqi Hasni',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+  },
+  metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
 // --- Static Text ---

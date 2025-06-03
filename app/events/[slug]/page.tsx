@@ -4,27 +4,18 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Share2 } from 'lucide-react';
 import Image from 'next/image';
-import { PortableText, PortableTextBlock } from '@portabletext/react';
+import { PortableText, } from '@portabletext/react';
+import { Event } from '@/types/events';
 
-// --- Types ---
-type Event = {
-  title: string;
-  description: string;
-  type: string;
-  slug: { current: string };
-  image: string;
-  date: string;
-  location: string;
-  virtual: boolean;
-  content: PortableTextBlock[];
-};
+
 
 // --- Static Data ---
 const EVENT: Event = {
+  id: '1',
   title: 'Sample Event Title',
   description: 'This is a sample event description.',
   type: 'Conference',
-  slug: { current: 'sample-event' },
+  slug: 'sample-event',
   image: '/sample-event.jpg',
   date: '2024-07-01T18:00:00Z',
   location: '123 Main St, City, Country',

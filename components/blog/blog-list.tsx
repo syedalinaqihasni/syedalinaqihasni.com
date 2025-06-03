@@ -8,7 +8,7 @@ import { Calendar, Clock } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
-import { Post } from '@/types';
+import { Post } from '@/types/blogs';
 
 // Static fallback blog post data
 const DATA = {

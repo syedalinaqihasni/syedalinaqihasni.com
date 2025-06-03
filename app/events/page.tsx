@@ -5,6 +5,7 @@ import { Calendar, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Events } from '@/types/events';
 
 // Text constants
 const PAGE_TITLE = 'Upcoming Events';
@@ -17,24 +18,30 @@ const METADATA_DESCRIPTION =
 export const metadata: Metadata = {
   title: METADATA_TITLE,
   description: METADATA_DESCRIPTION,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://syedalinaqihasni.com',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+    siteName: 'Syed Ali Naqi Hasni',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+  },
+  metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
-type Event = {
-  _id: string;
-  slug: string;
-  image: string;
-  title: string;
-  description: string;
-  type: string;
-  date: string;
-  location: string;
-  virtual?: boolean;
-};
+
 
 // Dummy events data (replace with your own data source)
-const events: Event[] = [
+const events: Events[] = [
   {
-    _id: '1',
+    id: '1',
     slug: 'react-workshop',
     image: '/images/react-workshop.jpg',
     title: 'React Workshop',
@@ -45,7 +52,7 @@ const events: Event[] = [
     virtual: false,
   },
   {
-    _id: '2',
+    id: '2',
     slug: 'webinar-ai',
     image: '/images/webinar-ai.jpg',
     title: 'AI in Web Development',
@@ -103,7 +110,7 @@ export default function EventsPage() {
 
         <section className={gridClass}>
           {events.map((event) => (
-            <Card key={event._id} className={cardClass}>
+            <Card key={event.id} className={cardClass}>
               <Link href={`/events/${event.slug}`} passHref>
                 <a className={imageWrapperClass}>
                   <Image

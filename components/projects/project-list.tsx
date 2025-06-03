@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Project } from '@/types';
+import { Projects } from '@/types/projects';
 
 /**
  * ProjectList Component
@@ -17,10 +17,10 @@ import { Project } from '@/types';
  * Displays a list of projects with category-based filtering and animated transitions.
  *
  * @param {Object} props
- * @param {Project[]} props.projects - Array of project objects to be displayed.
+ * @param {Projects[]} props.projects - Array of project objects to be displayed.
  * @returns JSX.Element
  */
-const ProjectList = ({ projects }: { projects: Project[] }) => {
+const ProjectList = ({ projects }: { projects: Projects[] }) => {
   // State to track currently selected category tab
   const [activeCategory, setActiveCategory] = useState('all');
 

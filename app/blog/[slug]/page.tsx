@@ -6,7 +6,7 @@ import { Calendar, Clock, Share2 } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Post } from '@/types';
+import { Post } from '@/types/blogs';
 
 // Constants
 const CONSTANT = {

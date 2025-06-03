@@ -7,18 +7,9 @@ import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Masonry from 'react-masonry-css';
+import { GalleryImage } from '@/types/gallery';
 
-/**
- * Image type definition for gallery images.
- */
-type GalleryImage = {
-  id: string;
-  src: string;
-  alt: string;
-  caption: string;
-  album: string;
-  tags: string[];
-};
+
 
 // /**
 //  * Albums definition for filtering images.
