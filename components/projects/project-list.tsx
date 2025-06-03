@@ -27,7 +27,7 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
   // Dynamically derive category list from provided projects
   const categories = [
     'all',
-    ...Array.from(new Set(projects.map((project) => project?.category))),
+    ...Array.from(new Set(projects?.map((project) => project?.category))),
   ];
 
   // Filter projects based on selected category
@@ -46,7 +46,7 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
         onValueChange={setActiveCategory}
       >
         <TabsList className={'grid w-full grid-cols-2 md:grid-cols-5'}>
-          {categories.map((category) => (
+          {categories?.map((category) => (
             <TabsTrigger key={category} value={category}>
               {category?.charAt(0).toUpperCase() + category?.slice(1)}
             </TabsTrigger>
@@ -64,7 +64,7 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
           transition={{ duration: 0.3 }}
           className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'}
         >
-          {filteredProjects.map((project) => (
+          {filteredProjects?.map((project) => (
             <motion.div
               key={project?.id}
               initial={{ opacity: 0 }}
@@ -95,7 +95,7 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
 
                   {/* Project tags */}
                   <div className={'flex flex-wrap gap-2 mb-6'}>
-                    {project?.tags.map((tag) => (
+                    {project?.tags?.map((tag) => (
                       <Badge key={tag} variant={'secondary'}>
                         {tag}
                       </Badge>

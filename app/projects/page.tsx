@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { CONSTANT, FEATURED_PROJECTS } from '@/constants/projects';
 import ProjectList from '@/components/projects/project-list';
+import { styles } from '@/styles/projects';
 
 export const metadata: Metadata = {
   title: 'Projects | Syed Ali Naqi Hasni',
@@ -23,21 +24,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
-// CSS Class Constants
-const CONTAINER_styles = 'container mx-auto px-4 py-32 md:py-40';
-const CONTENT_WRAPPER_styles = 'max-w-6xl mx-auto';
-const HEADER_WRAPPER_styles = 'text-center mb-16';
-const TITLE_styles = 'text-4xl md:text-5xl font-bold mb-6';
-const DESCRIPTION_styles =
-  'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
-
 export default async function ProjectsPage() {
   return (
-    <div className={CONTAINER_styles}>
-      <div className={CONTENT_WRAPPER_styles}>
-        <div className={HEADER_WRAPPER_styles}>
-          <h1 className={TITLE_styles}>{CONSTANT.title}</h1>
-          <p className={DESCRIPTION_styles}>{CONSTANT.description}</p>
+    <div className={styles?.CONTAINER_styles}>
+      <div className={styles?.CONTENT_WRAPPER_styles}>
+        <div className={styles?.HEADER_WRAPPER_styles}>
+          <h1 className={styles?.TITLE_styles}>{CONSTANT.title}</h1>
+          <p className={styles?.DESCRIPTION_styles}>{CONSTANT.description}</p>
         </div>
 
         {/* <ProjectList projects={FEATURED_PROJECTS} /> */}

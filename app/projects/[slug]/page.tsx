@@ -7,73 +7,33 @@ import Image from 'next/image';
 import { PROJECT } from '@/constants/projects';
 import Link from 'next/link';
 import { formatDate } from '@/lib/utils';
+import { styles } from '@/styles/projectsSingle';
 
 export default function ProjectPage() {
-
-  // CSS Class Constants
-  const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
-  const CONTENT_WRAPPER = 'max-w-6xl mx-auto';
-
-  const HEADER = 'mb-12';
-  const TECH_BADGES = 'flex flex-wrap gap-2 mb-4';
-  const TITLE = 'text-4xl md:text-5xl font-bold mb-6';
-  const DESCRIPTION = 'text-xl text-muted-foreground mb-8 max-w-3xl';
-  const BUTTON_GROUP = 'flex flex-wrap gap-4';
-
-  const BUTTON_ICON = 'h-4 w-4 mr-2';
-
-  const IMAGE_WRAPPER = 'relative h-[500px] rounded-lg overflow-hidden mb-12';
-  const IMAGE_CLASS = 'object-cover';
-
-  const STATS_GRID = 'grid grid-cols-1 md:grid-cols-3 gap-6 mb-12';
-  const CARD_CONTENT_CENTERED = 'p-6 text-center';
-  const STAT_NUMBER = 'text-3xl font-bold mb-2';
-  const STAT_LABEL = 'text-muted-foreground';
-
-  const DETAILS_CARD = 'mb-12';
-  const DETAILS_CARD_CONTENT = 'p-8';
-  const DETAILS_HEADER = 'flex items-center justify-between mb-6';
-  const DETAILS_DATE = 'flex items-center gap-2 text-muted-foreground';
-  const LONG_DESCRIPTION = 'prose dark:prose-invert max-w-none';
-
-  const GALLERY_SECTION = 'mb-12';
-  const GALLERY_TITLE = 'text-2xl font-bold mb-6';
-  const GALLERY_GRID = 'grid grid-cols-1 md:grid-cols-3 gap-6';
-  const GALLERY_IMAGE_WRAPPER = 'relative h-64 rounded-lg overflow-hidden';
-
-  const RELATED_SECTION = '';
-  const RELATED_TITLE = 'text-2xl font-bold mb-6';
-  const RELATED_GRID = 'grid grid-cols-1 md:grid-cols-2 gap-6';
-  const RELATED_CARD_IMAGE_WRAPPER = 'relative h-48 w-full';
-  const RELATED_CARD_CONTENT = 'p-6';
-  const RELATED_CARD_TITLE = 'text-xl font-semibold mb-2';
-  const RELATED_CARD_DESC = 'text-muted-foreground mb-4';
-  const RELATED_BADGES = 'flex flex-wrap gap-2';
-
   return (
-    <div className={CONTAINER}>
-      <div className={CONTENT_WRAPPER}>
+    <div className={styles?.CONTAINER}>
+      <div className={styles?.CONTENT_WRAPPER}>
         {/* Header */}
-        <div className={HEADER}>
-          <div className={TECH_BADGES}>
-            {PROJECT.technologies.map((tech) => (
+        <div className={styles?.HEADER}>
+          <div className={styles?.TECH_BADGES}>
+            {PROJECT.technologies?.map((tech) => (
               <Badge key={tech} variant={'secondary'}>
                 {tech}
               </Badge>
             ))}
           </div>
 
-          <h1 className={TITLE}>{PROJECT.title}</h1>
-          <p className={DESCRIPTION}>{PROJECT.description}</p>
+          <h1 className={styles?.TITLE}>{PROJECT.title}</h1>
+          <p className={styles?.DESCRIPTION}>{PROJECT.description}</p>
 
-          <div className={BUTTON_GROUP}>
+          <div className={styles?.BUTTON_GROUP}>
             <Button asChild>
               <Link
                 href={PROJECT.liveUrl}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
-                <ExternalLink className={BUTTON_ICON} />
+                <ExternalLink className={styles?.BUTTON_ICON} />
                 View Live
               </Link>
             </Button>
@@ -84,7 +44,7 @@ export default function ProjectPage() {
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
-                <Github className={BUTTON_ICON} />
+                <Github className={styles?.BUTTON_ICON} />
                 View Code
               </Link>
             </Button>
@@ -92,64 +52,64 @@ export default function ProjectPage() {
         </div>
 
         {/* Main Image */}
-        <div className={IMAGE_WRAPPER}>
+        <div className={styles?.IMAGE_WRAPPER}>
           <Image
             src={PROJECT.image}
             alt={PROJECT.title}
             fill
-            className={IMAGE_CLASS}
+            className={styles?.IMAGE_CLASS}
           />
         </div>
 
         {/* Project Stats */}
-        <div className={STATS_GRID}>
+        <div className={styles?.STATS_GRID}>
           <Card>
-            <CardContent className={CARD_CONTENT_CENTERED}>
-              <h3 className={STAT_NUMBER}>{PROJECT.stats.users}</h3>
-              <p className={STAT_LABEL}>Active Users</p>
+            <CardContent className={styles?.CARD_CONTENT_CENTERED}>
+              <h3 className={styles?.STAT_NUMBER}>{PROJECT.stats.users}</h3>
+              <p className={styles?.STAT_LABEL}>Active Users</p>
             </CardContent>
           </Card>
           <Card>
-            <CardContent className={CARD_CONTENT_CENTERED}>
-              <h3 className={STAT_NUMBER}>{PROJECT.stats.orders}</h3>
-              <p className={STAT_LABEL}>Orders Processed</p>
+            <CardContent className={styles?.CARD_CONTENT_CENTERED}>
+              <h3 className={styles?.STAT_NUMBER}>{PROJECT.stats.orders}</h3>
+              <p className={styles?.STAT_LABEL}>Orders Processed</p>
             </CardContent>
           </Card>
           <Card>
-            <CardContent className={CARD_CONTENT_CENTERED}>
-              <h3 className={STAT_NUMBER}>{PROJECT.stats.revenue}</h3>
-              <p className={STAT_LABEL}>Revenue Generated</p>
+            <CardContent className={styles?.CARD_CONTENT_CENTERED}>
+              <h3 className={styles?.STAT_NUMBER}>{PROJECT.stats.revenue}</h3>
+              <p className={styles?.STAT_LABEL}>Revenue Generated</p>
             </CardContent>
           </Card>
         </div>
 
         {/* Project Details */}
-        <Card className={DETAILS_CARD}>
-          <CardContent className={DETAILS_CARD_CONTENT}>
-            <div className={DETAILS_HEADER}>
-              <div className={DETAILS_DATE}>
+        <Card className={styles?.DETAILS_CARD}>
+          <CardContent className={styles?.DETAILS_CARD_CONTENT}>
+            <div className={styles?.DETAILS_HEADER}>
+              <div className={styles?.DETAILS_DATE}>
                 <Calendar className={'h-4 w-4'} />
                 {formatDate(PROJECT.publishedAt)}
               </div>
             </div>
             <div
-              className={LONG_DESCRIPTION}
+              className={styles?.LONG_DESCRIPTION}
               dangerouslySetInnerHTML={{ __html: PROJECT.longDescription }}
             />
           </CardContent>
         </Card>
 
         {/* Gallery */}
-        <div className={GALLERY_SECTION}>
-          <h2 className={GALLERY_TITLE}>Project Gallery</h2>
-          <div className={GALLERY_GRID}>
-            {PROJECT.gallery.map((image, index) => (
-              <div key={index} className={GALLERY_IMAGE_WRAPPER}>
+        <div className={styles?.GALLERY_SECTION}>
+          <h2 className={styles?.GALLERY_TITLE}>Project Gallery</h2>
+          <div className={styles?.GALLERY_GRID}>
+            {PROJECT.gallery?.map((image, index) => (
+              <div key={index} className={styles?.GALLERY_IMAGE_WRAPPER}>
                 <Image
                   src={image}
                   alt={`${PROJECT.title} gallery image ${index + 1}`}
                   fill
-                  className={IMAGE_CLASS}
+                  className={styles?.IMAGE_CLASS}
                 />
               </div>
             ))}
@@ -157,26 +117,26 @@ export default function ProjectPage() {
         </div>
 
         {/* Related Projects */}
-        <div className={RELATED_SECTION}>
-          <h2 className={RELATED_TITLE}>Related Projects</h2>
-          <div className={RELATED_GRID}>
-            {PROJECT.relatedProjects.map((relatedProject) => (
+        <div className={styles?.RELATED_SECTION}>
+          <h2 className={styles?.RELATED_TITLE}>Related Projects</h2>
+          <div className={styles?.RELATED_GRID}>
+            {PROJECT.relatedProjects?.map((relatedProject) => (
               <Card key={relatedProject.id}>
-                <div className={RELATED_CARD_IMAGE_WRAPPER}>
+                <div className={styles?.RELATED_CARD_IMAGE_WRAPPER}>
                   <Image
                     src={relatedProject.image}
                     alt={relatedProject.title}
                     fill
-                    className={IMAGE_CLASS}
+                    className={styles?.IMAGE_CLASS}
                   />
                 </div>
-                <CardContent className={RELATED_CARD_CONTENT}>
-                  <h3 className={RELATED_CARD_TITLE}>{relatedProject.title}</h3>
-                  <p className={RELATED_CARD_DESC}>
+                <CardContent className={styles?.RELATED_CARD_CONTENT}>
+                  <h3 className={styles?.RELATED_CARD_TITLE}>{relatedProject.title}</h3>
+                  <p className={styles?.RELATED_CARD_DESC}>
                     {relatedProject.description}
                   </p>
-                  <div className={RELATED_BADGES}>
-                    {relatedProject.technologies.map((tech) => (
+                  <div className={styles?.RELATED_BADGES}>
+                    {relatedProject.technologies?.map((tech) => (
                       <Badge key={tech} variant={'secondary'}>
                         {tech}
                       </Badge>

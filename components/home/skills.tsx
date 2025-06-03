@@ -57,7 +57,7 @@ function SkillCategory({
 
         {/* Skill items list */}
         <CardContent className={'space-y-4'}>
-          {skills.map((skill, index) => (
+          {skills?.map((skill, index) => (
             <div key={skill.name}>
               {/* Skill label and percentage */}
               <div className={'flex justify-between mb-1'}>

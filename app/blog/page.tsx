@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import BlogList from '@/components/blog/blog-list';
 import { CONSTANT } from '@/constants/blogs';
+import { styles } from '@/styles/blogs';
 
 // --- Metadata ---
 export const metadata: Metadata = {
@@ -22,15 +23,6 @@ export const metadata: Metadata = {
       'Personal portfolio website showcasing my projects, skills, and experience',
   },
   metadataBase: new URL('https://syedalinaqihasni.com'),
-};
-
-// --- Static Class Names ---
-const styles = {
-  container: 'container mx-auto px-4 py-32 md:py-40',
-  wrapper: 'max-w-6xl mx-auto',
-  header: 'text-center mb-16',
-  title: 'text-4xl md:text-5xl font-bold mb-6',
-  description: 'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto',
 };
 
 export default async function BlogPage() {

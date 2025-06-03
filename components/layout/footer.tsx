@@ -103,9 +103,9 @@ export default function Footer() {
           <div className={styles?.container}>
             <h3 className={styles?.heading}>{CONSTANT?.quickLinksHeading}</h3>
             <div className={styles?.grid}>
-              {LINKS_GROUPS.map((group, i) => (
+              {LINKS_GROUPS?.map((group, i) => (
                 <ul className={styles?.list} key={i}>
-                  {group.map((link) => (
+                  {group?.map((link) => (
                     <li key={link.path}>
                       <Link href={link.path} className={styles?.link}>
                         {link.name}
@@ -122,7 +122,7 @@ export default function Footer() {
             <div className={styles?.contactBlock}>
               <h3 className={styles?.heading}>{CONSTANT?.connectHeading}</h3>
               <ul className={styles?.contactList}>
-                {CONTACT_INFO.map((item, idx) => (
+                {CONTACT_INFO?.map((item, idx) => (
                   <li key={idx}>
                     {item.label}: {item.value}
                   </li>
@@ -137,7 +137,7 @@ export default function Footer() {
           <p className={'text-sm text-muted-foreground'}>{CONSTANT?.copyright}</p>
           <div className={'mt-2 md:mt-0'}>
             <div className={styles?.socialIcons}>
-              {SOCIAL_LINKS.map(({ icon: Icon, url, label }) => (
+              {SOCIAL_LINKS?.map(({ icon: Icon, url, label }) => (
                 <Link
                   key={label}
                   href={url}

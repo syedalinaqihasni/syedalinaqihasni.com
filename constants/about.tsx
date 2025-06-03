@@ -10,15 +10,25 @@ const CONSTANT = {
       `Beyond development, I actively explore emerging technologies like AI, Web3, and the Metaverse, and I love sharing knowledge through LinkedIn content and open-source contributions.`,
     ],
   },
-  journey: {
-    heading: 'My Journey',
+  journeyHeading: 'My Journey',
+ 
+  toolsHeading: 'Tools & Technologies',
+  tools:[
+  {
+    category: 'Languages',
+    items: ['JavaScript', 'TypeScript', 'Python', 'SQL'],
   },
-  tools: {
-    heading: 'Tools & Technologies',
+  {
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS'],
   },
-};
-
- const JOURNEY =[
+  {
+    category: 'Backend',
+    items: ['Node.js', 'Express', 'Django', 'PostgreSQL'],
+  },
+  { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
+],
+journey:[
   {
     year: '2018',
     title: 'Started Programming',
@@ -55,20 +65,5 @@ const CONSTANT = {
     description:
       'Started working as an independent consultant, helping businesses scale their tech.',
   },
-]
-const TOOLS = [
-  {
-    category: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Python', 'SQL'],
-  },
-  {
-    category: 'Frontend',
-    items: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS'],
-  },
-  {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'Django', 'PostgreSQL'],
-  },
-  { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
-];
-export { CONSTANT,JOURNEY, TOOLS };
+]}
+export { CONSTANT};

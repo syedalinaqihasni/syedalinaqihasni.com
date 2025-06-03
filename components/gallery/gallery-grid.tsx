@@ -133,7 +133,7 @@ export default function GalleryGrid() {
       {/* Album filter tabs */}
       <Tabs defaultValue={'all'} className={'mb-8'} onValueChange={setActiveAlbum}>
         <TabsList className={'grid w-full grid-cols-2 md:grid-cols-4 max-w-lg mx-auto'}>
-          {albums.map((album) => (
+          {albums?.map((album) => (
             <TabsTrigger key={album.id} value={album.id}>
               {album.name}
             </TabsTrigger>
@@ -156,7 +156,7 @@ export default function GalleryGrid() {
             className={'flex w-auto -ml-4'}
             columnClassName={'pl-4 bg-clip-padding'}
           >
-            {filteredImages.map((image) => (
+            {filteredImages?.map((image) => (
               <motion.div
                 key={image.id}
                 className={'mb-4 cursor-pointer'}
@@ -180,7 +180,7 @@ export default function GalleryGrid() {
                   <div className={'absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'}>
                     <p className={'text-white font-medium'}>{image.caption}</p>
                     <div className={'flex flex-wrap gap-2 mt-2'}>
-                      {image.tags.map((tag) => (
+                      {image.tags?.map((tag) => (
                         <Badge key={tag} variant={'secondary'} className={'text-xs'}>
                           {tag}
                         </Badge>
@@ -215,7 +215,7 @@ export default function GalleryGrid() {
                   {selectedImage.caption}
                 </h3>
                 <div className={'flex flex-wrap gap-2'}>
-                  {selectedImage.tags.map((tag) => (
+                  {selectedImage.tags?.map((tag) => (
                     <Badge key={tag} variant={'secondary'}>
                       {tag}
                     </Badge>

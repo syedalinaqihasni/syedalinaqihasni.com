@@ -58,7 +58,7 @@ const BlogList = () => {
 
       {/* Blog post grid */}
       <div className={styles?.grid}>
-        {filteredPosts.map((post, index) => (
+        {filteredPosts?.map((post, index) => (
           <motion.div
             key={post.id}
             initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ const BlogList = () => {
               <CardContent className={'p-6'}>
                 {/* Categories badges */}
                 <div className={styles?.categoriesWrapper}>
-                  {post.categories.slice(0, 2).map((cat) => (
+                  {post.categories.slice(0, 2)?.map((cat) => (
                     <Badge
                       key={cat}
                       variant={'secondary'}

@@ -20,7 +20,7 @@ import Link from 'next/link';
 export default function HomeProjects() {
   return (
     <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'}>
-      {FEATURED_PROJECTS.map((project, index) => (
+      {FEATURED_PROJECTS?.map((project, index) => (
         <motion.div
           key={project.id}
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export default function HomeProjects() {
 
               {/* Project tags */}
               <div className={'flex flex-wrap gap-2 mb-6'}>
-                {project.tags.map((tag) => (
+                {project.tags?.map((tag) => (
                   <Badge key={tag} variant={'secondary'}>
                     {tag}
                   </Badge>

@@ -49,7 +49,7 @@ export default function Header() {
   }, []);
 
   const renderNavItems = (isMobile = false) =>
-    NAV_ITEMS.map((item) => (
+    NAV_ITEMS?.map((item) => (
       <Link
         key={item.path}
         href={item.path}

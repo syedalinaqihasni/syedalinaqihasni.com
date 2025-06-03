@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Event } from "@/types/events";
 import { events } from "@/constants/events";
 import { formatDateTime } from "@/lib/utils";
+import { styles } from "@/styles/events";
 
 // Text constants
 const PAGE_TITLE = "Upcoming Events";
@@ -38,82 +39,55 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://syedalinaqihasni.com"),
 };
 
-
-// Class name constants
-const containerClass = "container mx-auto px-4 py-32 md:py-40";
-const maxWidthWrapperClass = "max-w-6xl mx-auto";
-const headerClass = "text-center mb-16";
-const titleClass = "text-4xl md:text-5xl font-bold mb-6";
-const descriptionClass =
-  "text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto";
-
-const gridClass = "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8";
-const cardClass = "overflow-hidden";
-const imageWrapperClass = "relative block h-48 w-full";
-const imageClass = "object-cover";
-
-const virtualBadgeClass = "absolute top-4 right-4";
-
-const badgeClass = "mb-2";
-
-const eventTitleClass =
-  "text-xl font-semibold mb-2 block hover:text-primary transition-colors";
-const eventDescriptionClass = "text-muted-foreground mb-4";
-
-const eventDetailsClass = "space-y-2 text-sm text-muted-foreground mb-4";
-const eventDetailRowClass = "flex items-center gap-2";
-
-const buttonClass = "w-full";
-
 export default function EventsPage() {
 
   return (
-    <main className={containerClass}>
-      <div className={maxWidthWrapperClass}>
-        <header className={headerClass}>
-          <h1 className={titleClass}>{PAGE_TITLE}</h1>
-          <p className={descriptionClass}>{PAGE_DESCRIPTION}</p>
+    <main className={styles?.container}>
+      <div className={styles?.maxWidthWrapper}>
+        <header className={styles?.header}>
+          <h1 className={styles?.title}>{PAGE_TITLE}</h1>
+          <p className={styles?.description}>{PAGE_DESCRIPTION}</p>
         </header>
 
-        <section className={gridClass}>
-          {events.map((event) => (
-            <Card key={event.id} className={cardClass}>
-              <Link href={`/events/${event.slug}`} passHref className={imageWrapperClass}>
+        <section className={styles?.grid}>
+          {events?.map((event) => (
+            <Card key={event.id} className={styles?.card}>
+              <Link href={`/events/${event.slug}`} passHref className={styles?.imageWrapper}>
                   <Image
                     src={event.image}
                     alt={event.title}
                     fill
-                    className={imageClass}
+                    className={styles?.image}
                   />
                   {event.virtual && (
-                    <Badge className={virtualBadgeClass} variant={"secondary"}>
+                    <Badge className={styles?.virtualBadge} variant={"secondary"}>
                       Virtual Event
                     </Badge>
                   )}
               </Link>
 
               <CardContent className={"p-6"}>
-                <Badge variant={"outline"} className={badgeClass}>
+                <Badge variant={"outline"} className={styles?.badge}>
                   {event.type}
                 </Badge>
 
-                <Link href={`/events/${event.slug}`} passHref  className={eventTitleClass}>{event.title}
+                <Link href={`/events/${event.slug}`} passHref  className={styles?.eventTitle}>{event.title}
                 </Link>
 
-                <p className={eventDescriptionClass}>{event.description}</p>
+                <p className={styles?.eventDescription}>{event.description}</p>
 
-                <div className={eventDetailsClass}>
-                  <div className={eventDetailRowClass}>
+                <div className={styles?.eventDetails}>
+                  <div className={styles?.eventDetailRow}>
                     <Calendar className={"h-4 w-4"} />
                     <time dateTime={event.date}>{formatDateTime(event.date)}</time>
                   </div>
-                  <div className={eventDetailRowClass}>
+                  <div className={styles?.eventDetailRow}>
                     <MapPin className={"h-4 w-4"} />
                     {event.location}
                   </div>
                 </div>
 
-                <Button asChild className={buttonClass}>
+                <Button asChild className={styles?.button}>
                   <Link href={`/events/${event.slug}`}>View Details</Link>
                 </Button>
               </CardContent>

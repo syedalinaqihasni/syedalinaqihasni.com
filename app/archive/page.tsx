@@ -65,7 +65,7 @@ export default function ArchivePage() {
             </TabsList>
 
             <TabsContent value={'medium'} className={'space-y-6'}>
-              {archivePosts.medium.map((post) => (
+              {archivePosts.medium?.map((post) => (
                 <Card key={post.id}>
                   <CardContent className={'p-6'}>
                     <div className={'flex justify-between items-start mb-4'}>
@@ -85,7 +85,7 @@ export default function ArchivePage() {
                     </div>
                     <p className={'text-muted-foreground mb-4'}>{post.excerpt}</p>
                     <div className={'flex flex-wrap gap-2 mb-4'}>
-                      {post.tags.map((tag) => (
+                      {post.tags?.map((tag) => (
                         <Badge key={tag} variant={'secondary'}>
                           {tag}
                         </Badge>
@@ -100,7 +100,7 @@ export default function ArchivePage() {
             </TabsContent>
 
             <TabsContent value={'devto'} className={'space-y-6'}>
-              {archivePosts.devto.map((post) => (
+              {archivePosts.devto?.map((post) => (
                 <Card key={post.id}>
                   <CardContent className={'p-6'}>
                     <div className={'flex justify-between items-start mb-4'}>
@@ -120,7 +120,7 @@ export default function ArchivePage() {
                     </div>
                     <p className={'text-muted-foreground mb-4'}>{post.excerpt}</p>
                     <div className={'flex flex-wrap gap-2 mb-4'}>
-                      {post.tags.map((tag) => (
+                      {post.tags?.map((tag) => (
                         <Badge key={tag} variant={'secondary'}>
                           {tag}
                         </Badge>
@@ -135,7 +135,7 @@ export default function ArchivePage() {
             </TabsContent>
 
             <TabsContent value={'reddit'} className={'space-y-6'}>
-              {archivePosts.reddit.map((post) => (
+              {archivePosts.reddit?.map((post) => (
                 <Card key={post.id}>
                   <CardContent className={'p-6'}>
                     <div className={'flex justify-between items-start mb-4'}>
@@ -155,7 +155,7 @@ export default function ArchivePage() {
                     </div>
                     <p className={'text-muted-foreground mb-4'}>{post.excerpt}</p>
                     <div className={'flex flex-wrap gap-2 mb-4'}>
-                      {post.tags.map((tag) => (
+                      {post.tags?.map((tag) => (
                         <Badge key={tag} variant={'secondary'}>
                           {tag}
                         </Badge>
@@ -194,7 +194,7 @@ export default function ArchivePage() {
             </TabsList>
 
             <TabsContent value={'twitter'} className={'space-y-6'}>
-              {socialPosts.twitter.map((post) => (
+              {socialPosts.twitter?.map((post) => (
                 <Card key={post.id}>
                   <CardContent className={'p-6'}>
                     <p className={'text-lg mb-4'}>{post.content}</p>
@@ -211,7 +211,7 @@ export default function ArchivePage() {
             </TabsContent>
 
             <TabsContent value={'linkedin'} className={'space-y-6'}>
-              {socialPosts.linkedin.map((post) => (
+              {socialPosts.linkedin?.map((post) => (
                 <Card key={post.id}>
                   <CardContent className={'p-6'}>
                     <h3 className={'text-xl font-semibold mb-2'}>{post.title}</h3>
@@ -232,7 +232,7 @@ export default function ArchivePage() {
               value={'instagram'}
               className={'grid grid-cols-1 md:grid-cols-2 gap-6'}
             >
-              {socialPosts.instagram.map((post) => (
+              {socialPosts.instagram?.map((post) => (
                 <Card key={post.id} className={'overflow-hidden'}>
                   <div className={'relative h-64 w-full'}>
                     <img

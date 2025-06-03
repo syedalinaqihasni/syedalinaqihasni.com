@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import SkillsList from '@/components/skills/skills-list';
 import { CONSTANT } from '@/constants/social';
+import { styles } from '@/styles/skills';
 
 export const metadata: Metadata = {
   title: 'Skills | Syed Ali Naqi Hasni',
@@ -29,13 +30,11 @@ export const metadata: Metadata = {
  */
 export default function SkillsPage() {
   return (
-    <div className={'container mx-auto px-4 py-32 md:py-40'}>
-      <div className={'max-w-6xl mx-auto'}>
-        <div className={'text-center mb-16'}>
-          <h1 className={'text-4xl md:text-5xl font-bold mb-6'}>{CONSTANT.title}</h1>
-          <p className={'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto'}>
-            {CONSTANT.description}
-          </p>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <div className={styles.header}>
+          <h1 className={styles.title}>{CONSTANT.title}</h1>
+          <p className={styles.description}>{CONSTANT.description}</p>
         </div>
 
         <SkillsList />
@@ -43,3 +42,4 @@ export default function SkillsPage() {
     </div>
   );
 }
+
