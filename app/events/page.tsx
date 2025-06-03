@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Event } from "@/types/events";
+import { events } from "@/constants/events";
 
 // Text constants
 const PAGE_TITLE = "Upcoming Events";
@@ -36,33 +37,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://syedalinaqihasni.com"),
 };
 
-// Dummy events data (replace with your own data source)
-const events: Event[] = [
-  {
-    id: "1",
-    slug: "react-workshop",
-    image: "/images/react-workshop.jpg",
-    title: "React Workshop",
-    description: "A hands-on workshop on React fundamentals.",
-    type: "Workshop",
-    date: "2024-07-15T10:00:00",
-    location: "New York, NY",
-    virtual: false,
-    content: "<h1> asdasd</h1>",
-  },
-  {
-    id: "2",
-    slug: "webinar-ai",
-    image: "/images/webinar-ai.jpg",
-    title: "AI in Web Development",
-    description: "Exploring AI tools for modern web development.",
-    type: "Webinar",
-    date: "2024-08-01T18:00:00",
-    location: "Online",
-    virtual: true,
-    content: "<h1> asdasd</h1>",
-  },
-];
 
 // Class name constants
 const containerClass = "container mx-auto px-4 py-32 md:py-40";

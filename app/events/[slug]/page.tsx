@@ -4,25 +4,45 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Share2 } from 'lucide-react';
 import Image from 'next/image';
-import { PortableText, } from '@portabletext/react';
 import { Event } from '@/types/events';
+import { notFound } from 'next/navigation';
+import { events } from '@/constants/events';
 
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const event: Event | undefined = events.find((e) => e.slug === params.slug);
 
-// --- Static Data ---
-const EVENT: Event = {
-  id: '1',
-  title: 'Sample Event Title',
-  description: 'This is a sample event description.',
-  type: 'Conference',
-  slug: 'sample-event',
-  image: '/sample-event.jpg',
-  date: '2024-07-01T18:00:00Z',
-  location: '123 Main St, City, Country',
-  virtual: false,
-  content: '<h1> asdasd</h1>'
-};
+  if (!event) return notFound();
 
+  return {
+    title: event.title,
+    description: event.excerpt || event.title,
+    openGraph: {
+      title: event.title,
+      description: event.excerpt || event.title,
+      type: 'article',
+      publishedTime: event.date,
+      images: event.image
+        ? [
+            {
+              url: event.image,
+              alt: event.title,
+            },
+          ]
+        : [],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: event.title,
+      description: event.excerpt || event.title,
+      images: event.image ? [event.image] : [],
+    },
+  };
+}
 // --- Static Class Names ---
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
@@ -47,17 +67,9 @@ const styles = {
   content: 'prose dark:prose-invert max-w-none',
 };
 
-// --- Metadata ---
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: `${EVENT.title} | Events`,
-    description: EVENT.description,
-  };
-}
-
 // --- Component ---
-export default async function EventPage() {
-  const event = EVENT;
+const EventPage = async ({ params }: { params: { slug: string } }) => {
+const event:Event=events.filter ((event) => event.slug === params.slug)[0];
 
   const formatDate = (dateString: string) =>
     new Date(dateString).toLocaleDateString('en-US', {
@@ -156,3 +168,5 @@ export default async function EventPage() {
     </div>
   );
 }
+
+export default EventPage;

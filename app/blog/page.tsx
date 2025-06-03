@@ -1,20 +1,12 @@
 import { Metadata } from 'next';
 import BlogList from '@/components/blog/blog-list';
-import { Post } from '@/types/blogs';
+import { CONSTANT } from '@/constants/blogs';
 
 // --- Metadata ---
 export const metadata: Metadata = {
   title: 'Blog | Syed Ali Naqi Hasni',
   description:
-    'Read my latest articles about web development, design, and technology',
-};
-
-// --- Static Text ---
-const CONSTANT = {
-  pageTitle: 'My Blog',
-  pageDescription:
-    'Thoughts, tutorials, and insights about web development, design, and technology.',
-  openGraph: {
+    'Read my latest articles about web development, design, and technology', openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://syedalinaqihasni.com',
@@ -42,7 +34,6 @@ const styles = {
 };
 
 export default async function BlogPage() {
-  // const posts: Post[] = await sanityFetch({ query: postsQuery });
 
   return (
     <div className={styles?.container}>
@@ -51,8 +42,7 @@ export default async function BlogPage() {
           <h1 className={styles?.title}>{CONSTANT?.pageTitle}</h1>
           <p className={styles?.description}>{CONSTANT?.pageDescription}</p>
         </div>
-
-        {/* <BlogList posts={posts} /> */}
+        <BlogList />
       </div>
     </div>
   );

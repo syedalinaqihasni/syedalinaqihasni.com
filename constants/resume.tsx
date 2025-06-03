@@ -1,4 +1,4 @@
-const RESUME = {
+const CONSTANT = {
   profile: {
     name: 'Syed Ali Naqi Hasni',
     title: 'Senior Full Stack Developer',
@@ -85,4 +85,17 @@ const RESUME = {
     'Typing & CIT – The Learning Zone',
   ],
 };
-export { RESUME };
+
+const SECTION_TITLES = {
+  summary: "Professional Summary",
+  experience: "Work Experience",
+  education: "Education",
+  skills: "Skills",
+  certifications: "Certifications",
+};
+
+const SKILL_CATEGORIES = ["frontend", "backend", "tools"] as const;
+
+type SkillCategory = (typeof SKILL_CATEGORIES)[number];
+export type {SkillCategory}
+export { CONSTANT,SECTION_TITLES ,SKILL_CATEGORIES};

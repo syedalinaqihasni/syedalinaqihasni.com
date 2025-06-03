@@ -7,5 +7,6 @@ type Post = {
   readingTime: string;
   image: string;
   categories: string[];
-};
+  content: string;}
+
 export type { Post, };

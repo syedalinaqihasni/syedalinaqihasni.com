@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Contact from '@/components/contact/contact-form';
-import { CONTACT_CARDS } from '@/constants/contact';
+import { CONSTANT, CONTACT_CARDS } from '@/constants/contact';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
 
@@ -25,14 +25,6 @@ export const metadata: Metadata = {
       'Personal portfolio website showcasing my projects, skills, and experience',
   },
   metadataBase: new URL('https://syedalinaqihasni.com'),
-};
-
-// --- Static Text ---
-const CONSTANT = {
-  pageTitle: 'Get In Touch',
-  pageDescription: `Have a project in mind or want to discuss potential opportunities? 
-I'd love to hear from you. Let's make something great together.`,
-  sendMessageTitle: 'Send a Message',
 };
 
 // --- Static Class Names ---

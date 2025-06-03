@@ -79,3 +79,9 @@ export const ALBUMS = [
   { id: 'events', name: 'Events' },
   { id: 'personal', name: 'Personal' },
 ];
+const CONSTANT={
+  title: 'Gallery',
+description:
+  'A collection of images from my projects, events, and creative work.'
+}
+export {CONSTANT};

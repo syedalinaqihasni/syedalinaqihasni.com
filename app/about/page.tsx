@@ -1,13 +1,13 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ABOUT_PAGE_CONSTANT, JOURNEY, TOOLS } from '@/constants/about';
+import { CONSTANT, JOURNEY, TOOLS } from '@/constants/about';
 import { SEO } from '@/constants/seo';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: SEO.about.title,
-  description: SEO.about.description,
+  title: 'About Me | Syed Ali Naqi Hasni',
+  description: 'Learn more about my journey, experience, and the tools I use.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -32,10 +32,10 @@ export default function AboutPage() {
       <div className={'max-w-6xl mx-auto'}>
         <div className={'text-center mb-16'}>
           <h1 className={'text-4xl md:text-5xl font-bold mb-6'}>
-            {ABOUT_PAGE_CONSTANT?.title}
+            {CONSTANT?.title}
           </h1>
           <p className={'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto'}>
-            {ABOUT_PAGE_CONSTANT?.description}
+            {CONSTANT?.description}
           </p>
         </div>
 
@@ -51,10 +51,10 @@ export default function AboutPage() {
           </div>
           <div>
             <h2 className={'text-3xl font-bold mb-6'}>
-              {ABOUT_PAGE_CONSTANT?.profile.heading}
+              {CONSTANT?.profile.heading}
             </h2>
             <div className={'prose dark:prose-invert'}>
-              {ABOUT_PAGE_CONSTANT?.profile.paragraphs.map((text, idx) => (
+              {CONSTANT?.profile.paragraphs.map((text, idx) => (
                 <p
                   className={'text-lg mb-4'}
                   key={idx}
@@ -68,7 +68,7 @@ export default function AboutPage() {
         {/* Journey Timeline */}
         <div className={'mb-20'}>
           <h2 className={'text-3xl font-bold text-center mb-12'}>
-            {ABOUT_PAGE_CONSTANT?.journey.heading}
+            {CONSTANT?.journey.heading}
           </h2>
           <div className={'relative'}>
             <div className={'absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-border'} />
@@ -102,7 +102,7 @@ export default function AboutPage() {
         {/* Tools & Technologies */}
         <div>
           <h2 className={'text-3xl font-bold text-center mb-12'}>
-            {ABOUT_PAGE_CONSTANT?.tools.heading}
+            {CONSTANT?.tools.heading}
           </h2>
           <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'}>
             {TOOLS.map((category) => (

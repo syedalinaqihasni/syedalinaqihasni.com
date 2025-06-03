@@ -4,8 +4,7 @@ import {
   Phone,
 } from 'lucide-react';
 
-
-export const CONTACT_CARDS = [
+ const CONTACT_CARDS = [
   {
     icon: <Mail className={'h-10 w-10 text-primary'} />,
     title: 'Email',
@@ -26,6 +25,16 @@ export const CONTACT_CARDS = [
   },
 ];
 
+const CONSTANT = {
+  pageTitle: 'Get In Touch',
+  pageDescription: `Have a project in mind or want to discuss potential opportunities? 
+I'd love to hear from you. Let's make something great together.`,
+  sendMessageTitle: 'Send a Message',
+};
+
+export {
+  CONTACT_CARDS,CONSTANT
+}
 
 
 

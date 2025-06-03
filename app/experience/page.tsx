@@ -3,7 +3,7 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { EXPERIENCES } from '@/constants/experience';
+import { EXPERIENCES,CONSTANT } from '@/constants/experience';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -27,11 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://syedalinaqihasni.com'),
 };
 
-const CONSTANT = {
-  pageTitle: 'Experience',
-  pageDescription:
-    "My professional journey and the companies I've had the pleasure to work with.",
-};
+
 
 // Style constants
 const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';

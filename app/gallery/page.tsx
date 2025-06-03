@@ -1,9 +1,6 @@
 import { Metadata } from 'next';
 import GalleryGrid from '@/components/gallery/gallery-grid';
-
-const GALLERY_TITLE = 'Gallery';
-const GALLERY_DESCRIPTION =
-  'A collection of images from my projects, events, and creative work.';
+import { CONSTANT } from '@/constants/gallery';
 
 export const metadata: Metadata = {
   title: 'Gallery | Syed Ali Naqi Hasni',
@@ -41,8 +38,8 @@ export default function GalleryPage() {
     <div className={CONTAINER}>
       <div className={MAX_WIDTH_WRAPPER}>
         <div className={HEADER_WRAPPER}>
-          <h1 className={TITLE}>{GALLERY_TITLE}</h1>
-          <p className={DESCRIPTION}>{GALLERY_DESCRIPTION}</p>
+          <h1 className={TITLE}>{CONSTANT.title}</h1>
+          <p className={DESCRIPTION}>{CONSTANT.description}</p>
         </div>
         <GalleryGrid />
       </div>

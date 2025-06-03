@@ -1,4 +1,4 @@
-const ABOUT_PAGE_CONSTANT = {
+const CONSTANT = {
   title: 'About Me',
   description:
     'A passionate developer dedicated to crafting impactful digital experiences across WordPress, React, and Front-end ecosystems.',
@@ -17,7 +17,8 @@ const ABOUT_PAGE_CONSTANT = {
     heading: 'Tools & Technologies',
   },
 };
-const JOURNEY = [
+
+ const JOURNEY =[
   {
     year: '2018',
     title: 'Started Programming',
@@ -54,8 +55,7 @@ const JOURNEY = [
     description:
       'Started working as an independent consultant, helping businesses scale their tech.',
   },
-];
-
+]
 const TOOLS = [
   {
     category: 'Languages',
@@ -71,4 +71,4 @@ const TOOLS = [
   },
   { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
 ];
-export { ABOUT_PAGE_CONSTANT, JOURNEY, TOOLS };
+export { CONSTANT,JOURNEY, TOOLS };
