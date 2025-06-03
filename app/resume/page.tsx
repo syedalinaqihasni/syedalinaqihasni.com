@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Download, Mail, Phone, MapPin } from 'lucide-react';
 import { RESUME } from '@/constants/resume';
+import Link from 'next/link';
 
 const PAGE_TITLE = 'Resume | Syed Ali Naqi Hasni';
 const PAGE_DESCRIPTION = 'View or download my professional resume';
@@ -91,15 +92,15 @@ export default function ResumePage() {
             <address className={contactInfoClass}>
               <div className={contactItemClass}>
                 <Mail className={'h-4 w-4'} />
-                <a href={`mailto:${RESUME.profile.email}`}>
+                <Link href={`mailto:${RESUME.profile.email}`}>
                   {RESUME.profile.email}
-                </a>
+                </Link>
               </div>
               <div className={contactItemClass}>
                 <Phone className={'h-4 w-4'} />
-                <a href={`tel:${RESUME.profile.phone}`}>
+                <Link href={`tel:${RESUME.profile.phone}`}>
                   {RESUME.profile.phone}
-                </a>
+                </Link>
               </div>
               <div className={contactItemClass}>
                 <MapPin className={'h-4 w-4'} />

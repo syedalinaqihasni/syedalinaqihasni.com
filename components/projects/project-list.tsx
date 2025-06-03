@@ -105,24 +105,24 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
                   {/* External links: GitHub & Demo */}
                   <div className={'flex gap-3'}>
                     <Button size={'sm'} variant={'outline'} asChild>
-                      <a
+                      <Link
                         href={project?.githubUrl}
                         target={'_blank'}
                         rel={'noopener noreferrer'}
                       >
                         <Github className={'h-4 w-4 mr-2'} />
                         Code
-                      </a>
+                      </Link>
                     </Button>
                     <Button size={'sm'} asChild>
-                      <a
+                      <Link
                         href={project?.liveUrl}
                         target={'_blank'}
                         rel={'noopener noreferrer'}
                       >
                         <ExternalLink className={'h-4 w-4 mr-2'} />
                         Demo
-                      </a>
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>

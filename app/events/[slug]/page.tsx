@@ -20,20 +20,7 @@ const EVENT: Event = {
   date: '2024-07-01T18:00:00Z',
   location: '123 Main St, City, Country',
   virtual: false,
-  content: [
-    {
-      _type: 'block',
-      children: [
-        {
-          _type: 'span',
-          text: 'This is the event content. Add more details here.',
-        },
-      ],
-      markDefs: [],
-      style: 'normal',
-      _key: 'block1',
-    },
-  ],
+  content: '<h1> asdasd</h1>'
 };
 
 // --- Static Class Names ---
@@ -161,7 +148,7 @@ export default async function EventPage() {
         <Card>
           <CardContent className={styles?.cardContent}>
             <div className={styles?.content}>
-              <PortableText value={event.content} />
+              <div dangerouslySetInnerHTML={{ __html: event.content }} />
             </div>
           </CardContent>
         </Card>

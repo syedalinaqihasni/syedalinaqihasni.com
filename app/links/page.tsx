@@ -25,6 +25,7 @@ import {
   FaGithub,
   FaSignal,
 } from 'react-icons/fa';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Links | Syed Ali Naqi Hasni',
@@ -226,7 +227,7 @@ export default function LinksPage() {
         {/* Icons Row */}
         <div className={ICONS_CONTAINER}>
           {LINKS.map((link) => (
-            <a
+            <Link
               key={link.id}
               href={link.url}
               target={'_blank'}
@@ -235,7 +236,7 @@ export default function LinksPage() {
               aria-label={link.title}
             >
               {React.cloneElement(link.icon, { size: 40, color: '#fff' })}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -264,10 +265,10 @@ export default function LinksPage() {
                   variant={'outline'}
                   className={`${BUTTON_BASE} ${link.color}`}
                 >
-                  <a href={link.url} target={'_blank'} rel={'noopener noreferrer'}>
+                  <Link href={link.url} target={'_blank'} rel={'noopener noreferrer'}>
                     <span className={'mr-2'}>{link.icon}</span>
                     {link.title}
-                  </a>
+                  </Link>
                 </Button>
               ))}
             </div>

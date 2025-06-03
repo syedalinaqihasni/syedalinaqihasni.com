@@ -109,7 +109,7 @@ const formatDate = (dateString: string): string =>
 
 //     {/* Content */}
 //     <div className={styles?.content}>
-//       <PortableText value={post?.content} />
+//       <div dangerouslySetInnerHTML={{ __html: event.content }} />
 //     </div>
 
 //     {/* Share Button */}

@@ -138,7 +138,7 @@ export default function Footer() {
           <div className={'mt-2 md:mt-0'}>
             <div className={styles?.socialIcons}>
               {SOCIAL_LINKS.map(({ icon: Icon, url, label }) => (
-                <a
+                <Link
                   key={label}
                   href={url}
                   target={'_blank'}
@@ -146,7 +146,7 @@ export default function Footer() {
                   aria-label={label}
                 >
                   <Icon className={styles?.socialIcon} />
-                </a>
+                </Link>
               ))}
             </div>
           </div>

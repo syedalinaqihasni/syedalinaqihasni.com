@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Contact from '@/components/contact/contact-form';
 import { CONTACT_CARDS } from '@/constants/contact';
 import { Card, CardContent } from '@/components/ui/card';
+import Link from 'next/link';
 
 // --- Metadata ---
 export const metadata: Metadata = {
@@ -97,14 +98,14 @@ function ContactCard({
       <CardContent className={styles?.cardContent}>
         <div className={styles?.iconWrapper}>{icon}</div>
         <h3 className={styles?.cardTitle}>{title}</h3>
-        <a
+        <Link
           href={link}
           className={styles?.cardLink}
           target={link.startsWith('http') ? '_blank' : undefined}
           rel={link.startsWith('http') ? 'noopener noreferrer' : undefined}
         >
           {details}
-        </a>
+        </Link>
       </CardContent>
     </Card>
   );

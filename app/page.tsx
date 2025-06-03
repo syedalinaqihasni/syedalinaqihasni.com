@@ -101,7 +101,7 @@ function SocialButtons({ links }: { links: typeof CONTENT.socialLinks }) {
         // If external (like resume), render as anchor tag with target=_blank
         if (isExternal) {
           return (
-            <a
+            <Link
               key={index}
               href={href}
               target={'_blank'}
@@ -111,12 +111,12 @@ function SocialButtons({ links }: { links: typeof CONTENT.socialLinks }) {
               <Button variant={'ghost'} size={'icon'} aria-label={label}>
                 <Icon className={'h-5 w-5'} />
               </Button>
-            </a>
+            </Link>
           );
         }
         // External social links open in new tab as well
         return (
-          <a
+          <Link
             key={index}
             href={href}
             target={'_blank'}
@@ -126,7 +126,7 @@ function SocialButtons({ links }: { links: typeof CONTENT.socialLinks }) {
             <Button variant={'ghost'} size={'icon'} aria-label={label}>
               <Icon className={'h-5 w-5'} />
             </Button>
-          </a>
+          </Link>
         );
       })}
     </div>

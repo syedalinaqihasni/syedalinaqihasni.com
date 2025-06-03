@@ -144,8 +144,7 @@ const BlogList = ({ posts }: BlogListProps) => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card className={styles?.card}>
-              <Link href={`/blog/${post.slug}`}>
-                <a className={'relative block h-48 w-full'}>
+              <Link href={`/blog/${post.slug}`} className={'relative block h-48 w-full'}>
                   <Image
                     src={post.image}
                     alt={post.title}
@@ -153,7 +152,6 @@ const BlogList = ({ posts }: BlogListProps) => {
                     className={styles?.image}
                     priority={index < 3} // Prioritize images of first few posts
                   />
-                </a>
               </Link>
               <CardContent className={'p-6'}>
                 {/* Categories badges */}
@@ -176,9 +174,7 @@ const BlogList = ({ posts }: BlogListProps) => {
 
                 {/* Title */}
                 <Link href={`/blog/${post.slug}`}>
-                  <a>
                     <h3 className={styles?.title}>{post.title}</h3>
-                  </a>
                 </Link>
 
                 {/* Excerpt */}

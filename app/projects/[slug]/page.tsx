@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Github, ExternalLink, Calendar } from 'lucide-react';
 import Image from 'next/image';
 import { PROJECT } from '@/constants/projects';
+import Link from 'next/link';
 
 export default function ProjectPage() {
   const formatDate = (dateString: string) =>
@@ -72,25 +73,25 @@ export default function ProjectPage() {
 
           <div className={BUTTON_GROUP}>
             <Button asChild>
-              <a
+              <Link
                 href={PROJECT.liveUrl}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
                 <ExternalLink className={BUTTON_ICON} />
                 View Live
-              </a>
+              </Link>
             </Button>
 
             <Button variant={'outline'} asChild>
-              <a
+              <Link
                 href={PROJECT.githubUrl}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
                 <Github className={BUTTON_ICON} />
                 View Code
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
