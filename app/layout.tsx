@@ -66,19 +66,6 @@ export default function RootLayout({
   return (
     <html lang={'en'} suppressHydrationWarning>
        <head>
-        {/* Google Analytics Script */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-5TPNEKJMLD"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-5TPNEKJMLD');
-          `}
-        </Script>
         {/* Google Tag Manager script (injected early in body) */}
         <Script id="gtm-head" strategy="beforeInteractive">
           {`
