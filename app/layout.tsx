@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
+import Script from 'next/script';
 
 /**
  * Google Fonts configuration extracted for reuse and clarity.
@@ -64,6 +65,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang={'en'} suppressHydrationWarning>
+       <head>
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-5TPNEKJMLD"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5TPNEKJMLD');
+          `}
+        </Script>
+      </head>
       <body
         className={`${interFont.variable} ${poppinsFont.variable} font-sans min-h-screen bg-background text-foreground`}
       >
