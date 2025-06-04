@@ -5,6 +5,7 @@ import { CONSTANT} from '@/constants/about';
 
 import Image from 'next/image';
 import { styles } from '@/styles/about';
+import HtmlRenderer from '@/components/HtmlRenderer';
 
 // Force static generation
 export const dynamic = 'force-static';
@@ -55,9 +56,9 @@ export default function AboutPage() {
               {CONSTANT?.profile.paragraphs?.map((text, idx) => (
                 <p
                   className={styles?.profileParagraph}
-                  key={idx}
-                  dangerouslySetInnerHTML={{ __html: text }}
-                />
+                  key={idx}>
+<HtmlRenderer html={text}/>
+                  </p>
               ))}
             </div>
           </div>

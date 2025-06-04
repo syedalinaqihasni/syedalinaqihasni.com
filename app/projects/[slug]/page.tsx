@@ -10,6 +10,7 @@ import { formatDate } from '@/lib/utils';
 import { styles } from '@/styles/projectsSingle';
 import { notFound } from 'next/navigation';
 import { Projects } from '@/types/projects';
+import HtmlRenderer from '@/components/HtmlRenderer';
 
 export async function generateMetadata({
   params,
@@ -46,14 +47,18 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams() {
-  return projects.map((project) => ({
-    slug: project.slug,
-  }));
-}
+// export async function generateStaticParams() {
+//   return projects.map((project) => ({
+//     slug: project.slug,
+//   }));
+// }
 
 const ProjectPage = async ({ params }: { params: { slug: string } }) => {
-const project:Projects=projects.filter ((p) => p.slug === params.slug)[0];
+const project = projects.find((p) => p.slug === params.slug);
+
+  if (!project) {
+    notFound();
+  }
   return (
     <div className={styles?.CONTAINER}>
       <div className={styles?.CONTENT_WRAPPER}>
@@ -138,8 +143,9 @@ const project:Projects=projects.filter ((p) => p.slug === params.slug)[0];
             </div>
             <div
               className={styles?.LONG_DESCRIPTION}
-              dangerouslySetInnerHTML={{ __html: project.longDescription }}
-            />
+            >
+              <HtmlRenderer html={project.longDescription} />
+            </div>
           </CardContent>
         </Card>
 

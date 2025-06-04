@@ -9,7 +9,7 @@ const styles = {
   profileImage: 'object-cover',
   profileTextHeading: 'text-3xl font-bold mb-6',
   profileTextWrapper: 'prose dark:prose-invert',
-  profileParagraph: 'text-lg mb-4',
+  profileParagraph: 'text-lg mb-4 ',
   timelineSection: 'mb-20',
   timelineHeading: 'text-3xl font-bold text-center mb-12',
   timelineWrapper: 'relative',

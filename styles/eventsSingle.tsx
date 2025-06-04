@@ -18,7 +18,7 @@ const styles = {
   text: 'text-muted-foreground',
   virtualBadge: 'mt-2',
   map: 'rounded-lg',
-  content: 'prose dark:prose-invert max-w-none',
+  content: 'prose dark:prose-invert max-w-none ',
 };
 
 export {styles}

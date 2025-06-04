@@ -7,7 +7,7 @@ const styles = {
   metaItem: 'flex items-center gap-2',
   imageWrapper: 'relative h-[400px] rounded-lg overflow-hidden mb-12',
   imageClass: 'object-cover',
-  content: 'prose dark:prose-invert max-w-none mb-16',
+  content: 'prose dark:prose-invert max-w-none mb-16 ',
   shareWrapper: 'text-center',
 };
 

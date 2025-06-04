@@ -80,3 +80,210 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.single-project {
+  line-height: 1.2;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* Headings */
+.single-project h1,
+.single-project h2,
+.single-project h3,
+.single-project h4,
+.single-project h5,
+.single-project h6 {
+  font-weight: bold;
+  margin: 1em 0 0.5em;
+}
+
+.single-project h1 { font-size: 2em; }
+.single-project h2 { font-size: 1.75em; }
+.single-project h3 { font-size: 1.5em; }
+.single-project h4 { font-size: 1.25em; }
+.single-project h5 { font-size: 1.1em; }
+.single-project h6 { font-size: 1em; }
+
+/* Paragraphs */
+.single-project p {
+  margin-bottom: 1.2em;
+}
+
+.single-project ul,
+.single-project ol {
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.single-project ul {
+  list-style-type: disc; /* show • */
+}
+
+.single-project ol {
+  list-style-type: decimal; /* show 1. 2. 3. */
+}
+
+.single-project ul li,
+.single-project ol li {
+  margin-bottom: 0.5em;
+}
+.single-project strong,
+.single-project b {
+  font-weight: 700;
+}
+
+.single-project em,
+.single-project i {
+  font-style: italic;
+}
+
+.single-project u {
+  text-decoration: underline;
+}
+
+.single-project s,
+.single-project strike {
+  text-decoration: line-through;
+}
+
+.single-project mark {
+  background-color: #fffb91;
+  padding: 0 0.2em;
+  border-radius: 2px;
+}
+.single-project small {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.single-project sub {
+  vertical-align: sub;
+  font-size: 0.75em;
+}
+
+.single-project sup {
+  vertical-align: super;
+  font-size: 0.75em;
+}
+
+
+/* Links */
+.single-project a {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+.single-project a:hover {
+  text-decoration: none;
+}
+
+/* Images */
+.single-project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em 0;
+  border-radius: 5px;
+}
+
+/* Buttons (styled links or real <button>) */
+.single-project button,
+.single-project .btn,
+.single-project a.button {
+  display: inline-block;
+  padding: 0.6em 1em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-align: center;
+  text-decoration: none;
+}
+.single-project button:hover,
+.single-project .btn:hover,
+.single-project a.button:hover {
+  background-color: #0056b3;
+}
+
+/* Horizontal Rule */
+.single-project hr {
+  margin: 2em 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Blockquote */
+.single-project blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  color: #fff;
+  margin: 1em 0;
+  font-style: italic;
+}
+
+/* Inline Code */
+.single-project code {
+  background-color: #f4f4f4;
+  color:#000;
+  font-family: monospace;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+/* Preformatted Code with Copy Button */
+.single-project pre {
+  position: relative;
+  background-color: #fff;
+  color:#000;
+  padding: 1em;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.95em;
+  margin-bottom: 1em;
+}
+
+.single-project pre code {
+  background: none;
+  padding: 0;
+}
+
+.single-project .copy-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background: #000;
+  color:fff;
+  border: none;
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.single-project .copy-button:hover {
+  background: #000000c0;
+}
+
+/* Table */
+.single-project table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.single-project th,
+.single-project td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+
+}
+
+.single-project th {
+  background-color: #f9f9f9;  color:#000
+}
+

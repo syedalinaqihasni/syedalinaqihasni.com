@@ -9,6 +9,7 @@ import { notFound } from 'next/navigation';
 import { events } from '@/constants/events';
 import { formatDateTime } from '@/lib/utils';
 import { styles } from '@/styles/eventsSingle';
+import HtmlRenderer from '@/components/HtmlRenderer';
 
 export async function generateMetadata({
   params,
@@ -45,14 +46,18 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams() {
-  return events.map((event) => ({
-    slug: event.slug,
-  }));
-}
+// export async function generateStaticParams() {
+//   return events.map((event) => ({
+//     slug: event?.slug,
+//   }));
+// }
 
 const EventPage = async ({ params }: { params: { slug: string } }) => {
-const event:Event=events.filter ((event) => event.slug === params.slug)[0];
+  const event = events.find((event) => event.slug === params.slug);
+
+  if (!event) {
+    notFound();
+  }
 
   return (
     <div className={styles?.container}>
@@ -134,7 +139,7 @@ const event:Event=events.filter ((event) => event.slug === params.slug)[0];
         <Card>
           <CardContent className={styles?.cardContent}>
             <div className={styles?.content}>
-              <div dangerouslySetInnerHTML={{ __html: event.content }} />
+                <HtmlRenderer html={event.content}/>
             </div>
           </CardContent>
         </Card>

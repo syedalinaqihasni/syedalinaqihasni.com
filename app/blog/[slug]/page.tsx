@@ -10,6 +10,7 @@ import { Post } from '@/types/blogs';
 import { notFound } from 'next/navigation';
 import { formatDate } from '@/lib/utils';
 import { styles } from '@/styles/singleBlogs';
+import HtmlRenderer from '@/components/HtmlRenderer';
 
 
 export async function generateMetadata({
@@ -47,14 +48,15 @@ export async function generateMetadata({
   };
 }
 
-export async function generateStaticParams() {
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-}
+// export async function generateStaticParams() {
+//   return posts.map((post) => ({
+//     slug: post.slug,
+//   }));
+// }
 
 const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
-const post:Post=posts.filter ((post) => post.slug === params.slug)[0];
+const post = posts.find((post) => post.slug === params.slug);
+if (!post) notFound();
 
 return (
 <div className={styles?.container}>
@@ -97,7 +99,7 @@ return (
 
     {/* Content */}
     <div className={styles?.content}>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <HtmlRenderer html={post.content}/>
     </div>
 
     {/* Share Button */}
