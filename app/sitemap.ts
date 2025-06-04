@@ -2,42 +2,18 @@ import type { MetadataRoute } from 'next';
 import { posts } from '@/constants/blogs';
 import { projects } from '@/constants/projects';
 import { events } from '@/constants/events';
+import { LINKS_GROUPS } from '@/constants/footer';
+
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://syedalinaqihasni.com';
 
-  const staticRoutes: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly' as const,
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/projects`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/events`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,   
-      priority: 0.6,
-    },
-  ];
+  const linkRoutes: MetadataRoute.Sitemap = LINKS_GROUPS.flat().map((link) => ({
+    url: `${baseUrl}${link.path}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: link.path === '/' ? 1 : 0.6,
+  }));
 
   const postRoutes = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
@@ -52,7 +28,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.5,
   }));
-
   const eventRoutes = events.map((event) => ({
     url: `${baseUrl}/events/${event.slug}`,
     lastModified: new Date(event.date || new Date()),
@@ -60,5 +35,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...staticRoutes, ...postRoutes, ...projectRoutes, ...eventRoutes];
+  return [...linkRoutes, ...postRoutes, ...projectRoutes, ...eventRoutes];
 }
