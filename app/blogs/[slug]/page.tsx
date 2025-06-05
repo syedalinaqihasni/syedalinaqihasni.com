@@ -1,4 +1,4 @@
-// app/blog/[slug]/page.tsx
+// app/blogs/[slug]/page.tsx
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';

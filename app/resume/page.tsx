@@ -5,6 +5,10 @@ import { Badge } from '@/components/ui/badge';
 import { Download, Mail, Phone, MapPin } from 'lucide-react';
 import { RESUME } from '@/constants/resume';
 import Link from 'next/link';
+import { getMetadataForPath } from "@/lib/metadata";
+
+export const metadata = getMetadataForPath('/resume');
+
 
 const PAGE_TITLE = 'Resume | Syed Ali Naqi Hasni';
 const PAGE_DESCRIPTION = 'View or download my professional resume';
@@ -50,29 +54,6 @@ const skillBadgeContainerClass = 'flex flex-wrap gap-2';
 
 const certificationsListClass = 'space-y-2 text-muted-foreground';
 
-/**
- * Metadata for Resume Page
- */
-export const metadata: Metadata = {
-  title: PAGE_TITLE,
-  description: PAGE_DESCRIPTION,
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://syedalinaqihasni.com',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-    siteName: 'Syed Ali Naqi Hasni',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-  },
-  metadataBase: new URL('https://syedalinaqihasni.com'),
-};
 
 /**
  * ResumePage Component

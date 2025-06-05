@@ -23,7 +23,7 @@ const LINKS_GROUPS = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
-    { name: "Blog", path: "/blog" },
+    { name: "Blog", path: "/blogs" },
     { name: "Resume", path: "/resume" },
     { name: "Contact", path: "/contact" },
   ],

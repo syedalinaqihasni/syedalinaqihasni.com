@@ -20,6 +20,7 @@ const EVENT: Event = {
   date: '2024-07-01T18:00:00Z',
   location: '123 Main St, City, Country',
   virtual: false,
+  excerpt:'',
   content: '<h1> asdasd</h1>'
 };
 

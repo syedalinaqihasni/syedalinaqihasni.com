@@ -94,11 +94,11 @@ const styles = {
   icon: 'h-4 w-4 mr-1',
 };
 
-interface BlogListProps {
+interface BlogsListProps {
   posts?: Post[]; // Optional posts prop to override default static data
 }
 
-const BlogList = ({ posts }: BlogListProps) => {
+const BlogsList = ({ posts }: BlogsListProps) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   // Use provided posts or fallback to static data
@@ -144,7 +144,7 @@ const BlogList = ({ posts }: BlogListProps) => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card className={styles?.card}>
-              <Link href={`/blog/${post.slug}`} className={'relative block h-48 w-full'}>
+              <Link href={`/blogs/${post.slug}`} className={'relative block h-48 w-full'}>
                   <Image
                     src={post.image}
                     alt={post.title}
@@ -173,7 +173,7 @@ const BlogList = ({ posts }: BlogListProps) => {
                 </div>
 
                 {/* Title */}
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={`/blogs/${post.slug}`}>
                     <h3 className={styles?.title}>{post.title}</h3>
                 </Link>
 
@@ -200,4 +200,4 @@ const BlogList = ({ posts }: BlogListProps) => {
   );
 };
 
-export default BlogList;
+export default BlogsList;

@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+import { getMetadataForPath } from '@/lib/metadata';
 
 const PAGE_TITLE = 'Development Archive';
 const PAGE_TITLE_FULL = 'Development Archive | Syed Ali Naqi Hasni';
@@ -15,26 +16,7 @@ const MEDIUM = 'Medium';
 const DEVTO = 'Dev.to';
 const REDDIT = 'Reddit';
 
-export const metadata: Metadata = {
-  title: PAGE_TITLE_FULL,
-  description: PAGE_DESCRIPTION,
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://syedalinaqihasni.com',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-    siteName: 'Syed Ali Naqi Hasni',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-  },
-  metadataBase: new URL('https://syedalinaqihasni.com'),
-};
+export const metadata = getMetadataForPath('/archive');
 
 const archivePosts = {
   medium: [

@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Event } from "@/types/events";
+import { getMetadataForPath } from "@/lib/metadata";
 
 // Text constants
 const PAGE_TITLE = "Upcoming Events";
@@ -15,26 +16,8 @@ const METADATA_TITLE = "Events | Syed Ali Naqi Hasni";
 const METADATA_DESCRIPTION =
   "Check out my upcoming speaking engagements, workshops, and other events";
 
-export const metadata: Metadata = {
-  title: METADATA_TITLE,
-  description: METADATA_DESCRIPTION,
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://syedalinaqihasni.com",
-    title: "Syed Ali Naqi Hasni | Frontend Web Developer",
-    description:
-      "Personal portfolio website showcasing my projects, skills, and experience",
-    siteName: "Syed Ali Naqi Hasni",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Syed Ali Naqi Hasni | Frontend Web Developer",
-    description:
-      "Personal portfolio website showcasing my projects, skills, and experience",
-  },
-  metadataBase: new URL("https://syedalinaqihasni.com"),
-};
+
+export const metadata = getMetadataForPath('/events');
 
 // Dummy events data (replace with your own data source)
 const events: Event[] = [
@@ -48,6 +31,7 @@ const events: Event[] = [
     date: "2024-07-15T10:00:00",
     location: "New York, NY",
     virtual: false,
+    excerpt: "",
     content: "<h1> asdasd</h1>",
   },
   {
@@ -60,6 +44,7 @@ const events: Event[] = [
     date: "2024-08-01T18:00:00",
     location: "Online",
     virtual: true,
+    excerpt: "",
     content: "<h1> asdasd</h1>",
   },
 ];
@@ -111,18 +96,22 @@ export default function EventsPage() {
         <section className={gridClass}>
           {events.map((event) => (
             <Card key={event.id} className={cardClass}>
-              <Link href={`/events/${event.slug}`} passHref className={imageWrapperClass}>
-                  <Image
-                    src={event.image}
-                    alt={event.title}
-                    fill
-                    className={imageClass}
-                  />
-                  {event.virtual && (
-                    <Badge className={virtualBadgeClass} variant={"secondary"}>
-                      Virtual Event
-                    </Badge>
-                  )}
+              <Link
+                href={`/events/${event.slug}`}
+                passHref
+                className={imageWrapperClass}
+              >
+                <Image
+                  src={event.image}
+                  alt={event.title}
+                  fill
+                  className={imageClass}
+                />
+                {event.virtual && (
+                  <Badge className={virtualBadgeClass} variant={"secondary"}>
+                    Virtual Event
+                  </Badge>
+                )}
               </Link>
 
               <CardContent className={"p-6"}>
@@ -130,7 +119,12 @@ export default function EventsPage() {
                   {event.type}
                 </Badge>
 
-                <Link href={`/events/${event.slug}`} passHref  className={eventTitleClass}>{event.title}
+                <Link
+                  href={`/events/${event.slug}`}
+                  passHref
+                  className={eventTitleClass}
+                >
+                  {event.title}
                 </Link>
 
                 <p className={eventDescriptionClass}>{event.description}</p>

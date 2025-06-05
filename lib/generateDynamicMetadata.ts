@@ -13,7 +13,7 @@ export function generateDynamicMetadata({
   description?: string;
   image?: string;
   publishedAt?: string;
-  path: string; // e.g. `/blog/my-post`
+  path: string;
 }): Metadata {
   const safeDescription = description ?? title;
   const fullUrl = `${baseUrl}${path}`;

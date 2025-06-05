@@ -20,7 +20,7 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
     description: 'Browse through the archived content, ideas, and past updates.',
   },
   {
-    path: '/blog',
+    path: '/blogs',
     title: 'Blog',
     description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
   },

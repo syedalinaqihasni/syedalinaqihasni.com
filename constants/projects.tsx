@@ -1,5 +1,5 @@
 // Mock data - in a real app, this would come from Sanity
-export const PROJECT = {
+export const projects = [{
   title: 'E-Commerce Platform',
   slug: 'e-commerce-platform',
   description:
@@ -75,7 +75,7 @@ export const PROJECT = {
       technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
     },
   ],
-};
+}];
 
 // Mock data - in a real app, this would come from Sanity
 export const FEATURED_PROJECTS = [
