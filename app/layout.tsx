@@ -6,6 +6,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import Script from 'next/script';
+import { getMetadataForPath } from '@/lib/metadata';
 
 /**
  * Google Fonts configuration extracted for reuse and clarity.
@@ -28,28 +29,7 @@ const poppinsFont = Poppins({
  */
 // Force static generation
 
-
-export const metadata: Metadata = {
-  title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-  description:
-    'Personal portfolio website showcasing my projects, skills, and experience',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://syedalinaqihasni.com',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-    siteName: 'Syed Ali Naqi Hasni',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-  },
-  metadataBase: new URL('https://syedalinaqihasni.com'),
-};
+export const metadata = getMetadataForPath('/');
 
 /**
  * RootLayout component wraps all pages with global providers,

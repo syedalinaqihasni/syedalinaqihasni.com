@@ -11,48 +11,20 @@ import { notFound } from 'next/navigation';
 import { formatDate } from '@/lib/utils';
 import { styles } from '@/styles/singleBlogs';
 import HtmlRenderer from '@/components/HtmlRenderer';
+import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
 
-
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const post: Post | undefined = posts.find((p) => p.slug === params.slug);
-
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const post = posts.find((p) => p.slug === params.slug);
   if (!post) return notFound();
 
-  return {
+  return generateDynamicMetadata({
     title: post.title,
-    description: post.excerpt || post.title,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt || post.title,
-      type: 'article',
-      publishedTime: post.publishedAt,
-      images: post.image
-        ? [
-            {
-              url: post.image,
-              alt: post.title,
-            },
-          ]
-        : [],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: post.title,
-      description: post.excerpt || post.title,
-      images: post.image ? [post.image] : [],
-    },
-  };
+    description: post.excerpt,
+    image: post.image,
+    publishedAt: post.publishedAt,
+    path: `/blog/${post.slug}`, 
+  });
 }
-
-// export async function generateStaticParams() {
-//   return posts.map((post) => ({
-//     slug: post.slug,
-//   }));
-// }
 
 const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
 const post = posts.find((post) => post.slug === params.slug);

@@ -11,47 +11,20 @@ import { styles } from '@/styles/projectsSingle';
 import { notFound } from 'next/navigation';
 import { Projects } from '@/types/projects';
 import HtmlRenderer from '@/components/HtmlRenderer';
+import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const project: Projects | undefined = projects.find((e) => e.slug === params.slug);
-
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const project = projects.find((e) => e.slug === params.slug);
   if (!project) return notFound();
 
-  return {
+  return generateDynamicMetadata({
     title: project.title,
-    description: project.excerpt || project.title,
-    openGraph: {
-      title: project.title,
-      description: project.excerpt || project.title,
-      type: 'article',
-      publishedTime: project.date,
-      images: project.image
-        ? [
-            {
-              url: project.image,
-              alt: project.title,
-            },
-          ]
-        : [],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: project.title,
-      description: project.excerpt || project.title,
-      images: project.image ? [project.image] : [],
-    },
-  };
+    description: project.description || project.title,
+    image: project.image,
+    publishedAt: project.publishedAt,
+    path: `/projects/${project.slug}`,
+  });
 }
-
-// export async function generateStaticParams() {
-//   return projects.map((project) => ({
-//     slug: project.slug,
-//   }));
-// }
 
 const ProjectPage = async ({ params }: { params: { slug: string } }) => {
 const project = projects.find((p) => p.slug === params.slug);

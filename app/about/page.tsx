@@ -6,30 +6,9 @@ import { CONSTANT} from '@/constants/about';
 import Image from 'next/image';
 import { styles } from '@/styles/about';
 import HtmlRenderer from '@/components/HtmlRenderer';
+import { getMetadataForPath } from '@/lib/metadata';
 
-// Force static generation
-
-
-export const metadata: Metadata = {
-  title: 'About Me | Syed Ali Naqi Hasni',
-  description: 'Learn more about my journey, experience, and the tools I use.',
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://syedalinaqihasni.com',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-    siteName: 'Syed Ali Naqi Hasni',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
-    description:
-      'Personal portfolio website showcasing my projects, skills, and experience',
-  },
-  metadataBase: new URL('https://syedalinaqihasni.com'),
-};
+export const metadata = getMetadataForPath('/about');
 
 export default function AboutPage() {
   return (

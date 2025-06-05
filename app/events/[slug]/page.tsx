@@ -10,47 +10,21 @@ import { events } from '@/constants/events';
 import { formatDateTime } from '@/lib/utils';
 import { styles } from '@/styles/eventsSingle';
 import HtmlRenderer from '@/components/HtmlRenderer';
+import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const event: Event | undefined = events.find((e) => e.slug === params.slug);
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const event = events.find((e) => e.slug === params.slug);
   if (!event) return notFound();
 
-  return {
+  return generateDynamicMetadata({
     title: event.title,
     description: event.excerpt || event.title,
-    openGraph: {
-      title: event.title,
-      description: event.excerpt || event.title,
-      type: 'article',
-      publishedTime: event.date,
-      images: event.image
-        ? [
-            {
-              url: event.image,
-              alt: event.title,
-            },
-          ]
-        : [],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: event.title,
-      description: event.excerpt || event.title,
-      images: event.image ? [event.image] : [],
-    },
-  };
+    image: event.image,
+    publishedAt: event.date,
+    path: `/events/${event.slug}`,
+  });
 }
-
-// export async function generateStaticParams() {
-//   return events.map((event) => ({
-//     slug: event?.slug,
-//   }));
-// }
 
 const EventPage = async ({ params }: { params: { slug: string } }) => {
   const event = events.find((event) => event.slug === params.slug);
