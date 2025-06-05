@@ -19,7 +19,7 @@ const METADATA_DESCRIPTION =
   "Check out my upcoming speaking engagements, workshops, and other events";
 
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: METADATA_TITLE,

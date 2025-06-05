@@ -11,10 +11,10 @@ import { styles } from "@/styles/resume";
  * Metadata for CONSTANT Page
  */
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
-  title: "CONSTANT | Syed Ali Naqi Hasni",
+  title: "Links | Syed Ali Naqi Hasni",
   description: "View or download my professional CONSTANT",
   openGraph: {
     type: "website",

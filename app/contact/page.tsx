@@ -7,7 +7,7 @@ import { styles } from '@/styles/contact';
 
 // --- Metadata ---
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Contact | Syed Ali Naqi Hasni',

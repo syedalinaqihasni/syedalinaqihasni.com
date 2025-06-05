@@ -8,7 +8,7 @@ import { CONSTANT, LINKS, PROFILE } from '@/constants/links';
 import { styles } from '@/styles/links';
 
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Links | Syed Ali Naqi Hasni',
@@ -38,24 +38,24 @@ export default function LinksPage() {
     <div className={styles?.CONTAINER}>
       <div className={styles?.MAX_WIDTH_WRAPPER}>
         {/* Icons Row */}
-        <div className={styles?.ICONS_CONTAINER}>
+        {/* <div className={styles?.ICONS_CONTAINER}>
           {LINKS?.map((link) => (
             <Link
               key={link.id}
               href={link.url}
               target={'_blank'}
               rel={'noopener noreferrer'}
-              className={`${styles?.ICON_WRAPPER_BASE} ${link.color}`}
+              className={`${styles.ICON_WRAPPER_BASE} ${link.color}`}
               aria-label={link.title}
             >
               {React.cloneElement(link.icon, { size: 40, color: '#fff' })}
             </Link>
           ))}
-        </div>
+        </div> */}
 
         {/* Profile Info */}
-        <div className={styles?.PROFILE_CONTAINER}>
-          <div className={styles?.PROFILE_IMAGE_WRAPPER}>
+        <div className={styles.PROFILE_CONTAINER}>
+          <div className={styles.PROFILE_IMAGE_WRAPPER}>
             <Image
               src={PROFILE.image}
               alt={CONSTANT?.profileAlt}
@@ -63,6 +63,7 @@ export default function LinksPage() {
               className={'object-cover'}
             />
           </div>
+          
           <h1 className={styles?.PROFILE_NAME}>{PROFILE.name}</h1>
           <p className={styles?.PROFILE_ROLE}>{PROFILE.role}</p>
         </div>

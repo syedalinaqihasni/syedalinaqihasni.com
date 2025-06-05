@@ -10,7 +10,7 @@ import { styles } from '@/styles/social';
  * Metadata for SEO and sharing
  */
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Social Media | Portfolio',

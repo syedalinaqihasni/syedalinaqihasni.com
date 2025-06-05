@@ -4,7 +4,7 @@ import ProjectList from '@/components/projects/project-list';
 import { styles } from '@/styles/projects';
 
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Projects | Syed Ali Naqi Hasni',

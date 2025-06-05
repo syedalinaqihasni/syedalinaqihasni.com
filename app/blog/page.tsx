@@ -5,7 +5,7 @@ import { styles } from '@/styles/blogs';
 
 // --- Metadata ---
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Blog | Syed Ali Naqi Hasni',

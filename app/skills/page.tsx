@@ -4,7 +4,7 @@ import { CONSTANT } from '@/constants/social';
 import { styles } from '@/styles/skills';
 
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Skills | Syed Ali Naqi Hasni',

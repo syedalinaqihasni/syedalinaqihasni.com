@@ -27,7 +27,7 @@ const poppinsFont = Poppins({
  * Metadata configuration for SEO and social sharing.
  */
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Syed Ali Naqi Hasni | Frontend Web Developer',

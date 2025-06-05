@@ -9,7 +9,6 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Projects } from '@/types/projects';
 import { projects } from '@/constants/projects';
 
 /**

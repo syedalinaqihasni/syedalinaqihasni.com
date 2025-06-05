@@ -8,7 +8,7 @@ import { styles } from '@/styles/about';
 import HtmlRenderer from '@/components/HtmlRenderer';
 
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'About Me | Syed Ali Naqi Hasni',

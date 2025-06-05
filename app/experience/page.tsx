@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { styles } from '@/styles/experience';
 
 // Force static generation
-export const dynamic = 'force-static';
+
 
 export const metadata: Metadata = {
   title: 'Experience | Syed Ali Naqi Hasni',
