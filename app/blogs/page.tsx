@@ -34,7 +34,7 @@ export default async function BlogPage() {
           <p className={styles?.description}>{CONSTANT?.pageDescription}</p>
         </div>
 
-        {/* <BlogsList posts={posts} /> */}
+        <BlogsList  />
       </div>
     </div>
   );

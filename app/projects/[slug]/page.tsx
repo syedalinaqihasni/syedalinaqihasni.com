@@ -6,7 +6,28 @@ import { Github, ExternalLink, Calendar } from 'lucide-react';
 import Image from 'next/image';
 import { projects } from '@/constants/projects';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
 
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const project = projects.find((e) => e.slug === params.slug);
+  if (!project) return notFound();
+
+  return generateDynamicMetadata({
+    title: project.title,
+    description: project.description || project.title,
+    image: project.image,
+    publishedAt: project.publishedAt,
+    path: `/projects/${project.slug}`,
+  });
+}
+
+// const ProjectPage = async ({ params }: { params: { slug: string } }) => {
+// const project = projects.find((p) => p.slug === params.slug);
+//  if (!project) {
+//     notFound();
+//   }
 export default function ProjectPage() {
   const formatDate = (dateString: string) =>
     new Date(dateString).toLocaleDateString('en-US', {

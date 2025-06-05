@@ -7,6 +7,9 @@ import { Calendar, Clock, Share2 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Post } from '@/types/blogs';
+import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
+import { posts } from '@/constants/blogs';
+import { notFound } from 'next/navigation';
 
 // Constants
 const CONSTANT = {
@@ -36,98 +39,79 @@ const formatDate = (dateString: string): string =>
     day: 'numeric',
   });
 
-// Static Params
-// export const generateStaticParams = async () => {
-// const posts: Post[] = await sanityFetch({ query: postsQuery });
-// return posts.map((post) => ({
-//   slug: post?.slug.current,
-// }));
-// };
 
-// Metadata
-// export const generateMetadata = async ({
-//   params,
-// }: {
-//   params: { slug: string };
-// }): Promise<Metadata> => {
-//   const post: Post = await sanityFetch({
-//     query: postBySlugQuery,
-//     params: { slug: params.slug },
-//   });
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const post = posts.find((p) => p.slug === params.slug);
+  if (!post) return notFound();
 
-//   return {
-//     title: `${post?.title}${CONSTANT?.blogTitleSuffix}`,
-//     description: post?.excerpt,
-//   };
-// };
+  return generateDynamicMetadata({
+    title: post.title,
+    description: post.excerpt,
+    image: post.image,
+    publishedAt: post.publishedAt,
+    path: `/blogs/${post.slug}`, 
+  });
+}
 
-// Page Component
-// const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
-// const post: Post = await sanityFetch({
-//   query: postBySlugQuery,
-//   params: { slug: params.slug },
-// });
+const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
+const post = posts.find((post) => post.slug === params.slug);
+if (!post) notFound();
 
-// return (
-// <div className={styles?.container}>
-//   <div className={styles?.wrapper}>
-//     {/* Header */}
-//     <div className={'mb-8'}>
-//       <div className={styles?.categoryWrapper}>
-//         {post?.categories?.map((category: string) => (
-//           <Badge key={category} variant={'secondary'}>
-//             {category}
-//           </Badge>
-//         ))}
-//       </div>
+return (
+<div className={styles?.container}>
+  <div className={styles?.wrapper}>
+    {/* Header */}
+    <div className={'mb-8'}>
+      <div className={styles?.categoryWrapper}>
+        {post?.categories?.map((category: string) => (
+          <Badge key={category} variant={'secondary'}>
+            {category}
+          </Badge>
+        ))}
+      </div>
 
-//       <h1 className={styles?.title}>{post?.title}</h1>
+      <h1 className={styles?.title}>{post?.title}</h1>
 
-//       <div className={styles?.metaRow}>
-//         <div className={styles?.metaItem}>
-//           <Calendar className={'h-4 w-4'} />
-//           {formatDate(post?.publishedAt)}
-//         </div>
-//         <div className={styles?.metaItem}>
-//           <Clock className={'h-4 w-4'} />
-//           {post?.estimatedReadingTime} {CONSTANT?.readUnit}
-//         </div>
-//       </div>
-//     </div>
+      <div className={styles?.metaRow}>
+        <div className={styles?.metaItem}>
+          <Calendar className={'h-4 w-4'} />
+          {formatDate(post?.publishedAt)}
+        </div>
+        <div className={styles?.metaItem}>
+          <Clock className={'h-4 w-4'} />
+          {post?.readingTime} {CONSTANT?.readUnit}
+        </div>
+      </div>
+    </div>
 
-//     {/* Featured Image */}
-//     {post?.mainImage && (
-//       <div className={styles?.imageWrapper}>
-//         <Image
-//           src={post.mainImage}
-//           alt={post?.title}
-//           fill
-//           className={styles?.imageClass}
-//         />
-//       </div>
-//     )}
+    {/* Featured Image */}
+    {post?.image && (
+      <div className={styles?.imageWrapper}>
+        <Image
+          src={post.image}
+          alt={post?.title}
+          fill
+          className={styles?.imageClass}
+        />
+      </div>
+    )}
 
-//     {/* Content */}
-//     <div className={styles?.content}>
-//       <div dangerouslySetInnerHTML={{ __html: event.content }} />
-//     </div>
+    {/* Content */}
+    <div className={styles?.content}>
+      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+    </div>
 
-//     {/* Share Button */}
-//     <div className={styles?.shareWrapper}>
-//       <Button variant={'outline'}>
-//         <Share2 className={'h-4 w-4 mr-2'} />
-//         {CONSTANT?.shareButton}
-//       </Button>
-//     </div>
-//   </div>
-// </div>
-//   );
-// };
-
-// export default BlogPostPage;
-
-const page = () => {
-  return <div></div>;
+    {/* Share Button */}
+    <div className={styles?.shareWrapper}>
+      <Button variant={'outline'}>
+        <Share2 className={'h-4 w-4 mr-2'} />
+        {CONSTANT?.shareButton}
+      </Button>
+    </div>
+  </div>
+</div>
+  );
 };
 
-export default page;
+export default BlogPostPage;
+

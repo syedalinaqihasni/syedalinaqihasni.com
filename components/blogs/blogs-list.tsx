@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { Post } from '@/types/blogs';
+import { posts } from '@/constants/blogs';
 
 // Static fallback blog post data
 const DATA = {
@@ -94,11 +95,7 @@ const styles = {
   icon: 'h-4 w-4 mr-1',
 };
 
-interface BlogsListProps {
-  posts?: Post[]; // Optional posts prop to override default static data
-}
-
-const BlogsList = ({ posts }: BlogsListProps) => {
+const BlogsList = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   // Use provided posts or fallback to static data

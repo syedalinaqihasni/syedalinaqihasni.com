@@ -6,11 +6,27 @@ import { Calendar, MapPin, Share2 } from 'lucide-react';
 import Image from 'next/image';
 import { PortableText, } from '@portabletext/react';
 import { Event } from '@/types/events';
+import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
+import { notFound } from 'next/navigation';
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const event = events.find((e) => e.slug === params.slug);
+  if (!event) return notFound();
+
+  return generateDynamicMetadata({
+    title: event.title,
+    description: event.excerpt || event.title,
+    image: event.image,
+    publishedAt: event.date,
+    path: `/events/${event.slug}`,
+  });
+}
+
 
 
 
 // --- Static Data ---
-const EVENT: Event = {
+const events: Event[] = [{
   id: '1',
   title: 'Sample Event Title',
   description: 'This is a sample event description.',
@@ -22,7 +38,7 @@ const EVENT: Event = {
   virtual: false,
   excerpt:'',
   content: '<h1> asdasd</h1>'
-};
+}];
 
 // --- Static Class Names ---
 const styles = {
@@ -47,18 +63,16 @@ const styles = {
   map: 'rounded-lg',
   content: 'prose dark:prose-invert max-w-none',
 };
+// const EventPage = async ({ params }: { params: { slug: string } }) => {
+//   const event = events.find((event) => event.slug === params.slug);
 
-// --- Metadata ---
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: `${EVENT.title} | Events`,
-    description: EVENT.description,
-  };
-}
 
+//   if (!event) {
+//     notFound();
+//   }
 // --- Component ---
 export default async function EventPage() {
-  const event = EVENT;
+  const event = events;
 
   const formatDate = (dateString: string) =>
     new Date(dateString).toLocaleDateString('en-US', {
@@ -75,10 +89,10 @@ export default async function EventPage() {
         {/* Header */}
         <div className={styles?.header}>
           <Badge variant={'secondary'} className={styles?.badge}>
-            {event.type}
+            {event[0].type}
           </Badge>
-          <h1 className={styles?.title}>{event.title}</h1>
-          <p className={styles?.description}>{event.description}</p>
+          <h1 className={styles?.title}>{event[0].title}</h1>
+          <p className={styles?.description}>{event[0].description}</p>
           <Button>
             <Share2 className={'h-4 w-4 mr-2'} />
             Share Event
@@ -88,8 +102,8 @@ export default async function EventPage() {
         {/* Event Image */}
         <div className={styles?.imageWrapper}>
           <Image
-            src={event.image}
-            alt={event.title}
+            src={event[0].image}
+            alt={event[0].title}
             fill
             className={styles?.image}
           />
@@ -106,15 +120,15 @@ export default async function EventPage() {
                     <Calendar className={styles?.icon} />
                     <div>
                       <h3 className={styles?.label}>Date & Time</h3>
-                      <p className={styles?.text}>{formatDate(event.date)}</p>
+                      <p className={styles?.text}>{formatDate(event[0].date)}</p>
                     </div>
                   </div>
                   <div className={styles?.detailRow}>
                     <MapPin className={styles?.icon} />
                     <div>
                       <h3 className={styles?.label}>Location</h3>
-                      <p className={styles?.text}>{event.location}</p>
-                      {event.virtual && (
+                      <p className={styles?.text}>{event[0].location}</p>
+                      {event[0].virtual && (
                         <Badge
                           variant={'secondary'}
                           className={styles?.virtualBadge}
@@ -126,7 +140,7 @@ export default async function EventPage() {
                   </div>
                 </div>
               </div>
-              {!event.virtual && (
+              {!event[0].virtual && (
                 <div>
                   <iframe
                     title={'Event Location'}
@@ -135,7 +149,7 @@ export default async function EventPage() {
                     frameBorder={'0'}
                     src={`https://www.google.com/maps/embed/v1/place?key=${
                       process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
-                    }&q=${encodeURIComponent(event.location)}`}
+                    }&q=${encodeURIComponent(event[0].location)}`}
                     allowFullScreen
                     className={styles?.map}
                   />
@@ -149,7 +163,7 @@ export default async function EventPage() {
         <Card>
           <CardContent className={styles?.cardContent}>
             <div className={styles?.content}>
-              <div dangerouslySetInnerHTML={{ __html: event.content }} />
+              <div dangerouslySetInnerHTML={{ __html: event[0].content }} />
             </div>
           </CardContent>
         </Card>
