@@ -6,7 +6,7 @@ import { LINKS_GROUPS } from '@/constants/footer';
 
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://syedalinaqihasni.com';
+  const baseUrl = 'https://www.syedalinaqihasni.com';
 
   const linkRoutes: MetadataRoute.Sitemap = LINKS_GROUPS.flat().map((link) => ({
     url: `${baseUrl}${link.path}`,
