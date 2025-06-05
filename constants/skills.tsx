@@ -65,8 +65,3 @@ export const SKILLS_PAGE = {
     { name: 'Adaptability', level: 90 },
   ],
 };
-
-export const CONSTANT={
-  title:'My Skills',
-  description:'A comprehensive overview of my technical skills, tools, and competencies.'
-}

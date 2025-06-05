@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { projects } from '@/constants/projects';
+import { Projects } from '@/types/projects';
 
 /**
  * ProjectList Component
@@ -20,21 +20,21 @@ import { projects } from '@/constants/projects';
  * @param {Projects[]} props.projects - Array of project objects to be displayed.
  * @returns JSX.Element
  */
-const ProjectList = () => {
+const ProjectList = ({ projects }: { projects: Projects[] }) => {
   // State to track currently selected category tab
   const [activeCategory, setActiveCategory] = useState('all');
 
   // Dynamically derive category list from provided projects
   const categories = [
     'all',
-    ...Array.from(new Set(projects?.map((project) => project?.categories))),
+    ...Array.from(new Set(projects.map((project) => project?.category))),
   ];
 
   // Filter projects based on selected category
   const filteredProjects =
     activeCategory === 'all'
       ? projects
-      : projects.filter((project) => project?.categories === activeCategory);
+      : projects.filter((project) => project?.category === activeCategory);
 
   return (
     <div>
@@ -46,7 +46,7 @@ const ProjectList = () => {
         onValueChange={setActiveCategory}
       >
         <TabsList className={'grid w-full grid-cols-2 md:grid-cols-5'}>
-          {categories?.map((category) => (
+          {categories.map((category) => (
             <TabsTrigger key={category} value={category}>
               {category?.charAt(0).toUpperCase() + category?.slice(1)}
             </TabsTrigger>
@@ -64,7 +64,7 @@ const ProjectList = () => {
           transition={{ duration: 0.3 }}
           className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'}
         >
-          {filteredProjects?.map((project) => (
+          {filteredProjects.map((project) => (
             <motion.div
               key={project?.id}
               initial={{ opacity: 0 }}
@@ -95,7 +95,7 @@ const ProjectList = () => {
 
                   {/* Project tags */}
                   <div className={'flex flex-wrap gap-2 mb-6'}>
-                    {project?.tags?.map((tag) => (
+                    {project?.tags.map((tag) => (
                       <Badge key={tag} variant={'secondary'}>
                         {tag}
                       </Badge>

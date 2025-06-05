@@ -1,4 +1,4 @@
-const CONSTANT = {
+const ABOUT_PAGE_CONSTANT = {
   title: 'About Me',
   description:
     'A passionate developer dedicated to crafting impactful digital experiences across WordPress, React, and Front-end ecosystems.',
@@ -10,25 +10,14 @@ const CONSTANT = {
       `Beyond development, I actively explore emerging technologies like AI, Web3, and the Metaverse, and I love sharing knowledge through LinkedIn content and open-source contributions.`,
     ],
   },
-  journeyHeading: 'My Journey',
- 
-  toolsHeading: 'Tools & Technologies',
-  tools:[
-  {
-    category: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Python', 'SQL'],
+  journey: {
+    heading: 'My Journey',
   },
-  {
-    category: 'Frontend',
-    items: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS'],
+  tools: {
+    heading: 'Tools & Technologies',
   },
-  {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'Django', 'PostgreSQL'],
-  },
-  { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
-],
-journey:[
+};
+const JOURNEY = [
   {
     year: '2018',
     title: 'Started Programming',
@@ -65,5 +54,21 @@ journey:[
     description:
       'Started working as an independent consultant, helping businesses scale their tech.',
   },
-]}
-export { CONSTANT};
+];
+
+const TOOLS = [
+  {
+    category: 'Languages',
+    items: ['JavaScript', 'TypeScript', 'Python', 'SQL'],
+  },
+  {
+    category: 'Frontend',
+    items: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS'],
+  },
+  {
+    category: 'Backend',
+    items: ['Node.js', 'Express', 'Django', 'PostgreSQL'],
+  },
+  { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
+];
+export { ABOUT_PAGE_CONSTANT, JOURNEY, TOOLS };

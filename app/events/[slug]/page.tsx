@@ -4,34 +4,69 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, Share2 } from 'lucide-react';
 import Image from 'next/image';
+import { PortableText, } from '@portabletext/react';
 import { Event } from '@/types/events';
-import { notFound } from 'next/navigation';
-import { events } from '@/constants/events';
-import { formatDateTime } from '@/lib/utils';
-import { styles } from '@/styles/eventsSingle';
-import HtmlRenderer from '@/components/HtmlRenderer';
-import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
 
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const event = events.find((e) => e.slug === params.slug);
-  if (!event) return notFound();
 
-  return generateDynamicMetadata({
-    title: event.title,
-    description: event.excerpt || event.title,
-    image: event.image,
-    publishedAt: event.date,
-    path: `/events/${event.slug}`,
-  });
+// --- Static Data ---
+const EVENT: Event = {
+  id: '1',
+  title: 'Sample Event Title',
+  description: 'This is a sample event description.',
+  type: 'Conference',
+  slug: 'sample-event',
+  image: '/sample-event.jpg',
+  date: '2024-07-01T18:00:00Z',
+  location: '123 Main St, City, Country',
+  virtual: false,
+  content: '<h1> asdasd</h1>'
+};
+
+// --- Static Class Names ---
+const styles = {
+  container: 'container mx-auto px-4 py-32 md:py-40',
+  wrapper: 'max-w-6xl mx-auto',
+  header: 'mb-12',
+  badge: 'mb-4',
+  title: 'text-4xl md:text-5xl font-bold mb-6',
+  description: 'text-xl text-muted-foreground mb-8',
+  imageWrapper: 'relative h-[500px] rounded-lg overflow-hidden mb-12',
+  image: 'object-cover',
+  card: 'mb-12',
+  cardContent: 'p-8',
+  grid: 'grid grid-cols-1 md:grid-cols-2 gap-8',
+  sectionTitle: 'text-2xl font-bold mb-4',
+  detailGroup: 'space-y-4',
+  detailRow: 'flex items-start gap-3',
+  icon: 'h-5 w-5 mt-1 text-primary',
+  label: 'font-medium',
+  text: 'text-muted-foreground',
+  virtualBadge: 'mt-2',
+  map: 'rounded-lg',
+  content: 'prose dark:prose-invert max-w-none',
+};
+
+// --- Metadata ---
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: `${EVENT.title} | Events`,
+    description: EVENT.description,
+  };
 }
 
-const EventPage = async ({ params }: { params: { slug: string } }) => {
-  const event = events.find((event) => event.slug === params.slug);
+// --- Component ---
+export default async function EventPage() {
+  const event = EVENT;
 
-  if (!event) {
-    notFound();
-  }
+  const formatDate = (dateString: string) =>
+    new Date(dateString).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+    });
 
   return (
     <div className={styles?.container}>
@@ -70,7 +105,7 @@ const EventPage = async ({ params }: { params: { slug: string } }) => {
                     <Calendar className={styles?.icon} />
                     <div>
                       <h3 className={styles?.label}>Date & Time</h3>
-                      <p className={styles?.text}>{formatDateTime(event.date)}</p>
+                      <p className={styles?.text}>{formatDate(event.date)}</p>
                     </div>
                   </div>
                   <div className={styles?.detailRow}>
@@ -113,7 +148,7 @@ const EventPage = async ({ params }: { params: { slug: string } }) => {
         <Card>
           <CardContent className={styles?.cardContent}>
             <div className={styles?.content}>
-                <HtmlRenderer html={event.content}/>
+              <div dangerouslySetInnerHTML={{ __html: event.content }} />
             </div>
           </CardContent>
         </Card>
@@ -121,5 +156,3 @@ const EventPage = async ({ params }: { params: { slug: string } }) => {
     </div>
   );
 }
-
-export default EventPage;

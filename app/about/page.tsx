@@ -1,63 +1,96 @@
 import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CONSTANT} from '@/constants/about';
-
+import { ABOUT_PAGE_CONSTANT, JOURNEY, TOOLS } from '@/constants/about';
+import { SEO } from '@/constants/seo';
 import Image from 'next/image';
-import { styles } from '@/styles/about';
-import HtmlRenderer from '@/components/HtmlRenderer';
-import { getMetadataForPath } from '@/lib/metadata';
 
-export const metadata = getMetadataForPath('/about');
+export const metadata: Metadata = {
+  title: SEO.about.title,
+  description: SEO.about.description,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://syedalinaqihasni.com',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+    siteName: 'Syed Ali Naqi Hasni',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Syed Ali Naqi Hasni | Frontend Web Developer',
+    description:
+      'Personal portfolio website showcasing my projects, skills, and experience',
+  },
+  metadataBase: new URL('https://syedalinaqihasni.com'),
+};
 
 export default function AboutPage() {
   return (
-    <div className={styles?.container}>
-      <div className={styles?.innerWrapper}>
-        <div className={styles?.headingSection}>
-          <h1 className={styles?.headingTitle}>{CONSTANT?.title}</h1>
-          <p className={styles?.headingDescription}>{CONSTANT?.description}</p>
+    <div className={'container mx-auto px-4 py-32 md:py-40'}>
+      <div className={'max-w-6xl mx-auto'}>
+        <div className={'text-center mb-16'}>
+          <h1 className={'text-4xl md:text-5xl font-bold mb-6'}>
+            {ABOUT_PAGE_CONSTANT?.title}
+          </h1>
+          <p className={'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto'}>
+            {ABOUT_PAGE_CONSTANT?.description}
+          </p>
         </div>
 
         {/* Profile Section */}
-        <div className={styles?.profileGrid}>
-          <div className={styles?.profileImageWrapper}>
+        <div className={'grid grid-cols-1 md:grid-cols-2 gap-12 mb-20'}>
+          <div className={'relative h-[400px] rounded-lg overflow-hidden'}>
             <Image
               src={'/images/syedalinaqihasni.jpg'}
               alt={'Profile'}
               fill
-              className={styles?.profileImage}
+              className={'object-cover'}
             />
           </div>
           <div>
-            <h2 className={styles?.profileTextHeading}>{CONSTANT?.profile.heading}</h2>
-            <div className={styles?.profileTextWrapper}>
-              {CONSTANT?.profile.paragraphs?.map((text, idx) => (
+            <h2 className={'text-3xl font-bold mb-6'}>
+              {ABOUT_PAGE_CONSTANT?.profile.heading}
+            </h2>
+            <div className={'prose dark:prose-invert'}>
+              {ABOUT_PAGE_CONSTANT?.profile.paragraphs.map((text, idx) => (
                 <p
-                  className={styles?.profileParagraph}
-                  key={idx}>
-<HtmlRenderer html={text}/>
-                  </p>
+                  className={'text-lg mb-4'}
+                  key={idx}
+                  dangerouslySetInnerHTML={{ __html: text }}
+                />
               ))}
             </div>
           </div>
         </div>
 
         {/* Journey Timeline */}
-        <div className={styles?.timelineSection}>
-          <h2 className={styles?.timelineHeading}>{CONSTANT?.journeyHeading}</h2>
-          <div className={styles?.timelineWrapper}>
-            <div className={styles?.timelineLine} />
-            <div className={styles?.timelineEvents}>
-              {CONSTANT?.journey?.map((event, index) => (
-                <div key={event.year} className={styles?.timelineEvent(index)}>
-                  <div className={styles?.timelineSpacer} />
-                  <div className={styles?.timelineDot} />
-                  <Card className={styles?.timelineCard}>
-                    <CardContent className={styles?.timelineCardContent}>
-                      <div className={styles?.timelineYear}>{event.year}</div>
-                      <h3 className={styles?.timelineTitle}>{event.title}</h3>
-                      <p className={styles?.timelineDescription}>{event.description}</p>
+        <div className={'mb-20'}>
+          <h2 className={'text-3xl font-bold text-center mb-12'}>
+            {ABOUT_PAGE_CONSTANT?.journey.heading}
+          </h2>
+          <div className={'relative'}>
+            <div className={'absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-border'} />
+            <div className={'space-y-12'}>
+              {JOURNEY.map((event, index) => (
+                <div
+                  key={event.year}
+                  className={`relative flex items-center ${
+                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
+                >
+                  <div className={'flex-1 md:w-1/2'} />
+                  <div className={'absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-primary border-4 border-background'} />
+                  <Card className={'flex-1 md:w-1/2 mx-4'}>
+                    <CardContent className={'p-6'}>
+                      <div className={'font-bold text-xl mb-2'}>{event.year}</div>
+                      <h3 className={'text-lg font-semibold mb-2'}>
+                        {event.title}
+                      </h3>
+                      <p className={'text-muted-foreground'}>
+                        {event.description}
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -68,14 +101,18 @@ export default function AboutPage() {
 
         {/* Tools & Technologies */}
         <div>
-          <h2 className={styles?.toolsSectionHeading}>{CONSTANT?.toolsHeading}</h2>
-          <div className={styles?.toolsGrid}>
-            {CONSTANT.tools?.map((category) => (
+          <h2 className={'text-3xl font-bold text-center mb-12'}>
+            {ABOUT_PAGE_CONSTANT?.tools.heading}
+          </h2>
+          <div className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'}>
+            {TOOLS.map((category) => (
               <Card key={category.category}>
-                <CardContent className={styles?.toolCardContent}>
-                  <h3 className={styles?.toolCategoryTitle}>{category.category}</h3>
-                  <div className={styles?.toolBadgesWrapper}>
-                    {category.items?.map((item) => (
+                <CardContent className={'p-6'}>
+                  <h3 className={'font-bold text-xl mb-4'}>
+                    {category.category}
+                  </h3>
+                  <div className={'flex flex-wrap gap-2'}>
+                    {category.items.map((item) => (
                       <Badge key={item} variant={'secondary'}>
                         {item}
                       </Badge>

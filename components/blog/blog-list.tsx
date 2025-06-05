@@ -8,9 +8,75 @@ import { Calendar, Clock } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
-import { CONSTANT, posts } from '@/constants/blogs';
-import { formatDate } from '@/lib/utils';
+import { Post } from '@/types/blogs';
 
+// Static fallback blog post data
+const DATA = {
+  posts: [
+    {
+      id: '1',
+      title: 'Getting Started with Next.js and Tailwind',
+      excerpt:
+        'Learn how to set up a new Next.js project with Tailwind CSS for rapid development.',
+      slug: 'getting-started-nextjs-tailwind',
+      publishedAt: '2023-05-15',
+      readingTime: '5 min read',
+      image: 'https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg',
+      categories: ['Next.js', 'Tailwind CSS', 'Web Development'],
+    },
+    {
+      id: '2',
+      title: 'Building Responsive UIs with Tailwind CSS',
+      excerpt:
+        'Explore techniques for creating fully responsive user interfaces using Tailwind CSS.',
+      slug: 'responsive-ui-tailwind',
+      publishedAt: '2023-06-10',
+      readingTime: '7 min read',
+      image: 'https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg',
+      categories: ['CSS', 'Tailwind CSS', 'Responsive Design'],
+    },
+    {
+      id: '3',
+      title: 'State Management in React Applications',
+      excerpt:
+        'An overview of different state management approaches in modern React applications.',
+      slug: 'state-management-react',
+      publishedAt: '2023-07-22',
+      readingTime: '10 min read',
+      image:
+        'https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg',
+      categories: ['React', 'State Management', 'JavaScript'],
+    },
+    {
+      id: '4',
+      title: 'Creating Animations with Framer Motion',
+      excerpt:
+        'Learn how to add beautiful animations to your React applications using Framer Motion.',
+      slug: 'framer-motion-animations',
+      publishedAt: '2023-08-05',
+      readingTime: '8 min read',
+      image:
+        'https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg',
+      categories: ['React', 'Animation', 'Framer Motion'],
+    },
+    {
+      id: '5',
+      title: 'Serverless Functions with Next.js API Routes',
+      excerpt:
+        'Explore how to use Next.js API routes to create serverless functions for your applications.',
+      slug: 'nextjs-api-routes',
+      publishedAt: '2023-09-18',
+      readingTime: '6 min read',
+      image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg',
+      categories: ['Next.js', 'Serverless', 'API'],
+    },
+  ],
+};
+
+// UI text constants
+const CONSTANT = {
+  searchPlaceholder: 'Search articles...',
+};
 
 // Tailwind CSS class groups for styling
 const styles = {
@@ -28,14 +94,26 @@ const styles = {
   icon: 'h-4 w-4 mr-1',
 };
 
+interface BlogListProps {
+  posts?: Post[]; // Optional posts prop to override default static data
+}
 
-const BlogList = () => {
+const BlogList = ({ posts }: BlogListProps) => {
   const [searchQuery, setSearchQuery] = useState('');
 
- 
+  // Use provided posts or fallback to static data
+  const postList = posts?.length ? posts : DATA.posts;
+
+  // Helper to format published date to a human-readable string
+  const formatDate = (date: string) =>
+    new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
 
   // Filter posts based on search query matching title, excerpt, or categories
-  const filteredPosts = posts.filter((post) => {
+  const filteredPosts = postList.filter((post) => {
     const query = searchQuery.toLowerCase();
     return (
       post.title.toLowerCase().includes(query) ||
@@ -58,7 +136,7 @@ const BlogList = () => {
 
       {/* Blog post grid */}
       <div className={styles?.grid}>
-        {filteredPosts?.map((post, index) => (
+        {filteredPosts.map((post, index) => (
           <motion.div
             key={post.id}
             initial={{ opacity: 0, y: 20 }}
@@ -78,7 +156,7 @@ const BlogList = () => {
               <CardContent className={'p-6'}>
                 {/* Categories badges */}
                 <div className={styles?.categoriesWrapper}>
-                  {post.categories.slice(0, 2)?.map((cat) => (
+                  {post.categories.slice(0, 2).map((cat) => (
                     <Badge
                       key={cat}
                       variant={'secondary'}

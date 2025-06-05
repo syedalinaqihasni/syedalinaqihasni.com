@@ -1,9 +1,4 @@
-const CONSTANT = {
-  pageTitle: 'Experience',
-  pageDescription:
-    "My professional journey and the companies I've had the pleasure to work with.",
-};
-const EXPERIENCES = [
+export const EXPERIENCES = [
   {
     id: '1',
     company: 'eSpark Consulting Group',
@@ -111,7 +106,3 @@ const EXPERIENCES = [
     ],
   },
 ];
-
-export {EXPERIENCES,
- CONSTANT
-}

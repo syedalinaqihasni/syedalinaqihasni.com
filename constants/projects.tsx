@@ -1,84 +1,43 @@
 // Mock data - in a real app, this would come from Sanity
-export const projects = [
-  {
-    id:'1',
+export const PROJECT = {
   title: 'E-Commerce Platform',
   slug: 'e-commerce-platform',
   description:
     'A full-featured e-commerce platform with cart, checkout, and payment integration.',
   longDescription: `
-      <div >
-  <h1>Project Title</h1>
-  <h2>Overview</h2>
-  <p>This project demonstrates the use of various <a href="#">HTML elements</a> within a styled container.</p>
-
-  <h3>Features</h3>
-  <ul>
-    <li>Clean typography</li>
-    <li>Responsive images</li>
-    <li>Syntax-highlighted code blocks with copy button</li>
-    <li>Styled tables and buttons</li>
-  </ul>
-
-  <h4>Steps to Run</h4>
-  <ol>
-    <li>Clone the repo</li>
-    <li>Install dependencies</li>
-    <li>Run the development server</li>
-  </ol>
-<div>
-  <p>
-    This is <strong>bold</strong>, <em>italic</em>, <u>underlined</u>, <s>strikethrough</s>, and <mark>highlighted</mark> text. You can also have
-    <small>small text</small>, <sub>subscript</sub>, and <sup>superscript</sup> in the same sentence.
-  </p>
-</div>
-
-  <h2>Image Preview</h2>
-  <img src="https://via.placeholder.com/600x300" alt="Sample Image" />
-
-  <h2>Inline Code</h2>
-  <p>Use <code>npm run dev</code> to start the server.</p>
-
-  <h2>Block Code</h2>
-  <pre><code>function greet(name) {
-  console.log("Hello, " + name);
-}
-greet("World");</code></pre>
-
-  <h2>Blockquote</h2>
-  <blockquote>
-    "First, solve the problem. Then, write the code." – John Johnson
-  </blockquote>
-
-  <h2>Table Example</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Responsive Layout</td>
-        <td>✅</td>
-      </tr>
-      <tr>
-        <td>Dark Mode</td>
-        <td>🚧</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Action Button</h2>
-  <a href="#" class="button">Visit Live Demo</a>
-
-  <hr />
-
-  <h2>Conclusion</h2>
-  <p>This sample covers all key HTML tags with scoped styles under <code>.single-project</code>. Modify as needed to match your project’s branding.</p>
-</div>
-
+      <h2>Project Overview</h2>
+      <p>This e-commerce platform provides a complete solution for online stores, featuring a modern UI, secure payment processing, and comprehensive order management.</p>
+      
+      <h2>Key Features</h2>
+      <ul>
+        <li>User authentication and profile management</li>
+        <li>Product catalog with categories and search</li>
+        <li>Shopping cart and wishlist functionality</li>
+        <li>Secure checkout with Stripe integration</li>
+        <li>Order tracking and history</li>
+        <li>Admin dashboard for inventory management</li>
+      </ul>
+      
+      <h2>Technical Details</h2>
+      <p>The application is built using modern web technologies and follows best practices for security and performance:</p>
+      
+      <ul>
+        <li>React for the frontend with Next.js for SSR</li>
+        <li>Node.js and Express for the backend API</li>
+        <li>MongoDB for the database</li>
+        <li>Stripe for payment processing</li>
+        <li>AWS S3 for image storage</li>
+      </ul>
+      
+      <h2>Development Process</h2>
+      <p>The project was developed over three months, following an agile methodology with weekly sprints. Key challenges included:</p>
+      
+      <ul>
+        <li>Implementing real-time inventory updates</li>
+        <li>Optimizing performance for large product catalogs</li>
+        <li>Ensuring secure payment processing</li>
+        <li>Building a responsive design for all devices</li>
+      </ul>
     `,
   image: 'https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg',
   gallery: [
@@ -87,8 +46,6 @@ greet("World");</code></pre>
     'https://images.pexels.com/photos/6956906/pexels-photo-6956906.jpeg',
   ],
   technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'AWS', 'Docker'],
-  tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-  categories:  'React', 
   githubUrl: 'https://github.com',
   liveUrl: 'https://example.com',
   publishedAt: '2024-01-15',
@@ -118,7 +75,7 @@ greet("World");</code></pre>
       technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
     },
   ],
-}];
+};
 
 // Mock data - in a real app, this would come from Sanity
 export const FEATURED_PROJECTS = [
@@ -153,8 +110,4 @@ export const FEATURED_PROJECTS = [
       liveUrl: 'https://example.com',
     },
   ];
- export  const CONSTANT ={
-  title:'My Projects',
-  description:"Here's a selection of my best work across web development, design, and software engineering.",
-}
   

@@ -87,7 +87,7 @@ export default function SkillsList() {
     <Tabs defaultValue={'frontend'} className={'w-full'}>
       {/* Render tab triggers based on category labels */}
       <TabsList className={styles?.tabsList}>
-        {Object.entries(CONSTANT?.categories)?.map(([key, label]) => (
+        {Object.entries(CONSTANT?.categories).map(([key, label]) => (
           <TabsTrigger key={key} value={key}>
             {label}
           </TabsTrigger>
@@ -95,7 +95,7 @@ export default function SkillsList() {
       </TabsList>
 
       {/* Render each skill group as tab content */}
-      {Object.entries(SKILLS_DATA)?.map(([key, skills]) => (
+      {Object.entries(SKILLS_DATA).map(([key, skills]) => (
         <TabsContent key={key} value={key} className={'mt-0'}>
           <SkillsCategory skills={skills} />
         </TabsContent>
@@ -120,7 +120,7 @@ function SkillsCategory({
     <Card>
       <CardContent className={styles?.cardContent}>
         <div className={styles?.grid}>
-          {skills?.map((skill, index) => (
+          {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, x: -20 }}
