@@ -6,7 +6,7 @@ import Footer from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { getMetadataForPath } from '@/lib/metadata';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 /**
  * Google Fonts configuration extracted for reuse and clarity.
  */
@@ -55,7 +55,8 @@ export default function RootLayout({
         >
           <div className={'flex min-h-screen flex-col'}>
             <Header />
-            <main className={'flex-1'}>{children}</main>
+            <main className={'flex-1'}>{children}</main> 
+            <SpeedInsights />
             <Footer />
           </div>
           <Toaster />
