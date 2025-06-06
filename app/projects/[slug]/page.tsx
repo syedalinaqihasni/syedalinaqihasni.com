@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -8,35 +8,27 @@ import { projects } from '@/constants/projects';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
-
+import { formatDate } from '@/lib/utils';
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const project = projects.find((e) => e.slug === params.slug);
   if (!project) return notFound();
 
   return generateDynamicMetadata({
-    title: project.title,
-    description: project.description || project.title,
-    image: project.image,
-    publishedAt: project.publishedAt,
-    path: `/projects/${project.slug}`,
+    title: project?.title,
+    description: project?.description || project?.title,
+    image: project?.image,
+    publishedAt: project?.publishedAt,
+    path: `/projects/${project?.slug}`,
   });
 }
 
-// const ProjectPage = async ({ params }: { params: { slug: string } }) => {
-// const project = projects.find((p) => p.slug === params.slug);
-//  if (!project) {
-//     notFound();
-//   }
-export default function ProjectPage() {
-  const formatDate = (dateString: string) =>
-    new Date(dateString).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
+const ProjectPage = async ({ params }: { params: { slug: string } }) => {
+const project = projects.find((p) => p.slug === params.slug);
+ if (!project) {
+    notFound();
+  }
 
-  // CSS Class Constants
   const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
   const CONTENT_WRAPPER = 'max-w-6xl mx-auto';
 
@@ -79,23 +71,22 @@ export default function ProjectPage() {
   return (
     <div className={CONTAINER}>
       <div className={CONTENT_WRAPPER}>
-        {/* Header */}
         <div className={HEADER}>
           <div className={TECH_BADGES}>
-            {projects[0].technologies.map((tech) => (
+            {project?.technologies?.map((tech) => (
               <Badge key={tech} variant={'secondary'}>
                 {tech}
               </Badge>
             ))}
           </div>
 
-          <h1 className={TITLE}>{projects[0].title}</h1>
-          <p className={DESCRIPTION}>{projects[0].description}</p>
+          <h1 className={TITLE}>{project?.title}</h1>
+          <p className={DESCRIPTION}>{project?.description}</p>
 
           <div className={BUTTON_GROUP}>
             <Button asChild>
               <Link
-                href={projects[0].liveUrl}
+                href={project?.liveUrl}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
@@ -106,7 +97,7 @@ export default function ProjectPage() {
 
             <Button variant={'outline'} asChild>
               <Link
-                href={projects[0].githubUrl}
+                href={project?.githubUrl}
                 target={'_blank'}
                 rel={'noopener noreferrer'}
               >
@@ -116,64 +107,56 @@ export default function ProjectPage() {
             </Button>
           </div>
         </div>
-
-        {/* Main Image */}
         <div className={IMAGE_WRAPPER}>
           <Image
-            src={projects[0].image}
-            alt={projects[0].title}
+            src={project?.image}
+            alt={project?.title}
             fill
             className={IMAGE_CLASS}
           />
         </div>
-
-        {/* Project Stats */}
         <div className={STATS_GRID}>
           <Card>
             <CardContent className={CARD_CONTENT_CENTERED}>
-              <h3 className={STAT_NUMBER}>{projects[0].stats.users}</h3>
+              <h3 className={STAT_NUMBER}>{project?.stats.users}</h3>
               <p className={STAT_LABEL}>Active Users</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className={CARD_CONTENT_CENTERED}>
-              <h3 className={STAT_NUMBER}>{projects[0].stats.orders}</h3>
+              <h3 className={STAT_NUMBER}>{project?.stats.orders}</h3>
               <p className={STAT_LABEL}>Orders Processed</p>
             </CardContent>
           </Card>
           <Card>
             <CardContent className={CARD_CONTENT_CENTERED}>
-              <h3 className={STAT_NUMBER}>{projects[0].stats.revenue}</h3>
+              <h3 className={STAT_NUMBER}>{project?.stats.revenue}</h3>
               <p className={STAT_LABEL}>Revenue Generated</p>
             </CardContent>
           </Card>
         </div>
-
-        {/* Project Details */}
         <Card className={DETAILS_CARD}>
           <CardContent className={DETAILS_CARD_CONTENT}>
             <div className={DETAILS_HEADER}>
               <div className={DETAILS_DATE}>
                 <Calendar className={'h-4 w-4'} />
-                {formatDate(projects[0].publishedAt)}
+                {formatDate(project?.publishedAt)}
               </div>
             </div>
             <div
               className={LONG_DESCRIPTION}
-              dangerouslySetInnerHTML={{ __html: projects[0].longDescription }}
+              dangerouslySetInnerHTML={{ __html: project?.longDescription }}
             />
           </CardContent>
         </Card>
-
-        {/* Gallery */}
         <div className={GALLERY_SECTION}>
           <h2 className={GALLERY_TITLE}>Project Gallery</h2>
           <div className={GALLERY_GRID}>
-            {projects[0].gallery.map((image, index) => (
+            {project?.gallery?.map((image, index) => (
               <div key={index} className={GALLERY_IMAGE_WRAPPER}>
                 <Image
                   src={image}
-                  alt={`${projects[0].title} gallery image ${index + 1}`}
+                  alt={`${project?.title} gallery image ${index + 1}`}
                   fill
                   className={IMAGE_CLASS}
                 />
@@ -181,12 +164,10 @@ export default function ProjectPage() {
             ))}
           </div>
         </div>
-
-        {/* Related Projects */}
         <div className={RELATED_SECTION}>
           <h2 className={RELATED_TITLE}>Related Projects</h2>
           <div className={RELATED_GRID}>
-            {projects[0].relatedProjects.map((relatedProject) => (
+            {project?.relatedProjects?.map((relatedProject) => (
               <Card key={relatedProject.id}>
                 <div className={RELATED_CARD_IMAGE_WRAPPER}>
                   <Image
@@ -202,7 +183,7 @@ export default function ProjectPage() {
                     {relatedProject.description}
                   </p>
                   <div className={RELATED_BADGES}>
-                    {relatedProject.technologies.map((tech) => (
+                    {relatedProject.technologies?.map((tech) => (
                       <Badge key={tech} variant={'secondary'}>
                         {tech}
                       </Badge>
@@ -217,3 +198,5 @@ export default function ProjectPage() {
     </div>
   );
 }
+
+export default ProjectPage

@@ -5,25 +5,13 @@ import { useTheme } from 'next-themes';
 import { Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-/**
- * ThemeToggle Component
- *
- * A button that toggles between light and dark themes using `next-themes`.
- * Handles client-side rendering mismatch with a `mounted` flag.
- */
 export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme(); // Current theme state from next-themes
-  const [mounted, setMounted] = useState(false); // Tracks if component is mounted (to avoid hydration mismatch)
-
-  /**
-   * Ensure this component only renders after it has mounted on the client.
-   * This prevents mismatch between server-rendered and client-rendered theme.
-   */
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false); 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Show disabled fallback button during SSR or before hydration
   if (!mounted) {
     return (
       <Button
@@ -37,9 +25,6 @@ export default function ThemeToggle() {
     );
   }
 
-  /**
-   * Handle theme toggle between light and dark.
-   */
   const handleToggle = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };

@@ -1,15 +1,10 @@
-import { Metadata } from 'next';
+
 import GalleryGrid from '@/components/gallery/gallery-grid';
+import { GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/gallery';
 import { getMetadataForPath } from '@/lib/metadata';
-
-const GALLERY_TITLE = 'Gallery';
-const GALLERY_DESCRIPTION =
-  'A collection of images from my projects, events, and creative work.';
-
 
 export const metadata = getMetadataForPath('/gallery');
 
-// CSS Class Constants
 const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
 const MAX_WIDTH_WRAPPER = 'max-w-6xl mx-auto';
 

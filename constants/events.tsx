@@ -7,7 +7,7 @@ const events: Event []= [{
   excerpt:"",
   type: 'Conference',
   slug: 'sample-event',
-  image: '/sample-event.jpg',
+  image: '/sample-event?.jpg',
   date: '2024-07-01T18:00:00Z',
   location: '123 Main St, City, Country',
   virtual: false,

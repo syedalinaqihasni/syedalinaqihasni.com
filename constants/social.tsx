@@ -11,7 +11,6 @@ const TAB_TITLES = {
   instagram: 'Instagram',
 };
 
-/** Data for social posts */
 const socialPosts: SocialPosts = {
   twitter: [
     {
@@ -72,6 +71,10 @@ const socialPosts: SocialPosts = {
   ],
 };
 
+const SOCIALS_TITLE = 'Social Media';
+const SOCIALS_DESCRIPTION =
+  'Stay updated with my latest posts and activities across social media platforms.';
+
 export {
-    socialPosts,TAB_TITLES,CONSTANT
+    socialPosts,TAB_TITLES,CONSTANT,SOCIALS_TITLE,SOCIALS_DESCRIPTION
 }

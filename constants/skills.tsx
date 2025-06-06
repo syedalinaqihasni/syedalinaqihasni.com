@@ -1,4 +1,4 @@
-// Mock data - in a real app, this would come from Sanity
+
 export const SKILLS = {
   frontend: [
     { name: 'HTML/CSS', level: 95 },
@@ -20,7 +20,7 @@ export const SKILLS = {
   ],
 };
 
-// Mock data - in a real app, this would come from Sanity
+
 export const SKILLS_PAGE = {
   frontend: [
     { name: 'HTML/CSS', level: 95 },
@@ -65,3 +65,12 @@ export const SKILLS_PAGE = {
     { name: 'Adaptability', level: 90 },
   ],
 };
+
+const HEADING = 'My Skills';
+const SUBHEADING =
+  'A comprehensive overview of my technical skills, tools, and competencies.';
+
+  export {
+    HEADING,
+    SUBHEADING,
+  }

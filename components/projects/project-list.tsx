@@ -9,28 +9,16 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Projects } from '@/types/projects';
+import { projects } from '@/constants/projects';
 
-/**
- * ProjectList Component
- *
- * Displays a list of projects with category-based filtering and animated transitions.
- *
- * @param {Object} props
- * @param {Projects[]} props.projects - Array of project objects to be displayed.
- * @returns JSX.Element
- */
-const ProjectList = ({ projects }: { projects: Projects[] }) => {
-  // State to track currently selected category tab
+const ProjectList = () => {
   const [activeCategory, setActiveCategory] = useState('all');
 
-  // Dynamically derive category list from provided projects
   const categories = [
     'all',
-    ...Array.from(new Set(projects.map((project) => project?.category))),
+    ...Array.from(new Set(projects?.map((project) => project?.category))),
   ];
 
-  // Filter projects based on selected category
   const filteredProjects =
     activeCategory === 'all'
       ? projects
@@ -38,24 +26,20 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
 
   return (
     <div>
-      {/* Tabs are defined here, but hidden or disabled for now.
-          Uncomment TabsList and TabsTrigger if dynamic tab navigation is needed. */}
       <Tabs
         defaultValue={'all'}
         className={'mb-8'}
         onValueChange={setActiveCategory}
       >
         <TabsList className={'grid w-full grid-cols-2 md:grid-cols-5'}>
-          {categories.map((category) => (
+          {categories?.map((category) => (
             <TabsTrigger key={category} value={category}>
               {category?.charAt(0).toUpperCase() + category?.slice(1)}
             </TabsTrigger>
           ))}
         </TabsList>
       </Tabs>
-
-      {/* AnimatePresence handles smooth transitions between category views */}
-      <AnimatePresence mode={'wait'}>
+<AnimatePresence mode={'wait'}>
         <motion.div
           key={activeCategory}
           initial={{ opacity: 0, y: 20 }}
@@ -64,7 +48,7 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
           transition={{ duration: 0.3 }}
           className={'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'}
         >
-          {filteredProjects.map((project) => (
+          {filteredProjects?.map((project) => (
             <motion.div
               key={project?.id}
               initial={{ opacity: 0 }}
@@ -74,35 +58,29 @@ const ProjectList = ({ projects }: { projects: Projects[] }) => {
               className={'h-full'}
             >
               <Card className={'h-full overflow-hidden'}>
-                {/* Project image */}
                 <div className={'relative h-56 w-full'}>
-                  <Image
+                 <Link href={`/projects/${project?.slug}`}>            <Image
                     src={project?.image}
                     alt={project?.title}
                     fill
                     className={'object-cover transition-transform duration-300 hover:scale-105'}
-                  />
+                  /></Link>
+      
                 </div>
-
-                {/* Project content */}
                 <CardContent className={'p-6'}>
                   <h3 className={'text-xl font-semibold mb-2'}>
-                    {project?.title}
-                  </h3>
+                  <Link href={`/projects/${project?.slug}`}> {project?.title}
+             </Link>      </h3>
                   <p className={'text-muted-foreground mb-4'}>
-                    {project?.description}
+                   <Link href={`/projects/${project?.slug}`}>{project?.description}</Link> 
                   </p>
-
-                  {/* Project tags */}
                   <div className={'flex flex-wrap gap-2 mb-6'}>
-                    {project?.tags.map((tag) => (
+                    {project?.technologies?.map((tag) => (
                       <Badge key={tag} variant={'secondary'}>
                         {tag}
                       </Badge>
                     ))}
                   </div>
-
-                  {/* External links: GitHub & Demo */}
                   <div className={'flex gap-3'}>
                     <Button size={'sm'} variant={'outline'} asChild>
                       <Link

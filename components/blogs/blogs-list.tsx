@@ -10,76 +10,12 @@ import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { Post } from '@/types/blogs';
 import { posts } from '@/constants/blogs';
+import { formatDate } from '@/lib/utils';
 
-// Static fallback blog post data
-const DATA = {
-  posts: [
-    {
-      id: '1',
-      title: 'Getting Started with Next.js and Tailwind',
-      excerpt:
-        'Learn how to set up a new Next.js project with Tailwind CSS for rapid development.',
-      slug: 'getting-started-nextjs-tailwind',
-      publishedAt: '2023-05-15',
-      readingTime: '5 min read',
-      image: 'https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg',
-      categories: ['Next.js', 'Tailwind CSS', 'Web Development'],
-    },
-    {
-      id: '2',
-      title: 'Building Responsive UIs with Tailwind CSS',
-      excerpt:
-        'Explore techniques for creating fully responsive user interfaces using Tailwind CSS.',
-      slug: 'responsive-ui-tailwind',
-      publishedAt: '2023-06-10',
-      readingTime: '7 min read',
-      image: 'https://images.pexels.com/photos/938965/pexels-photo-938965.jpeg',
-      categories: ['CSS', 'Tailwind CSS', 'Responsive Design'],
-    },
-    {
-      id: '3',
-      title: 'State Management in React Applications',
-      excerpt:
-        'An overview of different state management approaches in modern React applications.',
-      slug: 'state-management-react',
-      publishedAt: '2023-07-22',
-      readingTime: '10 min read',
-      image:
-        'https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg',
-      categories: ['React', 'State Management', 'JavaScript'],
-    },
-    {
-      id: '4',
-      title: 'Creating Animations with Framer Motion',
-      excerpt:
-        'Learn how to add beautiful animations to your React applications using Framer Motion.',
-      slug: 'framer-motion-animations',
-      publishedAt: '2023-08-05',
-      readingTime: '8 min read',
-      image:
-        'https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg',
-      categories: ['React', 'Animation', 'Framer Motion'],
-    },
-    {
-      id: '5',
-      title: 'Serverless Functions with Next.js API Routes',
-      excerpt:
-        'Explore how to use Next.js API routes to create serverless functions for your applications.',
-      slug: 'nextjs-api-routes',
-      publishedAt: '2023-09-18',
-      readingTime: '6 min read',
-      image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg',
-      categories: ['Next.js', 'Serverless', 'API'],
-    },
-  ],
-};
-
-// UI text constants
 const CONSTANT = {
   searchPlaceholder: 'Search articles...',
 };
 
-// Tailwind CSS class groups for styling
 const styles = {
   inputWrapper: 'mb-8',
   inputField: 'max-w-md mx-auto',
@@ -97,31 +33,17 @@ const styles = {
 
 const BlogsList = () => {
   const [searchQuery, setSearchQuery] = useState('');
-
-  // Use provided posts or fallback to static data
-  const postList = posts?.length ? posts : DATA.posts;
-
-  // Helper to format published date to a human-readable string
-  const formatDate = (date: string) =>
-    new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-
-  // Filter posts based on search query matching title, excerpt, or categories
-  const filteredPosts = postList.filter((post) => {
+  const filteredPosts = posts?.filter((post) => {
     const query = searchQuery.toLowerCase();
     return (
-      post.title.toLowerCase().includes(query) ||
-      post.excerpt.toLowerCase().includes(query) ||
-      post.categories.some((cat) => cat.toLowerCase().includes(query))
+      post?.title.toLowerCase().includes(query) ||
+      post?.excerpt.toLowerCase().includes(query) ||
+      post?.categories.some((cat) => cat.toLowerCase().includes(query))
     );
   });
 
   return (
     <div>
-      {/* Search input */}
       <div className={styles?.inputWrapper}>
         <Input
           placeholder={CONSTANT?.searchPlaceholder}
@@ -130,30 +52,27 @@ const BlogsList = () => {
           className={styles?.inputField}
         />
       </div>
-
-      {/* Blog post grid */}
       <div className={styles?.grid}>
-        {filteredPosts.map((post, index) => (
+        {filteredPosts?.map((post, index) => (
           <motion.div
-            key={post.id}
+            key={post?.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card className={styles?.card}>
-              <Link href={`/blogs/${post.slug}`} className={'relative block h-48 w-full'}>
+              <Link href={`/blogs/${post?.slug}`} className={'relative block h-48 w-full'}>
                   <Image
-                    src={post.image}
-                    alt={post.title}
-                    layout={'fill'}
+                    src={post?.image}
+                    alt={post?.title}
+                    fill
                     className={styles?.image}
-                    priority={index < 3} // Prioritize images of first few posts
+                    priority={index < 3} 
                   />
               </Link>
               <CardContent className={'p-6'}>
-                {/* Categories badges */}
                 <div className={styles?.categoriesWrapper}>
-                  {post.categories.slice(0, 2).map((cat) => (
+                  {post?.categories.slice(0, 2)?.map((cat) => (
                     <Badge
                       key={cat}
                       variant={'secondary'}
@@ -162,30 +81,24 @@ const BlogsList = () => {
                       {cat}
                     </Badge>
                   ))}
-                  {post.categories.length > 2 && (
+                  {post?.categories.length > 2 && (
                     <Badge variant={'outline'} className={styles?.categoryBadge}>
-                      +{post.categories.length - 2}
+                      +{post?.categories.length - 2}
                     </Badge>
                   )}
                 </div>
-
-                {/* Title */}
-                <Link href={`/blogs/${post.slug}`}>
-                    <h3 className={styles?.title}>{post.title}</h3>
+                <Link href={`/blogs/${post?.slug}`}>
+                    <h3 className={styles?.title}>{post?.title}</h3>
                 </Link>
-
-                {/* Excerpt */}
-                <p className={styles?.excerpt}>{post.excerpt}</p>
-
-                {/* Meta info: date and reading time */}
+                <p className={styles?.excerpt}>{post?.excerpt}</p>
                 <div className={styles?.metaWrapper}>
                   <div className={styles?.metaItem}>
                     <Calendar className={styles?.icon} />
-                    {formatDate(post.publishedAt)}
+                    {formatDate(post?.publishedAt)}
                   </div>
                   <div className={'flex items-center'}>
                     <Clock className={styles?.icon} />
-                    {post.readingTime}
+                    {post?.readingTime}
                   </div>
                 </div>
               </CardContent>

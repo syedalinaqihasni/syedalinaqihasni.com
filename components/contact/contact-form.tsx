@@ -18,13 +18,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { Send } from 'lucide-react';
 
-/**
- * Schema for validating the contact form data using Zod.
- * - name: at least 2 characters
- * - email: must be a valid email
- * - subject: at least 5 characters
- * - message: at least 10 characters
- */
 const formSchema = z.object({
   name: z.string().min(2, {
     message: 'Name must be at least 2 characters.',
@@ -40,21 +33,8 @@ const formSchema = z.object({
   }),
 });
 
-/**
- * Contact form component
- *
- * Handles user input for name, email, subject, and message.
- * Validates inputs using Zod schema.
- * Shows success/error toast messages upon submission.
- * Disables submit button while submitting.
- *
- * @returns JSX.Element
- */
 export default function Contact() {
-  // State to track submission status for disabling the submit button and UI feedback
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // Initialize React Hook Form with zodResolver to integrate Zod validation
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -64,26 +44,15 @@ export default function Contact() {
       message: '',
     },
   });
-
-  /**
-   * Handles form submission asynchronously.
-   * Simulates API call with a timeout.
-   * Shows toast notifications based on result.
-   *
-   * @param values - validated form values matching formSchema
-   */
+  
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
 
     try {
-      // Simulate API request delay
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
-      // Show success toast and reset form on success
+      
       toast.success("Message sent successfully! I'll get back to you soon.");
       form.reset();
     } catch (error) {
-      // Show error toast if submission fails
       toast.error('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -92,12 +61,9 @@ export default function Contact() {
 
   return (
     <div className={'bg-card rounded-lg shadow-sm p-6 md:p-8'}>
-      {/* Form context provider for controlled form components */}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className={'space-y-6'}>
-          {/* Grid layout for name and email inputs side-by-side on md+ screens */}
           <div className={'grid grid-cols-1 md:grid-cols-2 gap-6'}>
-            {/* Name field */}
             <FormField
               control={form.control}
               name={'name'}
@@ -111,8 +77,6 @@ export default function Contact() {
                 </FormItem>
               )}
             />
-
-            {/* Email field */}
             <FormField
               control={form.control}
               name={'email'}
@@ -127,8 +91,6 @@ export default function Contact() {
               )}
             />
           </div>
-
-          {/* Subject field */}
           <FormField
             control={form.control}
             name={'subject'}
@@ -142,8 +104,6 @@ export default function Contact() {
               </FormItem>
             )}
           />
-
-          {/* Message textarea field */}
           <FormField
             control={form.control}
             name={'message'}
@@ -161,8 +121,6 @@ export default function Contact() {
               </FormItem>
             )}
           />
-
-          {/* Submit button with loading state */}
           <Button
             type={'submit'}
             disabled={isSubmitting}

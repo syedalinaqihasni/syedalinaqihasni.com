@@ -1,12 +1,11 @@
+import ProjectList from "@/components/projects/project-list";
+import { 
+    PAGE_TITLE,
+    PAGE_DESCRIPTION, } from "@/constants/projects";
 import { getMetadataForPath } from "@/lib/metadata";
 
 export const metadata = getMetadataForPath('/projects');
 
-const PAGE_TITLE = 'My Projects';
-const PAGE_DESCRIPTION =
-  "Here's a selection of my best work across web development, design, and software engineering.";
-
-// CSS Class Constants
 const CONTAINER_styles = 'container mx-auto px-4 py-32 md:py-40';
 const CONTENT_WRAPPER_styles = 'max-w-6xl mx-auto';
 const HEADER_WRAPPER_styles = 'text-center mb-16';
@@ -23,7 +22,7 @@ export default async function ProjectsPage() {
           <p className={DESCRIPTION_styles}>{PAGE_DESCRIPTION}</p>
         </div>
 
-        {/* <ProjectList projects={FEATURED_PROJECTS} /> */}
+        <ProjectList />
       </div>
     </div>
   );

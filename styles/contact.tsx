@@ -1,5 +1,3 @@
-
-// --- Static Class Names ---
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
   wrapper: 'max-w-6xl mx-auto',

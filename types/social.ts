@@ -1,13 +1,4 @@
-/**
- * Represents a LinkedIn post with its metadata.
- *
- * @property id - The unique identifier for the LinkedIn post.
- * @property title - The title or headline of the post.
- * @property content - The main content or body of the post.
- * @property date - The date when the post was published (ISO 8601 format).
- * @property likes - The number of likes the post has received.
- * @property comments - The number of comments on the post.
- */
+
 interface TwitterPost {
   id: string;
   content: string;

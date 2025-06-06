@@ -9,11 +9,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Masonry from 'react-masonry-css';
 import { GalleryImage } from '@/types/gallery';
 
-
-
-// /**
-//  * Albums definition for filtering images.
-//  */
 const albums = [
   { id: 'all', name: 'All Photos' },
   { id: 'work', name: 'Work' },
@@ -21,10 +16,6 @@ const albums = [
   { id: 'personal', name: 'Personal' },
 ];
 
-/**
- * Mock image data for the gallery.
- * In a real app, this would be fetched from a CMS like Sanity.
- */
 const images = [
   {
     id: '1',
@@ -100,27 +91,13 @@ const images = [
   },
 ];
 
-/**
- * GalleryGrid Component
- *
- * Displays a masonry grid of images with tabs to filter by album.
- * Clicking an image opens a modal dialog with a larger view and details.
- *
- * @returns JSX.Element
- */
 export default function GalleryGrid() {
-  // State for currently selected image in modal
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-  // State for active album filter
   const [activeAlbum, setActiveAlbum] = useState('all');
-
-  // Filter images based on active album or show all if 'all' selected
   const filteredImages =
     activeAlbum === 'all'
       ? images
       : images.filter((image) => image.album === activeAlbum);
-
-  // Responsive breakpoints for masonry layout
   const breakpointColumnsObj = {
     default: 3,
     1024: 3,
@@ -130,18 +107,15 @@ export default function GalleryGrid() {
 
   return (
     <div>
-      {/* Album filter tabs */}
       <Tabs defaultValue={'all'} className={'mb-8'} onValueChange={setActiveAlbum}>
         <TabsList className={'grid w-full grid-cols-2 md:grid-cols-4 max-w-lg mx-auto'}>
-          {albums.map((album) => (
+          {albums?.map((album) => (
             <TabsTrigger key={album.id} value={album.id}>
               {album.name}
             </TabsTrigger>
           ))}
         </TabsList>
       </Tabs>
-
-      {/* AnimatePresence for smooth tab content transitions */}
       <AnimatePresence mode={'wait'}>
         <motion.div
           key={activeAlbum}
@@ -150,13 +124,12 @@ export default function GalleryGrid() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
-          {/* Masonry grid for responsive image layout */}
           <Masonry
             breakpointCols={breakpointColumnsObj}
             className={'flex w-auto -ml-4'}
             columnClassName={'pl-4 bg-clip-padding'}
           >
-            {filteredImages.map((image) => (
+            {filteredImages?.map((image) => (
               <motion.div
                 key={image.id}
                 className={'mb-4 cursor-pointer'}
@@ -176,11 +149,10 @@ export default function GalleryGrid() {
                     }
                     className={'w-full h-auto object-cover'}
                   />
-                  {/* Overlay with caption and tags on hover */}
                   <div className={'absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4'}>
                     <p className={'text-white font-medium'}>{image.caption}</p>
                     <div className={'flex flex-wrap gap-2 mt-2'}>
-                      {image.tags.map((tag) => (
+                      {image.tags?.map((tag) => (
                         <Badge key={tag} variant={'secondary'} className={'text-xs'}>
                           {tag}
                         </Badge>
@@ -193,8 +165,6 @@ export default function GalleryGrid() {
           </Masonry>
         </motion.div>
       </AnimatePresence>
-
-      {/* Modal dialog for selected image details */}
       <Dialog
         open={!!selectedImage}
         onOpenChange={(open) => !open && setSelectedImage(null)}
@@ -215,7 +185,7 @@ export default function GalleryGrid() {
                   {selectedImage.caption}
                 </h3>
                 <div className={'flex flex-wrap gap-2'}>
-                  {selectedImage.tags.map((tag) => (
+                  {selectedImage.tags?.map((tag) => (
                     <Badge key={tag} variant={'secondary'}>
                       {tag}
                     </Badge>

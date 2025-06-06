@@ -8,7 +8,6 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/theme-toggle';
 
-// Static Content
 const CONSTANT = {
   brandName: 'Syed Ali Naqi Hasni',
   menuToggleAriaLabel: 'Toggle Menu',
@@ -24,7 +23,6 @@ const NAV_ITEMS = [
   { name: 'Contact', path: '/contact' },
 ];
 
-// Tailwind Classes
 const styles = {
   header: 'fixed top-0 w-full z-50 transition-all duration-300',
   container: 'container mx-auto px-4 md:px-6',
@@ -49,7 +47,7 @@ export default function Header() {
   }, []);
 
   const renderNavItems = (isMobile = false) =>
-    NAV_ITEMS.map((item) => (
+    NAV_ITEMS?.map((item) => (
       <Link
         key={item.path}
         href={item.path}
@@ -81,7 +79,6 @@ export default function Header() {
     >
       <div className={styles?.container}>
         <div className={'flex items-center justify-between'}>
-          {/* Brand */}
           <Link href={'/'} className={styles?.brand}>
             <motion.span
               initial={{ opacity: 0, x: -20 }}
@@ -92,14 +89,10 @@ export default function Header() {
               {CONSTANT?.brandName}
             </motion.span>
           </Link>
-
-          {/* Desktop Navigation */}
           <nav className={styles?.desktopNav}>
             {renderNavItems()}
             <ThemeToggle />
           </nav>
-
-          {/* Mobile Menu Button */}
           <div className={styles?.mobileControls}>
             <ThemeToggle />
             <Button
@@ -116,8 +109,6 @@ export default function Header() {
             </Button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <motion.nav
             initial={{ opacity: 0, height: 0 }}

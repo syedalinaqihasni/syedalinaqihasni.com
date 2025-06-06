@@ -5,9 +5,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Progress } from '@/components/ui/progress';
 import { Card, CardContent } from '@/components/ui/card';
 
-/**
- * Static text labels for skill categories.
- */
 const CONSTANT = {
   categories: {
     frontend: 'Frontend',
@@ -18,10 +15,6 @@ const CONSTANT = {
   },
 };
 
-/**
- * Skill data for each category.
- * @type {{ [key: string]: { name: string; level: number }[] }}
- */
 const SKILLS_DATA = {
   frontend: [
     { name: 'HTML/CSS', level: 95 },
@@ -67,9 +60,6 @@ const SKILLS_DATA = {
   ],
 };
 
-/**
- * Centralized Tailwind styles for consistency and easier maintenance.
- */
 const styles = {
   tabsList: 'grid max-w-3xl mx-auto w-full grid-cols-2 md:grid-cols-5 mb-12',
   grid: 'grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6',
@@ -77,25 +67,17 @@ const styles = {
   cardContent: 'p-6 md:p-10',
 };
 
-/**
- * SkillsList Component
- *
- * Renders a tabbed interface for displaying categorized skills.
- */
 export default function SkillsList() {
   return (
     <Tabs defaultValue={'frontend'} className={'w-full'}>
-      {/* Render tab triggers based on category labels */}
       <TabsList className={styles?.tabsList}>
-        {Object.entries(CONSTANT?.categories).map(([key, label]) => (
+        {Object.entries(CONSTANT?.categories)?.map(([key, label]) => (
           <TabsTrigger key={key} value={key}>
             {label}
           </TabsTrigger>
         ))}
       </TabsList>
-
-      {/* Render each skill group as tab content */}
-      {Object.entries(SKILLS_DATA).map(([key, skills]) => (
+      {Object.entries(SKILLS_DATA)?.map(([key, skills]) => (
         <TabsContent key={key} value={key} className={'mt-0'}>
           <SkillsCategory skills={skills} />
         </TabsContent>
@@ -104,13 +86,6 @@ export default function SkillsList() {
   );
 }
 
-/**
- * SkillsCategory Component
- *
- * @param {Object} props
- * @param {{ name: string; level: number }[]} props.skills - Array of skill objects.
- * @returns JSX.Element
- */
 function SkillsCategory({
   skills,
 }: {
@@ -120,20 +95,17 @@ function SkillsCategory({
     <Card>
       <CardContent className={styles?.cardContent}>
         <div className={styles?.grid}>
-          {skills.map((skill, index) => (
+          {skills?.map((skill, index) => (
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              {/* Skill header with name and level */}
               <div className={styles?.header}>
                 <h3 className={'font-medium'}>{skill.name}</h3>
                 <span className={'text-muted-foreground'}>{skill.level}%</span>
               </div>
-
-              {/* Animated progress bar */}
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: '100%' }}

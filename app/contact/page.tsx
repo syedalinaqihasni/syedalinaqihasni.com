@@ -1,23 +1,12 @@
-import { Metadata } from 'next';
+
 import Contact from '@/components/contact/contact-form';
-import { CONTACT_CARDS } from '@/constants/contact';
+import { CONSTANT, CONTACT_CARDS } from '@/constants/contact';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
 import { getMetadataForPath } from '@/lib/metadata';
 
-// --- Metadata ---
-
 export const metadata = getMetadataForPath('/contact');
 
-// --- Static Text ---
-const CONSTANT = {
-  pageTitle: 'Get In Touch',
-  pageDescription: `Have a project in mind or want to discuss potential opportunities? 
-I'd love to hear from you. Let's make something great together.`,
-  sendMessageTitle: 'Send a Message',
-};
-
-// --- Static Class Names ---
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
   wrapper: 'max-w-6xl mx-auto',
@@ -44,13 +33,13 @@ export default function ContactPage() {
         </div>
 
         <div className={styles?.cardsGrid}>
-          {CONTACT_CARDS.map((card) => (
+          {CONTACT_CARDS?.map((card) => (
             <ContactCard
-              key={card.title}
-              icon={card.icon}
-              title={card.title}
-              details={card.details}
-              link={card.link}
+              key={card?.title}
+              icon={card?.icon}
+              title={card?.title}
+              details={card?.details}
+              link={card?.link}
             />
           ))}
         </div>

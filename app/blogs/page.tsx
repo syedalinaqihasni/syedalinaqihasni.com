@@ -1,20 +1,9 @@
-import { Metadata } from 'next';
 import BlogsList from '@/components/blogs/blogs-list';
-import { Post } from '@/types/blogs';
 import { getMetadataForPath } from '@/lib/metadata';
-
+import { CONSTANT } from '@/constants/blogs';
 
 export const metadata = getMetadataForPath('/blogs');
 
-// --- Static Text ---
-const CONSTANT = {
-  pageTitle: 'My Blog',
-  pageDescription:
-    'Thoughts, tutorials, and insights about web development, design, and technology.',
- 
-};
-
-// --- Static Class Names ---
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
   wrapper: 'max-w-6xl mx-auto',
@@ -24,8 +13,6 @@ const styles = {
 };
 
 export default async function BlogPage() {
-  // const posts: Post[] = await sanityFetch({ query: postsQuery });
-
   return (
     <div className={styles?.container}>
       <div className={styles?.wrapper}>

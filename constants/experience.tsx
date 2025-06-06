@@ -106,3 +106,13 @@ export const EXPERIENCES = [
     ],
   },
 ];
+
+const CONSTANT = {
+  pageTitle: 'Experience',
+  pageDescription:
+    "My professional journey and the companies I've had the pleasure to work with.",
+};
+
+export{
+  CONSTANT,
+}

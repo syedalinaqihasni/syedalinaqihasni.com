@@ -1,4 +1,3 @@
-// app/lib/metadata.ts
 import { Metadata } from 'next';
 
 const siteBase = 'https://www.syedalinaqihasni.com';

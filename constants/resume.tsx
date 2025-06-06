@@ -85,4 +85,14 @@ const RESUME = {
     'Typing & CIT – The Learning Zone',
   ],
 };
-export { RESUME };
+
+const SECTION_TITLES = {
+  summary: 'Professional Summary',
+  experience: 'Work Experience',
+  education: 'Education',
+  skills: 'Skills',
+  certifications: 'Certifications',
+};
+
+const SKILL_CATEGORIES = ['frontend', 'backend', 'tools'] as const;
+export { RESUME , SECTION_TITLES, SKILL_CATEGORIES };

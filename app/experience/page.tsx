@@ -1,22 +1,11 @@
-// components/ExperiencePage.tsx
-
-import { Metadata } from 'next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { EXPERIENCES } from '@/constants/experience';
+import { CONSTANT, EXPERIENCES } from '@/constants/experience';
 import Image from 'next/image';
 import { getMetadataForPath } from '@/lib/metadata';
 
-
 export const metadata = getMetadataForPath('/experience');
 
-const CONSTANT = {
-  pageTitle: 'Experience',
-  pageDescription:
-    "My professional journey and the companies I've had the pleasure to work with.",
-};
-
-// Style constants
 const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
 const INNER_WRAPPER = 'max-w-6xl mx-auto';
 const HEADER = 'text-center mb-16';
@@ -50,7 +39,7 @@ const ExperiencePage = () => (
       </header>
 
       <section className={CARD_SPACING}>
-        {EXPERIENCES.map((experience) => (
+        {EXPERIENCES?.map((experience) => (
           <Card key={experience.id} className={'overflow-hidden'}>
             <CardContent className={'p-0'}>
               <div className={CARD_GRID}>
@@ -72,16 +61,16 @@ const ExperiencePage = () => (
                 </aside>
 
                 <div className={CONTENT_SECTION}>
-                  {experience.positions.map((position, idx) => (
+                  {experience.positions?.map((position, idx) => (
                     <article key={idx} className={'mb-8 last:mb-0'}>
                       <h3 className={ROLE_TITLE}>{position.role}</h3>
                       <ul className={DESCRIPTION_LIST}>
-                        {position.description.map((descItem, i) => (
+                        {position.description?.map((descItem, i) => (
                           <li key={i}>{descItem}</li>
                         ))}
                       </ul>
                       <div className={SKILL_BADGE_WRAPPER}>
-                        {position.skills.map((skill) => (
+                        {position.skills?.map((skill) => (
                           <Badge key={skill} variant={'outline'}>
                             {skill}
                           </Badge>

@@ -1,5 +1,3 @@
-// app/blogs/[slug]/page.tsx
-import { Metadata } from 'next';
 import Image from 'next/image';
 import { PortableText } from '@portabletext/react';
 import { Calendar, Clock, Share2 } from 'lucide-react';
@@ -8,15 +6,9 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Post } from '@/types/blogs';
 import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
-import { posts } from '@/constants/blogs';
+import { CONSTANT, posts } from '@/constants/blogs';
 import { notFound } from 'next/navigation';
-
-// Constants
-const CONSTANT = {
-  shareButton: 'Share Article',
-  blogTitleSuffix: ' | Blog',
-  readUnit: 'min read',
-};
+import { formatDate } from '@/lib/utils';
 
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
@@ -26,41 +18,32 @@ const styles = {
   metaRow: 'flex items-center gap-6 text-muted-foreground',
   metaItem: 'flex items-center gap-2',
   imageWrapper: 'relative h-[400px] rounded-lg overflow-hidden mb-12',
-  imageClass: 'object-cover',
+  image: 'object-cover',
   content: 'prose dark:prose-invert max-w-none mb-16',
   shareWrapper: 'text-center',
 };
 
-// Utils
-const formatDate = (dateString: string): string =>
-  new Date(dateString).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
-
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = posts.find((p) => p.slug === params.slug);
+  const post = posts?.find((p) => p.slug === params.slug);
   if (!post) return notFound();
 
   return generateDynamicMetadata({
-    title: post.title,
-    description: post.excerpt,
-    image: post.image,
-    publishedAt: post.publishedAt,
-    path: `/blogs/${post.slug}`, 
+    title: post?.title,
+    description: post?.excerpt,
+    image: post?.image,
+    publishedAt: post?.publishedAt,
+    path: `/blogs/${post?.slug}`, 
   });
 }
 
 const BlogPostPage = async ({ params }: { params: { slug: string } }) => {
-const post = posts.find((post) => post.slug === params.slug);
+const post = posts?.find((post) => post?.slug === params.slug);
 if (!post) notFound();
 
 return (
 <div className={styles?.container}>
   <div className={styles?.wrapper}>
-    {/* Header */}
     <div className={'mb-8'}>
       <div className={styles?.categoryWrapper}>
         {post?.categories?.map((category: string) => (
@@ -83,25 +66,19 @@ return (
         </div>
       </div>
     </div>
-
-    {/* Featured Image */}
     {post?.image && (
       <div className={styles?.imageWrapper}>
         <Image
-          src={post.image}
+          src={post?.image}
           alt={post?.title}
           fill
-          className={styles?.imageClass}
+          className={styles?.image}
         />
       </div>
     )}
-
-    {/* Content */}
     <div className={styles?.content}>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div dangerouslySetInnerHTML={{ __html: post?.content }} />
     </div>
-
-    {/* Share Button */}
     <div className={styles?.shareWrapper}>
       <Button variant={'outline'}>
         <Share2 className={'h-4 w-4 mr-2'} />

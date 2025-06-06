@@ -7,9 +7,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { getMetadataForPath } from '@/lib/metadata';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-/**
- * Google Fonts configuration extracted for reuse and clarity.
- */
+
 const interFont = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -25,13 +23,6 @@ const poppinsFont = Poppins({
 
 export const metadata = getMetadataForPath('/');
 
-/**
- * RootLayout component wraps all pages with global providers,
- * theme, fonts, header, footer, and Toaster notifications.
- *
- * @param {object} props
- * @param {React.ReactNode} props.children - The page content
- */
 export default function RootLayout({
   children,
 }: {
@@ -40,7 +31,6 @@ export default function RootLayout({
   return (
     <html lang={'en'} suppressHydrationWarning>
       <head>
-        {/* Google Tag Manager script (injected early in body) */}
         <GoogleTagManager gtmId="GTM-NBKH9P8G" />
         <GoogleAnalytics gaId="G-5TPNEKJMLD" />
       </head>

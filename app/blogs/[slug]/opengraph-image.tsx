@@ -1,22 +1,18 @@
 import { ImageResponse } from 'next/og'
 import { posts } from '@/constants/blogs';
 
- 
-// Image metadata
 export const size = {
   width: 1200,
   height: 630,
 }
  
 export const contentType = 'image/png'
- 
-// Image generation
+
 export default async function Image({ params }: { params: { slug: string } }) {
-  const post = posts.find((p) => p.slug === params.slug);
+  const post = posts?.find((p) => p.slug === params.slug);
  
   return new ImageResponse(
     (
-      // ImageResponse JSX element
       <div
         style={{
           fontSize: 128,

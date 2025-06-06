@@ -1,8 +1,6 @@
 import { ImageResponse } from 'next/og'
 import { events } from '@/constants/events';
 
- 
-// Image metadata
 export const size = {
   width: 1200,
   height: 630,
@@ -10,13 +8,11 @@ export const size = {
  
 export const contentType = 'image/png'
  
-// Image generation
 export default async function Image({ params }: { params: { slug: string } }) {
   const event = events.find((p) => p.slug === params.slug);
  
   return new ImageResponse(
     (
-      // ImageResponse JSX element
       <div
         style={{
           fontSize: 128,
