@@ -1,7 +1,5 @@
 
 import CertificateGrid from '@/components/certificates/certificates-grid';
-import GalleryGrid from '@/components/gallery/gallery-grid';
-import { GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/gallery';
 import { getMetadataForPath } from '@/lib/metadata';
 
 export const metadata = getMetadataForPath('/certificates');

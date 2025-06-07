@@ -9,6 +9,7 @@ import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
 import { CONSTANT, posts } from '@/constants/blogs';
 import { notFound } from 'next/navigation';
 import { formatDate } from '@/lib/utils';
+import HtmlRenderer from '@/components/HtmlRenderer';
 
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
@@ -77,7 +78,9 @@ return (
       </div>
     )}
     <div className={styles?.content}>
-      <div dangerouslySetInnerHTML={{ __html: post?.content }} />
+      <div >
+        <HtmlRenderer html={post?.content}/>
+        </div> 
     </div>
     <div className={styles?.shareWrapper}>
       <Button variant={'outline'}>

@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 import { ExternalLink } from "lucide-react";
 
 export interface CertificatesImage {
-  id: string;
+  id: number;
   src: string;
   alt: string;
   caption: string;
@@ -29,7 +29,7 @@ const albums = [
 
 const images: CertificatesImage[] = [
   {
-    id: "cert-1",
+    id: 1,
     src: "https://via.placeholder.com/600x400?text=Next.js+Certificate",
     alt: "Next.js Certificate",
     caption: "Certified in Advanced Next.js",
@@ -38,7 +38,7 @@ const images: CertificatesImage[] = [
     link: "https://certificates.example.com/nextjs",
   },
   {
-    id: "cert-2",
+    id: 2,
     src: "https://via.placeholder.com/600x400?text=React+Badge",
     alt: "React Badge",
     caption: "React Developer Badge",
@@ -47,7 +47,7 @@ const images: CertificatesImage[] = [
     link: "https://certificates.example.com/react-badge",
   },
   {
-    id: "cert-3",
+    id: 3,
     src: "https://via.placeholder.com/600x400?text=Frontend+Certificate",
     alt: "Frontend Cert",
     caption: "Frontend Mastery Certification",
@@ -56,7 +56,7 @@ const images: CertificatesImage[] = [
     link: "https://certificates.example.com/frontend-mastery",
   },
   {
-    id: "cert-4",
+    id: 4,
     src: "https://via.placeholder.com/600x400?text=GitHub+Badge",
     alt: "GitHub Badge",
     caption: "Open Source Contributor Badge",
@@ -76,7 +76,7 @@ export default function CertificateGrid() {
   const filteredImages =
     activeAlbum === "all"
       ? images
-      : images.filter((image) => image.album === activeAlbum);
+      : images.filter((image) => image?.album === activeAlbum);
 
   const breakpointColumnsObj = {
     default: 3,
@@ -112,7 +112,7 @@ export default function CertificateGrid() {
           >
             {filteredImages.map((image) => (
               <motion.div
-                key={image.id}
+                key={image?.id}
                 className="mb-4 cursor-pointer"
                 onClick={() => setSelectedImage(image)}
                 whileHover={{ scale: 1.02 }}
@@ -120,16 +120,16 @@ export default function CertificateGrid() {
               >
                 <div className="relative rounded-lg overflow-hidden">
                   <Image
-                    src={image.src}
-                    alt={image.alt}
+                    src={image?.src}
+                    alt={image?.alt}
                     width={500}
                     height={300}
                     className="w-full h-auto object-cover"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                    <p className="text-white font-medium">{image.caption}</p>
+                    <p className="text-white font-medium">{image?.caption}</p>
                     <div className="flex flex-wrap gap-2 mt-2">
-                      {image.tags?.map((tag) => (
+                      {image?.tags?.map((tag) => (
                         <Badge
                           key={tag}
                           variant="secondary"

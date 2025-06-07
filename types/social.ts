@@ -1,13 +1,13 @@
 
 interface TwitterPost {
-  id: string;
+  id: number;
   content: string;
   date: string;
   likes: number;
   retweets: number;
 }
 interface LinkedInPost {
-  id: string;
+  id: number;
   title: string;
   content: string;
   date: string;
@@ -16,7 +16,7 @@ interface LinkedInPost {
 }
 
 interface InstagramPost {
-  id: string;
+  id: number;
   image: string;
   caption: string;
   date: string;

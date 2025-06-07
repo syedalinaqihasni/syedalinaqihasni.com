@@ -1,6 +1,6 @@
 export const IMAGES = [
   {
-    id: '1',
+    id: 1,
     src: 'https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg',
     alt: 'Coding on a laptop',
     caption: 'Working on a new project',
@@ -8,7 +8,7 @@ export const IMAGES = [
     tags: ['coding', 'webdev'],
   },
   {
-    id: '2',
+    id: 2,
     src: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
     alt: 'Conference presentation',
     caption: 'Speaking at ReactConf 2023',
@@ -16,7 +16,7 @@ export const IMAGES = [
     tags: ['conference', 'speaking'],
   },
   {
-    id: '3',
+    id: 3,
     src: 'https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg',
     alt: 'Design mockup',
     caption: 'UI design for a new application',
@@ -24,7 +24,7 @@ export const IMAGES = [
     tags: ['design', 'ui/ux'],
   },
   {
-    id: '4',
+    id: 4,
     src: 'https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg',
     alt: 'Team meeting',
     caption: 'Brainstorming session with the team',
@@ -32,7 +32,7 @@ export const IMAGES = [
     tags: ['team', 'collaboration'],
   },
   {
-    id: '5',
+    id: 5,
     src: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg',
     alt: 'Coding setup',
     caption: 'My workspace setup',
@@ -40,7 +40,7 @@ export const IMAGES = [
     tags: ['workspace', 'setup'],
   },
   {
-    id: '6',
+    id: 6,
     src: 'https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg',
     alt: 'Workshop',
     caption: 'Leading a workshop on Next.js',
@@ -48,7 +48,7 @@ export const IMAGES = [
     tags: ['workshop', 'teaching'],
   },
   {
-    id: '7',
+    id: 7,
     src: 'https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg',
     alt: 'Laptop with code',
     caption: 'Late night coding session',
@@ -56,7 +56,7 @@ export const IMAGES = [
     tags: ['coding', 'webdev'],
   },
   {
-    id: '8',
+    id: 8,
     src: 'https://images.pexels.com/photos/2608519/pexels-photo-2608519.jpeg',
     alt: 'Conference audience',
     caption: 'Full house at my last talk',
@@ -64,7 +64,7 @@ export const IMAGES = [
     tags: ['conference', 'audience'],
   },
   {
-    id: '9',
+    id: 9,
     src: 'https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg',
     alt: 'Vacation photo',
     caption: 'Taking a break in nature',

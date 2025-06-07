@@ -1,5 +1,5 @@
 type GalleryImage = {
-  id: string;
+  id: number;
   src: string;
   alt: string;
   caption: string;

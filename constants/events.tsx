@@ -1,7 +1,7 @@
 import { Event } from "@/types/events";
 
 const events: Event []= [{
-  id: '1',
+  id: 1,
   title: 'Sample Event Title',
   description: 'This is a sample event description.',
   excerpt:"",

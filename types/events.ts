@@ -1,5 +1,5 @@
 type Event = {
-  id: string;
+  id: number;
   slug: string;
   image: string;
   title: string;
