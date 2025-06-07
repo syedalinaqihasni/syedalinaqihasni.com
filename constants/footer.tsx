@@ -1,25 +1,60 @@
 
-import { Github, Linkedin, Twitter, Instagram, Mail } from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export const CONSTANT = {
   brandName: 'Syed Ali Naqi Hasni',
   description:
-    "Showcasing my work, skills, and journey as a developer. Feel free to reach out for collaboration or opportunities. I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.",
+    "I’m a passionate developer dedicated to crafting seamless, accessible, and visually stunning digital experiences. With expertise across front-end and back-end technologies.",
+  description2:
+    "Always eager to learn and collaborate, I thrive on turning challenges into innovative solutions. Let’s build something exceptional together!",
   quickLinksHeading: 'Quick Links',
   connectHeading: 'Connect',
   copyright: `© ${new Date().getFullYear()} Syed Hasni | All rights reserved.`,
 };
 
-export const CONTACT_INFO = [
-  { label: 'Email', value: 'email@example.com' },
-  { label: 'Email', value: 'email@example.com' },
-  { label: 'Phone', value: '+92 (555) 123-4567' },
-  { label: 'Phone', value: '+1 (555) 123-4567' },
-  { label: 'Address', value: '1234 Main St, Hometown, Country' },
+export const CONTACT_INFO = [ 
+  {
+    label: 'Email',
+    value: 'syedhasni151214@gmail.com',
+    link: 'mailto:syedhasni151214@gmail.com',
+    icon: Mail,
+  },
+  {
+    label: 'Email',
+    value: 'engr.syedalinaqihasni@gmail.com',
+    link: 'mailto:engr.syedalinaqihasni@gmail.com',
+    icon: Mail,
+  },
+  {
+    label: 'Phone',
+    value: '+92 (316) 226-5948',
+    link: 'tel:923162265948',
+    icon: Phone,
+  },
+  {
+    label: 'Phone',
+    value: '+92 (309) 273-4366',
+    link: 'tel:923092734366',
+    icon: Phone,
+  },
+  {
+    label: 'Address',
+    value: 'Saeedabad, Baldia Town, Karachi, Pakistan',
+   link:'#',
+    icon: MapPin,
+  },
+  {
+    label: 'Address',
+    value: 'Gulistn e Johr, Baldia Town, Karachi, Pakistan',
+    link:'#',
+    icon: MapPin,
+  },
 ];
 
+
 export const LINKS_GROUPS = [
-  [
+  [ 
+    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Experience', path: '/experience' },
     { name: 'Resume', path: '/resume' },
@@ -31,6 +66,7 @@ export const LINKS_GROUPS = [
     { name: 'Skills', path: '/skills' },
     { name: 'Archive', path: '/archive' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Certificates', path: '/certificates' },
     { name: 'Blog', path: '/blogs' },
     { name: 'Events', path: '/events' },
     { name: 'Gallery', path: '/gallery' },

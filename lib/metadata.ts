@@ -67,6 +67,10 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
   path: '/socials',
   title: 'Socials',
   description: 'Connect with me on various social platforms and see my online presence.',
+},{
+  path: '/certificates',
+  title: 'Certificates',
+  description: 'Browse through my professional certifications and achievements.',
 }
 
 ];
