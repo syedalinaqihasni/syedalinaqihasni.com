@@ -153,18 +153,18 @@
   border-radius: 2px;
 }
 .single-project small {
-  font-size: 0.8em;
+  font-size: 1em;
   color: #666;
 }
 
 .single-project sub {
   vertical-align: sub;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 .single-project sup {
   vertical-align: super;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 
@@ -197,7 +197,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: center;
   text-decoration: none;
 }
@@ -230,7 +230,7 @@
   font-family: monospace;
   padding: 0.2em 0.4em;
   border-radius: 4px;
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
 /* Preformatted Code with Copy Button */
@@ -242,7 +242,7 @@
   overflow-x: auto;
   border-radius: 8px;
   font-family: monospace;
-  font-size: 0.95em;
+  font-size: 1em;
   margin-bottom: 1em;
 }
 
@@ -259,7 +259,7 @@
   color:fff;
   border: none;
   padding: 0.3em 0.6em;
-  font-size: 0.8em;
+  font-size: 1em;
   cursor: pointer;
   border-radius: 4px;
 }
