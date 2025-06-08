@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {projects?.length != 0 && (
+      {/* {projects?.length != 0 && (
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
           id={"projects"}
@@ -147,7 +147,7 @@ export default function Home() {
             <FeaturedProjects />
           </div>
         </section>
-      )}
+      )} */}
       <section className={styles?.sectionPadding}>
         <div className={styles?.containerLarge}>
           <h2 className={styles?.sectionHeader}>{skills.title}</h2>
