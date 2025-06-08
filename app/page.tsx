@@ -7,6 +7,8 @@ import HomeSkills from "@/components/home/skills";
 import Contact from "@/components/contact/contact-form";
 import { CONTENT } from "@/constants/home";
 import FeaturedBlogs from "@/components/blogs/featured-blogs";
+import FeaturedServices from "@/components/home/featured-services";
+import FeaturedPricing from "@/components/home/featured-pricing";
 import { projects } from "@/constants/projects";
 import { SKILLS } from "@/constants/skills";
 import { posts } from "@/constants/blogs";
@@ -127,27 +129,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* {projects?.length != 0 && (
-        <section
-          className={`${styles?.sectionPadding} bg-muted/50`}
-          id={"projects"}
-        >
-          <div className={styles?.containerLarge}>
-            <div className={styles?.projectsHeaderWrapper}>
-              <h2 className={styles?.sectionHeaderLeft}>
-                {featuredProjects?.title}
-              </h2>
-              <Link href={featuredProjects?.viewAllHref}>
-                <Button variant={"outline"}>
-                  {featuredProjects?.viewAllLabel}
-                  <ArrowRight className={"ml-2 h-4 w-4"} />
-                </Button>
-              </Link>
-            </div>
-            <FeaturedProjects />
+
+      {/* Services Section */}
+      <section
+        className={`${styles?.sectionPadding} bg-muted/50`}
+        id={"services"}
+      >
+        <div className={styles?.containerLarge}>
+          <div className={styles?.projectsHeaderWrapper}>
+            <h2 className={styles?.sectionHeaderLeft}>My Services</h2>
+            <Link href="/services">
+              <Button variant={"outline"}>
+                View All Services
+                <ArrowRight className={"ml-2 h-4 w-4"} />
+              </Button>
+            </Link>
           </div>
-        </section>
-      )} */}
+          <FeaturedServices />
+        </div>
+      </section>
+
+      {/* Skills Section */}
       <section className={styles?.sectionPadding}>
         <div className={styles?.containerLarge}>
           <h2 className={styles?.sectionHeader}>{skills.title}</h2>
@@ -163,17 +165,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section
+        className={`${styles?.sectionPadding} bg-muted/50`}
+        id={"pricing"}
+      >
+        <div className={styles?.containerLarge}>
+          <div className={styles?.projectsHeaderWrapper}>
+            <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
+            <Link href="/pricing">
+              <Button variant={"outline"}>
+                View All Plans
+                <ArrowRight className={"ml-2 h-4 w-4"} />
+              </Button>
+            </Link>
+          </div>
+          <FeaturedPricing />
+        </div>
+      </section>
+
+      {/* Blogs Section */}
       {posts.length != 0 && (
         <section
-          className={`${styles?.sectionPadding} bg-muted/50`}
-          id={"projects"}
+          className={`${styles?.sectionPadding}`}
+          id={"blogs"}
         >
           <div className={styles?.containerLarge}>
             <div className={styles?.projectsHeaderWrapper}>
-              <h2 className={styles?.sectionHeaderLeft}>{"Recent Blogs"}</h2>
+              <h2 className={styles?.sectionHeaderLeft}>Recent Blogs</h2>
               <Link href={"/blogs"}>
                 <Button variant={"outline"}>
-                  {featuredProjects?.viewAllLabel}
+                  View All Blogs
                   <ArrowRight className={"ml-2 h-4 w-4"} />
                 </Button>
               </Link>
