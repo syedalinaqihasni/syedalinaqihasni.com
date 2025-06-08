@@ -1,6 +1,5 @@
 import { Post } from "@/types/blogs";
 
-
 const CONSTANT = {
   pageTitle: "My Blogs",
   pageDescription:
@@ -10,7 +9,6 @@ const CONSTANT = {
   blogTitleSuffix: " | Blogs",
   readUnit: "min read",
 };
-
 
 const posts: Post[] = [
   {
@@ -52,7 +50,6 @@ const posts: Post[] = [
 </p>
 <pre><code>import nodemailer from 'nodemailer';
 
-
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -60,7 +57,6 @@ const transporter = nodemailer.createTransport({
     pass: 'your-email-password',
   },
 });
-
 
 const sendEmail = async (to, subject, html) => {
   const mailOptions = {
@@ -81,9 +77,7 @@ const sendEmail = async (to, subject, html) => {
   }
 };
 
-
-export default sendEmail;
-</code></pre>
+export default sendEmail;</code></pre>
 <h3>Step 3: Use the Utility Function in Next.js Pages</h3>
 <p>
   Integrate the sendEmail function in your Next.js pages where email functionality is required.
@@ -91,7 +85,6 @@ export default sendEmail;
 <pre><code>import React from 'react';
 
 import sendEmail from '../utils/email';
-
 
 const App = () => {
   const handleSendEmail = async () => {
@@ -108,9 +101,7 @@ const App = () => {
 
 };
 
-
-export default YourPage;
-</code></pre>
+export default YourPage;</code></pre>
 <h2>Alternatives to NodeMailer</h2>
 <p>
   While NodeMailer is a robust solution, it's essential to explore alternatives based on your specific needs. Some notable alternatives include:
@@ -576,8 +567,7 @@ export default YourPage;
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages 
 sudo apt update 
-sudo apt install gh
-</code></pre>
+sudo apt install gh</code></pre>
 <p>
   For other platforms, consult the official GitHub CLI documentation.
 </p>
@@ -587,8 +577,7 @@ sudo apt install gh
 <p>
   Once installed, the next step is authentication. You need to authenticate gh with your GitHub account, allowing it to interact with your repositories seamlessly. Use the following command to authenticate:
 </p>
-<pre><code>gh auth login
-</code></pre>
+<pre><code>gh auth login</code></pre>
 <p>
   Follow the prompts to complete the authentication process.
 </p>
@@ -601,26 +590,22 @@ sudo apt install gh
 <p>
   GitHub CLI simplifies the process of creating issues directly from the command line. Use the following command:
 </p>
-<pre><code>gh issue create
-</code></pre>
+<pre><code>gh issue create</code></pre>
 <p>
   This command will prompt you for details such as the issue title, body, labels, and assignees. For example:
 </p>
-<pre><code>gh issue create --title "Fix Bug in Authentication Module" --body "The authentication module is throwing errors when handling certain edge cases."
-</code></pre>
+<pre><code>gh issue create --title "Fix Bug in Authentication Module" --body "The authentication module is throwing errors when handling certain edge cases."</code></pre>
 <h3>
   2. Creating a Pull Request
 </h3>
 <p>
   Initiating a pull request from the command line is as easy as creating an issue. Execute the following command:
 </p>
-<pre><code>gh pr create
-</code></pre>
+<pre><code>gh pr create</code></pre>
 <p>
   Similar to creating an issue, you'll be prompted for details such as the pull request title, body, base branch, and head branch. For example:
 </p>
-<pre><code>gh pr create --title "Feature: New User Registration" --body "This pull request adds functionality for new user registration." --base main --head feature-branch
-</code></pre>
+<pre><code>gh pr create --title "Feature: New User Registration" --body "This pull request adds functionality for new user registration." --base main --head feature-branch</code></pre>
 <h3>
   3. Pushing Changes
 </h3>
@@ -629,8 +614,7 @@ sudo apt install gh
 </p>
 <pre><code>gh repo view --clone
 # Make changes to files
-gh repo sync
-</code></pre>
+gh repo sync</code></pre>
 <p>
   This sequence of commands fetches the repository, makes the necessary changes, and syncs them back to GitHub.
 </p>
@@ -640,8 +624,7 @@ gh repo sync
 <p>
   To pull changes from a remote repository, use the following command:
 </p>
-<pre><code>gh repo sync
-</code></pre>
+<pre><code>gh repo sync</code></pre>
 <p>
   This command fetches changes from the remote repository and merges them into your local branch.
 </p>
@@ -653,8 +636,7 @@ gh repo sync
 </p>
 <pre><code>gh repo clone <repository>
 cd <repository>
-gh repo branch <branch-name>
-</code></pre>
+gh repo branch <branch-name></code></pre>
 <p>
   Replace <repository> with the name of the repository and <branch-name> with the desired branch.
 </p>
@@ -664,13 +646,11 @@ gh repo branch <branch-name>
 <p>
   Releasing new versions of your software is a crucial part of the development lifecycle. GitHub CLI allows you to create releases seamlessly:
 </p>
-<pre><code>gh release create <tag> <files> --notes <notes>
-</code></pre>
+<pre><code>gh release create <tag> <files> --notes <notes></code></pre>
 <p>
   Replace <tag> with the version tag, <files> with the files to be included in the release, and <notes> with the release notes. For example:
 </p>
-<pre><code>gh release create v1.0.0 dist/* --notes "Release notes for version 1.0.0"
-</code></pre>
+<pre><code>gh release create v1.0.0 dist/* --notes "Release notes for version 1.0.0"</code></pre>
 <h3>
   Advantages of GitHub CLI
 </h3>
@@ -728,7 +708,6 @@ gh repo branch <branch-name>
 <p>
   In an era where speed and efficiency are critical in software development, GitHub CLI stands as a testament to GitHub's commitment to empowering developers with tools that seamlessly integrate into their existing workflows. As the development community continues to embrace the power of the command line, GitHub CLI is poised to play a central role in shaping the future of collaborative and efficient software development.
 </p>
-
 
 </article>
 `,
@@ -913,8 +892,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-</code></pre>
+      interval: "weekly"</code></pre>
 <ul>
     <li>Replace <strong>npm</strong> with the relevant ecosystem for your project <strong>(e.g., pip, maven, etc.)</strong>.</li>
 </ul>
@@ -1273,7 +1251,6 @@ function UserProfile({ userId }) {
   info: "info",
 };
 
-
 function Notification({ type, message }) {
   const className = notificationStyles[type] || "default";
 
@@ -1459,7 +1436,6 @@ const productService = {
   fetchProducts: () => fetch("/api/products").then((res) => res.json()),
 };
 
-
 // Component
 function ProductsList() {
   const products = useProducts(productService);
@@ -1621,8 +1597,7 @@ function ProductsList() {
     of how I used to create a custom shortcode:</p>
 <p>
     Example: A Simple Contact Form Shortcode</p>
-<pre><code>
-// Add this to functions.php or a custom plugin
+<pre><code>// Add this to functions.php or a custom plugin
 function custom_contact_form_shortcode() {
     return '
         <form>
@@ -1634,7 +1609,6 @@ function custom_contact_form_shortcode() {
 
 }
 add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
-
 </code></pre>
 <h1>
     What Are Custom Blocks?</h1>
@@ -1688,8 +1662,7 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
     Step 1: Register a Custom Block</h1>
 <p>
     I added this code to my theme’s functions.php file or a custom plugin:</p>
-<pre><code>
-function register_contact_form_block() {
+<pre><code>function register_contact_form_block() {
     wp_register_script(
         'custom-contact-form-block',
         get_template_directory_uri() . '/js/contact-form-block.js',
@@ -1704,15 +1677,12 @@ function register_contact_form_block() {
 
 }
 add_action('init', 'register_contact_form_block');
-
 </code></pre>
 <h1>
     Step 2: Create the Block Script (contact-form-block.js)</h1>
-<pre><code>
-const { registerBlockType } = wp.blocks;
+<pre><code>const { registerBlockType } = wp.blocks;
 
 const { createElement } = wp.element;
-
 
 registerBlockType('custom/contact-form', {
     title: 'Contact Form',
@@ -1739,7 +1709,6 @@ registerBlockType('custom/contact-form', {
             )
         ),
 });
-
 </code></pre>
 <p>
     With this, I now have a custom block that I can add directly in the editor,
@@ -2356,7 +2325,6 @@ utm_content=suza"
     // image: "/images/blogs/getting-started-nextjs-tailwind.png",
     content: `<article>
     
-    <h1>Getting Started with Next.js and Tailwind</h1>
 
     <p>Web development continues to evolve at a rapid pace, and developers are constantly looking for tools that can streamline the development process while delivering modern, performant applications. Two popular tools that complement each other beautifully are <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.</p>
 
@@ -2421,8 +2389,7 @@ npx tailwindcss init -p</code></code></pre>
 
 @tailwind components;
 
-@tailwind utilities;
-</code></code></pre>
+@tailwind utilities;</code></code></pre>
 
     <p>This tells Tailwind to inject its base styles, component classes, and utility classes globally.</p>
 
@@ -2495,7 +2462,6 @@ npx tailwindcss init -p</code></code></pre>
   categories: ["React", "State Management", "Frontend Architecture"],
   // image: "/images/blogs/state-management-react.png",
  content: `<article>
-  <h1>State Management in React Applications</h1>
 
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
 
@@ -2505,8 +2471,7 @@ npx tailwindcss init -p</code></code></pre>
 
   <p><strong>State</strong> is a JavaScript object that holds dynamic data in a React component. State changes trigger re-renders, allowing the UI to respond to user interactions and asynchronous updates.</p>
 
-  <pre><code>
-import{ useState } from 'react';
+  <pre><code>import{ useState } from 'react';
 
 function Counter(){
   const [count, setCount] = useState(0);
@@ -2533,8 +2498,7 @@ function Counter(){
 
   <p>If multiple sibling components need access to the same piece of state, lift it to their common parent:</p>
 
-  <pre><code>
-function Parent(){
+  <pre><code>function Parent(){
   const [value, setValue] = useState('');
   return (
     <>
@@ -2551,8 +2515,7 @@ function Parent(){
 
   <p><strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It’s great for themes, authentication, or language settings.</p>
 
-  <pre><code>
-import{ createContext, useContext, useState } from 'react';
+  <pre><code>import{ createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext();
 
@@ -2579,8 +2542,7 @@ function Layout(){
 
   <p><strong>Redux</strong> is a predictable state container ideal for large applications with complex state logic, time travel debugging, and middleware needs.</p>
 
-  <pre><code>
-import{ createSlice, configureStore } from '@reduxjs/toolkit';
+  <pre><code>import{ createSlice, configureStore } from '@reduxjs/toolkit';
 
 const counterSlice = createSlice({
   name: 'counter',
@@ -2599,8 +2561,7 @@ const store = configureStore({
 
   <p>Connect to components using <code>useSelector</code> and <code>useDispatch</code>:</p>
 
-  <pre><code>
-import{ useSelector, useDispatch } from 'react-redux';
+  <pre><code>import{ useSelector, useDispatch } from 'react-redux';
 import{ increment } from './store';
 
 function Counter(){
@@ -2617,8 +2578,7 @@ function Counter(){
 
   <p><strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It’s ideal for simpler applications that still need shared global state.</p>
 
-  <pre><code>
-import create from 'zustand';
+  <pre><code>import create from 'zustand';
 
 const useStore = create((set) => ({
   count: 0,
@@ -2637,8 +2597,7 @@ function Counter(){
 
   <p><strong>Recoil</strong> is a state management library from Facebook that works with React’s Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
 
-  <pre><code>
-import{ atom, useRecoilState } from 'recoil';
+  <pre><code>import{ atom, useRecoilState } from 'recoil';
 
 const countAtom = atom({
   key: 'count',
@@ -2666,8 +2625,7 @@ function Counter(){
 
   <p>If a component’s state becomes too complex, break it into smaller chunks:</p>
 
-  <pre><code>
-const [form, setForm] = useState({
+  <pre><code>const [form, setForm] = useState({
   name: '',
   email: '',
   password: '',
@@ -2676,8 +2634,7 @@ const [form, setForm] = useState({
 
   <p>Or manage each input individually for clarity:</p>
 
-  <pre><code>
-const [name, setName] = useState('');
+  <pre><code>const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
   </code></pre>
@@ -2709,7 +2666,6 @@ const [password, setPassword] = useState('');
     // image: "/images/blogs/framer-motion-animations.png",
     content: `
   <article>
-    <h1>Creating Animations with Framer Motion</h1>
 
     <p>Animation can breathe life into your web application, enhancing user experience and making your interface more engaging. <strong>Framer Motion</strong> is a popular React animation library that makes it easy to create beautiful and smooth animations with minimal code.</p>
 
@@ -2741,7 +2697,6 @@ const [password, setPassword] = useState('');
 
     <pre><code>import { motion } from 'framer-motion';
 
-
 export default function Box() {
   return (
   <
@@ -2760,8 +2715,7 @@ motion.div
 }</code></pre>
 
     <p>This code makes a <code><
-div>
-</code> fade in over one second when it's mounted.</p>
+div></code> fade in over one second when it's mounted.</p>
 
     <h2>Animating Position and Scale</h2>
 
@@ -2777,8 +2731,7 @@ motion.div
   Slide &amp;
  Scale
 <
-/motion.div>
-</code></pre>
+/motion.div></code></pre>
 
     <h2>Hover and Tap Animations</h2>
 
@@ -2792,8 +2745,7 @@ motion.button
 
   Click Me
 <
-/motion.button>
-</code></pre>
+/motion.button></code></pre>
 
     <p>This provides subtle feedback when users interact with UI elements.</p>
 
@@ -2811,12 +2763,10 @@ motion.button
   }
 };
 
-
 const item = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
-};
-</code></pre>
+};</code></pre>
 
     <p>Now use them:</p>
 
@@ -2843,8 +2793,7 @@ Item 3<
 /motion.li>
 
 <
-/motion.ul>
-</code></pre>
+/motion.ul></code></pre>
 
     <p>Each list item will animate in sequence thanks to <code>staggerChildren</code>.</p>
 
@@ -2853,7 +2802,6 @@ Item 3<
     <p><code>AnimatePresence</code> is used to animate components when they are removed from the React tree—such as modals or pages.</p>
 
     <pre><code>import { AnimatePresence, motion } from 'framer-motion';
-
 
 function Modal({ isOpen }) {
   return (
@@ -2891,7 +2839,6 @@ motion.div
     <pre><code>// _app.js
 import { AnimatePresence } from 'framer-motion';
 
-
 export default function App({ Component, pageProps, router }) {
   return (
   <
@@ -2910,7 +2857,6 @@ Component {...pageProps} key={router.route} />
     <p>Then add page-level animation inside each component:</p>
 
     <pre><code>import { motion } from 'framer-motion';
-
 
 export default function HomePage() {
   return (
@@ -2942,8 +2888,7 @@ Content that resizes smoothly<
 /p>
 
 <
-/motion.div>
-</code></pre>
+/motion.div></code></pre>
 
     <p>This is great for expanding cards, resizing elements, or toggling visibility with animation.</p>
 
@@ -2980,7 +2925,6 @@ Content that resizes smoothly<
   readingTime: "6 min read",
   content: `
   <article>
-  <h1>Next.js API Routes: Building Server Endpoints</h1>
   <p>One of the most powerful features of <strong>Next.js</strong> is its ability to handle backend logic directly within your frontend application. With <strong>API Routes</strong>, you can create server-side endpoints as part of your project—no need to set up a separate backend service.</p>
   <p>Whether you need to fetch data, handle forms, authenticate users, or integrate third-party services, Next.js API Routes let you write server-side code using the same stack and tools you're already using on the frontend.</p>
   <h2>What Are API Routes?</h2>
@@ -3026,8 +2970,7 @@ Content that resizes smoothly<
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ name: 'John' }),
-});
-</code></code></pre>
+});</code></code></pre>
   <h2>Using Query Parameters</h2>
   <p>You can also handle URL query parameters with <code>req.query</code>:</p>
   <pre><code>// pages/api/greet.js
@@ -3103,7 +3046,6 @@ export default function handler(req, res) {
     readingTime: "4 min read",
     // image: "/images/blogs/responsive-ui-tailwind.png",
     content: `  <article>
-    <h1>Responsive UI with Tailwind CSS</h1>
 
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
 
@@ -3165,7 +3107,7 @@ export default function handler(req, res) {
     <p>Tailwind's spacing utilities (padding, margin, width, height) can also be made responsive by prefixing them with breakpoints:</p>
 
     <pre><code><div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
-<img class="w-full md:w-1/2" src="image.jpg" alt="Example" /></code></code></pre>
+<img class="w-full md:w-1/2" src="image.jpg" alt="Example" /></code></pre>
 
     <p>This enables developers to scale spacing and sizing progressively as the screen size increases, without writing custom CSS.</p>
 
@@ -3241,7 +3183,6 @@ export default function handler(req, res) {
     categories: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
   },
 ];
-
 
 export { CONSTANT, posts };
 

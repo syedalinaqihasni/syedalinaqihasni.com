@@ -225,8 +225,8 @@
 
 /* Inline Code */
 .single-project code {
-  background-color: #f4f4f4;
-  color:#000;
+  /* background-color: #f4f4f4;
+  color:#000; */
   font-family: monospace;
   padding: 0.2em 0.4em;
   border-radius: 4px;
@@ -236,8 +236,9 @@
 /* Preformatted Code with Copy Button */
 .single-project pre {
   position: relative;
-  background-color: #fff;
-  color:#000;
+  /* background-color: #fff; */
+  /* color:#000; */
+  border:1px solid ;
   padding: 1em;
   overflow-x: auto;
   border-radius: 8px;
@@ -255,7 +256,7 @@
   position: absolute;
   top: 0.5em;
   right: 0.5em;
-  background: #000;
+  /* background: #000; */
   color:fff;
   border: none;
   padding: 0.3em 0.6em;
