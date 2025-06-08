@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {projects.length != 0 && (
+      {projects?.length != 0 && (
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
           id={"projects"}

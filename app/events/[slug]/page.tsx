@@ -10,7 +10,7 @@ import { formatDateTime } from '@/lib/utils';
 import { events } from '@/constants/events';
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const event = events.find((e) => e.slug === params.slug);
+  const event = events.find((e) => e.slug === params?.slug);
   if (!event) return notFound();
 
   return generateDynamicMetadata({
@@ -46,7 +46,7 @@ const styles = {
 };
 
 const EventPage = async ({ params }: { params: { slug: string } }) => {
-  const event = events.find((event) => event?.slug === params.slug);
+  const event = events.find((event) => event?.slug === params?.slug);
 
   if (!event) {
     notFound();

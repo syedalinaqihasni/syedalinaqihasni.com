@@ -22,7 +22,7 @@ const ProjectList = () => {
   const filteredProjects =
     activeCategory === 'all'
       ? projects
-      : projects.filter((project) => project?.category === activeCategory);
+      : projects?.filter((project) => project?.category === activeCategory);
 
   return (
     <div>

@@ -26,7 +26,7 @@ const styles = {
 
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = posts?.find((p) => p.slug === params.slug);
+  const post = posts?.find((p) => p?.slug === params?.slug);
   if (!post) return notFound();
 
   return generateDynamicMetadata({
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 const BlogsPostPage = async ({ params }: { params: { slug: string } }) => {
-const post = posts?.find((post) => post?.slug === params.slug);
+const post = posts?.find((post) => post?.slug === params?.slug);
 if (!post) notFound();
 
 return (

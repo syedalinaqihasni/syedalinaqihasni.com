@@ -11,7 +11,7 @@ import { generateDynamicMetadata } from '@/lib/generateDynamicMetadata';
 import { formatDate } from '@/lib/utils';
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const project = projects.find((e) => e.slug === params.slug);
+  const project = projects?.find((e) => e.slug === params?.slug);
   if (!project) return notFound();
 
   return generateDynamicMetadata({
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 const ProjectPage = async ({ params }: { params: { slug: string } }) => {
-const project = projects.find((p) => p.slug === params.slug);
+const project = projects?.find((p) => p?.slug === params?.slug);
  if (!project) {
     notFound();
   }
