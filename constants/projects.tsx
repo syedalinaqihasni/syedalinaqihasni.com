@@ -78,7 +78,7 @@ export const projects = [
         <li>Ensuring secure payment processing</li>
         <li>Building a responsive design for all devices</li>
       </ul>
-    `,
+   `,
 }
 ];
 

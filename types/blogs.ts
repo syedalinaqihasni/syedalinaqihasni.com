@@ -6,7 +6,8 @@ type Post = {
   publishedAt: string;
   readingTime: string;
   image?: string;
-  categories: string[];
+  category: string;
+  tags: string[];
   content: string;
 };
 export type { Post, };

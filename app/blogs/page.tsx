@@ -1,6 +1,7 @@
 import BlogsList from '@/components/blogs/blogs-list';
 import { getMetadataForPath } from '@/lib/metadata';
-import { CONSTANT } from '@/constants/blogs';
+import { CONSTANT, posts } from '@/constants/blogs';
+import { Post } from "@/types/blogs";
 
 export const metadata = getMetadataForPath('/blogs');
 
@@ -21,7 +22,7 @@ export default async function BlogsPage() {
           <p className={styles?.description}>{CONSTANT?.pageDescription}</p>
         </div>
 
-        <BlogsList  />
+        <BlogsList posts={posts} />
       </div>
     </div>
   );

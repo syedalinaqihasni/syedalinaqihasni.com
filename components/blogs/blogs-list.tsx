@@ -8,9 +8,9 @@ import { Calendar, Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
-import { Post } from "@/types/blogs";
-import { posts } from "@/constants/blogs";
+
 import { formatDate } from "@/lib/utils";
+import { Post } from "@/types/blogs";
 
 const CONSTANT = {
   searchPlaceholder: "Search articles...",
@@ -22,7 +22,7 @@ const styles = {
   grid: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
   card: "h-full overflow-hidden hover:shadow-md transition-shadow duration-300",
   image: "object-cover transition-transform duration-300 hover:scale-105",
-  categoriesWrapper: "flex flex-wrap gap-2 mb-3",
+  categoriesWrapper: "flex flex-wrap gap-2 mb-3",tagsWrapper: "flex flex-wrap gap-2 mt-3",
   categoryBadge: "text-xs",
   title: "text-xl font-semibold mb-2 hover:text-primary transition-colors",
   excerpt: "text-muted-foreground mb-4 line-clamp-2",
@@ -31,7 +31,7 @@ const styles = {
   icon: "h-4 w-4 mr-1",
 };
 
-const BlogsList = () => {
+const BlogsList = ({ posts }: { posts: Post[] }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const filteredPosts = posts
     ?.filter((post) => {
@@ -39,7 +39,7 @@ const BlogsList = () => {
       return (
         post?.title.toLowerCase().includes(query) ||
         post?.excerpt.toLowerCase().includes(query) ||
-        post?.categories.some((cat) => cat.toLowerCase().includes(query))
+        post?.tags.some((cat) => cat.toLowerCase().includes(query))
       );
     })
     ?.sort(
@@ -78,29 +78,23 @@ const BlogsList = () => {
                   }
                   alt={post?.title}
                   fill
-                  className={styles?.image || '/images/blogs/blogs-placeholder.jpg'}
+                  className={
+                    styles?.image || "/images/blogs/blogs-placeholder.jpg"
+                  }
                   priority={index < 3}
                 />
               </Link>
               <CardContent className={"p-6"}>
                 <div className={styles?.categoriesWrapper}>
-                  {post?.categories.slice(0, 2)?.map((cat) => (
-                    <Badge
-                      key={cat}
-                      variant={"secondary"}
-                      className={styles?.categoryBadge}
-                    >
-                      {cat}
-                    </Badge>
-                  ))}
-                  {post?.categories.length > 2 && (
-                    <Badge
-                      variant={"outline"}
-                      className={styles?.categoryBadge}
-                    >
-                      +{post?.categories.length - 2}
-                    </Badge>
-                  )}
+                  <a href={`/blogs/category/${post?.category.toLowerCase()}` }>
+                    
+                  <Badge
+                    variant={"secondary"}
+                    className={styles?.categoryBadge}
+                  >
+                    {post?.category}
+                  </Badge>
+                  </a>
                 </div>
                 <Link href={`/blogs/${post?.slug}`}>
                   <h3 className={styles?.title}>{post?.title}</h3>
@@ -115,6 +109,26 @@ const BlogsList = () => {
                     <Clock className={styles?.icon} />
                     {post?.readingTime}
                   </div>
+                </div>
+                <div className={styles?.tagsWrapper}>
+                  {post?.tags.slice(0, 2)?.map((tag) => (
+                  <a href={`/blogs/tag/${tag.toLowerCase()}` } 
+                      key={tag}>
+                    <Badge
+                      variant={"secondary"}
+                      className={styles?.categoryBadge}
+                    >
+                      {tag}
+                    </Badge></a>
+                  ))}
+                  {post?.tags.length > 2 && (
+                    <Badge
+                      variant={"outline"}
+                      className={styles?.categoryBadge}
+                    >
+                      +{post?.tags.length - 3}
+                    </Badge>
+                  )}
                 </div>
               </CardContent>
             </Card>

@@ -21,7 +21,8 @@ const posts: Post[] = [
     readingTime: "6 min read",
     image:
       "/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg",
-    categories: ["Next.js", "Node.js", "Backend Integration"],
+    category: `Tutorials`,
+    tags: ["Next.js", "Node.js", "Backend Integration"],
     content: `<article>
 <h2>Introduction</h2>
 <p>
@@ -140,7 +141,8 @@ export default YourPage;</code></pre>
     readingTime: "8 min read",
     image:
       "/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png", // Recommend replacing with a relevant SEO/Schema image
-    categories: ["SEO", "Web Development", "Digital Strategy"],
+    category: `Tips`,
+    tags: ["SEO", "Web Development", "Digital Strategy"],
     content: `<article>
 <p>
     In the dynamic realm of search engine optimization (SEO), staying ahead necessitates not only keeping pace with trends but also understanding and leveraging innovative tools. One such tool that has emerged as a game-changer is structured data markup script. This comprehensive guide explores what structured data markup script entails, how it functions, and most importantly, how you can utilize it to turbocharge your website's SEO performance.
@@ -373,7 +375,8 @@ export default YourPage;</code></pre>
     readingTime: "6 min read",
     image:
       "/images/blogs/how-to-optimize-your-commits-for-efficient-project-management.jpg", // Consider updating this image to something Git/Dev-related
-    categories: ["Git", "Project Management", "Best Practices"],
+    category: `Tips`,
+    tags: ["Git", "Project Management", "Best Practices"],
     content: `<article>
 <p>
     In software development, version control is the backbone of smooth collaboration and project evolution. One of the most debated questions is: <em>How many commits should a project have?</em> While there’s no definitive number, the key lies in structuring and managing your commits. In this article, we’ll dive into the best practices for making commits that ensure your project remains clean, maintainable, and easy to debug.
@@ -480,7 +483,8 @@ export default YourPage;</code></pre>
     readingTime: "6 min read",
     image:
       "/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png", // Update the image filename to match topic
-    categories: ["React", "WordPress", "Headless CMS"],
+    category: `Tutorials`,
+    tags: ["React", "WordPress", "Headless CMS"],
     content: `<div >
 <p>
     Exciting news! I'm thrilled to share insights into how I seamlessly integrate <a href="https://www.linkedin.com/company/reactofficial/">React</a> apps into WordPress using the powerful <a href="https://wordpress.org/plugins/reactpress/">ReactPress plugin</a>. The combination of WordPress and React proves to be a game-changer for web app development, offering not only easy content management and robust user handling but also the unparalleled flexibility to evolve your site over time.
@@ -543,7 +547,8 @@ export default YourPage;</code></pre>
     readingTime: "6 min read",
     image:
       "/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png",
-    categories: ["GitHub", "CLI Tools", "Developer Productivity"],
+    category: `Tips`,
+    tags: ["GitHub", "CLI Tools", "Developer Productivity"],
     content: `<div >
 <p>
   In the ever-evolving landscape of software development, efficiency is paramount. GitHub, the leading platform for version control and collaboration, has introduced a powerful tool that takes efficiency to the command line—the GitHub CLI, or gh. This article will delve into the fundamentals of GitHub CLI, its applications in resolving day-to-day tasks, essential commands, and both the advantages and disadvantages of incorporating it into your workflow.
@@ -723,7 +728,8 @@ gh repo branch <branch-name></code></pre>
     readingTime: "6 min read",
     image:
       "/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png", // Consider updating this image to match the topic
-    categories: ["Teamwork", "Leadership", "Workplace Strategy"],
+    category: `Opinions`,
+    tags: ["Teamwork", "Leadership", "Workplace Strategy"],
     content: `<article>
 <p>
     In the pursuit of success and progress, teams have become the cornerstone of modern society. From business enterprises to sports teams and community organizations, the collective power of individuals working together towards a common goal is undeniable. However, it is essential to recognize that the value of individuality is equally crucial in the context of team dynamics. In this article, we will explore how embracing and fostering individuality can enhance team skills, leading to unprecedented levels of innovation, creativity, and overall effectiveness.
@@ -787,7 +793,8 @@ gh repo branch <branch-name></code></pre>
     readingTime: "6 min read",
     image:
       "/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach.png",
-    categories: ["Headless CMS", "PWA", "Content Strategy"],
+    category: `Tips`,
+    tags: ["Headless CMS", "PWA", "Content Strategy"],
     content: `<div >
 <p>
     Progressive Web Applications (PWAs) have gained immense popularity due to their ability to offer a seamless user experience across different platforms. To build a robust PWA, a reliable Content Management System (CMS) is essential to manage content efficiently. Headless CMS solutions have emerged as a popular choice for PWA development, offering flexibility, scalability, and a decoupled architecture that suits modern development requirements. In this article, we explore some of the top headless CMS options that you can use for your PWA web and mobile applications.
@@ -834,7 +841,8 @@ gh repo branch <branch-name></code></pre>
     readingTime: "6 min read",
     image:
       "/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg",
-    categories: ["Security", "GitHub", "Development Tools"],
+    category: `Opinions`,
+    tags: ["Security", "GitHub", "Development Tools"],
     content: `<div >
 <h3>
     What is GitHub Dependabot?
@@ -975,7 +983,8 @@ updates:
     publishedAt: "2023-06-12",
     readingTime: "4 min read",
     image: "/images/blogs/essential-apps-every-shopify-store-must-have.png",
-    categories: ["Shopify", "eCommerce", "Business Tools"],
+    category: `Tips`,
+    tags: ["Shopify", "eCommerce", "Business Tools"],
     content: `<article>
      <p>
     When it comes to running a successful Shopify store, having the right apps can make all the difference. These apps can enhance your store's functionality, streamline operations, and boost sales. In this article, we have compiled a list of 30 essential apps that every Shopify store must have. Each app comes with a link to its Shopify App Store page, making it easy for you to explore and install them for your store.
@@ -1080,7 +1089,8 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
     readingTime: "4 min read",
     image:
       "/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg",
-    categories: ["Programming", "Software Design", "Best Practices"],
+    category: `Opinions`,
+    tags: ["Programming", "Software Design", "Best Practices"],
     content: `<article>
 <p>
     When you're early in React development, you focus on making things work. Later, as projects grow, you realize
@@ -1489,7 +1499,8 @@ function ProductsList() {
     readingTime: "4 min read",
     image:
       "/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career.webp",
-    categories: ["Shopify", "Career Growth", "Web Development"],
+    category: `Tips`,
+    tags: ["Shopify", "Career Growth", "Web Development"],
     content: `<article>
     <p>
     In today’s digital era, e-commerce continues to thrive, and platforms like Shopify
@@ -1575,7 +1586,8 @@ function ProductsList() {
     readingTime: "4 min read",
     image:
       "/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too.webp",
-    categories: ["WordPress", "Gutenberg", "Web Development"],
+    category: `Tutorials`,
+    tags: ["WordPress", "Gutenberg", "Web Development"],
     content: `<article>
     
     <p>
@@ -1776,7 +1788,8 @@ registerBlockType('custom/contact-form', {
     readingTime: "4 min read",
     image:
       "/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios.webp",
-    categories: ["WordPress", "Plugins", "User Engagement"],
+    category: `Tips`,
+    tags: ["WordPress", "Plugins", "User Engagement"],
     content: `<article>
     <p>
     WordPress push notification plugins are powerful tools that help website owners
@@ -1846,7 +1859,8 @@ registerBlockType('custom/contact-form', {
     readingTime: "6 min read",
     image:
       "/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress.webp",
-    categories: ["WordPress", "ERP", "Business Tools"],
+    category: `Tips`,
+    tags: ["WordPress", "ERP", "Business Tools"],
     content: `<article>
     <p>Before using an ERP Solution, you must know what is ERP. Otherwise, you wouldn’t be
     able to get the point of using an ERP solution in the first place.</p>
@@ -1959,7 +1973,8 @@ utm_content=suza"
     readingTime: "6 min read",
     image:
       "/images/blogs/headless-wordpress-and-content-management-systems.webp",
-    categories: ["Wordpress", "CMS", "Headless"],
+    category: `Tutorials`,
+    tags: ["Wordpress", "CMS", "Headless"],
     content: `<article>
     <p>
         Keeping up with the ever-expanding Internet of Things (IoT) can be a scramble for
@@ -2116,7 +2131,8 @@ utm_content=suza"
     publishedAt: "2022-09-26",
     readingTime: "4 min read",
     image: "/images/blogs/the-beginners-guide-to-seo.jpg",
-    categories: ["SEO", "Getting Started", "Tutorial"],
+    category: `Tips`,
+    tags: ["SEO", "Getting Started", "Tutorial"],
     content: `<article>
     <h2>
         Welcome to your SEO learning journey!</h2>
@@ -2450,19 +2466,21 @@ npx tailwindcss init -p</code></code></pre>
     <p>If you’d like to go further, consider exploring additional features like Next.js API routes, dynamic routing, Tailwind dark mode, and integrating third-party libraries like Headless UI or Heroicons.</p>
 
     <p>Happy coding!</p></article>`,
-    categories: ["Next.js", "Tailwind CSS", "Frontend Development"],
-  },{
-  id: 2,
-  title: "State Management in React Applications",
-  excerpt:
-    "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
-  slug: "state-management-react",
-  publishedAt: "2018-01-01",
-  readingTime: "6 min read",
-  categories: ["React", "State Management", "Frontend Architecture"],
-  // image: "/images/blogs/state-management-react.png",
- content: `<article>
-
+    category: `Tutorials`,
+    tags: ["Next.js", "Tailwind CSS", "Frontend Development"],
+  },
+  {
+    id: 2,
+    title: "State Management in React Applications",
+    excerpt:
+      "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
+    slug: "state-management-react",
+    publishedAt: "2018-01-01",
+    readingTime: "6 min read",
+    category: `Tutorials`,
+    tags: ["React", "State Management", "Frontend Architecture"],
+    // image: "/images/blogs/state-management-react.png",
+    content: `<article>
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
 
   <p>In this article, we’ll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
@@ -2654,7 +2672,7 @@ const [password, setPassword] = useState('');
 
   <p><strong>Happy state managing!</strong></p>
 </article>`,
-},
+  },
   {
     id: 3,
     title: "Creating Animations with Framer Motion",
@@ -2913,17 +2931,18 @@ Content that resizes smoothly<
   </article>
 
 `,
-    categories: ["React", "Animations", "UI/UX"],
+    category: `Tutorials`,
+    tags: ["React", "Animations", "UI/UX"],
   },
   {
-  id: 4,
-  title: "Next.js API Routes: Building Server Endpoints",
-  excerpt:
-    "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
-  slug: "nextjs-api-routes",
-  publishedAt: "2018-01-01",
-  readingTime: "6 min read",
-  content: `
+    id: 4,
+    title: "Next.js API Routes: Building Server Endpoints",
+    excerpt:
+      "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
+    slug: "nextjs-api-routes",
+    publishedAt: "2018-01-01",
+    readingTime: "6 min read",
+    content: `
   <article>
   <p>One of the most powerful features of <strong>Next.js</strong> is its ability to handle backend logic directly within your frontend application. With <strong>API Routes</strong>, you can create server-side endpoints as part of your project—no need to set up a separate backend service.</p>
   <p>Whether you need to fetch data, handle forms, authenticate users, or integrate third-party services, Next.js API Routes let you write server-side code using the same stack and tools you're already using on the frontend.</p>
@@ -3034,7 +3053,8 @@ export default function handler(req, res) {
   <p>As your project grows, you can easily refactor your API logic into reusable functions, integrate with middleware, or even connect to full-fledged backend platforms like Supabase or Prisma.</p>
   <p><strong>Happy coding—and enjoy the power of full-stack development with Next.js!</strong></p>
   </article>`,
-    categories: ["Next.js", "API", "Full‑Stack Development"],
+    category: `Tutorials`,
+    tags: ["Next.js", "API", "Full‑Stack Development"],
   },
   {
     id: 5,
@@ -3045,7 +3065,7 @@ export default function handler(req, res) {
     publishedAt: "2018-01-01",
     readingTime: "4 min read",
     // image: "/images/blogs/responsive-ui-tailwind.png",
-    content: `  <article>
+    content: ` <article>
 
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
 
@@ -3180,9 +3200,9 @@ export default function handler(req, res) {
     <p><strong>Happy building!</strong></p>
   </article>
 `,
-    categories: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
+    category: `Tutorials`,
+    tags: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
   },
 ];
 
 export { CONSTANT, posts };
-
