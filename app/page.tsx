@@ -147,7 +147,26 @@ export default function Home() {
           <FeaturedServices />
         </div>
       </section>
-      {/* {projects?.length != 0 && (
+
+      {/* Services Section */}
+      <section
+        className={`${styles?.sectionPadding} bg-muted/50`}
+        id={"services"}
+      >
+        <div className={styles?.containerLarge}>
+          <div className={styles?.projectsHeaderWrapper}>
+            <h2 className={styles?.sectionHeaderLeft}>My Services</h2>
+            <Link href="/services">
+              <Button variant={"outline"}>
+                View All Services
+                <ArrowRight className={"ml-2 h-4 w-4"} />
+              </Button>
+            </Link>
+          </div>
+          <FeaturedServices />
+        </div>
+      </section>
+{/* {projects?.length != 0 && (
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
           id={"projects"}
@@ -167,7 +186,7 @@ export default function Home() {
             <FeaturedProjects />
           </div>
         </section>
-      )} */}
+      {/* Skills Section */}
       <section className={styles?.sectionPadding}>
         <div className={styles?.containerLarge}>
           <h2 className={styles?.sectionHeader}>{skills.title}</h2>
@@ -200,17 +219,19 @@ export default function Home() {
           <FeaturedPricing />
         </div>
       </section>
+
+      {/* Blogs Section */}
       {posts.length != 0 && (
         <section
-          className={`${styles?.sectionPadding} bg-muted/50`}
-          id={"projects"}
+          className={`${styles?.sectionPadding}`}
+          id={"blogs"}
         >
           <div className={styles?.containerLarge}>
             <div className={styles?.projectsHeaderWrapper}>
-              <h2 className={styles?.sectionHeaderLeft}>{"Recent Blogs"}</h2>
+              <h2 className={styles?.sectionHeaderLeft}>Recent Blogs</h2>
               <Link href={"/blogs"}>
                 <Button variant={"outline"}>
-                  {featuredProjects?.viewAllLabel}
+                  View All Blogs
                   <ArrowRight className={"ml-2 h-4 w-4"} />
                 </Button>
               </Link>

@@ -1,12 +1,11 @@
-
 import { Github, Linkedin, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export const CONSTANT = {
   brandName: 'Syed Ali Naqi Hasni',
   description:
-    "I’m a passionate developer dedicated to crafting seamless, accessible, and visually stunning digital experiences. With expertise across front-end and back-end technologies.",
+    "I'm a passionate developer dedicated to crafting seamless, accessible, and visually stunning digital experiences. With expertise across front-end and back-end technologies.",
   description2:
-    "Always eager to learn and collaborate, I thrive on turning challenges into innovative solutions. Let’s build something exceptional together!",
+    "Always eager to learn and collaborate, I thrive on turning challenges into innovative solutions. Let's build something exceptional together!",
   quickLinksHeading: 'Quick Links',
   connectHeading: 'Connect',
   copyright: `© ${new Date().getFullYear()} Syed Hasni | All rights reserved.`,
@@ -72,6 +71,8 @@ export const LINKS_GROUPS = [
     { name: 'Blogs', path: '/blogs' },
     { name: 'Events', path: '/events' },
     { name: 'Gallery', path: '/gallery' },
+    { name: 'Services', path: '/services' },
+    { name: 'Pricing', path: '/pricing' },
   ],
 ];
 
