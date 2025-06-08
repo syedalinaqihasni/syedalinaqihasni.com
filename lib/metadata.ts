@@ -72,6 +72,15 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
     path: '/certificates',
     title: 'Certificates',
     description: 'Browse through my professional certifications and achievements.',
+  },  {
+    path: '/services',
+    title: 'Services',
+    description: 'Professional web development and design services to help your business grow online.',
+  },
+  {
+    path: '/pricing',
+    title: 'Pricing',
+    description: 'Transparent pricing for web development services. Choose the perfect plan for your project.',
   },
 ];
 
