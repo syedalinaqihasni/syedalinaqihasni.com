@@ -58,7 +58,7 @@ export function generateDynamicMetadata({
       'Frontend Developer',
       'Web Developer',
       'Chronical',
-      'Blog',
+      'Blogs',
       'Projects',
       'Events',
       'Next.js',

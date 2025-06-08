@@ -1,9 +1,28 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import DOMPurify from "isomorphic-dompurify";
 
 export default function HtmlRenderer({ html }: { html: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Sanitize the pre blocks
+  const sanitizePreCodeBlocks = (rawHtml: string): string => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(rawHtml, "text/html");
+
+    doc.querySelectorAll("pre").forEach((codeBlock) => {
+      // Get text content (to remove embedded HTML)
+      const rawText = codeBlock.textContent || "";
+      // Escape it to render safely
+      const escaped = DOMPurify.sanitize(rawText, { ALLOWED_TAGS: [] });
+      codeBlock.textContent = escaped;
+    });
+
+    return doc.body.innerHTML;
+  };
+
+  const sanitizedHtml = sanitizePreCodeBlocks(html);
 
   useEffect(() => {
     const pres = containerRef.current?.querySelectorAll("pre") || [];
@@ -23,13 +42,13 @@ export default function HtmlRenderer({ html }: { html: string }) {
       };
       pre.appendChild(button);
     });
-  }, [html]);
+  }, [sanitizedHtml]);
 
   return (
     <div
       ref={containerRef}
       className="single-project"
-      dangerouslySetInnerHTML={{ __html: html }}
+      dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
     />
   );
 }

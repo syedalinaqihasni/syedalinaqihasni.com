@@ -6,6 +6,7 @@ import { Download, Mail, Phone, MapPin } from 'lucide-react';
 import { RESUME,SECTION_TITLES, SKILL_CATEGORIES } from '@/constants/resume';
 import Link from 'next/link';
 import { getMetadataForPath } from "@/lib/metadata";
+import DownloadButton from '@/components/resume/DownloadButton';
 
 export const metadata = getMetadataForPath('/resume');
 
@@ -70,10 +71,7 @@ export default function ResumePage() {
               </div>
             </address>
           </div>
-          <Button>
-            <Download className={'mr-2 h-4 w-4'} />
-            Download PDF
-          </Button>
+         <DownloadButton/>
         </header>
         <Card className={summaryCard}>
           <CardContent className={cardContent}>

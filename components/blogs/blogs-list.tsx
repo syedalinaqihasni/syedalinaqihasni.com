@@ -33,14 +33,16 @@ const styles = {
 
 const BlogsList = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const filteredPosts = posts?.filter((post) => {
+  const filteredPosts = posts
+  ?.filter((post) => {
     const query = searchQuery.toLowerCase();
     return (
       post?.title.toLowerCase().includes(query) ||
       post?.excerpt.toLowerCase().includes(query) ||
       post?.categories.some((cat) => cat.toLowerCase().includes(query))
     );
-  });
+  })
+  ?.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   return (
     <div>

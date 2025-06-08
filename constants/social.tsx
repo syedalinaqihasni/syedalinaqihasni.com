@@ -33,7 +33,7 @@ const socialPosts: SocialPosts = {
   linkedin: [
     {
       id: 1,
-      title: 'New Blog Post: Building Scalable Web Applications',
+      title: 'New Blogs Post: Building Scalable Web Applications',
       content:
         'Excited to share my latest blog post about building scalable web applications using modern technologies...',
       date: '2024-02-13T09:15:00Z',

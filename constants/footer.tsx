@@ -67,7 +67,7 @@ export const LINKS_GROUPS = [
     { name: 'Archive', path: '/archive' },
     { name: 'Projects', path: '/projects' },
     { name: 'Certificates', path: '/certificates' },
-    { name: 'Blog', path: '/blogs' },
+    { name: 'Blogs', path: '/blogs' },
     { name: 'Events', path: '/events' },
     { name: 'Gallery', path: '/gallery' },
   ],
