@@ -53,7 +53,6 @@ export const CONTACT_INFO = [
 
 export const LINKS_GROUPS = [
   [ 
-    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Experience', path: '/experience' },
     { name: 'Skills', path: '/skills' },
@@ -61,6 +60,7 @@ export const LINKS_GROUPS = [
     { name: 'Links', path: '/links'  },
     { name: 'Socials', path: '/socials' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Gallery', path: '/gallery' },
   ],
   [
     { name: 'Services', path: '/services' },
@@ -70,9 +70,6 @@ export const LINKS_GROUPS = [
     { name: 'Certificates', path: '/certificates' },
     { name: 'Blogs', path: '/blogs' },
     { name: 'Events', path: '/events' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Services', path: '/services' },
-    { name: 'Pricing', path: '/pricing' },
   ],
 ];
 
