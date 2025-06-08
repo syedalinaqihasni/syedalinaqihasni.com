@@ -22,6 +22,8 @@ const poppinsFont = Poppins({
 });
 
 export const metadata = getMetadataForPath('/');
+import type { Metadata } from 'next'
+
 
 export default function RootLayout({
   children,
