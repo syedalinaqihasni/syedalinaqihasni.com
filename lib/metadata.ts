@@ -31,7 +31,7 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
   {
     path: '/events',
     title: 'Events',
-    description: 'Check out tech talks, meetups, and events I've attended or hosted.',
+    description: 'Check out tech talks, meetups, and events I\'ve attended or hosted.',
   },
   {
     path: '/experience',
@@ -51,7 +51,7 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
   {
     path: '/projects',
     title: 'Projects',
-    description: 'A collection of personal and professional projects I've built.',
+    description: 'A collection of personal and professional projects I\'ve built.',
   },
   {
     path: '/resume',

@@ -210,7 +210,7 @@ type UserWithRequiredEmail = Required<Pick<User, 'email'>> & Partial<User>;</cod
         <p>Create more expressive types using template literal types:</p>
         
         <pre><code>type EventName = 'click' | 'focus' | 'blur';
-type EventHandler<T extends EventName> = `on${Capitalize<T>}`;
+type EventHandler<T extends EventName> = \`on${Capitalize<T>}`;
 
 type ButtonEvents = {
   [K in EventName as EventHandler<K>]?: () => void;
