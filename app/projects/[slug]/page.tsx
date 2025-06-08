@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   });
 }
 
-const ProjectPage = async ({ params }: { params: { slug: string } }) => {
+const Page = async ({ params }: { params: { slug: string } }) => {
 const project = projects?.find((p) => p?.slug === params?.slug);
  if (!project) {
     notFound();
@@ -199,4 +199,4 @@ const project = projects?.find((p) => p?.slug === params?.slug);
   );
 }
 
-export default ProjectPage
+export default Page

@@ -23,7 +23,7 @@ const styles = {
   cardLink: 'text-muted-foreground hover:text-primary transition-colors',
 };
 
-export default function ContactPage() {
+export default function Page() {
   return (
     <div className={styles?.container}>
       <div className={styles?.wrapper}>

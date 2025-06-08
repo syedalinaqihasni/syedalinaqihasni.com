@@ -48,7 +48,7 @@ const styles = {
   content: "prose dark:prose-invert max-w-none",
 };
 
-const EventPage = async ({ params }: { params: { slug: string } }) => {
+const Page = async ({ params }: { params: { slug: string } }) => {
   const event = events.find((event) => event?.slug === params?.slug);
 
   if (!event) {
@@ -139,4 +139,4 @@ const EventPage = async ({ params }: { params: { slug: string } }) => {
   );
 };
 
-export default EventPage;
+export default Page;

@@ -13,7 +13,7 @@ const TITLE_styles = 'text-4xl md:text-5xl font-bold mb-6';
 const DESCRIPTION_styles =
   'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
 
-export default async function ProjectsPage() {
+export default async function Page() {
   return (
     <div className={CONTAINER_styles}>
       <div className={CONTENT_WRAPPER_styles}>

@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.5,
   }));
+
   const eventRoutes = events?.map((event) => ({
     url: `${baseUrl}/events/${event?.slug}`,
     lastModified: new Date(event?.date || new Date()),
@@ -34,5 +35,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...linkRoutes, ...postRoutes, ...projectRoutes, ...eventRoutes];
+  // Extract unique tags and categories from posts
+  const tags = Array.from(new Set(posts.flatMap(post => post.tags || [])));
+  const categories = Array.from(new Set(posts.flatMap(post => post.category || [])));
+
+const blogTagRoutes = tags.map((tag) => ({
+  url: `${baseUrl}/blogs/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`,
+  lastModified: new Date(),
+  changeFrequency: 'weekly' as const,
+  priority: 0.4,
+}));
+
+const blogCategoryRoutes = categories.map((category) => ({
+  url: `${baseUrl}/blogs/category/${category.toLowerCase().replace(/\s+/g, '-')}`,
+  lastModified: new Date(),
+  changeFrequency: 'weekly' as const,
+  priority: 0.4,
+}));
+
+
+  return [
+    ...linkRoutes,
+    ...postRoutes,
+    ...blogTagRoutes,
+    ...blogCategoryRoutes,
+    ...projectRoutes,
+    ...eventRoutes,
+  ];
 }

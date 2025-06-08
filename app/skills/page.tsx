@@ -5,7 +5,7 @@ import { getMetadataForPath } from '@/lib/metadata';
 
 export const metadata = getMetadataForPath('/skills');
 
-export default function SkillsPage() {
+export default function Page() {
   return (
     <div className={'container mx-auto px-4 py-32 md:py-40'}>
       <div className={'max-w-6xl mx-auto'}>

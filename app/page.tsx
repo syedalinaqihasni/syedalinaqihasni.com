@@ -74,7 +74,7 @@ function SocialButtons({ links }: { links: typeof CONTENT.socialLinks }) {
   );
 }
 
-export default function Home() {
+export default function Page() {
   const {
     hero,
     buttons,

@@ -149,7 +149,7 @@ export function generateMetadata({
       },
     ],
     keywords: defaultMetadata.keywords,
-    category: 'technology', themeColor: '#ffffff',
+    category: 'technology',
     icons: {
       icon: [
         { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
@@ -171,7 +171,6 @@ export function generateMetadata({
         { rel: 'icon', url: '/android-icon-192x192.png', sizes: '192x192', type: 'image/png' },
         { rel: 'manifest', url: '/manifest.json' },
         { rel: 'msapplication-TileImage', url: '/ms-icon-144x144.png' },
-        { rel: 'msapplication-TileColor', url: '#ffffff' },
       ],
     },
   };

@@ -30,7 +30,7 @@ const CARD_CONTENT = 'p-4';
 const BUTTONS_GRID = 'grid grid-cols-2 gap-4';
 const BUTTON_BASE = 'w-full justify-start text-white';
 
-export default function LinksPage() {
+export default function Page() {
   return (
     <div className={CONTAINER}>
       <div className={MAX_WIDTH_WRAPPER}>

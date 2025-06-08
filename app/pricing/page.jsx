@@ -40,7 +40,7 @@ const styles = {
   ctaDescription: 'text-lg text-muted-foreground mb-8 max-w-2xl mx-auto',
 };
 
-export default function PricingPage() {
+export default function Page() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>

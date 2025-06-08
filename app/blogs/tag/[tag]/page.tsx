@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
 }
 
 // Server component
-export default async function BlogsPage({ params }: { params: { tag: string } }) {
+export default async function Page({ params }: { params: { tag: string } }) {
   const tag = params.tag.toLowerCase();
   const categorizedPosts = posts.filter(post =>
   post.tags.map(c => c.toLowerCase()).includes(tag)

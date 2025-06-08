@@ -41,7 +41,7 @@ const skillBadgeContainer = 'flex flex-wrap gap-2';
 
 const certificationsList = 'space-y-2 text-muted-foreground';
 
-export default function ResumePage() {
+export default function Page() {
   const educationKey = (edu: (typeof RESUME.education)[number]) =>
     `${edu.degree}-${edu.institution}-${edu.period}`;
 

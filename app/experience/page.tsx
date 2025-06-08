@@ -30,7 +30,7 @@ const DESCRIPTION_LIST =
   'list-disc list-inside space-y-2 mb-6 text-muted-foreground';
 const SKILL_BADGE_WRAPPER = 'flex flex-wrap gap-2';
 
-const ExperiencePage = () => (
+const Page = () => (
   <div className={CONTAINER}>
     <div className={INNER_WRAPPER}>
       <header className={HEADER}>
@@ -88,4 +88,4 @@ const ExperiencePage = () => (
   </div>
 );
 
-export default ExperiencePage;
+export default Page;

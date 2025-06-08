@@ -13,7 +13,7 @@ const TITLE = 'text-4xl md:text-5xl font-bold mb-6';
 const DESCRIPTION =
   'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
 
-export default function GalleryPage() {
+export default function Page() {
   return (
     <div className={CONTAINER}>
       <div className={MAX_WIDTH_WRAPPER}>

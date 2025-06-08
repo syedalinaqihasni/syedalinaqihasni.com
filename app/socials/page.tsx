@@ -66,7 +66,7 @@ function renderPostsByType(type: keyof SocialPosts) {
   }
 }
 
-export default function SocialsPage() {
+export default function Page() {
   return (
     <div className={'container mx-auto px-4 py-32 md:py-40'}>
       <div className={'max-w-6xl mx-auto'}>

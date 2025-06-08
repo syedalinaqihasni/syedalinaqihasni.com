@@ -968,7 +968,7 @@ updates:
     #GitHub #Dependabot #CodeQL #CyberSecurity #DevOps #OpenSource
   </p>
 <p>
-    If you’re interested in implementing these tools or have questions about securing your projects, feel free to reach out to me! Special thanks to <a href="https://github.com/" target="_self">@GitHub</a> for providing such incredible tools for developers. Let’s keep our projects secure and efficient!
+    If you’re interested in implementing these tools or have questions about securing your projects, feel free to reach out to me! Special thanks to <a href="https://github.com/" >@GitHub</a> for providing such incredible tools for developers. Let’s keep our projects secure and efficient!
   </p>
 <br>
 </article>
@@ -991,7 +991,7 @@ updates:
   </p>
 <h2>Oberlo</h2>
 <p>
-    (now Shopify Dropshipping) - <a target="_self" href="https://apps.shopify.com/oberlo">Link</a>:
+    (now Shopify Dropshipping) - <a href="https://apps.shopify.com/oberlo">Link</a>:
   </p>
 <p>
     Oberlo is a powerful app that simplifies the dropshipping process for Shopify store owners. It allows you to import products directly from suppliers into your store, automatically sync inventory, and fulfill orders with ease. With Oberlo, you can focus on marketing and growing your business without the hassle of manual product management.
@@ -1015,64 +1015,64 @@ updates:
   </p>
 <h2>Yotpo</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/yotpo-social-reviews">Link</a>: Yotpo is a highly regarded app that helps you gather and showcase customer reviews and ratings on your Shopify store. It allows you to collect authentic feedback, display social proof, and build trust with potential customers. With features like user-generated photos and Q&amp;
+    - <a href="https://apps.shopify.com/yotpo-social-reviews">Link</a>: Yotpo is a highly regarded app that helps you gather and showcase customer reviews and ratings on your Shopify store. It allows you to collect authentic feedback, display social proof, and build trust with potential customers. With features like user-generated photos and Q&amp;
 A sections, Yotpo enhances the shopping experience and drives conversions.
   </p>
 <h2>Klaviyo</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/klaviyo-email-marketing">Link</a>: Klaviyo is a leading email marketing app that seamlessly integrates with Shopify. It enables you to create personalized email campaigns based on customer behavior and purchase history. With Klaviyo, you can automate email flows, segment your audience, and measure campaign performance, ultimately driving engagement, repeat purchases, and customer loyalty.
+    - <a href="https://apps.shopify.com/klaviyo-email-marketing">Link</a>: Klaviyo is a leading email marketing app that seamlessly integrates with Shopify. It enables you to create personalized email campaigns based on customer behavior and purchase history. With Klaviyo, you can automate email flows, segment your audience, and measure campaign performance, ultimately driving engagement, repeat purchases, and customer loyalty.
   </p>
 <h2>Bold Upsell</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/product-upsell">Link</a>: Bold Upsell is a must-have app for boosting average order value in your Shopify store. It offers customizable upsell and cross-sell offers that strategically display during the shopping process. By suggesting relevant products or encouraging customers to upgrade their purchase, Bold Upsell helps you maximize sales and increase profitability.
+    - <a href="https://apps.shopify.com/product-upsell">Link</a>: Bold Upsell is a must-have app for boosting average order value in your Shopify store. It offers customizable upsell and cross-sell offers that strategically display during the shopping process. By suggesting relevant products or encouraging customers to upgrade their purchase, Bold Upsell helps you maximize sales and increase profitability.
   </p>
 <h2>Refersion</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/refersion">Link</a>: Refersion is a comprehensive referral marketing app for Shopify. It simplifies the creation and management of referral programs, allowing you to incentivize customers to refer their friends and family. With Refersion, you can track referrals, calculate rewards, and gain valuable insights through detailed analytics, driving customer acquisition and expanding your customer base.
+    - <a href="https://apps.shopify.com/refersion">Link</a>: Refersion is a comprehensive referral marketing app for Shopify. It simplifies the creation and management of referral programs, allowing you to incentivize customers to refer their friends and family. With Refersion, you can track referrals, calculate rewards, and gain valuable insights through detailed analytics, driving customer acquisition and expanding your customer base.
   </p>
 <h2>SEO Manager</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/seo-meta-manager">Link</a>: SEO Manager is an essential app for optimizing your Shopify store's visibility in search engine results. It provides tools for optimizing meta tags, alt tags, sitemaps, and more. With real-time suggestions and analysis, SEO Manager helps you improve your store's SEO performance, attract organic traffic, and increase the chances of reaching potential customers.
+    - <a href="https://apps.shopify.com/seo-meta-manager">Link</a>: SEO Manager is an essential app for optimizing your Shopify store's visibility in search engine results. It provides tools for optimizing meta tags, alt tags, sitemaps, and more. With real-time suggestions and analysis, SEO Manager helps you improve your store's SEO performance, attract organic traffic, and increase the chances of reaching potential customers.
   </p>
 <h2>LiveChat</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/livechat">Link</a>: LiveChat enables you to provide real-time chat support on your Shopify store, enhancing customer satisfaction and driving sales. With LiveChat, you can assist customers, answer their queries, and address concerns instantly. The app offers customization options, chat transcripts, and integration with other customer support tools, ensuring a seamless and efficient communication experience.
+    - <a href="https://apps.shopify.com/livechat">Link</a>: LiveChat enables you to provide real-time chat support on your Shopify store, enhancing customer satisfaction and driving sales. With LiveChat, you can assist customers, answer their queries, and address concerns instantly. The app offers customization options, chat transcripts, and integration with other customer support tools, ensuring a seamless and efficient communication experience.
   </p>
 <h2>Privy</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/privy">Link</a>: Privy is a feature-rich app that helps you capture and convert website visitors into subscribers and customers. It provides customizable pop-ups, banners, and exit-intent forms to collect email addresses and grow your subscriber list. Privy also offers email marketing and automation features, allowing you to engage with your audience and drive conversions.
+    - <a href="https://apps.shopify.com/privy">Link</a>: Privy is a feature-rich app that helps you capture and convert website visitors into subscribers and customers. It provides customizable pop-ups, banners, and exit-intent forms to collect email addresses and grow your subscriber list. Privy also offers email marketing and automation features, allowing you to engage with your audience and drive conversions.
   </p>
 <h2>PushOwl</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/pushowl-web-push-notifications">Link</a>: PushOwl enables you to leverage web push notifications to re-engage customers and recover abandoned carts. With personalized and automated notifications, you can bring customers back to your store and drive sales. PushOwl also provides analytics and segmentation features, allowing you to target specific customer segments with relevant messages.
+    - <a href="https://apps.shopify.com/pushowl-web-push-notifications">Link</a>: PushOwl enables you to leverage web push notifications to re-engage customers and recover abandoned carts. With personalized and automated notifications, you can bring customers back to your store and drive sales. PushOwl also provides analytics and segmentation features, allowing you to target specific customer segments with relevant messages.
   </p>
 <h2>Recart</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/recart">Link</a>: Recart is a powerful app designed to reduce cart abandonment and increase sales in your Shopify store. It utilizes Facebook Messenger marketing to send automated messages to customers who have abandoned their carts, reminding them to complete their purchase. Recart also provides tools for creating opt-in forms, sending order receipts, and implementing Messenger marketing campaigns, helping you recover lost sales and engage with customers effectively.
+    - <a href="https://apps.shopify.com/recart">Link</a>: Recart is a powerful app designed to reduce cart abandonment and increase sales in your Shopify store. It utilizes Facebook Messenger marketing to send automated messages to customers who have abandoned their carts, reminding them to complete their purchase. Recart also provides tools for creating opt-in forms, sending order receipts, and implementing Messenger marketing campaigns, helping you recover lost sales and engage with customers effectively.
   </p>
 <h2>ReConvert Upsell &amp;
  Cross Sell</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/reconvert">Link</a>: ReConvert Upsell &amp;
+    - <a href="https://apps.shopify.com/reconvert">Link</a>: ReConvert Upsell &amp;
  Cross Sell is a robust app that allows you to create highly effective post-purchase upsell and cross-sell offers. With its intuitive drag-and-drop builder, you can easily customize and display personalized offers to customers after they make a purchase. This app helps you maximize customer value by encouraging additional purchases and increasing overall revenue.
   </p>
 <h2>QuickBooks</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/quickbooks-online">Link</a>: QuickBooks is a popular accounting software that seamlessly integrates with Shopify. With this app, you can automatically sync your Shopify transactions, expenses, and other financial data to streamline your accounting processes. QuickBooks offers features like inventory tracking, invoice generation, and tax calculation, making it easier to manage your finances and gain insights into your store's performance.
+    - <a href="https://apps.shopify.com/quickbooks-online">Link</a>: QuickBooks is a popular accounting software that seamlessly integrates with Shopify. With this app, you can automatically sync your Shopify transactions, expenses, and other financial data to streamline your accounting processes. QuickBooks offers features like inventory tracking, invoice generation, and tax calculation, making it easier to manage your finances and gain insights into your store's performance.
   </p>
 <h2>Smile: Rewards &amp;
  Loyalty</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/smile-io">Link</a>: Smile: Rewards &amp;
+    - <a href="https://apps.shopify.com/smile-io">Link</a>: Smile: Rewards &amp;
  Loyalty allows you to create a customized loyalty program for your Shopify store. You can reward customers for purchases, referrals, social media follows, and other actions to foster customer loyalty and encourage repeat business. This app offers various reward options, points tracking, and referral features, making it an effective tool for driving customer engagement and retention.
   </p>
 <h2>Loox</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/loox">Link</a>: Loox is a top-rated app for showcasing customer reviews with photos on your Shopify store. It enables you to collect and display authentic user-generated content, enhancing social proof and building trust among potential customers. Loox offers customizable review request emails, photo reviews, and a carousel widget, creating a visually appealing and trustworthy shopping experience.
+    - <a href="https://apps.shopify.com/loox">Link</a>: Loox is a top-rated app for showcasing customer reviews with photos on your Shopify store. It enables you to collect and display authentic user-generated content, enhancing social proof and building trust among potential customers. Loox offers customizable review request emails, photo reviews, and a carousel widget, creating a visually appealing and trustworthy shopping experience.
   </p>
 <h2>OptinMonster</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/optinmonster">Link</a>: OptinMonster is a powerful app that helps you convert website visitors into subscribers and customers. It offers a wide range of opt-in forms, including pop-ups, slide-ins, and floating bars, allowing you to capture email addresses and grow your subscriber list. With features like A/B testing, targeting options, and analytics, OptinMonster empowers you to create highly effective lead generation and conversion campaigns.
+    - <a href="https://apps.shopify.com/optinmonster">Link</a>: OptinMonster is a powerful app that helps you convert website visitors into subscribers and customers. It offers a wide range of opt-in forms, including pop-ups, slide-ins, and floating bars, allowing you to capture email addresses and grow your subscriber list. With features like A/B testing, targeting options, and analytics, OptinMonster empowers you to create highly effective lead generation and conversion campaigns.
   </p>
 <p>
     These essential apps cover a range of functionalities, from drop-shipping to marketing, customer support, and optimization. Incorporating these apps into your Shopify store can enhance your operations, improve customer experience, and drive sales. Each app comes with its own unique features and benefits, so explore their links to learn more and determine which ones best suit the needs of your business.
@@ -1800,7 +1800,7 @@ registerBlockType('custom/contact-form', {
 <h2>
         OneSignal</h2>
 <p>
-    (Link: <a target="_blank">
+    (Link: <a >
         https://onesignal.com/</a>
     )</p>
 <p>
@@ -1810,7 +1810,7 @@ registerBlockType('custom/contact-form', {
 <h2>
         PushEngage</h2>
 <p>
-    (Link: <a rel="noopener ugc nofollow" target="_blank">
+    (Link: <a  >
         https://www.pushengage.com/</a>
     )</p>
 <p>
@@ -1820,7 +1820,7 @@ registerBlockType('custom/contact-form', {
 <h2>
         VWO Engage (Previously Pushcrew)</h2>
 <p>
-    (Link: <a target="_blank">
+    (Link: <a >
         https://pushcrew.com/</a>
     )</p>
 <p>
@@ -1830,7 +1830,7 @@ registerBlockType('custom/contact-form', {
 <h2>
         PushAlert</h2>
 <p>
-    (Link: <a rel="noopener ugc nofollow" target="_blank">
+    (Link: <a  >
         https://www.pushalert.co/</a>
     )</p>
 <p>
@@ -1884,7 +1884,7 @@ registerBlockType('custom/contact-form', {
     if not managed right. This is where the idea of ERP solutions comes into play.</p>
 <p>Netsuite was the first organization to launch its ERP system. Netsuite’s ERP system
     was built for the internet. Today, there are hundreds of ERP solutions available developed by different
-    companies. Since <a target="_blank">WordPress is the most used content management system</a> around the world, it is
+    companies. Since <a >WordPress is the most used content management system</a> around the world, it is
     logical
     that ERP made its way to WordPress.</p>
 <h2>The Best WordPress ERP Plugins</h2>
@@ -1896,8 +1896,8 @@ registerBlockType('custom/contact-form', {
 <p>There are a few popular WordPress ERP Solutions that you can use for your business.
     The most popular ERP solutions are:</p>
 <ul>
-    <li><a rel="noopener ugc nofollow" target="_blank">WP ERP</a></li>
-    <li><a rel="noopener ugc nofollow" target="_blank">Business Manager</a></li>
+    <li><a  >WP ERP</a></li>
+    <li><a  >Business Manager</a></li>
 </ul>
 <p>When you consider an ERP solution for WordPress — there is no better plugin than WP
     ERP, to be honest. It is the first of its kind and the oldest amongst the bunch. The plugin is comprehensive,
@@ -1921,13 +1921,13 @@ registerBlockType('custom/contact-form', {
 <p>You can track everything related to money via the accounting module. The fact that
     you can keep track of every bit of your financials from the Accounting Dashboard alone is impressive. The
     dashboard is very intuitive as it shows a graphical representation to understand your expenditures better.</p>
-<p>With <a target="_blank">HRM</a>, <a rel="noopener ugc nofollow" target="_blank">CRM</a>, and <a
-        href="http://www.wperp.com/accounting" rel="noopener ugc nofollow" target="_blank">Accounting</a> WP ERP
+<p>With <a >HRM</a>, <a  >CRM</a>, and <a
+        href="http://www.wperp.com/accounting"  >Accounting</a> WP ERP
     packs other crucial features as extensions. Here are some of the best extensions of WP ERP.</p>
 <ul>
     <li>Support for payment gateways: The plugin supports all popular payment gateways
         including Stripe and PayPal. You can also <a href="https://wperp.com/downloads/payment-gateway/"
-            rel="noopener ugc nofollow" target="_blank">take
+             >take
             payments via credit cards </a>from your customers.</li>
     <li>Email automation: You can automate your business by automating emails when an
         event occurs. You can also create <a
@@ -1935,20 +1935,20 @@ registerBlockType('custom/contact-form', {
 utm_medium=referral&amp;
 utm_campaign=post&amp;
 utm_content=suza"
-            rel="noopener ugc nofollow" target="_blank">email campaigns</a> where the ERP software handles
+             >email campaigns</a> where the ERP software handles
         everything for you.</li>
     <li>Workflow management: Managing a good workflow can save you a lot of time. The
-        <a target="_blank">workflow</a> feature of WP ERP helps you to achieve that with ease. Workflow management
+        <a >workflow</a> feature of WP ERP helps you to achieve that with ease. Workflow management
         plays a vital role to boost the productivity of your business enterprise
     </li>
     <li>Attendance management: WP ERP includes a groundbreaking <a href="https://wperp.com/downloads/attendance"
-            rel="noopener ugc nofollow" target="_blank">attendance
+             >attendance
             feature</a>. It can be very annoying to keep records of employee attendance manually. Attendance
         management keeps track of the attendance of each employee along with their work hours. What’s awesome? With
         self-check-in and checkout and IP restriction — your employees can check in to the system after they arrive
         at your office physically. You do not have to worry about setting up another punch card, or a biometric
         device for that.</li>
-    <li>Integration with WooCommerce: Superb compatibility with WooCommerce? <a target="_blank">Check!</a></li>
+    <li>Integration with WooCommerce: Superb compatibility with WooCommerce? <a >Check!</a></li>
     <li>Payroll management, Reimbursement service, Document Management, Inventory
         management: WP ERP already offers most of the enterprise features that a business might need. Features like
         payroll management, reimbursement services, document management, asset management, HR automation, inventory
@@ -2146,8 +2146,8 @@ utm_content=suza"
             keywords</a>) that can generate qualified traffic to your
         website, to making your site <a href='https://moz.com/beginners-guide-to-seo/technical-seo#index'>
             friendly to search engines</a>, to <a
-            href="https://moz.com/beginners-guide-to-seo/growing-popularity-and-links#index" rel="noopener ugc nofollow"
-            target="_blank">
+            href="https://moz.com/beginners-guide-to-seo/growing-popularity-and-links#index" 
+            >
             building links</a> and marketing the unique value of your site.</p>
     <p>
         The world of search engine optimization is complex and ever-changing. Still, you
@@ -2175,7 +2175,7 @@ utm_content=suza"
         Strong data and smart analytics are must-haves when it comes to SEO work. Try Moz
         Pro free for 30 days and see why so many marketers trust our SEO tools!</p>
     <p>
-        <a href='hhttps://moz.com/checkout/freetrial' rel='noopener ugc nofollow'>
+        <a href='hhttps://moz.com/checkout/freetrial' >
             Start my free trial</a>
     </p>
     <p>
@@ -2218,8 +2218,8 @@ utm_content=suza"
         For true beginners. Learn what search engine optimization is, why it matters, and
         all the need-to-know basics to start yourself off right.</p>
     <p>
-        <a href="https://moz.com/beginners-guide-to-seo/how-search-engines-operate" rel="noopener ugc nofollow"
-            target="_blank">
+        <a href="https://moz.com/beginners-guide-to-seo/how-search-engines-operate" 
+            >
             CHAPTER 2: HOW SEARCH ENGINES WORK — CRAWLING, INDEXING, AND RANKING</a>
     </p>
     <p>
@@ -2266,8 +2266,8 @@ utm_content=suza"
         like structured data and meta tags, you can tell Google (a robot itself) what your site is all about. This helps
         it rank for the right things.</p>
     <p>
-        <a href="https://moz.com/beginners-guide-to-seo/growing-popularity-and-links" rel="noopener ugc nofollow"
-            target="_blank">
+        <a href="https://moz.com/beginners-guide-to-seo/growing-popularity-and-links" 
+            >
             CHAPTER 6: LINK BUILDING &amp;
  ESTABLISHING AUTHORITY</a>
     </p>
@@ -2279,8 +2279,8 @@ utm_content=suza"
         Once you’ve got everything in place, it’s time to expand your influence by earning
         attention and links from other sites and influencers.</p>
     <p>
-        <a href="https://moz.com/beginners-guide-to-seo/measuring-and-tracking-success" rel="noopener ugc nofollow"
-            target="_blank">
+        <a href="https://moz.com/beginners-guide-to-seo/measuring-and-tracking-success" 
+            >
             CHAPTER 7: MEASURING, PRIORITIZING, &amp;
  EXECUTING SEO</a>
     </p>

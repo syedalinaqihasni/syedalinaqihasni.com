@@ -44,7 +44,7 @@ const eventDetailRow = "flex items-center gap-2";
 
 const button = "w-full";
 
-export default function EventsPage() {
+export default function Page() {
 
   return (
     <main className={container}>

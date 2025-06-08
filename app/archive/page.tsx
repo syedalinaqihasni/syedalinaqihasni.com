@@ -15,7 +15,7 @@ import { archivePosts,
 
 export const metadata = getMetadataForPath('/archive');
 
-export default function ArchivePage() {
+export default function Page() {
   return (
     <>
       <div className={'container mx-auto px-4 py-32 md:pt-40 md:pb-10'}>
