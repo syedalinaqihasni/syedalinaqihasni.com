@@ -2270,6 +2270,66 @@ registerBlockType('custom/contact-form', {
     </p>
 </div>`,
   },
+  {
+    id: 1,
+    title: "Getting Started with Next.js and Tailwind",
+    excerpt:
+      "Learn how to set up a new Next.js project with Tailwind CSS to build fast, responsive UIs with ease.",
+    slug: "getting-started-nextjs-tailwind",
+    publishedAt: "2018-01-01",
+    readingTime: "5 min read",
+    // image: "/images/blogs/getting-started-nextjs-tailwind.png",
+    content: ``,
+    categories: ["Next.js", "Tailwind CSS", "Frontend Development"],
+  },
+  {
+    id: 2,
+    title: "State Management in React Applications",
+    excerpt:
+      "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
+    slug: "state-management-react",
+    publishedAt: "2018-01-01",
+    readingTime: "6 min read",
+    // image: "/images/blogs/state-management-react.png",
+    content: ``,
+    categories: ["React", "State Management", "Frontend Architecture"],
+  },
+  {
+    id: 3,
+    title: "Creating Animations with Framer Motion",
+    excerpt:
+      "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
+    slug: "framer-motion-animations",
+    publishedAt: "2018-01-01",
+    readingTime: "5 min read",
+    // image: "/images/blogs/framer-motion-animations.png",
+    content: ``,
+    categories: ["React", "Animations", "UI/UX"],
+  },
+  {
+    id: 4,
+    title: "Next.js API Routes: Building Server Endpoints",
+    excerpt:
+      "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
+    slug: "nextjs-api-routes",
+    publishedAt: "2018-01-01",
+    readingTime: "6 min read",
+    // image: "/images/blogs/nextjs-api-routes.png",
+    content: ``,
+    categories: ["Next.js", "API", "Full‑Stack Development"],
+  },
+  {
+    id: 5,
+    title: "Responsive UI with Tailwind CSS",
+    excerpt:
+      "Master responsive design using Tailwind’s utility classes and variants — build adaptable layouts that look great on any device.",
+    slug: "responsive-ui-tailwind",
+    publishedAt: "2018-01-01",
+    readingTime: "4 min read",
+    // image: "/images/blogs/responsive-ui-tailwind.png",
+    content: ``,
+    categories: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
+  },
 ];
 
 export { CONSTANT, posts };

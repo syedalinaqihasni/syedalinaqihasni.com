@@ -70,10 +70,10 @@ return (
     {post?.image && (
       <div className={styles?.imageWrapper}>
         <Image
-          src={post?.image}
+          src={post?.image || '/images/blogs/blogs-placeholder.jpg'}
           alt={post?.title}
           fill
-          className={styles?.image}
+          className={styles?.image || '/images/blogs/blogs-placeholder.jpg'}
         />
       </div>
     )}

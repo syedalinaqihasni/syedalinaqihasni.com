@@ -27,7 +27,10 @@ const styles = {
 };
 
 const FeaturedBlogs = () => {
- const featuredBlogs = posts?.slice(0,3);
+ const featuredBlogs = posts?.sort(
+      (a, b) =>
+        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+    ).slice(0,3);
 if (!featuredBlogs.length) return notFound();
 
   return (
@@ -43,10 +46,10 @@ if (!featuredBlogs.length) return notFound();
             <Card className={styles?.card}>
               <Link href={`/blogs/${post?.slug}`} className={'relative block h-48 w-full'}>
                   <Image
-                    src={post?.image}
+                    src={post?.image || '/images/blogs/blogs-placeholder.jpg'}
                     alt={post?.title}
                     fill
-                    className={styles?.image}
+                    className={styles?.image || '/images/blogs/blogs-placeholder.jpg'}
                     priority={index < 3} 
                   />
               </Link>

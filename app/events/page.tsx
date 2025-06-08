@@ -63,7 +63,7 @@ export default function EventsPage() {
                 className={imageWrapper}
               >
                 <Image
-                  src={event?.image}
+                  src={event?.image || '/images/blogs/blogs-placeholder.jpg'}
                   alt={event?.title}
                   fill
                   className={image}

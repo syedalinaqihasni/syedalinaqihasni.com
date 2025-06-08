@@ -109,7 +109,7 @@ const project = projects?.find((p) => p?.slug === params?.slug);
         </div>
         <div className={IMAGE_WRAPPER}>
           <Image
-            src={project?.image}
+            src={project?.image || '/images/blogs/blogs-placeholder.jpg'}
             alt={project?.title}
             fill
             className={IMAGE_CLASS}
@@ -171,7 +171,7 @@ const project = projects?.find((p) => p?.slug === params?.slug);
               <Card key={relatedProject.id}>
                 <div className={RELATED_CARD_IMAGE_WRAPPER}>
                   <Image
-                    src={relatedProject.image}
+                    src={relatedProject.image || '/images/blogs/blogs-placeholder.jpg'}
                     alt={relatedProject.title}
                     fill
                     className={IMAGE_CLASS}

@@ -116,7 +116,7 @@ export default function Home() {
             <div className={styles?.heroImageCol}>
               <div className={styles?.heroImageWrapper}>
                 <Image
-                  src={hero?.imageSrc}
+                  src={hero?.imageSrc || '/images/blogs/blogs-placeholder.jpg'}
                   alt={hero?.imageAlt}
                   fill
                   className={"object-cover"}

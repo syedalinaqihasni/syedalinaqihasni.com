@@ -139,7 +139,7 @@ export default function GalleryGrid() {
               >
                 <div className={'relative rounded-lg overflow-hidden'}>
                   <Image
-                    src={image?.src}
+                    src={image?.src || '/images/blogs/blogs-placeholder.jpg'}
                     alt={image?.alt}
                     width={500}
                     height={
@@ -174,7 +174,7 @@ export default function GalleryGrid() {
             <div>
               <div className={'relative w-full h-[60vh]'}>
                 <Image
-                  src={selectedImage.src}
+                  src={selectedImage.src || '/images/blogs/blogs-placeholder.jpg'}
                   alt={selectedImage.alt}
                   fill
                   className={'object-contain'}

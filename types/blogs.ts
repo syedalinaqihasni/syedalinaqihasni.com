@@ -5,7 +5,7 @@ type Post = {
   slug: string;
   publishedAt: string;
   readingTime: string;
-  image: string;
+  image?: string;
   categories: string[];
   content: string;
 };
