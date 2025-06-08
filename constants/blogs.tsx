@@ -1,5 +1,6 @@
 import { Post } from "@/types/blogs";
 
+
 const CONSTANT = {
   pageTitle: "My Blogs",
   pageDescription:
@@ -9,6 +10,7 @@ const CONSTANT = {
   blogTitleSuffix: " | Blogs",
   readUnit: "min read",
 };
+
 
 const posts: Post[] = [
   {
@@ -22,7 +24,7 @@ const posts: Post[] = [
     image:
       "/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg",
     categories: ["Next.js", "Node.js", "Backend Integration"],
-    content: `<div>
+    content: `<article>
 <h2>Introduction</h2>
 <p>
   In the realm of web development, sending emails is a common requirement, whether for user authentication, notifications, or newsletters. This article will guide you through the process of integrating NodeMailer, a popular Node.js module, with Next.js, a React framework for building server-side rendered applications.
@@ -43,12 +45,13 @@ const posts: Post[] = [
 <p>
   Start by installing NodeMailer in your Next.js project:
 </p>
-<pre>npm install nodemailer</pre>
+<pre><code>npm install nodemailer</code></pre>
 <h3>Step 2: Create an Email Utility Function</h3>
 <p>
   Create a utility function to handle email sending. Replace the placeholder credentials with your own:
 </p>
-<pre>import nodemailer from 'nodemailer';
+<pre><code>import nodemailer from 'nodemailer';
+
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -58,6 +61,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+
 const sendEmail = async (to, subject, html) => {
   const mailOptions = {
     from: 'your-email@gmail.com',
@@ -65,35 +69,48 @@ const sendEmail = async (to, subject, html) => {
     subject,
     html,
   };
+
   try {
     const info = await transporter.sendMail(mailOptions);
+
     console.log('Email sent:', info.response);
+
   } catch (error) {
     console.error('Error sending email:', error);
+
   }
 };
 
-export default sendEmail;</pre>
+
+export default sendEmail;
+</code></pre>
 <h3>Step 3: Use the Utility Function in Next.js Pages</h3>
 <p>
   Integrate the sendEmail function in your Next.js pages where email functionality is required.
 </p>
-<pre>import React from 'react';
+<pre><code>import React from 'react';
+
 import sendEmail from '../utils/email';
+
 
 const App = () => {
   const handleSendEmail = async () => {
     await sendEmail('recipient@example.com', 'Test Email', '<p>Hello, this is a test email!</p>');
+
   };
+
   return (
     <div>
       <h1>Your Page</h1>
       <button onClick={handleSendEmail}>Send Email</button>
     </div>
   );
+
 };
 
-export default YourPage;</pre>
+
+export default YourPage;
+</code></pre>
 <h2>Alternatives to NodeMailer</h2>
 <p>
   While NodeMailer is a robust solution, it's essential to explore alternatives based on your specific needs. Some notable alternatives include:
@@ -118,8 +135,8 @@ export default YourPage;</pre>
 <p>
   I specialize in crafting outstanding user experiences for web applications. Whether you're looking to develop a new Progressive Web App (PWA) or enhance an existing one, we seamlessly integrate headless Content Management Systems (CMS) for efficient content management. Stay ahead of the curve with our future-proof solutions. Get in touch today to enhance your web and mobile presence through a user-friendly PWA. Let's collaborate to create a remarkable digital experience together!
 </p>
-</div>
->`,
+</article>
+`,
   },
   {
     id: 15,
@@ -133,7 +150,7 @@ export default YourPage;</pre>
     image:
       "/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png", // Recommend replacing with a relevant SEO/Schema image
     categories: ["SEO", "Web Development", "Digital Strategy"],
-    content: `<div>
+    content: `<article>
 <p>
     In the dynamic realm of search engine optimization (SEO), staying ahead necessitates not only keeping pace with trends but also understanding and leveraging innovative tools. One such tool that has emerged as a game-changer is structured data markup script. This comprehensive guide explores what structured data markup script entails, how it functions, and most importantly, how you can utilize it to turbocharge your website's SEO performance.
   </p>
@@ -152,7 +169,7 @@ export default YourPage;</pre>
 <p>
     Implementing a structured data markup script on your website is relatively straightforward, thanks to its intuitive syntax and flexibility. Let's walk through a basic example of how to use a structured data markup script to describe an organization:
   </p>
-<pre><script type="application/ld+json">
+<pre><code><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -174,7 +191,7 @@ export default YourPage;</pre>
     "contactType": "Customer Service"
   }
 }
-</script></pre>
+</script></code></pre>
 <p>
     In this example, we're utilizing a structured data markup script to describe an organization. We begin by defining the context (@context) as "<a href="https://schema.org/">https://schema.org</a>", indicating the usage of the Schema.org vocabulary for structured data. Next, we specify the type (@type) of data being described, which in this case, is an organization. We then provide various properties such as the organization's name, URL, logo, description, address, and contact information.
   </p>
@@ -190,7 +207,7 @@ export default YourPage;</pre>
 <p>
     <strong>1. People:</strong> Structured data markup script enables the representation of information about individuals, such as employees, founders, or authors, using the Person type. Here's an example:
   </p>
-<pre><script type="application/ld+json">
+<pre><code><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -200,14 +217,14 @@ export default YourPage;</pre>
   "image": "https://www.example.com/john-doe.jpg",
   "description": "Brief description of John Doe"
 }
-</script></pre>
+</script></code></pre>
 <p>
     In this example, a structured data markup script is employed to provide information about a person named John Doe, encompassing details such as name, job title, URL, image, and description. By including this script on relevant web pages, website owners can furnish search engines with explicit information about individuals associated with their organization, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>2. Organization:</strong> The representation of an organization using a structured data markup script was demonstrated in the basic example. Here's a recap:
   </p>
-<pre><script type="application/ld+json"></script>
+<pre><code><script type="application/ld+json"></script>
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -229,14 +246,14 @@ export default YourPage;</pre>
     "contactType": "Customer Service"
   }
 }
-</script></pre>
+</script></code></pre>
 <p>
     This script encapsulates details about an organization, including its name, URL, logo, description, address, and contact information. By integrating structured data markup scripts into web pages, website owners can facilitate search engines in comprehending organizational information, potentially amplifying their visibility in search results.
   </p>
 <p>
     <strong>3. Products:</strong> For websites engaged in e-commerce, structured data markup scripts can be utilized to provide information about products. Here's an example:
   </p>
-<pre><script type="application/ld+json">
+<pre><code><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -253,14 +270,14 @@ export default YourPage;</pre>
     "availability": "InStock"
   }
 }
-</script></pre>
+</script></code></pre>
 <p>
     This script delineates details about a product, encompassing attributes such as name, description, brand, and pricing. By incorporating structured data markup scripts on product pages, website owners can aid search engines in comprehending the products being offered, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>4. Services:</strong> For websites offering services, a structured data markup script can be employed to furnish information about those services. Here's an example:
   </p>
-<pre><script type="application/ld+json">
+<pre><code><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -271,14 +288,14 @@ export default YourPage;</pre>
     "name": "Your Company Name"
   }
 }
-</script></pre>
+</script></code></pre>
 <p>
     This script elucidates details about a service, including its name, description, and provider. By integrating structured data markup scripts on service pages, website owners can assist search engines in comprehending the services being offered, potentially augmenting their visibility in search results.
   </p>
 <p>
     <strong>5. FAQs:</strong> For websites featuring frequently asked questions (FAQs), a structured data markup script can be employed to provide information about those FAQs. Here's an example:
   </p>
-<pre><script type="application/ld+json">
+<pre><code><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -301,14 +318,14 @@ export default YourPage;</pre>
     }
   ]
 }
-</script></pre>
+</script></code></pre>
 <p>
     This script delineates an FAQ page, comprising a list of questions and answers. By incorporating structured data markup scripts of this nature on FAQ pages, website owners can aid search engines in comprehending the content of their FAQs, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>6. Locations:</strong> For websites featuring physical locations, a structured data markup script can be employed to provide information about those locations. Here's an example:
   </p>
-<pre><script type="application/ld+json">
+<pre><code><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Place",
@@ -322,12 +339,13 @@ export default YourPage;</pre>
     "addressCountry": "Your Country"
   }
 }
-</script></pre>
+</script></code></pre>
 <p>
     This script delineates details about a location, comprising its name and address. By integrating structured data markup scripts on location pages, website owners can assist search engines in comprehending the locations associated with their business, potentially amplifying their visibility in search results.
   </p>
 <h3>
-    Pros &amp; Cons of Using Structured Data Markup Script
+    Pros &amp;
+ Cons of Using Structured Data Markup Script
   </h3>
 <p>
     Let's take a moment to consider the pros and cons of utilizing structured data markup script for SEO:
@@ -351,7 +369,7 @@ export default YourPage;</pre>
 <p>
     Structured data markup script is a potent tool for enhancing SEO performance and maximizing online visibility. By providing search engines with structured data about web page content, website owners can facilitate better understanding and indexing of their pages, potentially leading to higher rankings and increased organic traffic. While implementing and maintaining a structured data markup script may require effort and technical expertise, the benefits far outweigh the challenges. So, using structured data markup script as an integral component of your SEO strategy can help your website to new heights of success in the digital landscape.
   </p>
-</div>
+</article>
 `,
   },
   {
@@ -365,7 +383,7 @@ export default YourPage;</pre>
     image:
       "/images/blogs/how-to-optimize-your-commits-for-efficient-project-management.jpg", // Consider updating this image to something Git/Dev-related
     categories: ["Git", "Project Management", "Best Practices"],
-    content: `<div>
+    content: `<article>
 <p>
     In software development, version control is the backbone of smooth collaboration and project evolution. One of the most debated questions is: <em>How many commits should a project have?</em> While there’s no definitive number, the key lies in structuring and managing your commits. In this article, we’ll dive into the best practices for making commits that ensure your project remains clean, maintainable, and easy to debug.
   </p>
@@ -458,7 +476,7 @@ export default YourPage;</pre>
 <p>
     What commit strategies do you use in your projects? Share your thoughts in the comments below!
   </p>
-</div>
+</article>
 `,
   },
   {
@@ -520,7 +538,7 @@ export default YourPage;</pre>
 <p>
     Seamlessly embed React apps into WordPress with ReactPress for a user-friendly and efficient development experience.
   </p>
-</div>
+</article>
 `,
   },
   {
@@ -554,12 +572,12 @@ export default YourPage;</pre>
 <p>
   Before diving into the capabilities of GitHub CLI, it's essential to have it installed. Installation is typically straightforward, with precompiled binaries available for various operating systems. For instance, on a Unix-based system, you can use:
 </p>
-<pre># Install GitHub CLI on Unix-based systems
+<pre><code># Install GitHub CLI on Unix-based systems
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages 
 sudo apt update 
 sudo apt install gh
-</pre>
+</code></pre>
 <p>
   For other platforms, consult the official GitHub CLI documentation.
 </p>
@@ -569,8 +587,8 @@ sudo apt install gh
 <p>
   Once installed, the next step is authentication. You need to authenticate gh with your GitHub account, allowing it to interact with your repositories seamlessly. Use the following command to authenticate:
 </p>
-<pre>gh auth login
-</pre>
+<pre><code>gh auth login
+</code></pre>
 <p>
   Follow the prompts to complete the authentication process.
 </p>
@@ -583,41 +601,36 @@ sudo apt install gh
 <p>
   GitHub CLI simplifies the process of creating issues directly from the command line. Use the following command:
 </p>
-<pre>gh issue create
-</pre>
+<pre><code>gh issue create
+</code></pre>
 <p>
   This command will prompt you for details such as the issue title, body, labels, and assignees. For example:
 </p>
-<pre>gh issue create \
---title "Fix Bug in Authentication Module" \
---body "The authentication module is throwing errors when handling certain edge cases."
-</pre>
+<pre><code>gh issue create --title "Fix Bug in Authentication Module" --body "The authentication module is throwing errors when handling certain edge cases."
+</code></pre>
 <h3>
   2. Creating a Pull Request
 </h3>
 <p>
   Initiating a pull request from the command line is as easy as creating an issue. Execute the following command:
 </p>
-<pre>gh pr create
-</pre>
+<pre><code>gh pr create
+</code></pre>
 <p>
   Similar to creating an issue, you'll be prompted for details such as the pull request title, body, base branch, and head branch. For example:
 </p>
-<pre>gh pr create \
---title "Feature: New User Registration" \
---body "This pull request adds functionality for new user registration." --base main \
---head feature-branch
-</pre>
+<pre><code>gh pr create --title "Feature: New User Registration" --body "This pull request adds functionality for new user registration." --base main --head feature-branch
+</code></pre>
 <h3>
   3. Pushing Changes
 </h3>
 <p>
   gh simplifies pushing changes to your repository with the following command:
 </p>
-<pre>gh repo view --clone
+<pre><code>gh repo view --clone
 # Make changes to files
 gh repo sync
-</pre>
+</code></pre>
 <p>
   This sequence of commands fetches the repository, makes the necessary changes, and syncs them back to GitHub.
 </p>
@@ -627,8 +640,8 @@ gh repo sync
 <p>
   To pull changes from a remote repository, use the following command:
 </p>
-<pre>gh repo sync
-</pre>
+<pre><code>gh repo sync
+</code></pre>
 <p>
   This command fetches changes from the remote repository and merges them into your local branch.
 </p>
@@ -638,10 +651,10 @@ gh repo sync
 <p>
   Checking out a branch is a common operation, and GitHub CLI provides an easy way to do so:
 </p>
-<pre>gh repo clone <repository>
+<pre><code>gh repo clone <repository>
 cd <repository>
 gh repo branch <branch-name>
-</pre>
+</code></pre>
 <p>
   Replace <repository> with the name of the repository and <branch-name> with the desired branch.
 </p>
@@ -651,14 +664,13 @@ gh repo branch <branch-name>
 <p>
   Releasing new versions of your software is a crucial part of the development lifecycle. GitHub CLI allows you to create releases seamlessly:
 </p>
-<pre>gh release create <tag> <files> --notes <notes>
-</pre>
+<pre><code>gh release create <tag> <files> --notes <notes>
+</code></pre>
 <p>
   Replace <tag> with the version tag, <files> with the files to be included in the release, and <notes> with the release notes. For example:
 </p>
-<pre>gh release create v1.0.0 dist/* \
---notes "Release notes for version 1.0.0"
-</pre>
+<pre><code>gh release create v1.0.0 dist/* --notes "Release notes for version 1.0.0"
+</code></pre>
 <h3>
   Advantages of GitHub CLI
 </h3>
@@ -718,7 +730,7 @@ gh repo branch <branch-name>
 </p>
 
 
-</div>
+</article>
 `,
   },
   {
@@ -733,7 +745,7 @@ gh repo branch <branch-name>
     image:
       "/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png", // Consider updating this image to match the topic
     categories: ["Teamwork", "Leadership", "Workplace Strategy"],
-    content: `<div>
+    content: `<article>
 <p>
     In the pursuit of success and progress, teams have become the cornerstone of modern society. From business enterprises to sports teams and community organizations, the collective power of individuals working together towards a common goal is undeniable. However, it is essential to recognize that the value of individuality is equally crucial in the context of team dynamics. In this article, we will explore how embracing and fostering individuality can enhance team skills, leading to unprecedented levels of innovation, creativity, and overall effectiveness.
   </p>
@@ -783,7 +795,7 @@ gh repo branch <branch-name>
 <p>
     Striking the right balance between individuality and collaboration requires thoughtful leadership and a commitment to fostering a culture of inclusivity and open communication. When individuals feel valued and empowered within their teams, they are more motivated to contribute their best efforts, resulting in a team that achieves remarkable outcomes. So let us celebrate the power of individuality while recognizing that the true strength of a team lies in its ability to embrace and leverage the talents of each and every member.
   </p>
-</div>
+</article>
 `,
   },
   {
@@ -829,7 +841,7 @@ gh repo branch <branch-name>
 <p>
     We specialize in creating exceptional user experiences. Whether you need a new PWA or to improve an existing one, we integrate headless CMS for seamless content management. Stay cutting-edge with our future-proof solutions. Contact us today to elevate your web and mobile presence with a user-friendly PWA. Let's create a remarkable experience together!
   </p>
-</div>
+</article>
 `,
   },
   {
@@ -886,7 +898,8 @@ gh repo branch <branch-name>
 <ul>
     <li>Go to your GitHub repository.</li>
     <li>Click on the Settings tab.</li>
-    <li>Under Security &amp; Analysis, locate the "Dependabot alerts" and "Dependabot security updates" sections and ensure they are enabled.</li>
+    <li>Under Security &amp;
+ Analysis, locate the "Dependabot alerts" and "Dependabot security updates" sections and ensure they are enabled.</li>
 </ul>
 <h3>
     2. Configure Dependabot Updates:
@@ -895,13 +908,13 @@ gh repo branch <branch-name>
     <li>Create a .github/dependabot.yml file in your repository.</li>
     <li>Add the following configuration (example for npm):</li>
 </ul>
-<pre>version: 2
+<pre><code>version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
-</pre>
+</code></pre>
 <ul>
     <li>Replace <strong>npm</strong> with the relevant ecosystem for your project <strong>(e.g., pip, maven, etc.)</strong>.</li>
 </ul>
@@ -972,7 +985,7 @@ updates:
     If you’re interested in implementing these tools or have questions about securing your projects, feel free to reach out to me! Special thanks to <a href="https://github.com/" target="_self">@GitHub</a> for providing such incredible tools for developers. Let’s keep our projects secure and efficient!
   </p>
 <br>
-</div>
+</article>
 `,
   },
   {
@@ -985,7 +998,7 @@ updates:
     readingTime: "4 min read",
     image: "/images/blogs/essential-apps-every-shopify-store-must-have.png",
     categories: ["Shopify", "eCommerce", "Business Tools"],
-    content: `<div>
+    content: `<article>
      <p>
     When it comes to running a successful Shopify store, having the right apps can make all the difference. These apps can enhance your store's functionality, streamline operations, and boost sales. In this article, we have compiled a list of 30 essential apps that every Shopify store must have. Each app comes with a link to its Shopify App Store page, making it easy for you to explore and install them for your store.
   </p>
@@ -996,7 +1009,8 @@ updates:
 <p>
     Oberlo is a powerful app that simplifies the dropshipping process for Shopify store owners. It allows you to import products directly from suppliers into your store, automatically sync inventory, and fulfill orders with ease. With Oberlo, you can focus on marketing and growing your business without the hassle of manual product management.
   </p>
-<h2>Trust badges &amp; icons ‑ Iconito</h2>
+<h2>Trust badges &amp;
+ icons ‑ Iconito</h2>
 <p>
     Iconito is a highly-rated app with a perfect 5.0 average rating. It provides a wide range of trust badges, payment icons, product labels, warranties, and logos to build trust with customers. With 255 total reviews, Iconito offers a free plan and helps enhance your store's credibility and conversion rates.
   </p>
@@ -1014,7 +1028,8 @@ updates:
   </p>
 <h2>Yotpo</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/yotpo-social-reviews">Link</a>: Yotpo is a highly regarded app that helps you gather and showcase customer reviews and ratings on your Shopify store. It allows you to collect authentic feedback, display social proof, and build trust with potential customers. With features like user-generated photos and Q&amp;A sections, Yotpo enhances the shopping experience and drives conversions.
+    - <a target="_self" href="https://apps.shopify.com/yotpo-social-reviews">Link</a>: Yotpo is a highly regarded app that helps you gather and showcase customer reviews and ratings on your Shopify store. It allows you to collect authentic feedback, display social proof, and build trust with potential customers. With features like user-generated photos and Q&amp;
+A sections, Yotpo enhances the shopping experience and drives conversions.
   </p>
 <h2>Klaviyo</h2>
 <p>
@@ -1048,17 +1063,21 @@ updates:
 <p>
     - <a target="_self" href="https://apps.shopify.com/recart">Link</a>: Recart is a powerful app designed to reduce cart abandonment and increase sales in your Shopify store. It utilizes Facebook Messenger marketing to send automated messages to customers who have abandoned their carts, reminding them to complete their purchase. Recart also provides tools for creating opt-in forms, sending order receipts, and implementing Messenger marketing campaigns, helping you recover lost sales and engage with customers effectively.
   </p>
-<h2>ReConvert Upsell &amp; Cross Sell</h2>
+<h2>ReConvert Upsell &amp;
+ Cross Sell</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/reconvert">Link</a>: ReConvert Upsell &amp; Cross Sell is a robust app that allows you to create highly effective post-purchase upsell and cross-sell offers. With its intuitive drag-and-drop builder, you can easily customize and display personalized offers to customers after they make a purchase. This app helps you maximize customer value by encouraging additional purchases and increasing overall revenue.
+    - <a target="_self" href="https://apps.shopify.com/reconvert">Link</a>: ReConvert Upsell &amp;
+ Cross Sell is a robust app that allows you to create highly effective post-purchase upsell and cross-sell offers. With its intuitive drag-and-drop builder, you can easily customize and display personalized offers to customers after they make a purchase. This app helps you maximize customer value by encouraging additional purchases and increasing overall revenue.
   </p>
 <h2>QuickBooks</h2>
 <p>
     - <a target="_self" href="https://apps.shopify.com/quickbooks-online">Link</a>: QuickBooks is a popular accounting software that seamlessly integrates with Shopify. With this app, you can automatically sync your Shopify transactions, expenses, and other financial data to streamline your accounting processes. QuickBooks offers features like inventory tracking, invoice generation, and tax calculation, making it easier to manage your finances and gain insights into your store's performance.
   </p>
-<h2>Smile: Rewards &amp; Loyalty</h2>
+<h2>Smile: Rewards &amp;
+ Loyalty</h2>
 <p>
-    - <a target="_self" href="https://apps.shopify.com/smile-io">Link</a>: Smile: Rewards &amp; Loyalty allows you to create a customized loyalty program for your Shopify store. You can reward customers for purchases, referrals, social media follows, and other actions to foster customer loyalty and encourage repeat business. This app offers various reward options, points tracking, and referral features, making it an effective tool for driving customer engagement and retention.
+    - <a target="_self" href="https://apps.shopify.com/smile-io">Link</a>: Smile: Rewards &amp;
+ Loyalty allows you to create a customized loyalty program for your Shopify store. You can reward customers for purchases, referrals, social media follows, and other actions to foster customer loyalty and encourage repeat business. This app offers various reward options, points tracking, and referral features, making it an effective tool for driving customer engagement and retention.
   </p>
 <h2>Loox</h2>
 <p>
@@ -1070,7 +1089,7 @@ updates:
   </p>
 <p>
     These essential apps cover a range of functionalities, from drop-shipping to marketing, customer support, and optimization. Incorporating these apps into your Shopify store can enhance your operations, improve customer experience, and drive sales. Each app comes with its own unique features and benefits, so explore their links to learn more and determine which ones best suit the needs of your business.
-  </p> </div>`,
+  </p> </article>`,
   },
   {
     id: 7,
@@ -1084,7 +1103,7 @@ updates:
     image:
       "/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg",
     categories: ["Programming", "Software Design", "Best Practices"],
-    content: `<div>
+    content: `<article>
 <p>
     When you're early in React development, you focus on making things work. Later, as projects grow, you realize
     <strong>that architecture</strong> and <strong>design principles</strong> are <strong>even more important</strong>
@@ -1138,21 +1157,28 @@ updates:
         rendering</strong> simultaneously.</li>
 </ul>
 <h3>Example of Bad SRP:</h3>
-<pre>function UserProfile({ userId }) {
+<pre><code>function UserProfile({ userId }) {
   const [user, setUser] = useState(null);
+
   useEffect(() => {
-    fetch(&#96;/api/user/&#36;{userId}
-&#96;)
+    fetch(&#96;
+/api/user/&#36;
+{userId}
+&#96;
+)
       .then((res) => res.json())
       .then((data) => setUser(data));
+
   }, [userId]);
+
   return (
     <div>
       <h1>{user?.name}</h1>
       <p>{user?.bio}</p>
     </div>
   );
-}</pre>
+
+}</code></pre>
 <ul>
     <li><strong>Problem:</strong> Fetching logic + display logic = mixed responsibilities.</li>
 </ul>
@@ -1162,27 +1188,37 @@ updates:
     <li><strong>Hook</strong> for fetching user data.</li>
     <li><strong>Component</strong> for displaying.</li>
 </ul>
-<pre>function useUser(userId) {
+<pre><code>function useUser(userId) {
   const [user, setUser] = useState(null);
+
   useEffect(() => {
-    fetch(&#96;/api/user/&#36;{userId}
-&#96;)
+    fetch(&#96;
+/api/user/&#36;
+{userId}
+&#96;
+)
       .then((res) => res.json())
       .then((data) => setUser(data));
+
   }, [userId]);
+
   return user;
+
 }
 
 function UserProfile({ userId }) {
   const user = useUser(userId);
+
   if (!user) return <p>Loading...</p>;
+
   return (
     <div>
       <h1>{user.name}</h1>
       <p>{user.bio}</p>
     </div>
   );
-}</pre>
+
+}</code></pre>
 <ul>
     <li>useUser → Data fetching</li>
     <li>UserProfile → UI</li>
@@ -1217,27 +1253,33 @@ function UserProfile({ userId }) {
     <li>Hardcoding new behavior into old components.</li>
 </ul>
 <p><strong>Bad Example:</strong></p>
-<pre>function Notification({ type, message }) {
+<pre><code>function Notification({ type, message }) {
   if (type === "success") return <div className="success">{message}</div>;
+
   if (type === "error") return <div className="error">{message}</div>;
+
   if (type === "info") return <div className="info">{message}</div>;
-}</pre>
+
+}</code></pre>
 <ul>
     <li><strong>Problem:</strong> Every time a new type comes (warning, alert), we have to <strong>edit</strong> this
       component.</li>
 </ul>
 <h3>Applying OCP Correctly:</h3>
 <p>Use a <strong>mapping</strong> or <strong>configuration-based approach</strong>.</p>
-<pre>const notificationStyles = {
+<pre><code>const notificationStyles = {
   success: "success",
   error: "error",
   info: "info",
 };
 
+
 function Notification({ type, message }) {
   const className = notificationStyles[type] || "default";
+
   return <div className={className}>{message}</div>;
-}</pre>
+
+}</code></pre>
 <ul>
     <li>To add new types, just update notificationStyles.</li>
     <li><strong>No core code change needed</strong>.</li>
@@ -1271,26 +1313,29 @@ function Notification({ type, message }) {
     <li>Components that <strong>expect specific implementations</strong>, not abstractions.</li>
 </ul>
 <h3>Bad Example:</h3>
-<pre>function PaymentProcessor({ payment }) {
+<pre><code>function PaymentProcessor({ payment }) {
   if (payment.type === "paypal") {
     return <PaypalComponent />;
+
   }
   if (payment.type === "stripe") {
     return <StripeComponent />;
+
   }
-}</pre>
+}</code></pre>
 <ul>
     <li><strong>Problem:</strong> Tight coupling to specific services.</li>
 </ul>
 <h3>Applying LSP Correctly:</h3>
 <p>Pass <strong>components</strong> or <strong>handlers</strong> dynamically.</p>
-<pre>function PaymentProcessor({ PaymentComponent }) {
+<pre><code>function PaymentProcessor({ PaymentComponent }) {
   return <PaymentComponent />;
+
 }
 
 // Usage
 <PaymentProcessor PaymentComponent={PaypalComponent} />
-<PaymentProcessor PaymentComponent={StripeComponent} /></pre>
+<PaymentProcessor PaymentComponent={StripeComponent} /></code></pre>
 <ul>
     <li>Now, any payment method can be passed without changing PaymentProcessor.</li>
 </ul>
@@ -1321,20 +1366,21 @@ function Notification({ type, message }) {
     <li>Huge components are expecting <strong>too many props</strong>.</li>
 </ul>
 <h3>Bad Example:</h3>
-<pre>function DataTable({ data, onSort, onFilter, onExport, onPaginate }) {
+<pre><code>function DataTable({ data, onSort, onFilter, onExport, onPaginate }) {
   // Basic table that might not even need export or pagination
-}</pre>
+}</code></pre>
 <ul>
     <li><strong>Problem:</strong> Most consumers may not need all these actions.</li>
 </ul>
 <h3>Applying ISP Correctly:</h3>
 <p>Split the components:</p>
-<pre>function BasicTable({ data }) {
+<pre><code>function BasicTable({ data }) {
   return (
     <table>
       {/* Basic table rendering */}
     </table>
   );
+
 }
 
 function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
@@ -1343,7 +1389,8 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
       {/* Advanced table rendering */}
     </table>
   );
-}</pre>
+
+}</code></pre>
 <ul>
     <li>Basic consumers stay simple.</li>
     <li>Advanced consumers opt into complexity.</li>
@@ -1377,26 +1424,34 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
     <li>UI components directly calling APIs.</li>
 </ul>
 <p><strong>Bad Example:</strong></p>
-<pre>function ProductsList() {
+<pre><code>function ProductsList() {
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
     fetch("/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
+
   }, []);
+
   return products.map((p) => <div>{p.name}</div>);
-}</pre>
+
+}</code></pre>
 <ul>
     <li><strong>Problem:</strong> tightly coupled to API details.</li>
 </ul>
 <h3>Applying DIP Correctly:</h3>
 <p>Abstract fetching logic:</p>
-<pre>function useProducts(service) {
+<pre><code>function useProducts(service) {
   const [products, setProducts] = useState([]);
+
   useEffect(() => {
     service.fetchProducts().then(setProducts);
+
   }, [service]);
+
   return products;
+
 }
 
 // Service layer
@@ -1404,11 +1459,14 @@ const productService = {
   fetchProducts: () => fetch("/api/products").then((res) => res.json()),
 };
 
+
 // Component
 function ProductsList() {
   const products = useProducts(productService);
+
   return products.map((p) => <div key={p.id}>{p.name}</div>);
-}</pre>
+
+}</code></pre>
 <ul>
     <li>Want to test with mock products? Inject a <strong>mock service</strong>.</li>
 </ul>
@@ -1443,7 +1501,7 @@ function ProductsList() {
 <p>
     #ReactJS #SOLIDPrinciples #FrontendEngineering #SoftwareArchitecture #CleanCode #ReactBestPractices
   </p>
-</div>`,
+</article>`,
   },
   {
     id: 5,
@@ -1456,7 +1514,7 @@ function ProductsList() {
     image:
       "/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career.webp",
     categories: ["Shopify", "Career Growth", "Web Development"],
-    content: `<div>
+    content: `<article>
     <p>
     In today’s digital era, e-commerce continues to thrive, and platforms like Shopify
     have revolutionized the way businesses operate online. While many entrepreneurs utilize Shopify to build their
@@ -1528,7 +1586,7 @@ function ProductsList() {
     tapping into the thriving e-commerce industry, and continuously learning and innovating, you position yourself
     as a valuable asset in the digital marketplace. Embrace the world of Shopify app development, and unlock a world
     of career possibilities and professional growth.</p>
-    </div>`,
+    </article>`,
   },
   {
     id: 6,
@@ -1542,7 +1600,7 @@ function ProductsList() {
     image:
       "/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too.webp",
     categories: ["WordPress", "Gutenberg", "Web Development"],
-    content: `<div>
+    content: `<article>
     
     <p>
     For years, I relied on shortcodes in WordPress to add functionality to my websites.
@@ -1563,7 +1621,7 @@ function ProductsList() {
     of how I used to create a custom shortcode:</p>
 <p>
     Example: A Simple Contact Form Shortcode</p>
-<pre>
+<pre><code>
 // Add this to functions.php or a custom plugin
 function custom_contact_form_shortcode() {
     return '
@@ -1573,9 +1631,11 @@ function custom_contact_form_shortcode() {
             <button type="submit">Submit</button>
         </form>
     ';
+
 }
 add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
-</pre>
+
+</code></pre>
 <h1>
     What Are Custom Blocks?</h1>
 <p>
@@ -1628,7 +1688,7 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
     Step 1: Register a Custom Block</h1>
 <p>
     I added this code to my theme’s functions.php file or a custom plugin:</p>
-<pre>
+<pre><code>
 function register_contact_form_block() {
     wp_register_script(
         'custom-contact-form-block',
@@ -1637,17 +1697,22 @@ function register_contact_form_block() {
         null,
         true
     );
+
     register_block_type('custom/contact-form', array(
         'editor_script' => 'custom-contact-form-block',
     ));
+
 }
 add_action('init', 'register_contact_form_block');
-</pre>
+
+</code></pre>
 <h1>
     Step 2: Create the Block Script (contact-form-block.js)</h1>
-<pre>
+<pre><code>
 const { registerBlockType } = wp.blocks;
+
 const { createElement } = wp.element;
+
 
 registerBlockType('custom/contact-form', {
     title: 'Contact Form',
@@ -1674,7 +1739,8 @@ registerBlockType('custom/contact-form', {
             )
         ),
 });
-</pre>
+
+</code></pre>
 <p>
     With this, I now have a custom block that I can add directly in the editor,
     complete with a visual preview.</p>
@@ -1717,7 +1783,8 @@ registerBlockType('custom/contact-form', {
 <h1>
     My Takeaway</h1>
 <p>
-    The shift from shortcodes to blocks is more than just a trend; it’s a leap forward
+    The shift from shortcodes to blocks is more than just a trend;
+ it’s a leap forward
     for WordPress development. While shortcodes have served me well, they feel like a thing of the past in a
     block-driven world.</p>
 <p>
@@ -1728,7 +1795,7 @@ registerBlockType('custom/contact-form', {
     Have you made the switch to blocks yet? Let me know your thoughts or reach out if
     you need help navigating the transition!</p>
     
-    </div>`,
+    </article>`,
   },
   {
     id: 4,
@@ -1741,7 +1808,7 @@ registerBlockType('custom/contact-form', {
     image:
       "/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios.webp",
     categories: ["WordPress", "Plugins", "User Engagement"],
-    content: `<div>
+    content: `<article>
     <p>
     WordPress push notification plugins are powerful tools that help website owners
     engage with their audience by sending instant notifications to web, Android, and iOS users. These plugins enable
@@ -1797,7 +1864,7 @@ registerBlockType('custom/contact-form', {
 <p>
     Note: The provided links are subject to change. Please search for the respective
     plugins to access the latest links.</p>
-    </div>`,
+    </article>`,
   },
   {
     id: 3,
@@ -1811,7 +1878,7 @@ registerBlockType('custom/contact-form', {
     image:
       "/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress.webp",
     categories: ["WordPress", "ERP", "Business Tools"],
-    content: `<div>
+    content: `<article>
     <p>Before using an ERP Solution, you must know what is ERP. Otherwise, you wouldn’t be
     able to get the point of using an ERP solution in the first place.</p>
 <p>Well, in simple words, ERP means Enterprise Resource Planning. ERP solutions
@@ -1881,7 +1948,10 @@ registerBlockType('custom/contact-form', {
             payments via credit cards </a>from your customers.</li>
     <li>Email automation: You can automate your business by automating emails when an
         event occurs. You can also create <a
-            href="https://wperp.com/downloads/wp-erp-email-campaign/?utm_source=blog&amp;utm_medium=referral&amp;utm_campaign=post&amp;utm_content=suza"
+            href="https://wperp.com/downloads/wp-erp-email-campaign/?utm_source=blog&amp;
+utm_medium=referral&amp;
+utm_campaign=post&amp;
+utm_content=suza"
             rel="noopener ugc nofollow" target="_blank">email campaigns</a> where the ERP software handles
         everything for you.</li>
     <li>Workflow management: Managing a good workflow can save you a lot of time. The
@@ -1908,7 +1978,7 @@ registerBlockType('custom/contact-form', {
     footprints. Your site will remain fast and responsive. WP ERP does a lot more for less. No plugin even comes
     close considering features and value. The plugin helps you to execute most of the tasks for your business,
     maximize the output and helps to manage resource planning and management more seamlessly.</p>
-</div>`,
+</article>`,
   },
   {
     id: 2,
@@ -1921,7 +1991,7 @@ registerBlockType('custom/contact-form', {
     image:
       "/images/blogs/headless-wordpress-and-content-management-systems.webp",
     categories: ["Wordpress", "CMS", "Headless"],
-    content: `<div>
+    content: `<article>
     <p>
         Keeping up with the ever-expanding Internet of Things (IoT) can be a scramble for
         content developers and programmers alike. Repackaging content from a traditional WordPress implementation for
@@ -2066,7 +2136,7 @@ registerBlockType('custom/contact-form', {
         As a WordPress Digital Experience Platform (DXP), WP Engine can help you with the
         platform-specific aspects of your site. This includes troubleshooting REST API issues and standard WordPress
         functionality problems, along with providing fast and reliable hosting services.</p>
-</div>`,
+</article>`,
   },
   {
     id: 1,
@@ -2078,7 +2148,7 @@ registerBlockType('custom/contact-form', {
     readingTime: "4 min read",
     image: "/images/blogs/the-beginners-guide-to-seo.jpg",
     categories: ["SEO", "Getting Started", "Tutorial"],
-    content: `<div>
+    content: `<article>
     <h2>
         Welcome to your SEO learning journey!</h2>
     <p>
@@ -2134,13 +2204,15 @@ registerBlockType('custom/contact-form', {
         <li>
             Compelling content that answers the searcher’s query</li>
         <li>
-            Keywords optimized to attract searchers &amp; engines</li>
+            Keywords optimized to attract searchers &amp;
+ engines</li>
         <li>
             Great user experience including a fast load speed and compelling UX</li>
         <li>
             Share-worthy content that earns links, citations, and amplification</li>
         <li>
-            Title, URL, &amp; description to draw high CTR in the rankings</li>
+            Title, URL, &amp;
+ description to draw high CTR in the rankings</li>
         <li>
             Snippet/schema markup to stand out in SERPs</li>
     </ol>
@@ -2211,7 +2283,8 @@ registerBlockType('custom/contact-form', {
     <p>
         <a href="https://moz.com/beginners-guide-to-seo/growing-popularity-and-links" rel="noopener ugc nofollow"
             target="_blank">
-            CHAPTER 6: LINK BUILDING &amp; ESTABLISHING AUTHORITY</a>
+            CHAPTER 6: LINK BUILDING &amp;
+ ESTABLISHING AUTHORITY</a>
     </p>
     <p>
         <em>
@@ -2223,7 +2296,8 @@ registerBlockType('custom/contact-form', {
     <p>
         <a href="https://moz.com/beginners-guide-to-seo/measuring-and-tracking-success" rel="noopener ugc nofollow"
             target="_blank">
-            CHAPTER 7: MEASURING, PRIORITIZING, &amp; EXECUTING SEO</a>
+            CHAPTER 7: MEASURING, PRIORITIZING, &amp;
+ EXECUTING SEO</a>
     </p>
     <p>
         <em>
@@ -2263,12 +2337,13 @@ registerBlockType('custom/contact-form', {
         certification badge.</p>
     <p>
         Getting excited yet? You should be! Search engine marketing is a fascinating field
-        and can be lots of fun! If you get confused, don’t give up; we have folks who can help you with instructor-led
+        and can be lots of fun! If you get confused, don’t give up;
+ we have folks who can help you with instructor-led
         <a href="https://moz.com/training">
             SEO training
             seminars</a>.
     </p>
-</div>`,
+</article>`,
   },
   {
     id: 1,
@@ -2279,21 +2354,350 @@ registerBlockType('custom/contact-form', {
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
     // image: "/images/blogs/getting-started-nextjs-tailwind.png",
-    content: ``,
+    content: `<article>
+    
+    <h1>Getting Started with Next.js and Tailwind</h1>
+
+    <p>Web development continues to evolve at a rapid pace, and developers are constantly looking for tools that can streamline the development process while delivering modern, performant applications. Two popular tools that complement each other beautifully are <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.</p>
+
+    <p>Next.js is a React-based framework that simplifies building scalable web applications by providing features like server-side rendering, static site generation, API routes, and more—out of the box. On the other hand, Tailwind CSS is a utility-first CSS framework that enables developers to rapidly build custom UIs directly in their HTML or JSX without leaving the markup.</p>
+
+    <p>This guide will walk you through creating a modern, responsive web application using both Next.js and Tailwind CSS.</p>
+
+    <h2>Why Choose Next.js and Tailwind CSS?</h2>
+
+    <p><strong>Next.js</strong> provides a production-ready framework for building React applications. Unlike vanilla React, which requires additional configuration for routing, SSR (server-side rendering), and code splitting, Next.js includes these features by default.</p>
+
+    <p><strong>Tailwind CSS</strong> allows for rapid UI development using utility classes. Instead of writing custom CSS for every component, Tailwind provides low-level utility classes like <code>flex</code>, <code>p-4</code>, <code>bg-blue-500</code>, etc., to construct designs efficiently and maintain consistency.</p>
+
+    <h2>Prerequisites</h2>
+
+    <p>Before getting started, ensure that you have the following installed on your system:</p>
+    <ul>
+      <li>Node.js (v14 or later)</li>
+      <li>npm or yarn</li>
+      <li>A code editor like VS Code</li>
+    </ul>
+
+    <h2>Step 1: Creating a Next.js Application</h2>
+
+    <p>Open your terminal and run the following command to bootstrap a new Next.js app:</p>
+
+    <pre><code>npx create-next-app@latest my-next-tailwind-app</code></code></pre>
+
+    <p>This command will prompt you with a few setup questions (like TypeScript, ESLint, etc.). You can choose the defaults or customize them as needed.</p>
+
+    <p>Navigate into your project directory:</p>
+
+    <pre><code>cd my-next-tailwind-app</code></code></pre>
+
+    <h2>Step 2: Installing Tailwind CSS</h2>
+
+    <p>Now that your Next.js app is set up, it’s time to install Tailwind CSS. Tailwind requires a few dependencies, including PostCSS and Autoprefixer:</p>
+
+    <pre><code>npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p</code></code></pre>
+
+    <p>This command creates two configuration files in the root of your project: <code>tailwind.config.js</code> and <code>postcss.config.js</code>.</p>
+
+    <h2>Step 3: Configuring Tailwind</h2>
+
+    <p>Open <code>tailwind.config.js</code> and configure the <code>content</code> property so Tailwind knows where to look for class names:</p>
+
+    <pre><code>module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}</code></code></pre>
+
+    <p>Next, open <code>styles/globals.css</code> and replace its contents with the Tailwind directives:</p>
+
+    <pre><code>@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+</code></code></pre>
+
+    <p>This tells Tailwind to inject its base styles, component classes, and utility classes globally.</p>
+
+    <h2>Step 4: Running the Development Server</h2>
+
+    <p>Start your app with the following command:</p>
+
+    <pre><code>npm run dev</code></code></pre>
+
+    <p>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let’s now replace it with something styled by Tailwind.</p>
+
+    <h2>Step 5: Creating a Simple Tailwind-Styled Component</h2>
+
+    <p>Edit the <code>pages/index.js</code> file to use Tailwind classes. Here’s a basic example:</p>
+
+    <pre><code>export default function Home() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100"></div>
+      <h1 className="text-4xl font-bold text-blue-600">
+        Hello, Next.js with Tailwind CSS!
+      </h1>
+    </div>
+  )
+}</code></code></pre>
+
+    <p>After saving, your browser should display a clean, centered message styled with Tailwind.</p>
+
+    <h2>Step 6: Using Tailwind Responsively</h2>
+
+    <p>Tailwind makes it easy to build responsive layouts. Try updating the text size with responsive classes:</p>
+
+    <pre><code><h1 className="text-2xl md:text-4xl lg:text-6xl">Responsive Text</h1></code></code></pre>
+
+    <p>This will render different font sizes depending on the screen width.</p>
+
+    <h2>Step 7: Customizing Your Theme</h2>
+
+    <p>You can customize Tailwind’s design system in the <code>tailwind.config.js</code> file. For example, to add a custom color:</p>
+
+    <pre><code>module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        brand: '#1e40af',
+      },
+    },
+  },
+}</code></code></pre>
+
+    <p>Now you can use <code>bg-brand</code>, <code>text-brand</code>, etc., throughout your components.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>Next.js and Tailwind CSS together form a powerful stack for building modern web applications. Next.js handles routing, rendering, and performance optimizations, while Tailwind CSS empowers you to craft responsive UIs without writing a single line of custom CSS.</p>
+
+    <p>With just a few commands, you now have a fully functional development environment that’s fast, scalable, and easy to work with. From here, explore Tailwind’s plugin ecosystem, create reusable components, and build your project with confidence.</p>
+
+    <p>If you’d like to go further, consider exploring additional features like Next.js API routes, dynamic routing, Tailwind dark mode, and integrating third-party libraries like Headless UI or Heroicons.</p>
+
+    <p>Happy coding!</p></article>`,
     categories: ["Next.js", "Tailwind CSS", "Frontend Development"],
-  },
-  {
-    id: 2,
-    title: "State Management in React Applications",
-    excerpt:
-      "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
-    slug: "state-management-react",
-    publishedAt: "2018-01-01",
-    readingTime: "6 min read",
-    // image: "/images/blogs/state-management-react.png",
-    content: ``,
-    categories: ["React", "State Management", "Frontend Architecture"],
-  },
+  },{
+  id: 2,
+  title: "State Management in React Applications",
+  excerpt:
+    "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
+  slug: "state-management-react",
+  publishedAt: "2018-01-01",
+  readingTime: "6 min read",
+  categories: ["React", "State Management", "Frontend Architecture"],
+  // image: "/images/blogs/state-management-react.png",
+ content: `<article>
+  <h1>State Management in React Applications</h1>
+
+  <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
+
+  <p>In this article, we’ll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
+
+  <h2>What is State in React?</h2>
+
+  <p><strong>State</strong> is a JavaScript object that holds dynamic data in a React component. State changes trigger re-renders, allowing the UI to respond to user interactions and asynchronous updates.</p>
+
+  <pre><code>
+import{ useState } from 'react';
+
+function Counter(){
+  const [count, setCount] = useState(0);
+
+  return (
+  <div>
+    <p>Count:{count}</p>
+    <button onClick={() => setCount(count + 1)}>Increment</button>
+  </div>
+  );
+}
+  </code></pre>
+
+  <h2>Local vs Global State</h2>
+
+  <p>React state generally falls into two categories:</p>
+
+  <ul>
+    <li><strong>Local State</strong>: Used in a single component (e.g., form inputs, modals)</li>
+    <li><strong>Global State</strong>: Shared across multiple components (e.g., user session, theme)</li>
+  </ul>
+
+  <h2>Lifting State Up</h2>
+
+  <p>If multiple sibling components need access to the same piece of state, lift it to their common parent:</p>
+
+  <pre><code>
+function Parent(){
+  const [value, setValue] = useState('');
+  return (
+    <>
+    <Input value={value} setValue={setValue} />
+    <Display value={value} />
+    </>
+  );
+}
+  </code></pre>
+
+  <p>This keeps your data flow predictable and contained.</p>
+
+  <h2>When to Use the Context API</h2>
+
+  <p><strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It’s great for themes, authentication, or language settings.</p>
+
+  <pre><code>
+import{ createContext, useContext, useState } from 'react';
+
+const ThemeContext = createContext();
+
+function App(){
+  const [theme, setTheme] = useState('light');
+
+  return (
+  <ThemeContext.Provider value={{ theme, setTheme }}>
+    <Layout />
+  </ThemeContext.Provider>
+  );
+}
+
+function Layout(){
+  const{ theme } = useContext(ThemeContext);
+  return <div className={\`theme-$&#123;theme&#125\`}>Welcome</div>;
+}
+  </code></pre>
+
+  <p>✅ Use Context for low-frequency global state.</p>
+  <p>🚫 Avoid storing frequently-updated values (like form inputs) in Context—it can cause unnecessary re-renders.</p>
+
+  <h2>Redux: Industrial-Strength State Management</h2>
+
+  <p><strong>Redux</strong> is a predictable state container ideal for large applications with complex state logic, time travel debugging, and middleware needs.</p>
+
+  <pre><code>
+import{ createSlice, configureStore } from '@reduxjs/toolkit';
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState:{ value: 0 },
+  reducers:{
+    increment: (state) =>{ state.value += 1 },
+  }
+});
+
+export const{ increment } = counterSlice.actions;
+
+const store = configureStore({
+  reducer:{ counter: counterSlice.reducer },
+});
+  </code></pre>
+
+  <p>Connect to components using <code>useSelector</code> and <code>useDispatch</code>:</p>
+
+  <pre><code>
+import{ useSelector, useDispatch } from 'react-redux';
+import{ increment } from './store';
+
+function Counter(){
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
+  return (
+  <button onClick={() => dispatch(increment())}>{count}</button>
+  );
+}
+  </code></pre>
+
+  <h2>Zustand: Simpler Global State</h2>
+
+  <p><strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It’s ideal for simpler applications that still need shared global state.</p>
+
+  <pre><code>
+import create from 'zustand';
+
+const useStore = create((set) => ({
+  count: 0,
+  increment: () => set((state) => ({ count: state.count + 1 })),
+}));
+
+function Counter(){
+  const{ count, increment } = useStore();
+  return <button onClick={increment}>{count}</button>;
+}
+  </code></pre>
+
+  <p>Zustand is reactive, fast, and doesn't require a Provider component.</p>
+
+  <h2>Recoil: React-Friendly Atom-Based State</h2>
+
+  <p><strong>Recoil</strong> is a state management library from Facebook that works with React’s Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
+
+  <pre><code>
+import{ atom, useRecoilState } from 'recoil';
+
+const countAtom = atom({
+  key: 'count',
+  default: 0,
+});
+
+function Counter(){
+  const [count, setCount] = useRecoilState(countAtom);
+  return <button onClick={() => setCount(count + 1)}>{count}</button>;
+}
+  </code></pre>
+
+  <p>Recoil is useful when you need shared, reactive state without excessive boilerplate.</p>
+
+  <h2>State Management Tips</h2>
+
+  <ul>
+    <li>Start with <code>useState</code> and lift state when necessary</li>
+    <li>Use <code>useContext</code> for shared configuration or identity data</li>
+    <li>Switch to Redux, Recoil, or Zustand for cross-component state or when state logic grows</li>
+    <li>Memoize derived state using <code>useMemo</code> or selectors</li>
+  </ul>
+
+  <h2>When to Split State</h2>
+
+  <p>If a component’s state becomes too complex, break it into smaller chunks:</p>
+
+  <pre><code>
+const [form, setForm] = useState({
+  name: '',
+  email: '',
+  password: '',
+});
+  </code></pre>
+
+  <p>Or manage each input individually for clarity:</p>
+
+  <pre><code>
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
+  </code></pre>
+
+  <h2>Conclusion</h2>
+
+  <p>State is the heart of a React application. Choosing the right tool depends on your app’s size, complexity, and team preferences.</p>
+
+  <ul>
+    <li><strong>Small apps:</strong> use <code>useState</code> and lift state</li>
+    <li><strong>Shared config:</strong> use <code>Context</code></li>
+    <li><strong>Complex state:</strong> try Redux or Zustand</li>
+    <li><strong>Fine-grained reactivity:</strong> consider Recoil</li>
+  </ul>
+
+  <p>As always, start simple and refactor when your state needs outgrow local management.</p>
+
+  <p><strong>Happy state managing!</strong></p>
+</article>`,
+},
   {
     id: 3,
     title: "Creating Animations with Framer Motion",
@@ -2303,19 +2707,390 @@ registerBlockType('custom/contact-form', {
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
     // image: "/images/blogs/framer-motion-animations.png",
-    content: ``,
+    content: `
+  <article>
+    <h1>Creating Animations with Framer Motion</h1>
+
+    <p>Animation can breathe life into your web application, enhancing user experience and making your interface more engaging. <strong>Framer Motion</strong> is a popular React animation library that makes it easy to create beautiful and smooth animations with minimal code.</p>
+
+    <p>Whether you're building hover effects, page transitions, or complex motion sequences, Framer Motion provides an intuitive API for creating animations declaratively in React—including in Next.js apps.</p>
+
+    <h2>Why Use Framer Motion?</h2>
+
+    <ul>
+      <li>Easy to use, declarative API</li>
+      <li>Fully compatible with React and Next.js</li>
+      <li>Supports simple and complex animations</li>
+      <li>Great performance out of the box</li>
+      <li>Built-in support for gestures and layout transitions</li>
+    </ul>
+
+    <h2>Getting Started</h2>
+
+    <p>First, you need to install the library:</p>
+
+    <pre><code>npm install framer-motion</code></pre>
+
+    <p>Or with Yarn:</p>
+
+    <pre><code>yarn add framer-motion</code></pre>
+
+    <h2>Basic Animation</h2>
+
+    <p>To animate an element, you use the <code>motion</code> component instead of a regular HTML element. For example:</p>
+
+    <pre><code>import { motion } from 'framer-motion';
+
+
+export default function Box() {
+  return (
+  <
+motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+
+      Hello, I fade in!
+  <
+/motion.div>
+
+  );
+
+}</code></pre>
+
+    <p>This code makes a <code><
+div>
+</code> fade in over one second when it's mounted.</p>
+
+    <h2>Animating Position and Scale</h2>
+
+    <p>You can animate multiple properties at once—such as scale, x/y position, and rotation:</p>
+
+    <pre><code><
+motion.div
+  initial={{ x: -100, scale: 0.5 }}
+  animate={{ x: 0, scale: 1 }}
+  transition={{ type: 'spring', stiffness: 100 }}
+>
+
+  Slide &amp;
+ Scale
+<
+/motion.div>
+</code></pre>
+
+    <h2>Hover and Tap Animations</h2>
+
+    <p>Framer Motion makes it easy to add interaction-based animations using <code>whileHover</code> and <code>whileTap</code> props:</p>
+
+    <pre><code><
+motion.button
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+
+  Click Me
+<
+/motion.button>
+</code></pre>
+
+    <p>This provides subtle feedback when users interact with UI elements.</p>
+
+    <h2>Variants: Coordinated Animation</h2>
+
+    <p><strong>Variants</strong> are a powerful feature that let you define shared animation states for groups of components.</p>
+
+    <pre><code>const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3
+    }
+  }
+};
+
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+</code></pre>
+
+    <p>Now use them:</p>
+
+    <pre><code><
+motion.ul
+  variants={container}
+  initial="hidden"
+  animate="visible"
+>
+
+<
+motion.li variants={item}>
+Item 1<
+/motion.li>
+
+<
+motion.li variants={item}>
+Item 2<
+/motion.li>
+
+<
+motion.li variants={item}>
+Item 3<
+/motion.li>
+
+<
+/motion.ul>
+</code></pre>
+
+    <p>Each list item will animate in sequence thanks to <code>staggerChildren</code>.</p>
+
+    <h2>AnimatePresence: Exit Animations</h2>
+
+    <p><code>AnimatePresence</code> is used to animate components when they are removed from the React tree—such as modals or pages.</p>
+
+    <pre><code>import { AnimatePresence, motion } from 'framer-motion';
+
+
+function Modal({ isOpen }) {
+  return (
+  <
+AnimatePresence>
+
+      {isOpen &amp;
+&amp;
+ (
+      <
+motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+
+          Modal Content
+      <
+/motion.div>
+
+      )}
+  <
+/AnimatePresence>
+
+  );
+
+}</code></pre>
+
+    <p>This ensures smooth exit transitions instead of instantly removing elements.</p>
+
+    <h2>Page Transitions in Next.js</h2>
+
+    <p>In a Next.js app, you can use Framer Motion with <code>AnimatePresence</code> to animate between pages. Here's a basic example:</p>
+
+    <pre><code>// _app.js
+import { AnimatePresence } from 'framer-motion';
+
+
+export default function App({ Component, pageProps, router }) {
+  return (
+  <
+AnimatePresence mode="wait">
+
+    <
+Component {...pageProps} key={router.route} />
+
+  <
+/AnimatePresence>
+
+  );
+
+}</code></pre>
+
+    <p>Then add page-level animation inside each component:</p>
+
+    <pre><code>import { motion } from 'framer-motion';
+
+
+export default function HomePage() {
+  return (
+  <
+motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+
+      Home Page
+  <
+/motion.div>
+
+  );
+
+}</code></pre>
+
+    <h2>Motion Layout: Smart Animations</h2>
+
+    <p>Framer Motion also includes a powerful feature called <code>layout</code> that lets you animate between different layouts intelligently without defining the animation manually.</p>
+
+    <pre><code><
+motion.div layout>
+
+<
+p>
+Content that resizes smoothly<
+/p>
+
+<
+/motion.div>
+</code></pre>
+
+    <p>This is great for expanding cards, resizing elements, or toggling visibility with animation.</p>
+
+    <h2>Performance Tips</h2>
+
+    <ul>
+      <li>Use <code>layoutId</code> for shared layout animations</li>
+      <li>Use <code>AnimatePresence</code> for exit transitions</li>
+      <li>Keep animations lightweight on mobile</li>
+      <li>Avoid animating expensive properties like <code>box-shadow</code></li>
+    </ul>
+
+    <h2>Conclusion</h2>
+
+    <p>Framer Motion is one of the best tools for adding animation to React and Next.js projects. Its API is expressive, simple, and powerful—making it perfect for both beginners and pros.</p>
+
+    <p>By integrating animations thoughtfully, you can significantly improve user experience and create interfaces that feel smooth and modern.</p>
+
+    <p>Start small with hover effects, and soon you'll be building full-blown interactive motion UIs with coordinated transitions and animated layouts.</p>
+
+    <p><strong>Go ahead—add some motion to your next project and make it feel alive!</strong></p>
+  </article>
+
+`,
     categories: ["React", "Animations", "UI/UX"],
   },
   {
-    id: 4,
-    title: "Next.js API Routes: Building Server Endpoints",
-    excerpt:
-      "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
-    slug: "nextjs-api-routes",
-    publishedAt: "2018-01-01",
-    readingTime: "6 min read",
-    // image: "/images/blogs/nextjs-api-routes.png",
-    content: ``,
+  id: 4,
+  title: "Next.js API Routes: Building Server Endpoints",
+  excerpt:
+    "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
+  slug: "nextjs-api-routes",
+  publishedAt: "2018-01-01",
+  readingTime: "6 min read",
+  content: `
+  <article>
+  <h1>Next.js API Routes: Building Server Endpoints</h1>
+  <p>One of the most powerful features of <strong>Next.js</strong> is its ability to handle backend logic directly within your frontend application. With <strong>API Routes</strong>, you can create server-side endpoints as part of your project—no need to set up a separate backend service.</p>
+  <p>Whether you need to fetch data, handle forms, authenticate users, or integrate third-party services, Next.js API Routes let you write server-side code using the same stack and tools you're already using on the frontend.</p>
+  <h2>What Are API Routes?</h2>
+  <p>API Routes in Next.js allow you to define server-side functions that run in a Node.js environment. These functions are deployed as serverless functions when you host your app (e.g., on Vercel).</p>
+  <p>They are placed inside the <code>/pages/api</code> directory and are automatically mapped to the corresponding route.</p>
+  <p>Example:</p>
+  <pre><code>pages/api/hello.js → /api/hello</code></code></pre>
+  <h2>Creating Your First API Route</h2>
+  <p>Let’s create a simple API endpoint that returns a greeting message.</p>
+  <p>Create a file at <code>pages/api/hello.js</code>:</p>
+  <pre><code>export default function handler(req, res) {
+  res.status(200).json({ message: 'Hello from Next.js API!' });
+
+}</code></code></pre>
+  <p>Now, navigate to <a href="http://localhost:3000/api/hello">http://localhost:3000/api/hello</a> in your browser. You should see a JSON response:</p>
+  <pre><code>{ "message": "Hello from Next.js API!" }</code></code></pre>
+  <h2>Request Methods and Routing</h2>
+  <p>Each API route can handle different HTTP methods such as GET, POST, PUT, and DELETE. Use conditional logic inside your handler function to respond accordingly.</p>
+  <pre><code>export default function handler(req, res) {
+  if (req.method === 'GET') {
+  res.status(200).json({ message: 'This is a GET request' });
+
+  } else if (req.method === 'POST') {
+  res.status(200).json({ message: 'This is a POST request' });
+
+  } else {
+  res.setHeader('Allow', ['GET', 'POST']);
+
+  res.status(405).end(\`Method \${req.method} Not Allowed\`);
+
+  }
+}</code></code></pre>
+  <h2>Parsing Request Data</h2>
+  <p>For <code>POST</code> or <code>PUT</code> requests, you often need to access data sent in the request body. By default, Next.js automatically parses JSON request bodies for you.</p>
+  <pre><code>export default function handler(req, res) {
+  const { name } = req.body;
+
+  res.status(200).json({ message: \`Hello, \${name}\` });
+
+}</code></code></pre>
+  <p>To test this, you can send a POST request using a tool like Postman or with <code>fetch</code> in your app:</p>
+  <pre><code>fetch('/api/hello', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name: 'John' }),
+});
+</code></code></pre>
+  <h2>Using Query Parameters</h2>
+  <p>You can also handle URL query parameters with <code>req.query</code>:</p>
+  <pre><code>// pages/api/greet.js
+export default function handler(req, res) {
+  const { name } = req.query;
+
+  res.status(200).json({ greeting: \`Hello, \${name || 'Guest'}\` });
+
+}</code></code></pre>
+  <p>Access it by visiting <code>/api/greet?name=Sarah</code>.</p>
+  <h2>Creating Dynamic API Routes</h2>
+  <p>API routes can be dynamic by using square brackets in filenames. For example:</p>
+  <pre><code>// pages/api/user/[id].js
+export default function handler(req, res) {
+  const { id } = req.query;
+
+  res.status(200).json({ userId: id });
+
+}</code></code></pre>
+  <p>Now you can hit <code>/api/user/123</code> and receive a dynamic response:</p>
+  <pre><code>{ "userId": "123" }</code></code></pre>
+  <h2>Error Handling</h2>
+  <p>It's important to return proper HTTP status codes and messages for errors:</p>
+  <pre><code>export default function handler(req, res) {
+  try {
+  throw new Error('Something went wrong!');
+
+  } catch (error) {
+  res.status(500).json({ error: error.message });
+
+  }
+}</code></code></pre>
+  <h2>Working with External APIs</h2>
+  <p>You can use API routes as a proxy for third-party services. For example, calling an external weather API:</p>
+  <pre><code>export default async function handler(req, res) {
+  const response = await fetch('https://api.weatherapi.com/v1/current.json?key=YOUR_KEY&q=London');
+
+  const data = await response.json();
+
+  res.status(200).json(data);
+
+}</code></code></pre>
+  <h2>When to Use API Routes</h2>
+  <p>Use API Routes in Next.js when:</p>
+  <ul>
+    <li>You need backend functionality without a separate server</li>
+    <li>You want to connect to a database or external service</li>
+    <li>You need server-side form handling or authentication</li>
+    <li>You want to keep logic private (e.g., API keys, tokens)</li>
+  </ul>
+  <h2>Limitations of API Routes</h2>
+  <p>While powerful, API Routes are not a full backend framework. Consider these limitations:</p>
+  <ul>
+    <li>They are serverless functions (on Vercel), meaning cold starts and timeouts can occur</li>
+    <li>No built-in session management or long-lived connections</li>
+    <li>Stateful operations (like websockets or persistent storage) require external solutions</li>
+  </ul>
+  <h2>Conclusion</h2>
+  <p>Next.js API Routes offer a fast and seamless way to build server-side functionality within your frontend app. You can create custom endpoints, interact with databases, perform authentication, or fetch external data—all using familiar JavaScript/TypeScript syntax and tools.</p>
+  <p>This eliminates the need for an additional Express or Node.js backend and simplifies your project architecture. Whether you're building a simple form handler or a proxy to a third-party API, API Routes in Next.js are a powerful tool in your development toolkit.</p>
+  <p>As your project grows, you can easily refactor your API logic into reusable functions, integrate with middleware, or even connect to full-fledged backend platforms like Supabase or Prisma.</p>
+  <p><strong>Happy coding—and enjoy the power of full-stack development with Next.js!</strong></p>
+  </article>`,
     categories: ["Next.js", "API", "Full‑Stack Development"],
   },
   {
@@ -2327,9 +3102,146 @@ registerBlockType('custom/contact-form', {
     publishedAt: "2018-01-01",
     readingTime: "4 min read",
     // image: "/images/blogs/responsive-ui-tailwind.png",
-    content: ``,
+    content: `  <article>
+    <h1>Responsive UI with Tailwind CSS</h1>
+
+    <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
+
+    <p>In this article, we’ll dive into how Tailwind CSS simplifies the process of building responsive UIs, including an explanation of breakpoints, layout techniques, and real-world examples.</p>
+
+    <h2>What Makes a UI Responsive?</h2>
+
+    <p>A responsive UI adjusts seamlessly to different screen sizes and orientations. This means your app should look and work great whether it's being viewed on a phone, tablet, laptop, or desktop monitor. Key aspects of responsive design include:</p>
+
+    <ul>
+      <li>Flexible grid and layout systems</li>
+      <li>Scalable typography and spacing</li>
+      <li>Conditional rendering or styling for specific screen sizes</li>
+      <li>Media query-based design decisions</li>
+    </ul>
+
+    <p>Traditionally, this required custom media queries and complex CSS. Tailwind simplifies all of this using mobile-first utility classes and intuitive breakpoints.</p>
+
+    <h2>Understanding Tailwind's Breakpoints</h2>
+
+    <p>Tailwind CSS is mobile-first, meaning styles are applied by default to the smallest screens and can be overridden at larger breakpoints. Tailwind uses these default breakpoints:</p>
+
+    <ul>
+      <li><code>sm</code> – 640px</li>
+      <li><code>md</code> – 768px</li>
+      <li><code>lg</code> – 1024px</li>
+      <li><code>xl</code> – 1280px</li>
+      <li><code>2xl</code> – 1536px</li>
+    </ul>
+
+    <p>Using these is as simple as prefixing utility classes. For example:</p>
+
+    <pre><code><div class="text-base md:text-lg lg:text-xl">Responsive Text</div></code></code></pre>
+
+    <p>This applies <code>text-base</code> on all screens, <code>text-lg</code> on medium screens (768px+), and <code>text-xl</code> on large screens (1024px+).</p>
+
+    <h2>Responsive Layouts with Flex and Grid</h2>
+
+    <p>Tailwind provides utility classes for creating flexible and grid-based layouts. Let’s look at a responsive two-column layout that stacks on mobile:</p>
+
+    <pre><code><div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="bg-blue-100 p-4">Left Column</div>
+  <div class="bg-green-100 p-4">Right Column</div>
+</div></code></code></pre>
+
+    <p>Here, we use <code>grid-cols-1</code> for small screens (1 column), and <code>md:grid-cols-2</code> to switch to a 2-column layout on medium screens and above.</p>
+
+    <h2>Controlling Visibility Based on Screen Size</h2>
+
+    <p>Tailwind allows you to easily show or hide elements depending on screen size. This is useful for things like mobile menus or device-specific content:</p>
+
+    <pre><code><div class="block md:hidden">Mobile Only</div>
+<div class="hidden md:block">Desktop Only</div></code></code></pre>
+
+    <p>This approach avoids JavaScript toggling and provides fine-grained control using only CSS classes.</p>
+
+    <h2>Responsive Spacing and Sizing</h2>
+
+    <p>Tailwind's spacing utilities (padding, margin, width, height) can also be made responsive by prefixing them with breakpoints:</p>
+
+    <pre><code><div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
+<img class="w-full md:w-1/2" src="image.jpg" alt="Example" /></code></code></pre>
+
+    <p>This enables developers to scale spacing and sizing progressively as the screen size increases, without writing custom CSS.</p>
+
+    <h2>Responsive Typography and Text Alignment</h2>
+
+    <p>Typography plays a major role in UI readability. Tailwind provides responsive control over font size, alignment, and spacing:</p>
+
+    <pre><code><h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
+  Responsive Heading
+</h1>
+
+<p class="text-center md:text-left">
+  This paragraph centers on small screens and aligns left on larger screens.
+</p></code></code></pre>
+
+    <p>This fluidity ensures your content is both readable and visually appealing across devices.</p>
+
+    <h2>Building a Responsive Navbar</h2>
+
+    <p>Here’s an example of a responsive navigation bar using Tailwind’s utilities:</p>
+
+    <pre><code><nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+  <div class="text-lg font-bold">Brand</div>
+  <div class="hidden md:flex gap-4">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="md:hidden">
+    <button>☰</button>
+  </div>
+</nav></code></code></pre>
+
+    <p>This layout hides the full navigation on smaller screens and replaces it with a menu button. On larger screens, the full navigation is displayed.</p>
+
+    <h2>Dark Mode Responsiveness</h2>
+
+    <p>Tailwind also supports dark mode, which you can combine with responsiveness. For instance:</p>
+
+    <pre><code><div class="bg-white dark:bg-gray-900 text-black dark:text-white p-4 md:p-8">
+  Responsive and Themed Box
+</div></code></code></pre>
+
+    <p>This allows you to create UI components that respond to both screen size and user color preferences.</p>
+
+    <h2>Custom Breakpoints</h2>
+
+    <p>If the default breakpoints don’t fit your design needs, you can customize them in <code>tailwind.config.js</code>:</p>
+
+    <pre><code>module.exports = {
+  theme: {
+    extend: {},
+    screens: {
+      'xs': '480px',
+      ...require('tailwindcss/defaultTheme').screens,
+    },
+  },
+}</code></code></pre>
+
+    <p>With this, you can now use <code>xs:</code> to target screens as small as 480px.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>Responsive design no longer needs to be a headache. With Tailwind CSS, you can build highly adaptive interfaces using concise, expressive utility classes—without writing a single line of media query CSS. By mastering its mobile-first breakpoints and combining utilities for layout, spacing, and typography, you can create polished, scalable designs quickly.</p>
+
+    <p>Whether you're building a landing page, dashboard, or mobile-first app, Tailwind gives you the control to craft beautiful and responsive UIs that just work.</p>
+
+    <p>Now that you have a foundation, keep experimenting with layout strategies, explore Tailwind’s plugin ecosystem, and consider using components like Headless UI for more advanced, responsive interactions.</p>
+
+    <p><strong>Happy building!</strong></p>
+  </article>
+`,
     categories: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
   },
 ];
 
+
 export { CONSTANT, posts };
+
