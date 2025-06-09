@@ -7,7 +7,8 @@ import { Toaster } from '@/components/ui/toaster';
 import { getMetadataForPath } from '@/lib/metadata';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import StructuredData from '@/components/StructuredData';
+import { aboutMe } from '@/constants/structuredData';
 const interFont = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -22,7 +23,6 @@ const poppinsFont = Poppins({
 });
 
 export const metadata = getMetadataForPath('/');
-import type { Metadata } from 'next'
 
 
 export default function RootLayout({
@@ -35,6 +35,7 @@ export default function RootLayout({
       <head>
         <GoogleTagManager gtmId="GTM-NBKH9P8G" />
         <GoogleAnalytics gaId="G-5TPNEKJMLD" />
+        <StructuredData data={aboutMe} />
       </head>
       <body
         className={`${interFont.variable} ${poppinsFont.variable} font-sans min-h-screen bg-background text-foreground`}
