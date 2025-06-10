@@ -10,6 +10,7 @@ import { CONSTANT, posts } from "@/constants/blogs";
 import { notFound } from "next/navigation";
 import { formatDate } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
+import SingleBlogPage from "@/components/blogs/SingleBlogPage";
 
 const styles = {
   container: "container mx-auto px-4 py-32 md:py-40",
@@ -42,66 +43,13 @@ export async function generateMetadata({
   });
 }
 
-const BlogsPostPage = async ({ params }: { params: { slug: string } }) => {
+const Page = async ({ params }: { params: { slug: string } }) => {
   const post = posts?.find((post) => post?.slug === params?.slug);
   if (!post) notFound();
 
   return (
-    <div className={styles?.container}>
-      <div className={styles?.wrapper}>
-        <div className={"mb-8"}>
-          <div className={styles?.categoryWrapper}>
-            <a href={`/blogs/category/${post?.category.toLowerCase()}`}>
-              <Badge variant={"secondary"}>{post.category}</Badge>
-            </a>
-          </div>
-
-          <h1 className={styles?.title}>{post?.title}</h1>
-
-          <div className={styles?.metaRow}>
-            <div className={styles?.metaItem}>
-              <Calendar className={"h-4 w-4"} />
-              {formatDate(post?.publishedAt)}
-            </div>
-            <div className={styles?.metaItem}>
-              <Clock className={"h-4 w-4"} />
-              {post?.readingTime} {CONSTANT?.readUnit}
-            </div>
-          </div>
-          <div className={styles?.tagWrapper}>
-            {post?.tags?.map((tag: string) => (
-              <a href={`/blogs/tag/${tag.toLowerCase()}`} key={tag}>
-                <Badge key={tag} variant={"secondary"}>
-                  {tag}
-                </Badge>
-              </a>
-            ))}
-          </div>
-        </div>
-        {post?.image && (
-          <div className={styles?.imageWrapper}>
-            <Image
-              src={post?.image || "/images/blogs/blogs-placeholder.jpg"}
-              alt={post?.title}
-              fill
-              className={styles?.image || "/images/blogs/blogs-placeholder.jpg"}
-            />
-          </div>
-        )}
-        <div className={styles?.content}>
-          <div>
-            <HtmlRenderer html={post?.content} />
-          </div>
-        </div>
-        <div className={styles?.shareWrapper}>
-          <Button variant={"outline"}>
-            <Share2 className={"h-4 w-4 mr-2"} />
-            {CONSTANT?.shareButton}
-          </Button>
-        </div>
-      </div>
-    </div>
+    <SingleBlogPage post={post}/>
   );
 };
 
-export default BlogsPostPage;
+export default Page;

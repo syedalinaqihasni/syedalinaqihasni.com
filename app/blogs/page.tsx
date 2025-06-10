@@ -13,7 +13,7 @@ const styles = {
   description: 'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto',
 };
 
-export default async function BlogsPage() {
+export default async function Page() {
   return (
     <div className={styles?.container}>
       <div className={styles?.wrapper}>
