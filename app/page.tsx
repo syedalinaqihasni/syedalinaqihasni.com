@@ -12,6 +12,8 @@ import { SKILLS } from "@/constants/skills";
 import { posts } from "@/constants/blogs";
 import FeaturedServices from "@/components/home/featured-services";
 import FeaturedPricing from "@/components/home/featured-pricing";
+import StructuredData from '@/components/StructuredData';
+import { aboutMe, websiteSchema, organizationSchema } from '@/constants/structuredData';
 
 const styles = {
   sectionPadding: "py-16 px-4",
@@ -83,174 +85,145 @@ export default function Page() {
   } = CONTENT;
 
   return (
-    <div>
-      <section className={styles?.heroPadding}>
-        <div className={styles?.containerMedium}>
-          <div className={styles?.heroGrid}>
-            <div className={styles?.heroTextCol}>
-              <h1 className={styles?.heroTitle}>
-                {`Hi, I'm `}
-                {hero?.name}
-              </h1>
-              <h2 className={styles?.heroSubtitle}>{hero?.title}</h2>
-              <p className={styles?.heroDescription}>{hero?.description}</p>
+    <>
+      <StructuredData data={aboutMe} />
+      <StructuredData data={websiteSchema} />
+      <StructuredData data={organizationSchema} />
+      
+      <div>
+        <section className={styles?.heroPadding}>
+          <div className={styles?.containerMedium}>
+            <div className={styles?.heroGrid}>
+              <div className={styles?.heroTextCol}>
+                <h1 className={styles?.heroTitle}>
+                  {`Hi, I'm `}
+                  {hero?.name}
+                </h1>
+                <h2 className={styles?.heroSubtitle}>{hero?.title}</h2>
+                <p className={styles?.heroDescription}>{hero?.description}</p>
 
-              <div className={styles?.heroButtons}>
-                <Link href={buttons?.projects?.href}>
-                  <Button size={"lg"} className={"rounded-full"}>
-                    {buttons?.projects?.label}
+                <div className={styles?.heroButtons}>
+                  <Link href={buttons?.projects?.href}>
+                    <Button size={"lg"} className={"rounded-full"}>
+                      {buttons?.projects?.label}
+                      <ArrowRight className={"ml-2 h-4 w-4"} />
+                    </Button>
+                  </Link>
+                  <Link href={buttons?.hireMe?.href}>
+                    <Button
+                      size={"lg"}
+                      variant={"outline"}
+                      className={"rounded-full"}
+                    >
+                      {buttons?.hireMe?.label}
+                    </Button>
+                  </Link>
+                </div>
+
+                <SocialButtons links={socialLinks} />
+              </div>
+              <div className={styles?.heroImageCol}>
+                <div className={styles?.heroImageWrapper}>
+                  <Image
+                    src={hero?.imageSrc || "/images/blogs/blogs-placeholder.jpg"}
+                    alt={hero?.imageAlt}
+                    fill
+                    className={"object-cover"}
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Services Section */}
+        <section
+          className={`${styles?.sectionPadding} bg-muted/50`}
+          id={"services"}
+        >
+          <div className={styles?.containerLarge}>
+            <div className={styles?.projectsHeaderWrapper}>
+              <h2 className={styles?.sectionHeaderLeft}>My Services</h2>
+              <Link href="/services">
+                <Button variant={"outline"}>
+                  View All Services
+                  <ArrowRight className={"ml-2 h-4 w-4"} />
+                </Button>
+              </Link>
+            </div>
+            <FeaturedServices />
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section className={styles?.sectionPadding}>
+          <div className={styles?.containerLarge}>
+            <h2 className={styles?.sectionHeader}>{skills.title}</h2>
+            <HomeSkills />
+            <div className={styles?.centerText}>
+              <Link href={skills.seeAllHref}>
+                <Button>
+                  {skills?.seeAllLabel}
+                  <ArrowRight className={"ml-2 h-4 w-4"} />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+        
+        {/* Pricing Section */}
+        <section
+          className={`${styles?.sectionPadding} bg-muted/50`}
+          id={"pricing"}
+        >
+          <div className={styles?.containerLarge}>
+            <div className={styles?.projectsHeaderWrapper}>
+              <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
+              <Link href="/pricing">
+                <Button variant={"outline"}>
+                  View All Plans
+                  <ArrowRight className={"ml-2 h-4 w-4"} />
+                </Button>
+              </Link>
+            </div>
+            <FeaturedPricing />
+          </div>
+        </section>
+
+        {/* Blogs Section */}
+        {posts.length != 0 && (
+          <section
+            className={`${styles?.sectionPadding}`}
+            id={"blogs"}
+          >
+            <div className={styles?.containerLarge}>
+              <div className={styles?.projectsHeaderWrapper}>
+                <h2 className={styles?.sectionHeaderLeft}>Recent Blogs</h2>
+                <Link href={"/blogs"}>
+                  <Button variant={"outline"}>
+                    View All Blogs
                     <ArrowRight className={"ml-2 h-4 w-4"} />
                   </Button>
                 </Link>
-                <Link href={buttons?.hireMe?.href}>
-                  <Button
-                    size={"lg"}
-                    variant={"outline"}
-                    className={"rounded-full"}
-                  >
-                    {buttons?.hireMe?.label}
-                  </Button>
-                </Link>
               </div>
-
-              <SocialButtons links={socialLinks} />
+              <FeaturedBlogs />
             </div>
-            <div className={styles?.heroImageCol}>
-              <div className={styles?.heroImageWrapper}>
-                <Image
-                  src={hero?.imageSrc || "/images/blogs/blogs-placeholder.jpg"}
-                  alt={hero?.imageAlt}
-                  fill
-                  className={"object-cover"}
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>{" "}
-      {/* Services Section */}
-      <section
-        className={`${styles?.sectionPadding} bg-muted/50`}
-        id={"services"}
-      >
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>My Services</h2>
-            <Link href="/services">
-              <Button variant={"outline"}>
-                View All Services
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <FeaturedServices />
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section
-        className={`${styles?.sectionPadding} bg-muted/50`}
-        id={"services"}
-      >
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>My Services</h2>
-            <Link href="/services">
-              <Button variant={"outline"}>
-                View All Services
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <FeaturedServices />
-        </div>
-      </section>
-{/* {projects?.length != 0 && (
+          </section>
+        )}
+        
+        {/* Contact Section */}
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
-          id={"projects"}
+          id={"contact"}
         >
-          <div className={styles?.containerLarge}>
-            <div className={styles?.projectsHeaderWrapper}>
-              <h2 className={styles?.sectionHeaderLeft}>
-                {featuredProjects?.title}
-              </h2>
-              <Link href={featuredProjects?.viewAllHref}>
-                <Button variant={"outline"}>
-                  {featuredProjects?.viewAllLabel}
-                  <ArrowRight className={"ml-2 h-4 w-4"} />
-                </Button>
-              </Link>
-            </div>
-            <FeaturedProjects />
+          <div className={styles?.containerSmall}>
+            <h2 className={styles?.sectionHeader}>{contact.title}</h2>
+            <p className={styles?.contactText}>{contact.description}</p>
+            <Contact />
           </div>
         </section>
-      {/* Skills Section */}
-      <section className={styles?.sectionPadding}>
-        <div className={styles?.containerLarge}>
-          <h2 className={styles?.sectionHeader}>{skills.title}</h2>
-          <HomeSkills />
-          <div className={styles?.centerText}>
-            <Link href={skills.seeAllHref}>
-              <Button>
-                {skills?.seeAllLabel}
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-      {/* Pricing Section */}
-      <section
-        className={`${styles?.sectionPadding} bg-muted/50`}
-        id={"pricing"}
-      >
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="/pricing">
-              <Button variant={"outline"}>
-                View All Plans
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <FeaturedPricing />
-        </div>
-      </section>
-
-      {/* Blogs Section */}
-      {posts.length != 0 && (
-        <section
-          className={`${styles?.sectionPadding}`}
-          id={"blogs"}
-        >
-          <div className={styles?.containerLarge}>
-            <div className={styles?.projectsHeaderWrapper}>
-              <h2 className={styles?.sectionHeaderLeft}>Recent Blogs</h2>
-              <Link href={"/blogs"}>
-                <Button variant={"outline"}>
-                  View All Blogs
-                  <ArrowRight className={"ml-2 h-4 w-4"} />
-                </Button>
-              </Link>
-            </div>
-            <FeaturedBlogs />
-          </div>
-        </section>
-      )}
-      {/* Contact Section */}
-      <section
-        className={`${styles?.sectionPadding} bg-muted/50`}
-        id={"contact"}
-      >
-        <div className={styles?.containerSmall}>
-          <h2 className={styles?.sectionHeader}>{contact.title}</h2>
-          <p className={styles?.contactText}>{contact.description}</p>
-          <Contact />
-        </div>
-      </section>
-    </div>
+      </div>
+    </>
   );
 }

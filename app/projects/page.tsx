@@ -3,6 +3,8 @@ import {
     PAGE_TITLE,
     PAGE_DESCRIPTION, } from "@/constants/projects";
 import { getMetadataForPath } from "@/lib/metadata";
+import StructuredData from '@/components/StructuredData';
+import { portfolioSchema } from '@/constants/structuredData';
 
 export const metadata = getMetadataForPath('/projects');
 
@@ -15,15 +17,18 @@ const DESCRIPTION_styles =
 
 export default async function Page() {
   return (
-    <div className={CONTAINER_styles}>
-      <div className={CONTENT_WRAPPER_styles}>
-        <div className={HEADER_WRAPPER_styles}>
-          <h1 className={TITLE_styles}>{PAGE_TITLE}</h1>
-          <p className={DESCRIPTION_styles}>{PAGE_DESCRIPTION}</p>
-        </div>
+    <>
+      <StructuredData data={portfolioSchema} />
+      <div className={CONTAINER_styles}>
+        <div className={CONTENT_WRAPPER_styles}>
+          <div className={HEADER_WRAPPER_styles}>
+            <h1 className={TITLE_styles}>{PAGE_TITLE}</h1>
+            <p className={DESCRIPTION_styles}>{PAGE_DESCRIPTION}</p>
+          </div>
 
-        <ProjectList />
+          <ProjectList />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

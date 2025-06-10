@@ -129,208 +129,368 @@ export const aboutMe = {
     },
     telephone: "+92-316-2265948"
 };
-export const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Syed Ali Naqi Hasni",
-  "jobTitle": "Full Stack Developer",
-  "url": "https://www.syedalinaqihasni.com",
-  "email": "mailto:syedhasni151214@gmail.com",
-  "telephone": "+923162265948",
-  "image": "https://www.syedalinaqihasni.com/images/hasni.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Karachi",
-    "addressRegion": "Sindh",
-    "addressCountry": "PK"
-  },
-  "sameAs": [
-    "https://github.com/yourhandle",
-    "https://linkedin.com/in/yourhandle",
-    "https://twitter.com/yourhandle"
-  ],
-  "knowsAbout": ["React", "Next.js", "TypeScript", "Node.js", "DevOps"]
-};
 
 export const websiteSchema = {
-  "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Syed Hasni Portfolio",
-  "url": "https://www.syedalinaqihasni.com",
-  "potentialAction": {
+  name: "Syed Ali Naqi Hasni Portfolio",
+  url: "https://www.syedalinaqihasni.com",
+  description: "Professional portfolio of Syed Ali Naqi Hasni - Full Stack Developer specializing in React, Next.js, and modern web technologies",
+  author: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni"
+  },
+  potentialAction: {
     "@type": "SearchAction",
-    "target": "https://www.syedalinaqihasni.com/search?q={search_term_string}",
+    target: "https://www.syedalinaqihasni.com/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 };
 
-export const webPageSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Syed Hasni – Full Stack Developer Portfolio",
-  "url": "https://www.syedalinaqihasni.com",
-  "description": "Explore projects, services, blogs, and contact information for Syed Ali Naqi Hasni."
-};
-
 export const organizationSchema = {
-  "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Syed Hasni Digital",
-  "url": "https://www.syedalinaqihasni.com",
-  "logo": "https://www.syedalinaqihasni.com/logo.png",
-  "sameAs": [
-    "https://twitter.com/yourhandle",
-    "https://linkedin.com/in/yourhandle"
+  name: "Hasni Developers",
+  url: "https://www.syedalinaqihasni.com",
+  logo: "https://www.syedalinaqihasni.com/images/logo.png",
+  description: "Professional web development services specializing in React, Next.js, WordPress, and modern web technologies",
+  founder: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni"
+  },
+  sameAs: [
+    "https://github.com/syedalinaqihasni",
+    "https://linkedin.com/in/SyedAliNaqiHasni",
+    "https://x.com/SyedHasni1997"
   ],
-  "contactPoint": {
+  contactPoint: {
     "@type": "ContactPoint",
-    "telephone": "+923162265948",
-    "contactType": "Customer Service"
+    telephone: "+92-316-2265948",
+    contactType: "Customer Service",
+    email: "syedhasni151214@gmail.com"
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Karachi",
+    addressCountry: "PK"
   }
 };
 
-export const serviceSchema = {
-  "@context": "https://schema.org",
+export const servicesSchema = {
   "@type": "Service",
-  "name": "Custom Web Development",
-  "serviceType": "Web Design & Development",
-  "provider": {
+  name: "Web Development Services",
+  serviceType: "Professional Web Development",
+  description: "Comprehensive web development services including React, Next.js, WordPress, and e-commerce solutions",
+  provider: {
     "@type": "Person",
-    "name": "Syed Ali Naqi Hasni"
+    name: "Syed Ali Naqi Hasni",
+    url: "https://www.syedalinaqihasni.com"
   },
-  "areaServed": "Worldwide",
-  "availableChannel": {
+  areaServed: "Worldwide",
+  availableChannel: {
     "@type": "ServiceChannel",
-    "serviceUrl": "https://www.syedalinaqihasni.com/services"
-  }
-};
-
-export const certificateSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOccupationalCredential",
-  "credentialCategory": "Certificate",
-  "name": "Advanced React",
-  "recognizedBy": {
-    "@type": "Organization",
-    "name": "Frontend Masters"
+    serviceUrl: "https://www.syedalinaqihasni.com/services"
   },
-  "validFor": "Permanently"
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Frontend Development",
+      description: "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies",
+      price: "2500",
+      priceCurrency: "USD"
+    },
+    {
+      "@type": "Offer",
+      name: "WordPress Development",
+      description: "Custom WordPress websites, themes, and plugins tailored to your business needs",
+      price: "1500",
+      priceCurrency: "USD"
+    },
+    {
+      "@type": "Offer",
+      name: "E-commerce Solutions",
+      description: "Complete online store solutions with secure payment processing and inventory management",
+      price: "3000",
+      priceCurrency: "USD"
+    }
+  ]
 };
 
-export const courseSchema = {
-  "@context": "https://schema.org",
-  "@type": "Course",
-  "name": "Mastering React & Next.js",
-  "description": "Comprehensive Next.js course.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Syed Hasni Academy",
-    "sameAs": "https://www.syedalinaqihasni.com/courses"
-  }
+export const skillsSchema = {
+  "@type": "ItemList",
+  name: "Technical Skills",
+  description: "Comprehensive list of technical skills and expertise",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Frontend Development",
+      description: "React, Next.js, Vue.js, TypeScript, Tailwind CSS"
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Backend Development",
+      description: "Node.js, Express, MongoDB, PostgreSQL, REST APIs"
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "DevOps & Tools",
+      description: "Git, Docker, CI/CD, AWS, Vercel, Netlify"
+    }
+  ]
 };
 
-export const eventSchema = {
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "Next.js Masterclass",
-  "startDate": "2025-07-15T18:00:00+05:00",
-  "endDate": "2025-07-15T20:00:00+05:00",
-  "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-  "location": {
-    "@type": "VirtualLocation",
-    "url": "https://www.syedalinaqihasni.com/events/nextjs-masterclass"
-  },
-  "organizer": {
+export const portfolioSchema = {
+  "@type": "CreativeWork",
+  name: "Web Development Portfolio",
+  description: "Collection of professional web development projects and case studies",
+  author: {
     "@type": "Person",
-    "name": "Syed Ali Naqi Hasni"
+    name: "Syed Ali Naqi Hasni"
+  },
+  url: "https://www.syedalinaqihasni.com/projects",
+  workExample: [
+    {
+      "@type": "CreativeWork",
+      name: "E-Commerce Platform",
+      description: "Full-featured e-commerce platform with cart, checkout, and payment integration",
+      url: "https://www.syedalinaqihasni.com/projects/e-commerce-platform"
+    }
+  ]
+};
+
+export const blogSchema = {
+  "@type": "Blog",
+  name: "Syed Ali Naqi Hasni Blog",
+  description: "Technical blog covering web development, React, Next.js, and modern web technologies",
+  url: "https://www.syedalinaqihasni.com/blogs",
+  author: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni"
+  },
+  publisher: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni"
+  }
+};
+
+export const contactSchema = {
+  "@type": "ContactPage",
+  name: "Contact Syed Ali Naqi Hasni",
+  description: "Get in touch for web development projects and collaborations",
+  url: "https://www.syedalinaqihasni.com/contact",
+  mainEntity: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni",
+    email: "syedhasni151214@gmail.com",
+    telephone: "+92-316-2265948"
   }
 };
 
 export const resumeSchema = {
-  "@context": "https://schema.org",
   "@type": "CreativeWork",
-  "name": "Resume of Syed Ali Naqi Hasni",
-  "url": "https://www.syedalinaqihasni.com/resume.pdf",
-  "author": {
+  name: "Resume - Syed Ali Naqi Hasni",
+  description: "Professional resume showcasing experience, skills, and achievements in web development",
+  url: "https://www.syedalinaqihasni.com/resume",
+  author: {
     "@type": "Person",
-    "name": "Syed Ali Naqi Hasni"
+    name: "Syed Ali Naqi Hasni"
   },
-  "fileFormat": "application/pdf"
+  fileFormat: "text/html",
+  downloadUrl: "https://www.syedalinaqihasni.com/resume.pdf"
 };
 
-export const gallerySchema = {
-  "@context": "https://schema.org",
-  "@type": "ImageGallery",
-  "name": "Portfolio Screenshots",
-  "url": "https://www.syedalinaqihasni.com/gallery",
-  "image": [
-    "https://www.syedalinaqihasni.com/images/project1.png",
-    "https://www.syedalinaqihasni.com/images/project2.png"
-  ]
-};
-
-export const creativeWorkSchema = {
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  "name": "AI-Powered Resume Analyzer",
-  "description": "Tool that analyzes resumes using GPT.",
-  "author": {
-    "@type": "Person",
-    "name": "Syed Ali Naqi Hasni"
-  },
-  "url": "https://www.syedalinaqihasni.com/projects/resume-analyzer"
-};
-
-export const blogPostSchema = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Why I Use Next.js App Router for Everything",
-  "author": {
-    "@type": "Person",
-    "name": "Syed Ali Naqi Hasni"
-  },
-  "datePublished": "2025-06-08",
-  "image": "https://www.syedalinaqihasni.com/images/nextjs-cover.png",
-  "url": "https://www.syedalinaqihasni.com/blog/nextjs-everything"
-};
-
-export const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Next.js Portfolio Template",
-  "description": "Modern portfolio starter with Tailwind & App Router.",
-  "image": "https://www.syedalinaqihasni.com/images/portfolio-template.png",
-  "brand": "Syed Hasni Digital",
-  "offers": {
-    "@type": "Offer",
-    "price": "29.00",
-    "priceCurrency": "USD",
-    "url": "https://www.syedalinaqihasni.com/products/nextjs-template"
-  }
-};
-
-export const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+export const experienceSchema = {
+  "@type": "ItemList",
+  name: "Professional Experience",
+  description: "Work history and professional experience in web development",
+  itemListElement: [
     {
       "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.syedalinaqihasni.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Projects",
-      "item": "https://www.syedalinaqihasni.com/projects"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "AI Resume Tool",
-      "item": "https://www.syedalinaqihasni.com/projects/ai-resume-tool"
+      position: 1,
+      item: {
+        "@type": "OrganizationRole",
+        roleName: "Sr. Web Developer",
+        startDate: "2021",
+        endDate: "Present",
+        worksFor: {
+          "@type": "Organization",
+          name: "eSpark Consulting Group"
+        }
+      }
     }
   ]
 };
+
+export const certificatesSchema = {
+  "@type": "ItemList",
+  name: "Professional Certifications",
+  description: "List of professional certifications and achievements",
+  url: "https://www.syedalinaqihasni.com/certificates"
+};
+
+export const gallerySchema = {
+  "@type": "ImageGallery",
+  name: "Portfolio Gallery",
+  description: "Visual showcase of projects, work, and creative moments",
+  url: "https://www.syedalinaqihasni.com/gallery"
+};
+
+export const pricingSchema = {
+  "@type": "ItemList",
+  name: "Web Development Pricing",
+  description: "Transparent pricing for web development services",
+  url: "https://www.syedalinaqihasni.com/pricing",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Offer",
+        name: "Starter Package",
+        description: "Perfect for small businesses and personal projects",
+        price: "1500",
+        priceCurrency: "USD"
+      }
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Offer",
+        name: "Professional Package",
+        description: "Ideal for growing businesses with advanced needs",
+        price: "3500",
+        priceCurrency: "USD"
+      }
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Offer",
+        name: "Enterprise Package",
+        description: "Comprehensive solution for large-scale projects",
+        price: "7500",
+        priceCurrency: "USD"
+      }
+    }
+  ]
+};
+
+export const archiveSchema = {
+  "@type": "CollectionPage",
+  name: "Development Archive",
+  description: "Collection of articles, discussions, and contributions across various platforms",
+  url: "https://www.syedalinaqihasni.com/archive"
+};
+
+export const linksSchema = {
+  "@type": "LinkRole",
+  name: "Social Links",
+  description: "Collection of social media profiles and professional links",
+  url: "https://www.syedalinaqihasni.com/links"
+};
+
+export const socialsSchema = {
+  "@type": "CollectionPage",
+  name: "Social Media",
+  description: "Latest posts and activities across social media platforms",
+  url: "https://www.syedalinaqihasni.com/socials"
+};
+
+export const eventsSchema = {
+  "@type": "ItemList",
+  name: "Events",
+  description: "Tech talks, meetups, and events",
+  url: "https://www.syedalinaqihasni.com/events"
+};
+
+// Function to generate blog post schema
+export const generateBlogPostSchema = (post: any) => ({
+  "@type": "BlogPosting",
+  headline: post.title,
+  description: post.excerpt,
+  image: post.image,
+  author: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni",
+    url: "https://www.syedalinaqihasni.com"
+  },
+  publisher: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni"
+  },
+  datePublished: post.publishedAt,
+  dateModified: post.publishedAt,
+  url: `https://www.syedalinaqihasni.com/blogs/${post.slug}`,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `https://www.syedalinaqihasni.com/blogs/${post.slug}`
+  },
+  keywords: post.tags.join(", "),
+  articleSection: post.category,
+  wordCount: post.content.split(' ').length,
+  timeRequired: post.readingTime
+});
+
+// Function to generate project schema
+export const generateProjectSchema = (project: any) => ({
+  "@type": "CreativeWork",
+  name: project.title,
+  description: project.description,
+  image: project.image,
+  url: `https://www.syedalinaqihasni.com/projects/${project.slug}`,
+  author: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni"
+  },
+  dateCreated: project.publishedAt,
+  keywords: project.technologies.join(", "),
+  genre: project.category,
+  workExample: {
+    "@type": "WebSite",
+    url: project.liveUrl
+  },
+  codeRepository: project.githubUrl
+});
+
+// Function to generate event schema
+export const generateEventSchema = (event: any) => ({
+  "@type": "Event",
+  name: event.title,
+  description: event.description,
+  image: event.image,
+  startDate: event.date,
+  eventStatus: "https://schema.org/EventScheduled",
+  eventAttendanceMode: event.virtual 
+    ? "https://schema.org/OnlineEventAttendanceMode" 
+    : "https://schema.org/OfflineEventAttendanceMode",
+  location: event.virtual 
+    ? {
+        "@type": "VirtualLocation",
+        url: `https://www.syedalinaqihasni.com/events/${event.slug}`
+      }
+    : {
+        "@type": "Place",
+        name: event.location,
+        address: event.location
+      },
+  organizer: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni",
+    url: "https://www.syedalinaqihasni.com"
+  },
+  url: `https://www.syedalinaqihasni.com/events/${event.slug}`
+});
+
+// Breadcrumb schema generator
+export const generateBreadcrumbSchema = (items: Array<{name: string, url: string}>) => ({
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    item: item.url
+  }))
+});

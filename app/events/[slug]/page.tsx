@@ -7,6 +7,8 @@ import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 import { notFound } from "next/navigation";
 import { formatDateTime } from "@/lib/utils";
 import { events } from "@/constants/events";
+import StructuredData from '@/components/StructuredData';
+import { generateEventSchema, generateBreadcrumbSchema } from '@/constants/structuredData';
 
 export async function generateMetadata({
   params,
@@ -55,87 +57,99 @@ const Page = async ({ params }: { params: { slug: string } }) => {
     notFound();
   }
 
+  const eventSchema = generateEventSchema(event);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://www.syedalinaqihasni.com" },
+    { name: "Events", url: "https://www.syedalinaqihasni.com/events" },
+    { name: event.title, url: `https://www.syedalinaqihasni.com/events/${event.slug}` }
+  ]);
+
   return (
-    <div className={styles?.container}>
-      <div className={styles?.wrapper}>
-        <div className={styles?.header}>
-          <Badge variant={"secondary"} className={styles?.badge}>
-            {event?.type}
-          </Badge>
-          <h1 className={styles?.title}>{event?.title}</h1>
-          <p className={styles?.description}>{event?.description}</p>
-          <Button>
-            <Share2 className={"h-4 w-4 mr-2"} />
-            Share Event
-          </Button>
-        </div>
-        <div className={styles?.imageWrapper}>
-          <Image
-            src={event?.image || "/images/blogs/blogs-placeholder.jpg"}
-            alt={event?.title}
-            fill
-            className={styles?.image }
-          />
-        </div>
-        <Card className={styles?.card}>
-          <CardContent className={styles?.cardContent}>
-            <div className={styles?.grid}>
-              <div>
-                <h2 className={styles?.sectionTitle}>Event Details</h2>
-                <div className={styles?.detailGroup}>
-                  <div className={styles?.detailRow}>
-                    <Calendar className={styles?.icon} />
-                    <div>
-                      <h3 className={styles?.label}>Date & Time</h3>
-                      <p className={styles?.text}>
-                        {formatDateTime(event?.date)}
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles?.detailRow}>
-                    <MapPin className={styles?.icon} />
-                    <div>
-                      <h3 className={styles?.label}>Location</h3>
-                      <p className={styles?.text}>{event?.location}</p>
-                      {event?.virtual && (
-                        <Badge
-                          variant={"secondary"}
-                          className={styles?.virtualBadge}
-                        >
-                          Virtual Event
-                        </Badge>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {!event?.virtual && (
+    <>
+      <StructuredData data={eventSchema} />
+      <StructuredData data={breadcrumbSchema} />
+      
+      <div className={styles?.container}>
+        <div className={styles?.wrapper}>
+          <div className={styles?.header}>
+            <Badge variant={"secondary"} className={styles?.badge}>
+              {event?.type}
+            </Badge>
+            <h1 className={styles?.title}>{event?.title}</h1>
+            <p className={styles?.description}>{event?.description}</p>
+            <Button>
+              <Share2 className={"h-4 w-4 mr-2"} />
+              Share Event
+            </Button>
+          </div>
+          <div className={styles?.imageWrapper}>
+            <Image
+              src={event?.image || "/images/blogs/blogs-placeholder.jpg"}
+              alt={event?.title}
+              fill
+              className={styles?.image }
+            />
+          </div>
+          <Card className={styles?.card}>
+            <CardContent className={styles?.cardContent}>
+              <div className={styles?.grid}>
                 <div>
-                  <iframe
-                    title={"Event Location"}
-                    width={"100%"}
-                    height={"300"}
-                    frameBorder={"0"}
-                    src={`https://www.google.com/maps/embed/v1/place?key=${
-                      process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
-                    }&q=${encodeURIComponent(event?.location)}`}
-                    allowFullScreen
-                    className={styles?.map}
-                  />
+                  <h2 className={styles?.sectionTitle}>Event Details</h2>
+                  <div className={styles?.detailGroup}>
+                    <div className={styles?.detailRow}>
+                      <Calendar className={styles?.icon} />
+                      <div>
+                        <h3 className={styles?.label}>Date & Time</h3>
+                        <p className={styles?.text}>
+                          {formatDateTime(event?.date)}
+                        </p>
+                      </div>
+                    </div>
+                    <div className={styles?.detailRow}>
+                      <MapPin className={styles?.icon} />
+                      <div>
+                        <h3 className={styles?.label}>Location</h3>
+                        <p className={styles?.text}>{event?.location}</p>
+                        {event?.virtual && (
+                          <Badge
+                            variant={"secondary"}
+                            className={styles?.virtualBadge}
+                          >
+                            Virtual Event
+                          </Badge>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              )}
-            </div>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardContent className={styles?.cardContent}>
-            <div className={styles?.content}>
-              <div dangerouslySetInnerHTML={{ __html: event?.content }} />
-            </div>
-          </CardContent>
-        </Card>
+                {!event?.virtual && (
+                  <div>
+                    <iframe
+                      title={"Event Location"}
+                      width={"100%"}
+                      height={"300"}
+                      frameBorder={"0"}
+                      src={`https://www.google.com/maps/embed/v1/place?key=${
+                        process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+                      }&q=${encodeURIComponent(event?.location)}`}
+                      allowFullScreen
+                      className={styles?.map}
+                    />
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className={styles?.cardContent}>
+              <div className={styles?.content}>
+                <div dangerouslySetInnerHTML={{ __html: event?.content }} />
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

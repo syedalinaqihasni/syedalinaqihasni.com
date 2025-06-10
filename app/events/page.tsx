@@ -9,6 +9,8 @@ import { Event } from "@/types/events";
 import { getMetadataForPath } from "@/lib/metadata";
 import { formatDateTime } from "@/lib/utils";
 import { events } from "@/constants/events";
+import StructuredData from '@/components/StructuredData';
+import { eventsSchema } from '@/constants/structuredData';
 
 const PAGE_TITLE = "Upcoming Events";
 const PAGE_DESCRIPTION =
@@ -47,68 +49,71 @@ const button = "w-full";
 export default function Page() {
 
   return (
-    <main className={container}>
-      <div className={maxWidthWrapper}>
-        <header className={header}>
-          <h1 className={title}>{PAGE_TITLE}</h1>
-          <p className={description}>{PAGE_DESCRIPTION}</p>
-        </header>
+    <>
+      <StructuredData data={eventsSchema} />
+      <main className={container}>
+        <div className={maxWidthWrapper}>
+          <header className={header}>
+            <h1 className={title}>{PAGE_TITLE}</h1>
+            <p className={description}>{PAGE_DESCRIPTION}</p>
+          </header>
 
-        <section className={grid}>
-          {events?.map((event) => (
-            <Card key={event?.id} className={card}>
-              <Link
-                href={`/events/${event?.slug}`}
-                passHref
-                className={imageWrapper}
-              >
-                <Image
-                  src={event?.image || '/images/blogs/blogs-placeholder.jpg'}
-                  alt={event?.title}
-                  fill
-                  className={image}
-                />
-                {event?.virtual && (
-                  <Badge className={virtualBadge} variant={"secondary"}>
-                    Virtual Event
-                  </Badge>
-                )}
-              </Link>
-
-              <CardContent className={"p-6"}>
-                <Badge variant={"outline"} className={badge}>
-                  {event?.type}
-                </Badge>
-
+          <section className={grid}>
+            {events?.map((event) => (
+              <Card key={event?.id} className={card}>
                 <Link
                   href={`/events/${event?.slug}`}
                   passHref
-                  className={eventTitle}
+                  className={imageWrapper}
                 >
-                  {event?.title}
+                  <Image
+                    src={event?.image || '/images/blogs/blogs-placeholder.jpg'}
+                    alt={event?.title}
+                    fill
+                    className={image}
+                  />
+                  {event?.virtual && (
+                    <Badge className={virtualBadge} variant={"secondary"}>
+                      Virtual Event
+                    </Badge>
+                  )}
                 </Link>
 
-                <p className={eventDescription}>{event?.description}</p>
+                <CardContent className={"p-6"}>
+                  <Badge variant={"outline"} className={badge}>
+                    {event?.type}
+                  </Badge>
 
-                <div className={eventDetails}>
-                  <div className={eventDetailRow}>
-                    <Calendar className={"h-4 w-4"} />
-                    <time dateTime={event?.date}>{formatDateTime(event?.date)}</time>
-                  </div>
-                  <div className={eventDetailRow}>
-                    <MapPin className={"h-4 w-4"} />
-                    {event?.location}
-                  </div>
-                </div>
+                  <Link
+                    href={`/events/${event?.slug}`}
+                    passHref
+                    className={eventTitle}
+                  >
+                    {event?.title}
+                  </Link>
 
-                <Button asChild className={button}>
-                  <Link href={`/events/${event?.slug}`}>View Details</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </section>
-      </div>
-    </main>
+                  <p className={eventDescription}>{event?.description}</p>
+
+                  <div className={eventDetails}>
+                    <div className={eventDetailRow}>
+                      <Calendar className={"h-4 w-4"} />
+                      <time dateTime={event?.date}>{formatDateTime(event?.date)}</time>
+                    </div>
+                    <div className={eventDetailRow}>
+                      <MapPin className={"h-4 w-4"} />
+                      {event?.location}
+                    </div>
+                  </div>
+
+                  <Button asChild className={button}>
+                    <Link href={`/events/${event?.slug}`}>View Details</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </section>
+        </div>
+      </main>
+    </>
   );
 }
