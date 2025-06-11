@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import BlogsList from '@/components/blogs/blogs-list';
 import { posts } from '@/constants/blogs';
-import { toProperCase } from '@/lib/utils';
+import { dashToProperCase, } from '@/lib/utils';
 
 
 // Optional: You can add specific overrides here
@@ -23,7 +23,7 @@ const styles = {
 // Generate <head> metadata dynamically
 export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {
   const tag = params.tag;
-  const title = `${toProperCase(tag)} Blogs`;
+  const title = `${dashToProperCase(tag)} Blogs`;
   const description =
     DESCRIPTION_OVERRIDES[tag.toLowerCase()] ||
     `These are ${tag.toLowerCase()} blogs for curious minds.`;
@@ -36,15 +36,18 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
 
 // Server component
 export default async function Page({ params }: { params: { tag: string } }) {
-  const tag = params.tag.toLowerCase();
-  const categorizedPosts = posts.filter(post =>
-  post.tags.map(c => c.toLowerCase()).includes(tag)
+  const tag = params.tag;
+  console.log(tag);
+  
+const tagedPosts = posts.filter(post =>
+  post.tags.some(c => c.toLowerCase().replace(/\s+/g, '-').includes(tag))
 );
 
-  const title = `${toProperCase(tag)} Blogs`;
+
+  const title = `${dashToProperCase(tag)} Blogs`;
   const description =
     DESCRIPTION_OVERRIDES[tag] ||
-    `These are ${tag} blogs for curious minds.`;
+    `These are ${dashToProperCase(tag)} Blogs for curious minds.`;
 
   return (
     <div className={styles.container}>
@@ -53,7 +56,7 @@ export default async function Page({ params }: { params: { tag: string } }) {
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.description}>{description}</p>
         </div>
-        <BlogsList posts={categorizedPosts} />
+        <BlogsList posts={tagedPosts} />
       </div>
     </div>
   );

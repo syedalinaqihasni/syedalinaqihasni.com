@@ -64,7 +64,7 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
           </div>
           <div className={styles?.tagWrapper}>
             {post?.tags?.map((tag: string) => (
-              <a href={`/blogs/tag/${tag.toLowerCase()}`} key={tag}>
+              <a href={`/blogs/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`} key={tag}>
                 <Badge key={tag} variant={"secondary"}>
                   {tag}
                 </Badge>
