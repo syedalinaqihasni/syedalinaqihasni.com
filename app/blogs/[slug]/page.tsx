@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
-import { Calendar, Clock, Share2 } from "lucide-react";
+import { ArrowRight, Calendar, Clock, Share2 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,8 @@ import HtmlRenderer from "@/components/HtmlRenderer";
 import SingleBlogPage from "@/components/blogs/SingleBlogPage";
 import StructuredData from '@/components/StructuredData';
 import { generateBlogPostSchema, generateBreadcrumbSchema } from '@/constants/structuredData';
+import Link from "next/link";
+import FeaturedBlogs from "@/components/blogs/featured-blogs";
 
 const styles = {
   container: "container mx-auto px-4 py-32 md:py-40",
@@ -27,7 +29,29 @@ const styles = {
   content: "prose dark:prose-invert max-w-none mb-16",
   shareWrapper: "text-center",
 };
-
+const styles2 = {
+  sectionPadding: "py-2 px-4",
+  heroPadding: "pt-32 pb-16 md:pt-40 md:pb-20 px-4",
+  containerSmall: "container mx-auto max-w-4xl",
+  containerMedium: "container mx-auto max-w-5xl",
+  containerLarge: "container mx-auto max-w-6xl",
+  heroGrid: "grid grid-cols-1 md:grid-cols-12 gap-8 items-center",
+  heroTextCol: "md:col-span-7",
+  heroImageCol: "md:col-span-5 flex justify-center md:justify-end",
+  heroImageWrapper:
+    "relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl",
+  heroTitle:
+    "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400",
+  heroSubtitle: "text-2xl md:text-3xl font-medium mb-6",
+  heroDescription: "text-lg md:text-xl text-muted-foreground mb-8 max-w-lg",
+  heroButtons: "flex flex-wrap gap-4",
+  socialButtons: "flex gap-4 mt-8",
+  sectionHeader: "text-3xl font-bold mb-10 text-center",
+  sectionHeaderLeft: "text-3xl font-bold mb-10",
+  projectsHeaderWrapper: "flex justify-between items-center mb-10",
+  centerText: "text-center mt-10",
+  contactText: "text-center text-muted-foreground mb-10 max-w-2xl mx-auto",
+};
 export async function generateMetadata({
   params,
 }: {
@@ -61,6 +85,29 @@ const Page = async ({ params }: { params: { slug: string } }) => {
       <StructuredData data={blogPostSchema} />
       <StructuredData data={breadcrumbSchema} />
       <SingleBlogPage post={post}/>
+      <div className="container">
+{/* Blogs Section */}
+        {posts.length != 0 && (
+          <section
+            className={`${styles2?.sectionPadding}`}
+            id={"blogs"}
+          >
+            <div className={styles2?.containerLarge}>
+              <div className={styles2?.projectsHeaderWrapper}>
+                <h2 className={styles2?.sectionHeaderLeft}>Recent Blogs</h2>
+                <Link href={"/blogs"}>
+                  <Button variant={"outline"}>
+                    View All Blogs
+                    <ArrowRight className={"ml-2 h-4 w-4"} />
+                  </Button>
+                </Link>
+              </div>
+              <FeaturedBlogs />
+            </div>
+          </section>
+        )}
+      </div>
+        
     </>
   );
 };
