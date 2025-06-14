@@ -4,6 +4,7 @@ type GalleryImage = {
   alt: string;
   caption: string;
   album: string;
+  link?: string;
   tags: string[];
 };
 

@@ -1,8 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
-
-export const metas = [
+const metas = [
   {
     id: 1,
     src: `/gallery/blogs-placeholder.jpg`,
