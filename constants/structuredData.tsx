@@ -409,9 +409,9 @@ export const eventsSchema = {
 // Function to generate blog post schema
 export const generateBlogPostSchema = (post: any) => ({
   "@type": "BlogPosting",
-  headline: post.title,
-  description: post.excerpt,
-  image: post.image,
+  headline: post?.title,
+  description: post?.excerpt,
+  image: post?.image,
   author: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
@@ -421,17 +421,17 @@ export const generateBlogPostSchema = (post: any) => ({
     "@type": "Person",
     name: "Syed Ali Naqi Hasni"
   },
-  datePublished: post.publishedAt,
-  dateModified: post.publishedAt,
-  url: `https://www.syedalinaqihasni.com/blogs/${post.slug}`,
+  datePublished: post?.publishedAt,
+  dateModified: post?.publishedAt,
+  url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `https://www.syedalinaqihasni.com/blogs/${post.slug}`
+    "@id": `https://www.syedalinaqihasni.com/blogs/${post?.slug}`
   },
-  keywords: post.tags.join(", "),
-  articleSection: post.category,
-  wordCount: post.content.split(' ').length,
-  timeRequired: post.readingTime
+  keywords: post?.tags.join(", "),
+  articleSection: post?.category,
+  wordCount: post?.content.split(' ')?.length,
+  timeRequired: post?.readingTime
 });
 
 // Function to generate project schema
@@ -458,30 +458,30 @@ export const generateProjectSchema = (project: any) => ({
 // Function to generate event schema
 export const generateEventSchema = (event: any) => ({
   "@type": "Event",
-  name: event.title,
-  description: event.description,
-  image: event.image,
-  startDate: event.date,
+  name: event?.title,
+  description: event?.description,
+  image: event?.image,
+  startDate: event?.date,
   eventStatus: "https://schema.org/EventScheduled",
-  eventAttendanceMode: event.virtual 
+  eventAttendanceMode: event?.virtual 
     ? "https://schema.org/OnlineEventAttendanceMode" 
     : "https://schema.org/OfflineEventAttendanceMode",
-  location: event.virtual 
+  location: event?.virtual 
     ? {
         "@type": "VirtualLocation",
-        url: `https://www.syedalinaqihasni.com/events/${event.slug}`
+        url: `https://www.syedalinaqihasni.com/events/${event?.slug}`
       }
     : {
         "@type": "Place",
-        name: event.location,
-        address: event.location
+        name: event?.location,
+        address: event?.location
       },
   organizer: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
     url: "https://www.syedalinaqihasni.com"
   },
-  url: `https://www.syedalinaqihasni.com/events/${event.slug}`
+  url: `https://www.syedalinaqihasni.com/events/${event?.slug}`
 });
 
 // Breadcrumb schema generator

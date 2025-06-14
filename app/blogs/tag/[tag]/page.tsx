@@ -37,10 +37,9 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
 // Server component
 export default async function Page({ params }: { params: { tag: string } }) {
   const tag = params.tag;
-  console.log(tag);
   
 const tagedPosts = posts.filter(post =>
-  post.tags.some(c => c.toLowerCase().replace(/\s+/g, '-').includes(tag))
+  post?.tags.some(c => c.toLowerCase().replace(/\s+/g, '-').includes(tag))
 );
 
 
@@ -50,11 +49,11 @@ const tagedPosts = posts.filter(post =>
     `These are ${dashToProperCase(tag)} Blogs for curious minds.`;
 
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles.header}>
-          <h1 className={styles.title}>{title}</h1>
-          <p className={styles.description}>{description}</p>
+    <div className={styles?.container}>
+      <div className={styles?.wrapper}>
+        <div className={styles?.header}>
+          <h1 className={styles?.title}>{title}</h1>
+          <p className={styles?.description}>{description}</p>
         </div>
         <BlogsList posts={tagedPosts} />
       </div>

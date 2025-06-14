@@ -24,6 +24,16 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
     description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
   },
   {
+    path: '/blogs/tag',
+    title: 'Blogs Tags',
+    description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
+  },
+  {
+    path: '/blogs/category',
+    title: 'Blogs Categories',
+    description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
+  },
+  {
     path: '/contact',
     title: 'Contact',
     description: 'Get in touch with me via email or social platforms.',

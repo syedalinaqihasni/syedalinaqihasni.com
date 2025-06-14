@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "filename": "mountain-landscape.jpg",
+      "title": "Majestic Mountain Vista",
+      "description": "A breathtaking view of snow-capped peaks during golden hour, showcasing nature's raw beauty and tranquil majesty.",
+      "alt": "Snow-capped mountain peaks illuminated by golden sunlight with a serene valley below"
+    },
+    {
+      "filename": "ocean-sunset.jpg",
+      "title": "Ocean Sunset Serenity",
+      "description": "Waves gently lapping the shore as the sun sets over the infinite horizon, painting the sky in warm hues.",
+      "alt": "Ocean waves meeting sandy beach during a vibrant orange and pink sunset"
+    },
+    {
+      "filename": "forest-path.jpg",
+      "title": "Enchanted Forest Trail",
+      "description": "A winding path through dense woodland, where dappled sunlight filters through the canopy above.",
+      "alt": "Narrow dirt path winding through a lush green forest with sunlight streaming through trees"
+    },
+    {
+      "filename": "city-skyline.jpg",
+      "title": "Urban Symphony",
+      "description": "The city comes alive at twilight, with countless lights creating a mesmerizing urban landscape.",
+      "alt": "Modern city skyline at dusk with illuminated skyscrapers and city lights"
+    },
+    {
+      "filename": "lavender-field.jpg",
+      "title": "Lavender Dreams",
+      "description": "Endless rows of purple lavender swaying in the gentle breeze under a perfect blue sky.",
+      "alt": "Purple lavender field stretching to the horizon under a clear blue sky"
+    },
+    {
+      "filename": "aurora-borealis.jpg",
+      "title": "Northern Lights Magic",
+      "description": "The aurora borealis dances across the star-filled sky, creating nature's most spectacular light show.",
+      "alt": "Green and purple aurora borealis dancing across a dark star-filled sky above a snowy landscape"
+    }
+  ]
+}

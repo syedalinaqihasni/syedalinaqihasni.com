@@ -8,96 +8,28 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Masonry from 'react-masonry-css';
 import { GalleryImage } from '@/types/gallery';
+import { Images } from "@/types/images";
+import Link from 'next/link';
+import { ExternalLink } from 'lucide-react';
 
-const albums = [
-  { id: 'all', name: 'All Photos' },
-  { id: 'work', name: 'Work' },
-  { id: 'events', name: 'Events' },
-  { id: 'personal', name: 'Personal' },
-];
-
-const images = [
-  {
-    id: 1,
-    src: 'https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg',
-    alt: 'Coding on a laptop',
-    caption: 'Working on a new project',
-    album: 'work',
-    tags: ['coding', 'webdev'],
-  },
-  {
-    id: 2,
-    src: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg',
-    alt: 'Conference presentation',
-    caption: 'Speaking at ReactConf 2023',
-    album: 'events',
-    tags: ['conference', 'speaking'],
-  },
-  {
-    id: 3,
-    src: 'https://images.pexels.com/photos/4065876/pexels-photo-4065876.jpeg',
-    alt: 'Design mockup',
-    caption: 'UI design for a new application',
-    album: 'work',
-    tags: ['design', 'ui/ux'],
-  },
-  {
-    id: 4,
-    src: 'https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg',
-    alt: 'Team meeting',
-    caption: 'Brainstorming session with the team',
-    album: 'work',
-    tags: ['team', 'collaboration'],
-  },
-  {
-    id: 5,
-    src: 'https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg',
-    alt: 'Coding setup',
-    caption: 'My workspace setup',
-    album: 'personal',
-    tags: ['workspace', 'setup'],
-  },
-  {
-    id: 6,
-    src: 'https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg',
-    alt: 'Workshop',
-    caption: 'Leading a workshop on Next.js',
-    album: 'events',
-    tags: ['workshop', 'teaching'],
-  },
-  {
-    id: 7,
-    src: 'https://images.pexels.com/photos/3861943/pexels-photo-3861943.jpeg',
-    alt: 'Laptop with code',
-    caption: 'Late night coding session',
-    album: 'work',
-    tags: ['coding', 'webdev'],
-  },
-  {
-    id: 8,
-    src: 'https://images.pexels.com/photos/2608519/pexels-photo-2608519.jpeg',
-    alt: 'Conference audience',
-    caption: 'Full house at my last talk',
-    album: 'events',
-    tags: ['conference', 'audience'],
-  },
-  {
-    id: 9,
-    src: 'https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg',
-    alt: 'Vacation photo',
-    caption: 'Taking a break in nature',
-    album: 'personal',
-    tags: ['travel', 'nature'],
-  },
-];
-
-export default function GalleryGrid() {
+export default function GalleryGrid({ images }: { images: Images[] }) {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [activeAlbum, setActiveAlbum] = useState('all');
+
+  // Dynamically generate album list from image data
+  const albumList = [
+    { id: 'all', name: 'All Photos' },
+    ...Array.from(new Set(images.map((img) => img.album))).map((album) => ({
+      id: album,
+      name: album.charAt(0).toUpperCase() + album.slice(1),
+    })),
+  ];
+
   const filteredImages =
     activeAlbum === 'all'
       ? images
       : images.filter((image) => image?.album === activeAlbum);
+
   const breakpointColumnsObj = {
     default: 3,
     1024: 3,
@@ -109,13 +41,14 @@ export default function GalleryGrid() {
     <div>
       <Tabs defaultValue={'all'} className={'mb-8'} onValueChange={setActiveAlbum}>
         <TabsList className={'grid w-full grid-cols-2 md:grid-cols-4 max-w-lg mx-auto'}>
-          {albums?.map((album) => (
+          {albumList.map((album) => (
             <TabsTrigger key={album.id} value={album.id}>
               {album.name}
             </TabsTrigger>
           ))}
         </TabsList>
       </Tabs>
+
       <AnimatePresence mode={'wait'}>
         <motion.div
           key={activeAlbum}
@@ -165,6 +98,7 @@ export default function GalleryGrid() {
           </Masonry>
         </motion.div>
       </AnimatePresence>
+
       <Dialog
         open={!!selectedImage}
         onOpenChange={(open) => !open && setSelectedImage(null)}
@@ -181,9 +115,21 @@ export default function GalleryGrid() {
                 />
               </div>
               <div className={'mt-4'}>
-                <h3 className={'text-xl font-medium mb-2'}>
-                  {selectedImage.caption}
-                </h3>
+                {selectedImage?.link ? (
+                  <Link
+                    href={selectedImage?.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-xl font-medium mb-2 text-blue-600 hover:underline"
+                  >
+                    {selectedImage.caption}
+                    <ExternalLink />
+                  </Link>
+                ) : (
+                  <h3 className="text-xl font-medium mb-2">
+                    {selectedImage.caption}
+                  </h3>
+                )}
                 <div className={'flex flex-wrap gap-2'}>
                   {selectedImage.tags?.map((tag) => (
                     <Badge key={tag} variant={'secondary'}>

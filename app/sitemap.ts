@@ -36,8 +36,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Extract unique tags and categories from posts
-  const tags = Array.from(new Set(posts.flatMap(post => post.tags || [])));
-  const categories = Array.from(new Set(posts.flatMap(post => post.category || [])));
+  const tags = Array.from(new Set(posts.flatMap(post => post?.tags || [])));
+  const categories = Array.from(new Set(posts.flatMap(post => post?.category || [])));
 
 const blogTagRoutes = tags.map((tag) => ({
   url: `${baseUrl}/blogs/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`,

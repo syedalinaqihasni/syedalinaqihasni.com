@@ -5,7 +5,7 @@ const events: Event []= [{
   title: 'Sample Event Title',
   description: 'This is a sample event description.',
   excerpt:"",
-  type: 'Conference',
+  category: 'Conference',
   slug: 'sample-event',
   image: '/sample-event?.jpg',
   date: '2024-07-01T18:00:00Z',

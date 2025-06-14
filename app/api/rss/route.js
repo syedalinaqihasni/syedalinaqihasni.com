@@ -22,23 +22,23 @@ export async function GET() {
     .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
     .forEach(post => {
         feed.item({
-            title: post.title,
-            description: post.excerpt,
-            url: `https://syedalinaqihasni.com/blogs/${post.slug}`,
-            guid: post.id,
-            author: post.author || 'Syed Ali Naqi Hasni',
-            date: post.publishedAt,
-            categories: [post.category, ...(post.tags || [])],
-            enclosure: post.image
+            title: post?.title,
+            description: post?.excerpt,
+            url: `https://syedalinaqihasni.com/blogs/${post?.slug}`,
+            guid: post?.id,
+            author: post?.author || 'Syed Ali Naqi Hasni',
+            date: post?.publishedAt,
+            categories: [post?.category, ...(post?.tags || [])],
+            enclosure: post?.image
                 ? {
-                        url: post.image,
+                        url: post?.image,
                         type: "image/jpeg",
                     }
                 : undefined,
             custom_elements: [
-                { "content:encoded": post.content || "" },
-                { "dc:creator": post.author || "Syed Ali Naqi Hasni" },
-                { "media:thumbnail": [{ _attr: { url: post.image || "" } }] },
+                { "content:encoded": post?.content || "" },
+                { "dc:creator": post?.author || "Syed Ali Naqi Hasni" },
+                { "media:thumbnail": [{ _attr: { url: post?.image || "" } }] },
             ],
         });
     });

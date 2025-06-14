@@ -33,15 +33,15 @@ const styles = {
 
 export default function ServicesPage() {
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles.header}>
-          <h1 className={styles.title}>{SERVICES_PAGE_CONSTANT.title}</h1>
-          <p className={styles.description}>{SERVICES_PAGE_CONSTANT.description}</p>
+    <div className={styles?.container}>
+      <div className={styles?.wrapper}>
+        <div className={styles?.header}>
+          <h1 className={styles?.title}>{SERVICES_PAGE_CONSTANT.title}</h1>
+          <p className={styles?.description}>{SERVICES_PAGE_CONSTANT.description}</p>
         </div>
 
         <Tabs defaultValue="all" className="space-y-8">
-          <TabsList className={styles.tabsList}>
+          <TabsList className={styles?.tabsList}>
             {SERVICE_CATEGORIES.map((category) => (
               <TabsTrigger key={category.id} value={category.id}>
                 {category.name}
@@ -51,48 +51,48 @@ export default function ServicesPage() {
 
           {SERVICE_CATEGORIES.map((category) => (
             <TabsContent key={category.id} value={category.id}>
-              <div className={styles.grid}>
+              <div className={styles?.grid}>
                 {SERVICES
                   .filter(service => category.id === 'all' || service.category === category.id)
                   .map((service) => (
-                    <Card key={service.id} className={styles.card}>
-                      <CardContent className={styles.cardContent}>
-                        <div className={styles.serviceIcon}>{service.icon}</div>
-                        <h3 className={styles.serviceTitle}>{service.title}</h3>
-                        <p className={styles.serviceDescription}>{service.description}</p>
+                    <Card key={service.id} className={styles?.card}>
+                      <CardContent className={styles?.cardContent}>
+                        <div className={styles?.serviceIcon}>{service.icon}</div>
+                        <h3 className={styles?.serviceTitle}>{service.title}</h3>
+                        <p className={styles?.serviceDescription}>{service.description}</p>
                         
-                        <div className={styles.featuresList}>
+                        <div className={styles?.featuresList}>
                           {service.features.slice(0, 4).map((feature, index) => (
-                            <div key={index} className={styles.featureItem}>
+                            <div key={index} className={styles?.featureItem}>
                               <Check className="h-4 w-4 text-green-500" />
                               <span>{feature}</span>
                             </div>
                           ))}
-                          {service.features.length > 4 && (
-                            <div className={styles.featureItem}>
+                          {service.features?.length > 4 && (
+                            <div className={styles?.featureItem}>
                               <span className="text-muted-foreground">
-                                +{service.features.length - 4} more features
+                                +{service.features?.length - 4} more features
                               </span>
                             </div>
                           )}
                         </div>
 
-                        <div className={styles.techBadges}>
+                        <div className={styles?.techBadges}>
                           {service.technologies.slice(0, 3).map((tech) => (
                             <Badge key={tech} variant="secondary" className="text-xs">
                               {tech}
                             </Badge>
                           ))}
-                          {service.technologies.length > 3 && (
+                          {service.technologies?.length > 3 && (
                             <Badge variant="outline" className="text-xs">
-                              +{service.technologies.length - 3}
+                              +{service.technologies?.length - 3}
                             </Badge>
                           )}
                         </div>
 
-                        <div className={styles.priceInfo}>
-                          <span className={styles.price}>{service.startingPrice}</span>
-                          <span className={styles.deliveryTime}>{service.deliveryTime}</span>
+                        <div className={styles?.priceInfo}>
+                          <span className={styles?.price}>{service.startingPrice}</span>
+                          <span className={styles?.deliveryTime}>{service.deliveryTime}</span>
                         </div>
 
                         <Button className="w-full" asChild>
@@ -109,9 +109,9 @@ export default function ServicesPage() {
           ))}
         </Tabs>
 
-        <div className={styles.ctaSection}>
-          <h2 className={styles.ctaTitle}>{SERVICES_PAGE_CONSTANT.cta.title}</h2>
-          <p className={styles.ctaDescription}>{SERVICES_PAGE_CONSTANT.cta.description}</p>
+        <div className={styles?.ctaSection}>
+          <h2 className={styles?.ctaTitle}>{SERVICES_PAGE_CONSTANT.cta.title}</h2>
+          <p className={styles?.ctaDescription}>{SERVICES_PAGE_CONSTANT.cta.description}</p>
           <Button size="lg" asChild>
             <Link href={SERVICES_PAGE_CONSTANT.cta.buttonLink}>
               {SERVICES_PAGE_CONSTANT.cta.buttonText}

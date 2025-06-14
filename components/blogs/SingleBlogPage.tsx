@@ -29,8 +29,8 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
   if (navigator.share) {
     navigator
       .share({
-        title: post.title,
-        text: post.excerpt,
+        title: post?.title,
+        text: post?.excerpt,
         url: window.location.href,
       })
       .catch((error) => console.error("Error sharing:", error));
@@ -46,7 +46,7 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
         <div className={"mb-8"}>
           <div className={styles?.categoryWrapper}>
             <a href={`/blogs/category/${post?.category.toLowerCase()}`}>
-              <Badge variant={"secondary"}>{post.category}</Badge>
+              <Badge variant={"secondary"}>{post?.category}</Badge>
             </a>
           </div>
 

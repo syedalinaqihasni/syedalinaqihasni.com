@@ -77,7 +77,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.syedalinaqihasni.com" },
     { name: "Blogs", url: "https://www.syedalinaqihasni.com/blogs" },
-    { name: post.title, url: `https://www.syedalinaqihasni.com/blogs/${post.slug}` }
+    { name: post?.title, url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}` }
   ]);
 
   return (
@@ -87,7 +87,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
       <SingleBlogPage post={post}/>
       <div className="container">
 {/* Blogs Section */}
-        {posts.length != 0 && (
+        {posts?.length != 0 && (
           <section
             className={`${styles2?.sectionPadding}`}
             id={"blogs"}
@@ -102,7 +102,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                   </Button>
                 </Link>
               </div>
-              <FeaturedBlogs />
+              <FeaturedBlogs posts={posts}/>
             </div>
           </section>
         )}

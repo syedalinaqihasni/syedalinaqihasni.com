@@ -25,7 +25,7 @@ const styles = {
 
 export default function FeaturedServices() {
   return (
-    <div className={styles.grid}>
+    <div className={styles?.grid}>
       {FEATURED_SERVICES.map((service, index) => (
         <motion.div
           key={service.id}
@@ -33,29 +33,29 @@ export default function FeaturedServices() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
-          <Card className={styles.card}>
-            <CardContent className={styles.cardContent}>
-              <div className={styles.serviceIcon}>{service.icon}</div>
-              <h3 className={styles.serviceTitle}>{service.title}</h3>
-              <p className={styles.serviceDescription}>{service.description}</p>
+          <Card className={styles?.card}>
+            <CardContent className={styles?.cardContent}>
+              <div className={styles?.serviceIcon}>{service.icon}</div>
+              <h3 className={styles?.serviceTitle}>{service.title}</h3>
+              <p className={styles?.serviceDescription}>{service.description}</p>
               
-              <div className={styles.featuresList}>
+              <div className={styles?.featuresList}>
                 {service.features.slice(0, 3).map((feature, idx) => (
-                  <div key={idx} className={styles.featureItem}>
+                  <div key={idx} className={styles?.featureItem}>
                     <Check className="h-4 w-4 text-green-500" />
                     <span>{feature}</span>
                   </div>
                 ))}
-                {service.features.length > 3 && (
-                  <div className={styles.featureItem}>
+                {service.features?.length > 3 && (
+                  <div className={styles?.featureItem}>
                     <span className="text-muted-foreground">
-                      +{service.features.length - 3} more features
+                      +{service.features?.length - 3} more features
                     </span>
                   </div>
                 )}
               </div>
 
-              <div className={styles.techBadges}>
+              <div className={styles?.techBadges}>
                 {service.technologies.slice(0, 3).map((tech) => (
                   <Badge key={tech} variant="secondary" className="text-xs">
                     {tech}
@@ -63,9 +63,9 @@ export default function FeaturedServices() {
                 ))}
               </div>
 
-              <div className={styles.priceInfo}>
-                <span className={styles.price}>From {service.startingPrice}</span>
-                <span className={styles.deliveryTime}>{service.deliveryTime}</span>
+              <div className={styles?.priceInfo}>
+                <span className={styles?.price}>From {service.startingPrice}</span>
+                <span className={styles?.deliveryTime}>{service.deliveryTime}</span>
               </div>
 
               <Button className="w-full" asChild>

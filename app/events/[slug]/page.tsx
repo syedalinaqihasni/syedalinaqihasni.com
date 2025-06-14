@@ -61,7 +61,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.syedalinaqihasni.com" },
     { name: "Events", url: "https://www.syedalinaqihasni.com/events" },
-    { name: event.title, url: `https://www.syedalinaqihasni.com/events/${event.slug}` }
+    { name: event?.title, url: `https://www.syedalinaqihasni.com/events/${event?.slug}` }
   ]);
 
   return (
@@ -73,7 +73,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
         <div className={styles?.wrapper}>
           <div className={styles?.header}>
             <Badge variant={"secondary"} className={styles?.badge}>
-              {event?.type}
+              {event?.category}
             </Badge>
             <h1 className={styles?.title}>{event?.title}</h1>
             <p className={styles?.description}>{event?.description}</p>

@@ -192,7 +192,7 @@ export default function Page() {
         </section>
 
         {/* Blogs Section */}
-        {posts.length != 0 && (
+        {posts?.length != 0 && (
           <section
             className={`${styles?.sectionPadding}`}
             id={"blogs"}
@@ -207,7 +207,7 @@ export default function Page() {
                   </Button>
                 </Link>
               </div>
-              <FeaturedBlogs />
+              <FeaturedBlogs  posts={posts}/>
             </div>
           </section>
         )}

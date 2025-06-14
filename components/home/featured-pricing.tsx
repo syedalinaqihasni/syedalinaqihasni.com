@@ -27,7 +27,7 @@ const styles = {
 
 export default function FeaturedPricing() {
   return (
-    <div className={styles.grid}>
+    <div className={styles?.grid}>
       {FEATURED_PRICING.map((plan, index) => (
         <motion.div
           key={plan.id}
@@ -35,39 +35,39 @@ export default function FeaturedPricing() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
-          <Card className={`${styles.card} ${plan.popular ? styles.popularCard : ''}`}>
+          <Card className={`${styles?.card} ${plan.popular ? styles?.popularCard : ''}`}>
             {plan.popular && (
-              <Badge className={styles.popularBadge}>
+              <Badge className={styles?.popularBadge}>
                 Most Popular
               </Badge>
             )}
-            <CardContent className={styles.cardContent}>
-              <h3 className={styles.planName}>{plan.name}</h3>
-              <p className={styles.planDescription}>{plan.description}</p>
+            <CardContent className={styles?.cardContent}>
+              <h3 className={styles?.planName}>{plan.name}</h3>
+              <p className={styles?.planDescription}>{plan.description}</p>
               
-              <div className={styles.priceWrapper}>
-                <span className={styles.price}>{plan.price}</span>
-                <span className={styles.period}>/{plan.period}</span>
+              <div className={styles?.priceWrapper}>
+                <span className={styles?.price}>{plan.price}</span>
+                <span className={styles?.period}>/{plan.period}</span>
               </div>
 
-              <div className={styles.featuresList}>
+              <div className={styles?.featuresList}>
                 {plan.features.slice(0, 5).map((feature, idx) => (
-                  <div key={idx} className={styles.featureItem}>
+                  <div key={idx} className={styles?.featureItem}>
                     <Check className="h-4 w-4 text-green-500" />
                     <span>{feature}</span>
                   </div>
                 ))}
-                {plan.features.length > 5 && (
-                  <div className={styles.featureItem}>
+                {plan.features?.length > 5 && (
+                  <div className={styles?.featureItem}>
                     <span className="text-muted-foreground">
-                      +{plan.features.length - 5} more features
+                      +{plan.features?.length - 5} more features
                     </span>
                   </div>
                 )}
               </div>
 
               <Button 
-                className={plan.popular ? styles.popularButton : styles.button}
+                className={plan.popular ? styles?.popularButton : styles?.button}
                 asChild
               >
                 <Link href="/pricing">

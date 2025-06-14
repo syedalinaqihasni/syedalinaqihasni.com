@@ -121,12 +121,12 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
                       {tag}
                     </Badge></a>
                   ))}
-                  {post?.tags.length > 2 && (
+                  {post?.tags?.length > 2 && (
                     <Badge
                       variant={"outline"}
                       className={styles?.categoryBadge}
                     >
-                      +{post?.tags.length - 3}
+                      +{post?.tags?.length - 3}
                     </Badge>
                   )}
                 </div>

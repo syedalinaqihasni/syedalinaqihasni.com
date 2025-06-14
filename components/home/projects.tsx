@@ -12,7 +12,7 @@ import { notFound } from "next/navigation";
 
 export default function FeaturedProjects() {
  const featuredProjects = projects?.filter((p) => p.isFeatured === true);
-if (!featuredProjects.length) return notFound();
+if (!featuredProjects?.length) return notFound();
   return (
     <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"}>
       {featuredProjects?.map((project, index) => (

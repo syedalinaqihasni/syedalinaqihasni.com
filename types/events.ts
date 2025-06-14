@@ -4,10 +4,11 @@ type Event = {
   image: string;
   title: string;
   description: string;
-  type: string;
   date: string;
   location: string;
-  virtual?: boolean;
+  virtual?: boolean;  
+  category?: string;
+  tags?: string[];
   excerpt:string,
   content: string;
 };

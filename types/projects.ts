@@ -8,7 +8,8 @@ export type Project = {
   technologies: string[];
   githubUrl: string;
   liveUrl: string;
-  category: string;
+  category?: string; 
+  tags?: string[];
   publishedAt: string | Date;
   stats: {
     users: string;   

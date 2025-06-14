@@ -40,53 +40,53 @@ const styles = {
 
 export default function PricingPage() {
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        <div className={styles.header}>
-          <h1 className={styles.title}>{PRICING_PAGE_CONSTANT.title}</h1>
-          <p className={styles.description}>{PRICING_PAGE_CONSTANT.description}</p>
+    <div className={styles?.container}>
+      <div className={styles?.wrapper}>
+        <div className={styles?.header}>
+          <h1 className={styles?.title}>{PRICING_PAGE_CONSTANT.title}</h1>
+          <p className={styles?.description}>{PRICING_PAGE_CONSTANT.description}</p>
         </div>
 
         <Tabs defaultValue="development" className="space-y-8">
-          <TabsList className={styles.tabsList}>
+          <TabsList className={styles?.tabsList}>
             <TabsTrigger value="development">{PRICING_PAGE_CONSTANT.tabs.development}</TabsTrigger>
             <TabsTrigger value="maintenance">{PRICING_PAGE_CONSTANT.tabs.maintenance}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="development">
-            <div className={styles.grid}>
+            <div className={styles?.grid}>
               {PRICING_PLANS.map((plan) => (
                 <Card 
                   key={plan.id} 
-                  className={`${styles.card} ${plan.popular ? styles.popularCard : ''}`}
+                  className={`${styles?.card} ${plan.popular ? styles?.popularCard : ''}`}
                 >
                   {plan.popular && (
-                    <Badge className={styles.popularBadge}>
+                    <Badge className={styles?.popularBadge}>
                       Most Popular
                     </Badge>
                   )}
-                  <CardContent className={styles.cardContent}>
-                    <h3 className={styles.planName}>{plan.name}</h3>
-                    <p className={styles.planDescription}>{plan.description}</p>
+                  <CardContent className={styles?.cardContent}>
+                    <h3 className={styles?.planName}>{plan.name}</h3>
+                    <p className={styles?.planDescription}>{plan.description}</p>
                     
-                    <div className={styles.priceWrapper}>
-                      <span className={styles.price}>{plan.price}</span>
-                      <span className={styles.period}>/{plan.period}</span>
+                    <div className={styles?.priceWrapper}>
+                      <span className={styles?.price}>{plan.price}</span>
+                      <span className={styles?.period}>/{plan.period}</span>
                     </div>
 
-                    <div className={styles.featuresList}>
+                    <div className={styles?.featuresList}>
                       {plan.features.map((feature, index) => (
-                        <div key={index} className={styles.featureItem}>
+                        <div key={index} className={styles?.featureItem}>
                           <Check className="h-5 w-5 text-green-500 mt-0.5" />
                           <span>{feature}</span>
                         </div>
                       ))}
                     </div>
 
-                    {plan.limitations.length > 0 && (
-                      <div className={styles.limitationsList}>
+                    {plan.limitations?.length > 0 && (
+                      <div className={styles?.limitationsList}>
                         {plan.limitations.map((limitation, index) => (
-                          <div key={index} className={styles.limitationItem}>
+                          <div key={index} className={styles?.limitationItem}>
                             <X className="h-4 w-4 text-red-500 mt-0.5" />
                             <span>{limitation}</span>
                           </div>
@@ -95,7 +95,7 @@ export default function PricingPage() {
                     )}
 
                     <Button 
-                      className={plan.popular ? styles.popularButton : styles.button}
+                      className={plan.popular ? styles?.popularButton : styles?.button}
                       asChild
                     >
                       <Link href="/contact">
@@ -109,29 +109,29 @@ export default function PricingPage() {
           </TabsContent>
 
           <TabsContent value="maintenance">
-            <div className={styles.grid}>
+            <div className={styles?.grid}>
               {MAINTENANCE_PLANS.map((plan) => (
                 <Card 
                   key={plan.id} 
-                  className={`${styles.card} ${plan.popular ? styles.popularCard : ''}`}
+                  className={`${styles?.card} ${plan.popular ? styles?.popularCard : ''}`}
                 >
                   {plan.popular && (
-                    <Badge className={styles.popularBadge}>
+                    <Badge className={styles?.popularBadge}>
                       Most Popular
                     </Badge>
                   )}
-                  <CardContent className={styles.cardContent}>
-                    <h3 className={styles.planName}>{plan.name}</h3>
-                    <p className={styles.planDescription}>{plan.description}</p>
+                  <CardContent className={styles?.cardContent}>
+                    <h3 className={styles?.planName}>{plan.name}</h3>
+                    <p className={styles?.planDescription}>{plan.description}</p>
                     
-                    <div className={styles.priceWrapper}>
-                      <span className={styles.price}>{plan.price}</span>
-                      <span className={styles.period}>/{plan.period}</span>
+                    <div className={styles?.priceWrapper}>
+                      <span className={styles?.price}>{plan.price}</span>
+                      <span className={styles?.period}>/{plan.period}</span>
                     </div>
 
-                    <div className={styles.featuresList}>
+                    <div className={styles?.featuresList}>
                       {plan.features.map((feature, index) => (
-                        <div key={index} className={styles.featureItem}>
+                        <div key={index} className={styles?.featureItem}>
                           <Check className="h-5 w-5 text-green-500 mt-0.5" />
                           <span>{feature}</span>
                         </div>
@@ -139,7 +139,7 @@ export default function PricingPage() {
                     </div>
 
                     <Button 
-                      className={plan.popular ? styles.popularButton : styles.button}
+                      className={plan.popular ? styles?.popularButton : styles?.button}
                       asChild
                     >
                       <Link href="/contact">
@@ -153,8 +153,8 @@ export default function PricingPage() {
           </TabsContent>
         </Tabs>
 
-        <div className={styles.faqSection}>
-          <h2 className={styles.faqTitle}>{PRICING_PAGE_CONSTANT.faq.title}</h2>
+        <div className={styles?.faqSection}>
+          <h2 className={styles?.faqTitle}>{PRICING_PAGE_CONSTANT.faq.title}</h2>
           <Accordion type="single" collapsible className="max-w-3xl mx-auto">
             {PRICING_PAGE_CONSTANT.faq.items.map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
@@ -169,9 +169,9 @@ export default function PricingPage() {
           </Accordion>
         </div>
 
-        <div className={styles.ctaSection}>
-          <h2 className={styles.ctaTitle}>{PRICING_PAGE_CONSTANT.cta.title}</h2>
-          <p className={styles.ctaDescription}>{PRICING_PAGE_CONSTANT.cta.description}</p>
+        <div className={styles?.ctaSection}>
+          <h2 className={styles?.ctaTitle}>{PRICING_PAGE_CONSTANT.cta.title}</h2>
+          <p className={styles?.ctaDescription}>{PRICING_PAGE_CONSTANT.cta.description}</p>
           <Button size="lg" asChild>
             <Link href={PRICING_PAGE_CONSTANT.cta.buttonLink}>
               {PRICING_PAGE_CONSTANT.cta.buttonText}

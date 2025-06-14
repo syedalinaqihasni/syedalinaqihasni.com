@@ -7,8 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { posts } from "@/constants/blogs";
 import { formatDate } from "@/lib/utils";
+import { Post } from "@/types/blogs";
 import { notFound } from "next/navigation";
 
 const styles = {
@@ -26,7 +26,7 @@ const styles = {
   icon: "h-4 w-4 mr-1",
 };
 
-const FeaturedBlogs = () => {
+const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
   const featuredBlogs = posts
     ?.sort(
       (a, b) =>

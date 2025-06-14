@@ -83,6 +83,23 @@ export const ALBUMS = [
 const GALLERY_TITLE = 'Gallery';
 const GALLERY_DESCRIPTION =
   'A collection of images from my projects, events, and creative work.';
+  export const metas = [
+  {
+    id: 1,
+    alt: 'Coding on a laptop',
+    caption: 'Working on a new project',
+    album: 'work',
+    tags: ['coding', 'webdev'],
+  },
+  {
+    id: 2,
+    alt: 'Conference presentation',
+    caption: 'Speaking at ReactConf 2023',
+    album: 'events',
+    tags: ['conference', 'speaking'],
+  },
+  // ... (rest unchanged)
+];
 
   export {
     GALLERY_TITLE,

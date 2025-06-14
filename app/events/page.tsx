@@ -81,7 +81,7 @@ export default function Page() {
 
                 <CardContent className={"p-6"}>
                   <Badge variant={"outline"} className={badge}>
-                    {event?.type}
+                    {event?.category}
                   </Badge>
 
                   <Link
