@@ -5,7 +5,7 @@ import GalleryGrid from '@/components/gallery/gallery-grid';
 import { GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/certificates';
 import { Images } from '@/types/images';
 
-export const metadata = getMetadataForPath('/gallery');
+export const metadata = getMetadataForPath('/certificates');
 
 const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
 const MAX_WIDTH_WRAPPER = 'max-w-6xl mx-auto';
@@ -17,7 +17,7 @@ const DESCRIPTION =
 // Helper to fetch images from API
 async function fetchGalleryImages(): Promise<Images[]> {
   try {
-    const res = await fetch(`http://localhost:3000/api/certificates`, {
+    const res = await fetch(`https://www.syedalinaqihasni.com/api/certificates`, {
       cache: 'no-store',
     });
 

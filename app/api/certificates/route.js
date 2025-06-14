@@ -5,7 +5,7 @@ import path from 'path';
 const metas = [
   {
     id: 1,
-    src: `/gallery/blogs-placeholder.jpg`,
+    src: `https://www.syedalinaqihasni.com/certificates/blogs-placeholder.jpg`,
     alt: 'blogs-placeholder.jpg',
     caption: 'Generic blog placeholder image.',
     link: '#',
@@ -14,7 +14,7 @@ const metas = [
   },
   {
     id: 2,
-    src: `/gallery/content-management-for-pwas-embrace-the-headless-cms-approach.png`,
+    src: `https://www.syedalinaqihasni.com/certificates/content-management-for-pwas-embrace-the-headless-cms-approach.png`,
     alt: "Headless CMS for PWAs",
     caption: "Managing content for PWAs using a headless CMS approach.",
     link: '#',
@@ -23,7 +23,7 @@ const metas = [
   },
   {
     id: 3,
-    src: `/gallery/essential-apps-every-shopify-store-must-have.png`,
+    src: `https://www.syedalinaqihasni.com/certificates/essential-apps-every-shopify-store-must-have.png`,
     alt: "Shopify essential apps",
     caption: "Top apps every Shopify store should have.",
     link: '#',
@@ -32,7 +32,7 @@ const metas = [
   },
   {
     id: 4,
-    src: `/gallery/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png`,
+    src: `https://www.syedalinaqihasni.com/certificates/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png`,
     alt: "GitHub CLI Guide",
     caption: "Streamline your workflow using GitHub CLI.",
     link: '#',
@@ -41,7 +41,7 @@ const metas = [
   },
   {
     id: 5,
-    src: `/gallery/headless-wordpress-and-content-management-systems.webp`,
+    src: `https://www.syedalinaqihasni.com/certificates/headless-wordpress-and-content-management-systems.webp`,
     alt: "Headless WordPress CMS",
     caption: "Benefits of using WordPress in a headless architecture.",
     link: '#',
@@ -50,7 +50,7 @@ const metas = [
   },
   {
     id: 6,
-    src: `/gallery/how-small-shopify-app-development-skills-can-boost-your-career.webp`,
+    src: `https://www.syedalinaqihasni.com/certificates/how-small-shopify-app-development-skills-can-boost-your-career.webp`,
     alt: "Shopify App Dev Career Boost",
     caption: "Using Shopify app dev to grow your career.",
     link: '#',
@@ -59,7 +59,7 @@ const metas = [
   },
   {
     id: 7,
-    src: `/gallery/how-to-optimize-your-commits-for-efficient-project-management.jpg`,
+    src: `https://www.syedalinaqihasni.com/certificates/how-to-optimize-your-commits-for-efficient-project-management.jpg`,
     alt: "Optimizing Commits",
     caption: "Write meaningful commits for better project management.",
     link: '#',
@@ -68,7 +68,7 @@ const metas = [
   },
   {
     id: 8,
-    src: `/gallery/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg`,
+    src: `https://www.syedalinaqihasni.com/certificates/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg`,
     alt: "Nodemailer + Next.js",
     caption: "Integrating Nodemailer with Next.js.",
     link: '#',
@@ -77,7 +77,7 @@ const metas = [
   },
   {
     id: 9,
-    src: `/gallery/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png`,
+    src: `https://www.syedalinaqihasni.com/certificates/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png`,
     alt: "ReactPress Workflow",
     caption: "Seamless React app integration with WordPress CMS.",
     link: '#',
@@ -86,7 +86,7 @@ const metas = [
   },
   {
     id: 10,
-    src: `/gallery/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg`,
+    src: `https://www.syedalinaqihasni.com/certificates/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg`,
     alt: "SOLID Principles Guide",
     caption: "Quick guide to SOLID principles for better OOP design.",
     link: '#',
@@ -95,7 +95,7 @@ const metas = [
   },
   {
     id: 11,
-    src: `/gallery/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg`,
+    src: `https://www.syedalinaqihasni.com/certificates/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg`,
     alt: "Dependabot & CodeQL Guide",
     caption: "Improve security with GitHub Dependabot and CodeQL.",
     link: '#',
@@ -104,7 +104,7 @@ const metas = [
   },
   {
     id: 12,
-    src: `/gallery/the-beginners-guide-to-seo.jpg`,
+    src: `https://www.syedalinaqihasni.com/certificates/the-beginners-guide-to-seo.jpg`,
     alt: "Beginner's SEO Guide",
     caption: "A beginner-friendly guide to understanding SEO.",
     link: '#',
@@ -113,7 +113,7 @@ const metas = [
   },
   {
     id: 13,
-    src: `/gallery/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png`,
+    src: `https://www.syedalinaqihasni.com/certificates/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png`,
     alt: "Team Collaboration Synergy",
     caption: "Balance individuality and teamwork for maximum impact.",
     link: '#',
@@ -122,7 +122,7 @@ const metas = [
   },
   {
     id: 14,
-    src: `/gallery/top-wordpress-push-notification-plugins-for-web-android-ios.webp`,
+    src: `https://www.syedalinaqihasni.com/certificates/top-wordpress-push-notification-plugins-for-web-android-ios.webp`,
     alt: "WordPress Push Plugins",
     caption: "Top push notification plugins for WordPress.",
     link: '#',
@@ -131,7 +131,7 @@ const metas = [
   },
   {
     id: 15,
-    src: `/gallery/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png`,
+    src: `https://www.syedalinaqihasni.com/certificates/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png`,
     alt: "Structured Data SEO",
     caption: "Boost SEO with structured data markup.",
     link: '#',
@@ -140,7 +140,7 @@ const metas = [
   },
   {
     id: 16,
-    src: `/gallery/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress.webp`,
+    src: `https://www.syedalinaqihasni.com/certificates/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress.webp`,
     alt: "ERP for WordPress",
     caption: "Choosing the best ERP system for WordPress.",
     link: '#',
@@ -149,7 +149,7 @@ const metas = [
   },
   {
     id: 17,
-    src: `/gallery/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too.webp`,
+    src: `https://www.syedalinaqihasni.com/certificates/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too.webp`,
     alt: "Shortcodes to Custom Blocks",
     caption: "Why switch from shortcodes to blocks in WordPress.",
     link: '#',
@@ -175,7 +175,7 @@ export async function GET() {
     });
 
     const images = imageFiles.map((file, index) => {
-      const filePath = `/gallery/${file}`;
+      const filePath = `https://www.syedalinaqihasni.com/certificates/${file}`;
       const meta = metas.find(m => m.src === filePath);
 
       return {
