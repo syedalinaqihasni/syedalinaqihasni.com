@@ -20,7 +20,7 @@ const posts: Post[] = [
     publishedAt: "2024-01-19",
     readingTime: "6 min read",
     image:
-      "/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg",
     category: `Tutorials`,
     tags: ["Next.js", "Node.js", "Backend Integration"],
     content: `<article>
@@ -140,7 +140,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-02-26",
     readingTime: "8 min read",
     image:
-      "/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png", // Recommend replacing with a relevant SEO/Schema image
+      "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png", // Recommend replacing with a relevant SEO/Schema image
     category: `Tips`,
     tags: ["SEO", "Web Development", "Digital Strategy"],
     content: `<article>
@@ -374,7 +374,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-11-27",
     readingTime: "6 min read",
     image:
-      "/images/blogs/how-to-optimize-your-commits-for-efficient-project-management.jpg", // Consider updating this image to something Git/Dev-related
+      "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management.jpg", // Consider updating this image to something Git/Dev-related
     category: `Tips`,
     tags: ["Git", "Project Management", "Best Practices"],
     content: `<article>
@@ -482,7 +482,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-11-27",
     readingTime: "6 min read",
     image:
-      "/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png", // Update the image filename to match topic
+      "https://www.syedalinaqihasni.com/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png", // Update the image filename to match topic
     category: `Tutorials`,
     tags: ["React", "WordPress", "Headless CMS"],
     content: `<div >
@@ -546,7 +546,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-01-04",
     readingTime: "6 min read",
     image:
-      "/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png",
+      "https://www.syedalinaqihasni.com/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png",
     category: `Tips`,
     tags: ["GitHub", "CLI Tools", "Developer Productivity"],
     content: `<div >
@@ -727,7 +727,7 @@ gh repo branch <branch-name></code></pre>
     publishedAt: "2023-07-21",
     readingTime: "6 min read",
     image:
-      "/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png", // Consider updating this image to match the topic
+      "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png", // Consider updating this image to match the topic
     category: `Opinions`,
     tags: ["Teamwork", "Leadership", "Workplace Strategy"],
     content: `<article>
@@ -792,7 +792,7 @@ gh repo branch <branch-name></code></pre>
     publishedAt: "2023-07-17",
     readingTime: "6 min read",
     image:
-      "/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach.png",
+      "https://www.syedalinaqihasni.com/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach.png",
     category: `Tips`,
     tags: ["Headless CMS", "PWA", "Content Strategy"],
     content: `<div >
@@ -840,7 +840,7 @@ gh repo branch <branch-name></code></pre>
     publishedAt: "2025-01-14",
     readingTime: "6 min read",
     image:
-      "/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg",
     category: `Opinions`,
     tags: ["Security", "GitHub", "Development Tools"],
     content: `<div >
@@ -898,7 +898,7 @@ gh repo branch <branch-name></code></pre>
 <pre><code>version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "https://www.syedalinaqihasni.com/"
     schedule:
       interval: "weekly"</code></pre>
 <ul>
@@ -982,7 +982,7 @@ updates:
     slug: "essential-apps-every-shopify-store-must-have",
     publishedAt: "2023-06-12",
     readingTime: "4 min read",
-    image: "/images/blogs/essential-apps-every-shopify-store-must-have.png",
+    image: "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have.png",
     category: `Tips`,
     tags: ["Shopify", "eCommerce", "Business Tools"],
     content: `<article>
@@ -1088,7 +1088,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
     publishedAt: "2025-04-28",
     readingTime: "4 min read",
     image:
-      "/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg",
     category: `Opinions`,
     tags: ["Programming", "Software Design", "Best Practices"],
     content: `<article>
@@ -1112,7 +1112,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
     <li><strong>Make systems easier to understand, extend, and test</strong></li>
 </ul>
 <p>
-    These principles were popularized by <a href="/in/robert-martin-7395b0/">Robert Martin</a> aka <strong>Uncle
+    These principles were popularized by <a href="https://www.syedalinaqihasni.com/in/robert-martin-7395b0/">Robert Martin</a> aka <strong>Uncle
       Bob</strong> and are especially powerful when working on <strong>large apps</strong> or <strong>team
       projects,</strong> including <strong>modern React.js</strong> applications.
   </p>
@@ -1415,7 +1415,7 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/api/products")
+    fetch("https://www.syedalinaqihasni.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
 
@@ -1443,7 +1443,7 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 
 // Service layer
 const productService = {
-  fetchProducts: () => fetch("/api/products").then((res) => res.json()),
+  fetchProducts: () => fetch("https://www.syedalinaqihasni.com/api/products").then((res) => res.json()),
 };
 
 // Component
@@ -1498,7 +1498,7 @@ function ProductsList() {
     publishedAt: "2024-05-10",
     readingTime: "4 min read",
     image:
-      "/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career.webp",
     category: `Tips`,
     tags: ["Shopify", "Career Growth", "Web Development"],
     content: `<article>
@@ -1585,7 +1585,7 @@ function ProductsList() {
     publishedAt: "2025-01-08",
     readingTime: "4 min read",
     image:
-      "/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too.webp",
     category: `Tutorials`,
     tags: ["WordPress", "Gutenberg", "Web Development"],
     content: `<article>
@@ -1787,7 +1787,7 @@ registerBlockType('custom/contact-form', {
     publishedAt: "2024-05-10",
     readingTime: "4 min read",
     image:
-      "/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios.webp",
     category: `Tips`,
     tags: ["WordPress", "Plugins", "User Engagement"],
     content: `<article>
@@ -1858,7 +1858,7 @@ registerBlockType('custom/contact-form', {
     publishedAt: "2022-11-02",
     readingTime: "6 min read",
     image:
-      "/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress.webp",
     category: `Tips`,
     tags: ["WordPress", "ERP", "Business Tools"],
     content: `<article>
@@ -1972,7 +1972,7 @@ utm_content=suza"
     publishedAt: "2022-11-02",
     readingTime: "6 min read",
     image:
-      "/images/blogs/headless-wordpress-and-content-management-systems.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/headless-wordpress-and-content-management-systems.webp",
     category: `Tutorials`,
     tags: ["Wordpress", "CMS", "Headless"],
     content: `<article>
@@ -2130,7 +2130,7 @@ utm_content=suza"
     slug: "the-beginners-guide-to-seo",
     publishedAt: "2022-09-26",
     readingTime: "4 min read",
-    image: "/images/blogs/the-beginners-guide-to-seo.jpg",
+    image: "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo.jpg",
     category: `Tips`,
     tags: ["SEO", "Getting Started", "Tutorial"],
     content: `<article>
@@ -2338,7 +2338,7 @@ utm_content=suza"
     slug: "getting-started-nextjs-tailwind",
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
-    // image: "/images/blogs/getting-started-nextjs-tailwind.png",
+    // image: "https://www.syedalinaqihasni.com/images/blogs/getting-started-nextjs-tailwind.png",
     content: `<article>
     
 
@@ -2479,7 +2479,7 @@ npx tailwindcss init -p</code></code></pre>
     readingTime: "6 min read",
     category: `Tutorials`,
     tags: ["React", "State Management", "Frontend Architecture"],
-    // image: "/images/blogs/state-management-react.png",
+    // image: "https://www.syedalinaqihasni.com/images/blogs/state-management-react.png",
     content: `<article>
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
 
@@ -2681,7 +2681,7 @@ const [password, setPassword] = useState('');
     slug: "framer-motion-animations",
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
-    // image: "/images/blogs/framer-motion-animations.png",
+    // image: "https://www.syedalinaqihasni.com/images/blogs/framer-motion-animations.png",
     content: `
   <article>
 
@@ -3064,7 +3064,7 @@ export default function handler(req, res) {
     slug: "responsive-ui-tailwind",
     publishedAt: "2018-01-01",
     readingTime: "4 min read",
-    // image: "/images/blogs/responsive-ui-tailwind.png",
+    // image: "https://www.syedalinaqihasni.com/images/blogs/responsive-ui-tailwind.png",
     content: ` <article>
 
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>

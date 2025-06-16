@@ -59,7 +59,7 @@ const ProjectList = () => {
             >
               <Card className={'h-full overflow-hidden'}>
                 <div className={'relative h-56 w-full'}>
-                 <Link href={`/projects/${project?.slug}`}>            <Image
+                 <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>            <Image
                     src={project?.image || '/images/blogs/blogs-placeholder.jpg'}
                     alt={project?.title}
                     fill
@@ -69,10 +69,10 @@ const ProjectList = () => {
                 </div>
                 <CardContent className={'p-6'}>
                   <h3 className={'text-xl font-semibold mb-2'}>
-                  <Link href={`/projects/${project?.slug}`}> {project?.title}
+                  <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}> {project?.title}
              </Link>      </h3>
                   <p className={'text-muted-foreground mb-4'}>
-                   <Link href={`/projects/${project?.slug}`}>{project?.description}</Link> 
+                   <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>{project?.description}</Link> 
                   </p>
                   <div className={'flex flex-wrap gap-2 mb-6'}>
                     {project?.technologies?.map((tag) => (

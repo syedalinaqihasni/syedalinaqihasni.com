@@ -83,12 +83,12 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
             >
               <Card className={styles?.card}>
                 <Link
-                  href={`/blogs/${post?.slug}`}
+                  href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}
                   className="relative block aspect-[3/2]"
                   aria-label={`Read more about ${post?.title}`}
                 >
                   <Image
-                    src={post?.image || "/images/blogs/blogs-placeholder.jpg"}
+                    src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
                     alt={post?.title}
                     fill
                     className={styles?.image}
@@ -99,7 +99,7 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
                 <CardContent className="p-6">
                   <div className={styles?.categoriesWrapper}>
                     <Link
-                      href={`/blogs/category/${categoryToSlug(post?.category)}`}
+                      href={`https://www.syedalinaqihasni.com/blogs/category/${categoryToSlug(post?.category)}`}
                     >
                       <Badge
                         variant="secondary"
@@ -109,7 +109,7 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
                       </Badge>
                     </Link>
                   </div>
-                  <Link href={`/blogs/${post?.slug}`}>
+                  <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
                     <h3 className={styles?.title}>{post?.title}</h3>
                   </Link>
                   <p className={styles?.excerpt}>{post?.excerpt}</p>

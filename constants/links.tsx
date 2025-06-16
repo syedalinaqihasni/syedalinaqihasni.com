@@ -171,7 +171,7 @@ const CONSTANT = {
 const PROFILE = {
   name: 'Syed Ali Naqi Hasni',
   role: 'Front End Developer & UI/UX Designer',
-  image: '/images/syedalinaqihasni.webp',
+  image: 'https://www.syedalinaqihasni.com/images/syedalinaqihasni.webp',
 };
 export {
   LINKS,

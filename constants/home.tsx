@@ -6,7 +6,7 @@ const CONTENT = {
     title: 'Frontend Web Designer',
     description:
       "I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.",
-    imageSrc: '/images/syedalinaqihasni.webp',
+    imageSrc: 'https://www.syedalinaqihasni.com/images/syedalinaqihasni.webp',
     imageAlt: 'Syed Ali Naqi Hasni - Web Developer',
   },
   buttons: {
@@ -32,7 +32,7 @@ const CONTENT = {
     },
     {
       label: 'Resume',
-      href: '/resume.pdf',
+      href: 'https://www.syedalinaqihasni.com/resume.pdf',
       icon: FileText,
       isExternal: true,
     },
@@ -41,12 +41,12 @@ const CONTENT = {
     featuredProjects: {
       title: 'Featured Projects',
       viewAllLabel: 'View All',
-      viewAllHref: '/projects',
+      viewAllHref: 'https://www.syedalinaqihasni.com/projects',
     },
     skills: {
       title: 'Skills & Expertise',
       seeAllLabel: 'See All Skills',
-      seeAllHref: '/skills',
+      seeAllHref: 'https://www.syedalinaqihasni.com/skills',
     },
     contact: {
       title: 'Get In Touch',

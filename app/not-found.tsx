@@ -12,7 +12,7 @@ const PortfolioNotFound: React.FC = () => {
         moved.
       </p>
       <div className="flex space-x-6">
-        <Link href="/" className="px-6 py-3 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-40 transition font-medium">
+        <Link href="https://www.syedalinaqihasni.com/" className="px-6 py-3 rounded-lg bg-white bg-opacity-20 hover:bg-opacity-40 transition font-medium">
             Home
         </Link>
       </div>

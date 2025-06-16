@@ -98,7 +98,7 @@ export default function PricingPage() {
                       className={plan.popular ? styles?.popularButton : styles?.button}
                       asChild
                     >
-                      <Link href="/contact">
+                      <Link href="https://www.syedalinaqihasni.com/contact">
                         {plan.buttonText}
                       </Link>
                     </Button>
@@ -142,7 +142,7 @@ export default function PricingPage() {
                       className={plan.popular ? styles?.popularButton : styles?.button}
                       asChild
                     >
-                      <Link href="/contact">
+                      <Link href="https://www.syedalinaqihasni.com/contact">
                         {plan.buttonText}
                       </Link>
                     </Button>

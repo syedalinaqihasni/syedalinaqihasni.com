@@ -23,7 +23,7 @@ export async function generateMetadata({
     description: event?.excerpt || event?.title,
     image: event?.image,
     publishedAt: event?.date,
-    path: `/events/${event?.slug}`,
+    path: `https://www.syedalinaqihasni.com/events/${event?.slug}`,
   });
 }
 
@@ -84,7 +84,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
           </div>
           <div className={styles?.imageWrapper}>
             <Image
-              src={event?.image || "/images/blogs/blogs-placeholder.jpg"}
+              src={event?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
               alt={event?.title}
               fill
               className={styles?.image }

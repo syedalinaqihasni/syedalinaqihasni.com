@@ -65,7 +65,7 @@ export async function generateMetadata({
     description: post?.excerpt,
     image: post?.image,
     publishedAt: post?.publishedAt,
-    path: `/blogs/${post?.slug}`,
+    path: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
   });
 }
 
@@ -95,7 +95,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <div className={styles2?.containerLarge}>
               <div className={styles2?.projectsHeaderWrapper}>
                 <h2 className={styles2?.sectionHeaderLeft}>Recent Blogs</h2>
-                <Link href={"/blogs"}>
+                <Link href={"https://www.syedalinaqihasni.com/blogs"}>
                   <Button variant={"outline"}>
                     View All Blogs
                     <ArrowRight className={"ml-2 h-4 w-4"} />

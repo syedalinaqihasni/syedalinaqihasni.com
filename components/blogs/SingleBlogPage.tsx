@@ -45,7 +45,7 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
       <div className={styles?.wrapper}>
         <div className={"mb-8"}>
           <div className={styles?.categoryWrapper}>
-            <a href={`/blogs/category/${post?.category.toLowerCase()}`}>
+            <a href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category.toLowerCase()}`}>
               <Badge variant={"secondary"}>{post?.category}</Badge>
             </a>
           </div>
@@ -64,7 +64,7 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
           </div>
           <div className={styles?.tagWrapper}>
             {post?.tags?.map((tag: string) => (
-              <a href={`/blogs/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`} key={tag}>
+              <a href={`https://www.syedalinaqihasni.com/blogs/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`} key={tag}>
                 <Badge key={tag} variant={"secondary"}>
                   {tag}
                 </Badge>
@@ -75,10 +75,10 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
         {post?.image && (
           <div className={styles?.imageWrapper}>
             <Image
-              src={post?.image || "/images/blogs/blogs-placeholder.jpg"}
+              src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
               alt={post?.title}
               fill
-              className={styles?.image || "/images/blogs/blogs-placeholder.jpg"}
+              className={styles?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
             />
           </div>
         )}

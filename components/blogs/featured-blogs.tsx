@@ -47,15 +47,15 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
           >
             <Card className={styles?.card}>
               <Link
-                href={`/blogs/${post?.slug}`}
+                href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}
                 className={"relative block h-48 w-full"}
               >
                 <Image
-                  src={post?.image || "/images/blogs/blogs-placeholder.jpg"}
+                  src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
                   alt={post?.title}
                   fill
                   className={
-                    styles?.image || "/images/blogs/blogs-placeholder.jpg"
+                    styles?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
                   }
                   priority={index < 3}
                 />
@@ -86,7 +86,7 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
                     {post?.category}
                   </Badge>
                 </div>
-                <Link href={`/blogs/${post?.slug}`}>
+                <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
                   <h3 className={styles?.title}>{post?.title}</h3>
                 </Link>
                 <p className={styles?.excerpt}>{post?.excerpt}</p>

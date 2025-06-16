@@ -125,7 +125,7 @@ export const SERVICES_PAGE_CONSTANT = {
     title: 'Ready to Start Your Project?',
     description: 'Let\'s discuss your requirements and create something amazing together.',
     buttonText: 'Get Started',
-    buttonLink: '/contact'
+    buttonLink: 'https://www.syedalinaqihasni.com/contact'
   }
 };
 

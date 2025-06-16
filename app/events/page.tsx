@@ -62,7 +62,7 @@ export default function Page() {
             {events?.map((event) => (
               <Card key={event?.id} className={card}>
                 <Link
-                  href={`/events/${event?.slug}`}
+                  href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}
                   passHref
                   className={imageWrapper}
                 >
@@ -85,7 +85,7 @@ export default function Page() {
                   </Badge>
 
                   <Link
-                    href={`/events/${event?.slug}`}
+                    href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}
                     passHref
                     className={eventTitle}
                   >
@@ -106,7 +106,7 @@ export default function Page() {
                   </div>
 
                   <Button asChild className={button}>
-                    <Link href={`/events/${event?.slug}`}>View Details</Link>
+                    <Link href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}>View Details</Link>
                   </Button>
                 </CardContent>
               </Card>

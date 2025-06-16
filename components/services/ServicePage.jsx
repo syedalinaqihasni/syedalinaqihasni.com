@@ -96,7 +96,7 @@ export default function ServicesPage() {
                         </div>
 
                         <Button className="w-full" asChild>
-                          <Link href="/contact">
+                          <Link href="https://www.syedalinaqihasni.com/contact">
                             Get Quote
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </Link>

@@ -69,7 +69,7 @@ export default function FeaturedServices() {
               </div>
 
               <Button className="w-full" asChild>
-                <Link href="/services">
+                <Link href="https://www.syedalinaqihasni.com/services">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

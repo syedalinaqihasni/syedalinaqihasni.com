@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     description: project?.description || project?.title,
     image: project?.image,
     publishedAt: project?.publishedAt,
-    path: `/projects/${project?.slug}`,
+    path: `https://www.syedalinaqihasni.com/projects/${project?.slug}`,
   });
 }
 
