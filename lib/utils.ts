@@ -31,7 +31,7 @@ export const formatDate = (dateString: string) =>
   return text
     .toLowerCase()
     .replace(/\b[a-z]/g, char => char.toUpperCase())
-    .replace(/\s+/g, '-'); // replace all spaces (including multiple) with a dash
+    .replace(/[\s/]+/g, '-'); // replace all spaces (including multiple) with a dash
 }
 
     export function dashToProperCase(text: string): string {

@@ -40,14 +40,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categories = Array.from(new Set(posts.flatMap(post => post?.category || [])));
 
 const blogTagRoutes = tags.map((tag) => ({
-  url: `${baseUrl}/blogs/tag/${tag.toLowerCase().replace(/\s+/g, '-')}`,
+  url: `${baseUrl}/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}`,
   lastModified: new Date(),
   changeFrequency: 'weekly' as const,
   priority: 0.4,
 }));
 
 const blogCategoryRoutes = categories.map((category) => ({
-  url: `${baseUrl}/blogs/category/${category.toLowerCase().replace(/\s+/g, '-')}`,
+  url: `${baseUrl}/blogs/category/${category.toLowerCase().replace(/[\s/]+/g, '-')}`,
   lastModified: new Date(),
   changeFrequency: 'weekly' as const,
   priority: 0.4,

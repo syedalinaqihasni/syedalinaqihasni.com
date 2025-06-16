@@ -40,7 +40,7 @@ export default async function Page({ params }: { params: { category: string } })
   const category = params.category;
   
 const categorizedPosts = posts.filter(post =>
-  post?.category.toLowerCase().replace(/\s+/g, '-') == category
+  post?.category.toLowerCase().replace(/[\s/]+/g, '-') == category
 );
 
 

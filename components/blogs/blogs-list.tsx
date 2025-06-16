@@ -86,7 +86,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
               </Link>
               <CardContent className={"p-6"}>
                 <div className={styles?.categoriesWrapper}>
-                  <a href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category.toLowerCase().replace(/\s+/g, '-')}` }>
+                  <a href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category.toLowerCase().replace(/[\s/]+/g, '-')}` }>
                     
                   <Badge
                     variant={"secondary"}
@@ -112,7 +112,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
                 </div>
                 <div className={styles?.tagsWrapper}>
                   {post?.tags.slice(0, 2)?.map((tag) => (
-                  <a href={`https://www.syedalinaqihasni.com/blogs/tag/${tag.toLowerCase().replace(/\s+/g, '-')}` } 
+                  <a href={`https://www.syedalinaqihasni.com/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}` } 
                       key={tag}>
                     <Badge
                       variant={"secondary"}

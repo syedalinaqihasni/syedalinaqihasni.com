@@ -39,7 +39,7 @@ export default async function Page({ params }: { params: { tag: string } }) {
   const tag = params.tag;
   
 const tagedPosts = posts.filter(post =>
-  post?.tags.some(c => c.toLowerCase().replace(/\s+/g, '-').includes(tag))
+  post?.tags.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))
 );
 
 
