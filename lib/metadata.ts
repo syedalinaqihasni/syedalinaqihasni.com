@@ -3,124 +3,116 @@ import { Metadata } from 'next';
 export const siteBase = 'https://www.syedalinaqihasni.com';
 
 export const siteRoutes: { path: string; title: string; description: string }[] = [
-  {
+ {
     path: '/',
     title: 'Home | Portfolio of Syed Ali Naqi Hasni - Frontend Developer',
-    description: 'Welcome to my personal website where I showcase my work, thoughts, and journey.',
+    description: 'Explore the portfolio of Syed Ali Naqi Hasni, showcasing projects, experiences, blogs, and services.',
   },
   {
     path: '/about',
     title: 'About Syed Ali Naqi Hasni | Frontend Developer Portfolio',
-    description: 'Learn more about Syed Ali Naqi Hasni, a passionate frontend developer.',
+    description: 'Get to know Syed Ali Naqi Hasni—his background, interests, values, and journey as a frontend developer.',
   },
   {
     path: '/archive',
     title: 'Content Archive | Syed Ali Naqi Hasni Portfolio',
-    description: 'Browse through the archived content, ideas, and past updates.',
+    description: 'Discover past articles, projects, and updates organized in an easy-to-navigate archive.',
   },
   {
     path: '/blogs',
     title: 'Tech Blogs by Syed Ali Naqi Hasni | Tutorials, Opinions, Tips & Tricks etc',
-    description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
+    description: 'Read technical tutorials, dev insights, and programming tips from real-world experience.',
   },
   {
     path: '/contact',
     title: 'Contact Syed Ali Naqi Hasni | Get in Touch',
-    description: 'Get in touch with me via email or social platforms.',
+    description: 'Reach out to me directly through email or connect on social media for collaborations and inquiries.',
   },
   {
     path: '/experience',
     title: 'Professional Experience | Syed Ali Naqi Hasni',
-    description: 'Explore my professional background and work history.',
+    description: 'A summary of my work experience, roles held, companies worked with, and tech stack used.',
   },
   {
     path: '/projects',
     title: 'Previous Projects | Frontend Development Work by Syed Ali Naqi Hasni',
-    description: 'A collection of personal and professional projects I\'ve built.',
+    description: 'View my featured frontend development projects—professional, freelance, and personal.',
   },
   {
     path: '/skills',
     title: 'Skills & Tools | Syed Ali Naqi Hasni, Frontend Engineer',
-    description: 'An overview of my technical abilities and tools I work with.',
+    description: 'Discover the technologies, frameworks, and tools I use to build fast, scalable web apps.',
   },
   {
     path: '/resume',
     title: 'Resume of Syed Ali Naqi Hasni | Frontend Developer',
-    description: 'Download or view my resume to learn about my technical skills and experience.',
+    description: 'Browse or download my resume showcasing skills, experience, and career achievements.',
   },
   {
     path: '/services',
     title: 'Web Development Services | Syed Ali Naqi Hasni',
-    description: 'Professional web development and design services to help your business grow online.',
+    description: 'Offering custom frontend development, design, and optimization services tailored for you.',
   },
   {
     path: '/pricing',
     title: 'Service Pricing | Web Development Packages - Syed Ali Naqi Hasni',
-    description: 'Transparent pricing for web development services. Choose the perfect plan for your project.',
+    description: 'Check transparent pricing for my web services—affordable plans for startups and businesses.',
   },
   {
     path: '/certificates',
     title: 'Professional Certificates | Syed Ali Naqi Hasni',
-    description: 'Browse through my professional certifications and achievements.',
-  }, {
-    path: '/services',
-    title: 'Web Development & Design Services | Syed Ali Naqi Hasni',
-    description: 'Professional web development and design services to help your business grow online.',
-  },
-  {
-    path: '/pricing',
-    title: 'Service Pricing Plans | Syed Ali Naqi Hasni - Web Developer',
-    description: 'Transparent pricing for web development services. Choose the perfect plan for your project.',
+    description: 'Browse recognized certifications in frontend development, web design, and software skills.',
   },
   {
     path: '/gallery',
     title: 'Project & Life Gallery | Syed Ali Naqi Hasni - Frontend Developer',
-    description: 'A visual showcase of my life, work, and creative moments.',
-  }, {
+    description: 'A visual journey through my tech projects, events, life moments, and creative captures.',
+  },
+  {
     path: '/events',
     title: 'Tech Events & Meetups | Syed Ali Naqi Hasni - Frontend Developer',
-    description: 'Check out tech talks, meetups, and events I\'ve attended or hosted.',
-  }
-  , {
+    description: 'Explore tech talks, coding events, and developer meetups I\'ve attended or participated in.',
+  },
+  {
     path: '/links',
     title: 'Useful Developer Links | Syed Ali Naqi Hasni\'s Web Toolkit',
-    description: 'Useful links to my profiles, tools, and favorite resources.',
+    description: 'A curated list of my web profiles, favorite dev tools, resources, and productivity links.',
   },
   {
     path: '/socials',
     title: 'Social Profiles | Connect with Syed Ali Naqi Hasni Online',
-    description: 'Connect with me on various social platforms and see my online presence.',
+    description: 'Connect with me across LinkedIn, GitHub, Twitter, and more developer-centric platforms.',
   },
   {
     path: '/blogs/tag',
     title: 'Tech Blogs Tag by Syed Ali Naqi Hasni | Tutorials, Opinions, Tips & Tricks etc',
-    description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
+    description: 'Explore blog posts filtered by specific tags related to web development and frontend trends.',
   },
   {
     path: '/blogs/category',
     title: 'Tech Blogs Category by Syed Ali Naqi Hasni | Tutorials, Opinions, Tips & Tricks etc',
-    description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
+    description: 'Browse tech articles grouped by categories such as JavaScript, React, performance, and more.',
   },
   {
     path: '/events/tag',
     title: 'Tech Events & Meetups Tag | Syed Ali Naqi Hasni - Frontend Developer',
-    description: 'Check out tech talks, meetups, and events I\'ve attended or hosted.',
+    description: 'Find tech events I\'ve tagged based on relevance—frameworks, communities, and innovation.',
   },
   {
     path: '/events/category',
-    title: 'Tech Events & Meetups Category| Syed Ali Naqi Hasni - Frontend Developer',
-    description: 'Check out tech talks, meetups, and events I\'ve attended or hosted.',
+    title: 'Tech Events & Meetups Category | Syed Ali Naqi Hasni - Frontend Developer',
+    description: 'Grouped tech events and coding meetups by categories like conferences, talks, and bootcamps.',
   },
   {
     path: '/projects/tag',
     title: 'Previous Projects Tag | Frontend Development Work by Syed Ali Naqi Hasni',
-    description: 'A collection of personal and professional projects I\'ve built.',
+    description: 'Projects filtered by tag to help you find related work in specific stacks or industries.',
   },
   {
     path: '/projects/category',
     title: 'Previous Projects Category | Frontend Development Work by Syed Ali Naqi Hasni',
-    description: 'A collection of personal and professional projects I\'ve built.',
-  },
+    description: 'Discover projects categorized by domain—ecommerce, CMS, SaaS, UI kits, and more.',
+  }
 ];
 
 export const defaultMetadata = {
