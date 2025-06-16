@@ -6,7 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { blogSchema } from '@/constants/structuredData';
 import CategoryCloud from '@/components/blogs/category-cloud';
 
-export const metadata = getMetadataForPath('/blogs/category');
+export const metadata = getMetadataForPath('/projects/category');
 
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',

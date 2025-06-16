@@ -6,7 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { blogSchema } from '@/constants/structuredData';
 import TagCloud from '@/components/blogs/tags-cloud';
 
-export const metadata = getMetadataForPath('/blogs/tag');
+export const metadata = getMetadataForPath('/projects/tag');
 
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
