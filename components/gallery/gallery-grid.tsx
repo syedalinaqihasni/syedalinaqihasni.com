@@ -72,7 +72,7 @@ export default function GalleryGrid({ images }: { images: Images[] }) {
               >
                 <div className={'relative rounded-lg overflow-hidden'}>
                   <Image
-                    src={image?.src || '/images/blogs/blogs-placeholder.jpg'}
+                    src={image?.src || 'https://syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'}
                     alt={image?.alt}
                     width={500}
                     height={
@@ -108,7 +108,7 @@ export default function GalleryGrid({ images }: { images: Images[] }) {
             <div>
               <div className={'relative w-full h-[60vh]'}>
                 <Image
-                  src={selectedImage.src || '/images/blogs/blogs-placeholder.jpg'}
+                  src={selectedImage.src || 'https://syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'}
                   alt={selectedImage.alt}
                   fill
                   className={'object-contain'}

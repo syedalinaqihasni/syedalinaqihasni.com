@@ -60,7 +60,7 @@ const ProjectList = () => {
               <Card className={'h-full overflow-hidden'}>
                 <div className={'relative h-56 w-full'}>
                  <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>            <Image
-                    src={project?.image || '/images/blogs/blogs-placeholder.jpg'}
+                    src={project?.image || 'https://syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'}
                     alt={project?.title}
                     fill
                     className={'object-cover transition-transform duration-300 hover:scale-105'}

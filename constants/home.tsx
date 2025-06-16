@@ -12,11 +12,11 @@ const CONTENT = {
   buttons: {
     projects: {
       label: 'View Projects',
-      href: '#projects',
+      href: 'https://www.syedalinaqihasni.com/projects',
     },
     hireMe: {
       label: 'Hire Me',
-      href: '#contact',
+      href: 'https://www.syedalinaqihasni.com/contact',
     },
   },
   socialLinks: [

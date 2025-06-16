@@ -67,7 +67,7 @@ export default function Page() {
                   className={imageWrapper}
                 >
                   <Image
-                    src={event?.image || '/images/blogs/blogs-placeholder.jpg'}
+                    src={event?.image || 'https://syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'}
                     alt={event?.title}
                     fill
                     className={image}
