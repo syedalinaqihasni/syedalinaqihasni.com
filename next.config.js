@@ -11,28 +11,37 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Redirect /blog/* to /blogs/*
+      // Redirect non-www to www
       {
-        source: '/blog/:path*',
-        destination: '/blogs/:path*',
-        permanent: true,
-      },
-
-      // Redirect HTTP to HTTPS
-      {
-        source: '/(.*)',
+        source: '/:path*',
         has: [
           {
             type: 'host',
-            value: 'syedalinaqihasni.com',
+            value: '^syedalinaqihasni\\.com$',
           },
+        ],
+        destination: 'https://www.syedalinaqihasni.com/:path*',
+        permanent: true,
+      },
+
+      // Redirect HTTP to HTTPS (if needed and behind a proxy like Vercel)
+      {
+        source: '/:path*',
+        has: [
           {
             type: 'header',
             key: 'x-forwarded-proto',
             value: 'http',
           },
         ],
-        destination: 'https://syedalinaqihasni.com/:1',
+        destination: 'https://www.syedalinaqihasni.com/:path*',
+        permanent: true,
+      },
+
+      // Redirect /blog/* to /blogs/*
+      {
+        source: '/blog/:path*',
+        destination: '/blogs/:path*',
         permanent: true,
       },
     ];
