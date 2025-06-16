@@ -5,101 +5,71 @@ export const siteBase = 'https://www.syedalinaqihasni.com';
 export const siteRoutes: { path: string; title: string; description: string }[] = [
   {
     path: '/',
-    title: 'Home',
+    title: 'Home | Portfolio of Syed Ali Naqi Hasni - Frontend Developer',
     description: 'Welcome to my personal website where I showcase my work, thoughts, and journey.',
   },
   {
     path: '/about',
-    title: 'About',
+    title: 'About Syed Ali Naqi Hasni | Frontend Developer Portfolio',
     description: 'Learn more about Syed Ali Naqi Hasni, a passionate frontend developer.',
   },
   {
     path: '/archive',
-    title: 'Archive',
+    title: 'Content Archive | Syed Ali Naqi Hasni Portfolio',
     description: 'Browse through the archived content, ideas, and past updates.',
   },
   {
     path: '/blogs',
-    title: 'Blogs',
-    description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
-  },
-  {
-    path: '/blogs/tag',
-    title: 'Blogs Tags',
-    description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
-  },
-  {
-    path: '/blogs/category',
-    title: 'Blogs Categories',
+    title: 'Tech Blogs by Syed Ali Naqi Hasni | Tutorials, Opinions, Tips & Tricks etc',
     description: 'Read my technical thoughts, tutorials, and personal dev experiences.',
   },
   {
     path: '/contact',
-    title: 'Contact',
+    title: 'Contact Syed Ali Naqi Hasni | Get in Touch',
     description: 'Get in touch with me via email or social platforms.',
   },
   {
-    path: '/events',
-    title: 'Events',
-    description: 'Check out tech talks, meetups, and events I\'ve attended or hosted.',
-  },
-  {
     path: '/experience',
-    title: 'Experience',
+    title: 'Professional Experience | Syed Ali Naqi Hasni',
     description: 'Explore my professional background and work history.',
   },
   {
-    path: '/gallery',
-    title: 'Gallery',
-    description: 'A visual showcase of my life, work, and creative moments.',
-  },
-  {
-    path: '/links',
-    title: 'Links',
-    description: 'Useful links to my profiles, tools, and favorite resources.',
-  },
-  {
     path: '/projects',
-    title: 'Projects',
+    title: 'Projects | Frontend Development Work by Syed Ali Naqi Hasni',
     description: 'A collection of personal and professional projects I\'ve built.',
   },
   {
-    path: '/resume',
-    title: 'Resume',
-    description: 'Download or view my resume to learn about my technical skills and experience.',
-  },
-  {
     path: '/skills',
-    title: 'Skills',
+    title: 'Skills & Tools | Syed Ali Naqi Hasni, Frontend Engineer',
     description: 'An overview of my technical abilities and tools I work with.',
   },
   {
-    path: '/socials',
-    title: 'Socials',
-    description: 'Connect with me on various social platforms and see my online presence.',
+    path: '/resume',
+    title: 'Resume of Syed Ali Naqi Hasni | Frontend Developer',
+    description: 'Download or view my resume to learn about my technical skills and experience.',
   },
   {
-    path: '/certificates',
-    title: 'Certificates',
-    description: 'Browse through my professional certifications and achievements.',
-  },  {
     path: '/services',
-    title: 'Services',
+    title: 'Web Development Services | Syed Ali Naqi Hasni',
     description: 'Professional web development and design services to help your business grow online.',
   },
   {
     path: '/pricing',
-    title: 'Pricing',
+    title: 'Service Pricing | Web Development Packages - Syed Ali Naqi Hasni',
     description: 'Transparent pricing for web development services. Choose the perfect plan for your project.',
   },
   {
+    path: '/certificates',
+    title: 'Professional Certificates | Syed Ali Naqi Hasni',
+    description: 'Browse through my professional certifications and achievements.',
+  }, {
     path: '/services',
-    title: 'Services',
+    title: 'Web Development & Design Services | Syed Ali Naqi Hasni',
     description: 'Professional web development and design services to help your business grow online.',
   },
   {
     path: '/pricing',
-    title: 'Pricing',
+    title: 'Service Pricing Plans | Syed Ali Naqi Hasni - Web Developer',
     description: 'Transparent pricing for web development services. Choose the perfect plan for your project.',
   },
 ];
@@ -133,7 +103,7 @@ export function generateMetadata({
   const finalDescription = description ?? defaultMetadata.keywords.join(', ');
 
   return {
-    title: `${title} | ${defaultMetadata.siteName}`,
+    title: `${title}`,
     description: finalDescription,
     metadataBase: new URL(defaultMetadata.baseUrl),
     alternates: {
@@ -143,13 +113,13 @@ export function generateMetadata({
       type: 'website',
       locale: 'en_US',
       url: fullUrl,
-      title: `${title} | ${defaultMetadata.siteName}`,
+      title: `${title}`,
       description: finalDescription,
       siteName: defaultMetadata.siteName,
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | ${defaultMetadata.siteName}`,
+      title: `${title}`,
       description: finalDescription,
     },
     authors: [
