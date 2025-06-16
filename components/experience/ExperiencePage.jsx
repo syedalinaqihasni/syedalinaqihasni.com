@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { CONSTANT, EXPERIENCES } from '@/constants/experience';
+import {  EXPERIENCES } from '@/constants/experience';
 import Image from 'next/image';
 
 const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
@@ -30,10 +30,10 @@ const SKILL_BADGE_WRAPPER = 'flex flex-wrap gap-2';
 const ExperiencePage = () => (
   <div className={CONTAINER}>
     <div className={INNER_WRAPPER}>
-      <header className={HEADER}>
-        <h1 className={TITLE}>{CONSTANT?.ExperiencePageTitle}</h1>
-        <p className={DESCRIPTION}>{CONSTANT?.ExperiencePageDescription}</p>
-      </header>
+      <div className={HEADER}>
+        <h1 className={TITLE}>{'Experience'}</h1>
+        <p className={DESCRIPTION}>{"My professional journey and the companies I've had the pleasure to work with."}</p>
+      </div>
 
       <section className={CARD_SPACING}>
         {EXPERIENCES?.map((experience) => (
