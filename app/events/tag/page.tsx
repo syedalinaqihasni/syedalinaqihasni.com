@@ -1,7 +1,6 @@
 import BlogsList from '@/components/blogs/blogs-list';
 import { getMetadataForPath } from '@/lib/metadata';
 import { CONSTANT, posts } from '@/constants/blogs';
-import { Post } from "@/types/blogs";
 import StructuredData from '@/components/StructuredData';
 import { blogSchema } from '@/constants/structuredData';
 import TagCloud from '@/components/blogs/tags-cloud';

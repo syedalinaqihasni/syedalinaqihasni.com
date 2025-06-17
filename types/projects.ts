@@ -1,5 +1,5 @@
 export type Project = {
-  id: number;
+  id: string;
   title: string;
   slug: string;
   description: string;
@@ -22,7 +22,7 @@ export type Project = {
 };
 
 export type RelatedProject = {
-  id: number;
+  id: string;
   title: string;
   slug: string;
   description: string;

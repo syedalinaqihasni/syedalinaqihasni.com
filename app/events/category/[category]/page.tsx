@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import BlogsList from '@/components/blogs/blogs-list';
-import { posts } from '@/constants/blogs';
+import { events } from '@/constants/events';
 import { dashToProperCase, } from '@/lib/utils';
+import EventsList from '@/components/events/EventsList';
 
 
 // Optional: You can add specific overrides here
@@ -26,8 +27,8 @@ export async function generateMetadata({ params }: { params: { category: string 
   
   const title = `${dashToProperCase(category)} Blogs`;
   const description =
-    DESCRIPTION_OVERRIDES[category.toLowerCase()] ||
-    `These are ${category.toLowerCase()} blogs for curious minds.`;
+    DESCRIPTION_OVERRIDES[category?.toLowerCase()] ||
+    `These are ${category?.toLowerCase()} blogs for curious minds.`;
 
   return {
     title,
@@ -35,12 +36,25 @@ export async function generateMetadata({ params }: { params: { category: string 
   };
 }
 
+// Generate static params for category pages
+export async function generateStaticParams() {
+  // Get unique categories from events
+  const categories = Array.from(
+    new Set(
+      events
+        .map(event => event?.category?.toLowerCase().replace(/[\s/]+/g, '-'))
+        .filter(Boolean)
+    )
+  );
+  return categories.map(category => ({ category }));
+}
+
 // Server component
 export default async function Page({ params }: { params: { category: string } }) {
   const category = params.category;
   
-const categorizedPosts = posts.filter(post =>
-  post?.category.toLowerCase().replace(/[\s/]+/g, '-') == category
+const categorizedPosts = events?.filter(event =>
+  event?.category?.toLowerCase().replace(/[\s/]+/g, '-') == category
 );
 
 
@@ -56,7 +70,7 @@ const categorizedPosts = posts.filter(post =>
           <h1 className={styles?.title}>{title}</h1>
           <p className={styles?.description}>{description}</p>
         </div>
-        <BlogsList posts={categorizedPosts} />
+        <EventsList events={categorizedPosts}/>
       </div>
     </div>
   );

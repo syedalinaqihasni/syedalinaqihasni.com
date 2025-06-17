@@ -11,6 +11,7 @@ const events: Event []= [{
   date: '2024-07-01T18:00:00Z',
   location: '123 Main St, City, Country',
   virtual: false,
+  tags:['Event','Sample'],
   content: `<div >
   <h1>Project Title</h1>
   <h2>Overview</h2>

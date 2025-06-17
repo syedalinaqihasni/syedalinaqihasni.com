@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
-import BlogsList from '@/components/blogs/blogs-list';
-import { posts } from '@/constants/blogs';
 import { dashToProperCase, } from '@/lib/utils';
+import ProjectsList from '@/components/projects/projects-list';
+import { projects } from '@/constants/projects';
 
 
 // Optional: You can add specific overrides here
@@ -19,6 +19,20 @@ const styles = {
   title: 'text-4xl md:text-5xl font-bold mb-6',
   description: 'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto',
 };
+
+// Generate static params for all tags
+export async function generateStaticParams() {
+  // Collect all unique tags from projects
+  const tagsSet = new Set<string>();
+  projects.forEach(project => {
+    project.tags.forEach(tag => {
+      tagsSet.add(tag.toLowerCase().replace(/[\s/]+/g, '-'));
+    });
+  });
+
+  // Return params in the format expected by Next.js
+  return Array.from(tagsSet).map(tag => ({ tag }));
+}
 
 // Generate <head> metadata dynamically
 export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {
@@ -38,8 +52,8 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
 export default async function Page({ params }: { params: { tag: string } }) {
   const tag = params.tag;
   
-const tagedPosts = posts.filter(post =>
-  post?.tags.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))
+const tagedPosts = projects?.filter(project =>
+  project?.tags?.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))
 );
 
 
@@ -55,7 +69,7 @@ const tagedPosts = posts.filter(post =>
           <h1 className={styles?.title}>{title}</h1>
           <p className={styles?.description}>{description}</p>
         </div>
-        <BlogsList posts={tagedPosts} />
+        <ProjectsList projects={tagedPosts} />
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
 import { Metadata } from 'next';
 import BlogsList from '@/components/blogs/blogs-list';
 import { posts } from '@/constants/blogs';
-import { dashToProperCase, } from '@/lib/utils';
-
+import { dashToProperCase } from '@/lib/utils';
 
 // Optional: You can add specific overrides here
 const DESCRIPTION_OVERRIDES: Record<string, string> = {
@@ -35,14 +34,26 @@ export async function generateMetadata({ params }: { params: { category: string 
   };
 }
 
+// Generate static params for category pages
+export async function generateStaticParams() {
+  // Get unique categories from posts
+  const categories = Array.from(
+    new Set(
+      posts
+        .map(post => post?.category?.toLowerCase().replace(/[\s/]+/g, '-'))
+        .filter(Boolean)
+    )
+  );
+  return categories.map(category => ({ category }));
+}
+
 // Server component
 export default async function Page({ params }: { params: { category: string } }) {
   const category = params.category;
   
-const categorizedPosts = posts.filter(post =>
-  post?.category.toLowerCase().replace(/[\s/]+/g, '-') == category
-);
-
+  const categorizedPosts = posts.filter(post =>
+    post?.category.toLowerCase().replace(/[\s/]+/g, '-') == category
+  );
 
   const title = `${dashToProperCase(category)} Blogs`;
   const description =

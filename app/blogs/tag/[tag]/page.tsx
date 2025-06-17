@@ -34,14 +34,27 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
   };
 }
 
+// Generate static params for all tags
+export async function generateStaticParams() {
+  // Collect all unique tags from posts
+  const tagsSet = new Set<string>();
+  posts.forEach(post => {
+    post.tags.forEach(tag => {
+      tagsSet.add(tag.toLowerCase().replace(/[\s/]+/g, '-'));
+    });
+  });
+
+  // Return params in the format expected by Next.js
+  return Array.from(tagsSet).map(tag => ({ tag }));
+}
+
 // Server component
 export default async function Page({ params }: { params: { tag: string } }) {
   const tag = params.tag;
   
-const tagedPosts = posts.filter(post =>
-  post?.tags.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))
-);
-
+  const tagedPosts = posts.filter(post =>
+    post?.tags.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))
+  );
 
   const title = `${dashToProperCase(tag)} Blogs`;
   const description =

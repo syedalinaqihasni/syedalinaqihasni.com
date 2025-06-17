@@ -11,6 +11,13 @@ import { formatDate } from '@/lib/utils';
 import StructuredData from '@/components/StructuredData';
 import { generateProjectSchema, generateBreadcrumbSchema } from '@/constants/structuredData';
 
+// Correct version of generateStaticParams
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const project = projects?.find((e) => e.slug === params?.slug);
   if (!project) return notFound();

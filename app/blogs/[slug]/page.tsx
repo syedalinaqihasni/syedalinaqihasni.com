@@ -11,24 +11,15 @@ import { notFound } from "next/navigation";
 import { formatDate } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import SingleBlogPage from "@/components/blogs/SingleBlogPage";
-import StructuredData from '@/components/StructuredData';
-import { generateBlogPostSchema, generateBreadcrumbSchema } from '@/constants/structuredData';
+import StructuredData from "@/components/StructuredData";
+import {
+  generateBlogPostSchema,
+  generateBreadcrumbSchema,
+} from "@/constants/structuredData";
 import Link from "next/link";
 import FeaturedBlogs from "@/components/blogs/featured-blogs";
 
-const styles = {
-  container: "container mx-auto px-4 py-32 md:py-40",
-  wrapper: "max-w-4xl mx-auto",
-  categoryWrapper: "flex flex-wrap gap-2 mb-4",
-  tagWrapper: "flex flex-wrap gap-2 mt-4",
-  title: "text-4xl md:text-5xl font-bold mb-6",
-  metaRow: "flex items-center gap-6 text-muted-foreground",
-  metaItem: "flex items-center gap-2",
-  imageWrapper: "relative h-[400px] rounded-lg overflow-hidden mb-12",
-  image: "object-cover",
-  content: "prose dark:prose-invert max-w-none mb-16",
-  shareWrapper: "text-center",
-};
+
 const styles2 = {
   sectionPadding: "py-2 px-4",
   heroPadding: "pt-32 pb-16 md:pt-40 md:pb-20 px-4",
@@ -52,6 +43,7 @@ const styles2 = {
   centerText: "text-center mt-10",
   contactText: "text-center text-muted-foreground mb-10 max-w-2xl mx-auto",
 };
+
 export async function generateMetadata({
   params,
 }: {
@@ -69,29 +61,37 @@ export async function generateMetadata({
   });
 }
 
+// Correct version of generateStaticParams
+export async function generateStaticParams() {
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const post = posts?.find((post) => post?.slug === params?.slug);
-  if (!post) notFound();
+  const post = posts.find((post) => post.slug === params.slug);
+  if (!post) return notFound();
+
 
   const blogPostSchema = generateBlogPostSchema(post);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.syedalinaqihasni.com" },
     { name: "Blogs", url: "https://www.syedalinaqihasni.com/blogs" },
-    { name: post?.title, url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}` }
+    {
+      name: post?.title,
+      url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
+    },
   ]);
 
   return (
     <>
       <StructuredData data={blogPostSchema} />
       <StructuredData data={breadcrumbSchema} />
-      <SingleBlogPage post={post}/>
+      <SingleBlogPage post={post} />
       <div className="container">
-{/* Blogs Section */}
+        {/* Blogs Section */}
         {posts?.length != 0 && (
-          <section
-            className={`${styles2?.sectionPadding}`}
-            id={"blogs"}
-          >
+          <section className={`${styles2?.sectionPadding}`} id={"blogs"}>
             <div className={styles2?.containerLarge}>
               <div className={styles2?.projectsHeaderWrapper}>
                 <h2 className={styles2?.sectionHeaderLeft}>Recent Blogs</h2>
@@ -102,12 +102,11 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                   </Button>
                 </Link>
               </div>
-              <FeaturedBlogs posts={posts}/>
+              <FeaturedBlogs posts={posts} />
             </div>
           </section>
         )}
       </div>
-        
     </>
   );
 };

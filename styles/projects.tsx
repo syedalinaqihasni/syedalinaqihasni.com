@@ -6,6 +6,7 @@ TITLE_styles : 'text-4xl md:text-5xl font-bold mb-6',
 DESCRIPTION_styles :
   'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto',
 }
+
 export{
     styles
 }

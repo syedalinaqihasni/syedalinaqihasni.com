@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
-import BlogsList from '@/components/blogs/blogs-list';
-import { posts } from '@/constants/blogs';
+import { projects } from '@/constants/projects';
 import { dashToProperCase, } from '@/lib/utils';
+import ProjectsList from '@/components/projects/projects-list';
 
 
 // Optional: You can add specific overrides here
@@ -35,12 +35,25 @@ export async function generateMetadata({ params }: { params: { category: string 
   };
 }
 
+// Generate static params for category pages
+export async function generateStaticParams() {
+  // Get unique categories from projects
+  const categories = Array.from(
+    new Set(
+      projects
+        .map(project => project?.category?.toLowerCase().replace(/[\s/]+/g, '-'))
+        .filter(Boolean)
+    )
+  );
+  return categories.map(category => ({ category }));
+}
+
 // Server component
 export default async function Page({ params }: { params: { category: string } }) {
   const category = params.category;
   
-const categorizedPosts = posts.filter(post =>
-  post?.category.toLowerCase().replace(/[\s/]+/g, '-') == category
+const categorizedPosts = projects.filter(project =>
+  project?.category.toLowerCase().replace(/[\s/]+/g, '-') == category
 );
 
 
@@ -56,7 +69,7 @@ const categorizedPosts = posts.filter(post =>
           <h1 className={styles?.title}>{title}</h1>
           <p className={styles?.description}>{description}</p>
         </div>
-        <BlogsList posts={categorizedPosts} />
+        <ProjectsList projects={categorizedPosts} />
       </div>
     </div>
   );

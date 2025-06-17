@@ -17,6 +17,7 @@ eventDetails:"space-y-2 text-sm text-muted-foreground mb-4",
 eventDetailRow:"flex items-center gap-2",
 button:"w-full",
 }
+
 export {
   styles
 }

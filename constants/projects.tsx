@@ -16,6 +16,7 @@ export const projects = [
   githubUrl: 'https://github.com',
   liveUrl: 'https://example.com',
   category:'react',
+  tags:['eCommerce'],
   publishedAt: '2024-01-15',
   stats: {
     users: '10,000+',
