@@ -1,29 +1,53 @@
-import './globals.css';
-import { Inter, Poppins } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
-import Header from '@/components/layout/header';
-import Footer from '@/components/layout/footer';
-import { Toaster } from '@/components/ui/toaster';
-import { getMetadataForPath } from '@/lib/metadata';
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import StructuredData from '@/components/StructuredData';
-import { aboutMe } from '@/constants/structuredData';
+import "./globals.css";
+import { Inter, Poppins } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import { Toaster } from "@/components/ui/toaster";
+import { getMetadataForPath } from "@/lib/metadata";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import StructuredData from "@/components/StructuredData";
+import {
+  aboutMe,
+  archiveSchema,
+  blogSchema,
+  certificatesSchema,
+  contactSchema,
+  eventsSchema,
+  experienceSchema,
+  faqSchema,
+  gallerySchema,
+  generateBlogPostSchema,
+  generateBreadcrumbSchema,
+  generateEventSchema,
+  generateProjectSchema,
+  linksSchema,
+  localBusinessSchema,
+  organizationSchema,
+  portfolioSchema,
+  pricingSchema,
+  resumeSchema,
+  servicesSchema,
+  skillsSchema,
+  socialsSchema,
+  testimonialsSchema,
+  websiteSchema,
+} from "@/constants/structuredData";
 const interFont = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 const poppinsFont = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-poppins',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
 });
 
-export const metadata = getMetadataForPath('/');
-
+export const metadata = getMetadataForPath("/");
 
 export default function RootLayout({
   children,
@@ -31,24 +55,33 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang={'en'} suppressHydrationWarning>
+    <html lang={"en"} suppressHydrationWarning>
       <head>
         <GoogleTagManager gtmId="GTM-NBKH9P8G" />
         <GoogleAnalytics gaId="G-5TPNEKJMLD" />
-        <StructuredData data={aboutMe} />
+        <StructuredData
+          data={
+            [aboutMe,
+            localBusinessSchema,
+            organizationSchema,
+            portfolioSchema,
+            testimonialsSchema,
+            websiteSchema]
+          }
+        />
       </head>
       <body
         className={`${interFont.variable} ${poppinsFont.variable} font-sans min-h-screen bg-background text-foreground`}
       >
         <ThemeProvider
-          attribute={'class'}
-          defaultTheme={'system'}
+          attribute={"class"}
+          defaultTheme={"system"}
           enableSystem
           disableTransitionOnChange
         >
-          <div className={'flex min-h-screen flex-col'}>
+          <div className={"flex min-h-screen flex-col"}>
             <Header />
-            <main className={'flex-1'}>{children}</main> 
+            <main className={"flex-1"}>{children}</main>
             <SpeedInsights />
             <Footer />
           </div>
