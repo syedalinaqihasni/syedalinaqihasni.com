@@ -37,7 +37,14 @@ export const projects = [
     image:
       "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     // image: 'https://www.syedalinaqihasni.com/images/projects/espark-talent-dashboard.jpg',
-    gallery: [],
+    gallery: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     technologies: [
       "Next.js",
       "React.js",
@@ -55,14 +62,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: true,
-    relatedProjects: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    ],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
       <p>
@@ -97,7 +97,14 @@ export const projects = [
     // image: 'https://www.syedalinaqihasni.com/images/projects/real-buyerz.jpg',
     image:
       "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    gallery: [],
+    gallery: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     technologies: ["Next.js", "React.js", "State Management"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
@@ -110,14 +117,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    ],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -151,7 +151,14 @@ export const projects = [
     // image: 'https://www.syedalinaqihasni.com/images/projects/cartx.jpg',
     image:
       "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    gallery: [],
+    gallery: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     technologies: ["Shopify", "React.js", "Web Design"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
@@ -164,14 +171,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    ],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -203,7 +203,14 @@ export const projects = [
     // image: 'https://www.syedalinaqihasni.com/images/projects/hasnitube.jpg',
     image:
       "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    gallery: [],
+    gallery: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     technologies: ["WordPress"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
@@ -216,14 +223,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    ],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -255,7 +255,14 @@ export const projects = [
     // image: 'https://www.syedalinaqihasni.com/images/projects/ams.jpg',
     image:
       "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    gallery: [],
+    gallery: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
@@ -268,14 +275,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-    ],
+    relatedProjects: [],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
