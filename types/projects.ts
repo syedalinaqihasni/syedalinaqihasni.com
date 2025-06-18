@@ -17,7 +17,7 @@ export type Project = {
     revenue: string;
   };
   isFeatured: boolean;
-  relatedProjects: RelatedProject[];
+  relatedProjects?: RelatedProject[];
   longDescription: string; 
 };
 
