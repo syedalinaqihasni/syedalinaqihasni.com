@@ -3,7 +3,7 @@ export type Project = {
   title: string;
   slug: string;
   description: string;
-  image: string;
+  image?: string;
   gallery: string[]; 
   technologies: string[];
   githubUrl: string;
@@ -26,6 +26,6 @@ export type RelatedProject = {
   title: string;
   slug: string;
   description: string;
-  image: string;
+  image?: string;
   technologies: string[];
 };
