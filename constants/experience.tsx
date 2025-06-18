@@ -4,7 +4,7 @@ export const EXPERIENCES = [
     company: 'eSpark Consulting Group',
     logo: 'https://syedalinaqihasni.com/images/experience/espark-cons-group.jpg',
     period: 'Sep 2018 - Present',
-    location: 'Karachi, Pakistan (Remote)',
+    location: 'Karachi, Pakistan',
     type: 'Full-time',
     positions: [
       {
@@ -94,7 +94,7 @@ export const EXPERIENCES = [
     logo: 'https://syedalinaqihasni.com/images/experience/seek-social-ltd.jpg',
     period: 'Aug 2019 - Mar 2022',
     location: 'Remote (UK-based)',
-    type: 'Full-time',
+    type: 'Contract',
     positions: [
       {
         role: 'WordPress Developer',
@@ -125,6 +125,46 @@ export const EXPERIENCES = [
   //         'Built tools including npm packages and CLI generators',
   //       ],
   //       skills: ['React', 'Next.js', 'WordPress', 'Shopify', 'SEO'],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: '3',
+  //   company: 'Ruby Designers',
+  //   logo: 'https://syedalinaqihasni.com/images/experience/ruby-designers.jpg',
+  //   period: 'Aug 2019 - Mar 2022',
+  //   location: 'Remote (Karachi, PK)',
+  //   type: 'Full-time',
+  //   positions: [
+  //     {
+  //       role: 'WordPress Developer',
+  //       description: [
+  //         'Built custom WordPress websites and WooCommerce stores',
+  //         'Optimized SEO, schema markup, and page load times',
+  //         'Handled maintenance, staging, and plugin customizations',
+  //         'Communicated with clients for revisions and updates',
+  //       ],
+  //       skills: ['WordPress', 'PHP', 'WooCommerce', 'SEO', 'JavaScript'],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: '3',
+  //   company: 'DevSol Pakistan',
+  //   logo: 'https://syedalinaqihasni.com/images/experience/devsol-pakistan.jpg',
+  //   period: 'Aug 2019 - Mar 2022',
+  //   location: 'Remote (Karachi, PK)',
+  //   type: 'Full-time',
+  //   positions: [
+  //     {
+  //       role: 'WordPress Developer',
+  //       description: [
+  //         'Built custom WordPress websites and WooCommerce stores',
+  //         'Optimized SEO, schema markup, and page load times',
+  //         'Handled maintenance, staging, and plugin customizations',
+  //         'Communicated with clients for revisions and updates',
+  //       ],
+  //       skills: ['WordPress', 'PHP', 'WooCommerce', 'SEO', 'JavaScript'],
   //     },
   //   ],
   // },
