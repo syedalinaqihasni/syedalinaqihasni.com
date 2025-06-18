@@ -22,33 +22,47 @@ export const projects = [
   //     revenue: '$1M+',
   //   },
   //   isFeatured: true,
-  //   relatedProjects: [],
+  //   relatedProjects: ['https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',],
   //   longDescription: `
   //     <h2>Project Overview</h2>
   //     <p>This e-commerce platform provides a complete solution for online stores...</p>
   //   `,
   // },
   {
-    id: '2',
-    title: 'eSpark Talent Dashboard',
-    slug: 'espark-talent-dashboard',
-    description: 'A management dashboard for Employers, Employees, and HR with modern frontend development.',
-    image: 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',
+    id: "2",
+    title: "eSpark Talent Dashboard",
+    slug: "espark-talent-dashboard",
+    description:
+      "A management dashboard for Employers, Employees, and HR with modern frontend development.",
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     // image: 'https://www.syedalinaqihasni.com/images/projects/espark-talent-dashboard.jpg',
     gallery: [],
-    technologies: ['Next.js', 'React.js', 'State Management', 'Responsive Design'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    category: 'nextjs',
-    tags: ['Dashboard', 'HR', 'Web App'],
-    publishedAt: '2024-04-01',
+    technologies: [
+      "Next.js",
+      "React.js",
+      "State Management",
+      "Responsive Design",
+    ],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    category: "nextjs",
+    tags: ["Dashboard", "HR", "Web App"],
+    publishedAt: "2024-04-01",
     stats: {
-      users: '10,000+',
-      orders: '50,000+',
-      revenue: '$1M+',
+      users: "10,000+",
+      orders: "50,000+",
+      revenue: "$1M+",
     },
     isFeatured: true,
-    relatedProjects: [],
+    relatedProjects: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     longDescription: `
       <h2>Project Overview</h2>
       <p>
@@ -76,26 +90,34 @@ export const projects = [
     `,
   },
   {
-    id: '3',
-    title: 'Real Buyerz',
-    slug: 'real-buyerz',
-    description: 'Online realtors portal for agents and common users.',
+    id: "3",
+    title: "Real Buyerz",
+    slug: "real-buyerz",
+    description: "Online realtors portal for agents and common users.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/real-buyerz.jpg',
-    image: 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [],
-    technologies: ['Next.js', 'React.js', 'State Management'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    category: 'nextjs',
-    tags: ['Realtor', 'Web App'],
-    publishedAt: '2024-01-10',
+    technologies: ["Next.js", "React.js", "State Management"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    category: "nextjs",
+    tags: ["Realtor", "Web App"],
+    publishedAt: "2024-01-10",
     stats: {
-      users: '10,000+',
-      orders: '50,000+',
-      revenue: '$1M+',
+      users: "10,000+",
+      orders: "50,000+",
+      revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [],
+    relatedProjects: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -121,26 +143,35 @@ export const projects = [
     `,
   },
   {
-    id: '4',
-    title: 'CartX',
-    slug: 'cartx-shopify',
-    description: 'Redesigned Shopify app from PHP/Laravel to React-based architecture.',
+    id: "4",
+    title: "CartX",
+    slug: "cartx-shopify",
+    description:
+      "Redesigned Shopify app from PHP/Laravel to React-based architecture.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/cartx.jpg',
-    image: 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [],
-    technologies: ['Shopify', 'React.js', 'Web Design'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    category: 'react',
-    tags: ['Shopify', 'E-Commerce'],
-    publishedAt: '2023-09-01',
+    technologies: ["Shopify", "React.js", "Web Design"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    category: "react",
+    tags: ["Shopify", "E-Commerce"],
+    publishedAt: "2023-09-01",
     stats: {
-      users: '10,000+',
-      orders: '50,000+',
-      revenue: '$1M+',
+      users: "10,000+",
+      orders: "50,000+",
+      revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [],
+    relatedProjects: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -165,26 +196,34 @@ export const projects = [
     `,
   },
   {
-    id: '5',
-    title: 'HasniTube',
-    slug: 'hasnitube-wordpress',
-    description: 'A WordPress-based entertainment portal.',
+    id: "5",
+    title: "HasniTube",
+    slug: "hasnitube-wordpress",
+    description: "A WordPress-based entertainment portal.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/hasnitube.jpg',
-    image: 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [],
-    technologies: ['WordPress'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    category: 'wordpress',
-    tags: ['Entertainment', 'Blog'],
-    publishedAt: '2022-12-31',
+    technologies: ["WordPress"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    category: "wordpress",
+    tags: ["Entertainment", "Blog"],
+    publishedAt: "2022-12-31",
     stats: {
-      users: '10,000+',
-      orders: '50,000+',
-      revenue: '$1M+',
+      users: "10,000+",
+      orders: "50,000+",
+      revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [],
+    relatedProjects: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -209,26 +248,34 @@ export const projects = [
     `,
   },
   {
-    id: '6',
-    title: 'Assets Management System (AMS)',
-    slug: 'assets-management-system',
-    description: 'A PHP-based inventory management system developed for SBTE.',
+    id: "6",
+    title: "Assets Management System (AMS)",
+    slug: "assets-management-system",
+    description: "A PHP-based inventory management system developed for SBTE.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/ams.jpg',
-    image: 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [],
-    technologies: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
-    category: 'php',
-    tags: ['Inventory', 'PHP'],
-    publishedAt: '2016-03-01',
+    technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    category: "php",
+    tags: ["Inventory", "PHP"],
+    publishedAt: "2016-03-01",
     stats: {
-      users: '10,000+',
-      orders: '50,000+',
-      revenue: '$1M+',
+      users: "10,000+",
+      orders: "50,000+",
+      revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [],
+    relatedProjects: [
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -255,11 +302,8 @@ export const projects = [
   },
 ];
 
-const PAGE_TITLE = 'My Projects';
+const PAGE_TITLE = "My Projects";
 const PAGE_DESCRIPTION =
   "Here's a selection of my best work across web development, design, and software engineering.";
 
-  export {
-    PAGE_TITLE,
-    PAGE_DESCRIPTION,
-  }
+export { PAGE_TITLE, PAGE_DESCRIPTION };
