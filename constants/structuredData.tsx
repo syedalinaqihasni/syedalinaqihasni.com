@@ -823,9 +823,15 @@ const localBusinessSchema = {
 };
 const testimonialsSchema = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Syed Ali Naqi Hasni",
-  "url": "https://www.syedalinaqihasni.com",
+  "@type": "Service",
+  "name": "Freelance Web Development by Syed Ali Naqi Hasni",
+  "provider": {
+    "@type": "Person",
+    "name": "Syed Ali Naqi Hasni",
+    "url": "https://www.syedalinaqihasni.com"
+  },
+  "url": "https://www.syedalinaqihasni.com/testimonials",
+  "description": "Frontend development services specializing in React, Next.js, and UI performance.",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
