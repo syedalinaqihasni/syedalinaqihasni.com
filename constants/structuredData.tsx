@@ -791,6 +791,46 @@ const localBusinessSchema = {
         "@type": "Person",
         name: "Client A",
       },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody: "Excellent service and great communication!",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Client B",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Delivered on time with clean code and strong attention to detail.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Client C",
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody: "Very responsive and professional. Highly recommended!",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Client A",
+      },
       datePublished: "2023-10-01",
       reviewBody:
         "Outstanding web development services and great communication.",
@@ -824,62 +864,22 @@ const localBusinessSchema = {
 const testimonialsSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Freelance Web Development by Syed Ali Naqi Hasni",
-  "provider": {
+  name: "Freelance Web Development by Syed Ali Naqi Hasni",
+  provider: {
     "@type": "Person",
-    "name": "Syed Ali Naqi Hasni",
-    "url": "https://www.syedalinaqihasni.com"
+    name: "Syed Ali Naqi Hasni",
+    url: "https://www.syedalinaqihasni.com",
   },
-  "url": "https://www.syedalinaqihasni.com/testimonials",
-  "description": "Frontend development services specializing in React, Next.js, and UI performance.",
-  "aggregateRating": {
+  url: "https://www.syedalinaqihasni.com/testimonials",
+  description:
+    "Frontend development services specializing in React, Next.js, and UI performance.",
+  aggregateRating: {
     "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "3",
-    "bestRating": "5"
+    ratingValue: "5",
+    reviewCount: "3",
+    bestRating: "5",
   },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Client A"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Excellent service and great communication!"
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Client B"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Delivered on time with clean code and strong attention to detail."
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Client C"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Very responsive and professional. Highly recommended!"
-    }
-  ]
-}
+};
 
 const faqSchema = {
   "@context": "https://schema.org",
