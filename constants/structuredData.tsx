@@ -823,54 +823,57 @@ const localBusinessSchema = {
 };
 const testimonialsSchema = {
   "@context": "https://schema.org",
-  "@type": "CreativeWorkSeries",
-  name: "Client Testimonials",
-  description:
-    "Verified reviews from clients who have worked with Syed Ali Naqi Hasni.",
-  url: "https://www.syedalinaqihasni.com/testimonials",
-  review: [
+  "@type": "Person",
+  "name": "Syed Ali Naqi Hasni",
+  "url": "https://www.syedalinaqihasni.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3",
+    "bestRating": "5"
+  },
+  "review": [
     {
       "@type": "Review",
-      author: {
+      "author": {
         "@type": "Person",
-        name: "Client A",
+        "name": "Client A"
       },
-      reviewRating: {
+      "reviewRating": {
         "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
+        "ratingValue": "5",
+        "bestRating": "5"
       },
-      reviewBody: "Excellent service and great communication!",
+      "reviewBody": "Excellent service and great communication!"
     },
     {
       "@type": "Review",
-      author: {
+      "author": {
         "@type": "Person",
-        name: "Client B",
+        "name": "Client B"
       },
-      reviewRating: {
+      "reviewRating": {
         "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
+        "ratingValue": "5",
+        "bestRating": "5"
       },
-      reviewBody:
-        "Delivered on time with clean code and strong attention to detail.",
+      "reviewBody": "Delivered on time with clean code and strong attention to detail."
     },
     {
       "@type": "Review",
-      author: {
+      "author": {
         "@type": "Person",
-        name: "Client C",
+        "name": "Client C"
       },
-      reviewRating: {
+      "reviewRating": {
         "@type": "Rating",
-        ratingValue: "5",
-        bestRating: "5",
+        "ratingValue": "5",
+        "bestRating": "5"
       },
-      reviewBody: "Very responsive and professional. Highly recommended!",
-    },
-  ],
-};
+      "reviewBody": "Very responsive and professional. Highly recommended!"
+    }
+  ]
+}
 
 const faqSchema = {
   "@context": "https://schema.org",
