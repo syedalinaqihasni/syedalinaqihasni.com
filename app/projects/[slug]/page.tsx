@@ -14,6 +14,7 @@ import {
   generateBreadcrumbSchema,
 } from "@/constants/structuredData";
 import { RelatedProject } from "@/types/projects";
+import HtmlRenderer from "@/components/HtmlRenderer";
 
 // Correct version of generateStaticParams
 export async function generateStaticParams() {
@@ -176,10 +177,9 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                   {formatDate(project?.publishedAt)}
                 </div>
               </div>
-              <div
-                className={LONG_DESCRIPTION}
-                dangerouslySetInnerHTML={{ __html: project?.longDescription }}
-              />
+              <div className={LONG_DESCRIPTION}>
+                <HtmlRenderer html={project?.longDescription} />
+              </div>
             </CardContent>
           </Card>
           <div className={GALLERY_SECTION}>
@@ -198,39 +198,44 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             </div>
           </div>
           {project?.relatedProjects?.length > 0 && (
-  <div className={RELATED_SECTION}>
-    <h2 className={RELATED_TITLE}>Related Projects</h2>
-    <div className={RELATED_GRID}>
-      {project.relatedProjects.map((relatedProject: RelatedProject) => (
-        <Card key={relatedProject?.id}>
-          <div className={RELATED_CARD_IMAGE_WRAPPER}>
-            <Image
-              src={
-                relatedProject?.image ||
-                'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'
-              }
-              alt={relatedProject?.title}
-              fill
-              className={IMAGE_CLASS}
-            />
-          </div>
-          <CardContent className={RELATED_CARD_CONTENT}>
-            <h3 className={RELATED_CARD_TITLE}>{relatedProject?.title}</h3>
-            <p className={RELATED_CARD_DESC}>{relatedProject?.description}</p>
-            <div className={RELATED_BADGES}>
-              {relatedProject?.technologies.map((tech: string) => (
-                <Badge key={tech} variant="secondary">
-                  {tech}
-                </Badge>
-              ))}
+            <div className={RELATED_SECTION}>
+              <h2 className={RELATED_TITLE}>Related Projects</h2>
+              <div className={RELATED_GRID}>
+                {project.relatedProjects.map(
+                  (relatedProject: RelatedProject) => (
+                    <Card key={relatedProject?.id}>
+                      <div className={RELATED_CARD_IMAGE_WRAPPER}>
+                        <Image
+                          src={
+                            relatedProject?.image ||
+                            "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                          }
+                          alt={relatedProject?.title}
+                          fill
+                          className={IMAGE_CLASS}
+                        />
+                      </div>
+                      <CardContent className={RELATED_CARD_CONTENT}>
+                        <h3 className={RELATED_CARD_TITLE}>
+                          {relatedProject?.title}
+                        </h3>
+                        <p className={RELATED_CARD_DESC}>
+                          {relatedProject?.description}
+                        </p>
+                        <div className={RELATED_BADGES}>
+                          {relatedProject?.technologies.map((tech: string) => (
+                            <Badge key={tech} variant="secondary">
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )
+                )}
+              </div>
             </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  </div>
-)}
-
+          )}
         </div>
       </div>
     </>
