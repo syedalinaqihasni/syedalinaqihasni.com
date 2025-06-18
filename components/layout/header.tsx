@@ -14,14 +14,14 @@ const CONSTANT = {
 };
 
 const NAV_ITEMS = [
-  { name: 'Home', path: 'https://syedalinaqihasni.com/' },
-  { name: 'About', path: 'https://syedalinaqihasni.com/about' },
-  { name: 'Projects', path: 'https://syedalinaqihasni.com/projects' },
-  { name: 'Services', path: 'https://syedalinaqihasni.com/services' },
-  { name: 'Pricing', path: 'https://syedalinaqihasni.com/pricing' },
-  { name: 'Blogs', path: 'https://syedalinaqihasni.com/blogs' },
-  { name: 'Resume', path: 'https://syedalinaqihasni.com/resume' },
-  { name: 'Contact', path: 'https://syedalinaqihasni.com/contact' },
+  { name: 'Home', path: 'https://www.syedalinaqihasni.com/' },
+  { name: 'About', path: 'https://www.syedalinaqihasni.com/about' },
+  { name: 'Projects', path: 'https://www.syedalinaqihasni.com/projects' },
+  { name: 'Services', path: 'https://www.syedalinaqihasni.com/services' },
+  { name: 'Pricing', path: 'https://www.syedalinaqihasni.com/pricing' },
+  { name: 'Blogs', path: 'https://www.syedalinaqihasni.com/blogs' },
+  { name: 'Resume', path: 'https://www.syedalinaqihasni.com/resume' },
+  { name: 'Contact', path: 'https://www.syedalinaqihasni.com/contact' },
 ];
 
 const styles = {
@@ -80,7 +80,7 @@ export default function Header() {
     >
       <div className={styles?.container}>
         <div className={'flex items-center justify-between'}>
-          <Link href={'https://syedalinaqihasni.com/'} className={styles?.brand}>
+          <Link href={'https://www.syedalinaqihasni.com/'} className={styles?.brand}>
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}

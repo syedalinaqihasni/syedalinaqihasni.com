@@ -30,7 +30,7 @@ const ProjectsList = ({ projects }: { projects: Project[] }) => {
                   <Image
                     src={
                       project?.image ||
-                      "https://syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
                     }
                     alt={project?.title}
                     fill

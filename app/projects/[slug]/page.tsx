@@ -141,7 +141,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <Image
               src={
                 project?.image ||
-                "https://syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
               }
               alt={project?.title}
               fill
@@ -207,7 +207,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <Image
               src={
                 relatedProject?.image ||
-                'https://syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'
+                'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'
               }
               alt={relatedProject?.title}
               fill
