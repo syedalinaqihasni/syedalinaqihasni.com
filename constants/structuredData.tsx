@@ -782,7 +782,8 @@ const localBusinessSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5",
-    reviewCount: "120",
+    reviewCount: "4",
+    bestRating: "5",
   },
   review: [
     {
@@ -873,12 +874,6 @@ const testimonialsSchema = {
   url: "https://www.syedalinaqihasni.com/testimonials",
   description:
     "Frontend development services specializing in React, Next.js, and UI performance.",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: "3",
-    bestRating: "5",
-  },
 };
 
 const faqSchema = {
