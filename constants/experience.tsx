@@ -2,7 +2,7 @@ export const EXPERIENCES = [
   {
     id: '1',
     company: 'eSpark Consulting Group',
-    logo: 'https://images.pexels.com/photos/1337380/pexels-photo-1337380.jpeg',
+    logo: 'https://syedalinaqihasni.com/images/experience/espark-cons-group.jpg',
     period: 'Sep 2018 - Present',
     location: 'Karachi, Pakistan (Remote)',
     type: 'Full-time',
@@ -15,6 +15,7 @@ export const EXPERIENCES = [
           'Improving code quality through reviews and implementation of best practices',
           'Managing project timelines and sprint planning',
         ],
+        period: 'Oct 2023 - Present',
         skills: ['React.js', 'Next.js', 'REST APIs', 'Team Leadership'],
       },
       {
@@ -25,6 +26,7 @@ export const EXPERIENCES = [
           'Improving code quality through reviews and implementation of best practices',
           'Managing project timelines and sprint planning',
         ],
+        period: 'Jan 2021- Oct 2023 ',
         skills: ['React.js', 'Next.js', 'REST APIs', 'Team Leadership'],
       },
       {
@@ -35,20 +37,41 @@ export const EXPERIENCES = [
           'Improving code quality through reviews and implementation of best practices',
           'Managing project timelines and sprint planning',
         ],
+        period: 'Sep 2018 - Jan 2021',
         skills: ['React.js', 'Next.js', 'REST APIs', 'Team Leadership'],
+      },
+    ],
+  },
+  {
+    id: '4',
+    company: 'eSpark Talent',
+    logo: 'https://syedalinaqihasni.com/images/experience/espark-talent.jpg',
+    period: 'Oct 2024 - Jan 2025',
+    location: 'Karachi, Pakistan',
+    type: 'Freelance',
+    positions: [
+      {
+        role: 'Freelance Web Developer',
+        description: [
+          'Delivered client projects using modern stacks (React, WordPress, Shopify)',
+          'Created reusable components and full-stack solutions',
+          'Worked on performance, accessibility, and cross-browser compatibility',
+          'Built tools including npm packages and CLI generators',
+        ],
+        skills: ['React', 'Next.js', 'WordPress', 'Shopify', 'SEO'],
       },
     ],
   },
   {
     id: '2',
     company: 'Royal Apps',
-    logo: 'https://images.pexels.com/photos/1337381/pexels-photo-1337381.jpeg',
-    period: '2022 - 2023',
-    location: 'Remote (UK-based)',
+    logo: 'https://syedalinaqihasni.com/images/experience/royal-apps.jpg',
+    period: 'Jun 2023 - Sep 2024',
+    location: 'Remote (US-based)',
     type: 'Contract',
     positions: [
       {
-        role: 'Frontend Developer',
+        role: 'Shopify App Developer (Frontend)',
         description: [
           'Developed responsive and scalable UIs using Next.js and Tailwind CSS',
           'Integrated Shopify storefronts and customized themes',
@@ -68,8 +91,8 @@ export const EXPERIENCES = [
   {
     id: '3',
     company: 'Seek Social Ltd',
-    logo: 'https://images.pexels.com/photos/1337382/pexels-photo-1337382.jpeg',
-    period: '2020 - 2022',
+    logo: 'https://syedalinaqihasni.com/images/experience/seek-social-ltd.jpg',
+    period: 'Aug 2019 - Mar 2022',
     location: 'Remote (UK-based)',
     type: 'Full-time',
     positions: [
@@ -85,26 +108,26 @@ export const EXPERIENCES = [
       },
     ],
   },
-  {
-    id: '4',
-    company: 'Hasni Developers',
-    logo: 'https://images.pexels.com/photos/1337383/pexels-photo-1337383.jpeg',
-    period: '2018 - Present',
-    location: 'Karachi, Pakistan',
-    type: 'Freelance',
-    positions: [
-      {
-        role: 'Freelance Web Developer',
-        description: [
-          'Delivered client projects using modern stacks (React, WordPress, Shopify)',
-          'Created reusable components and full-stack solutions',
-          'Worked on performance, accessibility, and cross-browser compatibility',
-          'Built tools including npm packages and CLI generators',
-        ],
-        skills: ['React', 'Next.js', 'WordPress', 'Shopify', 'SEO'],
-      },
-    ],
-  },
+  // {
+  //   id: '4',
+  //   company: 'Hasni Developers',
+  //   logo: 'https://syedalinaqihasni.com/images/experience/hasni-developers.jpg',
+  //   period: '2018 - Present',
+  //   location: 'Karachi, Pakistan',
+  //   type: 'Freelance',
+  //   positions: [
+  //     {
+  //       role: 'Freelance Web Developer',
+  //       description: [
+  //         'Delivered client projects using modern stacks (React, WordPress, Shopify)',
+  //         'Created reusable components and full-stack solutions',
+  //         'Worked on performance, accessibility, and cross-browser compatibility',
+  //         'Built tools including npm packages and CLI generators',
+  //       ],
+  //       skills: ['React', 'Next.js', 'WordPress', 'Shopify', 'SEO'],
+  //     },
+  //   ],
+  // },
 ];
 
 const CONSTANT = {
