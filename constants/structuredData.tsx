@@ -149,7 +149,7 @@ const websiteSchema = {
   name: "Syed Ali Naqi Hasni Portfolio",
   url: "https://www.syedalinaqihasni.com",
   description:
-    "Professional portfolio of Syed Ali Naqi Hasni - Full Stack Developer specializing in React, Next.js, and modern web technologies",
+    "Professional portfolio of Syed Ali Naqi Hasni - Web Developer specializing in React, Next.js, and modern web technologies",
   author: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",

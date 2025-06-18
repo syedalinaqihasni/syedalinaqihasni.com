@@ -109,7 +109,7 @@ export default function ResumePage() {
             </h3>
             <div>
               {RESUME.education?.map((edu) => (
-                <section key={educationKey(edu)}>
+                <section key={educationKey(edu)} className='pb-4'>
                   <div className={educationItem}>
                     <h4 className={educationDegree}>{edu.degree}</h4>
                     <time className={mutedText}>{edu.period}</time>
