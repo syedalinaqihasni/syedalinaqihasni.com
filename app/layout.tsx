@@ -57,17 +57,21 @@ export default function RootLayout({
   return (
     <html lang={"en"} suppressHydrationWarning>
       <head>
+        <meta
+          name="p:domain_verify"
+          content="b94552a212fadbb6448eace9230bec35"
+        />
         <GoogleTagManager gtmId="GTM-NBKH9P8G" />
         <GoogleAnalytics gaId="G-5TPNEKJMLD" />
         <StructuredData
-          data={
-            [aboutMe,
+          data={[
+            aboutMe,
             localBusinessSchema,
             organizationSchema,
             portfolioSchema,
             testimonialsSchema,
-            websiteSchema]
-          }
+            websiteSchema,
+          ]}
         />
       </head>
       <body
