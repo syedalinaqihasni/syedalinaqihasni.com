@@ -17,58 +17,127 @@ const ABOUT_PAGE_CONSTANT = {
     heading: 'Tools & Technologies',
   },
 };
+
 const JOURNEY = [
   {
-    year: '2018',
-    title: 'Started Programming',
+    year: '2009 - 2011',
+    title: 'Matriculation - Science',
     description:
-      'Began my journey with web development, learning HTML, CSS, and JavaScript.',
+      'Completed Matriculation in Science from New Ittehad Public Secondary School, Baldia Town Karachi.',
+  },
+  {
+    year: '2011 - 2013',
+    title: 'Intermediate - Pre-Engineering',
+    description:
+      'Studied Pre-Engineering at Karachi Cambridge College, affiliated with Board of Intermediate Education, Karachi.',
+  },
+  {
+    year: '2013 - 2016',
+    title: 'Diploma in Computer Information Technology',
+    description:
+      'Completed Diploma of Associate Engineering from Fountain College of Associates Engineering and Technology under SBTE.',
+  },
+  {
+    year: '2013 - 2016',
+    title: 'Started as I.T Technician',
+    description:
+      'Worked as an I.T Technician at N.S Computers, gaining foundational experience in hardware and networking.',
+  },
+  {
+    year: '2016 - 2017',
+    title: 'Industry Role at Gatron Industries',
+    description:
+      'Served as I.T Technician at Gatron Industries, responsible for managing technical operations and systems maintenance.',
+  },
+  {
+    year: '2017 - 2018',
+    title: 'PM Youth Program Internship',
+    description:
+      'Interned at NEDUET’s CSIT Department as part of the Prime Minister\'s Youth Programme.',
+  },
+  {
+    year: '2018',
+    title: 'Got First Tech Internship',
+    description:
+      'Internship experience reinforced practical knowledge in computing and sparked interest in Web development at eSpark Consulting Group.',
   },
   {
     year: '2019',
-    title: 'First Developer Role',
+    title: 'Technician to Web Developer',
     description:
-      'Joined a startup as a junior frontend developer, working with React.',
+      'Transitioned from Electronics Technician to Web Developer at eSpark Consulting Group, while exploring WordPress and frontend development.',
   },
   {
-    year: '2020',
-    title: 'Front EndDevelopment',
+    year: '2019',
+    title: 'Started Freelancing',
     description:
-      'Expanded my skills to include backend development with Node.js and databases.',
+      'Launched freelance career on Upwork as a part-time Web Developer, offering front-end services globally.',
   },
   {
     year: '2021',
-    title: 'Senior Developer',
+    title: 'Web Developer – WordPress',
     description:
-      'Promoted to senior developer, leading team projects and mentoring juniors.',
+      'Promoted to full-time WordPress Developer at eSpark Consulting Group, developing dynamic client websites.',
   },
   {
     year: '2022',
-    title: 'Tech Lead',
+    title: 'Senior Web Developer & Team Lead',
     description:
-      'Became a tech lead, architecting solutions and managing development teams.',
+      'Elevated to Team Lead and Senior Web Developer role, leading frontend projects with React and Next.js.',
   },
   {
-    year: '2023',
-    title: 'Independent Consultant',
+    year: '2024',
+    title: 'Frontend Developer (Contract)',
     description:
-      'Started working as an independent consultant, helping businesses scale their tech.',
+      'Worked remotely with eSpark Talent as a Frontend Developer, building scalable UI with React.js and Next.js.',
+  },
+  {
+    year: '2024',
+    title: 'AI Education – PIAIC',
+    description:
+      'Began studies in Artificial Intelligence under the Presidential Initiative for Artificial Intelligence & Computing (PIAIC).',
+  },
+  {
+    year: '2025',
+    title: 'Bachelor’s in Computer Software Engineering',
+    description:
+      'Enrolled at Virtual University of Pakistan for a BS in Computer Software Engineering.',
   },
 ];
 
 const TOOLS = [
   {
     category: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Python', 'SQL'],
+    items: ['JavaScript', 'TypeScript', 'HTML', 'CSS', 'SQL', 'PHP'],
   },
   {
-    category: 'Frontend',
-    items: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS'],
+    category: 'Frontend Development',
+    items: ['React.js', 'Next.js', 'Tailwind CSS', 'Bootstrap', 'jQuery'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'Django', 'PostgreSQL'],
+    category: 'Backend & APIs',
+    items: ['Node.js', 'Express.js', 'Firebase', 'REST APIs'],
   },
-  { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Vercel'] },
+  {
+    category: 'CMS & E-commerce',
+    items: ['WordPress', 'WooCommerce', 'Elementor', 'Shopify', 'cPanel'],
+  },
+  {
+    category: 'Tools & Deployment',
+    items: ['Git', 'GitHub', 'Vercel', 'Netlify', 'Docker'],
+  },
+  {
+    category: 'Design & Prototyping',
+    items: ['Figma', 'Adobe XD', 'Canva'],
+  },
+  {
+    category: 'Database & Storage',
+    items: ['MySQL', 'Firebase Firestore', 'SQLite'],
+  },
+  {
+    category: 'Soft Skills & Methodologies',
+    items: ['Leadership', 'Agile', 'Communication', 'Collaboration'],
+  },
 ];
+
 export { ABOUT_PAGE_CONSTANT, JOURNEY, TOOLS };
