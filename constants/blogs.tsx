@@ -2338,7 +2338,7 @@ utm_content=suza"
     slug: "getting-started-nextjs-tailwind",
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
-    // image: "https://www.syedalinaqihasni.com/images/blogs/getting-started-nextjs-tailwind.png",
+    image: "https://www.syedalinaqihasni.com/images/blogs/getting-started-nextjs-tailwind.png",
     content: `<article>
     
 
@@ -2479,7 +2479,7 @@ npx tailwindcss init -p</code></code></pre>
     readingTime: "6 min read",
     category: `Tutorials`,
     tags: ["React", "State Management", "Frontend Architecture"],
-    // image: "https://www.syedalinaqihasni.com/images/blogs/state-management-react.png",
+    image: "https://www.syedalinaqihasni.com/images/blogs/state-management-react.png",
     content: `<article>
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
 
@@ -2681,7 +2681,7 @@ const [password, setPassword] = useState('');
     slug: "framer-motion-animations",
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
-    // image: "https://www.syedalinaqihasni.com/images/blogs/framer-motion-animations.png",
+    image: "https://www.syedalinaqihasni.com/images/blogs/framer-motion-animations.png",
     content: `
   <article>
 
@@ -3064,7 +3064,7 @@ export default function handler(req, res) {
     slug: "responsive-ui-tailwind",
     publishedAt: "2018-01-01",
     readingTime: "4 min read",
-    // image: "https://www.syedalinaqihasni.com/images/blogs/responsive-ui-tailwind.png",
+    image: "https://www.syedalinaqihasni.com/images/blogs/responsive-ui-tailwind.png",
     content: ` <article>
 
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
