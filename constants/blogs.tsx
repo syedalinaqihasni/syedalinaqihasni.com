@@ -11,6 +11,60 @@ const CONSTANT = {
 };
 
 const posts: Post[] = [
+   {
+    id: 25,
+    title: "Why I Don't Use WordPress (And You Shouldn't Either)",
+    excerpt:`Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
+    slug: "why-i-do-not-use-word-press-and-you-should-not-either",
+    publishedAt: "2025-06-20",
+    readingTime: "6 min read",
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either.png",
+    category: `Opinions`,
+    tags: ["WordPress", "CMS", "Backend Integration"],
+    content: `<article>
+  <p>Let me say the quiet part out loud: <strong>WordPress is not the magical solution clients think it is.</strong></p>
+
+  <p>I've seen too many businesses - startups, agencies, even government projects - bloated, broken, and buried under plugins, insecure code, and sluggish load times. And in 90% of those cases? WordPress was the culprit.</p>
+
+  <p>Now, before the WordPress army shows up with pitchforks: I'm not here to bash the CMS. It had its time. It still <em>works</em> for certain use cases. But in 2025? For serious businesses that want speed, scalability, security, and sanity — <strong>you need something better.</strong></p>
+
+  <h2>1. It's Not Developer-Friendly (and That Costs You)</h2>
+  <p>You want custom features? Clean APIs? CI/CD pipelines? Welcome to a spaghetti factory of PHP functions, theme overrides, and plugin conflicts.</p>
+  <p><strong>Translation:</strong> You're paying for complexity, not progress.</p>
+
+  <h2>2. Speed? Forget About It</h2>
+  <p>Want a fast site? WordPress makes you fight for every millisecond.<br>
+  A Next.js static site, even with some dynamic content, will <em>outperform</em> a plugin-heavy WordPress site <strong>every single time</strong>.</p>
+
+  <h2>3. Security Is an Ongoing Fire Drill</h2>
+  <p>Every plugin is a new potential breach. Every update is a gamble. Every site I've seen hacked in the past 3 years? WordPress.</p>
+  <p>I don't want my clients to wake up to a “hacked by Turkishhax0r” screen. That's not just embarrassing. That's business lost.</p>
+
+  <h2>4. You're Not Really Saving Money</h2>
+  <p>That $300 WordPress build? It's a time bomb.<br>
+  You'll need fixes, speed optimizations, security patches, devs to clean it up.</p>
+  <p>Over 12 months, you'll end up spending more than if you just built it right the first time — using a <strong>modern stack</strong> like <em>Next.js, Tailwind, and Sanity/SQLite</em>.</p>
+
+  <h2>5. Your Business Deserves Better</h2>
+  <p>Your business isn't generic. Your website shouldn't be either.</p>
+  <p>When I build for clients, I design systems:</p>
+  <ul>
+    <li>That load in under 1 second</li>
+    <li>That scale when traffic spikes</li>
+    <li>That give you full control with no "Update Theme" anxiety</li>
+    <li>That aren't held hostage by third-party plugin developers</li>
+  </ul>
+  <p><strong>You own it. You scale it. You're not dependent.</strong></p>
+
+  <h2>TL;DR?</h2>
+  <p>WordPress had a good run. But if you're serious about performance, security, and owning your digital presence — it's time to move forward.</p>
+
+  <p>🚀 I build fast, secure, scalable sites using a modern tech stack that grows with you — not against you.</p>
+
+  <p><strong><a href="https://wa.me/923162265948">Let's talk →</a></strong></p>
+</article>
+`},
   {
     id: 16,
     title: "Integrating NodeMailer with Next.js: A Comprehensive Guide",
@@ -135,7 +189,7 @@ export default YourPage;</code></pre>
     title:
       "Unveiling the Power of Structured Data Markup Script: Elevating Your Website's SEO",
     excerpt:
-      "Discover how implementing structured data using schema markup can significantly improve your website’s SEO, enhance search visibility, and drive richer results in SERPs.",
+      "Discover how implementing structured data using schema markup can significantly improve your website's SEO, enhance search visibility, and drive richer results in SERPs.",
     slug: "unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo",
     publishedAt: "2024-02-26",
     readingTime: "8 min read",
@@ -379,15 +433,15 @@ export default YourPage;</code></pre>
     tags: ["Git", "Project Management", "Best Practices"],
     content: `<article>
 <p>
-    In software development, version control is the backbone of smooth collaboration and project evolution. One of the most debated questions is: <em>How many commits should a project have?</em> While there’s no definitive number, the key lies in structuring and managing your commits. In this article, we’ll dive into the best practices for making commits that ensure your project remains clean, maintainable, and easy to debug.
+    In software development, version control is the backbone of smooth collaboration and project evolution. One of the most debated questions is: <em>How many commits should a project have?</em> While there's no definitive number, the key lies in structuring and managing your commits. In this article, we'll dive into the best practices for making commits that ensure your project remains clean, maintainable, and easy to debug.
   </p>
 <h3>The Golden Rule: Quality Over Quantity</h3>
 <p>
-    The number of commits in a project is less important than their quality. Each commit should serve a purpose and contribute to the project’s progress. Here’s how to strike the right balance:
+    The number of commits in a project is less important than their quality. Each commit should serve a purpose and contribute to the project's progress. Here's how to strike the right balance:
   </p>
 <h3>1. Keep Commits Small and Focused</h3>
 <p>
-    Think of each commit as a snapshot of a single, logical unit of work. Whether it’s implementing a new feature, fixing a bug, or updating documentation, every commit should be focused.
+    Think of each commit as a snapshot of a single, logical unit of work. Whether it's implementing a new feature, fixing a bug, or updating documentation, every commit should be focused.
   </p>
 <p>For example:</p>
 <ul>
@@ -458,11 +512,11 @@ export default YourPage;</code></pre>
     <li><strong>Large Projects:</strong> 1000+ commits, especially for projects spanning months or years.</li>
 </ul>
 <p>
-    The goal isn’t to hit a specific number but to ensure that commits add value and maintain clarity.
+    The goal isn't to hit a specific number but to ensure that commits add value and maintain clarity.
   </p>
 <h3>Conclusion: Commit with Purpose</h3>
 <p>
-    Good commits practices are the foundation of an organized, maintainable project. By keeping commits small, committing often, and writing clear messages, you’ll create a version history that’s easy to navigate and invaluable for debugging.
+    Good commits practices are the foundation of an organized, maintainable project. By keeping commits small, committing often, and writing clear messages, you'll create a version history that's easy to navigate and invaluable for debugging.
   </p>
 <p>
     Remember, <strong>commits are a communication tool.</strong> Use them to tell the story of your project, and your team (or future self) will thank you.
@@ -857,22 +911,22 @@ gh repo branch <branch-name></code></pre>
     Dependabot works by:
   </p>
 <ul>
-    <li><strong>Dependency Scanning:</strong> It monitors your project for outdated or vulnerable dependencies. Dependabot uses GitHub’s vulnerability database to identify potential security risks.</li>
+    <li><strong>Dependency Scanning:</strong> It monitors your project for outdated or vulnerable dependencies. Dependabot uses GitHub's vulnerability database to identify potential security risks.</li>
     <li><strong>Pull Request Creation:</strong> Once it detects an outdated or insecure dependency, it creates a pull request with the suggested update.</li>
-    <li><strong>Version Compatibility Check:</strong> Dependabot ensures that the updated dependency version won’t break your project by running any existing CI/CD tests.</li>
+    <li><strong>Version Compatibility Check:</strong> Dependabot ensures that the updated dependency version won't break your project by running any existing CI/CD tests.</li>
     <li><strong>Automated Updates:</strong> You can configure Dependabot to automatically merge updates if all tests pass.</li>
 </ul>
 <h3>
     What is CodeQL?
   </h3>
 <p>
-    CodeQL is GitHub’s code analysis engine, designed for finding vulnerabilities in source code. It enables you to write queries that identify specific coding patterns that could indicate vulnerabilities, such as SQL injection or cross-site scripting (XSS).
+    CodeQL is GitHub's code analysis engine, designed for finding vulnerabilities in source code. It enables you to write queries that identify specific coding patterns that could indicate vulnerabilities, such as SQL injection or cross-site scripting (XSS).
   </p>
 <p>
     When integrated into your GitHub repository, CodeQL:
   </p>
 <ul>
-    <li><strong>Analyzes Code:</strong> It creates a database of your project’s code structure, allowing for advanced querying and analysis.</li>
+    <li><strong>Analyzes Code:</strong> It creates a database of your project's code structure, allowing for advanced querying and analysis.</li>
     <li><strong>Detects Security Issues:</strong> Predefined queries scan your codebase for common security vulnerabilities.</li>
     <li><strong>Supports Custom Queries:</strong> You can write custom queries to meet specific security needs.</li>
 </ul>
@@ -909,13 +963,13 @@ updates:
   </h3>
 <ul>
     <li>Use GitHub Actions to run CI tests on Dependabot PRs.</li>
-    <li>Optionally enable auto-merge for successful updates by modifying your repository’s branch protection rules.</li>
+    <li>Optionally enable auto-merge for successful updates by modifying your repository's branch protection rules.</li>
 </ul>
 <h2>
     How I Used Dependabot and CodeQL in My Project
   </h2>
 <p>
-    In one of my recent projects, I combined Dependabot and CodeQL analysis to ensure robust dependency management and security. Here’s how I implemented them:
+    In one of my recent projects, I combined Dependabot and CodeQL analysis to ensure robust dependency management and security. Here's how I implemented them:
   </p>
 <h3>
     1. Dependabot Integration
@@ -930,7 +984,7 @@ updates:
     2. CodeQL Analysis
   </h3>
 <ul>
-    <li>I enabled GitHub’s advanced security features and set up CodeQL workflows to run security scans whenever new code was pushed.</li>
+    <li>I enabled GitHub's advanced security features and set up CodeQL workflows to run security scans whenever new code was pushed.</li>
     <li>The CodeQL engine scanned my codebase and flagged potential vulnerabilities in both dependencies and custom code.</li>
     <li>I reviewed and resolved issues highlighted by CodeQL before merging PRs.</li>
 </ul>
@@ -938,7 +992,7 @@ updates:
     3. Test Case Implementation
   </h3>
 <ul>
-    <li>I added extensive unit tests to ensure new dependencies didn’t introduce breaking changes.</li>
+    <li>I added extensive unit tests to ensure new dependencies didn't introduce breaking changes.</li>
     <li>These tests ran automatically on every PR created by Dependabot, validating that the updated dependencies integrated smoothly.</li>
 </ul>
 <h3>
@@ -968,7 +1022,7 @@ updates:
     #GitHub #Dependabot #CodeQL #CyberSecurity #DevOps #OpenSource
   </p>
 <p>
-    If you’re interested in implementing these tools or have questions about securing your projects, feel free to reach out to me! Special thanks to <a href="https://github.com/" >@GitHub</a> for providing such incredible tools for developers. Let’s keep our projects secure and efficient!
+    If you're interested in implementing these tools or have questions about securing your projects, feel free to reach out to me! Special thanks to <a href="https://github.com/" >@GitHub</a> for providing such incredible tools for developers. Let's keep our projects secure and efficient!
   </p>
 <br>
 </article>
@@ -1118,7 +1172,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
       projects,</strong> including <strong>modern React.js</strong> applications.
   </p>
 <p>
-    Let’s dive deep into what SOLID really means for React, <strong>with real-world examples</strong> and <strong>extra
+    Let's dive deep into what SOLID really means for React, <strong>with real-world examples</strong> and <strong>extra
       professional insights</strong>.
   </p>
 <h2>
@@ -1229,7 +1283,7 @@ function UserProfile({ userId }) {
     <li><strong>Future-proofing:</strong> You can evolve systems by adding new features without touching stable, tested
       code.</li>
     <li><strong>Reduces bugs:</strong> Modifying old code always carries risk.</li>
-    <li><strong>Enables safe scaling:</strong> New requirements don’t destroy your architecture.</li>
+    <li><strong>Enables safe scaling:</strong> New requirements don't destroy your architecture.</li>
     <li><strong>Cleaner team collaboration:</strong> Developers can extend behavior safely without fighting over old
       files.</li>
 </ul>
@@ -1287,7 +1341,7 @@ function Notification({ type, message }) {
 </p>
 <h3>Why It Matters:</h3>
 <ul>
-    <li><strong>Predictable behavior:</strong> Child components/hooks don’t cause unexpected bugs.</li>
+    <li><strong>Predictable behavior:</strong> Child components/hooks don't cause unexpected bugs.</li>
     <li><strong>Encourages abstraction:</strong> Forces you to design general, flexible contracts.</li>
     <li><strong>Boosts composability:</strong> New features are easier to plug in.</li>
     <li><strong>Helps unit testing:</strong> Substitutes (mocks/stubs) can easily replace real services.</li>
@@ -1341,8 +1395,8 @@ function Notification({ type, message }) {
 <h3>Why It Matters:</h3>
 <ul>
     <li><strong>Simplifies usage:</strong> Components receive only what they need.</li>
-    <li><strong>Easier maintenance:</strong> Changes in one part don’t break unrelated users.</li>
-    <li><strong>Improves readability:</strong> Developers instantly understand a component’s API.</li>
+    <li><strong>Easier maintenance:</strong> Changes in one part don't break unrelated users.</li>
+    <li><strong>Improves readability:</strong> Developers instantly understand a component's API.</li>
     <li><strong>Enables flexibility:</strong> Specialized components for different situations.</li>
 </ul>
 <p><strong>Without ISP:</strong></p>
@@ -1478,7 +1532,7 @@ function ProductsList() {
         systems."</strong></li>
 </ul>
 <p>
-    It’s what separates <strong>“hacky apps”</strong> from <strong>“professional-grade systems.”</strong>
+    It's what separates <strong>“hacky apps”</strong> from <strong>“professional-grade systems.”</strong>
 </p>
 <h2>Quick Question:</h2>
 <p>
@@ -1504,7 +1558,7 @@ function ProductsList() {
     tags: ["Shopify", "Career Growth", "Web Development"],
     content: `<article>
     <p>
-    In today’s digital era, e-commerce continues to thrive, and platforms like Shopify
+    In today's digital era, e-commerce continues to thrive, and platforms like Shopify
     have revolutionized the way businesses operate online. While many entrepreneurs utilize Shopify to build their
     stores, having the skills to develop small Shopify apps can provide a significant advantage to your career. In
     this article, we will explore how acquiring Shopify app development skills can elevate your professional
@@ -1516,20 +1570,20 @@ function ProductsList() {
     demand for skilled Shopify app developers is on the rise. By acquiring proficiency in Shopify app development,
     you position yourself as a valuable asset in the job market. Companies and agencies specializing in e-commerce
     or providing Shopify-related services actively seek developers who can create custom apps to enhance their
-    clients’ online stores.</p>
+    clients' online stores.</p>
 <h1>
     Diversify Your Skill Set:</h1>
 <p>
     Adding Shopify app development to your skill set expands your technical repertoire.
     It demonstrates your ability to work with popular e-commerce platforms and showcases your versatility as a
-    developer. By mastering the intricacies of Shopify’s APIs and development ecosystem, you acquire transferable
+    developer. By mastering the intricacies of Shopify's APIs and development ecosystem, you acquire transferable
     skills that can be applied to other platforms or technologies, further strengthening your professional profile.
 </p>
 <h1>
     Tap into the Thriving Shopify Ecosystem:</h1>
 <p>
     Shopify boasts a thriving ecosystem, offering countless opportunities for app
-    developers. The Shopify App Store is a hub for merchants seeking solutions to enhance their stores’
+    developers. The Shopify App Store is a hub for merchants seeking solutions to enhance their stores'
     functionality. Developing small Shopify apps allows you to tap into this vast market and create valuable tools
     or extensions that address specific merchant needs. This exposure can lead to financial rewards, professional
     recognition, and networking opportunities within the Shopify community.</p>
@@ -1552,7 +1606,7 @@ function ProductsList() {
 <h1>
     Continuous Learning and Innovation:</h1>
 <p>
-    Being a Shopify app developer requires staying up-to-date with the platform’s
+    Being a Shopify app developer requires staying up-to-date with the platform's
     latest features, APIs, and best practices. This commitment to continuous learning keeps your skills sharp and
     ensures you remain at the forefront of Shopify app development trends. Moreover, the ever-evolving nature of
     e-commerce demands constant innovation. Developing small Shopify apps allows you to explore creative solutions,
@@ -1579,7 +1633,7 @@ function ProductsList() {
   {
     id: 6,
     title:
-      "Why I’m Moving from Shortcodes to Custom Blocks in WordPress and You Should Too…",
+      "Why I'm Moving from Shortcodes to Custom Blocks in WordPress and You Should Too…",
     excerpt:
       "Discover why moving from shortcodes to custom blocks in WordPress is a game-changer for performance, usability, and future-proofing your site. Learn how Gutenberg blocks can elevate your content editing experience.",
     slug: "why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too",
@@ -1598,15 +1652,15 @@ function ProductsList() {
     experience offered by Gutenberg is the future, and transitioning away from shortcodes to blocks has become a
     necessity.</p>
 <p>
-    In this post, I’ll share why I’m making the switch, how I’m handling the
+    In this post, I'll share why I'm making the switch, how I'm handling the
     transition, and some practical examples to help you do the same.</p>
 <h1>
     What Are Shortcodes?</h1>
 <p>
     Shortcodes have been one of the easiest ways to add functionality to a WordPress
-    site. They’re snippets of text wrapped in square brackets, like this: [add_contact_form].</p>
+    site. They're snippets of text wrapped in square brackets, like this: [add_contact_form].</p>
 <p>
-    Underneath, shortcodes rely on PHP functions to output content. Here’s an example
+    Underneath, shortcodes rely on PHP functions to output content. Here's an example
     of how I used to create a custom shortcode:</p>
 <p>
     Example: A Simple Contact Form Shortcode</p>
@@ -1626,14 +1680,14 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
 <h1>
     What Are Custom Blocks?</h1>
 <p>
-    Custom blocks are WordPress’s answer to modern, modular content design. Unlike
+    Custom blocks are WordPress's answer to modern, modular content design. Unlike
     shortcodes, custom blocks are visual components that integrate seamlessly into the Gutenberg editor. They allow
     you to add functionality, such as forms, sliders, or custom layouts, with drag-and-drop ease and live previews.
 </p>
 <p>
     A custom block is built using a combination of JavaScript, PHP, and the WordPress
     Block API. These blocks are highly flexible, allowing developers like me to create unique functionalities
-    tailored to specific needs while maintaining compatibility with WordPress’s block-based architecture.</p>
+    tailored to specific needs while maintaining compatibility with WordPress's block-based architecture.</p>
 <p>
     For example, instead of relying on a [add_contact_form] shortcode, I can now create
     a custom “Contact Form” block that:</p>
@@ -1648,16 +1702,16 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
         Supports real-time editing: Any changes made are instantly visible.</li>
 </ul>
 <p>
-    Custom blocks aren’t just about functionality — they elevate the user experience
+    Custom blocks aren't just about functionality — they elevate the user experience
     and make content creation more intuitive for everyone, from developers to non-technical editors.</p>
 <h1>
-    Why I’m Moving to Blocks</h1>
+    Why I'm Moving to Blocks</h1>
 <p>
-    Shortcodes are functional, but they lack the intuitiveness of blocks. Here’s why I
+    Shortcodes are functional, but they lack the intuitiveness of blocks. Here's why I
     believe blocks are a better option:</p>
 <ol>
     <li>
-        Visual Editing: With blocks, I can see exactly what I’m adding to the page as I
+        Visual Editing: With blocks, I can see exactly what I'm adding to the page as I
         build it — no need to preview or guess what a shortcode will render.</li>
     <li>
         Ease of Use: Blocks are drag-and-drop, customizable, and beginner-friendly,
@@ -1669,12 +1723,12 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
 <h1>
     Replacing My Shortcodes with Blocks</h1>
 <p>
-    I’ve started replacing my shortcodes with blocks wherever possible. Here’s an
+    I've started replacing my shortcodes with blocks wherever possible. Here's an
     example of how I converted my [add_contact_form] shortcode into a custom block.</p>
 <h1>
     Step 1: Register a Custom Block</h1>
 <p>
-    I added this code to my theme’s functions.php file or a custom plugin:</p>
+    I added this code to my theme's functions.php file or a custom plugin:</p>
 <pre><code>function register_contact_form_block() {
     wp_register_script(
         'custom-contact-form-block',
@@ -1727,13 +1781,13 @@ registerBlockType('custom/contact-form', {
     With this, I now have a custom block that I can add directly in the editor,
     complete with a visual preview.</p>
 <h1>
-    How I’m Transitioning My WordPress Sites</h1>
+    How I'm Transitioning My WordPress Sites</h1>
 <p>
-    If you’re thinking of making this switch too, here’s my approach:</p>
+    If you're thinking of making this switch too, here's my approach:</p>
 <ol>
     <li>
         Audit Existing Shortcodes: I reviewed my sites to identify all the shortcodes I
-        use. For most, there’s already a block alternative. For example:</li>
+        use. For most, there's already a block alternative. For example:</li>
     <li>
         Replace Shortcodes Gradually: On pages where blocks exist, I replaced
         shortcodes manually.</li>
@@ -1748,9 +1802,9 @@ registerBlockType('custom/contact-form', {
         shortcodes, ensuring a smooth transition.</li>
 </ol>
 <h1>
-    Benefits I’m Already Seeing</h1>
+    Benefits I'm Already Seeing</h1>
 <p>
-    Switching to blocks has been a game-changer for me. Here’s what I’ve noticed:</p>
+    Switching to blocks has been a game-changer for me. Here's what I've noticed:</p>
 <ul>
     <li>
         Faster Page Building: The drag-and-drop interface of blocks saves me hours
@@ -1766,12 +1820,12 @@ registerBlockType('custom/contact-form', {
     My Takeaway</h1>
 <p>
     The shift from shortcodes to blocks is more than just a trend;
- it’s a leap forward
+ it's a leap forward
     for WordPress development. While shortcodes have served me well, they feel like a thing of the past in a
     block-driven world.</p>
 <p>
-    If you’re still relying on shortcodes, I encourage you to start transitioning now.
-    Whether it’s finding block alternatives, building custom blocks, or simply experimenting with Gutenberg, it’s
+    If you're still relying on shortcodes, I encourage you to start transitioning now.
+    Whether it's finding block alternatives, building custom blocks, or simply experimenting with Gutenberg, it's
     worth the effort to future-proof your site.</p>
 <p>
     Have you made the switch to blocks yet? Let me know your thoughts or reach out if
@@ -1863,7 +1917,7 @@ registerBlockType('custom/contact-form', {
     category: `Tips`,
     tags: ["WordPress", "ERP", "Business Tools"],
     content: `<article>
-    <p>Before using an ERP Solution, you must know what is ERP. Otherwise, you wouldn’t be
+    <p>Before using an ERP Solution, you must know what is ERP. Otherwise, you wouldn't be
     able to get the point of using an ERP solution in the first place.</p>
 <p>Well, in simple words, ERP means Enterprise Resource Planning. ERP solutions
     empower small, medium, and large businesses to perform and manage their day-to-day business operations.</p>
@@ -1883,7 +1937,7 @@ registerBlockType('custom/contact-form', {
 <p>That is why, your business must find and nurture talents, care for employees, and
     give performance increments to those who deserve the most. Managing this whole process can be a very tough job
     if not managed right. This is where the idea of ERP solutions comes into play.</p>
-<p>Netsuite was the first organization to launch its ERP system. Netsuite’s ERP system
+<p>Netsuite was the first organization to launch its ERP system. Netsuite's ERP system
     was built for the internet. Today, there are hundreds of ERP solutions available developed by different
     companies. Since <a >WordPress is the most used content management system</a> around the world, it is
     logical
@@ -1908,7 +1962,7 @@ registerBlockType('custom/contact-form', {
     Management Module, a Human Resource Management Module, and an Accounting Module completely for free. There are
     <a>23
         extensions</a> available to serve all your needs. Whether it is accounting, attendance, HR management,
-    payment gateway, or your company’s asset management WP ERP has got you covered.
+    payment gateway, or your company's asset management WP ERP has got you covered.
 </p>
 <h2>HR Module</h2>
 <p>You can control everything related to HR using the HR module. You can view the
@@ -1916,8 +1970,8 @@ registerBlockType('custom/contact-form', {
     for all employees.</p>
 <h2>CRM Module — Total CRM Control at One Place</h2>
 <p>The CRM module gives you an overall preview of the month, day, and week. It also
-    shows you the number of customers, leads, opportunities, and subscribers. This provides a bird’s eye view of all
-    your CRM needs. The extension comes for free, so you don’t have to pay a dime.</p>
+    shows you the number of customers, leads, opportunities, and subscribers. This provides a bird's eye view of all
+    your CRM needs. The extension comes for free, so you don't have to pay a dime.</p>
 <h2>Accounting Module</h2>
 <p>You can track everything related to money via the accounting module. The fact that
     you can keep track of every bit of your financials from the Accounting Dashboard alone is impressive. The
@@ -1945,7 +1999,7 @@ utm_content=suza"
     <li>Attendance management: WP ERP includes a groundbreaking <a href="https://wperp.com/downloads/attendance"
              >attendance
             feature</a>. It can be very annoying to keep records of employee attendance manually. Attendance
-        management keeps track of the attendance of each employee along with their work hours. What’s awesome? With
+        management keeps track of the attendance of each employee along with their work hours. What's awesome? With
         self-check-in and checkout and IP restriction — your employees can check in to the system after they arrive
         at your office physically. You do not have to worry about setting up another punch card, or a biometric
         device for that.</li>
@@ -1954,11 +2008,11 @@ utm_content=suza"
         management: WP ERP already offers most of the enterprise features that a business might need. Features like
         payroll management, reimbursement services, document management, asset management, HR automation, inventory
         management, and more. There are extensions for different use cases. If you want to use an extension — just
-        enable it. Don’t like the extension or don’t feel the need? Disable it anytime you want.</li>
+        enable it. Don't like the extension or don't feel the need? Disable it anytime you want.</li>
 </ul>
 <h2>Wrapping up!</h2>
-<p>In this article, I’ve discussed how an ERP solution can help manage your business
-    operations effectively. And if you’re using WordPress, then you have a WP ERP plugin. It takes no extra memory
+<p>In this article, I've discussed how an ERP solution can help manage your business
+    operations effectively. And if you're using WordPress, then you have a WP ERP plugin. It takes no extra memory
     footprints. Your site will remain fast and responsive. WP ERP does a lot more for less. No plugin even comes
     close considering features and value. The plugin helps you to execute most of the tasks for your business,
     maximize the output and helps to manage resource planning and management more seamlessly.</p>
@@ -1983,14 +2037,14 @@ utm_content=suza"
         more and more client-side endpoints (such as smart speakers or watches) can put a real strain on your resources.
     </p>
     <p>
-        That’s where the concept of ‘headless’ Content Management Systems (CMSs) comes in.
+        That's where the concept of ‘headless' Content Management Systems (CMSs) comes in.
         The headless CMS approach provides more flexibility on the back end of content management while offering
         developers access to the front-end tools they prefer to use. It also enables you to use the same bucket of
         content for many different outputs.</p>
     <p>
-        Need a complete guide on the Headless WordPress CMS? In this article, we’ll look at
+        Need a complete guide on the Headless WordPress CMS? In this article, we'll look at
         how a WordPress website can function as a headless CMS solution and some of the benefits are to this approach.
-        We’ll also discuss how to host a headless WordPress setup. Let’s get started!</p>
+        We'll also discuss how to host a headless WordPress setup. Let's get started!</p>
     <h2>
         What Is a Headless CMS?</h2>
     <p>
@@ -2011,16 +2065,16 @@ utm_content=suza"
     <h2>
         Headless WordPress CMS</h2>
     <p>
-        WordPress is sometimes referred to as a ‘monolithic’ CMS. This means that, while it
+        WordPress is sometimes referred to as a ‘monolithic' CMS. This means that, while it
         does have a robust back end for content creation and organization, it is still built to be pretty concerned with
         front-end display. WordPress also wraps display functionality into themes and plugins, so the front and back
         ends are tied together.</p>
     <p>
-        You can, however, take advantage of WordPress’s excellent content management
+        You can, however, take advantage of WordPress's excellent content management
         functionality and effectively decapitate it, leaving you with a fast and lightweight headless CMS. By using
-        WordPress’ REST API, you can extend the content management you’ve crafted in WordPress beyond your theme.</p>
+        WordPress' REST API, you can extend the content management you've crafted in WordPress beyond your theme.</p>
     <p>
-        In this scenario, you would still be able to use all the platform’s back-end
+        In this scenario, you would still be able to use all the platform's back-end
         functionality, but it would become a reactive system. Content would wait to be called upon and respond
         accordingly. This is in stark contrast to the current, more proactive way that WordPress pushes or delivers
         content to primarily browser-based sites.</p>
@@ -2028,7 +2082,7 @@ utm_content=suza"
         Decoupled vs Headless CMS</h2>
     <p>
         However, what if you love your theme and how it looks online? If you want to have
-        your cake and eat it too, there is a solution. You can create a ‘decoupled’ CMS using WordPress.</p>
+        your cake and eat it too, there is a solution. You can create a ‘decoupled' CMS using WordPress.</p>
     <p>
         Standard WordPress has the front and back ends coupled. They coordinate read and
         write calls, to present your site to its end users. However, decoupling the front and back ends enables you to
@@ -2039,25 +2093,25 @@ utm_content=suza"
         traditional, theme-based, front-end display option.</p>
     <p>
         There are plugins available to uncouple your WordPress front end and back end, but
-        it’s important to be prepared for what that means. Decoupling can mean you must have a more hands-on approach to
-        site maintenance, security, and Search Engine Optimization (SEO). In addition, you’ll lose the standard live
-        preview you’re used to with a coupled WordPress structure.</p>
+        it's important to be prepared for what that means. Decoupling can mean you must have a more hands-on approach to
+        site maintenance, security, and Search Engine Optimization (SEO). In addition, you'll lose the standard live
+        preview you're used to with a coupled WordPress structure.</p>
     <h2>
         Utilizing a Headless CMS</h2>
     <p>
         Now that you have a better understanding of the mechanics and architecture of a
-        headless CMS, and what it might look like in WordPress core, let’s talk about what you can get out of taking
+        headless CMS, and what it might look like in WordPress core, let's talk about what you can get out of taking
         this approach.</p>
     <h2>
         What Can You Do With a Headless CMS?</h2>
     <p>
         Perhaps the best thing you can do with a headless CMS is essentially future-proof
         your WordPress content. As long as the API endpoint still exists, content can be called forth. A headless CMS
-        means you’re creating a developer-focused, API-first system, rather than focusing on how the back-end
+        means you're creating a developer-focused, API-first system, rather than focusing on how the back-end
         administration will feed the front-end design.</p>
     <p>
         Therefore, going headless enables you greater flexibility in migrating content if
-        you need to since you won’t be tied so tightly to themes and plugins. From a marketing standpoint, you’re also
+        you need to since you won't be tied so tightly to themes and plugins. From a marketing standpoint, you're also
         able to create personalized customer journeys, without filing a ticket every time you want to add or change some
         content.</p>
     <p>
@@ -2067,13 +2121,13 @@ utm_content=suza"
     <h2>
         Headless WordPress Benefits</h2>
     <p>
-        At this point, we’ve already mentioned a few of the benefits of going with a
+        At this point, we've already mentioned a few of the benefits of going with a
         headless WordPress architecture for your content management. However, there are plenty of additional advantages:
     </p>
     <p>
         Greater control. When you uncouple WordPress, you gain nearly endless control from
         a development standpoint. Front-end developers can get creative with dynamic uses of JavaScript, and deliver an
-        ‘outside the template’ experience.</p>
+        ‘outside the template' experience.</p>
     <p>
         Increased scalability. When you develop a headless system, you can scale it up very
         quickly. Your content can continue to build, and since you are now an API-first shop, you can respond to new
@@ -2093,15 +2147,15 @@ utm_content=suza"
     <h2>
         Potential Issues With A Headless WordPress Site</h2>
     <p>
-        Before you get started, however, it’s worth noting that there are some drawbacks to
+        Before you get started, however, it's worth noting that there are some drawbacks to
         taking WordPress into a decoupled or headless state. If you have a small website that delivers simple content,
-        you’ll likely want to review these potential issues before taking the plunge:</p>
+        you'll likely want to review these potential issues before taking the plunge:</p>
     <p>
         No WYSIWYG editor. A truly headless approach means you will lose your live preview
-        option. You won’t be able to easily test what the front-end user will see.</p>
+        option. You won't be able to easily test what the front-end user will see.</p>
     <p>
-        Advanced programming. If you didn’t previously need a front-end programmer, you
-        will now. You’ll require some more advanced libraries to make the most of a headless system.</p>
+        Advanced programming. If you didn't previously need a front-end programmer, you
+        will now. You'll require some more advanced libraries to make the most of a headless system.</p>
     <p>
         More maintenance. This comes into play with a decoupled setup. You may end up with
         two systems to maintain, especially in terms of updates and security.</p>
@@ -2114,7 +2168,7 @@ utm_content=suza"
     <h2>
         Hosting A Headless WordPress Site</h2>
     <p>
-        Moving to a headless CMS could open up new doors for your content, but it doesn’t
+        Moving to a headless CMS could open up new doors for your content, but it doesn't
         eliminate the need for reliable hosting. Here at WP Engine, we have support and information that might help if
         you plan on using WordPress to create a headless CMS.</p>
     <p>
@@ -2125,9 +2179,9 @@ utm_content=suza"
   },
   {
     id: 1,
-    title: "The Beginner’s Guide to Search Engin Optimization",
+    title: "The Beginner's Guide to Search Engin Optimization",
     excerpt:
-      "Discover the fundamentals of Search Engine Optimization (SEO) and learn how to improve your website’s visibility on search engines.",
+      "Discover the fundamentals of Search Engine Optimization (SEO) and learn how to improve your website's visibility on search engines.",
     slug: "the-beginners-guide-to-seo",
     publishedAt: "2022-09-26",
     readingTime: "4 min read",
@@ -2139,7 +2193,7 @@ utm_content=suza"
     <h2>
         Welcome to your SEO learning journey!</h2>
     <p>
-        You’ll get the most out of this guide if your desire to learn <strong>
+        You'll get the most out of this guide if your desire to learn <strong>
             search engine optimization</strong> (SEO) is exceeded only by your willingness to execute and
         test concepts.</p>
     <p>
@@ -2161,16 +2215,16 @@ utm_content=suza"
     <h2>
         The basics of search engine optimization</h2>
     <p>
-        Ever heard of Maslow’s hierarchy of needs? It’s a theory of psychology that
+        Ever heard of Maslow's hierarchy of needs? It's a theory of psychology that
         prioritizes the most fundamental human needs (like air, water, and physical safety) over more advanced needs
-        (like esteem and social belonging). The theory is that you can’t achieve the needs at the top without ensuring
-        the more fundamental needs are met first. Love doesn’t matter if you don’t have food.</p>
+        (like esteem and social belonging). The theory is that you can't achieve the needs at the top without ensuring
+        the more fundamental needs are met first. Love doesn't matter if you don't have food.</p>
     <p>
         Our founder, Rand Fishkin, made a similar pyramid to explain how folks should go
-        about SEO, and we’ve affectionately dubbed it “<em>
-            Moz</em>low’s hierarchy of SEO needs.”</p>
+        about SEO, and we've affectionately dubbed it “<em>
+            Moz</em>low's hierarchy of SEO needs.”</p>
     <p>
-        Here’s what it looks like:</p>
+        Here's what it looks like:</p>
     <h2>
         Try Moz Pro, free!</h2>
     <p>
@@ -2184,12 +2238,12 @@ utm_content=suza"
         As you can see, the foundation of good SEO begins with ensuring crawl accessibility
         and moves up from there.</p>
     <p>
-        Using this beginner’s guide, we can follow these seven steps to successful SEO:</p>
+        Using this beginner's guide, we can follow these seven steps to successful SEO:</p>
     <ol>
         <li>
             Crawl accessibility so engines can read your website</li>
         <li>
-            Compelling content that answers the searcher’s query</li>
+            Compelling content that answers the searcher's query</li>
         <li>
             Keywords optimized to attract searchers &amp;
  engines</li>
@@ -2204,7 +2258,7 @@ utm_content=suza"
             Snippet/schema markup to stand out in SERPs</li>
     </ol>
     <p>
-        We’ll spend time on each of these areas throughout this guide, but we wanted to
+        We'll spend time on each of these areas throughout this guide, but we wanted to
         introduce it here because it offers a look at how we structured the guide as a whole.</p>
     <p>
         Explore the chapters:</p>
@@ -2240,7 +2294,7 @@ utm_content=suza"
             Understand what your audience wants to find.</em>
     </p>
     <p>
-        Our approach targets users first because that’s what search engines reward. This
+        Our approach targets users first because that's what search engines reward. This
         chapter covers keyword research and other methods to determine what your audience is seeking.</p>
     <p>
         <a href="https://moz.com/beginners-guide-to-seo/on-page-seo">
@@ -2278,7 +2332,7 @@ utm_content=suza"
             Turn up the volume.</em>
     </p>
     <p>
-        Once you’ve got everything in place, it’s time to expand your influence by earning
+        Once you've got everything in place, it's time to expand your influence by earning
         attention and links from other sites and influencers.</p>
     <p>
         <a href="https://moz.com/beginners-guide-to-seo/measuring-and-tracking-success" 
@@ -2291,7 +2345,7 @@ utm_content=suza"
             Set yourself up for success.</em>
     </p>
     <p>
-        An essential part of any SEO strategy is knowing what’s working (and what isn’t),
+        An essential part of any SEO strategy is knowing what's working (and what isn't),
         and adjusting your approach as you go along.</p>
     <p>
         <a href="https://moz.com/beginners-guide-to-seo/seo-glossary">
@@ -2303,28 +2357,28 @@ utm_content=suza"
     </p>
     <p>
         Learning SEO can sometimes feel like learning another language, with all the jargon
-        and industry terms you’re expected to know. This chapter-by-chapter glossary will help you get a handle on all
+        and industry terms you're expected to know. This chapter-by-chapter glossary will help you get a handle on all
         the new words.</p>
     <h2>
         How much of this guide do I need to read?</h2>
     <p>
-        If you’re serious about improving search traffic and are unfamiliar with SEO, we
-        recommend reading the Beginner’s Guide to Search Engin Optimization front-to-back. We’ve tried to make it as concise and easy to
+        If you're serious about improving search traffic and are unfamiliar with SEO, we
+        recommend reading the Beginner's Guide to Search Engin Optimization front-to-back. We've tried to make it as concise and easy to
         understand as possible, and learning the basics of SEO is a vital first step in achieving your online business
         goals.</p>
     <p>
         Go through at the pace that suits you best, and be sure to take note of the dozens
-        of resources we link to throughout the chapters — they’re also worthy of your attention.</p>
+        of resources we link to throughout the chapters — they're also worthy of your attention.</p>
     <p>
         If you want to take a more organized approach to learn SEO or training your entire
         team, check out the <a href="https://academy.moz.com/path/seo-essentials-moz-certification"> 
-            Moz Academy SEO Essentials Certification</a>. We’ve consolidated
+            Moz Academy SEO Essentials Certification</a>. We've consolidated
         all the resources you need to learn SEO fundamentals alongside unique learning strategies, task lessons and
         quizzes to test your knowledge. You can also display your knowledge with your Linkedin Moz SEO Essentials
         certification badge.</p>
     <p>
         Getting excited yet? You should be! Search engine marketing is a fascinating field
-        and can be lots of fun! If you get confused, don’t give up;
+        and can be lots of fun! If you get confused, don't give up;
  we have folks who can help you with instructor-led
         <a href="https://moz.com/training">
             SEO training
@@ -2380,7 +2434,7 @@ utm_content=suza"
 
     <h2>Step 2: Installing Tailwind CSS</h2>
 
-    <p>Now that your Next.js app is set up, it’s time to install Tailwind CSS. Tailwind requires a few dependencies, including PostCSS and Autoprefixer:</p>
+    <p>Now that your Next.js app is set up, it's time to install Tailwind CSS. Tailwind requires a few dependencies, including PostCSS and Autoprefixer:</p>
 
     <pre><code>npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p</code></code></pre>
@@ -2418,11 +2472,11 @@ npx tailwindcss init -p</code></code></pre>
 
     <pre><code>npm run dev</code></code></pre>
 
-    <p>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let’s now replace it with something styled by Tailwind.</p>
+    <p>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let's now replace it with something styled by Tailwind.</p>
 
     <h2>Step 5: Creating a Simple Tailwind-Styled Component</h2>
 
-    <p>Edit the <code>pages/index.js</code> file to use Tailwind classes. Here’s a basic example:</p>
+    <p>Edit the <code>pages/index.js</code> file to use Tailwind classes. Here's a basic example:</p>
 
     <pre><code>export default function Home() {
   return (
@@ -2446,7 +2500,7 @@ npx tailwindcss init -p</code></code></pre>
 
     <h2>Step 7: Customizing Your Theme</h2>
 
-    <p>You can customize Tailwind’s design system in the <code>tailwind.config.js</code> file. For example, to add a custom color:</p>
+    <p>You can customize Tailwind's design system in the <code>tailwind.config.js</code> file. For example, to add a custom color:</p>
 
     <pre><code>module.exports = {
   theme: {
@@ -2464,9 +2518,9 @@ npx tailwindcss init -p</code></code></pre>
 
     <p>Next.js and Tailwind CSS together form a powerful stack for building modern web applications. Next.js handles routing, rendering, and performance optimizations, while Tailwind CSS empowers you to craft responsive UIs without writing a single line of custom CSS.</p>
 
-    <p>With just a few commands, you now have a fully functional development environment that’s fast, scalable, and easy to work with. From here, explore Tailwind’s plugin ecosystem, create reusable components, and build your project with confidence.</p>
+    <p>With just a few commands, you now have a fully functional development environment that's fast, scalable, and easy to work with. From here, explore Tailwind's plugin ecosystem, create reusable components, and build your project with confidence.</p>
 
-    <p>If you’d like to go further, consider exploring additional features like Next.js API routes, dynamic routing, Tailwind dark mode, and integrating third-party libraries like Headless UI or Heroicons.</p>
+    <p>If you'd like to go further, consider exploring additional features like Next.js API routes, dynamic routing, Tailwind dark mode, and integrating third-party libraries like Headless UI or Heroicons.</p>
 
     <p>Happy coding!</p></article>`,
     category: `Tutorials`,
@@ -2487,7 +2541,7 @@ npx tailwindcss init -p</code></code></pre>
     content: `<article>
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
 
-  <p>In this article, we’ll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
+  <p>In this article, we'll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
 
   <h2>What is State in React?</h2>
 
@@ -2535,7 +2589,7 @@ function Counter(){
 
   <h2>When to Use the Context API</h2>
 
-  <p><strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It’s great for themes, authentication, or language settings.</p>
+  <p><strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It's great for themes, authentication, or language settings.</p>
 
   <pre><code>import{ createContext, useContext, useState } from 'react';
 
@@ -2598,7 +2652,7 @@ function Counter(){
 
   <h2>Zustand: Simpler Global State</h2>
 
-  <p><strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It’s ideal for simpler applications that still need shared global state.</p>
+  <p><strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It's ideal for simpler applications that still need shared global state.</p>
 
   <pre><code>import create from 'zustand';
 
@@ -2617,7 +2671,7 @@ function Counter(){
 
   <h2>Recoil: React-Friendly Atom-Based State</h2>
 
-  <p><strong>Recoil</strong> is a state management library from Facebook that works with React’s Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
+  <p><strong>Recoil</strong> is a state management library from Facebook that works with React's Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
 
   <pre><code>import{ atom, useRecoilState } from 'recoil';
 
@@ -2645,7 +2699,7 @@ function Counter(){
 
   <h2>When to Split State</h2>
 
-  <p>If a component’s state becomes too complex, break it into smaller chunks:</p>
+  <p>If a component's state becomes too complex, break it into smaller chunks:</p>
 
   <pre><code>const [form, setForm] = useState({
   name: '',
@@ -2663,7 +2717,7 @@ const [password, setPassword] = useState('');
 
   <h2>Conclusion</h2>
 
-  <p>State is the heart of a React application. Choosing the right tool depends on your app’s size, complexity, and team preferences.</p>
+  <p>State is the heart of a React application. Choosing the right tool depends on your app's size, complexity, and team preferences.</p>
 
   <ul>
     <li><strong>Small apps:</strong> use <code>useState</code> and lift state</li>
@@ -2957,7 +3011,7 @@ Content that resizes smoothly<
   <p>Example:</p>
   <pre><code>pages/api/hello.js → /api/hello</code></code></pre>
   <h2>Creating Your First API Route</h2>
-  <p>Let’s create a simple API endpoint that returns a greeting message.</p>
+  <p>Let's create a simple API endpoint that returns a greeting message.</p>
   <p>Create a file at <code>pages/api/hello.js</code>:</p>
   <pre><code>export default function handler(req, res) {
   res.status(200).json({ message: 'Hello from Next.js API!' });
@@ -3065,7 +3119,7 @@ export default function handler(req, res) {
     id: 5,
     title: "Responsive UI with Tailwind CSS",
     excerpt:
-      "Master responsive design using Tailwind’s utility classes and variants — build adaptable layouts that look great on any device.",
+      "Master responsive design using Tailwind's utility classes and variants — build adaptable layouts that look great on any device.",
     slug: "responsive-ui-tailwind",
     publishedAt: "2018-01-01",
     readingTime: "4 min read",
@@ -3075,7 +3129,7 @@ export default function handler(req, res) {
 
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
 
-    <p>In this article, we’ll dive into how Tailwind CSS simplifies the process of building responsive UIs, including an explanation of breakpoints, layout techniques, and real-world examples.</p>
+    <p>In this article, we'll dive into how Tailwind CSS simplifies the process of building responsive UIs, including an explanation of breakpoints, layout techniques, and real-world examples.</p>
 
     <h2>What Makes a UI Responsive?</h2>
 
@@ -3110,7 +3164,7 @@ export default function handler(req, res) {
 
     <h2>Responsive Layouts with Flex and Grid</h2>
 
-    <p>Tailwind provides utility classes for creating flexible and grid-based layouts. Let’s look at a responsive two-column layout that stacks on mobile:</p>
+    <p>Tailwind provides utility classes for creating flexible and grid-based layouts. Let's look at a responsive two-column layout that stacks on mobile:</p>
 
     <pre><code><div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class="bg-blue-100 p-4">Left Column</div>
@@ -3153,7 +3207,7 @@ export default function handler(req, res) {
 
     <h2>Building a Responsive Navbar</h2>
 
-    <p>Here’s an example of a responsive navigation bar using Tailwind’s utilities:</p>
+    <p>Here's an example of a responsive navigation bar using Tailwind's utilities:</p>
 
     <pre><code><nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
   <div class="text-lg font-bold">Brand</div>
@@ -3181,7 +3235,7 @@ export default function handler(req, res) {
 
     <h2>Custom Breakpoints</h2>
 
-    <p>If the default breakpoints don’t fit your design needs, you can customize them in <code>tailwind.config.js</code>:</p>
+    <p>If the default breakpoints don't fit your design needs, you can customize them in <code>tailwind.config.js</code>:</p>
 
     <pre><code>module.exports = {
   theme: {
@@ -3201,7 +3255,7 @@ export default function handler(req, res) {
 
     <p>Whether you're building a landing page, dashboard, or mobile-first app, Tailwind gives you the control to craft beautiful and responsive UIs that just work.</p>
 
-    <p>Now that you have a foundation, keep experimenting with layout strategies, explore Tailwind’s plugin ecosystem, and consider using components like Headless UI for more advanced, responsive interactions.</p>
+    <p>Now that you have a foundation, keep experimenting with layout strategies, explore Tailwind's plugin ecosystem, and consider using components like Headless UI for more advanced, responsive interactions.</p>
 
     <p><strong>Happy building!</strong></p>
   </article>
