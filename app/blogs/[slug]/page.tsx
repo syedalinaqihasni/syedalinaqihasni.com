@@ -19,7 +19,6 @@ import {
 import Link from "next/link";
 import FeaturedBlogs from "@/components/blogs/featured-blogs";
 
-
 const styles2 = {
   sectionPadding: "py-2 px-4",
   heroPadding: "pt-32 pb-16 md:pt-40 md:pb-20 px-4",
@@ -72,7 +71,6 @@ const Page = async ({ params }: { params: { slug: string } }) => {
   const post = posts.find((post) => post.slug === params.slug);
   if (!post) return notFound();
 
-
   const blogPostSchema = generateBlogPostSchema(post);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.syedalinaqihasni.com" },
@@ -88,7 +86,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
       <StructuredData data={blogPostSchema} />
       <StructuredData data={breadcrumbSchema} />
       <SingleBlogPage post={post} />
-      <div className="container">
+      <div className="container mx-auto">
         {/* Blogs Section */}
         {posts?.length != 0 && (
           <section className={`${styles2?.sectionPadding}`} id={"blogs"}>
