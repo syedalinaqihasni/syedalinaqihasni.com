@@ -55,7 +55,7 @@ export async function generateMetadata({
   return generateDynamicMetadata({
     title: post?.title,
     description: post?.excerpt,
-    image: post?.image,
+    image: post?.image ?post?.image : 'https://www.syedalinaqihasni.com/apple-icon-180x180.png',
     publishedAt: post?.publishedAt,
     path: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
   });
