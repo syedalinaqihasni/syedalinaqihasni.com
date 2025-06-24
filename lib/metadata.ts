@@ -35,7 +35,7 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
   },
   {
     path: '/projects',
-    title: 'Previous Projects | Frontend Development Work by Syed Ali Naqi Hasni',
+    title: 'Previous Projects | Work by Syed Ali Naqi Hasni',
     description: 'View my featured frontend development projects—professional, freelance, and personal.',
   },
   {
@@ -105,12 +105,12 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
   },
   {
     path: '/projects/tag',
-    title: 'Previous Projects Tag | Frontend Development Work by Syed Ali Naqi Hasni',
+    title: 'Previous Projects Tag | Work by Syed Ali Naqi Hasni',
     description: 'Projects filtered by tag to help you find related work in specific stacks or industries.',
   },
   {
     path: '/projects/category',
-    title: 'Previous Projects Category | Frontend Development Work by Syed Ali Naqi Hasni',
+    title: 'Previous Projects Category | Work by Syed Ali Naqi Hasni',
     description: 'Discover projects categorized by domain—ecommerce, CMS, SaaS, UI kits, and more.',
   }
 ];
