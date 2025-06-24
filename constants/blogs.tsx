@@ -11,10 +11,10 @@ const CONSTANT = {
 };
 
 const posts: Post[] = [
-   {
+  {
     id: 25,
     title: "Why I Don't Use WordPress (And You Shouldn't Either)",
-    excerpt:`Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
+    excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
     slug: "why-i-do-not-use-word-press-and-you-should-not-either",
     publishedAt: "2025-06-20",
     readingTime: "6 min read",
@@ -22,7 +22,7 @@ const posts: Post[] = [
       "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either-syed-ali-naqi-hasni.png",
     category: `Opinions`,
     tags: ["WordPress", "CMS", "Backend Integration"],
-    content: `<article>
+    content: `<div>
   <p>Let me say the quiet part out loud: <strong>WordPress is not the magical solution clients think it is.</strong></p>
   <p>I've seen too many businesses - startups, agencies, even government projects - bloated, broken, and buried under plugins, insecure code, and sluggish load times. And in 90% of those cases? WordPress was the culprit.</p>
   <p>Now, before the WordPress army shows up with pitchforks: I'm not here to bash the CMS. It had its time. It still <em>works</em> for certain use cases. But in 2025? For serious businesses that want speed, scalability, security, and sanity — <strong>you need something better.</strong></p>
@@ -53,8 +53,8 @@ const posts: Post[] = [
   <p>WordPress had a good run. But if you're serious about performance, security, and owning your digital presence — it's time to move forward.</p>
   <p>🚀 I build fast, secure, scalable sites using a modern tech stack that grows with you — not against you.</p>
   <p><strong><a href="https://wa.me/923162265948">Let's talk →</a></strong></p>
-</article>
-`},
+</div>`,
+  },
   {
     id: 16,
     title: "Integrating NodeMailer with Next.js: A Comprehensive Guide",
@@ -67,7 +67,7 @@ const posts: Post[] = [
       "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.jpg",
     category: `Tutorials`,
     tags: ["Next.js", "Node.js", "Backend Integration"],
-    content: `<article>
+    content: `<div>
 <h2>Introduction</h2>
 <p>
   In the realm of web development, sending emails is a common requirement, whether for user authentication, notifications, or newsletters. This article will guide you through the process of integrating NodeMailer, a popular Node.js module, with Next.js, a React framework for building server-side rendered applications.
@@ -165,7 +165,7 @@ export default YourPage;</code></pre>
 <p>
   I specialize in crafting outstanding user experiences for web applications. Whether you're looking to develop a new Progressive Web App (PWA) or enhance an existing one, we seamlessly integrate headless Content Management Systems (CMS) for efficient content management. Stay ahead of the curve with our future-proof solutions. Get in touch today to enhance your web and mobile presence through a user-friendly PWA. Let's collaborate to create a remarkable digital experience together!
 </p>
-</article>
+</div>
 `,
   },
   {
@@ -181,7 +181,7 @@ export default YourPage;</code></pre>
       "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.png", // Recommend replacing with a relevant SEO/Schema image
     category: `Tips`,
     tags: ["SEO", "Web Development", "Digital Strategy"],
-    content: `<article>
+    content: `<div>
 <p>
     In the dynamic realm of search engine optimization (SEO), staying ahead necessitates not only keeping pace with trends but also understanding and leveraging innovative tools. One such tool that has emerged as a game-changer is structured data markup script. This comprehensive guide explores what structured data markup script entails, how it functions, and most importantly, how you can utilize it to turbocharge your website's SEO performance.
   </p>
@@ -400,7 +400,7 @@ export default YourPage;</code></pre>
 <p>
     Structured data markup script is a potent tool for enhancing SEO performance and maximizing online visibility. By providing search engines with structured data about web page content, website owners can facilitate better understanding and indexing of their pages, potentially leading to higher rankings and increased organic traffic. While implementing and maintaining a structured data markup script may require effort and technical expertise, the benefits far outweigh the challenges. So, using structured data markup script as an integral component of your SEO strategy can help your website to new heights of success in the digital landscape.
   </p>
-</article>
+</div>
 `,
   },
   {
@@ -415,7 +415,7 @@ export default YourPage;</code></pre>
       "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.jpg", // Consider updating this image to something Git/Dev-related
     category: `Tips`,
     tags: ["Git", "Project Management", "Best Practices"],
-    content: `<article>
+    content: `<div>
 <p>
     In software development, version control is the backbone of smooth collaboration and project evolution. One of the most debated questions is: <em>How many commits should a project have?</em> While there's no definitive number, the key lies in structuring and managing your commits. In this article, we'll dive into the best practices for making commits that ensure your project remains clean, maintainable, and easy to debug.
   </p>
@@ -508,7 +508,7 @@ export default YourPage;</code></pre>
 <p>
     What commit strategies do you use in your projects? Share your thoughts in the comments below!
   </p>
-</article>
+</div>
 `,
   },
   {
@@ -571,7 +571,7 @@ export default YourPage;</code></pre>
 <p>
     Seamlessly embed React apps into WordPress with ReactPress for a user-friendly and efficient development experience.
   </p>
-</article>
+</div>
 `,
   },
   {
@@ -752,7 +752,7 @@ gh repo branch <branch-name></code></pre>
   In an era where speed and efficiency are critical in software development, GitHub CLI stands as a testament to GitHub's commitment to empowering developers with tools that seamlessly integrate into their existing workflows. As the development community continues to embrace the power of the command line, GitHub CLI is poised to play a central role in shaping the future of collaborative and efficient software development.
 </p>
 
-</article>
+</div>
 `,
   },
   {
@@ -768,7 +768,7 @@ gh repo branch <branch-name></code></pre>
       "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.png", // Consider updating this image to match the topic
     category: `Opinions`,
     tags: ["Teamwork", "Leadership", "Workplace Strategy"],
-    content: `<article>
+    content: `<div>
 <p>
     In the pursuit of success and progress, teams have become the cornerstone of modern society. From business enterprises to sports teams and community organizations, the collective power of individuals working together towards a common goal is undeniable. However, it is essential to recognize that the value of individuality is equally crucial in the context of team dynamics. In this article, we will explore how embracing and fostering individuality can enhance team skills, leading to unprecedented levels of innovation, creativity, and overall effectiveness.
   </p>
@@ -818,7 +818,7 @@ gh repo branch <branch-name></code></pre>
 <p>
     Striking the right balance between individuality and collaboration requires thoughtful leadership and a commitment to fostering a culture of inclusivity and open communication. When individuals feel valued and empowered within their teams, they are more motivated to contribute their best efforts, resulting in a team that achieves remarkable outcomes. So let us celebrate the power of individuality while recognizing that the true strength of a team lies in its ability to embrace and leverage the talents of each and every member.
   </p>
-</article>
+</div>
 `,
   },
   {
@@ -865,7 +865,7 @@ gh repo branch <branch-name></code></pre>
 <p>
     We specialize in creating exceptional user experiences. Whether you need a new PWA or to improve an existing one, we integrate headless CMS for seamless content management. Stay cutting-edge with our future-proof solutions. Contact us today to elevate your web and mobile presence with a user-friendly PWA. Let's create a remarkable experience together!
   </p>
-</article>
+</div>
 `,
   },
   {
@@ -1009,7 +1009,7 @@ updates:
     If you're interested in implementing these tools or have questions about securing your projects, feel free to reach out to me! Special thanks to <a href="https://github.com/" >@GitHub</a> for providing such incredible tools for developers. Let's keep our projects secure and efficient!
   </p>
 <br>
-</article>
+</div>
 `,
   },
   {
@@ -1024,7 +1024,7 @@ updates:
       "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.png",
     category: `Tips`,
     tags: ["Shopify", "eCommerce", "Business Tools"],
-    content: `<article>
+    content: `<div>
      <p>
     When it comes to running a successful Shopify store, having the right apps can make all the difference. These apps can enhance your store's functionality, streamline operations, and boost sales. In this article, we have compiled a list of 30 essential apps that every Shopify store must have. Each app comes with a link to its Shopify App Store page, making it easy for you to explore and install them for your store.
   </p>
@@ -1115,7 +1115,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
   </p>
 <p>
     These essential apps cover a range of functionalities, from drop-shipping to marketing, customer support, and optimization. Incorporating these apps into your Shopify store can enhance your operations, improve customer experience, and drive sales. Each app comes with its own unique features and benefits, so explore their links to learn more and determine which ones best suit the needs of your business.
-  </p> </article>`,
+  </p> </div>`,
   },
   {
     id: 7,
@@ -1130,7 +1130,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
       "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.jpg",
     category: `Opinions`,
     tags: ["Programming", "Software Design", "Best Practices"],
-    content: `<article>
+    content: `<div>
 <p>
     When you're early in React development, you focus on making things work. Later, as projects grow, you realize
     <strong>that architecture</strong> and <strong>design principles</strong> are <strong>even more important</strong>
@@ -1506,7 +1506,7 @@ function ProductsList() {
 <p>
     #ReactJS #SOLIDPrinciples #FrontendEngineering #SoftwareArchitecture #CleanCode #ReactBestPractices
   </p>
-</article>`,
+</div>`,
   },
   {
     id: 5,
@@ -1520,7 +1520,7 @@ function ProductsList() {
       "https://www.syedalinaqihasni.com/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career-syed-ali-naqi-hasni.webp",
     category: `Tips`,
     tags: ["Shopify", "Career Growth", "Web Development"],
-    content: `<article>
+    content: `<div>
     <p>
     In today's digital era, e-commerce continues to thrive, and platforms like Shopify
     have revolutionized the way businesses operate online. While many entrepreneurs utilize Shopify to build their
@@ -1592,7 +1592,7 @@ function ProductsList() {
     tapping into the thriving e-commerce industry, and continuously learning and innovating, you position yourself
     as a valuable asset in the digital marketplace. Embrace the world of Shopify app development, and unlock a world
     of career possibilities and professional growth.</p>
-    </article>`,
+    </div>`,
   },
   {
     id: 6,
@@ -1607,7 +1607,7 @@ function ProductsList() {
       "https://www.syedalinaqihasni.com/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too-syed-ali-naqi-hasni.webp",
     category: `Tutorials`,
     tags: ["WordPress", "Gutenberg", "Web Development"],
-    content: `<article>
+    content: `<div>
     
     <p>
     For years, I relied on shortcodes in WordPress to add functionality to my websites.
@@ -1794,7 +1794,7 @@ registerBlockType('custom/contact-form', {
     Have you made the switch to blocks yet? Let me know your thoughts or reach out if
     you need help navigating the transition!</p>
     
-    </article>`,
+    </div>`,
   },
   {
     id: 4,
@@ -1808,7 +1808,7 @@ registerBlockType('custom/contact-form', {
       "https://www.syedalinaqihasni.com/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios-syed-ali-naqi-hasni.webp",
     category: `Tips`,
     tags: ["WordPress", "Plugins", "User Engagement"],
-    content: `<article>
+    content: `<div>
     <p>
     WordPress push notification plugins are powerful tools that help website owners
     engage with their audience by sending instant notifications to web, Android, and iOS users. These plugins enable
@@ -1864,7 +1864,7 @@ registerBlockType('custom/contact-form', {
 <p>
     Note: The provided links are subject to change. Please search for the respective
     plugins to access the latest links.</p>
-    </article>`,
+    </div>`,
   },
   {
     id: 3,
@@ -1879,7 +1879,7 @@ registerBlockType('custom/contact-form', {
       "https://www.syedalinaqihasni.com/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress-syed-ali-naqi-hasni.webp",
     category: `Tips`,
     tags: ["WordPress", "ERP", "Business Tools"],
-    content: `<article>
+    content: `<div>
     <p>Before using an ERP Solution, you must know what is ERP. Otherwise, you wouldn't be
     able to get the point of using an ERP solution in the first place.</p>
 <p>Well, in simple words, ERP means Enterprise Resource Planning. ERP solutions
@@ -1979,7 +1979,7 @@ utm_content=suza"
     footprints. Your site will remain fast and responsive. WP ERP does a lot more for less. No plugin even comes
     close considering features and value. The plugin helps you to execute most of the tasks for your business,
     maximize the output and helps to manage resource planning and management more seamlessly.</p>
-</article>`,
+</div>`,
   },
   {
     id: 2,
@@ -1993,7 +1993,7 @@ utm_content=suza"
       "https://www.syedalinaqihasni.com/images/blogs/headless-wordpress-and-content-management-systems-syed-ali-naqi-hasni.webp",
     category: `Tutorials`,
     tags: ["Wordpress", "CMS", "Headless"],
-    content: `<article>
+    content: `<div>
     <p>
         Keeping up with the ever-expanding Internet of Things (IoT) can be a scramble for
         content developers and programmers alike. Repackaging content from a traditional WordPress implementation for
@@ -2138,7 +2138,7 @@ utm_content=suza"
         As a WordPress Digital Experience Platform (DXP), WP Engine can help you with the
         platform-specific aspects of your site. This includes troubleshooting REST API issues and standard WordPress
         functionality problems, along with providing fast and reliable hosting services.</p>
-</article>`,
+</div>`,
   },
   {
     id: 1,
@@ -2152,7 +2152,7 @@ utm_content=suza"
       "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.jpg",
     category: `Tips`,
     tags: ["SEO", "Getting Started", "Tutorial"],
-    content: `<article>
+    content: `<div>
     <h2>
         Welcome to your SEO learning journey!</h2>
     <p>
@@ -2347,7 +2347,7 @@ utm_content=suza"
             SEO training
             seminars</a>.
     </p>
-</article>`,
+</div>`,
   },
   {
     id: 1,
@@ -2357,7 +2357,7 @@ utm_content=suza"
     slug: "getting-started-nextjs-tailwind",
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
-    content: `<article>
+    content: `<div>
     <p>Web development continues to evolve at a rapid pace, and developers are constantly looking for tools that can streamline the development process while delivering modern, performant applications. Two popular tools that complement each other beautifully are <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.</p>
     <p>Next.js is a React-based framework that simplifies building scalable web applications by providing features like server-side rendering, static site generation, API routes, and more—out of the box. On the other hand, Tailwind CSS is a utility-first CSS framework that enables developers to rapidly build custom UIs directly in their HTML or JSX without leaving the markup.</p>
     <p>This guide will walk you through creating a modern, responsive web application using both Next.js and Tailwind CSS.</p>
@@ -2437,7 +2437,7 @@ npx tailwindcss init -p</code></code></pre>
     <p>Next.js and Tailwind CSS together form a powerful stack for building modern web applications. Next.js handles routing, rendering, and performance optimizations, while Tailwind CSS empowers you to craft responsive UIs without writing a single line of custom CSS.</p>
     <p>With just a few commands, you now have a fully functional development environment that's fast, scalable, and easy to work with. From here, explore Tailwind's plugin ecosystem, create reusable components, and build your project with confidence.</p>
     <p>If you'd like to go further, consider exploring additional features like Next.js API routes, dynamic routing, Tailwind dark mode, and integrating third-party libraries like Headless UI or Heroicons.</p>
-    <p>Happy coding!</p></article>`,
+    <p>Happy coding!</p></div>`,
     category: `Tutorials`,
     tags: ["Next.js", "Tailwind CSS", "Frontend Development"],
   },
@@ -2451,7 +2451,7 @@ npx tailwindcss init -p</code></code></pre>
     readingTime: "6 min read",
     category: `Tutorials`,
     tags: ["React", "State Management", "Frontend Architecture"],
-    content: `<article>
+    content: `<div>
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
   <p>In this article, we'll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
   <h2>What is State in React?</h2>
@@ -2599,7 +2599,7 @@ const [password, setPassword] = useState('');
   </ul>
   <p>As always, start simple and refactor when your state needs outgrow local management.</p>
   <p><strong>Happy state managing!</strong></p>
-</article>`,
+</div>`,
   },
   {
     id: 3,
@@ -2608,11 +2608,11 @@ const [password, setPassword] = useState('');
       "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
     slug: "framer-motion-animations",
     publishedAt: "2018-01-01",
-    readingTime: "5 min read", 
+    readingTime: "5 min read",
     category: `Tutorials`,
     tags: ["React", "Animations", "UI/UX"],
     content: `
-  <article>
+  <div>
     <p>Animation can breathe life into your web application, enhancing user experience and making your interface more engaging. <strong>Framer Motion</strong> is a popular React animation library that makes it easy to create beautiful and smooth animations with minimal code.</p>
     <p>Whether you're building hover effects, page transitions, or complex motion sequences, Framer Motion provides an intuitive API for creating animations declaratively in React—including in Next.js apps.</p>
     <h2>Why Use Framer Motion?</h2>
@@ -2798,10 +2798,9 @@ Content that resizes smoothly<
     <p>By integrating animations thoughtfully, you can significantly improve user experience and create interfaces that feel smooth and modern.</p>
     <p>Start small with hover effects, and soon you'll be building full-blown interactive motion UIs with coordinated transitions and animated layouts.</p>
     <p><strong>Go ahead—add some motion to your next project and make it feel alive!</strong></p>
-  </article>
+  </div>
 
 `,
-   
   },
   {
     id: 4,
@@ -2812,7 +2811,7 @@ Content that resizes smoothly<
     publishedAt: "2018-01-01",
     readingTime: "6 min read",
     content: `
-  <article>
+  <div>
   <p>One of the most powerful features of <strong>Next.js</strong> is its ability to handle backend logic directly within your frontend application. With <strong>API Routes</strong>, you can create server-side endpoints as part of your project—no need to set up a separate backend service.</p>
   <p>Whether you need to fetch data, handle forms, authenticate users, or integrate third-party services, Next.js API Routes let you write server-side code using the same stack and tools you're already using on the frontend.</p>
   <h2>What Are API Routes?</h2>
@@ -2910,7 +2909,7 @@ export default function handler(req, res) {
   <p>This eliminates the need for an additional Express or Node.js backend and simplifies your project architecture. Whether you're building a simple form handler or a proxy to a third-party API, API Routes in Next.js are a powerful tool in your development toolkit.</p>
   <p>As your project grows, you can easily refactor your API logic into reusable functions, integrate with middleware, or even connect to full-fledged backend platforms like Supabase or Prisma.</p>
   <p><strong>Happy coding—and enjoy the power of full-stack development with Next.js!</strong></p>
-  </article>`,
+  </div>`,
     category: `Tutorials`,
     tags: ["Next.js", "API", "Full‑Stack Development"],
   },
@@ -2924,7 +2923,7 @@ export default function handler(req, res) {
     readingTime: "4 min read",
     category: `Tutorials`,
     tags: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
-   content: ` <article>
+    content: ` <div>
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
     <p>In this article, we'll dive into how Tailwind CSS simplifies the process of building responsive UIs, including an explanation of breakpoints, layout techniques, and real-world examples.</p>
     <h2>What Makes a UI Responsive?</h2>
@@ -3012,8 +3011,9 @@ export default function handler(req, res) {
     <p>Whether you're building a landing page, dashboard, or mobile-first app, Tailwind gives you the control to craft beautiful and responsive UIs that just work.</p>
     <p>Now that you have a foundation, keep experimenting with layout strategies, explore Tailwind's plugin ecosystem, and consider using components like Headless UI for more advanced, responsive interactions.</p>
     <p><strong>Happy building!</strong></p>
-  </article>
-`,},
+  </div>
+`,
+  },
 ];
 
 export { CONSTANT, posts };
