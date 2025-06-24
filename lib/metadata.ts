@@ -20,7 +20,7 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
   },
   {
     path: '/blogs',
-    title: 'Tech Blogs by Syed Ali Naqi Hasni | Tutorials, Opinions, Tips & Tricks etc',
+    title: `Syed Ali Naqi Hasni's Blog | Dev Tutorials & Tricks`,
     description: 'Read technical tutorials, dev insights, and programming tips from real-world experience.',
   },
   {
@@ -85,12 +85,12 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
   },
   {
     path: '/blogs/tag',
-    title: 'Tech Blogs Tag by Syed Ali Naqi Hasni | Tutorials, Opinions, Tips & Tricks etc',
+    title: `Syed Ali Naqi Hasni's Blog tag | Dev Tutorials & Tricks`,
     description: 'Explore blog posts filtered by specific tags related to web development and frontend trends.',
   },
   {
     path: '/blogs/category',
-    title: 'Tech Blogs Category by Syed Ali Naqi Hasni | Tutorials, Opinions, Tips & Tricks etc',
+    title: `Syed Ali Naqi Hasni's Blog category | Dev Tutorials & Tricks`,
     description: 'Browse tech articles grouped by categories such as JavaScript, React, performance, and more.',
   },
   {
