@@ -19,33 +19,26 @@ const posts: Post[] = [
     publishedAt: "2025-06-20",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either.png",
+      "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either-syed-ali-naqi-hasni.png",
     category: `Opinions`,
     tags: ["WordPress", "CMS", "Backend Integration"],
     content: `<article>
   <p>Let me say the quiet part out loud: <strong>WordPress is not the magical solution clients think it is.</strong></p>
-
   <p>I've seen too many businesses - startups, agencies, even government projects - bloated, broken, and buried under plugins, insecure code, and sluggish load times. And in 90% of those cases? WordPress was the culprit.</p>
-
   <p>Now, before the WordPress army shows up with pitchforks: I'm not here to bash the CMS. It had its time. It still <em>works</em> for certain use cases. But in 2025? For serious businesses that want speed, scalability, security, and sanity — <strong>you need something better.</strong></p>
-
   <h2>1. It's Not Developer-Friendly (and That Costs You)</h2>
   <p>You want custom features? Clean APIs? CI/CD pipelines? Welcome to a spaghetti factory of PHP functions, theme overrides, and plugin conflicts.</p>
   <p><strong>Translation:</strong> You're paying for complexity, not progress.</p>
-
   <h2>2. Speed? Forget About It</h2>
   <p>Want a fast site? WordPress makes you fight for every millisecond.<br>
   A Next.js static site, even with some dynamic content, will <em>outperform</em> a plugin-heavy WordPress site <strong>every single time</strong>.</p>
-
   <h2>3. Security Is an Ongoing Fire Drill</h2>
   <p>Every plugin is a new potential breach. Every update is a gamble. Every site I've seen hacked in the past 3 years? WordPress.</p>
   <p>I don't want my clients to wake up to a “hacked by Turkishhax0r” screen. That's not just embarrassing. That's business lost.</p>
-
   <h2>4. You're Not Really Saving Money</h2>
   <p>That $300 WordPress build? It's a time bomb.<br>
   You'll need fixes, speed optimizations, security patches, devs to clean it up.</p>
   <p>Over 12 months, you'll end up spending more than if you just built it right the first time — using a <strong>modern stack</strong> like <em>Next.js, Tailwind, and Sanity/SQLite</em>.</p>
-
   <h2>5. Your Business Deserves Better</h2>
   <p>Your business isn't generic. Your website shouldn't be either.</p>
   <p>When I build for clients, I design systems:</p>
@@ -56,12 +49,9 @@ const posts: Post[] = [
     <li>That aren't held hostage by third-party plugin developers</li>
   </ul>
   <p><strong>You own it. You scale it. You're not dependent.</strong></p>
-
   <h2>TL;DR?</h2>
   <p>WordPress had a good run. But if you're serious about performance, security, and owning your digital presence — it's time to move forward.</p>
-
   <p>🚀 I build fast, secure, scalable sites using a modern tech stack that grows with you — not against you.</p>
-
   <p><strong><a href="https://wa.me/923162265948">Let's talk →</a></strong></p>
 </article>
 `},
@@ -74,7 +64,7 @@ const posts: Post[] = [
     publishedAt: "2024-01-19",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.jpg",
     category: `Tutorials`,
     tags: ["Next.js", "Node.js", "Backend Integration"],
     content: `<article>
@@ -120,15 +110,11 @@ const sendEmail = async (to, subject, html) => {
     subject,
     html,
   };
-
   try {
     const info = await transporter.sendMail(mailOptions);
-
     console.log('Email sent:', info.response);
-
   } catch (error) {
     console.error('Error sending email:', error);
-
   }
 };
 
@@ -144,9 +130,7 @@ import sendEmail from '../utils/email';
 const App = () => {
   const handleSendEmail = async () => {
     await sendEmail('recipient@example.com', 'Test Email', '<p>Hello, this is a test email!</p>');
-
   };
-
   return (
     <div>
       <h1>Your Page</h1>
@@ -194,7 +178,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-02-26",
     readingTime: "8 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png", // Recommend replacing with a relevant SEO/Schema image
+      "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.png", // Recommend replacing with a relevant SEO/Schema image
     category: `Tips`,
     tags: ["SEO", "Web Development", "Digital Strategy"],
     content: `<article>
@@ -428,7 +412,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-11-27",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management.jpg", // Consider updating this image to something Git/Dev-related
+      "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.jpg", // Consider updating this image to something Git/Dev-related
     category: `Tips`,
     tags: ["Git", "Project Management", "Best Practices"],
     content: `<article>
@@ -507,8 +491,8 @@ export default YourPage;</code></pre>
     The ideal number of commits depends on the project size:
   </p>
 <ul>
-    <li><strong>Small Projects:</strong> 20–50 commits, covering features, fixes, and refinements.</li>
-    <li><strong>Medium Projects:</strong> 100–500 commits, accommodating iterative development and team contributions.</li>
+    <li><strong>Small Projects:</strong> 20-50 commits, covering features, fixes, and refinements.</li>
+    <li><strong>Medium Projects:</strong> 100-500 commits, accommodating iterative development and team contributions.</li>
     <li><strong>Large Projects:</strong> 1000+ commits, especially for projects spanning months or years.</li>
 </ul>
 <p>
@@ -536,7 +520,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-11-27",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png", // Update the image filename to match topic
+      "https://www.syedalinaqihasni.com/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.png", // Update the image filename to match topic
     category: `Tutorials`,
     tags: ["React", "WordPress", "Headless CMS"],
     content: `<div >
@@ -600,7 +584,7 @@ export default YourPage;</code></pre>
     publishedAt: "2024-01-04",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png",
+      "https://www.syedalinaqihasni.com/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.png",
     category: `Tips`,
     tags: ["GitHub", "CLI Tools", "Developer Productivity"],
     content: `<div >
@@ -781,7 +765,7 @@ gh repo branch <branch-name></code></pre>
     publishedAt: "2023-07-21",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png", // Consider updating this image to match the topic
+      "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.png", // Consider updating this image to match the topic
     category: `Opinions`,
     tags: ["Teamwork", "Leadership", "Workplace Strategy"],
     content: `<article>
@@ -846,7 +830,7 @@ gh repo branch <branch-name></code></pre>
     publishedAt: "2023-07-17",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach.png",
+      "https://www.syedalinaqihasni.com/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.png",
     category: `Tips`,
     tags: ["Headless CMS", "PWA", "Content Strategy"],
     content: `<div >
@@ -894,7 +878,7 @@ gh repo branch <branch-name></code></pre>
     publishedAt: "2025-01-14",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.jpg",
     category: `Opinions`,
     tags: ["Security", "GitHub", "Development Tools"],
     content: `<div >
@@ -1037,7 +1021,7 @@ updates:
     publishedAt: "2023-06-12",
     readingTime: "4 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have.png",
+      "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.png",
     category: `Tips`,
     tags: ["Shopify", "eCommerce", "Business Tools"],
     content: `<article>
@@ -1143,7 +1127,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
     publishedAt: "2025-04-28",
     readingTime: "4 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.jpg",
     category: `Opinions`,
     tags: ["Programming", "Software Design", "Best Practices"],
     content: `<article>
@@ -1202,7 +1186,6 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
 <h3>Example of Bad SRP:</h3>
 <pre><code>function UserProfile({ userId }) {
   const [user, setUser] = useState(null);
-
   useEffect(() => {
     fetch(&#96;
 /api/user/&#36;
@@ -1211,9 +1194,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
 )
       .then((res) => res.json())
       .then((data) => setUser(data));
-
   }, [userId]);
-
   return (
     <div>
       <h1>{user?.name}</h1>
@@ -1233,7 +1214,6 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
 </ul>
 <pre><code>function useUser(userId) {
   const [user, setUser] = useState(null);
-
   useEffect(() => {
     fetch(&#96;
 /api/user/&#36;
@@ -1242,18 +1222,14 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
 )
       .then((res) => res.json())
       .then((data) => setUser(data));
-
   }, [userId]);
-
   return user;
 
 }
 
 function UserProfile({ userId }) {
   const user = useUser(userId);
-
   if (!user) return <p>Loading...</p>;
-
   return (
     <div>
       <h1>{user.name}</h1>
@@ -1298,9 +1274,7 @@ function UserProfile({ userId }) {
 <p><strong>Bad Example:</strong></p>
 <pre><code>function Notification({ type, message }) {
   if (type === "success") return <div className="success">{message}</div>;
-
   if (type === "error") return <div className="error">{message}</div>;
-
   if (type === "info") return <div className="info">{message}</div>;
 
 }</code></pre>
@@ -1318,7 +1292,6 @@ function UserProfile({ userId }) {
 
 function Notification({ type, message }) {
   const className = notificationStyles[type] || "default";
-
   return <div className={className}>{message}</div>;
 
 }</code></pre>
@@ -1358,11 +1331,9 @@ function Notification({ type, message }) {
 <pre><code>function PaymentProcessor({ payment }) {
   if (payment.type === "paypal") {
     return <PaypalComponent />;
-
   }
   if (payment.type === "stripe") {
     return <StripeComponent />;
-
   }
 }</code></pre>
 <ul>
@@ -1468,14 +1439,11 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 <p><strong>Bad Example:</strong></p>
 <pre><code>function ProductsList() {
   const [products, setProducts] = useState([]);
-
   useEffect(() => {
     fetch("https://www.syedalinaqihasni.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
-
   }, []);
-
   return products.map((p) => <div>{p.name}</div>);
 
 }</code></pre>
@@ -1486,12 +1454,9 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 <p>Abstract fetching logic:</p>
 <pre><code>function useProducts(service) {
   const [products, setProducts] = useState([]);
-
   useEffect(() => {
     service.fetchProducts().then(setProducts);
-
   }, [service]);
-
   return products;
 
 }
@@ -1504,7 +1469,6 @@ const productService = {
 // Component
 function ProductsList() {
   const products = useProducts(productService);
-
   return products.map((p) => <div key={p.id}>{p.name}</div>);
 
 }</code></pre>
@@ -1553,7 +1517,7 @@ function ProductsList() {
     publishedAt: "2024-05-10",
     readingTime: "4 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career-syed-ali-naqi-hasni.webp",
     category: `Tips`,
     tags: ["Shopify", "Career Growth", "Web Development"],
     content: `<article>
@@ -1640,7 +1604,7 @@ function ProductsList() {
     publishedAt: "2025-01-08",
     readingTime: "4 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too-syed-ali-naqi-hasni.webp",
     category: `Tutorials`,
     tags: ["WordPress", "Gutenberg", "Web Development"],
     content: `<article>
@@ -1737,7 +1701,6 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
         null,
         true
     );
-
     register_block_type('custom/contact-form', array(
         'editor_script' => 'custom-contact-form-block',
     ));
@@ -1842,7 +1805,7 @@ registerBlockType('custom/contact-form', {
     publishedAt: "2024-05-10",
     readingTime: "4 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios-syed-ali-naqi-hasni.webp",
     category: `Tips`,
     tags: ["WordPress", "Plugins", "User Engagement"],
     content: `<article>
@@ -1913,7 +1876,7 @@ registerBlockType('custom/contact-form', {
     publishedAt: "2022-11-02",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress-syed-ali-naqi-hasni.webp",
     category: `Tips`,
     tags: ["WordPress", "ERP", "Business Tools"],
     content: `<article>
@@ -2027,7 +1990,7 @@ utm_content=suza"
     publishedAt: "2022-11-02",
     readingTime: "6 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/headless-wordpress-and-content-management-systems.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/headless-wordpress-and-content-management-systems-syed-ali-naqi-hasni.webp",
     category: `Tutorials`,
     tags: ["Wordpress", "CMS", "Headless"],
     content: `<article>
@@ -2186,7 +2149,7 @@ utm_content=suza"
     publishedAt: "2022-09-26",
     readingTime: "4 min read",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.jpg",
     category: `Tips`,
     tags: ["SEO", "Getting Started", "Tutorial"],
     content: `<article>
@@ -2395,54 +2358,32 @@ utm_content=suza"
     publishedAt: "2018-01-01",
     readingTime: "5 min read",
     content: `<article>
-    
-
     <p>Web development continues to evolve at a rapid pace, and developers are constantly looking for tools that can streamline the development process while delivering modern, performant applications. Two popular tools that complement each other beautifully are <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.</p>
-
     <p>Next.js is a React-based framework that simplifies building scalable web applications by providing features like server-side rendering, static site generation, API routes, and more—out of the box. On the other hand, Tailwind CSS is a utility-first CSS framework that enables developers to rapidly build custom UIs directly in their HTML or JSX without leaving the markup.</p>
-
     <p>This guide will walk you through creating a modern, responsive web application using both Next.js and Tailwind CSS.</p>
-
     <h2>Why Choose Next.js and Tailwind CSS?</h2>
-
     <p><strong>Next.js</strong> provides a production-ready framework for building React applications. Unlike vanilla React, which requires additional configuration for routing, SSR (server-side rendering), and code splitting, Next.js includes these features by default.</p>
-
     <p><strong>Tailwind CSS</strong> allows for rapid UI development using utility classes. Instead of writing custom CSS for every component, Tailwind provides low-level utility classes like <code>flex</code>, <code>p-4</code>, <code>bg-blue-500</code>, etc., to construct designs efficiently and maintain consistency.</p>
-
     <h2>Prerequisites</h2>
-
     <p>Before getting started, ensure that you have the following installed on your system:</p>
     <ul>
       <li>Node.js (v14 or later)</li>
       <li>npm or yarn</li>
       <li>A code editor like VS Code</li>
     </ul>
-
     <h2>Step 1: Creating a Next.js Application</h2>
-
     <p>Open your terminal and run the following command to bootstrap a new Next.js app:</p>
-
     <pre><code>npx create-next-app@latest my-next-tailwind-app</code></code></pre>
-
     <p>This command will prompt you with a few setup questions (like TypeScript, ESLint, etc.). You can choose the defaults or customize them as needed.</p>
-
     <p>Navigate into your project directory:</p>
-
     <pre><code>cd my-next-tailwind-app</code></code></pre>
-
     <h2>Step 2: Installing Tailwind CSS</h2>
-
     <p>Now that your Next.js app is set up, it's time to install Tailwind CSS. Tailwind requires a few dependencies, including PostCSS and Autoprefixer:</p>
-
     <pre><code>npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p</code></code></pre>
-
     <p>This command creates two configuration files in the root of your project: <code>tailwind.config.js</code> and <code>postcss.config.js</code>.</p>
-
     <h2>Step 3: Configuring Tailwind</h2>
-
     <p>Open <code>tailwind.config.js</code> and configure the <code>content</code> property so Tailwind knows where to look for class names:</p>
-
     <pre><code>module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -2453,29 +2394,19 @@ npx tailwindcss init -p</code></code></pre>
   },
   plugins: [],
 }</code></code></pre>
-
     <p>Next, open <code>styles/globals.css</code> and replace its contents with the Tailwind directives:</p>
-
     <pre><code>@tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;</code></code></pre>
-
     <p>This tells Tailwind to inject its base styles, component classes, and utility classes globally.</p>
-
     <h2>Step 4: Running the Development Server</h2>
-
     <p>Start your app with the following command:</p>
-
     <pre><code>npm run dev</code></code></pre>
-
     <p>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let's now replace it with something styled by Tailwind.</p>
-
     <h2>Step 5: Creating a Simple Tailwind-Styled Component</h2>
-
     <p>Edit the <code>pages/index.js</code> file to use Tailwind classes. Here's a basic example:</p>
-
     <pre><code>export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100"></div>
@@ -2485,21 +2416,13 @@ npx tailwindcss init -p</code></code></pre>
     </div>
   )
 }</code></code></pre>
-
     <p>After saving, your browser should display a clean, centered message styled with Tailwind.</p>
-
     <h2>Step 6: Using Tailwind Responsively</h2>
-
     <p>Tailwind makes it easy to build responsive layouts. Try updating the text size with responsive classes:</p>
-
     <pre><code><h1 className="text-2xl md:text-4xl lg:text-6xl">Responsive Text</h1></code></code></pre>
-
     <p>This will render different font sizes depending on the screen width.</p>
-
     <h2>Step 7: Customizing Your Theme</h2>
-
     <p>You can customize Tailwind's design system in the <code>tailwind.config.js</code> file. For example, to add a custom color:</p>
-
     <pre><code>module.exports = {
   theme: {
     extend: {
@@ -2509,17 +2432,11 @@ npx tailwindcss init -p</code></code></pre>
     },
   },
 }</code></code></pre>
-
     <p>Now you can use <code>bg-brand</code>, <code>text-brand</code>, etc., throughout your components.</p>
-
     <h2>Conclusion</h2>
-
     <p>Next.js and Tailwind CSS together form a powerful stack for building modern web applications. Next.js handles routing, rendering, and performance optimizations, while Tailwind CSS empowers you to craft responsive UIs without writing a single line of custom CSS.</p>
-
     <p>With just a few commands, you now have a fully functional development environment that's fast, scalable, and easy to work with. From here, explore Tailwind's plugin ecosystem, create reusable components, and build your project with confidence.</p>
-
     <p>If you'd like to go further, consider exploring additional features like Next.js API routes, dynamic routing, Tailwind dark mode, and integrating third-party libraries like Headless UI or Heroicons.</p>
-
     <p>Happy coding!</p></article>`,
     category: `Tutorials`,
     tags: ["Next.js", "Tailwind CSS", "Frontend Development"],
@@ -2536,18 +2453,13 @@ npx tailwindcss init -p</code></code></pre>
     tags: ["React", "State Management", "Frontend Architecture"],
     content: `<article>
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
-
   <p>In this article, we'll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
-
   <h2>What is State in React?</h2>
-
   <p><strong>State</strong> is a JavaScript object that holds dynamic data in a React component. State changes trigger re-renders, allowing the UI to respond to user interactions and asynchronous updates.</p>
-
   <pre><code>import{ useState } from 'react';
 
 function Counter(){
   const [count, setCount] = useState(0);
-
   return (
   <div>
     <p>Count:{count}</p>
@@ -2556,20 +2468,14 @@ function Counter(){
   );
 }
   </code></pre>
-
   <h2>Local vs Global State</h2>
-
   <p>React state generally falls into two categories:</p>
-
   <ul>
     <li><strong>Local State</strong>: Used in a single component (e.g., form inputs, modals)</li>
     <li><strong>Global State</strong>: Shared across multiple components (e.g., user session, theme)</li>
   </ul>
-
   <h2>Lifting State Up</h2>
-
   <p>If multiple sibling components need access to the same piece of state, lift it to their common parent:</p>
-
   <pre><code>function Parent(){
   const [value, setValue] = useState('');
   return (
@@ -2580,20 +2486,15 @@ function Counter(){
   );
 }
   </code></pre>
-
   <p>This keeps your data flow predictable and contained.</p>
-
   <h2>When to Use the Context API</h2>
-
   <p><strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It's great for themes, authentication, or language settings.</p>
-
   <pre><code>import{ createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext();
 
 function App(){
   const [theme, setTheme] = useState('light');
-
   return (
   <ThemeContext.Provider value={{ theme, setTheme }}>
     <Layout />
@@ -2606,14 +2507,10 @@ function Layout(){
   return <div className={\`theme-$&#123;theme&#125\`}>Welcome</div>;
 }
   </code></pre>
-
   <p>✅ Use Context for low-frequency global state.</p>
   <p>🚫 Avoid storing frequently-updated values (like form inputs) in Context—it can cause unnecessary re-renders.</p>
-
   <h2>Redux: Industrial-Strength State Management</h2>
-
   <p><strong>Redux</strong> is a predictable state container ideal for large applications with complex state logic, time travel debugging, and middleware needs.</p>
-
   <pre><code>import{ createSlice, configureStore } from '@reduxjs/toolkit';
 
 const counterSlice = createSlice({
@@ -2630,26 +2527,20 @@ const store = configureStore({
   reducer:{ counter: counterSlice.reducer },
 });
   </code></pre>
-
   <p>Connect to components using <code>useSelector</code> and <code>useDispatch</code>:</p>
-
   <pre><code>import{ useSelector, useDispatch } from 'react-redux';
 import{ increment } from './store';
 
 function Counter(){
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
-
   return (
   <button onClick={() => dispatch(increment())}>{count}</button>
   );
 }
   </code></pre>
-
   <h2>Zustand: Simpler Global State</h2>
-
   <p><strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It's ideal for simpler applications that still need shared global state.</p>
-
   <pre><code>import create from 'zustand';
 
 const useStore = create((set) => ({
@@ -2662,13 +2553,9 @@ function Counter(){
   return <button onClick={increment}>{count}</button>;
 }
   </code></pre>
-
   <p>Zustand is reactive, fast, and doesn't require a Provider component.</p>
-
   <h2>Recoil: React-Friendly Atom-Based State</h2>
-
   <p><strong>Recoil</strong> is a state management library from Facebook that works with React's Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
-
   <pre><code>import{ atom, useRecoilState } from 'recoil';
 
 const countAtom = atom({
@@ -2681,49 +2568,36 @@ function Counter(){
   return <button onClick={() => setCount(count + 1)}>{count}</button>;
 }
   </code></pre>
-
   <p>Recoil is useful when you need shared, reactive state without excessive boilerplate.</p>
-
   <h2>State Management Tips</h2>
-
   <ul>
     <li>Start with <code>useState</code> and lift state when necessary</li>
     <li>Use <code>useContext</code> for shared configuration or identity data</li>
     <li>Switch to Redux, Recoil, or Zustand for cross-component state or when state logic grows</li>
     <li>Memoize derived state using <code>useMemo</code> or selectors</li>
   </ul>
-
   <h2>When to Split State</h2>
-
   <p>If a component's state becomes too complex, break it into smaller chunks:</p>
-
   <pre><code>const [form, setForm] = useState({
   name: '',
   email: '',
   password: '',
 });
   </code></pre>
-
   <p>Or manage each input individually for clarity:</p>
-
   <pre><code>const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
   </code></pre>
-
   <h2>Conclusion</h2>
-
   <p>State is the heart of a React application. Choosing the right tool depends on your app's size, complexity, and team preferences.</p>
-
   <ul>
     <li><strong>Small apps:</strong> use <code>useState</code> and lift state</li>
     <li><strong>Shared config:</strong> use <code>Context</code></li>
     <li><strong>Complex state:</strong> try Redux or Zustand</li>
     <li><strong>Fine-grained reactivity:</strong> consider Recoil</li>
   </ul>
-
   <p>As always, start simple and refactor when your state needs outgrow local management.</p>
-
   <p><strong>Happy state managing!</strong></p>
 </article>`,
   },
@@ -2739,13 +2613,9 @@ const [password, setPassword] = useState('');
     tags: ["React", "Animations", "UI/UX"],
     content: `
   <article>
-
     <p>Animation can breathe life into your web application, enhancing user experience and making your interface more engaging. <strong>Framer Motion</strong> is a popular React animation library that makes it easy to create beautiful and smooth animations with minimal code.</p>
-
     <p>Whether you're building hover effects, page transitions, or complex motion sequences, Framer Motion provides an intuitive API for creating animations declaratively in React—including in Next.js apps.</p>
-
     <h2>Why Use Framer Motion?</h2>
-
     <ul>
       <li>Easy to use, declarative API</li>
       <li>Fully compatible with React and Next.js</li>
@@ -2753,21 +2623,13 @@ const [password, setPassword] = useState('');
       <li>Great performance out of the box</li>
       <li>Built-in support for gestures and layout transitions</li>
     </ul>
-
     <h2>Getting Started</h2>
-
     <p>First, you need to install the library:</p>
-
     <pre><code>npm install framer-motion</code></pre>
-
     <p>Or with Yarn:</p>
-
     <pre><code>yarn add framer-motion</code></pre>
-
     <h2>Basic Animation</h2>
-
     <p>To animate an element, you use the <code>motion</code> component instead of a regular HTML element. For example:</p>
-
     <pre><code>import { motion } from 'framer-motion';
 
 export default function Box() {
@@ -2778,54 +2640,39 @@ motion.div
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-
       Hello, I fade in!
   <
 /motion.div>
-
   );
 
 }</code></pre>
-
     <p>This code makes a <code><
 div></code> fade in over one second when it's mounted.</p>
-
     <h2>Animating Position and Scale</h2>
-
     <p>You can animate multiple properties at once—such as scale, x/y position, and rotation:</p>
-
     <pre><code><
 motion.div
   initial={{ x: -100, scale: 0.5 }}
   animate={{ x: 0, scale: 1 }}
   transition={{ type: 'spring', stiffness: 100 }}
 >
-
   Slide &amp;
  Scale
 <
 /motion.div></code></pre>
-
     <h2>Hover and Tap Animations</h2>
-
     <p>Framer Motion makes it easy to add interaction-based animations using <code>whileHover</code> and <code>whileTap</code> props:</p>
-
     <pre><code><
 motion.button
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
 >
-
   Click Me
 <
 /motion.button></code></pre>
-
     <p>This provides subtle feedback when users interact with UI elements.</p>
-
     <h2>Variants: Coordinated Animation</h2>
-
     <p><strong>Variants</strong> are a powerful feature that let you define shared animation states for groups of components.</p>
-
     <pre><code>const container = {
   hidden: { opacity: 0 },
   visible: {
@@ -2840,9 +2687,7 @@ const item = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
 };</code></pre>
-
     <p>Now use them:</p>
-
     <pre><code><
 motion.ul
   variants={container}
@@ -2867,20 +2712,15 @@ Item 3<
 
 <
 /motion.ul></code></pre>
-
     <p>Each list item will animate in sequence thanks to <code>staggerChildren</code>.</p>
-
     <h2>AnimatePresence: Exit Animations</h2>
-
     <p><code>AnimatePresence</code> is used to animate components when they are removed from the React tree—such as modals or pages.</p>
-
     <pre><code>import { AnimatePresence, motion } from 'framer-motion';
 
 function Modal({ isOpen }) {
   return (
   <
 AnimatePresence>
-
       {isOpen &amp;
 &amp;
  (
@@ -2890,25 +2730,18 @@ motion.div
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-
           Modal Content
       <
 /motion.div>
-
       )}
   <
 /AnimatePresence>
-
   );
 
 }</code></pre>
-
     <p>This ensures smooth exit transitions instead of instantly removing elements.</p>
-
     <h2>Page Transitions in Next.js</h2>
-
     <p>In a Next.js app, you can use Framer Motion with <code>AnimatePresence</code> to animate between pages. Here's a basic example:</p>
-
     <pre><code>// _app.js
 import { AnimatePresence } from 'framer-motion';
 
@@ -2916,19 +2749,14 @@ export default function App({ Component, pageProps, router }) {
   return (
   <
 AnimatePresence mode="wait">
-
     <
 Component {...pageProps} key={router.route} />
-
   <
 /AnimatePresence>
-
   );
 
 }</code></pre>
-
     <p>Then add page-level animation inside each component:</p>
-
     <pre><code>import { motion } from 'framer-motion';
 
 export default function HomePage() {
@@ -2939,19 +2767,14 @@ motion.div
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-
       Home Page
   <
 /motion.div>
-
   );
 
 }</code></pre>
-
     <h2>Motion Layout: Smart Animations</h2>
-
     <p>Framer Motion also includes a powerful feature called <code>layout</code> that lets you animate between different layouts intelligently without defining the animation manually.</p>
-
     <pre><code><
 motion.div layout>
 
@@ -2962,26 +2785,18 @@ Content that resizes smoothly<
 
 <
 /motion.div></code></pre>
-
     <p>This is great for expanding cards, resizing elements, or toggling visibility with animation.</p>
-
     <h2>Performance Tips</h2>
-
     <ul>
       <li>Use <code>layoutId</code> for shared layout animations</li>
       <li>Use <code>AnimatePresence</code> for exit transitions</li>
       <li>Keep animations lightweight on mobile</li>
       <li>Avoid animating expensive properties like <code>box-shadow</code></li>
     </ul>
-
     <h2>Conclusion</h2>
-
     <p>Framer Motion is one of the best tools for adding animation to React and Next.js projects. Its API is expressive, simple, and powerful—making it perfect for both beginners and pros.</p>
-
     <p>By integrating animations thoughtfully, you can significantly improve user experience and create interfaces that feel smooth and modern.</p>
-
     <p>Start small with hover effects, and soon you'll be building full-blown interactive motion UIs with coordinated transitions and animated layouts.</p>
-
     <p><strong>Go ahead—add some motion to your next project and make it feel alive!</strong></p>
   </article>
 
@@ -3019,22 +2834,17 @@ Content that resizes smoothly<
   <pre><code>export default function handler(req, res) {
   if (req.method === 'GET') {
   res.status(200).json({ message: 'This is a GET request' });
-
   } else if (req.method === 'POST') {
   res.status(200).json({ message: 'This is a POST request' });
-
   } else {
   res.setHeader('Allow', ['GET', 'POST']);
-
   res.status(405).end(\`Method \${req.method} Not Allowed\`);
-
   }
 }</code></code></pre>
   <h2>Parsing Request Data</h2>
   <p>For <code>POST</code> or <code>PUT</code> requests, you often need to access data sent in the request body. By default, Next.js automatically parses JSON request bodies for you.</p>
   <pre><code>export default function handler(req, res) {
   const { name } = req.body;
-
   res.status(200).json({ message: \`Hello, \${name}\` });
 
 }</code></code></pre>
@@ -3049,7 +2859,6 @@ Content that resizes smoothly<
   <pre><code>// pages/api/greet.js
 export default function handler(req, res) {
   const { name } = req.query;
-
   res.status(200).json({ greeting: \`Hello, \${name || 'Guest'}\` });
 
 }</code></code></pre>
@@ -3059,7 +2868,6 @@ export default function handler(req, res) {
   <pre><code>// pages/api/user/[id].js
 export default function handler(req, res) {
   const { id } = req.query;
-
   res.status(200).json({ userId: id });
 
 }</code></code></pre>
@@ -3070,19 +2878,15 @@ export default function handler(req, res) {
   <pre><code>export default function handler(req, res) {
   try {
   throw new Error('Something went wrong!');
-
   } catch (error) {
   res.status(500).json({ error: error.message });
-
   }
 }</code></code></pre>
   <h2>Working with External APIs</h2>
   <p>You can use API routes as a proxy for third-party services. For example, calling an external weather API:</p>
   <pre><code>export default async function handler(req, res) {
   const response = await fetch('https://api.weatherapi.com/v1/current.json?key=YOUR_KEY&q=London');
-
   const data = await response.json();
-
   res.status(200).json(data);
 
 }</code></code></pre>
@@ -3121,75 +2925,48 @@ export default function handler(req, res) {
     category: `Tutorials`,
     tags: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
    content: ` <article>
-
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
-
     <p>In this article, we'll dive into how Tailwind CSS simplifies the process of building responsive UIs, including an explanation of breakpoints, layout techniques, and real-world examples.</p>
-
     <h2>What Makes a UI Responsive?</h2>
-
     <p>A responsive UI adjusts seamlessly to different screen sizes and orientations. This means your app should look and work great whether it's being viewed on a phone, tablet, laptop, or desktop monitor. Key aspects of responsive design include:</p>
-
     <ul>
       <li>Flexible grid and layout systems</li>
       <li>Scalable typography and spacing</li>
       <li>Conditional rendering or styling for specific screen sizes</li>
       <li>Media query-based design decisions</li>
     </ul>
-
     <p>Traditionally, this required custom media queries and complex CSS. Tailwind simplifies all of this using mobile-first utility classes and intuitive breakpoints.</p>
-
     <h2>Understanding Tailwind's Breakpoints</h2>
-
     <p>Tailwind CSS is mobile-first, meaning styles are applied by default to the smallest screens and can be overridden at larger breakpoints. Tailwind uses these default breakpoints:</p>
-
     <ul>
-      <li><code>sm</code> – 640px</li>
-      <li><code>md</code> – 768px</li>
-      <li><code>lg</code> – 1024px</li>
-      <li><code>xl</code> – 1280px</li>
-      <li><code>2xl</code> – 1536px</li>
+      <li><code>sm</code> - 640px</li>
+      <li><code>md</code> - 768px</li>
+      <li><code>lg</code> - 1024px</li>
+      <li><code>xl</code> - 1280px</li>
+      <li><code>2xl</code> - 1536px</li>
     </ul>
-
     <p>Using these is as simple as prefixing utility classes. For example:</p>
-
     <pre><code><div class="text-base md:text-lg lg:text-xl">Responsive Text</div></code></code></pre>
-
     <p>This applies <code>text-base</code> on all screens, <code>text-lg</code> on medium screens (768px+), and <code>text-xl</code> on large screens (1024px+).</p>
-
     <h2>Responsive Layouts with Flex and Grid</h2>
-
     <p>Tailwind provides utility classes for creating flexible and grid-based layouts. Let's look at a responsive two-column layout that stacks on mobile:</p>
-
     <pre><code><div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class="bg-blue-100 p-4">Left Column</div>
   <div class="bg-green-100 p-4">Right Column</div>
 </div></code></code></pre>
-
     <p>Here, we use <code>grid-cols-1</code> for small screens (1 column), and <code>md:grid-cols-2</code> to switch to a 2-column layout on medium screens and above.</p>
-
     <h2>Controlling Visibility Based on Screen Size</h2>
-
     <p>Tailwind allows you to easily show or hide elements depending on screen size. This is useful for things like mobile menus or device-specific content:</p>
-
     <pre><code><div class="block md:hidden">Mobile Only</div>
 <div class="hidden md:block">Desktop Only</div></code></code></pre>
-
     <p>This approach avoids JavaScript toggling and provides fine-grained control using only CSS classes.</p>
-
     <h2>Responsive Spacing and Sizing</h2>
-
     <p>Tailwind's spacing utilities (padding, margin, width, height) can also be made responsive by prefixing them with breakpoints:</p>
-
     <pre><code><div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
 <img class="w-full md:w-1/2" src="image.jpg" alt="Example" /></code></pre>
-
     <p>This enables developers to scale spacing and sizing progressively as the screen size increases, without writing custom CSS.</p>
-
     <h2>Responsive Typography and Text Alignment</h2>
-
     <p>Typography plays a major role in UI readability. Tailwind provides responsive control over font size, alignment, and spacing:</p>
-
     <pre><code><h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
   Responsive Heading
 </h1>
@@ -3197,13 +2974,9 @@ export default function handler(req, res) {
 <p class="text-center md:text-left">
   This paragraph centers on small screens and aligns left on larger screens.
 </p></code></code></pre>
-
     <p>This fluidity ensures your content is both readable and visually appealing across devices.</p>
-
     <h2>Building a Responsive Navbar</h2>
-
     <p>Here's an example of a responsive navigation bar using Tailwind's utilities:</p>
-
     <pre><code><nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
   <div class="text-lg font-bold">Brand</div>
   <div class="hidden md:flex gap-4">
@@ -3215,23 +2988,15 @@ export default function handler(req, res) {
     <button>☰</button>
   </div>
 </nav></code></code></pre>
-
     <p>This layout hides the full navigation on smaller screens and replaces it with a menu button. On larger screens, the full navigation is displayed.</p>
-
     <h2>Dark Mode Responsiveness</h2>
-
     <p>Tailwind also supports dark mode, which you can combine with responsiveness. For instance:</p>
-
     <pre><code><div class="bg-white dark:bg-gray-900 text-black dark:text-white p-4 md:p-8">
   Responsive and Themed Box
 </div></code></code></pre>
-
     <p>This allows you to create UI components that respond to both screen size and user color preferences.</p>
-
     <h2>Custom Breakpoints</h2>
-
     <p>If the default breakpoints don't fit your design needs, you can customize them in <code>tailwind.config.js</code>:</p>
-
     <pre><code>module.exports = {
   theme: {
     extend: {},
@@ -3241,17 +3006,11 @@ export default function handler(req, res) {
     },
   },
 }</code></code></pre>
-
     <p>With this, you can now use <code>xs:</code> to target screens as small as 480px.</p>
-
     <h2>Conclusion</h2>
-
     <p>Responsive design no longer needs to be a headache. With Tailwind CSS, you can build highly adaptive interfaces using concise, expressive utility classes—without writing a single line of media query CSS. By mastering its mobile-first breakpoints and combining utilities for layout, spacing, and typography, you can create polished, scalable designs quickly.</p>
-
     <p>Whether you're building a landing page, dashboard, or mobile-first app, Tailwind gives you the control to craft beautiful and responsive UIs that just work.</p>
-
     <p>Now that you have a foundation, keep experimenting with layout strategies, explore Tailwind's plugin ecosystem, and consider using components like Headless UI for more advanced, responsive interactions.</p>
-
     <p><strong>Happy building!</strong></p>
   </article>
 `,},

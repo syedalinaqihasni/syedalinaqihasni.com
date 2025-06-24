@@ -2,7 +2,7 @@ export const EXPERIENCES = [
   {
     id: '1',
     company: 'eSpark Consulting Group',
-    logo: 'https://www.syedalinaqihasni.com/images/experience/espark-cons-group.jpg',
+    logo: 'https://www.syedalinaqihasni.com/images/experience/espark-cons-group-syed-ali-naqi-hasni.jpg',
     period: 'Sep 2018 - Present',
     location: 'Karachi, Pakistan',
     type: 'Full-time',
@@ -45,7 +45,7 @@ export const EXPERIENCES = [
   {
     id: '4',
     company: 'eSpark Talent',
-    logo: 'https://www.syedalinaqihasni.com/images/experience/espark-talent.jpg',
+    logo: 'https://www.syedalinaqihasni.com/images/experience/espark-talent-syed-ali-naqi-hasni.jpg',
     period: 'Oct 2024 - Jan 2025',
     location: 'Karachi, Pakistan',
     type: 'Freelance',
@@ -65,7 +65,7 @@ export const EXPERIENCES = [
   {
     id: '2',
     company: 'Royal Apps',
-    logo: 'https://www.syedalinaqihasni.com/images/experience/royal-apps.jpg',
+    logo: 'https://www.syedalinaqihasni.com/images/experience/royal-apps-syed-ali-naqi-hasni.jpg',
     period: 'Jun 2023 - Sep 2024',
     location: 'Remote (US-based)',
     type: 'Contract',
@@ -91,7 +91,7 @@ export const EXPERIENCES = [
   {
     id: '3',
     company: 'Seek Social Ltd',
-    logo: 'https://www.syedalinaqihasni.com/images/experience/seek-social-ltd.jpg',
+    logo: 'https://www.syedalinaqihasni.com/images/experience/seek-social-ltd-syed-ali-naqi-hasni.jpg',
     period: 'Aug 2019 - Mar 2022',
     location: 'Remote (UK-based)',
     type: 'Contract',
@@ -111,7 +111,7 @@ export const EXPERIENCES = [
   // {
   //   id: '4',
   //   company: 'Hasni Developers',
-  //   logo: 'https://www.syedalinaqihasni.com/images/experience/hasni-developers.jpg',
+  //   logo: 'https://www.syedalinaqihasni.com/images/experience/hasni-developers-syed-ali-naqi-hasni.jpg',
   //   period: '2018 - Present',
   //   location: 'Karachi, Pakistan',
   //   type: 'Freelance',
@@ -131,7 +131,7 @@ export const EXPERIENCES = [
   // {
   //   id: '3',
   //   company: 'Ruby Designers',
-  //   logo: 'https://www.syedalinaqihasni.com/images/experience/ruby-designers.jpg',
+  //   logo: 'https://www.syedalinaqihasni.com/images/experience/ruby-designers-syed-ali-naqi-hasni.jpg',
   //   period: 'Aug 2019 - Mar 2022',
   //   location: 'Remote (Karachi, PK)',
   //   type: 'Full-time',
@@ -151,7 +151,7 @@ export const EXPERIENCES = [
   // {
   //   id: '3',
   //   company: 'DevSol Pakistan',
-  //   logo: 'https://www.syedalinaqihasni.com/images/experience/devsol-pakistan.jpg',
+  //   logo: 'https://www.syedalinaqihasni.com/images/experience/devsol-pakistan-syed-ali-naqi-hasni.jpg',
   //   period: 'Aug 2019 - Mar 2022',
   //   location: 'Remote (Karachi, PK)',
   //   type: 'Full-time',

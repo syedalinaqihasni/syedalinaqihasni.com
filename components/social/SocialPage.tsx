@@ -44,8 +44,8 @@ function renderPostsByType(type: keyof SocialPosts) {
             <Card key={post?.id} className={'overflow-hidden'}>
               <div className={'relative h-64 w-full'}>
                 <img
-                  src={post?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'}
-                  alt={post?.caption}
+                  src={post?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg'}
+                  alt={`${post?.caption} - Syed Ali Naqi Hasni`}
                   className={'absolute inset-0 w-full h-full object-cover'}
                 />
               </div>

@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
-const metas = [
+const galls = [
   {
     id: 1,
-    src: `https://www.syedalinaqihasni.com/gallery/blogs-placeholder.jpg`,
-    alt: 'blogs-placeholder.jpg',
+    src: `https://www.syedalinaqihasni.com/gallery/blogs-placeholder-syed-ali-naqi-hasni.jpg'`,
+    alt: 'blogs-placeholder-syed-ali-naqi-hasni.jpg',
     caption: 'Generic blog placeholder image.',
     album: 'work',
     tags: ['placeholder', 'generic']
@@ -159,7 +159,7 @@ export async function GET() {
 
     const images = imageFiles.map((file, index) => {
       const filePath = `https://www.syedalinaqihasni.com/gallery/${file}`;
-      const meta = metas.find(m => m.src === filePath);
+      const meta = galls.find(m => m.src === filePath);
 
       return {
         id: meta?.id ?? index + 1,

@@ -30,9 +30,9 @@ const ProjectsList = ({ projects }: { projects: Project[] }) => {
                   <Image
                     src={
                       project?.image ||
-                      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"
                     }
-                    alt={project?.title}
+                    alt={`${project?.title} - Syed Ali Naqi Hasni`}
                     fill
                     className={
                       "object-cover transition-transform duration-300 hover:scale-105"

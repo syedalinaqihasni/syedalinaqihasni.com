@@ -33,7 +33,7 @@ const styles = {
   desktopNav: 'hidden md:flex items-center space-x-1',
   mobileControls: 'flex items-center md:hidden gap-2',
   mobileNav: 'md:hidden mt-4 pb-4',
-  mobileNavItem: 'w-full justify-start',
+mobileNavItem: 'w-full justify-start',
 };
 
 export default function Header() {

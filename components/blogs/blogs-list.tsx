@@ -74,12 +74,12 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
                   src={
                     post?.image
                       ? post?.image
-                      : "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                      : "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"
                   }
-                  alt={post?.title}
+                  alt={`${post?.title} - Syed Ali Naqi Hasni`}
                   fill
                   className={
-                    styles?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                    styles?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"
                   }
                   priority={index < 3}
                 />

@@ -88,8 +88,8 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
                   aria-label={`Read more about ${post?.title}`}
                 >
                   <Image
-                    src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
-                    alt={post?.title}
+                    src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"}
+                    alt={`${post?.title} - Syed Ali Naqi Hasni`}
                     fill
                     className={styles?.image}
                     sizes="(max-width: 768px) 100vw, 33vw"

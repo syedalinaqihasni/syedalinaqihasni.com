@@ -22,7 +22,7 @@ export const projects = [
   //     revenue: '$1M+',
   //   },
   //   isFeatured: true,
-  //   relatedProjects: ['https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',],
+  //   relatedProjects: ['https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg',],
   //   longDescription: `
   //     <h2>Project Overview</h2>
   //     <p>This e-commerce platform provides a complete solution for online stores...</p>
@@ -35,15 +35,15 @@ export const projects = [
     description:
       "A management dashboard for Employers, Employees, and HR with modern frontend development.",
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     // image: 'https://www.syedalinaqihasni.com/images/projects/espark-talent-dashboard.jpg',
     gallery: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     ],
     technologies: [
       "Next.js",
@@ -62,7 +62,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: true,
-    relatedProjects: [ ],
+    relatedProjects: [],
     longDescription: `
       <h2>Project Overview</h2>
       <p>
@@ -96,14 +96,14 @@ export const projects = [
     description: "Online realtors portal for agents and common users.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/real-buyerz.jpg',
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     gallery: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     ],
     technologies: ["Next.js", "React.js", "State Management"],
     githubUrl: "https://github.com",
@@ -117,7 +117,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [ ],
+    relatedProjects: [],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -150,14 +150,14 @@ export const projects = [
       "Redesigned Shopify app from PHP/Laravel to React-based architecture.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/cartx.jpg',
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     gallery: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     ],
     technologies: ["Shopify", "React.js", "Web Design"],
     githubUrl: "https://github.com",
@@ -171,7 +171,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [ ],
+    relatedProjects: [],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -202,14 +202,14 @@ export const projects = [
     description: "A WordPress-based entertainment portal.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/hasnitube.jpg',
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     gallery: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     ],
     technologies: ["WordPress"],
     githubUrl: "https://github.com",
@@ -223,7 +223,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [ ],
+    relatedProjects: [],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -254,14 +254,14 @@ export const projects = [
     description: "A PHP-based inventory management system developed for SBTE.",
     // image: 'https://www.syedalinaqihasni.com/images/projects/ams.jpg',
     image:
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     gallery: [
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
-      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg",
     ],
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com",

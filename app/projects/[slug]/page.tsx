@@ -142,9 +142,9 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <Image
               src={
                 project?.image ||
-                "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"
               }
-              alt={project?.title}
+              alt={`${project?.title} - Syed Ali Naqi Hasni`}
               fill
               className={IMAGE_CLASS}
             />
@@ -189,7 +189,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                 <div key={index} className={GALLERY_IMAGE_WRAPPER}>
                   <Image
                     src={image}
-                    alt={`${project?.title} gallery image ${index + 1}`}
+                    alt={`${project?.title} gallery image ${index + 1} - Syed Ali Naqi Hasni`}
                     fill
                     className={IMAGE_CLASS}
                   />
@@ -208,9 +208,9 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                         <Image
                           src={
                             relatedProject?.image ||
-                            "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"
+                            "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"
                           }
-                          alt={relatedProject?.title}
+                          alt={`${relatedProject?.title} - Syed Ali Naqi Hasni`}
                           fill
                           className={IMAGE_CLASS}
                         />

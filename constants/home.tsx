@@ -6,7 +6,7 @@ const CONTENT = {
     title: 'Frontend Web Designer',
     description:
       "I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.",
-    imageSrc: 'https://www.syedalinaqihasni.com/images/syedalinaqihasni.webp',
+    imageSrc: 'https://www.syedalinaqihasni.com/images/home-syed-ali-naqi-hasni.webp',
     imageAlt: 'Syed Ali Naqi Hasni - Web Developer',
   },
   buttons: {
@@ -32,7 +32,7 @@ const CONTENT = {
     },
     {
       label: 'Resume',
-      href: 'https://www.syedalinaqihasni.com/resume.pdf',
+      href: 'https://www.syedalinaqihasni.com/resume-syed-ali-naqi-hasni.pdf',
       icon: FileText,
       isExternal: true,
     },

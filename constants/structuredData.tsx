@@ -463,7 +463,7 @@ const resumeSchema = {
     name: "Syed Ali Naqi Hasni",
   },
   fileFormat: "text/html",
-  downloadUrl: "https://www.syedalinaqihasni.com/resume.pdf",
+  downloadUrl: "https://www.syedalinaqihasni.com/resume-syed-ali-naqi-hasni.pdf",
 };
 
 const experienceSchema = {

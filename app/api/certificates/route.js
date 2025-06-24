@@ -2,11 +2,11 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-const metas = [
+const certs = [
   {
     id: 1,
-    src: `https://www.syedalinaqihasni.com/certificates/blogs-placeholder.jpg`,
-    alt: 'blogs-placeholder.jpg',
+    src: `https://www.syedalinaqihasni.com/certificates/blogs-placeholder-syed-ali-naqi-hasni.jpg'`,
+    alt: 'blogs-placeholder-syed-ali-naqi-hasni.jpg',
     caption: 'Generic blog placeholder image.',
     link: '#',
     album: 'badges',
@@ -176,7 +176,7 @@ export async function GET() {
 
     const images = imageFiles.map((file, index) => {
       const filePath = `https://www.syedalinaqihasni.com/certificates/${file}`;
-      const meta = metas.find(m => m.src === filePath);
+      const meta = certs.find(m => m.src === filePath);
 
       return {
         id: meta?.id ?? index + 1,

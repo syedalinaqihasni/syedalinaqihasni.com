@@ -125,7 +125,7 @@ export default function Page() {
               <div className={styles?.heroImageCol}>
                 <div className={styles?.heroImageWrapper}>
                   <Image
-                    src={hero?.imageSrc || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
+                    src={hero?.imageSrc || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"}
                     alt={hero?.imageAlt}
                     fill
                     className={"object-cover"}

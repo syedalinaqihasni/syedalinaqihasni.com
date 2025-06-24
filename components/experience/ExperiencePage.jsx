@@ -48,7 +48,7 @@ const ExperiencePage = () => (
                   <div className={LOGO_WRAPPER}>
                     <Image
                       src={experience?.logo}
-                      alt={`${experience?.company} logo`}
+                      alt={`${experience?.company} logo - Syed Ali Naqi Hasni`}
                       fill
                       className={LOGO_IMAGE}
                     />
