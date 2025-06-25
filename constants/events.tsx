@@ -48,7 +48,8 @@ const events: Event []= [{
   <pre><code>function greet(name) {
   console.log("Hello, " + name);
 }
-greet("World");</code></pre>
+greet("World");
+</code></pre>
 
   <h2>Blockquote</h2>
   <blockquote>

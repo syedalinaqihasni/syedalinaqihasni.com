@@ -11,6 +11,185 @@ const CONSTANT = {
 };
 
 const posts: Post[] = [
+  { id: 25,
+    title: "Docusaurus: The Modern Framework for Building Documentation That Doesn’t Suck",
+    excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
+    slug: "docusaurus-modern-documentation-framework-syed-ali-naqi-hasni",
+    publishedAt: "2025-06-26",
+  readingTime: "6 min read",
+  image: "https://www.syedalinaqihasni.com/images/blogs/docusaurus-modern-documentation-framework-syed-ali-naqi-hasni.webp",
+  category: `Tutorials`,
+    tags: ["Docusaurus", "Technical Writing", "Documentation Framework", "Jamstack"],
+    content: `<div>
+
+  <h2>What is Docusaurus?</h2>
+  <p>Docusaurus is a modern <strong>static site generator (SSG)</strong> built by Meta to help developers quickly create beautiful, versioned documentation websites. It uses <strong>React</strong>, <strong>MDX</strong> (Markdown + JSX), and a modular plugin system to empower technical teams with minimal setup.</p>
+
+  <blockquote>
+    <p>“How can I create a developer-focused documentation site that’s easy to maintain, looks great, and supports customization—without being a full-time frontend dev?”</p>
+  </blockquote>
+
+  <h2>Why Documentation Deserves More Respect</h2>
+  <p>Whether you’re an <strong>open-source maintainer</strong>, <strong>SaaS founder</strong>, or <strong>developer advocate</strong>, your documentation is your front door. Great documentation reduces support tickets, increases adoption, and builds trust.</p>
+
+  <h2>What Can You Build with Docusaurus?</h2>
+  <ul>
+    <li>API Documentation</li>
+    <li>SDK Guides</li>
+    <li>Technical Blogs</li>
+    <li>Design System Portals</li>
+    <li>Engineering Handbooks</li>
+  </ul>
+  <p>Top companies using it include <strong>React Native</strong>, <strong>Redux Toolkit</strong>, <strong>Snapchat</strong>, and <strong>Supabase</strong>.</p>
+
+  <h2>Getting Started with Docusaurus</h2>
+  <pre><code>
+npx create-docusaurus@latest my-docs classic
+cd my-docs
+npm run start
+</code></pre>
+
+  <h3>🗂 Project Structure</h3>
+  <pre><code>
+my-docs/
+├── docs/
+├── blog/
+├── src/
+├── static/
+├── docusaurus.config.js
+</code></pre>
+
+  <h2>Writing with Markdown + React (MDX)</h2>
+  <p>You can write regular Markdown and embed React components:</p>
+  <pre><code>
+## Hello World
+
+Here’s a button:
+
+<MyFancyButton />
+
+<CodeBlock language="bash">
+npm install my-package
+</CodeBlock>
+
+</code></pre>
+
+  <h2>Plugin System</h2>
+  <ul>
+    <li>Docs plugin</li>
+    <li>Blog plugin</li>
+    <li>Client redirects</li>
+    <li>Algolia search</li>
+    <li>Sitemaps, analytics, local search</li>
+  </ul>
+
+  <h2>Versioning and i18n</h2>
+  <h3>Versioned Docs</h3>
+  <pre><code>
+npm run docusaurus docs:version 1.0.0
+</code></pre>
+  <h3>Translations</h3>
+  <pre><code>
+docusaurus write-translations --locale fr
+</code></pre>
+
+  <h2>Theming and Customization</h2>
+  <p>Override styles, layouts, and components using React. Customize sidebars, navigation, CTA banners, and more using <code>/src/theme</code>.</p>
+
+  <h2>Deployment Options</h2>
+  <p>Docusaurus generates static files that can be hosted anywhere:</p>
+  <ul>
+    <li>GitHub Pages</li>
+    <li>Vercel</li>
+    <li>Netlify</li>
+    <li>Cloudflare Pages</li>
+  </ul>
+  <pre><code>
+GIT_USER=<your-username> USE_SSH=true npm run deploy
+</code></pre>
+
+  <h2>Pros of Docusaurus</h2>
+  <ul>
+    <li>Developer-centric</li>
+    <li>Zero-config setup</li>
+    <li>Great defaults</li>
+    <li>Versioning and i18n built-in</li>
+    <li>Customizable via React and MDX</li>
+    <li>SEO-optimized</li>
+  </ul>
+
+  <h2>Cons of Docusaurus</h2>
+  <ul>
+    <li>React knowledge is helpful for customizations</li>
+    <li>No built-in CMS UI</li>
+    <li>Less flexible than full frameworks like Next.js</li>
+  </ul>
+
+  <h2>When Not to Use Docusaurus</h2>
+  <ul>
+    <li>Need real-time collaborative docs</li>
+    <li>Building a full SaaS app with custom routing</li>
+    <li>Prefer a visual GUI for editing</li>
+  </ul>
+
+  <h2>Pro Tips</h2>
+  <ul>
+    <li>Use Algolia DocSearch for free hosted search</li>
+    <li>Embed diagrams with Mermaid.js</li>
+    <li>Create reusable components for MDX</li>
+    <li>Leverage GitHub Actions for CI/CD</li>
+  </ul>
+
+  <h2>Alternatives to Docusaurus</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Best For</th>
+        <th>Stack</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Next.js + Contentlayer</td>
+        <td>Custom sites with docs</td>
+        <td>React</td>
+      </tr>
+      <tr>
+        <td>VuePress</td>
+        <td>Vue-based docs</td>
+        <td>Vue.js</td>
+      </tr>
+      <tr>
+        <td>GitBook</td>
+        <td>Visual editor + collaboration</td>
+        <td>SaaS</td>
+      </tr>
+      <tr>
+        <td>ReadMe</td>
+        <td>API-first products</td>
+        <td>Hosted</td>
+      </tr>
+      <tr>
+        <td>Hugo</td>
+        <td>Super fast SSG</td>
+        <td>Go</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Use Case: Open-Source SDK Docs</h2>
+  <p>Docusaurus is perfect for SDK documentation with versioned docs, API examples, live code blocks, and easy deployment.</p>
+
+  <h2>Final Thoughts</h2>
+  <p>Documentation is your silent salesperson. With Docusaurus, you get a powerful, flexible, and developer-friendly documentation platform that scales with your product.</p>
+
+  <h2>What Do You Think?</h2>
+  <p>Have you tried Docusaurus? What was your experience like? Drop your thoughts or share your setup in the comments section.</p>
+
+</div>
+`
+  },
   {
     id: 25,
     title: "Why I Don't Use WordPress (And You Shouldn't Either)",
@@ -88,12 +267,15 @@ const posts: Post[] = [
 <p>
   Start by installing NodeMailer in your Next.js project:
 </p>
-<pre><code>npm install nodemailer</code></pre>
+<pre><code>
+npm install nodemailer
+</code></pre>
 <h3>Step 2: Create an Email Utility Function</h3>
 <p>
   Create a utility function to handle email sending. Replace the placeholder credentials with your own:
 </p>
-<pre><code>import nodemailer from 'nodemailer';
+<pre><code>
+import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -118,12 +300,14 @@ const sendEmail = async (to, subject, html) => {
   }
 };
 
-export default sendEmail;</code></pre>
+export default sendEmail;
+</code></pre>
 <h3>Step 3: Use the Utility Function in Next.js Pages</h3>
 <p>
   Integrate the sendEmail function in your Next.js pages where email functionality is required.
 </p>
-<pre><code>import React from 'react';
+<pre><code>
+import React from 'react';
 
 import sendEmail from '../utils/email';
 
@@ -140,7 +324,8 @@ const App = () => {
 
 };
 
-export default YourPage;</code></pre>
+export default YourPage;
+</code></pre>
 <h2>Alternatives to NodeMailer</h2>
 <p>
   While NodeMailer is a robust solution, it's essential to explore alternatives based on your specific needs. Some notable alternatives include:
@@ -200,7 +385,8 @@ export default YourPage;</code></pre>
 <p>
     Implementing a structured data markup script on your website is relatively straightforward, thanks to its intuitive syntax and flexibility. Let's walk through a basic example of how to use a structured data markup script to describe an organization:
   </p>
-<pre><code><script type="application/ld+json">
+<pre><code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -222,7 +408,8 @@ export default YourPage;</code></pre>
     "contactType": "Customer Service"
   }
 }
-</script></code></pre>
+</script>
+</code></pre>
 <p>
     In this example, we're utilizing a structured data markup script to describe an organization. We begin by defining the context (@context) as "<a href="https://schema.org/">https://schema.org</a>", indicating the usage of the Schema.org vocabulary for structured data. Next, we specify the type (@type) of data being described, which in this case, is an organization. We then provide various properties such as the organization's name, URL, logo, description, address, and contact information.
   </p>
@@ -238,7 +425,8 @@ export default YourPage;</code></pre>
 <p>
     <strong>1. People:</strong> Structured data markup script enables the representation of information about individuals, such as employees, founders, or authors, using the Person type. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre><code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -248,14 +436,16 @@ export default YourPage;</code></pre>
   "image": "https://www.example.com/john-doe.jpg",
   "description": "Brief description of John Doe"
 }
-</script></code></pre>
+</script>
+</code></pre>
 <p>
     In this example, a structured data markup script is employed to provide information about a person named John Doe, encompassing details such as name, job title, URL, image, and description. By including this script on relevant web pages, website owners can furnish search engines with explicit information about individuals associated with their organization, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>2. Organization:</strong> The representation of an organization using a structured data markup script was demonstrated in the basic example. Here's a recap:
   </p>
-<pre><code><script type="application/ld+json"></script>
+<pre><code>
+<script type="application/ld+json"></script>
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -277,14 +467,16 @@ export default YourPage;</code></pre>
     "contactType": "Customer Service"
   }
 }
-</script></code></pre>
+</script>
+</code></pre>
 <p>
     This script encapsulates details about an organization, including its name, URL, logo, description, address, and contact information. By integrating structured data markup scripts into web pages, website owners can facilitate search engines in comprehending organizational information, potentially amplifying their visibility in search results.
   </p>
 <p>
     <strong>3. Products:</strong> For websites engaged in e-commerce, structured data markup scripts can be utilized to provide information about products. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre><code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -301,14 +493,16 @@ export default YourPage;</code></pre>
     "availability": "InStock"
   }
 }
-</script></code></pre>
+</script>
+</code></pre>
 <p>
     This script delineates details about a product, encompassing attributes such as name, description, brand, and pricing. By incorporating structured data markup scripts on product pages, website owners can aid search engines in comprehending the products being offered, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>4. Services:</strong> For websites offering services, a structured data markup script can be employed to furnish information about those services. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre><code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -319,14 +513,16 @@ export default YourPage;</code></pre>
     "name": "Your Company Name"
   }
 }
-</script></code></pre>
+</script>
+</code></pre>
 <p>
     This script elucidates details about a service, including its name, description, and provider. By integrating structured data markup scripts on service pages, website owners can assist search engines in comprehending the services being offered, potentially augmenting their visibility in search results.
   </p>
 <p>
     <strong>5. FAQs:</strong> For websites featuring frequently asked questions (FAQs), a structured data markup script can be employed to provide information about those FAQs. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre><code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -349,14 +545,16 @@ export default YourPage;</code></pre>
     }
   ]
 }
-</script></code></pre>
+</script>
+</code></pre>
 <p>
     This script delineates an FAQ page, comprising a list of questions and answers. By incorporating structured data markup scripts of this nature on FAQ pages, website owners can aid search engines in comprehending the content of their FAQs, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>6. Locations:</strong> For websites featuring physical locations, a structured data markup script can be employed to provide information about those locations. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre><code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Place",
@@ -370,7 +568,8 @@ export default YourPage;</code></pre>
     "addressCountry": "Your Country"
   }
 }
-</script></code></pre>
+</script>
+</code></pre>
 <p>
     This script delineates details about a location, comprising its name and address. By integrating structured data markup scripts on location pages, website owners can assist search engines in comprehending the locations associated with their business, potentially amplifying their visibility in search results.
   </p>
@@ -606,11 +805,13 @@ export default YourPage;</code></pre>
 <p>
   Before diving into the capabilities of GitHub CLI, it's essential to have it installed. Installation is typically straightforward, with precompiled binaries available for various operating systems. For instance, on a Unix-based system, you can use:
 </p>
-<pre><code># Install GitHub CLI on Unix-based systems
+<pre><code>
+# Install GitHub CLI on Unix-based systems
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages 
 sudo apt update 
-sudo apt install gh</code></pre>
+sudo apt install gh
+</code></pre>
 <p>
   For other platforms, consult the official GitHub CLI documentation.
 </p>
@@ -620,7 +821,9 @@ sudo apt install gh</code></pre>
 <p>
   Once installed, the next step is authentication. You need to authenticate gh with your GitHub account, allowing it to interact with your repositories seamlessly. Use the following command to authenticate:
 </p>
-<pre><code>gh auth login</code></pre>
+<pre><code>
+gh auth login
+</code></pre>
 <p>
   Follow the prompts to complete the authentication process.
 </p>
@@ -633,31 +836,41 @@ sudo apt install gh</code></pre>
 <p>
   GitHub CLI simplifies the process of creating issues directly from the command line. Use the following command:
 </p>
-<pre><code>gh issue create</code></pre>
+<pre><code>
+gh issue create
+</code></pre>
 <p>
   This command will prompt you for details such as the issue title, body, labels, and assignees. For example:
 </p>
-<pre><code>gh issue create --title "Fix Bug in Authentication Module" --body "The authentication module is throwing errors when handling certain edge cases."</code></pre>
+<pre><code>
+gh issue create --title "Fix Bug in Authentication Module" --body "The authentication module is throwing errors when handling certain edge cases."
+</code></pre>
 <h3>
   2. Creating a Pull Request
 </h3>
 <p>
   Initiating a pull request from the command line is as easy as creating an issue. Execute the following command:
 </p>
-<pre><code>gh pr create</code></pre>
+<pre><code>
+gh pr create
+</code></pre>
 <p>
   Similar to creating an issue, you'll be prompted for details such as the pull request title, body, base branch, and head branch. For example:
 </p>
-<pre><code>gh pr create --title "Feature: New User Registration" --body "This pull request adds functionality for new user registration." --base main --head feature-branch</code></pre>
+<pre><code>
+gh pr create --title "Feature: New User Registration" --body "This pull request adds functionality for new user registration." --base main --head feature-branch
+</code></pre>
 <h3>
   3. Pushing Changes
 </h3>
 <p>
   gh simplifies pushing changes to your repository with the following command:
 </p>
-<pre><code>gh repo view --clone
+<pre><code>
+gh repo view --clone
 # Make changes to files
-gh repo sync</code></pre>
+gh repo sync
+</code></pre>
 <p>
   This sequence of commands fetches the repository, makes the necessary changes, and syncs them back to GitHub.
 </p>
@@ -667,7 +880,9 @@ gh repo sync</code></pre>
 <p>
   To pull changes from a remote repository, use the following command:
 </p>
-<pre><code>gh repo sync</code></pre>
+<pre><code>
+gh repo sync
+</code></pre>
 <p>
   This command fetches changes from the remote repository and merges them into your local branch.
 </p>
@@ -677,9 +892,11 @@ gh repo sync</code></pre>
 <p>
   Checking out a branch is a common operation, and GitHub CLI provides an easy way to do so:
 </p>
-<pre><code>gh repo clone <repository>
+<pre><code>
+gh repo clone <repository>
 cd <repository>
-gh repo branch <branch-name></code></pre>
+gh repo branch <branch-name>
+</code></pre>
 <p>
   Replace <repository> with the name of the repository and <branch-name> with the desired branch.
 </p>
@@ -689,11 +906,15 @@ gh repo branch <branch-name></code></pre>
 <p>
   Releasing new versions of your software is a crucial part of the development lifecycle. GitHub CLI allows you to create releases seamlessly:
 </p>
-<pre><code>gh release create <tag> <files> --notes <notes></code></pre>
+<pre><code>
+gh release create <tag> <files> --notes <notes>
+</code></pre>
 <p>
   Replace <tag> with the version tag, <files> with the files to be included in the release, and <notes> with the release notes. For example:
 </p>
-<pre><code>gh release create v1.0.0 dist/* --notes "Release notes for version 1.0.0"</code></pre>
+<pre><code>
+gh release create v1.0.0 dist/* --notes "Release notes for version 1.0.0"
+</code></pre>
 <h3>
   Advantages of GitHub CLI
 </h3>
@@ -933,12 +1154,14 @@ gh repo branch <branch-name></code></pre>
     <li>Create a .github/dependabot.yml file in your repository.</li>
     <li>Add the following configuration (example for npm):</li>
 </ul>
-<pre><code>version: 2
+<pre><code>
+version: 2
 updates:
   - package-ecosystem: "npm"
     directory: "https://www.syedalinaqihasni.com/"
     schedule:
-      interval: "weekly"</code></pre>
+      interval: "weekly"
+</code></pre>
 <ul>
     <li>Replace <strong>npm</strong> with the relevant ecosystem for your project <strong>(e.g., pip, maven, etc.)</strong>.</li>
 </ul>
@@ -1184,7 +1407,8 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
         rendering</strong> simultaneously.</li>
 </ul>
 <h3>Example of Bad SRP:</h3>
-<pre><code>function UserProfile({ userId }) {
+<pre><code>
+function UserProfile({ userId }) {
   const [user, setUser] = useState(null);
   useEffect(() => {
     fetch(&#96;
@@ -1202,7 +1426,8 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
     </div>
   );
 
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li><strong>Problem:</strong> Fetching logic + display logic = mixed responsibilities.</li>
 </ul>
@@ -1212,7 +1437,8 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
     <li><strong>Hook</strong> for fetching user data.</li>
     <li><strong>Component</strong> for displaying.</li>
 </ul>
-<pre><code>function useUser(userId) {
+<pre><code>
+function useUser(userId) {
   const [user, setUser] = useState(null);
   useEffect(() => {
     fetch(&#96;
@@ -1237,7 +1463,8 @@ function UserProfile({ userId }) {
     </div>
   );
 
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li>useUser → Data fetching</li>
     <li>UserProfile → UI</li>
@@ -1272,19 +1499,22 @@ function UserProfile({ userId }) {
     <li>Hardcoding new behavior into old components.</li>
 </ul>
 <p><strong>Bad Example:</strong></p>
-<pre><code>function Notification({ type, message }) {
+<pre><code>
+function Notification({ type, message }) {
   if (type === "success") return <div className="success">{message}</div>;
   if (type === "error") return <div className="error">{message}</div>;
   if (type === "info") return <div className="info">{message}</div>;
 
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li><strong>Problem:</strong> Every time a new type comes (warning, alert), we have to <strong>edit</strong> this
       component.</li>
 </ul>
 <h3>Applying OCP Correctly:</h3>
 <p>Use a <strong>mapping</strong> or <strong>configuration-based approach</strong>.</p>
-<pre><code>const notificationStyles = {
+<pre><code>
+const notificationStyles = {
   success: "success",
   error: "error",
   info: "info",
@@ -1294,7 +1524,8 @@ function Notification({ type, message }) {
   const className = notificationStyles[type] || "default";
   return <div className={className}>{message}</div>;
 
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li>To add new types, just update notificationStyles.</li>
     <li><strong>No core code change needed</strong>.</li>
@@ -1328,27 +1559,31 @@ function Notification({ type, message }) {
     <li>Components that <strong>expect specific implementations</strong>, not abstractions.</li>
 </ul>
 <h3>Bad Example:</h3>
-<pre><code>function PaymentProcessor({ payment }) {
+<pre><code>
+function PaymentProcessor({ payment }) {
   if (payment.type === "paypal") {
     return <PaypalComponent />;
   }
   if (payment.type === "stripe") {
     return <StripeComponent />;
   }
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li><strong>Problem:</strong> Tight coupling to specific services.</li>
 </ul>
 <h3>Applying LSP Correctly:</h3>
 <p>Pass <strong>components</strong> or <strong>handlers</strong> dynamically.</p>
-<pre><code>function PaymentProcessor({ PaymentComponent }) {
+<pre><code>
+function PaymentProcessor({ PaymentComponent }) {
   return <PaymentComponent />;
 
 }
 
 // Usage
 <PaymentProcessor PaymentComponent={PaypalComponent} />
-<PaymentProcessor PaymentComponent={StripeComponent} /></code></pre>
+<PaymentProcessor PaymentComponent={StripeComponent} />
+</code></pre>
 <ul>
     <li>Now, any payment method can be passed without changing PaymentProcessor.</li>
 </ul>
@@ -1379,15 +1614,18 @@ function Notification({ type, message }) {
     <li>Huge components are expecting <strong>too many props</strong>.</li>
 </ul>
 <h3>Bad Example:</h3>
-<pre><code>function DataTable({ data, onSort, onFilter, onExport, onPaginate }) {
+<pre><code>
+function DataTable({ data, onSort, onFilter, onExport, onPaginate }) {
   // Basic table that might not even need export or pagination
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li><strong>Problem:</strong> Most consumers may not need all these actions.</li>
 </ul>
 <h3>Applying ISP Correctly:</h3>
 <p>Split the components:</p>
-<pre><code>function BasicTable({ data }) {
+<pre><code>
+function BasicTable({ data }) {
   return (
     <table>
       {/* Basic table rendering */}
@@ -1403,7 +1641,8 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
     </table>
   );
 
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li>Basic consumers stay simple.</li>
     <li>Advanced consumers opt into complexity.</li>
@@ -1437,7 +1676,8 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
     <li>UI components directly calling APIs.</li>
 </ul>
 <p><strong>Bad Example:</strong></p>
-<pre><code>function ProductsList() {
+<pre><code>
+function ProductsList() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("https://www.syedalinaqihasni.com/api/products")
@@ -1446,13 +1686,15 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
   }, []);
   return products.map((p) => <div>{p.name}</div>);
 
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li><strong>Problem:</strong> tightly coupled to API details.</li>
 </ul>
 <h3>Applying DIP Correctly:</h3>
 <p>Abstract fetching logic:</p>
-<pre><code>function useProducts(service) {
+<pre><code>
+function useProducts(service) {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     service.fetchProducts().then(setProducts);
@@ -1471,7 +1713,8 @@ function ProductsList() {
   const products = useProducts(productService);
   return products.map((p) => <div key={p.id}>{p.name}</div>);
 
-}</code></pre>
+}
+</code></pre>
 <ul>
     <li>Want to test with mock products? Inject a <strong>mock service</strong>.</li>
 </ul>
@@ -1628,7 +1871,8 @@ function ProductsList() {
     of how I used to create a custom shortcode:</p>
 <p>
     Example: A Simple Contact Form Shortcode</p>
-<pre><code>// Add this to functions.php or a custom plugin
+<pre><code>
+// Add this to functions.php or a custom plugin
 function custom_contact_form_shortcode() {
     return '
         <form>
@@ -1640,6 +1884,7 @@ function custom_contact_form_shortcode() {
 
 }
 add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
+
 </code></pre>
 <h1>
     What Are Custom Blocks?</h1>
@@ -1693,7 +1938,8 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
     Step 1: Register a Custom Block</h1>
 <p>
     I added this code to my theme's functions.php file or a custom plugin:</p>
-<pre><code>function register_contact_form_block() {
+<pre><code>
+function register_contact_form_block() {
     wp_register_script(
         'custom-contact-form-block',
         get_template_directory_uri() . '/js/contact-form-block.js',
@@ -1707,10 +1953,12 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
 
 }
 add_action('init', 'register_contact_form_block');
+
 </code></pre>
 <h1>
     Step 2: Create the Block Script (contact-form-block.js)</h1>
-<pre><code>const { registerBlockType } = wp.blocks;
+<pre><code>
+const { registerBlockType } = wp.blocks;
 
 const { createElement } = wp.element;
 
@@ -1739,6 +1987,7 @@ registerBlockType('custom/contact-form', {
             )
         ),
 });
+
 </code></pre>
 <p>
     With this, I now have a custom block that I can add directly in the editor,
@@ -2373,18 +2622,25 @@ utm_content=suza"
     </ul>
     <h2>Step 1: Creating a Next.js Application</h2>
     <p>Open your terminal and run the following command to bootstrap a new Next.js app:</p>
-    <pre><code>npx create-next-app@latest my-next-tailwind-app</code></code></pre>
+    <pre><code>
+npx create-next-app@latest my-next-tailwind-app</code>
+</code></pre>
     <p>This command will prompt you with a few setup questions (like TypeScript, ESLint, etc.). You can choose the defaults or customize them as needed.</p>
     <p>Navigate into your project directory:</p>
-    <pre><code>cd my-next-tailwind-app</code></code></pre>
+    <pre><code>
+cd my-next-tailwind-app</code>
+</code></pre>
     <h2>Step 2: Installing Tailwind CSS</h2>
     <p>Now that your Next.js app is set up, it's time to install Tailwind CSS. Tailwind requires a few dependencies, including PostCSS and Autoprefixer:</p>
-    <pre><code>npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p</code></code></pre>
+    <pre><code>
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p</code>
+</code></pre>
     <p>This command creates two configuration files in the root of your project: <code>tailwind.config.js</code> and <code>postcss.config.js</code>.</p>
     <h2>Step 3: Configuring Tailwind</h2>
     <p>Open <code>tailwind.config.js</code> and configure the <code>content</code> property so Tailwind knows where to look for class names:</p>
-    <pre><code>module.exports = {
+    <pre><code>
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -2393,21 +2649,27 @@ npx tailwindcss init -p</code></code></pre>
     extend: {},
   },
   plugins: [],
-}</code></code></pre>
+}</code>
+</code></pre>
     <p>Next, open <code>styles/globals.css</code> and replace its contents with the Tailwind directives:</p>
-    <pre><code>@tailwind base;
+    <pre><code>
+@tailwind base;
 
 @tailwind components;
 
-@tailwind utilities;</code></code></pre>
+@tailwind utilities;</code>
+</code></pre>
     <p>This tells Tailwind to inject its base styles, component classes, and utility classes globally.</p>
     <h2>Step 4: Running the Development Server</h2>
     <p>Start your app with the following command:</p>
-    <pre><code>npm run dev</code></code></pre>
+    <pre><code>
+npm run dev</code>
+</code></pre>
     <p>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let's now replace it with something styled by Tailwind.</p>
     <h2>Step 5: Creating a Simple Tailwind-Styled Component</h2>
     <p>Edit the <code>pages/index.js</code> file to use Tailwind classes. Here's a basic example:</p>
-    <pre><code>export default function Home() {
+    <pre><code>
+export default function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100"></div>
       <h1 className="text-4xl font-bold text-blue-600">
@@ -2415,15 +2677,19 @@ npx tailwindcss init -p</code></code></pre>
       </h1>
     </div>
   )
-}</code></code></pre>
+}</code>
+</code></pre>
     <p>After saving, your browser should display a clean, centered message styled with Tailwind.</p>
     <h2>Step 6: Using Tailwind Responsively</h2>
     <p>Tailwind makes it easy to build responsive layouts. Try updating the text size with responsive classes:</p>
-    <pre><code><h1 className="text-2xl md:text-4xl lg:text-6xl">Responsive Text</h1></code></code></pre>
+    <pre><code>
+<h1 className="text-2xl md:text-4xl lg:text-6xl">Responsive Text</h1></code>
+</code></pre>
     <p>This will render different font sizes depending on the screen width.</p>
     <h2>Step 7: Customizing Your Theme</h2>
     <p>You can customize Tailwind's design system in the <code>tailwind.config.js</code> file. For example, to add a custom color:</p>
-    <pre><code>module.exports = {
+    <pre><code>
+module.exports = {
   theme: {
     extend: {
       colors: {
@@ -2431,7 +2697,8 @@ npx tailwindcss init -p</code></code></pre>
       },
     },
   },
-}</code></code></pre>
+}</code>
+</code></pre>
     <p>Now you can use <code>bg-brand</code>, <code>text-brand</code>, etc., throughout your components.</p>
     <h2>Conclusion</h2>
     <p>Next.js and Tailwind CSS together form a powerful stack for building modern web applications. Next.js handles routing, rendering, and performance optimizations, while Tailwind CSS empowers you to craft responsive UIs without writing a single line of custom CSS.</p>
@@ -2456,7 +2723,8 @@ npx tailwindcss init -p</code></code></pre>
   <p>In this article, we'll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
   <h2>What is State in React?</h2>
   <p><strong>State</strong> is a JavaScript object that holds dynamic data in a React component. State changes trigger re-renders, allowing the UI to respond to user interactions and asynchronous updates.</p>
-  <pre><code>import{ useState } from 'react';
+  <pre><code>
+import{ useState } from 'react';
 
 function Counter(){
   const [count, setCount] = useState(0);
@@ -2467,7 +2735,7 @@ function Counter(){
   </div>
   );
 }
-  </code></pre>
+</code></pre>
   <h2>Local vs Global State</h2>
   <p>React state generally falls into two categories:</p>
   <ul>
@@ -2476,7 +2744,8 @@ function Counter(){
   </ul>
   <h2>Lifting State Up</h2>
   <p>If multiple sibling components need access to the same piece of state, lift it to their common parent:</p>
-  <pre><code>function Parent(){
+  <pre><code>
+function Parent(){
   const [value, setValue] = useState('');
   return (
     <>
@@ -2485,11 +2754,12 @@ function Counter(){
     </>
   );
 }
-  </code></pre>
+</code></pre>
   <p>This keeps your data flow predictable and contained.</p>
   <h2>When to Use the Context API</h2>
   <p><strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It's great for themes, authentication, or language settings.</p>
-  <pre><code>import{ createContext, useContext, useState } from 'react';
+  <pre><code>
+import{ createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext();
 
@@ -2506,12 +2776,13 @@ function Layout(){
   const{ theme } = useContext(ThemeContext);
   return <div className={\`theme-$&#123;theme&#125\`}>Welcome</div>;
 }
-  </code></pre>
+</code></pre>
   <p>✅ Use Context for low-frequency global state.</p>
   <p>🚫 Avoid storing frequently-updated values (like form inputs) in Context—it can cause unnecessary re-renders.</p>
   <h2>Redux: Industrial-Strength State Management</h2>
   <p><strong>Redux</strong> is a predictable state container ideal for large applications with complex state logic, time travel debugging, and middleware needs.</p>
-  <pre><code>import{ createSlice, configureStore } from '@reduxjs/toolkit';
+  <pre><code>
+import{ createSlice, configureStore } from '@reduxjs/toolkit';
 
 const counterSlice = createSlice({
   name: 'counter',
@@ -2526,9 +2797,10 @@ export const{ increment } = counterSlice.actions;
 const store = configureStore({
   reducer:{ counter: counterSlice.reducer },
 });
-  </code></pre>
+</code></pre>
   <p>Connect to components using <code>useSelector</code> and <code>useDispatch</code>:</p>
-  <pre><code>import{ useSelector, useDispatch } from 'react-redux';
+  <pre><code>
+import{ useSelector, useDispatch } from 'react-redux';
 import{ increment } from './store';
 
 function Counter(){
@@ -2538,10 +2810,11 @@ function Counter(){
   <button onClick={() => dispatch(increment())}>{count}</button>
   );
 }
-  </code></pre>
+</code></pre>
   <h2>Zustand: Simpler Global State</h2>
   <p><strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It's ideal for simpler applications that still need shared global state.</p>
-  <pre><code>import create from 'zustand';
+  <pre><code>
+import create from 'zustand';
 
 const useStore = create((set) => ({
   count: 0,
@@ -2552,11 +2825,12 @@ function Counter(){
   const{ count, increment } = useStore();
   return <button onClick={increment}>{count}</button>;
 }
-  </code></pre>
+</code></pre>
   <p>Zustand is reactive, fast, and doesn't require a Provider component.</p>
   <h2>Recoil: React-Friendly Atom-Based State</h2>
   <p><strong>Recoil</strong> is a state management library from Facebook that works with React's Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
-  <pre><code>import{ atom, useRecoilState } from 'recoil';
+  <pre><code>
+import{ atom, useRecoilState } from 'recoil';
 
 const countAtom = atom({
   key: 'count',
@@ -2567,7 +2841,7 @@ function Counter(){
   const [count, setCount] = useRecoilState(countAtom);
   return <button onClick={() => setCount(count + 1)}>{count}</button>;
 }
-  </code></pre>
+</code></pre>
   <p>Recoil is useful when you need shared, reactive state without excessive boilerplate.</p>
   <h2>State Management Tips</h2>
   <ul>
@@ -2578,17 +2852,19 @@ function Counter(){
   </ul>
   <h2>When to Split State</h2>
   <p>If a component's state becomes too complex, break it into smaller chunks:</p>
-  <pre><code>const [form, setForm] = useState({
+  <pre><code>
+const [form, setForm] = useState({
   name: '',
   email: '',
   password: '',
 });
-  </code></pre>
+</code></pre>
   <p>Or manage each input individually for clarity:</p>
-  <pre><code>const [name, setName] = useState('');
+  <pre><code>
+const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
-  </code></pre>
+</code></pre>
   <h2>Conclusion</h2>
   <p>State is the heart of a React application. Choosing the right tool depends on your app's size, complexity, and team preferences.</p>
   <ul>
@@ -2625,12 +2901,17 @@ const [password, setPassword] = useState('');
     </ul>
     <h2>Getting Started</h2>
     <p>First, you need to install the library:</p>
-    <pre><code>npm install framer-motion</code></pre>
+    <pre><code>
+npm install framer-motion
+</code></pre>
     <p>Or with Yarn:</p>
-    <pre><code>yarn add framer-motion</code></pre>
+    <pre><code>
+yarn add framer-motion
+</code></pre>
     <h2>Basic Animation</h2>
     <p>To animate an element, you use the <code>motion</code> component instead of a regular HTML element. For example:</p>
-    <pre><code>import { motion } from 'framer-motion';
+    <pre><code>
+import { motion } from 'framer-motion';
 
 export default function Box() {
   return (
@@ -2645,12 +2926,14 @@ motion.div
 /motion.div>
   );
 
-}</code></pre>
+}
+</code></pre>
     <p>This code makes a <code><
 div></code> fade in over one second when it's mounted.</p>
     <h2>Animating Position and Scale</h2>
     <p>You can animate multiple properties at once—such as scale, x/y position, and rotation:</p>
-    <pre><code><
+    <pre><code>
+<
 motion.div
   initial={{ x: -100, scale: 0.5 }}
   animate={{ x: 0, scale: 1 }}
@@ -2659,21 +2942,25 @@ motion.div
   Slide &amp;
  Scale
 <
-/motion.div></code></pre>
+/motion.div>
+</code></pre>
     <h2>Hover and Tap Animations</h2>
     <p>Framer Motion makes it easy to add interaction-based animations using <code>whileHover</code> and <code>whileTap</code> props:</p>
-    <pre><code><
+    <pre><code>
+<
 motion.button
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
 >
   Click Me
 <
-/motion.button></code></pre>
+/motion.button>
+</code></pre>
     <p>This provides subtle feedback when users interact with UI elements.</p>
     <h2>Variants: Coordinated Animation</h2>
     <p><strong>Variants</strong> are a powerful feature that let you define shared animation states for groups of components.</p>
-    <pre><code>const container = {
+    <pre><code>
+const container = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -2686,9 +2973,11 @@ motion.button
 const item = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
-};</code></pre>
+};
+</code></pre>
     <p>Now use them:</p>
-    <pre><code><
+    <pre><code>
+<
 motion.ul
   variants={container}
   initial="hidden"
@@ -2711,11 +3000,13 @@ Item 3<
 /motion.li>
 
 <
-/motion.ul></code></pre>
+/motion.ul>
+</code></pre>
     <p>Each list item will animate in sequence thanks to <code>staggerChildren</code>.</p>
     <h2>AnimatePresence: Exit Animations</h2>
     <p><code>AnimatePresence</code> is used to animate components when they are removed from the React tree—such as modals or pages.</p>
-    <pre><code>import { AnimatePresence, motion } from 'framer-motion';
+    <pre><code>
+import { AnimatePresence, motion } from 'framer-motion';
 
 function Modal({ isOpen }) {
   return (
@@ -2738,11 +3029,13 @@ motion.div
 /AnimatePresence>
   );
 
-}</code></pre>
+}
+</code></pre>
     <p>This ensures smooth exit transitions instead of instantly removing elements.</p>
     <h2>Page Transitions in Next.js</h2>
     <p>In a Next.js app, you can use Framer Motion with <code>AnimatePresence</code> to animate between pages. Here's a basic example:</p>
-    <pre><code>// _app.js
+    <pre><code>
+// _app.js
 import { AnimatePresence } from 'framer-motion';
 
 export default function App({ Component, pageProps, router }) {
@@ -2755,9 +3048,11 @@ Component {...pageProps} key={router.route} />
 /AnimatePresence>
   );
 
-}</code></pre>
+}
+</code></pre>
     <p>Then add page-level animation inside each component:</p>
-    <pre><code>import { motion } from 'framer-motion';
+    <pre><code>
+import { motion } from 'framer-motion';
 
 export default function HomePage() {
   return (
@@ -2772,10 +3067,12 @@ motion.div
 /motion.div>
   );
 
-}</code></pre>
+}
+</code></pre>
     <h2>Motion Layout: Smart Animations</h2>
     <p>Framer Motion also includes a powerful feature called <code>layout</code> that lets you animate between different layouts intelligently without defining the animation manually.</p>
-    <pre><code><
+    <pre><code>
+<
 motion.div layout>
 
 <
@@ -2784,7 +3081,8 @@ Content that resizes smoothly<
 /p>
 
 <
-/motion.div></code></pre>
+/motion.div>
+</code></pre>
     <p>This is great for expanding cards, resizing elements, or toggling visibility with animation.</p>
     <h2>Performance Tips</h2>
     <ul>
@@ -2818,19 +3116,26 @@ Content that resizes smoothly<
   <p>API Routes in Next.js allow you to define server-side functions that run in a Node.js environment. These functions are deployed as serverless functions when you host your app (e.g., on Vercel).</p>
   <p>They are placed inside the <code>/pages/api</code> directory and are automatically mapped to the corresponding route.</p>
   <p>Example:</p>
-  <pre><code>pages/api/hello.js → /api/hello</code></code></pre>
+  <pre><code>
+pages/api/hello.js → /api/hello</code>
+</code></pre>
   <h2>Creating Your First API Route</h2>
   <p>Let's create a simple API endpoint that returns a greeting message.</p>
   <p>Create a file at <code>pages/api/hello.js</code>:</p>
-  <pre><code>export default function handler(req, res) {
+  <pre><code>
+export default function handler(req, res) {
   res.status(200).json({ message: 'Hello from Next.js API!' });
 
-}</code></code></pre>
+}</code>
+</code></pre>
   <p>Now, navigate to <a href="http://localhost:3000/api/hello">http://localhost:3000/api/hello</a> in your browser. You should see a JSON response:</p>
-  <pre><code>{ "message": "Hello from Next.js API!" }</code></code></pre>
+  <pre><code>
+{ "message": "Hello from Next.js API!" }</code>
+</code></pre>
   <h2>Request Methods and Routing</h2>
   <p>Each API route can handle different HTTP methods such as GET, POST, PUT, and DELETE. Use conditional logic inside your handler function to respond accordingly.</p>
-  <pre><code>export default function handler(req, res) {
+  <pre><code>
+export default function handler(req, res) {
   if (req.method === 'GET') {
   res.status(200).json({ message: 'This is a GET request' });
   } else if (req.method === 'POST') {
@@ -2839,56 +3144,71 @@ Content that resizes smoothly<
   res.setHeader('Allow', ['GET', 'POST']);
   res.status(405).end(\`Method \${req.method} Not Allowed\`);
   }
-}</code></code></pre>
+}</code>
+</code></pre>
   <h2>Parsing Request Data</h2>
   <p>For <code>POST</code> or <code>PUT</code> requests, you often need to access data sent in the request body. By default, Next.js automatically parses JSON request bodies for you.</p>
-  <pre><code>export default function handler(req, res) {
+  <pre><code>
+export default function handler(req, res) {
   const { name } = req.body;
   res.status(200).json({ message: \`Hello, \${name}\` });
 
-}</code></code></pre>
+}</code>
+</code></pre>
   <p>To test this, you can send a POST request using a tool like Postman or with <code>fetch</code> in your app:</p>
-  <pre><code>fetch('/api/hello', {
+  <pre><code>
+fetch('/api/hello', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ name: 'John' }),
-});</code></code></pre>
+});</code>
+</code></pre>
   <h2>Using Query Parameters</h2>
   <p>You can also handle URL query parameters with <code>req.query</code>:</p>
-  <pre><code>// pages/api/greet.js
+  <pre><code>
+// pages/api/greet.js
 export default function handler(req, res) {
   const { name } = req.query;
   res.status(200).json({ greeting: \`Hello, \${name || 'Guest'}\` });
 
-}</code></code></pre>
+}</code>
+</code></pre>
   <p>Access it by visiting <code>/api/greet?name=Sarah</code>.</p>
   <h2>Creating Dynamic API Routes</h2>
   <p>API routes can be dynamic by using square brackets in filenames. For example:</p>
-  <pre><code>// pages/api/user/[id].js
+  <pre><code>
+// pages/api/user/[id].js
 export default function handler(req, res) {
   const { id } = req.query;
   res.status(200).json({ userId: id });
 
-}</code></code></pre>
+}</code>
+</code></pre>
   <p>Now you can hit <code>/api/user/123</code> and receive a dynamic response:</p>
-  <pre><code>{ "userId": "123" }</code></code></pre>
+  <pre><code>
+{ "userId": "123" }</code>
+</code></pre>
   <h2>Error Handling</h2>
   <p>It's important to return proper HTTP status codes and messages for errors:</p>
-  <pre><code>export default function handler(req, res) {
+  <pre><code>
+export default function handler(req, res) {
   try {
   throw new Error('Something went wrong!');
   } catch (error) {
   res.status(500).json({ error: error.message });
   }
-}</code></code></pre>
+}</code>
+</code></pre>
   <h2>Working with External APIs</h2>
   <p>You can use API routes as a proxy for third-party services. For example, calling an external weather API:</p>
-  <pre><code>export default async function handler(req, res) {
+  <pre><code>
+export default async function handler(req, res) {
   const response = await fetch('https://api.weatherapi.com/v1/current.json?key=YOUR_KEY&q=London');
   const data = await response.json();
   res.status(200).json(data);
 
-}</code></code></pre>
+}</code>
+</code></pre>
   <h2>When to Use API Routes</h2>
   <p>Use API Routes in Next.js when:</p>
   <ul>
@@ -2945,38 +3265,49 @@ export default function handler(req, res) {
       <li><code>2xl</code> - 1536px</li>
     </ul>
     <p>Using these is as simple as prefixing utility classes. For example:</p>
-    <pre><code><div class="text-base md:text-lg lg:text-xl">Responsive Text</div></code></code></pre>
+    <pre><code>
+<div class="text-base md:text-lg lg:text-xl">Responsive Text</div></code>
+</code></pre>
     <p>This applies <code>text-base</code> on all screens, <code>text-lg</code> on medium screens (768px+), and <code>text-xl</code> on large screens (1024px+).</p>
     <h2>Responsive Layouts with Flex and Grid</h2>
     <p>Tailwind provides utility classes for creating flexible and grid-based layouts. Let's look at a responsive two-column layout that stacks on mobile:</p>
-    <pre><code><div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <pre><code>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class="bg-blue-100 p-4">Left Column</div>
   <div class="bg-green-100 p-4">Right Column</div>
-</div></code></code></pre>
+</div></code>
+</code></pre>
     <p>Here, we use <code>grid-cols-1</code> for small screens (1 column), and <code>md:grid-cols-2</code> to switch to a 2-column layout on medium screens and above.</p>
     <h2>Controlling Visibility Based on Screen Size</h2>
     <p>Tailwind allows you to easily show or hide elements depending on screen size. This is useful for things like mobile menus or device-specific content:</p>
-    <pre><code><div class="block md:hidden">Mobile Only</div>
-<div class="hidden md:block">Desktop Only</div></code></code></pre>
+    <pre><code>
+<div class="block md:hidden">Mobile Only</div>
+<div class="hidden md:block">Desktop Only</div></code>
+</code></pre>
     <p>This approach avoids JavaScript toggling and provides fine-grained control using only CSS classes.</p>
     <h2>Responsive Spacing and Sizing</h2>
     <p>Tailwind's spacing utilities (padding, margin, width, height) can also be made responsive by prefixing them with breakpoints:</p>
-    <pre><code><div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
-<img class="w-full md:w-1/2" src="image.jpg" alt="Example" /></code></pre>
+    <pre><code>
+<div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
+<img class="w-full md:w-1/2" src="image.jpg" alt="Example" />
+</code></pre>
     <p>This enables developers to scale spacing and sizing progressively as the screen size increases, without writing custom CSS.</p>
     <h2>Responsive Typography and Text Alignment</h2>
     <p>Typography plays a major role in UI readability. Tailwind provides responsive control over font size, alignment, and spacing:</p>
-    <pre><code><h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
+    <pre><code>
+<h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
   Responsive Heading
 </h1>
 
 <p class="text-center md:text-left">
   This paragraph centers on small screens and aligns left on larger screens.
-</p></code></code></pre>
+</p></code>
+</code></pre>
     <p>This fluidity ensures your content is both readable and visually appealing across devices.</p>
     <h2>Building a Responsive Navbar</h2>
     <p>Here's an example of a responsive navigation bar using Tailwind's utilities:</p>
-    <pre><code><nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+    <pre><code>
+<nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
   <div class="text-lg font-bold">Brand</div>
   <div class="hidden md:flex gap-4">
     <a href="#">Home</a>
@@ -2986,17 +3317,21 @@ export default function handler(req, res) {
   <div class="md:hidden">
     <button>☰</button>
   </div>
-</nav></code></code></pre>
+</nav></code>
+</code></pre>
     <p>This layout hides the full navigation on smaller screens and replaces it with a menu button. On larger screens, the full navigation is displayed.</p>
     <h2>Dark Mode Responsiveness</h2>
     <p>Tailwind also supports dark mode, which you can combine with responsiveness. For instance:</p>
-    <pre><code><div class="bg-white dark:bg-gray-900 text-black dark:text-white p-4 md:p-8">
+    <pre><code>
+<div class="bg-white dark:bg-gray-900 text-black dark:text-white p-4 md:p-8">
   Responsive and Themed Box
-</div></code></code></pre>
+</div></code>
+</code></pre>
     <p>This allows you to create UI components that respond to both screen size and user color preferences.</p>
     <h2>Custom Breakpoints</h2>
     <p>If the default breakpoints don't fit your design needs, you can customize them in <code>tailwind.config.js</code>:</p>
-    <pre><code>module.exports = {
+    <pre><code>
+module.exports = {
   theme: {
     extend: {},
     screens: {
@@ -3004,7 +3339,8 @@ export default function handler(req, res) {
       ...require('tailwindcss/defaultTheme').screens,
     },
   },
-}</code></code></pre>
+}</code>
+</code></pre>
     <p>With this, you can now use <code>xs:</code> to target screens as small as 480px.</p>
     <h2>Conclusion</h2>
     <p>Responsive design no longer needs to be a headache. With Tailwind CSS, you can build highly adaptive interfaces using concise, expressive utility classes—without writing a single line of media query CSS. By mastering its mobile-first breakpoints and combining utilities for layout, spacing, and typography, you can create polished, scalable designs quickly.</p>
