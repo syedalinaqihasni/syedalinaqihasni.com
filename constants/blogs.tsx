@@ -14,7 +14,7 @@ const posts: Post[] = [
   { id: 25,
     title: "Docusaurus: The Modern Framework for Building Documentation That Doesn’t Suck",
     excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
-    slug: "docusaurus-modern-documentation-framework-syed-ali-naqi-hasni",
+    slug: "docusaurus-the-modern-framework-for-building-documentation-that-does-not-suck",
     publishedAt: "2025-06-26",
   readingTime: "6 min read",
   image: "https://www.syedalinaqihasni.com/images/blogs/docusaurus-modern-documentation-framework-syed-ali-naqi-hasni.webp",
