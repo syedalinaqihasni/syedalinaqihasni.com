@@ -42,7 +42,7 @@ const posts: Post[] = [
 cd my-docs
 npm run start
 </code></pre>
-<h3>🗂 Project Structure</h3>
+<h3>Project Structure</h3>
   <pre><code>my-docs/
 ├── docs/
 ├── blog/
