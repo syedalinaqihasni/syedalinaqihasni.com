@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { EXPERIENCES } from "@/constants/experience";
 import Image from "next/image";
+import Link from "next/link";
 
 const CONTAINER = "container mx-auto px-4 py-32 md:py-40";
 const INNER_WRAPPER = "max-w-6xl mx-auto";
@@ -46,16 +47,36 @@ const ExperiencePage = () => (
               <div className={CARD_GRID}>
                 <aside className={SIDEBAR}>
                   <div className={LOGO_WRAPPER}>
-                    <Image
-                      src={experience?.logo}
-                      alt={`${experience?.company} logo - Syed Ali Naqi Hasni`}
-                      fill
-                      className={LOGO_IMAGE}
-                    />
+                    <Link
+                      href={experience?.companyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src={experience?.logo}
+                        alt={`${experience?.company} logo - Syed Ali Naqi Hasni`}
+                        fill
+                        className={LOGO_IMAGE}
+                      />
+                    </Link>
                   </div>
-                  <h3 className={COMPANY_NAME}>{experience?.company}</h3>
+                  <Link
+                    href={experience?.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3 className={COMPANY_NAME}>{experience?.company}</h3>
+                  </Link>
                   <p className={COMPANY_PERIOD}>{experience?.period}</p>
-                  <p className={COMPANY_LOCATION}>{experience?.location}</p>
+                  <p className={COMPANY_LOCATION}>
+                    <Link
+                      href={experience?.mapLocation}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {experience?.location}
+                    </Link>
+                  </p>
                   <Badge variant={"secondary"} className={BADGE_MARGIN}>
                     {experience?.type}
                   </Badge>

@@ -2,6 +2,8 @@ export const EXPERIENCES = [
   {
     id: '1',
     company: 'eSpark Consulting Group',
+    companyUrl: 'https://www.esparkconsultants.com/',
+    mapLocation: "https://g.co/kgs/XvTYG5f",
     logo: 'https://www.syedalinaqihasni.com/images/experience/espark-cons-group-syed-ali-naqi-hasni.jpg',
     period: 'Sep 2018 - Present',
     location: 'Karachi, Pakistan',
@@ -45,6 +47,8 @@ export const EXPERIENCES = [
   {
     id: '4',
     company: 'eSpark Talent',
+    companyUrl: 'https://www.esparktalent.com/',
+    mapLocation: "https://g.co/kgs/W6mLBnH",
     logo: 'https://www.syedalinaqihasni.com/images/experience/espark-talent-syed-ali-naqi-hasni.jpg',
     period: 'Oct 2024 - Jan 2025',
     location: 'Karachi, Pakistan',
@@ -65,6 +69,7 @@ export const EXPERIENCES = [
   {
     id: '2',
     company: 'Royal Apps',
+    companyUrl: 'https://www.royal-apps.io/',
     logo: 'https://www.syedalinaqihasni.com/images/experience/royal-apps-syed-ali-naqi-hasni.jpg',
     period: 'Jun 2023 - Sep 2024',
     location: 'Remote (US-based)',
@@ -91,6 +96,8 @@ export const EXPERIENCES = [
   {
     id: '3',
     company: 'Seek Social Ltd',
+    companyUrl: 'https://www.seek-social.co.uk/',
+    mapLocation: "https://g.co/kgs/EL57Xts",
     logo: 'https://www.syedalinaqihasni.com/images/experience/seek-social-ltd-syed-ali-naqi-hasni.jpg',
     period: 'Aug 2019 - Mar 2022',
     location: 'Remote (UK-based)',
