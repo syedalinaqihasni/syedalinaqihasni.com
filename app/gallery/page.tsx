@@ -2,7 +2,7 @@ import { getMetadataForPath } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 import { gallerySchema } from '@/constants/structuredData';
 import GalleryGrid from '@/components/gallery/gallery-grid';
-import { GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/gallery';
+import { GALLERY, GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/gallery';
 import { Images } from '@/types/images';
 
 export const metadata = getMetadataForPath('/gallery');
@@ -14,25 +14,9 @@ const TITLE = 'text-4xl md:text-5xl font-bold mb-6';
 const DESCRIPTION =
   'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
 
-// ✅ Safe relative path fetch (won't break on Vercel or Netlify)
-async function fetchGalleryImages(): Promise<Images[]> {
-  try {
-    const res = await fetch('/api/gallery', {
-      cache: 'no-store',
-      next: { revalidate: 0 }, // Optional: disable caching in next.js
-    });
-
-    if (!res.ok) return [];
-
-    const data = await res.json();
-    return Array.isArray(data) ? data : [];
-  } catch (error) {
-    return [];
-  }
-}
 
 export default async function Page() {
-  const images = await fetchGalleryImages();
+  const images = GALLERY;
 
   return (
     <>

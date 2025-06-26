@@ -2,7 +2,7 @@ import { getMetadataForPath } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 import { gallerySchema } from '@/constants/structuredData';
 import GalleryGrid from '@/components/gallery/gallery-grid';
-import { GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/certificates';
+import { CERTIFICATES, GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/certificates';
 import { Images } from '@/types/images';
 
 export const metadata = getMetadataForPath('/certificates');
@@ -14,25 +14,9 @@ const TITLE = 'text-4xl md:text-5xl font-bold mb-6';
 const DESCRIPTION =
   'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
 
-// ✅ Use relative path to avoid hardcoded domain issues
-async function fetchCertificateImages(): Promise<Images[]> {
-  try {
-    const res = await fetch('/api/certificates', {
-      cache: 'no-store',
-      next: { revalidate: 0 }, // optional for full no-cache
-    });
-
-    if (!res.ok) return [];
-
-    const data = await res.json();
-    return Array.isArray(data) ? data : [];
-  } catch (error) {
-    return [];
-  }
-}
 
 export default async function Page() {
-  const images = await fetchCertificateImages();
+  const images = CERTIFICATES;
 
   return (
     <>

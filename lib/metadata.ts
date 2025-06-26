@@ -118,6 +118,8 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
 export const defaultMetadata = {
   author: 'Syed Ali Naqi Hasni',
   siteName: 'Syed Ali Naqi Hasni',
+  image: `${siteBase}/about-us-syed-ali-naqi-hasni.jpg`,
+  googleSiteVerification: 'obYcqlLDubY2nOpL61i22oXpe7nNdWiNLhCb_VDyIQA',
   baseUrl: siteBase,
   keywords: [
     'Syed Ali Naqi Hasni',
@@ -144,57 +146,82 @@ export function generateMetadata({
   const finalDescription = description ?? defaultMetadata.keywords.join(', ');
 
   return {
+  title: `${title}`,
+  description: finalDescription,
+  metadataBase: new URL(defaultMetadata.baseUrl),
+  alternates: {
+    canonical: path,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: fullUrl,
     title: `${title}`,
     description: finalDescription,
-    metadataBase: new URL(defaultMetadata.baseUrl),
-    alternates: {
-      canonical: path,
-    },
-    openGraph: {
-      type: 'website',
-      locale: 'en_US',
-      url: fullUrl,
-      title: `${title}`,
-      description: finalDescription,
-      siteName: defaultMetadata.siteName,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${title}`,
-      description: finalDescription,
-    },
-    authors: [
+    siteName: defaultMetadata.siteName,
+    images: [
       {
-        name: defaultMetadata.author,
-        url: defaultMetadata.baseUrl,
+        url: `${defaultMetadata.image}`, // You can customize per-page if needed
+        width: 1200,
+        height: 630,
+        alt: `${title} | ${defaultMetadata.siteName}`,
+        type: 'image/jpeg',
       },
     ],
-    keywords: defaultMetadata.keywords,
-    category: 'technology',
-    icons: {
-      icon: [
-        { url: 'https://www.syedalinaqihasni.com/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-        { url: 'https://www.syedalinaqihasni.com/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-        { url: 'https://www.syedalinaqihasni.com/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      ],
-      apple: [
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-57x57.png', sizes: '57x57' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-60x60.png', sizes: '60x60' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-72x72.png', sizes: '72x72' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-76x76.png', sizes: '76x76' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-114x114.png', sizes: '114x114' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-120x120.png', sizes: '120x120' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-144x144.png', sizes: '144x144' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-152x152.png', sizes: '152x152' },
-        { url: 'https://www.syedalinaqihasni.com/apple-icon-180x180.png', sizes: '180x180' },
-      ],
-      other: [
-        { rel: 'icon', url: 'https://www.syedalinaqihasni.com/android-icon-192x192.png', sizes: '192x192', type: 'image/png' },
-        { rel: 'manifest', url: 'https://www.syedalinaqihasni.com/manifest.json' },
-        { rel: 'msapplication-TileImage', url: 'https://www.syedalinaqihasni.com/ms-icon-144x144.png' },
-      ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${title}`,
+    description: finalDescription,
+    images: [`${defaultMetadata.image}`],
+    site: '@syedalinaqi1997', // optional: Twitter handle
+    creator: '@@syedalinaqi1997',
+  },
+  authors: [
+    {
+      name: defaultMetadata.author,
+      url: defaultMetadata.baseUrl,
     },
-  };
+  ],
+  keywords: defaultMetadata.keywords,
+  category: 'technology',
+  icons: {
+    icon: [
+      { url: 'https://www.syedalinaqihasni.com/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: 'https://www.syedalinaqihasni.com/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: 'https://www.syedalinaqihasni.com/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-57x57.png', sizes: '57x57' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-60x60.png', sizes: '60x60' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-72x72.png', sizes: '72x72' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-76x76.png', sizes: '76x76' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-114x114.png', sizes: '114x114' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-120x120.png', sizes: '120x120' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-144x144.png', sizes: '144x144' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-152x152.png', sizes: '152x152' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-180x180.png', sizes: '180x180' },
+    ],
+    other: [
+      { rel: 'icon', url: 'https://www.syedalinaqihasni.com/android-icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'manifest', url: 'https://www.syedalinaqihasni.com/manifest.json' },
+      { rel: 'msapplication-TileImage', url: 'https://www.syedalinaqihasni.com/ms-icon-144x144.png' },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
+  verification: {
+    google: defaultMetadata.googleSiteVerification,
+  },
+};
 }
 
 export function getMetadataForPath(path: string): Metadata {
