@@ -1,4 +1,23 @@
-export const EXPERIENCES = [
+export interface Position {
+  role: string;
+  description: string[];
+  period?: string;
+  skills: string[];
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  companyUrl: string;
+  mapLocation: string;
+  logo: string;
+  period: string;
+  location: string;
+  type: string;
+  positions: Position[];
+}
+
+export const EXPERIENCES : Experience[] = [
   {
     id: '1',
     company: 'eSpark Consulting Group',
@@ -70,6 +89,7 @@ export const EXPERIENCES = [
     id: '2',
     company: 'Royal Apps',
     companyUrl: 'https://www.royal-apps.io/',
+    mapLocation: "",
     logo: 'https://www.syedalinaqihasni.com/images/experience/royal-apps-syed-ali-naqi-hasni.jpg',
     period: 'Jun 2023 - Sep 2024',
     location: 'Remote (US-based)',
