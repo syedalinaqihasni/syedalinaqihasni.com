@@ -14,24 +14,19 @@ const TITLE = 'text-4xl md:text-5xl font-bold mb-6';
 const DESCRIPTION =
   'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
 
-// Helper to fetch images from API
+// ✅ Safe relative path fetch (won't break on Vercel or Netlify)
 async function fetchGalleryImages(): Promise<Images[]> {
   try {
-    const res = await fetch(`https://www.syedalinaqihasni.com/api/gallery`, {
+    const res = await fetch('/api/gallery', {
       cache: 'no-store',
+      next: { revalidate: 0 }, // Optional: disable caching in next.js
     });
 
-    if (!res.ok) {
-      // console.error('Failed to fetch gallery images');
-      return [];
-    }
+    if (!res.ok) return [];
 
     const data = await res.json();
-    // console.log(data,'data');
-    
-    return data|| [];
+    return Array.isArray(data) ? data : [];
   } catch (error) {
-    // console.error('Error fetching gallery images:', error);
     return [];
   }
 }
@@ -52,7 +47,9 @@ export default async function Page() {
           {images.length > 0 ? (
             <GalleryGrid images={images} />
           ) : (
-            <p className="text-center text-muted-foreground">Loading gallery or no images found.</p>
+            <p className="text-center text-muted-foreground">
+              Loading gallery or no images found.
+            </p>
           )}
         </div>
       </div>
