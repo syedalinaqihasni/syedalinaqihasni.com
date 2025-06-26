@@ -160,7 +160,7 @@ const certs = [
 
 export async function GET() {
   try {
-    const galleryPath = path.join(process.cwd(), 'public', 'gallery');
+    const galleryPath = path.join(process.cwd(), 'public', 'certificates');
 
     if (!fs.existsSync(galleryPath)) {
       return NextResponse.json([]);
@@ -175,7 +175,7 @@ export async function GET() {
     });
 
     const images = imageFiles.map((file, index) => {
-      const filePath = `/images/certificates/${file}`;
+      const filePath = `https://www.syedalinaqihasni.com/certificates/${file}`;
       const meta = certs.find(m => m.src === filePath);
 
       return {
