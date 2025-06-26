@@ -118,7 +118,7 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
 export const defaultMetadata = {
   author: 'Syed Ali Naqi Hasni',
   siteName: 'Syed Ali Naqi Hasni',
-  image: `${siteBase}/about-us-syed-ali-naqi-hasni.jpg`,
+  image: `${siteBase}/images/about-us-syed-ali-naqi-hasni.jpg`,
   googleSiteVerification: 'obYcqlLDubY2nOpL61i22oXpe7nNdWiNLhCb_VDyIQA',
   baseUrl: siteBase,
   keywords: [
