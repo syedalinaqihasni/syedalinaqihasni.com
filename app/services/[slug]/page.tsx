@@ -12,6 +12,8 @@ import {
 import Link from "next/link";
 import { Check, ArrowRight, Quote } from "lucide-react";
 import { toProperCase } from "@/lib/utils";
+import HtmlRenderer from "@/components/HtmlRenderer";
+import FeaturedPricing from "@/components/home/featured-pricing";
 
 export async function generateStaticParams() {
   const allSlugs = SERVICES.flatMap((service) => service?.slug || []);
@@ -36,6 +38,30 @@ export async function generateMetadata({
   };
 }
 
+const styles = {
+  sectionPadding: " px-4",
+  heroPadding: "pt-32 pb-16 md:pt-40 md:pb-20 px-4",
+  containerSmall: "container mx-auto max-w-4xl",
+  containerMedium: "container mx-auto max-w-5xl",
+  containerLarge: "container mx-auto max-w-6xl",
+  heroGrid: "grid grid-cols-1 md:grid-cols-12 gap-8 items-center",
+  heroTextCol: "md:col-span-7",
+  heroImageCol: "md:col-span-5 flex justify-center md:justify-end",
+  heroImageWrapper:
+    "relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-background shadow-xl",
+  heroTitle:
+    "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400",
+  heroSubtitle: "text-2xl md:text-3xl font-medium mb-6",
+  heroDescription: "text-lg md:text-xl text-muted-foreground mb-8 max-w-lg",
+  heroButtons: "flex flex-wrap gap-4",
+  socialButtons: "flex gap-4 mt-8",
+  sectionHeader: "text-3xl font-bold mb-10 text-center",
+  sectionHeaderLeft: "text-3xl font-bold mb-10",
+  projectsHeaderWrapper: "flex justify-between items-center mb-10",
+  centerText: "text-center mt-10",
+  contactText: "text-center text-muted-foreground mb-10 max-w-2xl mx-auto",
+};
+
 export default function ServicePage({ params }: { params: { slug: string } }) {
   const service = SERVICES.find((s) => s.slug?.includes(params.slug));
   if (!service) return notFound();
@@ -44,7 +70,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     <section className="max-w-5xl mx-auto py-24 px-4">
       {/* Header */}
       <div className="text-center mb-12">
-        <div className="text-5xl mb-4">{service?.icon}</div>
         <h1 className="text-4xl md:text-5xl font-bold">{service?.title}</h1>
         <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
           {service?.description}
@@ -81,19 +106,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       )}
-      {/* Pricing */}
-      {/* <Section title="Pricing & Timeline">
-        <div className="flex justify-between items-center border p-4 rounded-lg bg-muted/50">
-          <span className="text-lg font-bold text-primary">
-            {service?.startingPrice}
-          </span>
-          <span className="text-sm text-muted-foreground">
-            {service?.deliveryTime}
-          </span>
-        </div>
-      </Section> */}
-
-      {/* Deliverables + Requirements side by side */}
       {(service?.deliverables || service?.requirements) && (
         <div className="mb-12 grid md:grid-cols-2 gap-8">
           {service?.deliverables && (
@@ -114,12 +126,28 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       )}
       {service?.detailedDescription && (
         <Section title="More About This Service">
-          <div
-            className="prose prose-neutral max-w-none"
-            dangerouslySetInnerHTML={{ __html: service?.detailedDescription }}
-          />
+          <div className="prose prose-neutral max-w-none">
+            <HtmlRenderer html={service?.detailedDescription} />
+          </div>
         </Section>
       )}
+      {/* <section
+        className={`${styles?.sectionPadding} pt-10`}
+        id={"pricing"}
+      >
+        <div className={styles?.containerLarge}>
+          <div className={styles?.projectsHeaderWrapper}>
+            <h2 className={styles?.sectionHeaderLeft}>Similar Projects </h2>
+            <Link href="https://www.syedalinaqihasni.com/projects">
+              <Button variant={"outline"}>
+                View All Projects
+                <ArrowRight className={"ml-2 h-4 w-4"} />
+              </Button>
+            </Link>
+          </div>
+          <Projects projects={projects.slice(0,3)} />
+        </div>
+      </section> */}
 
       {/* FAQs in Accordion */}
       {service?.faqs?.length > 0 && (
@@ -160,29 +188,21 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </Section>
       )}
-
-      {/* Previous Projects */}
-      {/* {service?.previousProjects && (
-        <Section title="Past Projects">
-          <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-            {service?.previousProjects.map((project, i) => (
-              <li key={i}>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary underline"
-                >
-                  {project.title}
-                </a>{" "}
-                – {project.description}
-              </li>
-            ))}
-          </ul>
-        </Section>
-      )} */}
-
-      {/* CTA */}
+      {/* Pricing Section */}
+      <section className={`${styles?.sectionPadding} `} id={"pricing"}>
+        <div className={styles?.containerLarge}>
+          <div className={styles?.projectsHeaderWrapper}>
+            <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
+            <Link href="https://www.syedalinaqihasni.com/pricing">
+              <Button variant={"outline"}>
+                View All Plans
+                <ArrowRight className={"ml-2 h-4 w-4"} />
+              </Button>
+            </Link>
+          </div>
+          <FeaturedPricing />
+        </div>
+      </section>
       <div className="text-center mt-16">
         <h3 className="text-2xl font-bold mb-2">Interested in this service?</h3>
         <p className="text-muted-foreground mb-6">

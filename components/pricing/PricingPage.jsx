@@ -1,3 +1,5 @@
+'use client';
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -5,8 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Check, X, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { PRICING_PLANS, MAINTENANCE_PLANS, PRICING_PAGE_CONSTANT } from '@/constants/pricing';
-
+import { PRICING_TABS, PRICING_PAGE_CONSTANT } from '@/constants/pricing';
 
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
@@ -14,7 +15,7 @@ const styles = {
   header: 'text-center mb-16',
   title: 'text-4xl md:text-5xl font-bold mb-6',
   description: 'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto',
-  tabsList: 'grid w-full grid-cols-2 max-w-md mx-auto mb-12',
+  tabsList: 'flex gap-4 w-full  mx-auto mb-12',
   grid: 'grid grid-cols-1 md:grid-cols-3 gap-8',
   card: 'relative h-full hover:shadow-lg transition-shadow duration-300',
   popularCard: 'border-primary shadow-lg scale-105',
@@ -47,110 +48,69 @@ export default function PricingPage() {
           <p className={styles?.description}>{PRICING_PAGE_CONSTANT.description}</p>
         </div>
 
-        <Tabs defaultValue="development" className="space-y-8">
+        <Tabs defaultValue={PRICING_TABS[0].id} className="space-y-8">
           <TabsList className={styles?.tabsList}>
-            <TabsTrigger value="development">{PRICING_PAGE_CONSTANT.tabs.development}</TabsTrigger>
-            <TabsTrigger value="maintenance">{PRICING_PAGE_CONSTANT.tabs.maintenance}</TabsTrigger>
+            {PRICING_TABS.map((tab) => (
+              <TabsTrigger key={tab.id} value={tab.id} className="whitespace-nowrap">
+                {tab.label}
+              </TabsTrigger>
+            ))}
           </TabsList>
 
-          <TabsContent value="development">
-            <div className={styles?.grid}>
-              {PRICING_PLANS.map((plan) => (
-                <Card 
-                  key={plan.id} 
-                  className={`${styles?.card} ${plan.popular ? styles?.popularCard : ''}`}
-                >
-                  {plan.popular && (
-                    <Badge className={styles?.popularBadge}>
-                      Most Popular
-                    </Badge>
-                  )}
-                  <CardContent className={styles?.cardContent}>
-                    <h3 className={styles?.planName}>{plan.name}</h3>
-                    <p className={styles?.planDescription}>{plan.description}</p>
-                    
-                    <div className={styles?.priceWrapper}>
-                      <span className={styles?.price}>{plan.price}</span>
-                      <span className={styles?.period}>/{plan.period}</span>
-                    </div>
+          {PRICING_TABS.map((tab) => (
+            <TabsContent key={tab.id} value={tab.id}>
+              <div className={styles?.grid}>
+                {tab.plans.map((plan) => (
+                  <Card
+                    key={plan.id}
+                    className={`${styles?.card} ${plan.popular ? styles?.popularCard : ''}`}
+                  >
+                    {plan.popular && (
+                      <Badge className={styles?.popularBadge}>Most Popular</Badge>
+                    )}
+                    <CardContent className={styles?.cardContent}>
+                      <h3 className={styles?.planName}>{plan.name}</h3>
+                      <p className={styles?.planDescription}>{plan.description}</p>
 
-                    <div className={styles?.featuresList}>
-                      {plan.features.map((feature, index) => (
-                        <div key={index} className={styles?.featureItem}>
-                          <Check className="h-5 w-5 text-green-500 mt-0.5" />
-                          <span>{feature}</span>
-                        </div>
-                      ))}
-                    </div>
+                      <div className={styles?.priceWrapper}>
+                        <span className={styles?.price}>{plan.price}</span>
+                        <span className={styles?.period}>/{plan.period}</span>
+                      </div>
 
-                    {plan.limitations?.length > 0 && (
-                      <div className={styles?.limitationsList}>
-                        {plan.limitations.map((limitation, index) => (
-                          <div key={index} className={styles?.limitationItem}>
-                            <X className="h-4 w-4 text-red-500 mt-0.5" />
-                            <span>{limitation}</span>
+                      <div className={styles?.featuresList}>
+                        {plan.features.map((feature, index) => (
+                          <div key={index} className={styles?.featureItem}>
+                            <Check className="h-5 w-5 text-green-500 mt-0.5" />
+                            <span>{feature}</span>
                           </div>
                         ))}
                       </div>
-                    )}
 
-                    <Button 
-                      className={plan.popular ? styles?.popularButton : styles?.button}
-                      asChild
-                    >
-                      <Link href="https://www.syedalinaqihasni.com/contact">
-                        {plan.buttonText}
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="maintenance">
-            <div className={styles?.grid}>
-              {MAINTENANCE_PLANS.map((plan) => (
-                <Card 
-                  key={plan.id} 
-                  className={`${styles?.card} ${plan.popular ? styles?.popularCard : ''}`}
-                >
-                  {plan.popular && (
-                    <Badge className={styles?.popularBadge}>
-                      Most Popular
-                    </Badge>
-                  )}
-                  <CardContent className={styles?.cardContent}>
-                    <h3 className={styles?.planName}>{plan.name}</h3>
-                    <p className={styles?.planDescription}>{plan.description}</p>
-                    
-                    <div className={styles?.priceWrapper}>
-                      <span className={styles?.price}>{plan.price}</span>
-                      <span className={styles?.period}>/{plan.period}</span>
-                    </div>
-
-                    <div className={styles?.featuresList}>
-                      {plan.features.map((feature, index) => (
-                        <div key={index} className={styles?.featureItem}>
-                          <Check className="h-5 w-5 text-green-500 mt-0.5" />
-                          <span>{feature}</span>
+                      {plan.limitations?.length > 0 && (
+                        <div className={styles?.limitationsList}>
+                          {plan.limitations.map((limitation, index) => (
+                            <div key={index} className={styles?.limitationItem}>
+                              <X className="h-4 w-4 text-red-500 mt-0.5" />
+                              <span>{limitation}</span>
+                            </div>
+                          ))}
                         </div>
-                      ))}
-                    </div>
+                      )}
 
-                    <Button 
-                      className={plan.popular ? styles?.popularButton : styles?.button}
-                      asChild
-                    >
-                      <Link href="https://www.syedalinaqihasni.com/contact">
-                        {plan.buttonText}
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </TabsContent>
+                      <Button
+                        className={plan.popular ? styles?.popularButton : styles?.button}
+                        asChild
+                      >
+                        <Link href="https://www.syedalinaqihasni.com/contact">
+                          {plan.buttonText}
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
+          ))}
         </Tabs>
 
         <div className={styles?.faqSection}>

@@ -1,4 +1,4 @@
-export const PRICING_PLANS = [
+export const FRONTEND_DEVELOPMENT_PLANS = [
   {
     id: 1,
     name: 'Starter',
@@ -75,8 +75,7 @@ export const PRICING_PLANS = [
     category: 'application'
   }
 ];
-
-export const MAINTENANCE_PLANS = [
+export const WEBSITE_MAINTENANCE_PLANS = [
   {
     id: 1,
     name: 'Basic Care',
@@ -138,13 +137,423 @@ export const MAINTENANCE_PLANS = [
     category: 'maintenance'
   }
 ];
+export const SEO_PLANS = [
+  {
+    id: 1,
+    name: 'Basic Care',
+    description: 'Essential seo for small websites',
+    price: '$150',
+    period: 'per month',
+    popular: false,
+    features: [
+      'Monthly Updates',
+      'Security Monitoring',
+      'Basic Backup',
+      'Uptime Monitoring',
+      'Email Support',
+      '2 Hours of Changes'
+    ],
+    buttonText: 'Choose Plan',
+    category: 'seo'
+  },
+  {
+    id: 2,
+    name: 'Professional Care',
+    description: 'Comprehensive seo for business websites',
+    price: '$300',
+    period: 'per month',
+    popular: true,
+    features: [
+      'Weekly Updates',
+      'Advanced Security',
+      'Daily Backups',
+      'Performance Monitoring',
+      'Priority Support',
+      '5 Hours of Changes',
+      'SEO Monitoring',
+      'Analytics Reports'
+    ],
+    buttonText: 'Most Popular',
+    category: 'seo'
+  },
+  {
+    id: 3,
+    name: 'Enterprise Care',
+    description: 'Premium seo for mission-critical websites',
+    price: '$600',
+    period: 'per month',
+    popular: false,
+    features: [
+      'Real-time Updates',
+      'Enterprise Security',
+      'Hourly Backups',
+      'Advanced Monitoring',
+      '24/7 Support',
+      '10 Hours of Changes',
+      'Custom Integrations',
+      'Dedicated Account Manager',
+      'Performance Optimization',
+      'Emergency Response'
+    ],
+    buttonText: 'Contact Us',
+    category: 'seo'
+  }
+];
+export const WEB_APPLICATION_PLANS = [
+  {
+    id: 1,
+    name: 'Starter',
+    description: 'Perfect for small businesses and personal projects',
+    price: '$1,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Responsive Website Design',
+      'Up to 5 Pages',
+      'Basic SEO Setup',
+      'Contact Form Integration',
+      'Mobile Optimization',
+      '30 Days Support',
+      'Basic Analytics Setup'
+    ],
+    limitations: [
+      'No E-commerce functionality',
+      'Limited customization',
+      'Basic hosting recommendations'
+    ],
+    buttonText: 'Get Started',
+    category: 'website'
+  },
+  {
+    id: 2,
+    name: 'Professional',
+    description: 'Ideal for growing businesses with advanced needs',
+    price: '$3,500',
+    period: 'one-time',
+    popular: true,
+    features: [
+      'Custom Website Development',
+      'Up to 15 Pages',
+      'Advanced SEO Optimization',
+      'CMS Integration',
+      'E-commerce Ready',
+      '90 Days Support',
+      'Advanced Analytics',
+      'Performance Optimization',
+      'Social Media Integration',
+      'Blog Setup'
+    ],
+    limitations: [
+      'Advanced integrations extra',
+      'Custom animations additional'
+    ],
+    buttonText: 'Most Popular',
+    category: 'website'
+  },
+  {
+    id: 3,
+    name: 'Enterprise',
+    description: 'Comprehensive solution for large-scale projects',
+    price: '$7,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Full-scale Web Application',
+      'Unlimited Pages',
+      'Advanced E-commerce',
+      'Custom Integrations',
+      'API Development',
+      '6 Months Support',
+      'Advanced Security',
+      'Performance Monitoring',
+      'Custom Admin Panel',
+      'Multi-language Support',
+      'Advanced Analytics',
+      'Priority Support'
+    ],
+    limitations: [],
+    buttonText: 'Contact Us',
+    category: 'application'
+  }
+];
+export const WORDPRESS_DEVELOPMENT_PLANS = [
+  {
+    id: 1,
+    name: 'Starter',
+    description: 'Perfect for small businesses and personal projects',
+    price: '$1,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Responsive Website Design',
+      'Up to 5 Pages',
+      'Basic SEO Setup',
+      'Contact Form Integration',
+      'Mobile Optimization',
+      '30 Days Support',
+      'Basic Analytics Setup'
+    ],
+    limitations: [
+      'No E-commerce functionality',
+      'Limited customization',
+      'Basic hosting recommendations'
+    ],
+    buttonText: 'Get Started',
+    category: 'website'
+  },
+  {
+    id: 2,
+    name: 'Professional',
+    description: 'Ideal for growing businesses with advanced needs',
+    price: '$3,500',
+    period: 'one-time',
+    popular: true,
+    features: [
+      'Custom Website Development',
+      'Up to 15 Pages',
+      'Advanced SEO Optimization',
+      'CMS Integration',
+      'E-commerce Ready',
+      '90 Days Support',
+      'Advanced Analytics',
+      'Performance Optimization',
+      'Social Media Integration',
+      'Blog Setup'
+    ],
+    limitations: [
+      'Advanced integrations extra',
+      'Custom animations additional'
+    ],
+    buttonText: 'Most Popular',
+    category: 'website'
+  },
+  {
+    id: 3,
+    name: 'Enterprise',
+    description: 'Comprehensive solution for large-scale projects',
+    price: '$7,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Full-scale Web Application',
+      'Unlimited Pages',
+      'Advanced E-commerce',
+      'Custom Integrations',
+      'API Development',
+      '6 Months Support',
+      'Advanced Security',
+      'Performance Monitoring',
+      'Custom Admin Panel',
+      'Multi-language Support',
+      'Advanced Analytics',
+      'Priority Support'
+    ],
+    limitations: [],
+    buttonText: 'Contact Us',
+    category: 'application'
+  }
+];
+export const UI_UX_DESIGN_PLANS = [
+  {
+    id: 1,
+    name: 'Starter',
+    description: 'Perfect for small businesses and personal projects',
+    price: '$1,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Responsive Website Design',
+      'Up to 5 Pages',
+      'Basic SEO Setup',
+      'Contact Form Integration',
+      'Mobile Optimization',
+      '30 Days Support',
+      'Basic Analytics Setup'
+    ],
+    limitations: [
+      'No E-commerce functionality',
+      'Limited customization',
+      'Basic hosting recommendations'
+    ],
+    buttonText: 'Get Started',
+    category: 'website'
+  },
+  {
+    id: 2,
+    name: 'Professional',
+    description: 'Ideal for growing businesses with advanced needs',
+    price: '$3,500',
+    period: 'one-time',
+    popular: true,
+    features: [
+      'Custom Website Development',
+      'Up to 15 Pages',
+      'Advanced SEO Optimization',
+      'CMS Integration',
+      'E-commerce Ready',
+      '90 Days Support',
+      'Advanced Analytics',
+      'Performance Optimization',
+      'Social Media Integration',
+      'Blog Setup'
+    ],
+    limitations: [
+      'Advanced integrations extra',
+      'Custom animations additional'
+    ],
+    buttonText: 'Most Popular',
+    category: 'website'
+  },
+  {
+    id: 3,
+    name: 'Enterprise',
+    description: 'Comprehensive solution for large-scale projects',
+    price: '$7,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Full-scale Web Application',
+      'Unlimited Pages',
+      'Advanced E-commerce',
+      'Custom Integrations',
+      'API Development',
+      '6 Months Support',
+      'Advanced Security',
+      'Performance Monitoring',
+      'Custom Admin Panel',
+      'Multi-language Support',
+      'Advanced Analytics',
+      'Priority Support'
+    ],
+    limitations: [],
+    buttonText: 'Contact Us',
+    category: 'application'
+  }
+];
+export const ECOMMERCE_PLANS = [
+  {
+    id: 1,
+    name: 'Starter',
+    description: 'Perfect for small businesses and personal projects',
+    price: '$1,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Responsive Website Design',
+      'Up to 5 Pages',
+      'Basic SEO Setup',
+      'Contact Form Integration',
+      'Mobile Optimization',
+      '30 Days Support',
+      'Basic Analytics Setup'
+    ],
+    limitations: [
+      'No E-commerce functionality',
+      'Limited customization',
+      'Basic hosting recommendations'
+    ],
+    buttonText: 'Get Started',
+    category: 'website'
+  },
+  {
+    id: 2,
+    name: 'Professional',
+    description: 'Ideal for growing businesses with advanced needs',
+    price: '$3,500',
+    period: 'one-time',
+    popular: true,
+    features: [
+      'Custom Website Development',
+      'Up to 15 Pages',
+      'Advanced SEO Optimization',
+      'CMS Integration',
+      'E-commerce Ready',
+      '90 Days Support',
+      'Advanced Analytics',
+      'Performance Optimization',
+      'Social Media Integration',
+      'Blog Setup'
+    ],
+    limitations: [
+      'Advanced integrations extra',
+      'Custom animations additional'
+    ],
+    buttonText: 'Most Popular',
+    category: 'website'
+  },
+  {
+    id: 3,
+    name: 'Enterprise',
+    description: 'Comprehensive solution for large-scale projects',
+    price: '$7,500',
+    period: 'one-time',
+    popular: false,
+    features: [
+      'Full-scale Web Application',
+      'Unlimited Pages',
+      'Advanced E-commerce',
+      'Custom Integrations',
+      'API Development',
+      '6 Months Support',
+      'Advanced Security',
+      'Performance Monitoring',
+      'Custom Admin Panel',
+      'Multi-language Support',
+      'Advanced Analytics',
+      'Priority Support'
+    ],
+    limitations: [],
+    buttonText: 'Contact Us',
+    category: 'application'
+  }
+];
+export const PRICING_TABS = [
+  {
+    id: 'frontend-development',
+    label: 'Frontend Development',
+    plans: FRONTEND_DEVELOPMENT_PLANS,
+  },
+  {
+    id: 'web-application',
+    label: 'Web Application',
+    plans: WEB_APPLICATION_PLANS,
+  },
+  {
+    id: 'wordpress-development',
+    label: 'WordPress Development',
+    plans: WORDPRESS_DEVELOPMENT_PLANS,
+  },
+  {
+    id:'ui-ux-design',
+    label: 'UI/UX Design',
+    plans: UI_UX_DESIGN_PLANS,
+  },
+  {
+    id:'e-commerce',
+    label: 'E-commerce',
+    plans: ECOMMERCE_PLANS,
+  },
+  {
+    id: 'seo',
+    label: 'SEO Optimization',
+    plans: SEO_PLANS,
+  },
+  {
+    id: 'website-maintenance',
+    label: 'Website Maintenance',
+    plans: WEBSITE_MAINTENANCE_PLANS,
+  },
+  
+];
+
 
 export const PRICING_PAGE_CONSTANT = {
   title: 'Transparent Pricing',
   description: 'Choose the perfect plan for your project. No hidden fees, no surprises.',
   tabs: {
     development: 'Development',
-    maintenance: 'Maintenance'
+    maintenance: 'Maintenance',
+    seo: 'Seo Optimization'
   },
   faq: {
     title: 'Frequently Asked Questions',
@@ -179,4 +588,4 @@ export const PRICING_PAGE_CONSTANT = {
   }
 };
 
-export const FEATURED_PRICING = PRICING_PLANS.slice(0, 3);
+export const FEATURED_PRICING = FRONTEND_DEVELOPMENT_PLANS.slice(0, 3);
