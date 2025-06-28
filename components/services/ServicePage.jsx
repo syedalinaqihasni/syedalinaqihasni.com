@@ -53,46 +53,48 @@ export default function ServicesPage() {
             <TabsContent key={category.id} value={category.id}>
               <div className={styles?.grid}>
                 {SERVICES
-                  .filter(service => category.id === 'all' || service.category === category.id)
+                  .filter(service => category.id === 'all' || service?.category === category.id)
                   .map((service) => (
-                    <Card key={service.id} className={styles?.card}>
+                    <Card key={service?.id} className={styles?.card}>
                       <CardContent className={styles?.cardContent}>
-                        <div className={styles?.serviceIcon}>{service.icon}</div>
-                        <h3 className={styles?.serviceTitle}>{service.title}</h3>
-                        <p className={styles?.serviceDescription}>{service.description}</p>
+                        <div className={styles?.serviceIcon}>{service?.icon}</div>
+                        <Link href={`/services/${service?.slug}`}>
+                        <h3 className={styles?.serviceTitle}>{service?.title}</h3>
+                        </Link>
+                        <p className={styles?.serviceDescription}>{service?.description}</p>
                         
                         <div className={styles?.featuresList}>
-                          {service.features.slice(0, 4).map((feature, index) => (
+                          {service?.features.slice(0, 4).map((feature, index) => (
                             <div key={index} className={styles?.featureItem}>
                               <Check className="h-4 w-4 text-green-500" />
                               <span>{feature}</span>
                             </div>
                           ))}
-                          {service.features?.length > 4 && (
+                          {service?.features?.length > 4 && (
                             <div className={styles?.featureItem}>
                               <span className="text-muted-foreground">
-                                +{service.features?.length - 4} more features
+                                +{service?.features?.length - 4} more features
                               </span>
                             </div>
                           )}
                         </div>
 
                         <div className={styles?.techBadges}>
-                          {service.technologies.slice(0, 3).map((tech) => (
+                          {service?.technologies.slice(0, 3).map((tech) => (
                             <Badge key={tech} variant="secondary" className="text-xs">
                               {tech}
                             </Badge>
                           ))}
-                          {service.technologies?.length > 3 && (
+                          {service?.technologies?.length > 3 && (
                             <Badge variant="outline" className="text-xs">
-                              +{service.technologies?.length - 3}
+                              +{service?.technologies?.length - 3}
                             </Badge>
                           )}
                         </div>
 
                         <div className={styles?.priceInfo}>
-                          <span className={styles?.price}>{service.startingPrice}</span>
-                          <span className={styles?.deliveryTime}>{service.deliveryTime}</span>
+                          <span className={styles?.price}>{service?.startingPrice}</span>
+                          <span className={styles?.deliveryTime}>{service?.deliveryTime}</span>
                         </div>
 
                         <Button className="w-full" asChild>

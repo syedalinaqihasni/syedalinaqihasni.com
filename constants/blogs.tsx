@@ -305,7 +305,7 @@ export default YourPage;
   While NodeMailer is a robust solution, it's essential to explore alternatives based on your specific needs. Some notable alternatives include:
 </p>
 <ol>
-<li><a href="https://www.linkedin.com/company/sendgrid/">SendGrid</a> <strong>-Transport:</strong> An alternative with SendGrid Email Service.</li>
+<li><a href="https://www.linkedin.com/company/sendgrid/">SendGrid</a> <strong>-Transport:</strong> An alternative with SendGrid Email service?.</li>
 <li><strong>Email.js:</strong> A simpler alternative with a focus on ease of use.</li>
 <li><a href="https://www.linkedin.com/company/smtp-com/">SMTP.js:</a> A lightweight library for sending emails using the SMTP protocol (Node.js).</li>
 </ol>
@@ -1642,7 +1642,7 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 <pre><code>function useProducts(service) {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    service.fetchProducts().then(setProducts);
+    service?.fetchProducts().then(setProducts);
   }, [service]);
   return products;
 
@@ -3023,7 +3023,7 @@ Content that resizes smoothly<
     readingTime: "6 min read",
     content: `
   <div>
-  <p>One of the most powerful features of <strong>Next.js</strong> is its ability to handle backend logic directly within your frontend application. With <strong>API Routes</strong>, you can create server-side endpoints as part of your project—no need to set up a separate backend service.</p>
+  <p>One of the most powerful features of <strong>Next.js</strong> is its ability to handle backend logic directly within your frontend application. With <strong>API Routes</strong>, you can create server-side endpoints as part of your project—no need to set up a separate backend service?.</p>
   <p>Whether you need to fetch data, handle forms, authenticate users, or integrate third-party services, Next.js API Routes let you write server-side code using the same stack and tools you're already using on the frontend.</p>
   <h2>What Are API Routes?</h2>
   <p>API Routes in Next.js allow you to define server-side functions that run in a Node.js environment. These functions are deployed as serverless functions when you host your app (e.g., on Vercel).</p>
