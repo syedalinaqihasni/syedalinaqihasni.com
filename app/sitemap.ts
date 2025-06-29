@@ -3,6 +3,8 @@ import { posts } from '@/constants/blogs';
 import { projects } from '@/constants/projects';
 import { events } from '@/constants/events';
 import { LINKS_GROUPS } from '@/constants/footer';
+import { SERVICES } from '@/constants/services';
+import { countries } from '@/constants/area-services';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.syedalinaqihasni.com';
@@ -53,7 +55,39 @@ const blogCategoryRoutes = categories.map((category) => ({
   priority: 0.4,
 }));
 
-
+// Generate service routes dynamically with all 4 variants
+const serviceRoutes = countries.flatMap(country =>
+  country.cities.flatMap(city =>
+    city.areas.flatMap(area =>
+      SERVICES.flatMap(service => [
+        {
+          url: `${baseUrl}/services/${service.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.5,
+        },
+        {
+          url: `${baseUrl}/services/${service.slug}/${country.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.5,
+        },
+        {
+          url: `${baseUrl}/services/${service.slug}/${country.slug}/${city.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.5,
+        },
+        {
+          url: `${baseUrl}/services/${service.slug}/${country.slug}/${city.slug}/${area.slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'monthly' as const,
+          priority: 0.5,
+        }
+      ])
+    )
+  )
+);
   return [
     ...linkRoutes,
     ...postRoutes,
@@ -61,5 +95,6 @@ const blogCategoryRoutes = categories.map((category) => ({
     ...blogCategoryRoutes,
     ...projectRoutes,
     ...eventRoutes,
+    ...serviceRoutes,
   ];
 }

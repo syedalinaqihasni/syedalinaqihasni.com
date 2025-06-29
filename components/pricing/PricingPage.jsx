@@ -69,7 +69,9 @@ export default function PricingPage() {
                       <Badge className={styles?.popularBadge}>Most Popular</Badge>
                     )}
                     <CardContent className={styles?.cardContent}>
+                      <Link href={`/pricing/${plan?.slug}`}>
                       <h3 className={styles?.planName}>{plan?.name}</h3>
+                      </Link>
                       <p className={styles?.planDescription}>{plan?.description}</p>
 
                       <div className={styles?.priceWrapper}>
