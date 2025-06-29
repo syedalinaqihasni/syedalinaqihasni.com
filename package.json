@@ -82,8 +82,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.2.1",
-    "tailwindcss": "^4"
+    "eslint-config-next": "15.2.1"
   },
   "main": "index.js",
   "repository": "https://github.com/syedalinaqihasni/sanity.Syedalinaqihasni.com.git",
