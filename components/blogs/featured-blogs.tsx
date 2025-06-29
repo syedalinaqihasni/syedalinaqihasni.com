@@ -40,7 +40,7 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
       <div className={styles?.grid}>
         {featuredBlogs?.map((post, index) => (
           <motion.div
-            key={post?.id}
+            key={post?.slug}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -64,8 +64,8 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
                 <div className={styles?.categoriesWrapper}>
                   {post?.tags.slice(0, 2)?.map((tag) => (
                     <Badge
-                      key={tag}
-                      variant={"secondary"}
+                          key={tag}
+                         variant={"secondary"}
                       className={styles?.categoryBadge}
                     >
                       {tag}

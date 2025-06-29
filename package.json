@@ -78,6 +78,13 @@
     "vaul": "^0.9.9",
     "zod": "^3.23.8"
   },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "tailwindcss": "^4"
+  },
   "main": "index.js",
   "repository": "https://github.com/syedalinaqihasni/sanity.Syedalinaqihasni.com.git",
   "author": "Syed Ali Naqi Hasni <engr.syedalinaqihasni@gmail.com>",

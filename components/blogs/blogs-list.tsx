@@ -60,7 +60,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
       <div className={styles?.grid}>
         {filteredPosts?.map((post, index) => (
           <motion.div
-            key={post?.id}
+            key={post?.slug}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
