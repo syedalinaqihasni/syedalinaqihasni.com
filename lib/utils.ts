@@ -34,6 +34,15 @@ export const formatDate = (dateString: string) =>
     .replace(/[\s/]+/g, '-'); // replace all spaces (including multiple) with a dash
 }
 
+    /**
+     * Converts a dash-separated string to Proper Case (each word capitalized and separated by spaces).
+     *
+     * @param text - The dash-separated string to convert.
+     * @returns The converted string in Proper Case.
+     *
+     * @example
+     * dashToProperCase('hello-world'); // returns 'Hello World'
+     */
     export function dashToProperCase(text: string): string {
   return text
     .toLowerCase()

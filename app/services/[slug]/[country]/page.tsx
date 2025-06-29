@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { Check, ArrowRight, Quote } from "lucide-react";
-import { toProperCase } from "@/lib/utils";
+import { dashToProperCase } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
 import { countries } from "@/constants/area-services";
@@ -28,20 +28,22 @@ export async function generateMetadata({
 
   // Helper to build location string
   const locationParts = [area, city, country].filter(Boolean);
-  const location = locationParts.length ? ` in ${locationParts.join(', ')}` : '';
+  const location = locationParts.length
+    ? ` in ${locationParts.join(", ")}`
+    : "";
 
   const title = `${service.title}${location} | Syed Ali Naqi Hasni`;
   const description = service.description;
 
   // Build URL parts safely
   const urlParts = [
-    'https://www.syedalinaqihasni.com',
+    "https://www.syedalinaqihasni.com",
     params.slug,
     country,
     city,
     area,
   ].filter(Boolean);
-  const url = urlParts.join('/');
+  const url = urlParts.join("/");
 
   return {
     title,
@@ -54,7 +56,12 @@ export async function generateMetadata({
   };
 }
 export async function generateStaticParams() {
-  const params: { slug: string; country: string; city: string; area: string }[] = [];
+  const params: {
+    slug: string;
+    country: string;
+    city: string;
+    area: string;
+  }[] = [];
 
   for (const country of countries) {
     for (const city of country.cities) {
@@ -103,13 +110,13 @@ export default function ServicePage({
 }: {
   params: { slug: string; country?: string; city?: string; area?: string };
 }) {
-
   const service = SERVICES.find((s) => s.slug?.includes(params.slug));
-    if (!service) return notFound();
+  if (!service) return notFound();
   const { country, city, area } = params;
 
   // Validate country, city, area
   let countryObj, cityObj, areaObj;
+
   if (params.country) {
     countryObj = countries.find((c) => c.slug === params.country);
     if (!countryObj) return notFound();
@@ -122,11 +129,16 @@ export default function ServicePage({
       }
     }
   }
+
   return (
     <section className="max-w-5xl mx-auto py-24 px-4">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold">{service?.title} in {area ? area : ''} {city ? city : ''} {country ? country : ''}</h1>
+        <h1 className="text-4xl md:text-5xl font-bold">
+          {service?.title} in {area ? dashToProperCase(area) : ""}{" "}
+          {city ? dashToProperCase(city) : ""}{" "}
+          {country ? dashToProperCase(country) : ""}
+        </h1>
         <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
           {service?.description}
         </p>
@@ -139,21 +151,15 @@ export default function ServicePage({
             <FeatureList features={service?.features} />
           </Section>
           <div>
-            {/* <Section title="Technologies Used">
-              <div className="flex flex-wrap gap-2">
-                {service?.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="text-xs">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </Section> */}
-            <Section title="Related Serivices">
+            <Section title="Related Serivices in Your Country">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
                   <Link href={serv} key={serv}>
                     <Badge variant="secondary" className="text-xs">
-                      {toProperCase(serv).replace(/-/g, " ")}
+                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                      {area ? dashToProperCase(area) : ""}{" "}
+                      {city ? dashToProperCase(city) : ""}{" "}
+                      {country ? dashToProperCase(country) : ""}
                     </Badge>
                   </Link>
                 ))}
@@ -187,23 +193,6 @@ export default function ServicePage({
           </div>
         </Section>
       )}
-      {/* <section
-        className={`${styles?.sectionPadding} pt-10`}
-        id={"pricing"}
-      >
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>Similar Projects </h2>
-            <Link href="https://www.syedalinaqihasni.com/projects">
-              <Button variant={"outline"}>
-                View All Projects
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <Projects projects={projects.slice(0,3)} />
-        </div>
-      </section> */}
 
       {/* FAQs in Accordion */}
       {service?.faqs?.length > 0 && (
@@ -225,7 +214,7 @@ export default function ServicePage({
 
       {/* Testimonials Slider */}
       {service?.testimonials?.length > 0 && (
-        <Section title="Client Testimonials">
+        <Section title={`Client Testimonials for ${service?.title}`}>
           <div className="gap-6 py-2 px-1">
             {service?.testimonials.map((t, i) => (
               <div
@@ -274,7 +263,6 @@ export default function ServicePage({
     </section>
   );
 }
-
 
 // === Helpers ===
 
