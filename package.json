@@ -1,5 +1,5 @@
 {
-  "name": "syedalinaqihasni",
+  "name": "syedalinaqihasni.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -85,7 +85,7 @@
     "eslint-config-next": "15.2.1"
   },
   "main": "index.js",
-  "repository": "https://github.com/syedalinaqihasni/sanity.Syedalinaqihasni.com.git",
+  "repository": "https://github.com/syedalinaqihasni/Syedalinaqihasni.com.git",
   "author": "Syed Ali Naqi Hasni <engr.syedalinaqihasni@gmail.com>",
   "license": "MIT"
 }
