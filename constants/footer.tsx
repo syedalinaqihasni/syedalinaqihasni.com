@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram, Mail, Phone, MapPin, Youtube} from 'lucide-react';
 
 export const CONSTANT = {
   brandName: 'Syed Ali Naqi Hasni',
@@ -27,25 +27,25 @@ export const CONTACT_INFO = [
   {
     label: 'Phone',
     value: '+92 (316) 226-5948',
-    link: 'tel:923162265948',
+    link: 'tel:00923162265948',
     icon: Phone,
   },
   {
     label: 'Phone',
     value: '+92 (309) 273-4366',
-    link: 'tel:923092734366',
+    link: 'tel:00923092734366',
     icon: Phone,
   },
   {
     label: 'Address',
     value: 'Saeedabad, Baldia Town, Karachi, Pakistan',
-   link:'#',
+    link:'https://g.co/kgs/wpXTGaH',
     icon: MapPin,
   },
   {
     label: 'Address',
-    value: 'Gulistn e Johr, Baldia Town, Karachi, Pakistan',
-    link:'#',
+    value: 'BLock 1, Gulistn e Johr, Karachi, Pakistan',
+    link:'https://g.co/kgs/j2Uu9sd',
     icon: MapPin,
   },
 ];
@@ -70,6 +70,7 @@ export const LINKS_GROUPS = [
     { name: 'Certificates', path: '/certificates' },
     { name: 'Blogs', path: '/blogs' },
     { name: 'Events', path: '/events' },
+    { name: 'Sitemap', path: '/sitemap' },
   ],
 ];
 
@@ -77,26 +78,31 @@ export const SOCIAL_LINKS = [
   {
     icon: Github,
     url: 'https://github.com',
-    label: 'GitHub',
+    label: 'GitHub of Syed Ali Naqi Hasni',
   },
   {
     icon: Linkedin,
     url: 'https://linkedin.com',
-    label: 'LinkedIn',
+    label: 'LinkedIn of Syed Ali Naqi Hasni',
   },
   {
     icon: Twitter,
     url: 'https://twitter.com',
-    label: 'Twitter',
+    label: 'Twitter of Syed Ali Naqi Hasni',
   },
   {
     icon: Instagram,
     url: 'https://instagram.com',
-    label: 'Instagram',
+    label: 'Instagram of Syed Ali Naqi Hasni',
+  },
+  {
+    icon: Youtube,
+    url: 'https://www.youtube.com/@syedalinaqihasni',
+    label: 'Youtube of Syed Ali Naqi Hasni',
   },
   {
     icon: Mail,
     url: 'mailto:syedhasni151214@gmail.com',
-    label: 'Email',
+    label: 'Email of Syed Ali Naqi Hasni',
   },
 ];

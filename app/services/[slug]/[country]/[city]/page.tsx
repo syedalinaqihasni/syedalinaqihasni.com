@@ -154,14 +154,12 @@ export default function ServicePage({
             <Section title="Related Serivices in Your City">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
-                  <Link href={serv} key={serv}>
-                    <Badge variant="secondary" className="text-xs">
-                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                      {area ? dashToProperCase(area) : ""}{" "}
-                      {city ? dashToProperCase(city) : ""}{" "}
-                      {country ? dashToProperCase(country) : ""}
-                    </Badge>
-                  </Link>
+                  <Badge key={serv} variant="secondary" className="text-xs">
+                    {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                    {area ? dashToProperCase(area) : ""}{" "}
+                    {city ? dashToProperCase(city) : ""}{" "}
+                    {country ? dashToProperCase(country) : ""}
+                  </Badge>
                 ))}
               </div>
             </Section>
