@@ -243,7 +243,7 @@ export default function ServicePage({
               </Button>
             </Link>
           </div>
-          <FeaturedPricing />
+          <FeaturedPricing  plans={service.plans}/>
         </div>
       </section>
       <div className="text-center mt-16">

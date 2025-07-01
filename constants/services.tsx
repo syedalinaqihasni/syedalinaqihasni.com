@@ -1,3 +1,12 @@
+import {
+  FRONTEND_DEVELOPMENT_PLANS,
+  WEBSITE_MAINTENANCE_PLANS,
+  SEO_PLANS,
+  WEB_APPLICATION_PLANS,
+  WORDPRESS_DEVELOPMENT_PLANS,
+  UI_UX_DESIGN_PLANS,
+  ECOMMERCE_PLANS,
+} from "@/constants/pricing";
 export const SERVICES = [
   {
     id: 1,
@@ -6,6 +15,7 @@ export const SERVICES = [
       "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies.",
     icon: "🎨",
     slug: "frontend-development",
+    plans: FRONTEND_DEVELOPMENT_PLANS,
     servs: [
       "frontend-development",
       "web-development",
@@ -101,12 +111,93 @@ export const SERVICES = [
   `,
   },
   {
+    id: 7,
+    title: "Web Application Development",
+    description:
+      "Custom web application solutions tailored to your business needs, focusing on performance, scalability, and user experience.",
+    icon: "💻",
+    plans: WEB_APPLICATION_PLANS,
+    slug: "web-application-development",
+    servs: [
+      "web-app-development",
+      "custom-web-app",
+      "frontend-development",
+      "backend-development",
+      "fullstack-development",
+      "api-integration",
+    ],
+    features: [
+      "Custom UI/UX Design",
+      "Responsive Frontend",
+      "Robust Backend",
+      "API Integration",
+      "Authentication & Authorization",
+      "Performance Optimization",
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker",
+    ],
+    startingPrice: "$2000",
+    deliveryTime: "4-6 weeks",
+    category: "development",
+    deliverables: [
+      "Fully functional web application",
+      "Source code",
+      "Documentation",
+      "Deployment scripts",
+      "API documentation",
+    ],
+    requirements: [
+      "Project requirements/specifications",
+      "Design preferences (if any)",
+      "Third-party integrations (if any)",
+      "Hosting details (if deployment required)",
+      "Business goals",
+    ],
+    faqs: [
+      {
+        question: "Can you build both frontend and backend?",
+        answer: "Yes, I offer full-stack web application development services.",
+      },
+      {
+        question: "Will my app be mobile-friendly?",
+        answer:
+          "Absolutely, all web applications are built to be responsive and mobile-friendly.",
+      },
+    ],
+    testimonials: [
+      {
+        client: "Sarah Lee, CTO at FinTechPro",
+        quote:
+          "Our custom dashboard was delivered on time and exceeded our expectations. Highly professional!",
+      },
+    ],
+    previousProjects: [
+      {
+        title: "FinTechPro Dashboard",
+        link: "https://www.fintechpro.com",
+        description:
+          "Developed a scalable analytics dashboard for a fintech startup, enabling real-time data insights.",
+      },
+    ],
+    relatedServices: ["ui-ux-design", "api-development"],
+    detailedDescription: `
+<p>I offer <strong>end-to-end web application development</strong> services, from planning and design to deployment and maintenance. My solutions are secure, scalable, and tailored to your unique business requirements.</p>
+`,
+  },
+  {
     id: 2,
     title: "WordPress Development",
     description:
       "Custom WordPress websites, themes, and plugins tailored to your business needs.",
     icon: "📝",
     slug: "wordpress-development",
+    plans: WORDPRESS_DEVELOPMENT_PLANS,
     servs: [
       "wordpress-development",
       "wordpress-website",
@@ -187,6 +278,7 @@ export const SERVICES = [
       "Complete online store solutions with secure payment processing and inventory management.",
     icon: "🛒",
     slug: "ecommerce-solutions",
+    plans: ECOMMERCE_PLANS,
     servs: [
       "ecommerce-solutions",
       "shopify-development",
@@ -261,6 +353,7 @@ export const SERVICES = [
       "User-centered design solutions that enhance user experience and drive conversions.",
     icon: "🎯",
     slug: "ui-ux-design",
+    plans: UI_UX_DESIGN_PLANS,
     servs: [
       "ui-ux-design",
       "user-experience",
@@ -334,6 +427,7 @@ export const SERVICES = [
       "Comprehensive SEO strategies to improve your website's visibility and search rankings.",
     icon: "📈",
     slug: "seo-optimization",
+    plans: SEO_PLANS,
     servs: [
       "seo-optimization",
       "search-engine-optimization",
@@ -406,6 +500,7 @@ export const SERVICES = [
       "Ongoing support and maintenance to keep your website secure, updated, and performing optimally.",
     icon: "🔧",
     slug: "website-maintenance",
+    plans: WEBSITE_MAINTENANCE_PLANS,
     servs: [
       "website-maintenance",
       "site-support",
@@ -470,86 +565,6 @@ export const SERVICES = [
   <p>I offer <strong>comprehensive website maintenance</strong> to keep your site secure, updated, and high-performing. My service includes regular updates, backups, security monitoring, and fast bug fixes.</p>
   `,
   },
-  {
-    id: 7,
-    title: "Web Application Development",
-    description:
-      "Custom web application solutions tailored to your business needs, focusing on performance, scalability, and user experience.",
-    icon: "💻",
-    slug: "web-application-development",
-    servs: [
-      "web-app-development",
-      "custom-web-app",
-      "frontend-development",
-      "backend-development",
-      "fullstack-development",
-      "api-integration",
-    ],
-    features: [
-      "Custom UI/UX Design",
-      "Responsive Frontend",
-      "Robust Backend",
-      "API Integration",
-      "Authentication & Authorization",
-      "Performance Optimization",
-    ],
-    technologies: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "PostgreSQL",
-      "Docker",
-    ],
-    startingPrice: "$2000",
-    deliveryTime: "4-6 weeks",
-    category: "development",
-    deliverables: [
-      "Fully functional web application",
-      "Source code",
-      "Documentation",
-      "Deployment scripts",
-      "API documentation",
-    ],
-    requirements: [
-      "Project requirements/specifications",
-      "Design preferences (if any)",
-      "Third-party integrations (if any)",
-      "Hosting details (if deployment required)",
-      "Business goals",
-    ],
-    faqs: [
-      {
-        question: "Can you build both frontend and backend?",
-        answer: "Yes, I offer full-stack web application development services.",
-      },
-      {
-        question: "Will my app be mobile-friendly?",
-        answer:
-          "Absolutely, all web applications are built to be responsive and mobile-friendly.",
-      },
-    ],
-    testimonials: [
-      {
-        client: "Sarah Lee, CTO at FinTechPro",
-        quote:
-          "Our custom dashboard was delivered on time and exceeded our expectations. Highly professional!",
-      },
-    ],
-    previousProjects: [
-      {
-        title: "FinTechPro Dashboard",
-        link: "https://www.fintechpro.com",
-        description:
-          "Developed a scalable analytics dashboard for a fintech startup, enabling real-time data insights.",
-      },
-    ],
-    relatedServices: ["ui-ux-design", "api-development"],
-    detailedDescription: `
-<p>I offer <strong>end-to-end web application development</strong> services, from planning and design to deployment and maintenance. My solutions are secure, scalable, and tailored to your unique business requirements.</p>
-`,
-  },
- 
 ];
 
 export const SERVICE_CATEGORIES = [

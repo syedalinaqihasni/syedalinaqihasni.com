@@ -23,10 +23,10 @@ const styles = {
   deliveryTime: "text-sm text-muted-foreground",
 };
 
-export default function FeaturedServices() {
+export default function FeaturedServices({services}:{services: typeof FEATURED_SERVICES}) {
   return (
     <div className={styles?.grid}>
-      {FEATURED_SERVICES.map((service, index) => (
+      {services.map((service, index) => (
         <motion.div
           key={service?.id}
           initial={{ opacity: 0, y: 20 }}

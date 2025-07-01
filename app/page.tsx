@@ -12,8 +12,14 @@ import { SKILLS } from "@/constants/skills";
 import { posts } from "@/constants/blogs";
 import FeaturedServices from "@/components/home/featured-services";
 import FeaturedPricing from "@/components/home/featured-pricing";
-import StructuredData from '@/components/StructuredData';
-import { aboutMe, websiteSchema, organizationSchema } from '@/constants/structuredData';
+import StructuredData from "@/components/StructuredData";
+import {
+  aboutMe,
+  websiteSchema,
+  organizationSchema,
+} from "@/constants/structuredData";
+import { FEATURED_PRICING } from "@/constants/pricing";
+import { FEATURED_SERVICES } from "@/constants/services";
 
 const styles = {
   sectionPadding: "py-16 px-4",
@@ -89,7 +95,7 @@ export default function Page() {
       <StructuredData data={aboutMe} />
       <StructuredData data={websiteSchema} />
       <StructuredData data={organizationSchema} />
-      
+
       <div>
         <section className={styles?.heroPadding}>
           <div className={styles?.containerMedium}>
@@ -125,7 +131,10 @@ export default function Page() {
               <div className={styles?.heroImageCol}>
                 <div className={styles?.heroImageWrapper}>
                   <Image
-                    src={hero?.imageSrc || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"}
+                    src={
+                      hero?.imageSrc ||
+                      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"
+                    }
                     alt={hero?.imageAlt}
                     fill
                     className={"object-cover"}
@@ -136,7 +145,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        
+
         {/* Services Section */}
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
@@ -152,7 +161,7 @@ export default function Page() {
                 </Button>
               </Link>
             </div>
-            <FeaturedServices />
+            <FeaturedServices services={FEATURED_SERVICES} />
           </div>
         </section>
 
@@ -171,7 +180,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-        
+
         {/* Pricing Section */}
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
@@ -187,16 +196,13 @@ export default function Page() {
                 </Button>
               </Link>
             </div>
-            <FeaturedPricing />
+            <FeaturedPricing plans={FEATURED_PRICING} />
           </div>
         </section>
 
         {/* Blogs Section */}
         {posts?.length != 0 && (
-          <section
-            className={`${styles?.sectionPadding}`}
-            id={"blogs"}
-          >
+          <section className={`${styles?.sectionPadding}`} id={"blogs"}>
             <div className={styles?.containerLarge}>
               <div className={styles?.projectsHeaderWrapper}>
                 <h2 className={styles?.sectionHeaderLeft}>Recent Blogs</h2>
@@ -207,11 +213,11 @@ export default function Page() {
                   </Button>
                 </Link>
               </div>
-              <FeaturedBlogs  posts={posts}/>
+              <FeaturedBlogs posts={posts} />
             </div>
           </section>
         )}
-        
+
         {/* Contact Section */}
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}

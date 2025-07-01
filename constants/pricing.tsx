@@ -626,5 +626,17 @@ export const PRICING_PAGE_CONSTANT = {
     buttonLink: "https://www.syedalinaqihasni.com/contact",
   },
 };
-
+export type Plan = {
+  id: number;
+  name: string;
+  description: string;
+  slug: string;
+  pricing: string;
+  period: string;
+  popular: boolean;
+  features: string[];
+  buttonText: string;
+  limitations?: string[];
+  category: string;
+};
 export const FEATURED_PRICING = FRONTEND_DEVELOPMENT_PLANS.slice(0, 3);

@@ -95,11 +95,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <Section title="Related Serivices">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
-                  <Link href={serv} key={serv}>
-                    <Badge variant="secondary" className="text-xs">
-                      {toProperCase(serv).replace(/-/g, " ")}
-                    </Badge>
-                  </Link>
+                  // <Link href={serv} key={serv}>
+                  <Badge variant="secondary" className="text-xs" key={serv}>
+                    {toProperCase(serv).replace(/-/g, " ")}
+                  </Badge>
+                  // </Link>
                 ))}
               </div>
             </Section>
@@ -200,7 +200,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               </Button>
             </Link>
           </div>
-          <FeaturedPricing />
+          <FeaturedPricing plans={service?.plans} />
         </div>
       </section>
       <div className="text-center mt-16">

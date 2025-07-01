@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Check, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { FEATURED_PRICING } from '@/constants/pricing';
+import { Plan } from '@/constants/pricing';
 
 const styles = {
   grid: 'grid grid-cols-1 md:grid-cols-3 gap-8',
@@ -25,10 +25,10 @@ const styles = {
   popularButton: 'w-full bg-primary hover:bg-primary/90',
 };
 
-export default function FeaturedPricing() {
+export default function FeaturedPricing({ plans }: { plans: Plan [] }) {
   return (
     <div className={styles?.grid}>
-      {FEATURED_PRICING.map((plan, index) => (
+      {plans.map((plan, index) => (
         <motion.div
           key={plan?.id}
           initial={{ opacity: 0, y: 20 }}
