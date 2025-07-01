@@ -365,7 +365,7 @@ export default YourPage;
   "@type": "Organization",
   "name": "Your Company Name",
   "url": "https://www.yourwebsite.com/",
-  "logo": "https://www.yourwebsite.com/logo.png",
+  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.jpg",
   "description": "Brief description of your company",
   "address": {
     "@type": "PostalAddress",
@@ -422,7 +422,7 @@ export default YourPage;
   "@type": "Organization",
   "name": "Your Company Name",
   "url": "https://www.yourwebsite.com/",
-  "logo": "https://www.yourwebsite.com/logo.png",
+  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.jpg",
   "description": "Brief description of your company",
   "address": {
     "@type": "PostalAddress",

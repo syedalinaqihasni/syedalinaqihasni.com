@@ -17,11 +17,11 @@ import { RelatedProject } from "@/types/projects";
 import HtmlRenderer from "@/components/HtmlRenderer";
 
 // Correct version of generateStaticParams
-export async function generateStaticParams() {
-  return projects.map((project) => ({
-    slug: project.slug,
-  }));
-}
+// export async function generateStaticParams() {
+//   return projects.map((project) => ({
+//     slug: project.slug,
+//   }));
+// }
 
 export async function generateMetadata({
   params,

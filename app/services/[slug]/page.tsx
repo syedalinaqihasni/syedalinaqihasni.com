@@ -15,10 +15,10 @@ import { toProperCase } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
 
-export async function generateStaticParams() {
-  const allSlugs = SERVICES.flatMap((service) => service?.slug || []);
-  return allSlugs.map((slug) => ({ slug }));
-}
+// export async function generateStaticParams() {
+//   const allSlugs = SERVICES.flatMap((service) => service?.slug || []);
+//   return allSlugs.map((slug) => ({ slug }));
+// }
 
 export async function generateMetadata({
   params,

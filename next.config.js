@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +8,20 @@ const nextConfig = {
     domains: ['syedalinaqihasni.com'],
   },
   optimizeFonts: false,
+  async redirects() {
+    return [
+      {
+        source: '/blog',
+        destination: '/blogs',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug*',
+        destination: '/blogs/:slug*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

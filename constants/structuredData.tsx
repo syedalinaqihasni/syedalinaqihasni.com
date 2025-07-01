@@ -5,7 +5,7 @@ const aboutMe = {
   description:
     "Full-stack developer, freelancer, and tech content creator specializing in web technologies, freelancing, and developer humor.",
   url: "https://www.syedalinaqihasni.com",
-  image: "https://www.syedalinaqihasni.com/images/syed-ali-naqi-hasni.jpg",
+  image: "https://www.syedalinaqihasni.com/images/about-us-syed-ali-naqi-hasni.jpg",
   jobTitle: "Full-Stack Developer",
   worksFor: {
     "@type": "Organization",
@@ -165,7 +165,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Hasni Developers",
   url: "https://www.syedalinaqihasni.com",
-  logo: "https://www.syedalinaqihasni.com/images/logo.png",
+  logo: "https://www.syedalinaqihasni.com/images/about-us-syed-ali-naqi-hasni.jpg",
   description:
     "Professional web development services specializing in React, Next.js, WordPress, and modern web technologies.",
   founder: {
@@ -683,8 +683,8 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Hasni Developers",
   image: [
-    "https://www.syedalinaqihasni.com/images/logo.png",
-    "https://www.syedalinaqihasni.com/images/office.jpg",
+    "https://www.syedalinaqihasni.com/images/about-us-syed-ali-naqi-hasni.jpg",
+    "https://www.syedalinaqihasni.com/images/about-us-syed-ali-naqi-hasni.jpg",
   ],
   description:
     "Professional web development services in Karachi, specializing in React, Next.js, WordPress, and e-commerce solutions.",
@@ -867,7 +867,7 @@ const localBusinessSchema = {
     },
   },
   hasMap: "https://maps.app.goo.gl/Sj48e6dCo6GiYviy5",
-  logo: "https://www.syedalinaqihasni.com/images/logo.png",
+  logo: "https://www.syedalinaqihasni.com/images/about-us-syed-ali-naqi-hasni.jpg",
   isAccessibleForFree: true,
   numberOfEmployees: 1,
   slogan: "Empowering Your Digital Presence",

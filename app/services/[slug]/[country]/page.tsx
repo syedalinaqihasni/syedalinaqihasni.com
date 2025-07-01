@@ -55,31 +55,31 @@ export async function generateMetadata({
     },
   };
 }
-export async function generateStaticParams() {
-  const params: {
-    slug: string;
-    country: string;
-    city: string;
-    area: string;
-  }[] = [];
+// export async function generateStaticParams() {
+//   const params: {
+//     slug: string;
+//     country: string;
+//     city: string;
+//     area: string;
+//   }[] = [];
 
-  for (const country of countries) {
-    for (const city of country.cities) {
-      for (const area of city.areas) {
-        for (const service of SERVICES) {
-          params.push({
-            slug: service?.slug,
-            country: country?.slug,
-            city: city?.slug,
-            area: area?.slug,
-          });
-        }
-      }
-    }
-  }
+//   for (const country of countries) {
+//     for (const city of country.cities) {
+//       for (const area of city.areas) {
+//         for (const service of SERVICES) {
+//           params.push({
+//             slug: service?.slug,
+//             country: country?.slug,
+//             city: city?.slug,
+//             area: area?.slug,
+//           });
+//         }
+//       }
+//     }
+//   }
 
-  return params;
-}
+//   return params;
+// }
 
 const styles = {
   sectionPadding: " px-4",

@@ -21,18 +21,18 @@ const styles = {
 };
 
 // Generate static params for all tags
-export async function generateStaticParams() {
-  // Collect all unique tags from projects
-  const tagsSet = new Set<string>();
-  projects.forEach(project => {
-    project.tags.forEach(tag => {
-      tagsSet.add(tag.toLowerCase().replace(/[\s/]+/g, '-'));
-    });
-  });
+// export async function generateStaticParams() {
+//   // Collect all unique tags from projects
+//   const tagsSet = new Set<string>();
+//   projects.forEach(project => {
+//     project.tags.forEach(tag => {
+//       tagsSet.add(tag.toLowerCase().replace(/[\s/]+/g, '-'));
+//     });
+//   });
 
-  // Return params in the format expected by Next.js
-  return Array.from(tagsSet).map(tag => ({ tag }));
-}
+//   // Return params in the format expected by Next.js
+//   return Array.from(tagsSet).map(tag => ({ tag }));
+// }
 
 // Generate <head> metadata dynamically
 export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {

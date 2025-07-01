@@ -37,17 +37,17 @@ export async function generateMetadata({ params }: { params: { category: string 
 }
 
 // Generate static params for category pages
-export async function generateStaticParams() {
-  // Get unique categories from events
-  const categories = Array.from(
-    new Set(
-      events
-        .map(event => event?.category?.toLowerCase().replace(/[\s/]+/g, '-'))
-        .filter(Boolean)
-    )
-  );
-  return categories.map(category => ({ category }));
-}
+// export async function generateStaticParams() {
+//   // Get unique categories from events
+//   const categories = Array.from(
+//     new Set(
+//       events
+//         .map(event => event?.category?.toLowerCase().replace(/[\s/]+/g, '-'))
+//         .filter(Boolean)
+//     )
+//   );
+//   return categories.map(category => ({ category }));
+// }
 
 // Server component
 export default async function Page({ params }: { params: { category: string } }) {
