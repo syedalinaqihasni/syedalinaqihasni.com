@@ -624,11 +624,13 @@ const generateProjectSchema = (project: any) => ({
 
 // Function to generate event schema
 const generateEventSchema = (event: any) => ({
+  "@context": "https://schema.org",
   "@type": "Event",
   name: event?.title,
   description: event?.description,
   image: event?.image,
   startDate: event?.date,
+  endDate: event?.endDate || event?.date, // fallback to startDate if endDate is missing
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: event?.virtual
     ? "https://schema.org/OnlineEventAttendanceMode"
@@ -645,11 +647,24 @@ const generateEventSchema = (event: any) => ({
       },
   organizer: {
     "@type": "Person",
-    name: "Syed Ali Naqi Hasni",
-    url: "https://www.syedalinaqihasni.com",
+    name: event?.organizer ||"Syed Ali Naqi Hasni",
+    url: event?.organizerUrl || "https://www.syedalinaqihasni.com",
+  },
+  performer: {
+    "@type": "Person",
+    name: event?.performer || "Syed Ali Naqi Hasni",
+  },
+  offers: {
+    "@type": "Offer",
+    url: `https://www.syedalinaqihasni.com/events/${event?.slug}`,
+    price: event?.price || "0",
+    priceCurrency: event?.currency || "USD",
+    availability: "https://schema.org/InStock",
+    validFrom: event?.offerStartDate || new Date().toISOString(),
   },
   url: `https://www.syedalinaqihasni.com/events/${event?.slug}`,
 });
+
 
 // Breadcrumb schema generator
 const generateBreadcrumbSchema = (
