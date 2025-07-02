@@ -513,36 +513,36 @@ export function generateServicePaths(countries: Country[], services: string[]) {
 //       for (const area of city.areas) {
 //         for (const service of SERVICES) {
 //           // service/country
-//           params.push({
+//           params?.push({
 //             slug: service?.slug,
 //             country: country?.slug,
 //           });
 //           // service/country/city
-//           params.push({
+//           params?.push({
 //             slug: service?.slug,
 //             country: country?.slug,
 //             city: city.slug,
 //           });
 //           // service/country/city/area
-//           params.push({
+//           params?.push({
 //             slug: service?.slug,
 //             country: country?.slug,
 //             city: city.slug,
 //             area: area?.slug,
 //           });
 //           // service/city
-//           params.push({
+//           params?.push({
 //             slug: service?.slug,
 //             city: city.slug,
 //           });
 //           // service/city/area
-//           params.push({
+//           params?.push({
 //             slug: service?.slug,
 //             city: city.slug,
 //             area: area?.slug,
 //           });
 //           // service/area
-//           params.push({
+//           params?.push({
 //             slug: service?.slug,
 //             area: area?.slug,
 //           });

@@ -14,6 +14,7 @@ import { Check, ArrowRight, Quote } from "lucide-react";
 import { toProperCase } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
+import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
 // export async function generateStaticParams() {
 //   const allSlugs = SERVICES.flatMap((service) => service?.slug || []);
@@ -25,17 +26,14 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return {};
-  return {
+
+  return generateDynamicMetadata({
     title: `${service?.title} | Syed Ali Naqi Hasni`,
     description: service?.description,
-    openGraph: {
-      title: `${service?.title} | Syed Ali Naqi Hasni`,
-      description: service?.description,
-      url: `https://www.syedalinaqihasni.com/${params.slug}`,
-    },
-  };
+    path: `/services/${service?.slug}`, 
+  });
 }
 
 const styles = {
@@ -63,7 +61,7 @@ const styles = {
 };
 
 export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return notFound();
 
   return (

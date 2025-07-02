@@ -61,25 +61,25 @@ const serviceRoutes = countries.flatMap(country =>
     city.areas.flatMap(area =>
       SERVICES.flatMap(service => [
         {
-          url: `${baseUrl}/services/${service.slug}`,
+          url: `${baseUrl}/services/${service?.slug}`,
           lastModified: new Date(),
           changeFrequency: 'monthly' as const,
           priority: 0.5,
         },
         {
-          url: `${baseUrl}/services/${service.slug}/${country.slug}`,
+          url: `${baseUrl}/services/${service?.slug}/${country.slug}`,
           lastModified: new Date(),
           changeFrequency: 'monthly' as const,
           priority: 0.5,
         },
         {
-          url: `${baseUrl}/services/${service.slug}/${country.slug}/${city.slug}`,
+          url: `${baseUrl}/services/${service?.slug}/${country.slug}/${city.slug}`,
           lastModified: new Date(),
           changeFrequency: 'monthly' as const,
           priority: 0.5,
         },
         {
-          url: `${baseUrl}/services/${service.slug}/${country.slug}/${city.slug}/${area.slug}`,
+          url: `${baseUrl}/services/${service?.slug}/${country.slug}/${city.slug}/${area.slug}`,
           lastModified: new Date(),
           changeFrequency: 'monthly' as const,
           priority: 0.5,

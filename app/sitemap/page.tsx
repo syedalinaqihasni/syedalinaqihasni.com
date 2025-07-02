@@ -139,12 +139,12 @@ export default function SitemapStyleLinktreePage() {
                 <>
                   <ul className="ml-4 mb-4 space-y-1">
                     {SERVICES.map((service) => (
-                      <li key={service.slug}>
+                      <li key={service?.slug}>
                         <Link
-                          href={`/services/${service.slug}/${country.slug}`}
+                          href={`/services/${service?.slug}/${country.slug}`}
                           className="hover:underline"
                         >
-                          👨🏻‍🔧 {service.title} in {country.name}
+                          👨🏻‍🔧 {service?.title} in {country.name}
                         </Link>
                       </li>
                     ))}
@@ -163,12 +163,12 @@ export default function SitemapStyleLinktreePage() {
                         <>
                           <ul className="ml-4 mb-2 space-y-1">
                             {SERVICES.map((service) => (
-                              <li key={service.slug}>
+                              <li key={service?.slug}>
                                 <Link
-                                  href={`/services/${service.slug}/${country.slug}/${city.slug}`}
+                                  href={`/services/${service?.slug}/${country.slug}/${city.slug}`}
                                   className="hover:underline"
                                 >
-                                  👨🏻‍🔧 {service.title} in {city.name},{" "}
+                                  👨🏻‍🔧 {service?.title} in {city.name},{" "}
                                   {country.name}
                                 </Link>
                               </li>
@@ -187,12 +187,12 @@ export default function SitemapStyleLinktreePage() {
                               {openAreas[area.slug] && (
                                 <ul className="ml-4 space-y-1">
                                   {SERVICES.map((service) => (
-                                    <li key={service.slug}>
+                                    <li key={service?.slug}>
                                       <Link
-                                        href={`/services/${service.slug}/${country.slug}/${city.slug}/${area.slug}`}
+                                        href={`/services/${service?.slug}/${country.slug}/${city.slug}/${area.slug}`}
                                         className="hover:underline"
                                       >
-                                        👨🏻‍🔧 {service.title} in {area.name},{" "}
+                                        👨🏻‍🔧 {service?.title} in {area.name},{" "}
                                         {city.name}, {country.name}
                                       </Link>
                                     </li>

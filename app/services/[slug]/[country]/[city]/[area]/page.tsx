@@ -15,46 +15,38 @@ import { dashToProperCase } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
 import { countries } from "@/constants/area-services";
+import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string; country?: string; city?: string; area?: string };
 }): Promise<Metadata> {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return {};
 
   const { country, city, area } = params;
 
-  // Helper to build location string
+  // Create location string for SEO
   const locationParts = [area, city, country].filter(Boolean);
-  const location = locationParts.length
-    ? ` in ${locationParts.join(", ")}`
-    : "";
+  const location = locationParts?.length
+    ? ` in ${locationParts?.join(', ')}`
+    : '';
 
-  const title = `${service.title}${location} | Syed Ali Naqi Hasni`;
-  const description = service.description;
+  const title = `${service?.title}${location} | Syed Ali Naqi Hasni`;
+  const description = service?.description;
 
-  // Build URL parts safely
-  const urlParts = [
-    "https://www.syedalinaqihasni.com",
-    params.slug,
-    country,
-    city,
-    area,
-  ].filter(Boolean);
-  const url = urlParts.join("/");
+  // Build dynamic path for full URL
+  const pathParts = ['/services', params?.slug, country, city, area].filter(Boolean);
+  const path = pathParts.join('/');
 
-  return {
+  return generateDynamicMetadata({
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url,
-    },
-  };
+    path,
+  });
 }
+
 // export async function generateStaticParams() {
 //   const params: {
 //     slug: string;
@@ -67,7 +59,7 @@ export async function generateMetadata({
 //     for (const city of country.cities) {
 //       for (const area of city.areas) {
 //         for (const service of SERVICES) {
-//           params.push({
+//           params?.push({
 //             slug: service?.slug,
 //             country: country?.slug,
 //             city: city?.slug,
@@ -110,21 +102,21 @@ export default function ServicePage({
 }: {
   params: { slug: string; country?: string; city?: string; area?: string };
 }) {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return notFound();
   const { country, city, area } = params;
 
   // Validate country, city, area
   let countryObj, cityObj, areaObj;
 
-  if (params.country) {
-    countryObj = countries.find((c) => c.slug === params.country);
+  if (params?.country) {
+    countryObj = countries.find((c) => c.slug === params?.country);
     if (!countryObj) return notFound();
-    if (params.city) {
-      cityObj = countryObj.cities.find((ct) => ct.slug === params.city);
+    if (params?.city) {
+      cityObj = countryObj.cities.find((ct) => ct.slug === params?.city);
       if (!cityObj) return notFound();
-      if (params.area) {
-        areaObj = cityObj.areas.find((a) => a.slug === params.area);
+      if (params?.area) {
+        areaObj = cityObj.areas.find((a) => a.slug === params?.area);
         if (!areaObj) return notFound();
       }
     }
@@ -243,7 +235,7 @@ export default function ServicePage({
               </Button>
             </Link>
           </div>
-          <FeaturedPricing  plans={service.plans}/>
+          <FeaturedPricing  plans={service?.plans}/>
         </div>
       </section>
       <div className="text-center mt-16">

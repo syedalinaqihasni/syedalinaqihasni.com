@@ -62,7 +62,7 @@ export async function generateStaticParams() {
 }
 
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const post = posts.find((post) => post.slug === params.slug);
+  const post = posts.find((post) => post.slug === params?.slug);
   if (!post) return notFound();
 
   const blogPostSchema = generateBlogPostSchema(post);

@@ -22,7 +22,7 @@ const styles = {
 
 // Generate <head> metadata dynamically
 export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {
-  const tag = params.tag;
+  const tag = params?.tag;
   const title = `${dashToProperCase(tag)} Blogs`;
   const description =
     DESCRIPTION_OVERRIDES[tag.toLowerCase()] ||
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
 
 // Server component
 export default async function Page({ params }: { params: { tag: string } }) {
-  const tag = params.tag;
+  const tag = params?.tag;
   
   const tagedPosts = posts.filter(post =>
     post?.tags.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))
