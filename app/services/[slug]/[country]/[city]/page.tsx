@@ -25,7 +25,10 @@ export async function generateMetadata({
   const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return {};
 
-  const { country, city, area } = params;
+  // Convert dashed params to proper case
+  const country = params.country ? dashToProperCase(params.country) : undefined;
+  const city = params.city ? dashToProperCase(params.city) : undefined;
+  const area = params.area ? dashToProperCase(params.area) : undefined;
 
   // Create location string for SEO
   const locationParts = [area, city, country].filter(Boolean);
