@@ -150,7 +150,7 @@ export async function GET() {
     }
 
     const files = fs.readdirSync(galleryPath);
-    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.svg'];
+    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.svg', '.heic',];
 
     const imageFiles = files.filter(file => {
       const ext = path.extname(file).toLowerCase();
