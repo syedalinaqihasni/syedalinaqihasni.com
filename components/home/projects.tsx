@@ -30,7 +30,7 @@ if (!featuredProjects?.length) return notFound();
             <div className={"relative h-48 w-full"}>
               <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>
                 <Image
-                  src={project?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg'}
+                  src={project?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp'}
                   alt={`${project?.title} - Syed Ali Naqi Hasni`}
                   fill
                   className={"object-cover"}

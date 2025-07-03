@@ -57,7 +57,7 @@ const EventsList = ({ events }: { events: Event[] }) => {
                   className={imageWrapper}
                 >
                   <Image
-                    src={event?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg'}
+                    src={event?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp'}
                     alt={`${event?.title} - Syed Ali Naqi Hasni`}
                     fill
                     className={image}

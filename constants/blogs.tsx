@@ -183,7 +183,7 @@ export const bp2 = {
   publishedAt: "2025-06-20",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either-syed-ali-naqi-hasni.png",
+    "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either-syed-ali-naqi-hasni.webp",
   category: `Opinions`,
   tags: ["WordPress", "CMS", "Backend Integration"],
   content: `<div>
@@ -229,7 +229,7 @@ export const bp3 = {
   publishedAt: "2024-01-19",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.jpg",
+    "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.webp",
   category: `Tutorials`,
   tags: ["Next.js", "Node.js", "Backend Integration"],
   content: `<div>
@@ -347,7 +347,7 @@ export const bp4 = {
   publishedAt: "2024-02-26",
   readingTime: "8 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.png", // Recommend replacing with a relevant SEO/Schema image
+    "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.webp", // Recommend replacing with a relevant SEO/Schema image
   category: `Tips`,
   tags: ["SEO", "Web Development", "Digital Strategy"],
   content: `<div>
@@ -375,7 +375,7 @@ export const bp4 = {
   "@type": "Organization",
   "name": "Your Company Name",
   "url": "https://www.yourwebsite.com/",
-  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.jpg",
+  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.webp",
   "description": "Brief description of your company",
   "address": {
     "@type": "PostalAddress",
@@ -415,7 +415,7 @@ export const bp4 = {
   "name": "John Doe",
   "jobTitle": "Founder & CEO",
   "url": "https://www.example.com/john-doe",
-  "image": "https://www.example.com/john-doe.jpg",
+  "image": "https://www.example.com/john-doe.webp",
   "description": "Brief description of John Doe"
 }
 </script>
@@ -432,7 +432,7 @@ export const bp4 = {
   "@type": "Organization",
   "name": "Your Company Name",
   "url": "https://www.yourwebsite.com/",
-  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.jpg",
+  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.webp",
   "description": "Brief description of your company",
   "address": {
     "@type": "PostalAddress",
@@ -589,7 +589,7 @@ export const bp5 = {
   publishedAt: "2024-11-27",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.jpg", // Consider updating this image to something Git/Dev-related
+    "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.webp", // Consider updating this image to something Git/Dev-related
   category: `Tips`,
   tags: ["Git", "Project Management", "Best Practices"],
   content: `<div>
@@ -698,7 +698,7 @@ export const bp6 = {
   publishedAt: "2024-11-27",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.png", // Update the image filename to match topic
+    "https://www.syedalinaqihasni.com/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.webp", // Update the image filename to match topic
   category: `Tutorials`,
   tags: ["React", "WordPress", "Headless CMS"],
   content: `<div >
@@ -763,7 +763,7 @@ export const bp7 = {
   publishedAt: "2024-01-04",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.png",
+    "https://www.syedalinaqihasni.com/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["GitHub", "CLI Tools", "Developer Productivity"],
   content: `<div >
@@ -956,7 +956,7 @@ export const bp8 = {
   publishedAt: "2023-07-21",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.png", // Consider updating this image to match the topic
+    "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.webp", // Consider updating this image to match the topic
   category: `Opinions`,
   tags: ["Teamwork", "Leadership", "Workplace Strategy"],
   content: `<div>
@@ -1022,7 +1022,7 @@ export const bp9 = {
   publishedAt: "2023-07-17",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.png",
+    "https://www.syedalinaqihasni.com/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["Headless CMS", "PWA", "Content Strategy"],
   content: `<div >
@@ -1071,7 +1071,7 @@ export const bp10 = {
   publishedAt: "2025-01-14",
   readingTime: "6 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.jpg",
+    "https://www.syedalinaqihasni.com/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.webp",
   category: `Opinions`,
   tags: ["Security", "GitHub", "Development Tools"],
   content: `<div >
@@ -1216,7 +1216,7 @@ export const bp11 = {
   publishedAt: "2023-06-12",
   readingTime: "4 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.png",
+    "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["Shopify", "eCommerce", "Business Tools"],
   content: `<div>
@@ -1323,7 +1323,7 @@ export const bp12 = {
   publishedAt: "2025-04-28",
   readingTime: "4 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.jpg",
+    "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.webp",
   category: `Opinions`,
   tags: ["Programming", "Software Design", "Best Practices"],
   content: `<div>
@@ -2364,7 +2364,7 @@ export const bp18 = {
   publishedAt: "2022-09-26",
   readingTime: "4 min read",
   image:
-    "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.jpg",
+    "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["SEO", "Getting Started", "Tutorial"],
   content: `<div>
@@ -3216,7 +3216,7 @@ export const bp23 = {
     <h2>Responsive Spacing and Sizing</h2>
     <p>Tailwind's spacing utilities (padding, margin, width, height) can also be made responsive by prefixing them with breakpoints:</p>
     <pre><code><div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
-<img class="w-full md:w-1/2" src="image.jpg" alt="Example" />
+<img class="w-full md:w-1/2" src="image.webp" alt="Example" />
 </code></pre>
     <p>This enables developers to scale spacing and sizing progressively as the screen size increases, without writing custom CSS.</p>
     <h2>Responsive Typography and Text Alignment</h2>

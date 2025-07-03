@@ -118,7 +118,7 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
 export const defaultMetadata = {
   author: 'Syed Ali Naqi Hasni',
   siteName: 'Syed Ali Naqi Hasni',
-  image: `${siteBase}/images/about-us-syed-ali-naqi-hasni.jpg`,
+  image: `${siteBase}/images/about-us-syed-ali-naqi-hasni.webp`,
   googleSiteVerification: 'obYcqlLDubY2nOpL61i22oXpe7nNdWiNLhCb_VDyIQA',
   baseUrl: siteBase,
   keywords: [
@@ -187,25 +187,25 @@ export function generateMetadata({
   category: 'technology',
   icons: {
     icon: [
-      { url: 'https://www.syedalinaqihasni.com/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: 'https://www.syedalinaqihasni.com/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-      { url: 'https://www.syedalinaqihasni.com/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: 'https://www.syedalinaqihasni.com/favicon-32x32.webp', sizes: '32x32', type: 'image/png' },
+      { url: 'https://www.syedalinaqihasni.com/favicon-96x96.webp', sizes: '96x96', type: 'image/png' },
+      { url: 'https://www.syedalinaqihasni.com/favicon-16x16.webp', sizes: '16x16', type: 'image/png' },
     ],
     apple: [
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-57x57.png', sizes: '57x57' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-60x60.png', sizes: '60x60' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-72x72.png', sizes: '72x72' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-76x76.png', sizes: '76x76' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-114x114.png', sizes: '114x114' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-120x120.png', sizes: '120x120' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-144x144.png', sizes: '144x144' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-152x152.png', sizes: '152x152' },
-      { url: 'https://www.syedalinaqihasni.com/apple-icon-180x180.png', sizes: '180x180' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-57x57.webp', sizes: '57x57' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-60x60.webp', sizes: '60x60' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-72x72.webp', sizes: '72x72' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-76x76.webp', sizes: '76x76' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-114x114.webp', sizes: '114x114' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-120x120.webp', sizes: '120x120' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-144x144.webp', sizes: '144x144' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-152x152.webp', sizes: '152x152' },
+      { url: 'https://www.syedalinaqihasni.com/apple-icon-180x180.webp', sizes: '180x180' },
     ],
     other: [
-      { rel: 'icon', url: 'https://www.syedalinaqihasni.com/android-icon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { rel: 'icon', url: 'https://www.syedalinaqihasni.com/android-icon-192x192.webp', sizes: '192x192', type: 'image/png' },
       { rel: 'manifest', url: 'https://www.syedalinaqihasni.com/manifest.json' },
-      { rel: 'msapplication-TileImage', url: 'https://www.syedalinaqihasni.com/ms-icon-144x144.png' },
+      { rel: 'msapplication-TileImage', url: 'https://www.syedalinaqihasni.com/ms-icon-144x144.webp' },
     ],
   },
   robots: {

@@ -5,8 +5,8 @@ import path from 'path';
 const certs = [
   {
     id: 1,
-    src: `https://syedalinaqihasni.com/certificates/blogs-placeholder-syed-ali-naqi-hasni.jpg'`,
-    alt: 'blogs-placeholder-syed-ali-naqi-hasni.jpg',
+    src: `https://syedalinaqihasni.com/certificates/blogs-placeholder-syed-ali-naqi-hasni.webp'`,
+    alt: 'blogs-placeholder-syed-ali-naqi-hasni.webp',
     caption: 'Generic blog placeholder image.',
     link: '#',
     album: 'badges',
@@ -14,7 +14,7 @@ const certs = [
   },
   {
     id: 2,
-    src: `https://syedalinaqihasni.com/certificates/content-management-for-pwas-embrace-the-headless-cms-approach.png`,
+    src: `https://syedalinaqihasni.com/certificates/content-management-for-pwas-embrace-the-headless-cms-approach.webp`,
     alt: "Headless CMS for PWAs",
     caption: "Managing content for PWAs using a headless CMS approach.",
     link: '#',
@@ -23,7 +23,7 @@ const certs = [
   },
   {
     id: 3,
-    src: `https://syedalinaqihasni.com/certificates/essential-apps-every-shopify-store-must-have.png`,
+    src: `https://syedalinaqihasni.com/certificates/essential-apps-every-shopify-store-must-have.webp`,
     alt: "Shopify essential apps",
     caption: "Top apps every Shopify store should have.",
     link: '#',
@@ -32,7 +32,7 @@ const certs = [
   },
   {
     id: 4,
-    src: `https://syedalinaqihasni.com/certificates/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png`,
+    src: `https://syedalinaqihasni.com/certificates/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.webp`,
     alt: "GitHub CLI Guide",
     caption: "Streamline your workflow using GitHub CLI.",
     link: '#',
@@ -59,7 +59,7 @@ const certs = [
   },
   {
     id: 7,
-    src: `https://syedalinaqihasni.com/certificates/how-to-optimize-your-commits-for-efficient-project-management.jpg`,
+    src: `https://syedalinaqihasni.com/certificates/how-to-optimize-your-commits-for-efficient-project-management.webp`,
     alt: "Optimizing Commits",
     caption: "Write meaningful commits for better project management.",
     link: '#',
@@ -68,7 +68,7 @@ const certs = [
   },
   {
     id: 8,
-    src: `https://syedalinaqihasni.com/certificates/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg`,
+    src: `https://syedalinaqihasni.com/certificates/integrating-nodemailer-with-nextjs-a-comprehensive-guide.webp`,
     alt: "Nodemailer + Next.js",
     caption: "Integrating Nodemailer with Next.js.",
     link: '#',
@@ -77,7 +77,7 @@ const certs = [
   },
   {
     id: 9,
-    src: `https://syedalinaqihasni.com/certificates/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png`,
+    src: `https://syedalinaqihasni.com/certificates/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.webp`,
     alt: "ReactPress Workflow",
     caption: "Seamless React app integration with WordPress CMS.",
     link: '#',
@@ -86,7 +86,7 @@ const certs = [
   },
   {
     id: 10,
-    src: `https://syedalinaqihasni.com/certificates/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg`,
+    src: `https://syedalinaqihasni.com/certificates/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.webp`,
     alt: "SOLID Principles Guide",
     caption: "Quick guide to SOLID principles for better OOP design.",
     link: '#',
@@ -95,7 +95,7 @@ const certs = [
   },
   {
     id: 11,
-    src: `https://syedalinaqihasni.com/certificates/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg`,
+    src: `https://syedalinaqihasni.com/certificates/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.webp`,
     alt: "Dependabot & CodeQL Guide",
     caption: "Improve security with GitHub Dependabot and CodeQL.",
     link: '#',
@@ -104,7 +104,7 @@ const certs = [
   },
   {
     id: 12,
-    src: `https://syedalinaqihasni.com/certificates/the-beginners-guide-to-seo.jpg`,
+    src: `https://syedalinaqihasni.com/certificates/the-beginners-guide-to-seo.webp`,
     alt: "Beginner's SEO Guide",
     caption: "A beginner-friendly guide to understanding SEO.",
     link: '#',
@@ -113,7 +113,7 @@ const certs = [
   },
   {
     id: 13,
-    src: `https://syedalinaqihasni.com/certificates/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png`,
+    src: `https://syedalinaqihasni.com/certificates/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.webp`,
     alt: "Team Collaboration Synergy",
     caption: "Balance individuality and teamwork for maximum impact.",
     link: '#',
@@ -131,7 +131,7 @@ const certs = [
   },
   {
     id: 15,
-    src: `https://syedalinaqihasni.com/certificates/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png`,
+    src: `https://syedalinaqihasni.com/certificates/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.webp`,
     alt: "Structured Data SEO",
     caption: "Boost SEO with structured data markup.",
     link: '#',

@@ -78,7 +78,7 @@ const TagCloud = ({ posts }: { posts: Post[] }) => {
                 className={"relative block h-48 w-full"}
               >
                 <Image
-                  src={post?.image ? post?.image : "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"}
+                  src={post?.image ? post?.image : "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"}
                   alt={`${post?.title} - Syed Ali Naqi Hasni`}
                   fill
                   className={styles?.image}

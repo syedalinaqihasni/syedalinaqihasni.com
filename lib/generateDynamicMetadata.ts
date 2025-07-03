@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 const baseUrl = 'https://www.syedalinaqihasni.com';
-const defaultOgImage = `${baseUrl}/images/about-us-syed-ali-naqi-hasni.jpg`;
+const defaultOgImage = `${baseUrl}/images/about-us-syed-ali-naqi-hasni.webp`;
 
 export function generateDynamicMetadata({
   title,

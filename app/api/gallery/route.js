@@ -4,15 +4,15 @@ import path from 'path';
 const galls = [
   {
     id: 1,
-    src: `https://www.syedalinaqihasni.com/gallery/blogs-placeholder-syed-ali-naqi-hasni.jpg'`,
-    alt: 'blogs-placeholder-syed-ali-naqi-hasni.jpg',
+    src: `https://www.syedalinaqihasni.com/gallery/blogs-placeholder-syed-ali-naqi-hasni.webp'`,
+    alt: 'blogs-placeholder-syed-ali-naqi-hasni.webp',
     caption: 'Generic blog placeholder image.',
     album: 'work',
     tags: ['placeholder', 'generic']
   },
   {
     id: 2,
-    src: `https://www.syedalinaqihasni.com/gallery/content-management-for-pwas-embrace-the-headless-cms-approach.png`,
+    src: `https://www.syedalinaqihasni.com/gallery/content-management-for-pwas-embrace-the-headless-cms-approach.webp`,
     alt: "Headless CMS for PWAs",
     caption: "Managing content for PWAs using a headless CMS approach.",
     album: "work",
@@ -20,7 +20,7 @@ const galls = [
   },
   {
     id: 3,
-    src: `https://www.syedalinaqihasni.com/gallery/essential-apps-every-shopify-store-must-have.png`,
+    src: `https://www.syedalinaqihasni.com/gallery/essential-apps-every-shopify-store-must-have.webp`,
     alt: "Shopify essential apps",
     caption: "Top apps every Shopify store should have.",
     album: "work",
@@ -28,7 +28,7 @@ const galls = [
   },
   {
     id: 4,
-    src: `https://www.syedalinaqihasni.com/gallery/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.png`,
+    src: `https://www.syedalinaqihasni.com/gallery/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli.webp`,
     alt: "GitHub CLI Guide",
     caption: "Streamline your workflow using GitHub CLI.",
     album: "work",
@@ -52,7 +52,7 @@ const galls = [
   },
   {
     id: 7,
-    src: `https://www.syedalinaqihasni.com/gallery/how-to-optimize-your-commits-for-efficient-project-management.jpg`,
+    src: `https://www.syedalinaqihasni.com/gallery/how-to-optimize-your-commits-for-efficient-project-management.webp`,
     alt: "Optimizing Commits",
     caption: "Write meaningful commits for better project management.",
     album: "work",
@@ -60,7 +60,7 @@ const galls = [
   },
   {
     id: 8,
-    src: `https://www.syedalinaqihasni.com/gallery/integrating-nodemailer-with-nextjs-a-comprehensive-guide.jpg`,
+    src: `https://www.syedalinaqihasni.com/gallery/integrating-nodemailer-with-nextjs-a-comprehensive-guide.webp`,
     alt: "Nodemailer + Next.js",
     caption: "Integrating Nodemailer with Next.js.",
     album: "personal",
@@ -68,7 +68,7 @@ const galls = [
   },
   {
     id: 9,
-    src: `https://www.syedalinaqihasni.com/gallery/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.png`,
+    src: `https://www.syedalinaqihasni.com/gallery/reactpress-a-seamless-react-app-workflow-with-wordpress-cms.webp`,
     alt: "ReactPress Workflow",
     caption: "Seamless React app integration with WordPress CMS.",
     album: "work",
@@ -76,7 +76,7 @@ const galls = [
   },
   {
     id: 10,
-    src: `https://www.syedalinaqihasni.com/gallery/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.jpg`,
+    src: `https://www.syedalinaqihasni.com/gallery/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards.webp`,
     alt: "SOLID Principles Guide",
     caption: "Quick guide to SOLID principles for better OOP design.",
      album: "personal",
@@ -84,7 +84,7 @@ const galls = [
   },
   {
     id: 11,
-    src: `https://www.syedalinaqihasni.com/gallery/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.jpg`,
+    src: `https://www.syedalinaqihasni.com/gallery/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql.webp`,
     alt: "Dependabot & CodeQL Guide",
     caption: "Improve security with GitHub Dependabot and CodeQL.",
     album: "work",
@@ -92,7 +92,7 @@ const galls = [
   },
   {
     id: 12,
-    src: `https://www.syedalinaqihasni.com/gallery/the-beginners-guide-to-seo.jpg`,
+    src: `https://www.syedalinaqihasni.com/gallery/the-beginners-guide-to-seo.webp`,
     alt: "Beginner's SEO Guide",
     caption: "A beginner-friendly guide to understanding SEO.",
     album: "work",
@@ -100,7 +100,7 @@ const galls = [
   },
   {
     id: 13,
-    src: `https://www.syedalinaqihasni.com/gallery/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.png`,
+    src: `https://www.syedalinaqihasni.com/gallery/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration.webp`,
     alt: "Team Collaboration Synergy",
     caption: "Balance individuality and teamwork for maximum impact.",
     album: "events",
@@ -116,7 +116,7 @@ const galls = [
   },
   {
     id: 15,
-    src: `https://www.syedalinaqihasni.com/gallery/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.png`,
+    src: `https://www.syedalinaqihasni.com/gallery/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo.webp`,
     alt: "Structured Data SEO",
     caption: "Boost SEO with structured data markup.",
     album: "work",
