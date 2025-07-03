@@ -15,8 +15,31 @@ const DESCRIPTION =
   'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
 
 
+
+// Helper to fetch images from API
+async function fetchGalleryImages(): Promise<Images[]> {
+  try {
+    const res = await fetch(`https://www.syedalinaqihasni.com/api/gallery`, {
+      cache: 'no-store',
+    });
+
+    if (!res.ok) {
+      // console.error('Failed to fetch gallery images');
+      return [];
+    }
+
+    const data = await res.json();
+    // console.log(data,'data');
+    
+    return data|| [];
+  } catch (error) {
+    // console.error('Error fetching gallery images:', error);
+    return [];
+  }
+}
+
 export default async function Page() {
-  const images = GALLERY;
+  const images = await fetchGalleryImages();
 
   return (
     <>
