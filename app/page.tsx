@@ -133,7 +133,7 @@ export default function Page() {
                   <Image
                     src={
                       hero?.imageSrc ||
-                      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"
+                      "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
                     }
                     alt={hero?.imageAlt}
                     fill

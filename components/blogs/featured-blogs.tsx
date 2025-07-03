@@ -51,11 +51,11 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
                 className={"relative block h-48 w-full"}
               >
                 <Image
-                  src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"}
+                  src={post?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
                   alt={`${post?.title} - Syed Ali Naqi Hasni`}
                   fill
                   className={
-                    styles?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"
+                    styles?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
                   }
                   priority={index < 3}
                 />

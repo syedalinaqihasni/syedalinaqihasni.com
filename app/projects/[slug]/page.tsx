@@ -142,7 +142,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <Image
               src={
                 project?.image ||
-                "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"
+                "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
               }
               alt={`${project?.title} - Syed Ali Naqi Hasni`}
               fill
@@ -208,7 +208,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                         <Image
                           src={
                             relatedProject?.image ||
-                            "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"
+                            "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
                           }
                           alt={`${relatedProject?.title} - Syed Ali Naqi Hasni`}
                           fill

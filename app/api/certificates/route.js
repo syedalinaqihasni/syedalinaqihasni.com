@@ -5,8 +5,8 @@ import path from 'path';
 const certs = [
   {
     id: 1,
-    src: `https://syedalinaqihasni.com/certificates/blogs-placeholder-syed-ali-naqi-hasni.webp'`,
-    alt: 'blogs-placeholder-syed-ali-naqi-hasni.webp',
+    src: `https://syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'`,
+    alt: 'placeholder-syed-ali-naqi-hasni.webp',
     caption: 'Generic blog placeholder image.',
     link: '#',
     album: 'badges',

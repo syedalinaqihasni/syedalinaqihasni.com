@@ -4,8 +4,8 @@ import path from 'path';
 const galls = [
   {
     id: 1,
-    src: `https://www.syedalinaqihasni.com/gallery/blogs-placeholder-syed-ali-naqi-hasni.webp'`,
-    alt: 'blogs-placeholder-syed-ali-naqi-hasni.webp',
+    src: `https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'`,
+    alt: 'placeholder-syed-ali-naqi-hasni.webp',
     caption: 'Generic blog placeholder image.',
     album: 'work',
     tags: ['placeholder', 'generic']

@@ -91,7 +91,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
           </div>
           <div className={styles?.imageWrapper}>
             <Image
-              src={event?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"}
+              src={event?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
               alt={`${event?.title} - Syed Ali Naqi Hasni`}
               fill
               className={styles?.image }

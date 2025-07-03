@@ -75,10 +75,10 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
         {post?.image && (
           <div className={styles?.imageWrapper}>
             <Image
-              src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"}
+              src={post?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
               alt={`${post?.title} - Syed Ali Naqi Hasni`}
               fill
-              className={styles?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.webp"}
+              className={styles?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
             />
           </div>
         )}
