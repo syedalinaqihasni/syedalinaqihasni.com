@@ -43,6 +43,10 @@ export default function RootLayout({
           name="p:domain_verify"
           content="b94552a212fadbb6448eace9230bec35"
         />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-7687484682420626"
+        ></meta>
         <GoogleTagManager gtmId="GTM-NBKH9P8G" />
         <GoogleAnalytics gaId="G-5TPNEKJMLD" />
         <StructuredData
