@@ -121,7 +121,7 @@ export default function CertificateGrid() {
                 <div className="relative rounded-lg overflow-hidden">
                   <Image
                     src={image?.src  || 'https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'}
-                    alt={`${image?.alt} - Syed Ali Naqi Hasni`}
+                    alt={image?.alt || `Syed Ali Naqi Hasni`}
                     width={500}
                     height={300}
                     className="w-full h-auto object-cover"
