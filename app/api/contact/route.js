@@ -20,16 +20,19 @@ export async function POST(request) {
 
     // Setup OAuth2 client
     const oauth2Client = new OAuth2(
-      process.env.GOOGLE_CLIENT_ID || '',
-      process.env.GOOGLE_CLIENT_SECRET || '',
+      process.env.GOOGLE_CLIENT_ID || '972423782282-ttpjr5cogtfh7ln60mhtjgo05t5cl5me.apps.googleusercontent.com',
+      process.env.GOOGLE_CLIENT_SECRET || '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',
       'https://developers.google.com/oauthplayground' // redirect URI
     );
 
     oauth2Client.setCredentials({
-      refresh_token: process.env.GOOGLE_REFRESH_TOKEN || '',
+      refresh_token: process.env.GOOGLE_REFRESH_TOKEN || '1//047KpioMvWZomCgYIARAAGAQSNwF-L9IrA2lw4E2FlDkAAHymeja1GER9kvlFKJNEl8zP1JPNBMKHxNduHSLuMcpk8GkaFKxjXz0',
     });
 
-    const { token } = await oauth2Client.getAccessToken();
+    let accessTokenResponse = await oauth2Client.getAccessToken();
+    let accessToken = typeof accessTokenResponse === 'string'
+      ? accessTokenResponse
+      : accessTokenResponse?.token || accessTokenResponse?.access_token;
 
     // Create transporter
     const transporter = nodemailer.createTransport({
@@ -37,7 +40,7 @@ export async function POST(request) {
       auth: {
         type: 'OAuth2',
         user: process.env.EMAIL_USER || 'engr.syedalinaqihasni@gmail.com',
-        clientId: process.env.GOOGLE_CLIENT_ID || '972423782282-ttpjr5cogtfh7ln60mhtjgo05t5cl5me.apps.googleusercontent.com',
+        accessToken: accessToken || 'ya29.a0AS3H6Nw8JvRh74wWiRDyQ-OR7Onp37gwzDI78Zx7jfKR1WjGRRWr87jYywf-A-0HkaYW0hV8FVJ0ZcGU2VidibzJQYFSkRVqn8THl-zYsUK74ja-RP5OBpa7MJJCjGbXrbFe0r6f7c8JoD3cOP_XsDzVNkrSzHzPmbcXcTVoaCgYKAT0SARYSFQHGX2MiXr2fB8I8Rb_aECb7-rht3Q0175',
         clientSecret: process.env.GOOGLE_CLIENT_SECRET || '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',
         refreshToken: process.env.GOOGLE_REFRESH_TOKEN || '1//047KpioMvWZomCgYIARAAGAQSNwF-L9IrA2lw4E2FlDkAAHymeja1GER9kvlFKJNEl8zP1JPNBMKHxNduHSLuMcpk8GkaFKxjXz0',
         accessToken: token || 'ya29.a0AS3H6Nw8JvRh74wWiRDyQ-OR7Onp37gwzDI78Zx7jfKR1WjGRRWr87jYywf-A-0HkaYW0hV8FVJ0ZcGU2VidibzJQYFSkRVqn8THl-zYsUK74ja-RP5OBpa7MJJCjGbXrbFe0r6f7c8JoD3cOP_XsDzVNkrSzHzPmbcXcTVoaCgYKAT0SARYSFQHGX2MiXr2fB8I8Rb_aECb7-rht3Q0175',
@@ -48,8 +51,8 @@ export async function POST(request) {
     // 📥 Send to Admin Email
     // ======================
     await transporter.sendMail({
-      from: `"${data.name}" <${process.env.EMAIL_USER}>`,
-      to: process.env.EMAIL_USER,
+      from: `"${data.name}" <engr.syedalinaqihasni@gamil.com>`,
+      to: process.env.EMAIL_USER || 'engr.syedalinaqihasni@gmail.com',
       subject: `New Contact Form: ${data.subject}`,
       text: `
 Name: ${data.name}
@@ -78,7 +81,7 @@ Message: ${data.message}
     // 🤖 Auto-reply to User Email
     // ===========================
     await transporter.sendMail({
-      from: `"${process.env.SITE_NAME || 'Syed Ali Naqi Hasni'}" <${process.env.EMAIL_USER}>`,
+      from: `"${process.env.SITE_NAME || 'Syed Ali Naqi Hasni'}" <${process.env.EMAIL_USER || "engr.syedalinaqihasni@gamil.com"}>`,
       to: data.email,
       subject: `Thanks for contacting ${process.env.SITE_NAME || 'me'}!`,
       html: `
