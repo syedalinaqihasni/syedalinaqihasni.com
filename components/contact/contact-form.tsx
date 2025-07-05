@@ -46,18 +46,26 @@ export default function Contact() {
   });
   
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    try {
-      
-      toast.success("Message sent successfully! I'll get back to you soon.");
-      form.reset();
-    } catch (error) {
-      toast.error('Something went wrong. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(values),
+    });
+
+    if (!res.ok) throw new Error('Failed to send');
+
+    toast.success("Message sent successfully! I'll get back to you soon.");
+    form.reset();
+  } catch (error) {
+    toast.error('Something went wrong. Please try again.');
+  } finally {
+    setIsSubmitting(false);
   }
+}
+
 
   return (
     <div className={'bg-card rounded-lg shadow-sm p-6 md:p-8'}>
