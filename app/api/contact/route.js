@@ -8,16 +8,10 @@ const formSchema = z.object({
   message: z.string().min(10),
 });
 
-export default async function handler(
-  req,
-  res
-) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
+export async function POST(request) {
   try {
-    const data = formSchema.parse(req.body);
+    const body = await request.json();
+    const data = formSchema.parse(body);
 
     // Configure the transporter for Gmail
     const transporter = nodemailer.createTransport({
@@ -48,12 +42,21 @@ ${data.message}
     // Send the email
     await transporter.sendMail(mailOptions);
 
-    return res.status(200).json({ success: true });
+    return new Response(JSON.stringify({ success: true }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return res.status(400).json({ error: error.errors });
+      return new Response(JSON.stringify({ error: error.errors }), {
+        status: 400,
+        headers: { 'Content-Type': 'application/json' },
+      });
     }
     console.error('Email send error:', error);
-    return res.status(500).json({ error: 'Internal server error' });
+    return new Response(JSON.stringify({ error: 'Internal server error' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 }
