@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Check, X, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { PRICING_TABS, PRICING_PAGE_CONSTANT } from '@/constants/pricing';
+import { properCaseToDash } from '@/lib/utils';
 
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
@@ -83,7 +84,8 @@ export default function PricingPage() {
                         {plan?.features.map((feature, index) => (
                           <div key={index} className={styles?.featureItem}>
                             <Check className="h-5 w-5 text-green-500 mt-0.5" />
-                            <span>{feature}</span>
+                            <Link href={`/term-and-conditions#${properCaseToDash(feature)}`}>
+                            <span>{feature}</span></Link>
                           </div>
                         ))}
                       </div>
