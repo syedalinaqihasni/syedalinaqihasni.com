@@ -65,9 +65,6 @@ export default function ServicePage({
         <h1 className="text-4xl md:text-5xl font-bold">
           {slug ? dashToProperCase(slug) : ""}
         </h1>
-        {/* <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-          {'asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf '}
-        </p> */}
       </div>
     </section>
   );

@@ -196,7 +196,7 @@ export default function ServicePage({
               {service?.relatedJobTitles.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-services/${properCaseToDash(
+                    href={`/related-jobs/${properCaseToDash(
                       serv
                     )}-in-${city}/`}
                     className="flex items-center gap-2 text-xs hover:underline"
@@ -211,7 +211,6 @@ export default function ServicePage({
               ))}
             </ul>
           </Section>
-
           {/* Technologies Used */}
           <Section title="Technologies Used">
             <ul className="space-y-2">

@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-import { Check, ArrowRight, Quote, Briefcase } from "lucide-react"; // make sure this import is present
+import { Check, ArrowRight, Quote, Briefcase } from "lucide-react"; 
 import { dashToProperCase, properCaseToDash } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
@@ -198,7 +198,7 @@ export default function ServicePage({
               {service?.relatedJobTitles.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-services/${properCaseToDash(
+                    href={`/related-jobs/${properCaseToDash(
                       serv
                     )}-in-${city}/`}
                     className="flex items-center gap-2 text-xs hover:underline"
@@ -213,7 +213,6 @@ export default function ServicePage({
               ))}
             </ul>
           </Section>
-
           {/* Technologies Used */}
           <Section title="Technologies Used">
             <ul className="space-y-2">
