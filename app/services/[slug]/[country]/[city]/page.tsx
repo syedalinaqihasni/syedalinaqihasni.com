@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-import { Check, ArrowRight, Quote } from "lucide-react";
+import { Check, ArrowRight, Quote, Briefcase } from "lucide-react";
 import { dashToProperCase, properCaseToDash } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
@@ -185,6 +185,58 @@ export default function ServicePage({
               <FeatureList features={service?.requirements} />
             </div>
           )}
+        </div>
+      )}
+      {/* Deliverables + Requirements side by side */}
+      {(service?.relatedJobTitles || service?.technologies) && (
+        <div className="mb-6 grid md:grid-cols-2 gap-8">
+          {/* Related Job Titles as list with icons */}
+          <Section title="Related Job Titles">
+            <ul className="space-y-2">
+              {service?.relatedJobTitles.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/related-services/${properCaseToDash(
+                      serv
+                    )}-in-${city}/`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Briefcase size={14} className="text-muted-foreground" />
+                    <span>
+                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                      {city ? dashToProperCase(city) : ""}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+
+          {/* Technologies Used */}
+          <Section title="Technologies Used">
+            <ul className="space-y-2">
+              {service?.technologies.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/related-services/${properCaseToDash(
+                      serv
+                    )}-in-${city}/`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Badge
+                      variant="secondary"
+                      className="text-xs  hover:underline "
+                    >
+                      <span>
+                        {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                        {city ? dashToProperCase(city) : ""}
+                      </span>
+                    </Badge>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
         </div>
       )}
       {service?.detailedDescription && (

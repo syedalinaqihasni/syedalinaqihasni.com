@@ -1,19 +1,7 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { SERVICES } from "@/constants/services";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import Link from "next/link";
-import { Check, ArrowRight, Quote } from "lucide-react";
 import { dashToProperCase } from "@/lib/utils";
-import HtmlRenderer from "@/components/HtmlRenderer";
-import FeaturedPricing from "@/components/home/featured-pricing";
 import { countries } from "@/constants/area-services";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
@@ -150,7 +138,8 @@ export default function ServicePage({
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold">
-          {related ? dashToProperCase(related) : ""} in {area ? dashToProperCase(area) : ""}{" "}
+          {related ? dashToProperCase(related) : ""} in{" "}
+          {area ? dashToProperCase(area) : ""}{" "}
           {city ? dashToProperCase(city) : ""}{" "}
           {country ? dashToProperCase(country) : ""}{" "}
         </h1>

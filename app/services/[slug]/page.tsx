@@ -10,8 +10,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-import { Check, ArrowRight, Quote } from "lucide-react";
-import { properCaseToDash, toProperCase } from "@/lib/utils";
+import { Check, ArrowRight, Quote, Briefcase } from "lucide-react";
+import { dashToProperCase, properCaseToDash, toProperCase } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
@@ -81,15 +81,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <FeatureList features={service?.features} />
           </Section>
           <div>
-            {/* <Section title="Technologies Used">
-              <div className="flex flex-wrap gap-2">
-                {service?.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="text-xs">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </Section> */}
             <Section title="Related Services">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
@@ -122,6 +113,52 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           )}
         </div>
       )}
+      {/* Deliverables + Requirements side by side */}
+      {(service?.relatedJobTitles || service?.technologies) && (
+        <div className="mb-6 grid md:grid-cols-2 gap-8">
+          {/* Related Job Titles as list with icons */}
+          <Section title="Related Job Titles">
+            <ul className="space-y-2">
+              {service?.relatedJobTitles.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/services/${params.slug}/${serv}`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Briefcase size={14} className="text-muted-foreground" />
+                    <span>
+                      {dashToProperCase(serv).replace(/-/g, " ")}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+
+          {/* Technologies Used */}
+          <Section title="Technologies Used">
+            <ul className="space-y-2">
+              {service?.technologies.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/services/${params.slug}/${serv}`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Badge
+                      variant="secondary"
+                      className="text-xs  hover:underline "
+                    >
+                      <span>
+                        {dashToProperCase(serv).replace(/-/g, " ")}
+                      </span>
+                    </Badge>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        </div>
+      )}
       {service?.detailedDescription && (
         <Section title="More About This Service">
           <div className="prose prose-neutral max-w-none">
@@ -133,23 +170,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           </div>
         </Section>
       )}
-      {/* <section
-        className={`${styles?.sectionPadding} pt-10`}
-        id={"pricing"}
-      >
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>Similar Projects </h2>
-            <Link href="/projects">
-              <Button variant={"outline"}>
-                View All Projects
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <Projects projects={projects.slice(0,3)} />
-        </div>
-      </section> */}
 
       {/* FAQs in Accordion */}
       {service?.faqs?.length > 0 && (

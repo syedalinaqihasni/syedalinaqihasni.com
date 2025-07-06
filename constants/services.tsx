@@ -14,6 +14,15 @@ export const SERVICES = [
     description:
       "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies.",
     icon: "🎨",
+    relatedJobTitles: [
+      "Frontend Developer",
+      "React Developer",
+      "Angular Developer",
+      "Vue.js Developer",
+      "JavaScript Developer",
+      "HTML/CSS Developer",
+      "Frontend Architect",
+    ],
     slug: "frontend-development",
     plans: FRONTEND_DEVELOPMENT_PLANS,
     servs: [
@@ -118,6 +127,15 @@ export const SERVICES = [
     icon: "💻",
     plans: WEB_APPLICATION_PLANS,
     slug: "web-application-development",
+    relatedJobTitles: [
+      "Web Developer",
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer",
+      "Web Application Architect",
+      "API Developer",
+      "Software Engineer",
+    ],
     servs: [
       "web-app-development",
       "custom-web-app",
@@ -198,6 +216,15 @@ export const SERVICES = [
     icon: "📝",
     slug: "wordpress-development",
     plans: WORDPRESS_DEVELOPMENT_PLANS,
+    relatedJobTitles: [
+      "WordPress Developer",
+      "PHP Developer",
+      "Theme Developer",
+      "Plugin Developer",
+      "WordPress Administrator",
+      "WordPress Support Specialist",
+      "WooCommerce Developer",
+    ],
     servs: [
       "wordpress-development",
       "wordpress-website",
@@ -278,6 +305,15 @@ export const SERVICES = [
       "Complete online store solutions with secure payment processing and inventory management.",
     icon: "🛒",
     slug: "ecommerce-solutions",
+    relatedJobTitles: [
+      "E-commerce Developer",
+      "Shopify Developer",
+      "Magento Specialist",
+      "WooCommerce Developer",
+      "E-commerce Project Manager",
+      "BigCommerce Developer",
+      "E-commerce Business Analyst",
+    ],
     plans: ECOMMERCE_PLANS,
     servs: [
       "ecommerce-solutions",
@@ -354,6 +390,15 @@ export const SERVICES = [
     icon: "🎯",
     slug: "ui-ux-design",
     plans: UI_UX_DESIGN_PLANS,
+    relatedJobTitles: [
+      "UI Designer",
+      "UX Designer",
+      "Product Designer",
+      "Interaction Designer",
+      "Visual Designer",
+      "UX Researcher",
+      "Information Architect",
+    ],
     servs: [
       "ui-ux-design",
       "user-experience",
@@ -428,6 +473,15 @@ export const SERVICES = [
     icon: "📈",
     slug: "seo-optimization",
     plans: SEO_PLANS,
+    relatedJobTitles: [
+      "SEO Specialist",
+      "Digital Marketing Analyst",
+      "Content Strategist",
+      "SEO Manager",
+      "SEM Specialist",
+      "Link Building Specialist",
+      "Technical SEO Analyst",
+    ],
     servs: [
       "seo-optimization",
       "search-engine-optimization",
@@ -501,6 +555,15 @@ export const SERVICES = [
     icon: "🔧",
     slug: "website-maintenance",
     plans: WEBSITE_MAINTENANCE_PLANS,
+    relatedJobTitles: [
+      "Website Administrator",
+      "Webmaster",
+      "Support Engineer",
+      "Site Reliability Engineer",
+      "Maintenance Technician",
+      "Web Support Specialist",
+      "Hosting Support Engineer",
+    ],
     servs: [
       "website-maintenance",
       "site-support",
