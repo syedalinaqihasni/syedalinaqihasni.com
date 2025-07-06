@@ -179,11 +179,11 @@ export const bp2 = {
   id: 2,
   title: "Why I Don't Use WordPress (And You Shouldn't Either)",
   excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
-  slug: "why-i-do-not-use-word-press-and-you-should-not-either",
+  slug: "why-i-do-not-use-wordpress-and-you-should-not-either",
   publishedAt: "2025-06-20",
   readingTime: "6 min read",
   image:
-    "/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either-syed-ali-naqi-hasni.webp",
+    "/images/blogs/why-i-do-not-use-wordpress-and-you-should-not-either-syed-ali-naqi-hasni.webp",
   category: `Opinions`,
   tags: ["WordPress", "CMS", "Backend Integration"],
   content: `<div>
