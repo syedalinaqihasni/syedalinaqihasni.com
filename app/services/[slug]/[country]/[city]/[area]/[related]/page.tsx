@@ -150,10 +150,9 @@ export default function ServicePage({
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold">
-          {service?.title} in {area ? dashToProperCase(area) : ""}{" "}
+          {related ? dashToProperCase(related) : ""} in {area ? dashToProperCase(area) : ""}{" "}
           {city ? dashToProperCase(city) : ""}{" "}
           {country ? dashToProperCase(country) : ""}{" "}
-          {related ? dashToProperCase(related) : ""}
         </h1>
         <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
           {service?.description}

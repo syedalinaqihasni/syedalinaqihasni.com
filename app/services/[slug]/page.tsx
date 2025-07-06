@@ -32,7 +32,7 @@ export async function generateMetadata({
   return generateDynamicMetadata({
     title: `${service?.title} | Syed Ali Naqi Hasni`,
     description: service?.description,
-    path: `/services/${service?.slug}`, 
+    path: `/services/${service?.slug}`,
   });
 }
 
@@ -90,16 +90,13 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 ))}
               </div>
             </Section> */}
-            <Section title="Related Serivices">
+            <Section title="Related Services">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
-                 <Link
-                    href={`/related-services/${serv}`}
-                    key={serv}
-                  >
-                  <Badge variant="secondary" className="text-xs" key={serv}>
-                    {toProperCase(serv).replace(/-/g, " ")}
-                  </Badge>
+                  <Link href={`/related-services/${serv}`} key={serv}>
+                    <Badge variant="secondary" className="text-xs" key={serv}>
+                      {toProperCase(serv).replace(/-/g, " ")}
+                    </Badge>
                   </Link>
                 ))}
               </div>
@@ -128,7 +125,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       {service?.detailedDescription && (
         <Section title="More About This Service">
           <div className="prose prose-neutral max-w-none">
-            <HtmlRenderer  path="" terms={[]} html={service?.detailedDescription} />
+            <HtmlRenderer
+              path=""
+              terms={[]}
+              html={service?.detailedDescription}
+            />
           </div>
         </Section>
       )}
@@ -237,7 +238,6 @@ function Section({
   );
 }
 
-
 function FeatureList({
   features,
   link,
@@ -250,19 +250,17 @@ function FeatureList({
       {features.map((feature, i) => (
         <div key={i} className="flex items-center gap-2 text-sm">
           <Check className="w-4 h-4 text-green-500" />
-          {
-            link ? (
-               <Link href={`/related-services/${properCaseToDash(feature)}-${link}`}>
+          {link ? (
+            <Link
+              href={`/related-services/${properCaseToDash(feature)}-${link}`}
+            >
+              <span>{feature}</span>
+            </Link>
+          ) : (
             <span>{feature}</span>
-          </Link>
-            ): (
-            <span>{feature}</span>
-            )
-          }
+          )}
         </div>
       ))}
     </div>
   );
 }
-
-

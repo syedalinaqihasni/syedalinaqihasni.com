@@ -148,19 +148,17 @@ export default function ServicePage({
             <FeatureList features={service?.features} link={`in-${country}`} />
           </Section>
           <div>
-            <Section title="Related Serivices in Your Area">
+            <Section title="Related Services in Your Area">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => {
                   return (
                     <Link
-                      href={`/related-services/${params.slug}/${country}/${city}/${area}/${serv}`}
+                      href={`/services/${params.slug}/${country}/${city}/${area}/${serv}`}
                       key={serv}
                     >
                       <Badge variant="secondary" className="text-xs">
                         {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                        {area ? dashToProperCase(area) : ""}{" "}
-                        {city ? dashToProperCase(city) : ""}{" "}
-                        {country ? dashToProperCase(country) : ""}
+                        {area ? dashToProperCase(area) : ""}
                       </Badge>
                     </Link>
                   );

@@ -148,7 +148,7 @@ export default function ServicePage({
             <FeatureList features={service?.features} />
           </Section>
           <div>
-            <Section title="Related Serivices in Your Country">
+            <Section title="Related Services in Your Country">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
                   <Link
@@ -157,8 +157,6 @@ export default function ServicePage({
                   >
                     <Badge variant="secondary" className="text-xs">
                       {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                      {area ? dashToProperCase(area) : ""}{" "}
-                      {city ? dashToProperCase(city) : ""}{" "}
                       {country ? dashToProperCase(country) : ""}
                     </Badge>
                   </Link>
