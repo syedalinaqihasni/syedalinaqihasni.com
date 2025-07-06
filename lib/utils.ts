@@ -50,3 +50,20 @@ export const formatDate = (dateString: string) =>
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 }
+
+   /**
+     * Converts a Proper Case string (words separated by spaces) to dash-separated lowercase.
+     *
+     * @param text - The Proper Case string to convert.
+     * @returns The converted string in dash-separated lowercase.
+     *
+     * @example
+     * properCaseToDash('Hello World'); // returns 'hello-world'
+     */
+    export function properCaseToDash(text: string): string {
+      return text
+        .trim()
+        .replace(/&/g, 'and') // replace ampersand with 'and'
+        .replace(/[\s/]+/g, '-') // replace spaces and slashes with dash
+        .toLowerCase();
+    }

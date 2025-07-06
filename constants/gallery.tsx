@@ -4,7 +4,7 @@ const GALLERY_DESCRIPTION =
 const GALLERY = [
   {
     id: 1,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1714194303_3355227458594540633_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1714194303_3355227458594540633_14685689414.webp",
     alt: "syedalinaqihasni_1714194303_3355227458594540633_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -12,7 +12,7 @@ const GALLERY = [
   },
   {
     id: 2,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1714194757_3355231271543961708_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1714194757_3355231271543961708_14685689414.webp",
     alt: "syedalinaqihasni_1714194757_3355231271543961708_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -20,7 +20,7 @@ const GALLERY = [
   },
   {
     id: 3,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180559_3371889381994127307_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180559_3371889381994127307_14685689414.webp",
     alt: "syedalinaqihasni_1716180559_3371889381994127307_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -28,7 +28,7 @@ const GALLERY = [
   },
   {
     id: 4,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180618_3371889881493610756_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180618_3371889881493610756_14685689414.webp",
     alt: "syedalinaqihasni_1716180618_3371889881493610756_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -36,7 +36,7 @@ const GALLERY = [
   },
   {
     id: 5,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180618_3371889881518717703_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180618_3371889881518717703_14685689414.webp",
     alt: "syedalinaqihasni_1716180618_3371889881518717703_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -44,7 +44,7 @@ const GALLERY = [
   },
   {
     id: 6,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180618_3371889881694960499_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180618_3371889881694960499_14685689414.webp",
     alt: "syedalinaqihasni_1716180618_3371889881694960499_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -52,7 +52,7 @@ const GALLERY = [
   },
   {
     id: 7,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180618_3371889881695036700_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180618_3371889881695036700_14685689414.webp",
     alt: "syedalinaqihasni_1716180618_3371889881695036700_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -60,7 +60,7 @@ const GALLERY = [
   },
   {
     id: 8,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180644_3371890092131529448_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180644_3371890092131529448_14685689414.webp",
     alt: "syedalinaqihasni_1716180644_3371890092131529448_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -68,7 +68,7 @@ const GALLERY = [
   },
   {
     id: 9,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180659_3371890222624763334_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180659_3371890222624763334_14685689414.webp",
     alt: "syedalinaqihasni_1716180659_3371890222624763334_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -76,7 +76,7 @@ const GALLERY = [
   },
   {
     id: 10,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180678_3371890382268308238_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180678_3371890382268308238_14685689414.webp",
     alt: "syedalinaqihasni_1716180678_3371890382268308238_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -84,7 +84,7 @@ const GALLERY = [
   },
   {
     id: 11,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180723_3371890756870133364_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180723_3371890756870133364_14685689414.webp",
     alt: "syedalinaqihasni_1716180723_3371890756870133364_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -92,7 +92,7 @@ const GALLERY = [
   },
   {
     id: 12,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180770_3371891150245520810_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180770_3371891150245520810_14685689414.webp",
     alt: "syedalinaqihasni_1716180770_3371891150245520810_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -100,7 +100,7 @@ const GALLERY = [
   },
   {
     id: 13,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180770_3371891150430031460_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180770_3371891150430031460_14685689414.webp",
     alt: "syedalinaqihasni_1716180770_3371891150430031460_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -108,7 +108,7 @@ const GALLERY = [
   },
   {
     id: 14,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180879_3371892070056212589_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180879_3371892070056212589_14685689414.webp",
     alt: "syedalinaqihasni_1716180879_3371892070056212589_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -116,7 +116,7 @@ const GALLERY = [
   },
   {
     id: 15,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716180967_3371892806735368713_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716180967_3371892806735368713_14685689414.webp",
     alt: "syedalinaqihasni_1716180967_3371892806735368713_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -124,7 +124,7 @@ const GALLERY = [
   },
   {
     id: 16,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181001_3371893087913205292_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181001_3371893087913205292_14685689414.webp",
     alt: "syedalinaqihasni_1716181001_3371893087913205292_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -132,7 +132,7 @@ const GALLERY = [
   },
   {
     id: 17,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181009_3371893161447811410_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181009_3371893161447811410_14685689414.webp",
     alt: "syedalinaqihasni_1716181009_3371893161447811410_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -140,7 +140,7 @@ const GALLERY = [
   },
   {
     id: 18,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181081_3371893759110967681_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181081_3371893759110967681_14685689414.webp",
     alt: "syedalinaqihasni_1716181081_3371893759110967681_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -148,7 +148,7 @@ const GALLERY = [
   },
   {
     id: 19,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181121_3371894100535692898_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181121_3371894100535692898_14685689414.webp",
     alt: "syedalinaqihasni_1716181121_3371894100535692898_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -156,7 +156,7 @@ const GALLERY = [
   },
   {
     id: 20,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181132_3371894193196245657_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181132_3371894193196245657_14685689414.webp",
     alt: "syedalinaqihasni_1716181132_3371894193196245657_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -164,7 +164,7 @@ const GALLERY = [
   },
   {
     id: 21,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181217_3371894906244634419_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181217_3371894906244634419_14685689414.webp",
     alt: "syedalinaqihasni_1716181217_3371894906244634419_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -172,7 +172,7 @@ const GALLERY = [
   },
   {
     id: 22,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181305_3371895642906980921_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181305_3371895642906980921_14685689414.webp",
     alt: "syedalinaqihasni_1716181305_3371895642906980921_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -180,7 +180,7 @@ const GALLERY = [
   },
   {
     id: 23,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181318_3371895746271484313_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181318_3371895746271484313_14685689414.webp",
     alt: "syedalinaqihasni_1716181318_3371895746271484313_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -188,7 +188,7 @@ const GALLERY = [
   },
   {
     id: 24,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181348_3371896001964547581_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181348_3371896001964547581_14685689414.webp",
     alt: "syedalinaqihasni_1716181348_3371896001964547581_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -196,7 +196,7 @@ const GALLERY = [
   },
   {
     id: 25,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1716181437_3371896747971934094_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1716181437_3371896747971934094_14685689414.webp",
     alt: "syedalinaqihasni_1716181437_3371896747971934094_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -204,7 +204,7 @@ const GALLERY = [
   },
   {
     id: 26,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718472036_3391111684539773339_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718472036_3391111684539773339_14685689414.webp",
     alt: "syedalinaqihasni_1718472036_3391111684539773339_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -212,7 +212,7 @@ const GALLERY = [
   },
   {
     id: 27,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718511782_3391445099109559059_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718511782_3391445099109559059_14685689414.webp",
     alt: "syedalinaqihasni_1718511782_3391445099109559059_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -220,7 +220,7 @@ const GALLERY = [
   },
   {
     id: 28,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718511862_3391445767513839277_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718511862_3391445767513839277_14685689414.webp",
     alt: "syedalinaqihasni_1718511862_3391445767513839277_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -228,7 +228,7 @@ const GALLERY = [
   },
   {
     id: 29,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718512175_3391448393466895603_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718512175_3391448393466895603_14685689414.webp",
     alt: "syedalinaqihasni_1718512175_3391448393466895603_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -236,7 +236,7 @@ const GALLERY = [
   },
   {
     id: 30,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718512198_3391448589290527387_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718512198_3391448589290527387_14685689414.webp",
     alt: "syedalinaqihasni_1718512198_3391448589290527387_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -244,7 +244,7 @@ const GALLERY = [
   },
   {
     id: 31,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718513556_3391459979996891156_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718513556_3391459979996891156_14685689414.webp",
     alt: "syedalinaqihasni_1718513556_3391459979996891156_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -252,7 +252,7 @@ const GALLERY = [
   },
   {
     id: 32,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718513569_3391460090038528230_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718513569_3391460090038528230_14685689414.webp",
     alt: "syedalinaqihasni_1718513569_3391460090038528230_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -260,7 +260,7 @@ const GALLERY = [
   },
   {
     id: 33,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718513584_3391460218753441825_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718513584_3391460218753441825_14685689414.webp",
     alt: "syedalinaqihasni_1718513584_3391460218753441825_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -268,7 +268,7 @@ const GALLERY = [
   },
   {
     id: 34,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718513797_3391461998027415830_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718513797_3391461998027415830_14685689414.webp",
     alt: "syedalinaqihasni_1718513797_3391461998027415830_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -276,7 +276,7 @@ const GALLERY = [
   },
   {
     id: 35,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718568786_3391923286096622815_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718568786_3391923286096622815_14685689414.webp",
     alt: "syedalinaqihasni_1718568786_3391923286096622815_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -284,7 +284,7 @@ const GALLERY = [
   },
   {
     id: 36,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718569113_3391926022150037054_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718569113_3391926022150037054_14685689414.webp",
     alt: "syedalinaqihasni_1718569113_3391926022150037054_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -292,7 +292,7 @@ const GALLERY = [
   },
   {
     id: 37,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718569228_3391926986437537973_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718569228_3391926986437537973_14685689414.webp",
     alt: "syedalinaqihasni_1718569228_3391926986437537973_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -300,7 +300,7 @@ const GALLERY = [
   },
   {
     id: 38,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718569645_3391930488681260464_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718569645_3391930488681260464_14685689414.webp",
     alt: "syedalinaqihasni_1718569645_3391930488681260464_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -308,7 +308,7 @@ const GALLERY = [
   },
   {
     id: 39,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718569671_3391930704679465140_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718569671_3391930704679465140_14685689414.webp",
     alt: "syedalinaqihasni_1718569671_3391930704679465140_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -316,7 +316,7 @@ const GALLERY = [
   },
   {
     id: 40,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570043_3391933825778577660_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570043_3391933825778577660_14685689414.webp",
     alt: "syedalinaqihasni_1718570043_3391933825778577660_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -324,7 +324,7 @@ const GALLERY = [
   },
   {
     id: 41,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570187_3391935036414145007_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570187_3391935036414145007_14685689414.webp",
     alt: "syedalinaqihasni_1718570187_3391935036414145007_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -332,7 +332,7 @@ const GALLERY = [
   },
   {
     id: 42,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570205_3391935184951096769_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570205_3391935184951096769_14685689414.webp",
     alt: "syedalinaqihasni_1718570205_3391935184951096769_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -340,7 +340,7 @@ const GALLERY = [
   },
   {
     id: 43,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570230_3391935392200222012_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570230_3391935392200222012_14685689414.webp",
     alt: "syedalinaqihasni_1718570230_3391935392200222012_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -348,7 +348,7 @@ const GALLERY = [
   },
   {
     id: 44,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570251_3391935574643965350_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570251_3391935574643965350_14685689414.webp",
     alt: "syedalinaqihasni_1718570251_3391935574643965350_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -356,7 +356,7 @@ const GALLERY = [
   },
   {
     id: 45,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570272_3391935745561808774_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570272_3391935745561808774_14685689414.webp",
     alt: "syedalinaqihasni_1718570272_3391935745561808774_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -364,7 +364,7 @@ const GALLERY = [
   },
   {
     id: 46,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570433_3391937100372481332_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570433_3391937100372481332_14685689414.webp",
     alt: "syedalinaqihasni_1718570433_3391937100372481332_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -372,7 +372,7 @@ const GALLERY = [
   },
   {
     id: 47,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570460_3391937326143244545_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570460_3391937326143244545_14685689414.webp",
     alt: "syedalinaqihasni_1718570460_3391937326143244545_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -380,7 +380,7 @@ const GALLERY = [
   },
   {
     id: 48,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570646_3391938885048730605_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570646_3391938885048730605_14685689414.webp",
     alt: "syedalinaqihasni_1718570646_3391938885048730605_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -388,7 +388,7 @@ const GALLERY = [
   },
   {
     id: 49,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718570657_3391938977566652524_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718570657_3391938977566652524_14685689414.webp",
     alt: "syedalinaqihasni_1718570657_3391938977566652524_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -396,7 +396,7 @@ const GALLERY = [
   },
   {
     id: 50,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718722873_3393215858760931271_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718722873_3393215858760931271_14685689414.webp",
     alt: "syedalinaqihasni_1718722873_3393215858760931271_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -404,7 +404,7 @@ const GALLERY = [
   },
   {
     id: 51,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718722951_3393216516461252725_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718722951_3393216516461252725_14685689414.webp",
     alt: "syedalinaqihasni_1718722951_3393216516461252725_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -412,7 +412,7 @@ const GALLERY = [
   },
   {
     id: 52,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718722991_3393216845437323322_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718722991_3393216845437323322_14685689414.webp",
     alt: "syedalinaqihasni_1718722991_3393216845437323322_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -420,7 +420,7 @@ const GALLERY = [
   },
   {
     id: 53,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723020_3393217087608032279_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723020_3393217087608032279_14685689414.webp",
     alt: "syedalinaqihasni_1718723020_3393217087608032279_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -428,7 +428,7 @@ const GALLERY = [
   },
   {
     id: 54,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723162_3393218281122322216_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723162_3393218281122322216_14685689414.webp",
     alt: "syedalinaqihasni_1718723162_3393218281122322216_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -436,7 +436,7 @@ const GALLERY = [
   },
   {
     id: 55,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723210_3393218685327632502_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723210_3393218685327632502_14685689414.webp",
     alt: "syedalinaqihasni_1718723210_3393218685327632502_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -444,7 +444,7 @@ const GALLERY = [
   },
   {
     id: 56,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723565_3393221665061799042_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723565_3393221665061799042_14685689414.webp",
     alt: "syedalinaqihasni_1718723565_3393221665061799042_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -452,7 +452,7 @@ const GALLERY = [
   },
   {
     id: 57,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723584_3393221818657171620_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723584_3393221818657171620_14685689414.webp",
     alt: "syedalinaqihasni_1718723584_3393221818657171620_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -460,7 +460,7 @@ const GALLERY = [
   },
   {
     id: 58,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723599_3393221949502728975_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723599_3393221949502728975_14685689414.webp",
     alt: "syedalinaqihasni_1718723599_3393221949502728975_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -468,7 +468,7 @@ const GALLERY = [
   },
   {
     id: 59,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723625_3393222169426905626_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723625_3393222169426905626_14685689414.webp",
     alt: "syedalinaqihasni_1718723625_3393222169426905626_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -476,7 +476,7 @@ const GALLERY = [
   },
   {
     id: 60,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718723689_3393222703848258605_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718723689_3393222703848258605_14685689414.webp",
     alt: "syedalinaqihasni_1718723689_3393222703848258605_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -484,7 +484,7 @@ const GALLERY = [
   },
   {
     id: 61,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718724133_3393226429472310293_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718724133_3393226429472310293_14685689414.webp",
     alt: "syedalinaqihasni_1718724133_3393226429472310293_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -492,7 +492,7 @@ const GALLERY = [
   },
   {
     id: 62,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718724167_3393226713158359914_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718724167_3393226713158359914_14685689414.webp",
     alt: "syedalinaqihasni_1718724167_3393226713158359914_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -500,7 +500,7 @@ const GALLERY = [
   },
   {
     id: 63,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718724215_3393227113806511754_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718724215_3393227113806511754_14685689414.webp",
     alt: "syedalinaqihasni_1718724215_3393227113806511754_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -508,7 +508,7 @@ const GALLERY = [
   },
   {
     id: 64,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718724266_3393227543252967127_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718724266_3393227543252967127_14685689414.webp",
     alt: "syedalinaqihasni_1718724266_3393227543252967127_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -516,7 +516,7 @@ const GALLERY = [
   },
   {
     id: 65,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718724357_3393228302564551934_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718724357_3393228302564551934_14685689414.webp",
     alt: "syedalinaqihasni_1718724357_3393228302564551934_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -524,7 +524,7 @@ const GALLERY = [
   },
   {
     id: 66,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718724488_3393229405800645859_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718724488_3393229405800645859_14685689414.webp",
     alt: "syedalinaqihasni_1718724488_3393229405800645859_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -532,7 +532,7 @@ const GALLERY = [
   },
   {
     id: 67,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718724763_3393231715855521445_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718724763_3393231715855521445_14685689414.webp",
     alt: "syedalinaqihasni_1718724763_3393231715855521445_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -540,7 +540,7 @@ const GALLERY = [
   },
   {
     id: 68,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718725076_3393234334544241082_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718725076_3393234334544241082_14685689414.webp",
     alt: "syedalinaqihasni_1718725076_3393234334544241082_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -548,7 +548,7 @@ const GALLERY = [
   },
   {
     id: 69,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718725140_3393234872614520020_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718725140_3393234872614520020_14685689414.webp",
     alt: "syedalinaqihasni_1718725140_3393234872614520020_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -556,7 +556,7 @@ const GALLERY = [
   },
   {
     id: 70,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718725370_3393236802221019722_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718725370_3393236802221019722_14685689414.webp",
     alt: "syedalinaqihasni_1718725370_3393236802221019722_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -564,7 +564,7 @@ const GALLERY = [
   },
   {
     id: 71,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718725441_3393237401360659895_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718725441_3393237401360659895_14685689414.webp",
     alt: "syedalinaqihasni_1718725441_3393237401360659895_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -572,7 +572,7 @@ const GALLERY = [
   },
   {
     id: 72,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718725750_3393239994153540049_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718725750_3393239994153540049_14685689414.webp",
     alt: "syedalinaqihasni_1718725750_3393239994153540049_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -580,7 +580,7 @@ const GALLERY = [
   },
   {
     id: 73,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718725785_3393240286546672453_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718725785_3393240286546672453_14685689414.webp",
     alt: "syedalinaqihasni_1718725785_3393240286546672453_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -588,7 +588,7 @@ const GALLERY = [
   },
   {
     id: 74,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718731585_3393288938090759952_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718731585_3393288938090759952_14685689414.webp",
     alt: "syedalinaqihasni_1718731585_3393288938090759952_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -596,7 +596,7 @@ const GALLERY = [
   },
   {
     id: 75,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718731651_3393289491101446300_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718731651_3393289491101446300_14685689414.webp",
     alt: "syedalinaqihasni_1718731651_3393289491101446300_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -604,7 +604,7 @@ const GALLERY = [
   },
   {
     id: 76,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718731755_3393290367696268535_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718731755_3393290367696268535_14685689414.webp",
     alt: "syedalinaqihasni_1718731755_3393290367696268535_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -612,7 +612,7 @@ const GALLERY = [
   },
   {
     id: 77,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718731824_3393290947642694184_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718731824_3393290947642694184_14685689414.webp",
     alt: "syedalinaqihasni_1718731824_3393290947642694184_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -620,7 +620,7 @@ const GALLERY = [
   },
   {
     id: 78,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718731838_3393291063822885047_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718731838_3393291063822885047_14685689414.webp",
     alt: "syedalinaqihasni_1718731838_3393291063822885047_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -628,7 +628,7 @@ const GALLERY = [
   },
   {
     id: 79,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718731899_3393291570469652302_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718731899_3393291570469652302_14685689414.webp",
     alt: "syedalinaqihasni_1718731899_3393291570469652302_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -636,7 +636,7 @@ const GALLERY = [
   },
   {
     id: 80,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718732245_3393294477122149575_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718732245_3393294477122149575_14685689414.webp",
     alt: "syedalinaqihasni_1718732245_3393294477122149575_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -644,7 +644,7 @@ const GALLERY = [
   },
   {
     id: 81,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718732346_3393295320269570661_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718732346_3393295320269570661_14685689414.webp",
     alt: "syedalinaqihasni_1718732346_3393295320269570661_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -652,7 +652,7 @@ const GALLERY = [
   },
   {
     id: 82,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718732381_3393295620917271798_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718732381_3393295620917271798_14685689414.webp",
     alt: "syedalinaqihasni_1718732381_3393295620917271798_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -660,7 +660,7 @@ const GALLERY = [
   },
   {
     id: 83,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718732419_3393295933124474697_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718732419_3393295933124474697_14685689414.webp",
     alt: "syedalinaqihasni_1718732419_3393295933124474697_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -668,7 +668,7 @@ const GALLERY = [
   },
   {
     id: 84,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718732465_3393296319185147047_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718732465_3393296319185147047_14685689414.webp",
     alt: "syedalinaqihasni_1718732465_3393296319185147047_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -676,7 +676,7 @@ const GALLERY = [
   },
   {
     id: 85,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718732495_3393296571354941907_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718732495_3393296571354941907_14685689414.webp",
     alt: "syedalinaqihasni_1718732495_3393296571354941907_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -684,7 +684,7 @@ const GALLERY = [
   },
   {
     id: 86,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718811983_3393963369909770629_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718811983_3393963369909770629_14685689414.webp",
     alt: "syedalinaqihasni_1718811983_3393963369909770629_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -692,7 +692,7 @@ const GALLERY = [
   },
   {
     id: 87,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812394_3393966816151373331_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812394_3393966816151373331_14685689414.webp",
     alt: "syedalinaqihasni_1718812394_3393966816151373331_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -700,7 +700,7 @@ const GALLERY = [
   },
   {
     id: 88,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812651_3393968969465043821_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812651_3393968969465043821_14685689414.webp",
     alt: "syedalinaqihasni_1718812651_3393968969465043821_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -708,7 +708,7 @@ const GALLERY = [
   },
   {
     id: 89,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812704_3393969416544409212_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812704_3393969416544409212_14685689414.webp",
     alt: "syedalinaqihasni_1718812704_3393969416544409212_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -716,7 +716,7 @@ const GALLERY = [
   },
   {
     id: 90,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812744_3393969753531577727_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812744_3393969753531577727_14685689414.webp",
     alt: "syedalinaqihasni_1718812744_3393969753531577727_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -724,7 +724,7 @@ const GALLERY = [
   },
   {
     id: 91,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812807_3393970276326268144_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812807_3393970276326268144_14685689414.webp",
     alt: "syedalinaqihasni_1718812807_3393970276326268144_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -732,7 +732,7 @@ const GALLERY = [
   },
   {
     id: 92,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812833_3393970499035346415_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812833_3393970499035346415_14685689414.webp",
     alt: "syedalinaqihasni_1718812833_3393970499035346415_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -740,7 +740,7 @@ const GALLERY = [
   },
   {
     id: 93,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812847_3393970615175851577_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812847_3393970615175851577_14685689414.webp",
     alt: "syedalinaqihasni_1718812847_3393970615175851577_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -748,7 +748,7 @@ const GALLERY = [
   },
   {
     id: 94,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812864_3393970761473184845_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812864_3393970761473184845_14685689414.webp",
     alt: "syedalinaqihasni_1718812864_3393970761473184845_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -756,7 +756,7 @@ const GALLERY = [
   },
   {
     id: 95,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812927_3393971286415263778_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812927_3393971286415263778_14685689414.webp",
     alt: "syedalinaqihasni_1718812927_3393971286415263778_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -764,7 +764,7 @@ const GALLERY = [
   },
   {
     id: 96,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718812962_3393971580041876172_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718812962_3393971580041876172_14685689414.webp",
     alt: "syedalinaqihasni_1718812962_3393971580041876172_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -772,7 +772,7 @@ const GALLERY = [
   },
   {
     id: 97,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813142_3393973090603738729_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813142_3393973090603738729_14685689414.webp",
     alt: "syedalinaqihasni_1718813142_3393973090603738729_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -780,7 +780,7 @@ const GALLERY = [
   },
   {
     id: 98,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813277_3393974221236942709_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813277_3393974221236942709_14685689414.webp",
     alt: "syedalinaqihasni_1718813277_3393974221236942709_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -788,7 +788,7 @@ const GALLERY = [
   },
   {
     id: 99,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813323_3393974605234036014_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813323_3393974605234036014_14685689414.webp",
     alt: "syedalinaqihasni_1718813323_3393974605234036014_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -796,7 +796,7 @@ const GALLERY = [
   },
   {
     id: 100,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813345_3393974796267798151_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813345_3393974796267798151_14685689414.webp",
     alt: "syedalinaqihasni_1718813345_3393974796267798151_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -804,7 +804,7 @@ const GALLERY = [
   },
   {
     id: 101,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813399_3393975244160517526_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813399_3393975244160517526_14685689414.webp",
     alt: "syedalinaqihasni_1718813399_3393975244160517526_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -812,7 +812,7 @@ const GALLERY = [
   },
   {
     id: 102,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813415_3393975381196801471_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813415_3393975381196801471_14685689414.webp",
     alt: "syedalinaqihasni_1718813415_3393975381196801471_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -820,7 +820,7 @@ const GALLERY = [
   },
   {
     id: 103,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813546_3393976482631715921_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813546_3393976482631715921_14685689414.webp",
     alt: "syedalinaqihasni_1718813546_3393976482631715921_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -828,7 +828,7 @@ const GALLERY = [
   },
   {
     id: 104,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813604_3393976961092695961_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813604_3393976961092695961_14685689414.webp",
     alt: "syedalinaqihasni_1718813604_3393976961092695961_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -836,7 +836,7 @@ const GALLERY = [
   },
   {
     id: 105,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813891_3393979376632325563_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813891_3393979376632325563_14685689414.webp",
     alt: "syedalinaqihasni_1718813891_3393979376632325563_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -844,7 +844,7 @@ const GALLERY = [
   },
   {
     id: 106,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813921_3393979622980570987_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813921_3393979622980570987_14685689414.webp",
     alt: "syedalinaqihasni_1718813921_3393979622980570987_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -852,7 +852,7 @@ const GALLERY = [
   },
   {
     id: 107,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718813941_3393979789435658327_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718813941_3393979789435658327_14685689414.webp",
     alt: "syedalinaqihasni_1718813941_3393979789435658327_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -860,7 +860,7 @@ const GALLERY = [
   },
   {
     id: 108,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718814125_3393981332830370279_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718814125_3393981332830370279_14685689414.webp",
     alt: "syedalinaqihasni_1718814125_3393981332830370279_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -868,7 +868,7 @@ const GALLERY = [
   },
   {
     id: 109,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718814190_3393981884096118660_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718814190_3393981884096118660_14685689414.webp",
     alt: "syedalinaqihasni_1718814190_3393981884096118660_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -876,7 +876,7 @@ const GALLERY = [
   },
   {
     id: 110,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718814458_3393984128929694839_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718814458_3393984128929694839_14685689414.webp",
     alt: "syedalinaqihasni_1718814458_3393984128929694839_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -884,7 +884,7 @@ const GALLERY = [
   },
   {
     id: 111,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1718814630_3393985576050616688_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1718814630_3393985576050616688_14685689414.webp",
     alt: "syedalinaqihasni_1718814630_3393985576050616688_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -892,7 +892,7 @@ const GALLERY = [
   },
   {
     id: 112,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719344345_3398429139909960934_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719344345_3398429139909960934_14685689414.webp",
     alt: "syedalinaqihasni_1719344345_3398429139909960934_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -900,7 +900,7 @@ const GALLERY = [
   },
   {
     id: 113,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719344414_3398429721408216094_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719344414_3398429721408216094_14685689414.webp",
     alt: "syedalinaqihasni_1719344414_3398429721408216094_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -908,7 +908,7 @@ const GALLERY = [
   },
   {
     id: 114,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719344776_3398432759149525524_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719344776_3398432759149525524_14685689414.webp",
     alt: "syedalinaqihasni_1719344776_3398432759149525524_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -916,7 +916,7 @@ const GALLERY = [
   },
   {
     id: 115,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345200_3398436319040030471_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345200_3398436319040030471_14685689414.webp",
     alt: "syedalinaqihasni_1719345200_3398436319040030471_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -924,7 +924,7 @@ const GALLERY = [
   },
   {
     id: 116,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345352_3398437593940684950_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345352_3398437593940684950_14685689414.webp",
     alt: "syedalinaqihasni_1719345352_3398437593940684950_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -932,7 +932,7 @@ const GALLERY = [
   },
   {
     id: 117,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345481_3398438676658288838_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345481_3398438676658288838_14685689414.webp",
     alt: "syedalinaqihasni_1719345481_3398438676658288838_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -940,7 +940,7 @@ const GALLERY = [
   },
   {
     id: 118,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345659_3398440165048878165_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345659_3398440165048878165_14685689414.webp",
     alt: "syedalinaqihasni_1719345659_3398440165048878165_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -948,7 +948,7 @@ const GALLERY = [
   },
   {
     id: 119,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345799_3398441343413436903_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345799_3398441343413436903_14685689414.webp",
     alt: "syedalinaqihasni_1719345799_3398441343413436903_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -956,7 +956,7 @@ const GALLERY = [
   },
   {
     id: 120,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345850_3398441767390596157_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345850_3398441767390596157_14685689414.webp",
     alt: "syedalinaqihasni_1719345850_3398441767390596157_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -964,7 +964,7 @@ const GALLERY = [
   },
   {
     id: 121,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345889_3398442092432234666_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345889_3398442092432234666_14685689414.webp",
     alt: "syedalinaqihasni_1719345889_3398442092432234666_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -972,7 +972,7 @@ const GALLERY = [
   },
   {
     id: 122,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719345969_3398442766498976167_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719345969_3398442766498976167_14685689414.webp",
     alt: "syedalinaqihasni_1719345969_3398442766498976167_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -980,7 +980,7 @@ const GALLERY = [
   },
   {
     id: 123,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719346031_3398443290224930316_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719346031_3398443290224930316_14685689414.webp",
     alt: "syedalinaqihasni_1719346031_3398443290224930316_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -988,7 +988,7 @@ const GALLERY = [
   },
   {
     id: 124,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380059_3398728732476372251_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380059_3398728732476372251_14685689414.webp",
     alt: "syedalinaqihasni_1719380059_3398728732476372251_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -996,7 +996,7 @@ const GALLERY = [
   },
   {
     id: 125,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380189_3398729823699884261_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380189_3398729823699884261_14685689414.webp",
     alt: "syedalinaqihasni_1719380189_3398729823699884261_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1004,7 +1004,7 @@ const GALLERY = [
   },
   {
     id: 126,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380213_3398730027148804680_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380213_3398730027148804680_14685689414.webp",
     alt: "syedalinaqihasni_1719380213_3398730027148804680_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1012,7 +1012,7 @@ const GALLERY = [
   },
   {
     id: 127,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380312_3398730858158041314_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380312_3398730858158041314_14685689414.webp",
     alt: "syedalinaqihasni_1719380312_3398730858158041314_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1020,7 +1020,7 @@ const GALLERY = [
   },
   {
     id: 128,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380379_3398731422451337885_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380379_3398731422451337885_14685689414.webp",
     alt: "syedalinaqihasni_1719380379_3398731422451337885_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1028,7 +1028,7 @@ const GALLERY = [
   },
   {
     id: 129,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380723_3398734307142459661_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380723_3398734307142459661_14685689414.webp",
     alt: "syedalinaqihasni_1719380723_3398734307142459661_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1036,7 +1036,7 @@ const GALLERY = [
   },
   {
     id: 130,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380785_3398734823738293814_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380785_3398734823738293814_14685689414.webp",
     alt: "syedalinaqihasni_1719380785_3398734823738293814_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1044,7 +1044,7 @@ const GALLERY = [
   },
   {
     id: 131,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380848_3398735352346213115_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380848_3398735352346213115_14685689414.webp",
     alt: "syedalinaqihasni_1719380848_3398735352346213115_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1052,7 +1052,7 @@ const GALLERY = [
   },
   {
     id: 132,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380867_3398735509775448504_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380867_3398735509775448504_14685689414.webp",
     alt: "syedalinaqihasni_1719380867_3398735509775448504_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1060,7 +1060,7 @@ const GALLERY = [
   },
   {
     id: 133,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380895_3398735747869104765_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380895_3398735747869104765_14685689414.webp",
     alt: "syedalinaqihasni_1719380895_3398735747869104765_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1068,7 +1068,7 @@ const GALLERY = [
   },
   {
     id: 134,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380918_3398735942551939088_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380918_3398735942551939088_14685689414.webp",
     alt: "syedalinaqihasni_1719380918_3398735942551939088_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1076,7 +1076,7 @@ const GALLERY = [
   },
   {
     id: 135,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719380988_3398736525182789046_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719380988_3398736525182789046_14685689414.webp",
     alt: "syedalinaqihasni_1719380988_3398736525182789046_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1084,7 +1084,7 @@ const GALLERY = [
   },
   {
     id: 136,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719381010_3398736714740105673_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719381010_3398736714740105673_14685689414.webp",
     alt: "syedalinaqihasni_1719381010_3398736714740105673_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1092,7 +1092,7 @@ const GALLERY = [
   },
   {
     id: 137,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719381065_3398737173957776385_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719381065_3398737173957776385_14685689414.webp",
     alt: "syedalinaqihasni_1719381065_3398737173957776385_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1100,7 +1100,7 @@ const GALLERY = [
   },
   {
     id: 138,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719381398_3398739965300469986_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719381398_3398739965300469986_14685689414.webp",
     alt: "syedalinaqihasni_1719381398_3398739965300469986_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1108,7 +1108,7 @@ const GALLERY = [
   },
   {
     id: 139,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719381533_3398741097947327043_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719381533_3398741097947327043_14685689414.webp",
     alt: "syedalinaqihasni_1719381533_3398741097947327043_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1116,7 +1116,7 @@ const GALLERY = [
   },
   {
     id: 140,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719381625_3398741874153496937_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719381625_3398741874153496937_14685689414.webp",
     alt: "syedalinaqihasni_1719381625_3398741874153496937_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1124,7 +1124,7 @@ const GALLERY = [
   },
   {
     id: 141,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719514019_3399852471872031593_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719514019_3399852471872031593_14685689414.webp",
     alt: "syedalinaqihasni_1719514019_3399852471872031593_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1132,7 +1132,7 @@ const GALLERY = [
   },
   {
     id: 142,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719514775_3399858811302341847_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719514775_3399858811302341847_14685689414.webp",
     alt: "syedalinaqihasni_1719514775_3399858811302341847_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1140,7 +1140,7 @@ const GALLERY = [
   },
   {
     id: 143,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719514819_3399859186239742857_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719514819_3399859186239742857_14685689414.webp",
     alt: "syedalinaqihasni_1719514819_3399859186239742857_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1148,7 +1148,7 @@ const GALLERY = [
   },
   {
     id: 144,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719514887_3399859752126698893_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719514887_3399859752126698893_14685689414.webp",
     alt: "syedalinaqihasni_1719514887_3399859752126698893_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1156,7 +1156,7 @@ const GALLERY = [
   },
   {
     id: 145,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719514923_3399860057530775888_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719514923_3399860057530775888_14685689414.webp",
     alt: "syedalinaqihasni_1719514923_3399860057530775888_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1164,7 +1164,7 @@ const GALLERY = [
   },
   {
     id: 146,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719514953_3399860307662262162_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719514953_3399860307662262162_14685689414.webp",
     alt: "syedalinaqihasni_1719514953_3399860307662262162_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1172,7 +1172,7 @@ const GALLERY = [
   },
   {
     id: 147,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515143_3399861898519969484_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515143_3399861898519969484_14685689414.webp",
     alt: "syedalinaqihasni_1719515143_3399861898519969484_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1180,7 +1180,7 @@ const GALLERY = [
   },
   {
     id: 148,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515230_3399862632304995737_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515230_3399862632304995737_14685689414.webp",
     alt: "syedalinaqihasni_1719515230_3399862632304995737_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1188,7 +1188,7 @@ const GALLERY = [
   },
   {
     id: 149,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515263_3399862911100312622_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515263_3399862911100312622_14685689414.webp",
     alt: "syedalinaqihasni_1719515263_3399862911100312622_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1196,7 +1196,7 @@ const GALLERY = [
   },
   {
     id: 150,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515290_3399863133146901066_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515290_3399863133146901066_14685689414.webp",
     alt: "syedalinaqihasni_1719515290_3399863133146901066_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1204,7 +1204,7 @@ const GALLERY = [
   },
   {
     id: 151,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515633_3399866007260209244_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515633_3399866007260209244_14685689414.webp",
     alt: "syedalinaqihasni_1719515633_3399866007260209244_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1212,7 +1212,7 @@ const GALLERY = [
   },
   {
     id: 152,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515691_3399866500904605216_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515691_3399866500904605216_14685689414.webp",
     alt: "syedalinaqihasni_1719515691_3399866500904605216_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1220,7 +1220,7 @@ const GALLERY = [
   },
   {
     id: 153,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515742_3399866921677049698_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515742_3399866921677049698_14685689414.webp",
     alt: "syedalinaqihasni_1719515742_3399866921677049698_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1228,7 +1228,7 @@ const GALLERY = [
   },
   {
     id: 154,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515788_3399867312066016817_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515788_3399867312066016817_14685689414.webp",
     alt: "syedalinaqihasni_1719515788_3399867312066016817_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1236,7 +1236,7 @@ const GALLERY = [
   },
   {
     id: 155,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719515876_3399868050028877850_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719515876_3399868050028877850_14685689414.webp",
     alt: "syedalinaqihasni_1719515876_3399868050028877850_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1244,7 +1244,7 @@ const GALLERY = [
   },
   {
     id: 156,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719516018_3399869242620481720_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719516018_3399869242620481720_14685689414.webp",
     alt: "syedalinaqihasni_1719516018_3399869242620481720_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1252,7 +1252,7 @@ const GALLERY = [
   },
   {
     id: 157,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719516072_3399869694657365712_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719516072_3399869694657365712_14685689414.webp",
     alt: "syedalinaqihasni_1719516072_3399869694657365712_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1260,7 +1260,7 @@ const GALLERY = [
   },
   {
     id: 158,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719516201_3399870773348290692_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719516201_3399870773348290692_14685689414.webp",
     alt: "syedalinaqihasni_1719516201_3399870773348290692_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1268,7 +1268,7 @@ const GALLERY = [
   },
   {
     id: 159,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719516275_3399871396135518083_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719516275_3399871396135518083_14685689414.webp",
     alt: "syedalinaqihasni_1719516275_3399871396135518083_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1276,7 +1276,7 @@ const GALLERY = [
   },
   {
     id: 160,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719516298_3399871586514948709_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719516298_3399871586514948709_14685689414.webp",
     alt: "syedalinaqihasni_1719516298_3399871586514948709_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1284,7 +1284,7 @@ const GALLERY = [
   },
   {
     id: 161,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719516339_3399871933291572457_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719516339_3399871933291572457_14685689414.webp",
     alt: "syedalinaqihasni_1719516339_3399871933291572457_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1292,7 +1292,7 @@ const GALLERY = [
   },
   {
     id: 162,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1719516488_3399873180132227180_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1719516488_3399873180132227180_14685689414.webp",
     alt: "syedalinaqihasni_1719516488_3399873180132227180_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1300,7 +1300,7 @@ const GALLERY = [
   },
   {
     id: 163,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1722846964_3427811244369028510_14685689414.jpg",
+    src: "/gallery/syedalinaqihasni_1722846964_3427811244369028510_14685689414.jpg",
     alt: "syedalinaqihasni_1722846964_3427811244369028510_14685689414.jpg",
     caption: "No caption available",
     album: "default",
@@ -1308,7 +1308,7 @@ const GALLERY = [
   },
   {
     id: 164,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1728100654_3471882389409123345_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1728100654_3471882389409123345_14685689414.webp",
     alt: "syedalinaqihasni_1728100654_3471882389409123345_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1316,7 +1316,7 @@ const GALLERY = [
   },
   {
     id: 165,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1728546106_3475619111309438930_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1728546106_3475619111309438930_14685689414.webp",
     alt: "syedalinaqihasni_1728546106_3475619111309438930_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1324,7 +1324,7 @@ const GALLERY = [
   },
   {
     id: 166,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1738294025_3557390581441364071_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1738294025_3557390581441364071_14685689414.webp",
     alt: "syedalinaqihasni_1738294025_3557390581441364071_14685689414.webp",
     caption: "No caption available",
     album: "default",
@@ -1332,7 +1332,7 @@ const GALLERY = [
   },
   {
     id: 167,
-    src: "https://www.syedalinaqihasni.com/gallery/syedalinaqihasni_1738294093_3557391147085229392_14685689414.webp",
+    src: "/gallery/syedalinaqihasni_1738294093_3557391147085229392_14685689414.webp",
     alt: "syedalinaqihasni_1738294093_3557391147085229392_14685689414.webp",
     caption: "No caption available",
     album: "default",

@@ -120,7 +120,7 @@ export default function CertificateGrid() {
               >
                 <div className="relative rounded-lg overflow-hidden">
                   <Image
-                    src={image?.src  || 'https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'}
+                    src={image?.src  || '/images/placeholder-syed-ali-naqi-hasni.webp'}
                     alt={image?.alt || `Syed Ali Naqi Hasni`}
                     width={500}
                     height={300}
@@ -156,7 +156,7 @@ export default function CertificateGrid() {
             <div>
               <div className="relative w-full h-[60vh]">
                 <Image
-                  src={selectedImage.src || 'https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'}
+                  src={selectedImage.src || '/images/placeholder-syed-ali-naqi-hasni.webp'}
                   alt={`${selectedImage.alt} - Syed Ali Naqi Hasni`}
                   fill
                   className="object-contain"

@@ -98,7 +98,7 @@ export default function GalleryGrid({ images }: { images: Images[] }) {
                   <Image
                     src={
                       image?.src ||
-                      "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                      "/images/placeholder-syed-ali-naqi-hasni.webp"
                     }
                     alt={image?.alt || `Syed Ali Naqi Hasni`}
                     width={500}
@@ -145,7 +145,7 @@ export default function GalleryGrid({ images }: { images: Images[] }) {
                 <Image
                   src={
                     selectedImage.src ||
-                    "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                    "/images/placeholder-syed-ali-naqi-hasni.webp"
                   }
                   alt={`${selectedImage.alt} - Syed Ali Naqi Hasni`}
                   fill

@@ -70,7 +70,7 @@ export default function FeaturedPricing({ plans }: { plans: Plan [] }) {
                 className={plan?.popular ? styles?.popularButton : styles?.button}
                 asChild
               >
-                <Link href="https://www.syedalinaqihasni.com/pricing">
+                <Link href="/pricing">
                   View Details
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

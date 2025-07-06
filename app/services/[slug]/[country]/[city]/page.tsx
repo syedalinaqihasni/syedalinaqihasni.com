@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { Check, ArrowRight, Quote } from "lucide-react";
-import { dashToProperCase } from "@/lib/utils";
+import { dashToProperCase, properCaseToDash } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
 import { countries } from "@/constants/area-services";
@@ -33,15 +33,17 @@ export async function generateMetadata({
   // Create location string for SEO
   const locationParts = [area, city, country].filter(Boolean);
   const location = locationParts?.length
-    ? ` in ${locationParts?.join(', ')}`
-    : '';
+    ? ` in ${locationParts?.join(", ")}`
+    : "";
 
   const title = `${service?.title}${location} | Syed Ali Naqi Hasni`;
   const description = service?.description;
 
   // Build dynamic path for full URL
-  const pathParts = ['/services', params?.slug, country, city, area].filter(Boolean);
-  const path = pathParts.join('/');
+  const pathParts = ["/services", params?.slug, country, city, area].filter(
+    Boolean
+  );
+  const path = pathParts.join("/");
 
   return generateDynamicMetadata({
     title,
@@ -143,18 +145,26 @@ export default function ServicePage({
       {(service?.deliverables || service?.requirements) && (
         <div className="mb-12 grid md:grid-cols-2 gap-8">
           <Section title="What’s Included">
-            <FeatureList features={service?.features} />
+            <FeatureList
+              features={service?.features}
+              link={`in-${city}-${country}`}
+            />
           </Section>
           <div>
             <Section title="Related Serivices in Your City">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
-                  <Badge key={serv} variant="secondary" className="text-xs">
-                    {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                    {area ? dashToProperCase(area) : ""}{" "}
-                    {city ? dashToProperCase(city) : ""}{" "}
-                    {country ? dashToProperCase(country) : ""}
-                  </Badge>
+                  <Link
+                    href={`/related-services/${serv}-in-${city}-${country}`}
+                    key={serv}
+                  >
+                    <Badge key={serv} variant="secondary" className="text-xs">
+                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                      {area ? dashToProperCase(area) : ""}{" "}
+                      {city ? dashToProperCase(city) : ""}{" "}
+                      {country ? dashToProperCase(country) : ""}
+                    </Badge>
+                  </Link>
                 ))}
               </div>
             </Section>
@@ -182,7 +192,11 @@ export default function ServicePage({
       {service?.detailedDescription && (
         <Section title="More About This Service">
           <div className="prose prose-neutral max-w-none">
-            <HtmlRenderer html={service?.detailedDescription} />
+            <HtmlRenderer
+              path=""
+              terms={[]}
+              html={service?.detailedDescription}
+            />
           </div>
         </Section>
       )}
@@ -231,14 +245,14 @@ export default function ServicePage({
         <div className={styles?.containerLarge}>
           <div className={styles?.projectsHeaderWrapper}>
             <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="https://www.syedalinaqihasni.com/pricing">
+            <Link href="/pricing">
               <Button variant={"outline"}>
                 View All Plans
                 <ArrowRight className={"ml-2 h-4 w-4"} />
               </Button>
             </Link>
           </div>
-          <FeaturedPricing  plans={service?.plans}/>
+          <FeaturedPricing plans={service?.plans} />
         </div>
       </section>
       <div className="text-center mt-16">
@@ -247,7 +261,7 @@ export default function ServicePage({
           Let’s talk about how I can help you with your project.
         </p>
         <Button size="lg" asChild>
-          <Link href="https://www.syedalinaqihasni.com/contact">
+          <Link href="/contact">
             Contact Me
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
@@ -274,13 +288,27 @@ function Section({
   );
 }
 
-function FeatureList({ features }: { features: string[] }) {
+function FeatureList({
+  features,
+  link,
+}: {
+  features: string[];
+  link?: string;
+}) {
   return (
     <div className="space-y-2">
       {features.map((feature, i) => (
         <div key={i} className="flex items-center gap-2 text-sm">
           <Check className="w-4 h-4 text-green-500" />
-          <span>{feature}</span>
+          {link ? (
+            <Link
+              href={`/related-services/${properCaseToDash(feature)}-${link}`}
+            >
+              <span>{feature}</span>
+            </Link>
+          ) : (
+            <span>{feature}</span>
+          )}
         </div>
       ))}
     </div>

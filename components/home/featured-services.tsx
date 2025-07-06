@@ -77,7 +77,7 @@ export default function FeaturedServices({services}:{services: typeof FEATURED_S
               </div>
 
               <Button className="w-full" asChild>
-                <Link href="https://www.syedalinaqihasni.com/services">
+                <Link href="/services">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

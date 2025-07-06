@@ -17,7 +17,7 @@ const DESCRIPTION =
 // Helper to fetch images from API
 async function fetchGalleryImages(): Promise<Images[]> {
   try {
-    const res = await fetch(`https://www.syedalinaqihasni.com/api/certificates`, {
+    const res = await fetch(`/api/certificates`, {
       cache: 'no-store',
     });
 

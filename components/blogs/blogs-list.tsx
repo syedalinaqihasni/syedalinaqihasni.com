@@ -67,26 +67,26 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
           >
             <Card className={styles?.card}>
               <Link
-                href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}
+                href={`/blogs/${post?.slug}`}
                 className={"relative block h-48 w-full"}
               >
                 <Image
                   src={
                     post?.image
                       ? post?.image
-                      : "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                      : "/images/placeholder-syed-ali-naqi-hasni.webp"
                   }
                   alt={`${post?.title} - Syed Ali Naqi Hasni`}
                   fill
                   className={
-                    styles?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                    styles?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"
                   }
                   priority={index < 3}
                 />
               </Link>
               <CardContent className={"p-6"}>
                 <div className={styles?.categoriesWrapper}>
-                  <a href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category.toLowerCase().replace(/[\s/]+/g, '-')}` }>
+                  <a href={`/blogs/category/${post?.category.toLowerCase().replace(/[\s/]+/g, '-')}` }>
                     
                   <Badge
                     variant={"secondary"}
@@ -96,7 +96,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
                   </Badge>
                   </a>
                 </div>
-                <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
+                <Link href={`/blogs/${post?.slug}`}>
                   <h3 className={styles?.title}>{post?.title}</h3>
                 </Link>
                 <p className={styles?.excerpt}>{post?.excerpt}</p>
@@ -112,7 +112,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
                 </div>
                 <div className={styles?.tagsWrapper}>
                   {post?.tags.slice(0, 2)?.map((tag) => (
-                  <a href={`https://www.syedalinaqihasni.com/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}` } 
+                  <a href={`/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}` } 
                       key={tag}>
                     <Badge
                       variant={"secondary"}

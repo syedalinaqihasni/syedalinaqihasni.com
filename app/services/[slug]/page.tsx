@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import Link from "next/link";
 import { Check, ArrowRight, Quote } from "lucide-react";
-import { toProperCase } from "@/lib/utils";
+import { properCaseToDash, toProperCase } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
@@ -93,11 +93,14 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <Section title="Related Serivices">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
-                  // <Link href={serv} key={serv}>
+                 <Link
+                    href={`/related-services/${serv}`}
+                    key={serv}
+                  >
                   <Badge variant="secondary" className="text-xs" key={serv}>
                     {toProperCase(serv).replace(/-/g, " ")}
                   </Badge>
-                  // </Link>
+                  </Link>
                 ))}
               </div>
             </Section>
@@ -125,7 +128,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
       {service?.detailedDescription && (
         <Section title="More About This Service">
           <div className="prose prose-neutral max-w-none">
-            <HtmlRenderer html={service?.detailedDescription} />
+            <HtmlRenderer  path="" terms={[]} html={service?.detailedDescription} />
           </div>
         </Section>
       )}
@@ -136,7 +139,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className={styles?.containerLarge}>
           <div className={styles?.projectsHeaderWrapper}>
             <h2 className={styles?.sectionHeaderLeft}>Similar Projects </h2>
-            <Link href="https://www.syedalinaqihasni.com/projects">
+            <Link href="/projects">
               <Button variant={"outline"}>
                 View All Projects
                 <ArrowRight className={"ml-2 h-4 w-4"} />
@@ -191,7 +194,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className={styles?.containerLarge}>
           <div className={styles?.projectsHeaderWrapper}>
             <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="https://www.syedalinaqihasni.com/pricing">
+            <Link href="/pricing">
               <Button variant={"outline"}>
                 View All Plans
                 <ArrowRight className={"ml-2 h-4 w-4"} />
@@ -207,7 +210,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           Let’s talk about how I can help you with your project.
         </p>
         <Button size="lg" asChild>
-          <Link href="https://www.syedalinaqihasni.com/contact">
+          <Link href="/contact">
             Contact Me
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
@@ -234,15 +237,32 @@ function Section({
   );
 }
 
-function FeatureList({ features }: { features: string[] }) {
+
+function FeatureList({
+  features,
+  link,
+}: {
+  features: string[];
+  link?: string;
+}) {
   return (
     <div className="space-y-2">
       {features.map((feature, i) => (
         <div key={i} className="flex items-center gap-2 text-sm">
           <Check className="w-4 h-4 text-green-500" />
-          <span>{feature}</span>
+          {
+            link ? (
+               <Link href={`/related-services/${properCaseToDash(feature)}-${link}`}>
+            <span>{feature}</span>
+          </Link>
+            ): (
+            <span>{feature}</span>
+            )
+          }
         </div>
       ))}
     </div>
   );
 }
+
+

@@ -3,34 +3,76 @@
 import { useEffect, useRef, useState } from 'react';
 import DOMPurify from 'isomorphic-dompurify';
 
-export default function HtmlRenderer({ html }: { html: string }) {
+export default function HtmlRenderer({ html, terms, path }: { html: string, terms?: string[], path?: string,  }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [sanitizedHtml, setSanitizedHtml] = useState<string>(''); // state to hold processed HTML
 
   // Moved DOMParser usage into useEffect
-  useEffect(() => {
-    const sanitizePreCodeBlocks = (rawHtml: string): string => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(rawHtml, 'text/html');
+ useEffect(() => {
+  const sanitizePreCodeBlocks = (rawHtml: string): string => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(rawHtml, 'text/html');
 
-      doc.querySelectorAll('pre').forEach((pre) => {
-        const code = pre.querySelector('code');
-        const raw = code?.innerHTML || pre.innerHTML;
+    doc.querySelectorAll('pre').forEach((pre) => {
+      const code = pre.querySelector('code');
+      const raw = code?.innerHTML || pre.innerHTML;
 
-        const newCode = doc.createElement('code');
-        newCode.textContent = raw;
+      const newCode = doc.createElement('code');
+      newCode.textContent = raw;
 
-        pre.innerHTML = '';
-        pre.appendChild(newCode);
-      });
+      pre.innerHTML = '';
+      pre.appendChild(newCode);
+    });
 
-      return doc.body.innerHTML;
-    };
+    return doc.body.innerHTML;
+  };
 
-    const cleaned = sanitizePreCodeBlocks(html);
-    const purified = DOMPurify.sanitize(cleaned);
-    setSanitizedHtml(purified);
-  }, [html]);
+  const linkifyTerms = (html: string, terms: string[],path:string): string => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const walker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT, null);
+
+    const regex = new RegExp(`\\b(${terms?.join('|')})\\b`, 'gi');
+
+    let node: Node | null;
+    while ((node = walker.nextNode())) {
+      if (
+        node.parentElement &&
+        !['A', 'CODE', 'PRE', 'SCRIPT', 'STYLE'].includes(node.parentElement.tagName)
+      ) {
+        const text = node.textContent || '';
+        if (regex.test(text)) {
+          const frag = doc.createDocumentFragment();
+          let lastIndex = 0;
+          text.replace(regex, (match, _p1, offset) => {
+            if (offset > lastIndex) {
+              frag.appendChild(doc.createTextNode(text.slice(lastIndex, offset)));
+            }
+            const a = doc.createElement('a');
+            a.href = `${path.toLowerCase()}/${match.toLowerCase()}`;
+            a.textContent = match;
+            frag.appendChild(a);
+            lastIndex = offset + match.length;
+            return match;
+          });
+          if (lastIndex < text.length) {
+            frag.appendChild(doc.createTextNode(text.slice(lastIndex)));
+          }
+          node.parentNode?.replaceChild(frag, node);
+        }
+      }
+    }
+    return doc.body.innerHTML;
+  };
+
+  const cleaned = sanitizePreCodeBlocks(html);
+  const linked = terms?.length && path
+    ? linkifyTerms(cleaned, terms, path)
+    : cleaned; // Only linkify if terms and path are provided
+  const purified = DOMPurify.sanitize(linked); // run last
+
+  setSanitizedHtml(purified);
+}, [html, terms, path]);
 
   // Handle copy buttons after HTML is rendered
   useEffect(() => {

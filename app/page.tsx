@@ -133,7 +133,7 @@ export default function Page() {
                   <Image
                     src={
                       hero?.imageSrc ||
-                      "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                      "/images/placeholder-syed-ali-naqi-hasni.webp"
                     }
                     alt={hero?.imageAlt}
                     fill
@@ -154,7 +154,7 @@ export default function Page() {
           <div className={styles?.containerLarge}>
             <div className={styles?.projectsHeaderWrapper}>
               <h2 className={styles?.sectionHeaderLeft}>My Services</h2>
-              <Link href="https://www.syedalinaqihasni.com/services">
+              <Link href="/services">
                 <Button variant={"outline"}>
                   View All Services
                   <ArrowRight className={"ml-2 h-4 w-4"} />
@@ -189,7 +189,7 @@ export default function Page() {
           <div className={styles?.containerLarge}>
             <div className={styles?.projectsHeaderWrapper}>
               <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-              <Link href="https://www.syedalinaqihasni.com/pricing">
+              <Link href="/pricing">
                 <Button variant={"outline"}>
                   View All Plans
                   <ArrowRight className={"ml-2 h-4 w-4"} />
@@ -206,7 +206,7 @@ export default function Page() {
             <div className={styles?.containerLarge}>
               <div className={styles?.projectsHeaderWrapper}>
                 <h2 className={styles?.sectionHeaderLeft}>Recent Blogs</h2>
-                <Link href={"https://www.syedalinaqihasni.com/blogs"}>
+                <Link href={"/blogs"}>
                   <Button variant={"outline"}>
                     View All Blogs
                     <ArrowRight className={"ml-2 h-4 w-4"} />

@@ -19,7 +19,7 @@ const AboutPage = () => {
         <div className={'grid grid-cols-1 md:grid-cols-2 gap-12 mb-20'}>
           <div className={'relative h-[400px] rounded-lg overflow-hidden'}>
             <Image
-              src={'https://www.syedalinaqihasni.com/images/about-us-syed-ali-naqi-hasni.webp'}
+              src={'/images/about-us-syed-ali-naqi-hasni.webp'}
               alt={'Profile Picture - Syed Ali Naqi Hasni'}
               fill
               className={'object-cover'}

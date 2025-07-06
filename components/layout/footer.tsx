@@ -29,7 +29,7 @@ export default function Footer() {
       <div className={"container mx-auto px-4 md:px-6"}>
         <div className={"grid grid-cols-1 md:grid-cols-3 gap-8"}>
           <div>
-            <Link href={"https://www.syedalinaqihasni.com/"} className={"font-bold text-2xl mb-4"}>
+            <Link href={"/"} className={"font-bold text-2xl mb-4"}>
               <h3
                 className={
                   "mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400"

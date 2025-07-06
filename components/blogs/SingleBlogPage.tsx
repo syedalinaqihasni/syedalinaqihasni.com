@@ -5,7 +5,7 @@ import { Calendar, Clock, Share2 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CONSTANT, posts } from "@/constants/blogs";
+import { allTags, CONSTANT, posts } from "@/constants/blogs";
 import { formatDate } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import { Post } from "@/types/blogs";
@@ -45,7 +45,7 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
       <div className={styles?.wrapper}>
         <div className={"mb-8"}>
           <div className={styles?.categoryWrapper}>
-            <a href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category.toLowerCase()}`}>
+            <a href={`/blogs/category/${post?.category.toLowerCase()}`}>
               <Badge variant={"secondary"}>{post?.category}</Badge>
             </a>
           </div>
@@ -64,7 +64,7 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
           </div>
           <div className={styles?.tagWrapper}>
             {post?.tags?.map((tag: string) => (
-              <a href={`https://www.syedalinaqihasni.com/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}`} key={tag}>
+              <a href={`/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}`} key={tag}>
                 <Badge key={tag} variant={"secondary"}>
                   {tag}
                 </Badge>
@@ -75,16 +75,16 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
         {post?.image && (
           <div className={styles?.imageWrapper}>
             <Image
-              src={post?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
+              src={post?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"}
               alt={`${post?.title} - Syed Ali Naqi Hasni`}
               fill
-              className={styles?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
+              className={styles?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"}
             />
           </div>
         )}
         <div className={styles?.content}>
           <div>
-            <HtmlRenderer html={post?.content} />
+            <HtmlRenderer  path="/blogs/tag" terms={allTags} html={post?.content}/>
           </div>
         </div>
         <div className={styles?.shareWrapper}>

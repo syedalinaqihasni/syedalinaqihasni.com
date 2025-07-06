@@ -103,7 +103,7 @@ export default function PricingPage() {
                         className={plan?.popular ? styles?.popularButton : styles?.button}
                         asChild
                       >
-                        <Link href="https://www.syedalinaqihasni.com/contact">
+                        <Link href="/contact">
                           {plan?.buttonText}
                         </Link>
                       </Button>

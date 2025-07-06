@@ -585,7 +585,7 @@ export const SERVICES_PAGE_CONSTANT = {
     description:
       "Let's discuss your requirements and create something amazing together.",
     buttonText: "Get Started",
-    buttonLink: "https://www.syedalinaqihasni.com/contact",
+    buttonLink: "/contact",
   },
 };
 
