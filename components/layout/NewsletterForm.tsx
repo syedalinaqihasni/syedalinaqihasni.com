@@ -75,7 +75,7 @@ export default function NewsletterForm() {
           <div
             ref={recaptchaRef}
             className="g-recaptcha"
-            data-sitekey={'6Lcr43orAAAAACJf9MU_LS_cyHM2a2ss4lIoEylu'}
+            data-sitekey={'6Le453orAAAAAHr93o3eXeZII-SVzfli-w4v5Fq0'}
           ></div>
           <button
             type="submit"

@@ -6,7 +6,7 @@ const filePath = "data/newsletter.csv";
 const branch = "main"; 
 const githubToken = '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';
 // const sitekey='6Lcr43orAAAAACJf9MU_LS_cyHM2a2ss4lIoEylu';
-const secret='6Lcr43orAAAAALqF4O_aFtl_NqjM3JKVRjb4kZYc';
+const secret='6Le453orAAAAADneX7CqjrpbPGmc2FXWpAZ8oJd7';
 
 
 export async function POST(req) {
