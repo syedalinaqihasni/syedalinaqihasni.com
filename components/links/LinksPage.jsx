@@ -11,13 +11,8 @@ import { LINKS,
   PROFILE, } from '@/constants/links';
 
 
-const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
+const CONTAINER = 'container mx-auto px-4 pt-32 pb-10 md:pt-40';
 const MAX_WIDTH_WRAPPER = 'max-w-md mx-auto';
-
-const ICONS_CONTAINER = 'flex flex-wrap justify-center gap-4 mb-8';
-const ICON_WRAPPER_BASE =
-  'w-[100px] h-[100px] flex items-center justify-center rounded-full shadow-lg hover:scale-105 transition-transform';
-
 const PROFILE_CONTAINER = 'text-center mb-8';
 const PROFILE_IMAGE_WRAPPER =
   'relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden';

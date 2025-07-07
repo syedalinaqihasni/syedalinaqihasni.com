@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/theme-toggle';
 
@@ -22,6 +22,7 @@ const NAV_ITEMS = [
   { name: 'Blogs', path: '/blogs' },
   { name: 'Resume', path: '/resume' },
   { name: 'Contact', path: '/contact' },
+  { name: 'Sponsor', path: '/links', icon: Heart }, // ← Added sponsor with icon
 ];
 
 const styles = {
@@ -48,27 +49,28 @@ export default function Header() {
   }, []);
 
   const renderNavItems = (isMobile = false) =>
-    NAV_ITEMS?.map((item) => (
-      <Link
-        key={item.path}
-        href={item.path}
-        onClick={() => isMobile && setMobileMenuOpen(false)}
+  NAV_ITEMS?.map((item) => (
+    <Link
+      key={item.path}
+      href={item.path}
+      onClick={() => isMobile && setMobileMenuOpen(false)}
+    >
+      <Button
+        variant={pathname === item.path ? 'default' : 'ghost'}
+        size={'sm'}
+        className={
+          isMobile
+            ? styles?.mobileNavItem
+            : pathname !== item.path
+            ? 'hover:bg-muted'
+            : ''
+        }
       >
-        <Button
-          variant={pathname === item.path ? 'default' : 'ghost'}
-          size={'sm'}
-          className={
-            isMobile
-              ? styles?.mobileNavItem
-              : pathname !== item.path
-                ? 'hover:bg-muted'
-                : ''
-          }
-        >
-          {item.name}
-        </Button>
-      </Link>
-    ));
+        {item.icon && <item.icon className="w-4 h-4 mr-1" />}
+        {item.name}
+      </Button>
+    </Link>
+  ));
 
   return (
     <header

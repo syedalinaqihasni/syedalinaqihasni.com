@@ -13,28 +13,27 @@ export const CONSTANT = {
 
 export const CONTACT_INFO = [ 
   {
-    label: 'Email',
-    value: 'syedhasni151214@gmail.com',
-    link: 'mailto:syedhasni151214@gmail.com',
-    icon: Mail,
-  },
-  {
-    label: 'Email',
-    value: 'engr.syedalinaqihasni@gmail.com',
-    link: 'mailto:engr.syedalinaqihasni@gmail.com',
-    icon: Mail,
-  },
-  {
     label: 'Phone',
-    value: '+92 (316) 226-5948',
+    value: '+92 (3**) ****948',
     link: 'tel:00923162265948',
     icon: Phone,
   },
   {
     label: 'Phone',
-    value: '+92 (309) 273-4366',
+    value: '+92 (3**) ****366',
     link: 'tel:00923092734366',
     icon: Phone,
+  },{
+    label: 'Email',
+    value: 'syed***********@gmail.com',
+    link: 'mailto:syedhasni151214@gmail.com',
+    icon: Mail,
+  },
+  {
+    label: 'Email',
+    value: 'engr***********@gmail.com',
+    link: 'mailto:engr.syedalinaqihasni@gmail.com',
+    icon: Mail,
   },
   {
     label: 'Address',
