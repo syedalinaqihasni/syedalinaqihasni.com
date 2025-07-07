@@ -113,7 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       city.areas.flatMap((area) => {
         return [
           ...ALL_SERVS.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               area.slug
             }`,
             lastModified: new Date(),
@@ -121,7 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.4,
           })),
           ...ALL_SERVS.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               city.slug
             }`,
             lastModified: new Date(),
@@ -129,7 +129,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.4,
           })),
           ...ALL_SERVS.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               country.slug
             }`,
             lastModified: new Date(),
@@ -138,7 +138,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           })),
 
           ...ALL_FEATURES.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               area.slug
             }`,
             lastModified: new Date(),
@@ -146,7 +146,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.4,
           })),
           ...ALL_FEATURES.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               city.slug
             }`,
             lastModified: new Date(),
@@ -154,7 +154,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.4,
           })),
           ...ALL_FEATURES.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               country.slug
             }`,
             lastModified: new Date(),
@@ -163,7 +163,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           })),
 
           ...ALL_TECHNILOGIES.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               area.slug
             }`,
             lastModified: new Date(),
@@ -171,7 +171,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.4,
           })),
           ...ALL_TECHNILOGIES.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               city.slug
             }`,
             lastModified: new Date(),
@@ -179,7 +179,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.4,
           })),
           ...ALL_TECHNILOGIES.map((item) => ({
-            url: `${baseUrl}/realted-services/${normalizeString(item)}/${
+            url: `${baseUrl}/realted-services/${normalizeString(item)}-in-${
               country.slug
             }`,
             lastModified: new Date(),
@@ -196,19 +196,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       city.areas.flatMap((area) =>
         RELATED_JOB_TITLES.flatMap((job) => [
           {
-            url: `${baseUrl}/realted-jobs/${normalizeString(job)}/${area.slug}`,
+            url: `${baseUrl}/realted-jobs/${normalizeString(job)}-in-${area.slug}`,
             lastModified: new Date(),
             changeFrequency: "monthly" as const,
             priority: 0.4,
           },
           {
-            url: `${baseUrl}/realted-jobs/${normalizeString(job)}/${city.slug}`,
+            url: `${baseUrl}/realted-jobs/${normalizeString(job)}-in-${city.slug}`,
             lastModified: new Date(),
             changeFrequency: "monthly" as const,
             priority: 0.4,
           },
           {
-            url: `${baseUrl}/realted-jobs/${normalizeString(job)}/${
+            url: `${baseUrl}/realted-jobs/${normalizeString(job)}-in-${
               country.slug
             }`,
             lastModified: new Date(),
