@@ -15,13 +15,13 @@ export const CONTACT_INFO = [
   {
     label: 'Phone',
     value: '+92 (3**) ****948',
-    link: 'tel:00923162265948',
+    link: 'tel:+923162265948',
     icon: Phone,
   },
   {
     label: 'Phone',
     value: '+92 (3**) ****366',
-    link: 'tel:00923092734366',
+    link: 'tel:+923092734366',
     icon: Phone,
   },{
     label: 'Email',

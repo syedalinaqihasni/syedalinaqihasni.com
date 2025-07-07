@@ -15,7 +15,7 @@ export const CONTACT_CARDS = [
     icon: <Phone className={'h-10 w-10 text-primary'} />,
     title: 'Phone',
     details: '+92 (3**) *****948',
-    link: 'tel:00923162265948',
+    link: 'tel:+923162265948',
   },
   {
     icon: <MapPin className={'h-10 w-10 text-primary'} />,
