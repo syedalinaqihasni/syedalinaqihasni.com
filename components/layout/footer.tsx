@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
         <div className={styles?.footerBase}>
           <p className={"text-sm text-muted-foreground"}>
-            {CONSTANT?.copyright}
+            {CONSTANT?.copyright}{' | '}<span><Link href="/term-and-conditions">Term and Conditions</Link></span>{' | '}<span><Link href="/privacy-policy">Privacy Policy</Link></span>
           </p>
           <div className={"mt-2 md:mt-0"}>
             <div className={styles?.socialIcons}>

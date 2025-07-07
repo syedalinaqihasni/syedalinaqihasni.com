@@ -147,7 +147,7 @@ export default function ServicePage({
           <Section title="What’s Included">
             <FeatureList
               features={service?.features}
-              link={`in-${city}-${country}`}
+              link={`in-${city}`}
             />
           </Section>
           <div>
@@ -155,7 +155,7 @@ export default function ServicePage({
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
                   <Link
-                    href={`/related-services/${serv}-in-${city}-${country}`}
+                    href={`/related-services/${serv}-in-${city}`}
                     key={serv}
                   >
                     <Badge key={serv} variant="secondary" className="text-xs">

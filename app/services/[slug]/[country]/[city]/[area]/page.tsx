@@ -145,7 +145,7 @@ export default function ServicePage({
       {(service?.deliverables || service?.requirements) && (
         <div className="mb-12 grid md:grid-cols-2 gap-8">
           <Section title="What’s Included">
-            <FeatureList features={service?.features} link={`in-${country}`} />
+            <FeatureList features={service?.features} link={`in-${area}`} />
           </Section>
           <div>
             <Section title="Related Services in Your Area">
@@ -153,7 +153,7 @@ export default function ServicePage({
                 {service?.servs.map((serv) => {
                   return (
                     <Link
-                      href={`/services/${params.slug}/${country}/${city}/${area}/${serv}`}
+                      href={`/related-services/${serv}-in-${area}`}
                       key={serv}
                     >
                       <Badge
@@ -200,7 +200,7 @@ export default function ServicePage({
                   <Link
                     href={`/related-jobs/${properCaseToDash(
                       serv
-                    )}-in-${city}/`}
+                    )}-in-${area}/`}
                     className="flex items-center gap-2 text-xs hover:underline"
                   >
                     <Briefcase size={14} className="text-muted-foreground" />
@@ -221,7 +221,7 @@ export default function ServicePage({
                   <Link
                     href={`/related-services/${properCaseToDash(
                       serv
-                    )}-in-${city}/`}
+                    )}-in-${area}/`}
                     className="flex items-center gap-2 text-xs hover:underline"
                   >
                     <Badge

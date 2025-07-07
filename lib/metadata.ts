@@ -112,6 +112,17 @@ export const siteRoutes: { path: string; title: string; description: string }[] 
     path: '/projects/category',
     title: 'Previous Projects Category | Work by Syed Ali Naqi Hasni',
     description: 'Discover projects categorized by domain—ecommerce, CMS, SaaS, UI kits, and more.',
+  },
+  
+  {
+    path: '/term-and-conditions',
+    title: 'Terms & Conditions | Syed Ali Naqi Hasni',
+    description: 'Read the terms and conditions for using Syed Ali Naqi Hasni’s website and services.',
+  },
+  {
+    path: '/privacy-policy',
+    title: 'Privacy Policy | Syed Ali Naqi Hasni',
+    description: 'Review the privacy policy for Syed Ali Naqi Hasni’s website and services.',
   }
 ];
 
