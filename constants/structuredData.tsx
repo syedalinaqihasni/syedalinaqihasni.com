@@ -218,12 +218,12 @@ const organizationSchema = {
       contactType: "customer support",
       areaServed: ["PK", "US", "GB", "CA", "AU", "AE"],
       availableLanguage: ["English", "Urdu"],
-      email: "syedhasni151214@gmail.com",
+      email: "engr.syedalinaqihasni@gmail.com",
     },
   ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Main Shahrah-e-Faisal",
+    streetAddress: "BLock 1, Gulistn e Johr",
     addressLocality: "Karachi",
     addressRegion: "Sindh",
     postalCode: "75350",
@@ -447,7 +447,7 @@ const contactSchema = {
   mainEntity: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
-    email: "syedhasni151214@gmail.com",
+    email: "engr.syedalinaqihasni@gmail.com",
     telephone: "+92-316-2265948",
   },
 };
@@ -690,10 +690,10 @@ const localBusinessSchema = {
     "Professional web development services in Karachi, specializing in React, Next.js, WordPress, and e-commerce solutions.",
   url: "https://www.syedalinaqihasni.com",
   telephone: "+92-316-2265948",
-  email: "syedhasni151214@gmail.com",
+  email: "engr.syedalinaqihasni@gmail.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Main Shahrah-e-Faisal",
+    streetAddress: "BLock 1, Gulistn e Johr",
     addressLocality: "Karachi",
     addressRegion: "Sindh",
     postalCode: "75350",
@@ -752,7 +752,7 @@ const localBusinessSchema = {
       "@type": "Person",
       name: "Syed Ali Naqi Hasni",
       jobTitle: "Founder & Lead Developer",
-      email: "syedalinaqihasni@gmail.com",
+      email: "engr.syedalinaqihasni@gmail.com",
     },
   ],
   contactPoint: [
@@ -762,7 +762,7 @@ const localBusinessSchema = {
       contactType: "customer support",
       areaServed: "PK",
       availableLanguage: ["English", "Urdu"],
-      email: "syedhasni151214@gmail.com",
+      email: "engr.syedalinaqihasni@gmail.com",
     },
   ],
   makesOffer: [

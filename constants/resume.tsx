@@ -2,7 +2,7 @@ const RESUME = {
   profile: {
     name: "Syed Ali Naqi Hasni",
     title: "Senior Web Developer",
-    email: "syedhasni151214@gmail.com",
+    email: "engr.syedalinaqihasni@gmail.com",
     phone: "+92 316 2265948",
     location: "Karachi, Pakistan",
   },

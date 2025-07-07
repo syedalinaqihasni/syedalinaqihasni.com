@@ -27,18 +27,18 @@ export const CONTACT_INFO = [
     link: "tel:+923162265948",
     icon: Phone,
   },
-  {
-    label: "Phone",
-    value: "+92 (3**) ****366",
-    link: "tel:+923092734366",
-    icon: Phone,
-  },
-  {
-    label: "Email",
-    value: "syed***********@gmail.com",
-    link: "mailto:syedhasni151214@gmail.com",
-    icon: Mail,
-  },
+  // {
+  //   label: "Phone",
+  //   value: "+92 (3**) ****366",
+  //   link: "tel:+923092734366",
+  //   icon: Phone,
+  // },
+  // {
+  //   label: "Email",
+  //   value: "syed***********@gmail.com",
+  //   link: "mailto:syedhasni151214@gmail.com",
+  //   icon: Mail,
+  // },
   {
     label: "Email",
     value: "engr***********@gmail.com",
@@ -51,12 +51,12 @@ export const CONTACT_INFO = [
     link: "https://g.co/kgs/wpXTGaH",
     icon: MapPin,
   },
-  {
-    label: "Address",
-    value: "BLock 1, Gulistn e Johr, Karachi, Pakistan",
-    link: "https://g.co/kgs/j2Uu9sd",
-    icon: MapPin,
-  },
+  // {
+  //   label: "Address",
+  //   value: "BLock 1, Gulistn e Johr, Karachi, Pakistan",
+  //   link: "https://g.co/kgs/j2Uu9sd",
+  //   icon: MapPin,
+  // },
 ];
 
 export const LINKS_GROUPS = [
@@ -110,7 +110,7 @@ export const SOCIAL_LINKS = [
   },
   {
     icon: Mail,
-    url: "mailto:syedhasni151214@gmail.com",
+    url: "mailto:engr.syedalinaqihasni@gmail.com",
     label: "Email of Syed Ali Naqi Hasni",
   },
 ];

@@ -7,6 +7,7 @@ import {
   SOCIAL_LINKS,
 } from "@/constants/footer";
 import Link from "next/link";
+import NewsletterForm from "./NewsletterForm";
 
 const styles = {
   container: "w-full",
@@ -75,12 +76,21 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+              <NewsletterForm/>
             </div>
           </div>
         </div>
         <div className={styles?.footerBase}>
           <p className={"text-sm text-muted-foreground"}>
-            {CONSTANT?.copyright}{' | '}<span><Link href="/term-and-conditions">Term and Conditions</Link></span>{' | '}<span><Link href="/privacy-policy">Privacy Policy</Link></span>
+            {CONSTANT?.copyright}
+            {" | "}
+            <span>
+              <Link href="/term-and-conditions">Term and Conditions</Link>
+            </span>
+            {" | "}
+            <span>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+            </span>
           </p>
           <div className={"mt-2 md:mt-0"}>
             <div className={styles?.socialIcons}>
