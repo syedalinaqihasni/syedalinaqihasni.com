@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 const repoOwner = "syedalinaqihasni";
 const repoName = "syedalinaqihasni.com";
-const filePath = "public/data/newsletter.csv"; 
+const filePath = "data/newsletter.csv"; 
 const branch = "main"; 
 const githubToken = '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';
 // const sitekey='6Lcr43orAAAAACJf9MU_LS_cyHM2a2ss4lIoEylu';
