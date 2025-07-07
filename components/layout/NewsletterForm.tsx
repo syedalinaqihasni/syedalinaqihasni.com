@@ -7,17 +7,35 @@ export default function NewsletterForm() {
   const [success, setSuccess] = useState(false);
   const recaptchaRef = useRef<HTMLDivElement>(null);
 
-  // Load reCAPTCHA script
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (document.getElementById("recaptcha-script")) return;
 
+    window.onloadCallback = () => {
+      console.log("reCAPTCHA is ready");
+    };
+
     const script = document.createElement("script");
     script.id = "recaptcha-script";
-    script.src = `https://www.google.com/recaptcha/api.js`;
+    script.src = `https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit`;
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const checkReady = setInterval(() => {
+      if (window.grecaptcha && recaptchaRef.current) {
+        clearInterval(checkReady);
+        window.grecaptcha.render(recaptchaRef.current, {
+          sitekey: "6Le453orAAAAAHr93o3eXeZII-SVzfli-w4v5Fq0",
+        });
+      }
+    }, 500);
+
+    return () => clearInterval(checkReady);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -31,6 +49,7 @@ export default function NewsletterForm() {
     const grecaptcha = window.grecaptcha;
     if (!grecaptcha) {
       alert("reCAPTCHA not ready");
+      console.warn("grecaptcha not found");
       setLoading(false);
       return;
     }
@@ -38,23 +57,30 @@ export default function NewsletterForm() {
     const token = grecaptcha.getResponse();
     if (!token) {
       alert("Please complete the reCAPTCHA.");
+      console.warn("No token from grecaptcha");
       setLoading(false);
       return;
     }
 
-    const res = await fetch("/api/newsletter", {
-      method: "POST",
-      body: JSON.stringify({ email, token }),
-      headers: { "Content-Type": "application/json" },
-    });
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        body: JSON.stringify({ email, token }),
+        headers: { "Content-Type": "application/json" },
+      });
 
-    setLoading(false);
-    grecaptcha.reset();
-
-    if (res.ok) {
-      setSuccess(true);
-    } else {
-      alert("Submission failed");
+      if (res.ok) {
+        setSuccess(true);
+      } else {
+        const data = await res.json();
+        alert(data.error || "Submission failed");
+      }
+    } catch (error) {
+      console.error("Fetch failed:", error);
+      alert("Something went wrong");
+    } finally {
+      setLoading(false);
+      grecaptcha.reset();
     }
   };
 
@@ -75,7 +101,7 @@ export default function NewsletterForm() {
           <div
             ref={recaptchaRef}
             className="g-recaptcha"
-            data-sitekey={'6Le453orAAAAAHr93o3eXeZII-SVzfli-w4v5Fq0'}
+            data-sitekey={"6Le453orAAAAAHr93o3eXeZII-SVzfli-w4v5Fq0"}
           ></div>
           <button
             type="submit"
