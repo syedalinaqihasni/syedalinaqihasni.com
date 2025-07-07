@@ -28,8 +28,8 @@ export async function POST(req) {
     return NextResponse.json({ error: "Invalid reCAPTCHA" }, { status: 400 });
   }
 
-  // ✅ 2. Fetch current file from GitHub
-  const getFileRes = await fetch(
+  // Try fetching the file
+  const fileRes = await fetch(
     `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`,
     {
       headers: {
@@ -39,16 +39,23 @@ export async function POST(req) {
     }
   );
 
-  if (!getFileRes.ok) {
+  let updatedContent = '';
+  let sha = '';
+
+  if (fileRes.status === 404) {
+    // Create file
+    updatedContent = `email\n${email}`;
+  } else if (fileRes.ok) {
+    const fileData = await fileRes.json();
+    const decoded = Buffer.from(fileData.content, "base64").toString("utf-8");
+    updatedContent = `${decoded.trim()}\n${email}`;
+    sha = fileData.sha;
+  } else {
     return NextResponse.json({ error: "Could not fetch file" }, { status: 500 });
   }
 
-  const fileData = await getFileRes.json();
-  const decoded = Buffer.from(fileData.content, "base64").toString("utf-8");
-  const updated = `${decoded.trim()}\n${email}`;
-
-  // ✅ 3. Commit updated file
-  const updateRes = await fetch(
+  // Save file (create or update)
+  const saveRes = await fetch(
     `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`,
     {
       method: "PUT",
@@ -57,16 +64,16 @@ export async function POST(req) {
         Accept: "application/vnd.github.v3+json",
       },
       body: JSON.stringify({
-        message: `Add ${email} to newsletter.csv`,
-        content: Buffer.from(updated).toString("base64"),
-        sha: fileData.sha,
+        message: `Save ${email} to newsletter.csv`,
+        content: Buffer.from(updatedContent).toString("base64"),
+        ...(sha ? { sha } : {}),
         branch,
       }),
     }
   );
 
-  if (!updateRes.ok) {
-    return NextResponse.json({ error: "Failed to save" }, { status: 500 });
+  if (!saveRes.ok) {
+    return NextResponse.json({ error: "Failed to save file" }, { status: 500 });
   }
 
   return NextResponse.json({ success: true });
