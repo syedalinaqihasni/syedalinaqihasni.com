@@ -2,9 +2,12 @@ const RESUME = {
   profile: {
     name: "Syed Ali Naqi Hasni",
     title: "Senior Web Developer",
-    email: "syedhasni151214@gmail.com",
-    phone: "+92 316 2265948",
-    location: "Karachi, Pakistan",
+    email: {
+      title: "engr************@gmail.com",
+      link: "engr.syedalinaqihasni@gmail.com",
+    },
+    phone: { title: "+92 *** ****948", link: "tel:+923162265948" },
+    location: { title: "Karachi, Pakistan", link: "https://g.co/kgs/wpXTGaH" },
   },
   summary:
     'Senior Web Developer with over 5 years of experience delivering high-quality web solutions. Specialized in React.js, Next.js, Node.js, and WordPress development. Proven track record working with remote teams, scaling web applications, and staying current with emerging technologies. Founder of Hasni Developers and author of the "next-route-schemas" NPM package.',
