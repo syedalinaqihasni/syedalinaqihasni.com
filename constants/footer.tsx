@@ -17,7 +17,6 @@ export const CONSTANT = {
     "Always eager to learn and collaborate, I thrive on turning challenges into innovative solutions. Let's build something exceptional together!",
   quickLinksHeading: "Quick Links",
   connectHeading: "Connect",
-  NewsHeading: "Subscribe to Our Newsletter ",
   copyright: `© ${new Date().getFullYear()} Syed Hasni | All rights reserved.`,
 };
 
@@ -28,36 +27,36 @@ export const CONTACT_INFO = [
     link: "tel:+923162265948",
     icon: Phone,
   },
-  // {
-  //   label: "Phone",
-  //   value: "+92 (3**) ****366",
-  //   link: "tel:+923092734366",
-  //   icon: Phone,
-  // },
+  {
+    label: "Phone",
+    value: "+92 (3**) ****366",
+    link: "tel:+923092734366",
+    icon: Phone,
+  },
+  {
+    label: "Email",
+    value: "syed***********@gmail.com",
+    link: "mailto:syedhasni151214@gmail.com",
+    icon: Mail,
+  },
   {
     label: "Email",
     value: "engr***********@gmail.com",
     link: "mailto:engr.syedalinaqihasni@gmail.com",
     icon: Mail,
   },
-  // {
-  //   label: "Email",
-  //   value: "syed***********@gmail.com",
-  //   link: "mailto:syedhasni151214@gmail.com",
-  //   icon: Mail,
-  // },
   {
     label: "Address",
     value: "Saeedabad, Baldia Town, Karachi, Pakistan",
     link: "https://g.co/kgs/wpXTGaH",
     icon: MapPin,
   },
-  // {
-  //   label: "Address",
-  //   value: "BLock 1, Gulistn e Johr, Karachi, Pakistan",
-  //   link: "https://g.co/kgs/j2Uu9sd",
-  //   icon: MapPin,
-  // },
+  {
+    label: "Address",
+    value: "BLock 1, Gulistn e Johr, Karachi, Pakistan",
+    link: "https://g.co/kgs/j2Uu9sd",
+    icon: MapPin,
+  },
 ];
 
 export const LINKS_GROUPS = [
@@ -111,7 +110,7 @@ export const SOCIAL_LINKS = [
   },
   {
     icon: Mail,
-    url: "mailto:engr.syedalinaqihasni@gmail.com",
+    url: "mailto:syedhasni151214@gmail.com",
     label: "Email of Syed Ali Naqi Hasni",
   },
 ];

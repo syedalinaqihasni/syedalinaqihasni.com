@@ -7,12 +7,10 @@ import {
   SOCIAL_LINKS,
 } from "@/constants/footer";
 import Link from "next/link";
-import { Button } from "../ui/button";
 
 const styles = {
   container: "w-full",
   heading: "text-lg font-semibold mb-4",
-  newsHeading: "text-lg font-semibold mb-4 mt-4 ",
   grid: "grid grid-cols-2 gap-4",
   list: "space-y-1",
   link: "text-muted-foreground hover:text-foreground transition-colors",
@@ -26,12 +24,6 @@ const styles = {
 };
 
 export default function Footer() {
-  const handleNewsletterSubmit = (e:any) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    console.log("Newsletter email submitted:", email);
-    // You can send this to an API or service here
-  };
   return (
     <footer className={"bg-muted py-12 mt-20"}>
       <div className={"container mx-auto px-4 md:px-6"}>
@@ -83,40 +75,12 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-              {/* Newsletter Email Input */}
-              <h3 className={styles?.newsHeading}>{CONSTANT?.NewsHeading}</h3>
-              <form
-                className="flex flex-col sm:flex-row items-start sm:items-center gap-2"
-                onSubmit={handleNewsletterSubmit}
-              >
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="Enter your email"
-                  className="w-full sm:w-auto flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 "
-                />
-                <Button variant={"outline"}
-                  type="submit"
-                  className="px-4 py-2   transition"
-                >
-                  Subscribe
-                </Button>
-              </form>
             </div>
           </div>
         </div>
         <div className={styles?.footerBase}>
           <p className={"text-sm text-muted-foreground"}>
-            {CONSTANT?.copyright}
-            {" | "}
-            <span>
-              <Link href="/term-and-conditions">Term and Conditions</Link>
-            </span>
-            {" | "}
-            <span>
-              <Link href="/privacy-policy">Privacy Policy</Link>
-            </span>
+            {CONSTANT?.copyright}{' | '}<span><Link href="/term-and-conditions">Term and Conditions</Link></span>{' | '}<span><Link href="/privacy-policy">Privacy Policy</Link></span>
           </p>
           <div className={"mt-2 md:mt-0"}>
             <div className={styles?.socialIcons}>

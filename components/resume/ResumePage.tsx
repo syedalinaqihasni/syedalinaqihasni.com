@@ -1,43 +1,45 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Download, Mail, Phone, MapPin } from "lucide-react";
-import { RESUME, SECTION_TITLES, SKILL_CATEGORIES } from "@/constants/resume";
-import Link from "next/link";
-import { getMetadataForPath } from "@/lib/metadata";
-import DownloadButton from "@/components/resume/DownloadButton";
 
-export const metadata = getMetadataForPath("/resume");
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Download, Mail, Phone, MapPin } from 'lucide-react';
+import { RESUME,SECTION_TITLES, SKILL_CATEGORIES } from '@/constants/resume';
+import Link from 'next/link';
+import { getMetadataForPath } from "@/lib/metadata";
+import DownloadButton from '@/components/resume/DownloadButton';
+
+export const metadata = getMetadataForPath('/resume');
+
 
 type SkillCategory = (typeof SKILL_CATEGORIES)[number];
 
-const container = "container mx-auto px-4 py-32 md:py-40";
-const maxWidth = "max-w-4xl mx-auto";
+const container = 'container mx-auto px-4 py-32 md:py-40';
+const maxWidth = 'max-w-4xl mx-auto';
 
-const header = "flex justify-between items-start mb-12";
-const name = "text-4xl font-bold mb-4";
-const title = "text-xl text-muted-foreground mb-4";
-const contactInfo = "not-italic space-y-2 text-muted-foreground";
-const contactItem = "flex items-center gap-2";
-const summaryCard = "mb-8";
-const cardContent = "p-6";
+const header = 'flex justify-between items-start mb-12';
+const name = 'text-4xl font-bold mb-4';
+const title = 'text-xl text-muted-foreground mb-4';
+const contactInfo = 'not-italic space-y-2 text-muted-foreground';
+const contactItem = 'flex items-center gap-2';
+const summaryCard = 'mb-8';
+const cardContent = 'p-6';
 
-const sectionTitle = "text-xl font-semibold mb-4";
-const sectionTitleWithMargin = "text-xl font-semibold mb-6";
+const sectionTitle = 'text-xl font-semibold mb-4';
+const sectionTitleWithMargin = 'text-xl font-semibold mb-6';
 
-const experienceItem = "space-y-6";
-const experienceHeader = "flex justify-between mb-2";
-const experienceRole = "font-semibold";
-const mutedText = "text-muted-foreground";
-const list = "list-disc list-inside space-y-1 text-muted-foreground";
+const experienceItem = 'space-y-6';
+const experienceHeader = 'flex justify-between mb-2';
+const experienceRole = 'font-semibold';
+const mutedText = 'text-muted-foreground';
+const list = 'list-disc list-inside space-y-1 text-muted-foreground';
 
-const educationItem = "flex justify-between mb-2";
-const educationDegree = "font-semibold";
+const educationItem = 'flex justify-between mb-2';
+const educationDegree = 'font-semibold';
 
-const skillCategory = "font-medium mb-2 capitalize";
-const skillBadgeContainer = "flex flex-wrap gap-2";
+const skillCategory = 'font-medium mb-2 capitalize';
+const skillBadgeContainer = 'flex flex-wrap gap-2';
 
-const certificationsList = "space-y-2 text-muted-foreground";
+const certificationsList = 'space-y-2 text-muted-foreground';
 
 export default function ResumePage() {
   const educationKey = (edu: (typeof RESUME.education)[number]) =>
@@ -52,26 +54,24 @@ export default function ResumePage() {
             <h2 className={title}>{RESUME.profile.title}</h2>
             <address className={contactInfo}>
               <div className={contactItem}>
-                <Mail className={"h-4 w-4"} />
-                <Link href={`mailto:${RESUME.profile.email.link}`}>
-                  {RESUME.profile.email.title}
+                <Mail className={'h-4 w-4'} />
+                <Link href={`mailto:${RESUME.profile.email}`}>
+                  {RESUME.profile.email}
                 </Link>
               </div>
               <div className={contactItem}>
-                <Phone className={"h-4 w-4"} />
-                <Link href={`tel:${RESUME.profile.phone.link}`}>
-                  {RESUME.profile.phone.title}
+                <Phone className={'h-4 w-4'} />
+                <Link href={`tel:${RESUME.profile.phone}`}>
+                  {RESUME.profile.phone}
                 </Link>
               </div>
               <div className={contactItem}>
-                <MapPin className={"h-4 w-4"} />
-                <Link href={`${RESUME.profile.location.link}`}>
-                  <span>{RESUME.profile.location.title}</span>
-                </Link>
+                <MapPin className={'h-4 w-4'} />
+                <span>{RESUME.profile.location}</span>
               </div>
             </address>
           </div>
-          <DownloadButton />
+         <DownloadButton/>
         </header>
         <Card className={summaryCard}>
           <CardContent className={cardContent}>
@@ -109,7 +109,7 @@ export default function ResumePage() {
             </h3>
             <div>
               {RESUME.education?.map((edu) => (
-                <section key={educationKey(edu)} className="pb-4">
+                <section key={educationKey(edu)} className='pb-4'>
                   <div className={educationItem}>
                     <h4 className={educationDegree}>{edu.degree}</h4>
                     <time className={mutedText}>{edu.period}</time>
@@ -123,13 +123,13 @@ export default function ResumePage() {
         <Card className={summaryCard}>
           <CardContent className={cardContent}>
             <h3 className={sectionTitle}>{SECTION_TITLES.skills}</h3>
-            <div className={"space-y-4"}>
+            <div className={'space-y-4'}>
               {SKILL_CATEGORIES?.map((category) => (
                 <div key={category}>
                   <h4 className={skillCategory}>{category}</h4>
                   <div className={skillBadgeContainer}>
                     {RESUME.skills[category]?.map((skill) => (
-                      <Badge key={skill} variant={"secondary"}>
+                      <Badge key={skill} variant={'secondary'}>
                         {skill}
                       </Badge>
                     ))}
@@ -141,7 +141,9 @@ export default function ResumePage() {
         </Card>
         <Card>
           <CardContent className={cardContent}>
-            <h3 className={sectionTitle}>{SECTION_TITLES.certifications}</h3>
+            <h3 className={sectionTitle}>
+              {SECTION_TITLES.certifications}
+            </h3>
             <ul className={certificationsList}>
               {RESUME.certifications?.map((cert) => (
                 <li key={cert}>{cert}</li>
