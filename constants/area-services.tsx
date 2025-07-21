@@ -478,25 +478,25 @@ export function generateServicePaths(countries: Country[], services: string[]) {
   countries.forEach((country) => {
     // services.forEach((service) => {
       // /country-service
-      paths.push(`/${country?.slug}`);
+      paths.push(`https://www.syedalinaqihasni.com/${country?.slug}`);
     // });
 
     country.cities.forEach((city) => {
       // services.forEach((service) => {
         // /city-service
-        paths.push(`/${city?.slug}`);
+        paths.push(`https://www.syedalinaqihasni.com/${city?.slug}`);
         // /country-city-service
-        paths.push(`/${country?.slug}-${city?.slug}`);
+        paths.push(`https://www.syedalinaqihasni.com/${country?.slug}-${city?.slug}`);
       // });
 
       city.areas.forEach((area) => {
         // services.forEach((service) => {
           // /area-service
-          paths.push(`/${area?.slug}`);
+          paths.push(`https://www.syedalinaqihasni.com/${area?.slug}`);
           // /city-area-service
-          paths.push(`/${city?.slug}-${area?.slug}`);
+          paths.push(`https://www.syedalinaqihasni.com/${city?.slug}-${area?.slug}`);
           // /country-city-area-service
-          paths.push(`/${country?.slug}-${city?.slug}-${area?.slug}`);
+          paths.push(`https://www.syedalinaqihasni.com/${country?.slug}-${city?.slug}-${area?.slug}`);
         // });
       });
     });

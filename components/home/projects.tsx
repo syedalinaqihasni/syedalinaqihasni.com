@@ -28,9 +28,9 @@ if (!featuredProjects?.length) return notFound();
             }
           >
             <div className={"relative h-48 w-full"}>
-              <Link href={`/projects/${project?.slug}`}>
+              <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>
                 <Image
-                  src={project?.image || '/images/placeholder-syed-ali-naqi-hasni.webp'}
+                  src={project?.image || 'https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'}
                   alt={`${project?.title} - Syed Ali Naqi Hasni`}
                   fill
                   className={"object-cover"}
@@ -39,10 +39,10 @@ if (!featuredProjects?.length) return notFound();
             </div>
             <CardContent className={"p-6"}>
               <h3 className={"text-xl font-semibold mb-2"}>
-                <Link href={`/projects/${project?.slug}`}>{project?.title}</Link>
+                <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>{project?.title}</Link>
               </h3>
               <p className={"text-muted-foreground mb-4 line-clamp-2"}>
-                <Link href={`/projects/${project?.slug}`}>
+                <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>
                   {" "}
                   {project?.description}
                 </Link>

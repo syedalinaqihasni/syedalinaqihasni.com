@@ -40,10 +40,10 @@ export async function generateMetadata({
   const description = service?.description;
 
   // Build dynamic path for full URL
-  const pathParts = ["/services", params?.slug, country, city, area].filter(
+  const pathParts = ["https://www.syedalinaqihasni.com/services", params?.slug, country, city, area].filter(
     Boolean
   );
-  const path = pathParts.join("/");
+  const path = pathParts.join("https://www.syedalinaqihasni.com/");
 
   return generateDynamicMetadata({
     title,
@@ -153,7 +153,7 @@ export default function ServicePage({
                 {service?.servs.map((serv) => {
                   return (
                     <Link
-                      href={`/related-services/${serv}-in-${area}`}
+                      href={`https://www.syedalinaqihasni.com/related-services/${serv}-in-${area}`}
                       key={serv}
                     >
                       <Badge
@@ -198,7 +198,7 @@ export default function ServicePage({
               {service?.relatedJobTitles.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-jobs/${properCaseToDash(
+                    href={`https://www.syedalinaqihasni.com/related-jobs/${properCaseToDash(
                       serv
                     )}-in-${area}/`}
                     className="flex items-center gap-2 text-xs hover:underline"
@@ -219,7 +219,7 @@ export default function ServicePage({
               {service?.technologies.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-services/${properCaseToDash(
+                    href={`https://www.syedalinaqihasni.com/related-services/${properCaseToDash(
                       serv
                     )}-in-${area}/`}
                     className="flex items-center gap-2 text-xs hover:underline"
@@ -296,7 +296,7 @@ export default function ServicePage({
         <div className={styles?.containerLarge}>
           <div className={styles?.projectsHeaderWrapper}>
             <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="/pricing">
+            <Link href="https://www.syedalinaqihasni.com/pricing">
               <Button variant={"outline"}>
                 View All Plans
                 <ArrowRight className={"ml-2 h-4 w-4"} />
@@ -312,7 +312,7 @@ export default function ServicePage({
           Let’s talk about how I can help you with your project.
         </p>
         <Button size="lg" asChild>
-          <Link href="/contact">
+          <Link href="https://www.syedalinaqihasni.com/contact">
             Contact Me
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
@@ -353,7 +353,7 @@ function FeatureList({
           <Check className="w-4 h-4 text-green-500" />
           {link ? (
             <Link
-              href={`/related-services/${properCaseToDash(feature)}-${link}`}
+              href={`https://www.syedalinaqihasni.com/related-services/${properCaseToDash(feature)}-${link}`}
             >
               <span>{feature}</span>
             </Link>

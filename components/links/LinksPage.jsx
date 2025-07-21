@@ -30,7 +30,7 @@ export default function LinksPage() {
         <div className={PROFILE_CONTAINER}>
           <div className={PROFILE_IMAGE_WRAPPER}>
             <Image
-              src={PROFILE.image || '/images/placeholder-syed-ali-naqi-hasni.webp'}
+              src={PROFILE.image || 'https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'}
               alt={CONSTANT?.profileAlt}
               fill
               className={'object-cover'}

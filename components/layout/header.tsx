@@ -14,15 +14,15 @@ const CONSTANT = {
 };
 
 const NAV_ITEMS = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Services', path: '/services' },
-  { name: 'Pricing', path: '/pricing' },
-  { name: 'Blogs', path: '/blogs' },
-  { name: 'Resume', path: '/resume' },
-  { name: 'Contact', path: '/contact' },
-  { name: 'Sponsor', path: '/links', icon: Heart }, // ← Added sponsor with icon
+  { name: 'Home', path: 'https://www.syedalinaqihasni.com/' },
+  { name: 'About', path: 'https://www.syedalinaqihasni.com/about' },
+  { name: 'Projects', path: 'https://www.syedalinaqihasni.com/projects' },
+  { name: 'Services', path: 'https://www.syedalinaqihasni.com/services' },
+  { name: 'Pricing', path: 'https://www.syedalinaqihasni.com/pricing' },
+  { name: 'Blogs', path: 'https://www.syedalinaqihasni.com/blogs' },
+  { name: 'Resume', path: 'https://www.syedalinaqihasni.com/resume' },
+  { name: 'Contact', path: 'https://www.syedalinaqihasni.com/contact' },
+  { name: 'Sponsor', path: 'https://www.syedalinaqihasni.com/links', icon: Heart }, // ← Added sponsor with icon
 ];
 
 const styles = {
@@ -82,7 +82,7 @@ export default function Header() {
     >
       <div className={styles?.container}>
         <div className={'flex items-center justify-between'}>
-          <Link href={'/'} className={styles?.brand}>
+          <Link href={'https://www.syedalinaqihasni.com/'} className={styles?.brand}>
             <motion.span
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}

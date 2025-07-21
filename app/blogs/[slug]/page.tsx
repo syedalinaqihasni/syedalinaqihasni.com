@@ -48,9 +48,9 @@ export async function generateMetadata({
   return generateDynamicMetadata({
     title: post?.title,
     description: post?.excerpt,
-    image: post?.image ?post?.image : '/apple-icon-180x180.webp',
+    image: post?.image ?post?.image : 'https://www.syedalinaqihasni.com/apple-icon-180x180.webp',
     publishedAt: post?.publishedAt,
-    path: `/blogs/${post?.slug}`,
+    path: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
   });
 }
 
@@ -68,10 +68,10 @@ const Page = async ({ params }: { params: { slug: string } }) => {
   const blogPostSchema = generateBlogPostSchema(post);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.syedalinaqihasni.com" },
-    { name: "Blogs", url: "/blogs" },
+    { name: "Blogs", url: "https://www.syedalinaqihasni.com/blogs" },
     {
       name: post?.title,
-      url: `/blogs/${post?.slug}`,
+      url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
     },
   ]);
 
@@ -87,7 +87,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <div className={styles2?.containerLarge}>
               <div className={styles2?.projectsHeaderWrapper}>
                 <h2 className={styles2?.sectionHeaderLeft}>Recent Blogs</h2>
-                <Link href={"/blogs"}>
+                <Link href={"https://www.syedalinaqihasni.com/blogs"}>
                   <Button variant={"outline"}>
                     View All Blogs
                     <ArrowRight className={"ml-2 h-4 w-4"} />

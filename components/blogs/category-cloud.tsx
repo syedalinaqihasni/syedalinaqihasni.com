@@ -84,7 +84,7 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
               <Card className={styles?.card}>
                 {post?.image ? (
                   <Link
-                    href={`/blogs/${post.slug}`}
+                    href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`}
                     className="relative block h-48 w-full rounded-lg overflow-hidden"
                   >
                     <Image
@@ -97,7 +97,7 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
                   </Link>
                 ) : (
                   <Link
-                    href={`/blogs/${post.slug}`}
+                    href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`}
                     className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
                   >
                     <h3 className="text-lg font-bold w-full mb-1">
@@ -111,7 +111,7 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
                 <CardContent className="p-6">
                   <div className={styles?.categoriesWrapper}>
                     <Link
-                      href={`/blogs/category/${categoryToSlug(post?.category)}`}
+                      href={`https://www.syedalinaqihasni.com/blogs/category/${categoryToSlug(post?.category)}`}
                     >
                       <Badge
                         variant="secondary"
@@ -121,7 +121,7 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
                       </Badge>
                     </Link>
                   </div>
-                  <Link href={`/blogs/${post?.slug}`}>
+                  <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
                     <h3 className={styles?.title}>{post?.title}</h3>
                   </Link>
                   <p className={styles?.excerpt}>{post?.excerpt}</p>

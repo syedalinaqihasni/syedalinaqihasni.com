@@ -36,7 +36,7 @@ export default function FeaturedServices({services}:{services: typeof FEATURED_S
           <Card className={styles?.card}>
             <CardContent className={styles?.cardContent}>
               <div className={styles?.serviceIcon}>{service?.icon}</div>
-              <Link href={`/services/${service?.slug}`}>
+              <Link href={`https://www.syedalinaqihasni.com/services/${service?.slug}`}>
                 <h3 className={styles?.serviceTitle}>{service?.title}</h3>
               </Link>
               <p className={styles?.serviceDescription}>
@@ -77,7 +77,7 @@ export default function FeaturedServices({services}:{services: typeof FEATURED_S
               </div>
 
               <Button className="w-full" asChild>
-                <Link href="/services">
+                <Link href="https://www.syedalinaqihasni.com/services">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

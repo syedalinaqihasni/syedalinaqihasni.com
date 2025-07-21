@@ -36,7 +36,7 @@ export async function generateMetadata({
     description: project?.description || project?.title,
     image: project?.image,
     publishedAt: project?.publishedAt,
-    path: `/projects/${project?.slug}`,
+    path: `https://www.syedalinaqihasni.com/projects/${project?.slug}`,
   });
 }
 
@@ -49,10 +49,10 @@ const Page = async ({ params }: { params: { slug: string } }) => {
   const projectSchema = generateProjectSchema(project);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: "https://www.syedalinaqihasni.com" },
-    { name: "Projects", url: "/projects" },
+    { name: "Projects", url: "https://www.syedalinaqihasni.com/projects" },
     {
       name: project.title,
-      url: `/projects/${project.slug}`,
+      url: `https://www.syedalinaqihasni.com/projects/${project.slug}`,
     },
   ]);
 
@@ -142,7 +142,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <Image
               src={
                 project?.image ||
-                "/images/placeholder-syed-ali-naqi-hasni.webp"
+                "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
               }
               alt={`${project?.title} - Syed Ali Naqi Hasni`}
               fill
@@ -208,7 +208,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                         <Image
                           src={
                             relatedProject?.image ||
-                            "/images/placeholder-syed-ali-naqi-hasni.webp"
+                            "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
                           }
                           alt={`${relatedProject?.title} - Syed Ali Naqi Hasni`}
                           fill

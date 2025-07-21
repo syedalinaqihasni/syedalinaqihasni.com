@@ -70,7 +70,7 @@ export default function PricingPage() {
                       <Badge className={styles?.popularBadge}>Most Popular</Badge>
                     )}
                     <CardContent className={styles?.cardContent}>
-                      <Link href={`/pricing/${plan?.slug}`}>
+                      <Link href={`https://www.syedalinaqihasni.com/pricing/${plan?.slug}`}>
                       <h3 className={styles?.planName}>{plan?.name}</h3>
                       </Link>
                       <p className={styles?.planDescription}>{plan?.description}</p>
@@ -84,7 +84,7 @@ export default function PricingPage() {
                         {plan?.features.map((feature, index) => (
                           <div key={index} className={styles?.featureItem}>
                             <Check className="h-5 w-5 text-green-500 mt-0.5" />
-                            <Link href={`/term-and-conditions#${properCaseToDash(feature)}`}>
+                            <Link href={`https://www.syedalinaqihasni.com/term-and-conditions#${properCaseToDash(feature)}`}>
                             <span>{feature}</span></Link>
                           </div>
                         ))}
@@ -105,7 +105,7 @@ export default function PricingPage() {
                         className={plan?.popular ? styles?.popularButton : styles?.button}
                         asChild
                       >
-                        <Link href="/contact">
+                        <Link href="https://www.syedalinaqihasni.com/contact">
                           {plan?.buttonText}
                         </Link>
                       </Button>

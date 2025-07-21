@@ -1,24 +1,24 @@
 import {
   FaWhatsapp,
-  FaDiscord,
-  FaEtsy,
+  // FaDiscord,
+  // FaEtsy,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaLink,
-  FaSpotify,
-  FaPatreon,
-  FaPaypal,
-  FaPinterest,
-  FaSnapchat,
-  FaSoundcloud,
-  FaTelegramPlane,
-  FaTiktok,
-  FaTwitch,
+  // FaLink,
+  // FaSpotify,
+  // FaPatreon,
+  // FaPaypal,
+  // FaPinterest,
+  // FaSnapchat,
+  // FaSoundcloud,
+  // FaTelegramPlane,
+  // FaTiktok,
+  // FaTwitch,
   FaTwitter,
   FaYoutube,
   FaGithub,
-  FaSignal,
+  // FaSignal,
 } from 'react-icons/fa';
 
 
@@ -171,7 +171,7 @@ const CONSTANT = {
 const PROFILE = {
   name: 'Syed Ali Naqi Hasni',
   role: 'Front End Developer & UI/UX Designer',
-  image: '/images/home-syed-ali-naqi-hasni.webp',
+  image: 'https://www.syedalinaqihasni.com/images/home-syed-ali-naqi-hasni.webp',
 };
 export {
   LINKS,

@@ -17,8 +17,8 @@ export async function generateMetadata({
   const title = `${service?.title}${slug ? ` in ${slug}` : ""} | Syed Ali Naqi Hasni`;
   const description = service?.description;
 
-  const pathParts = ['/services', params?.slug].filter(Boolean);
-  const path = pathParts.join('/');
+  const pathParts = ['https://www.syedalinaqihasni.com/services', params?.slug].filter(Boolean);
+  const path = pathParts.join('https://www.syedalinaqihasni.com/');
 
   return generateDynamicMetadata({
     title,

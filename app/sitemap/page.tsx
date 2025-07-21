@@ -61,7 +61,7 @@ export default function SitemapStyleLinktreePage() {
         <ul className="space-y-2">
           {posts.slice(0, 20).map((post) => (
             <li key={post.slug}>
-              <Link href={`/blogs/${post.slug}`} className="hover:underline">
+              <Link href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`} className="hover:underline">
                 ✍️ {post.title}
               </Link>
             </li>
@@ -75,7 +75,7 @@ export default function SitemapStyleLinktreePage() {
           {categories.map((cat) => (
             <Link
               key={cat}
-              href={`/blogs/category/${formatSlug(cat)}`}
+              href={`https://www.syedalinaqihasni.com/blogs/category/${formatSlug(cat)}`}
               className="hover:underline "
             >
               📂 {cat}
@@ -84,7 +84,7 @@ export default function SitemapStyleLinktreePage() {
           {tags.map((tag) => (
             <Link
               key={tag}
-              href={`/blogs/tag/${formatSlug(tag)}`}
+              href={`https://www.syedalinaqihasni.com/blogs/tag/${formatSlug(tag)}`}
               className="hover:underline "
             >
               🏷️ {tag}
@@ -99,7 +99,7 @@ export default function SitemapStyleLinktreePage() {
           {projects.map((project) => (
             <li key={project.slug}>
               <Link
-                href={`/projects/${project.slug}`}
+                href={`https://www.syedalinaqihasni.com/projects/${project.slug}`}
                 className="hover:underline"
               >
                 🚀 {project.title}
@@ -114,7 +114,7 @@ export default function SitemapStyleLinktreePage() {
         <ul className="space-y-2">
           {events.map((event) => (
             <li key={event.slug}>
-              <Link href={`/events/${event.slug}`} className="hover:underline">
+              <Link href={`https://www.syedalinaqihasni.com/events/${event.slug}`} className="hover:underline">
                 📌 {event.title}
               </Link>
             </li>
@@ -141,7 +141,7 @@ export default function SitemapStyleLinktreePage() {
                     {SERVICES.map((service) => (
                       <li key={service?.slug}>
                         <Link
-                          href={`/services/${service?.slug}/${country.slug}`}
+                          href={`https://www.syedalinaqihasni.com/services/${service?.slug}/${country.slug}`}
                           className="hover:underline"
                         >
                           👨🏻‍🔧 {service?.title} in {country.name}
@@ -165,7 +165,7 @@ export default function SitemapStyleLinktreePage() {
                             {SERVICES.map((service) => (
                               <li key={service?.slug}>
                                 <Link
-                                  href={`/services/${service?.slug}/${country.slug}/${city.slug}`}
+                                  href={`https://www.syedalinaqihasni.com/services/${service?.slug}/${country.slug}/${city.slug}`}
                                   className="hover:underline"
                                 >
                                   👨🏻‍🔧 {service?.title} in {city.name},{" "}
@@ -189,7 +189,7 @@ export default function SitemapStyleLinktreePage() {
                                   {SERVICES.map((service) => (
                                     <li key={service?.slug}>
                                       <Link
-                                        href={`/services/${service?.slug}/${country.slug}/${city.slug}/${area.slug}`}
+                                        href={`https://www.syedalinaqihasni.com/services/${service?.slug}/${country.slug}/${city.slug}/${area.slug}`}
                                         className="hover:underline"
                                       >
                                         👨🏻‍🔧 {service?.title} in {area.name},{" "}

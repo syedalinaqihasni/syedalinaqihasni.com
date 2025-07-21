@@ -29,7 +29,7 @@ export default function Footer() {
       <div className={"container mx-auto px-4 md:px-6"}>
         <div className={"grid grid-cols-1 md:grid-cols-3 gap-8"}>
           <div>
-            <Link href={"/"} className={"font-bold text-2xl mb-4"}>
+            <Link href={"https://www.syedalinaqihasni.com/"} className={"font-bold text-2xl mb-4"}>
               <h3
                 className={
                   "mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400"
@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
         <div className={styles?.footerBase}>
           <p className={"text-sm text-muted-foreground"}>
-            {CONSTANT?.copyright}{' | '}<span><Link href="/term-and-conditions">Term and Conditions</Link></span>{' | '}<span><Link href="/privacy-policy">Privacy Policy</Link></span>
+            {CONSTANT?.copyright}{' | '}<span><Link href="https://www.syedalinaqihasni.com/term-and-conditions">Term and Conditions</Link></span>{' | '}<span><Link href="https://www.syedalinaqihasni.com/privacy-policy">Privacy Policy</Link></span>
           </p>
           <div className={"mt-2 md:mt-0"}>
             <div className={styles?.socialIcons}>

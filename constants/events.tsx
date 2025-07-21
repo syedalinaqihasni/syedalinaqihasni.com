@@ -7,7 +7,7 @@ const events: Event []= [{
   excerpt:"",
   category: 'Conference',
   slug: 'sample-event',
-  image: '/sample-event?.webp',
+  image: 'https://www.syedalinaqihasni.com/sample-event?.webp',
   date: '2024-07-01T18:00:00Z',
   location: '123 Main St, City, Country',
   virtual: false,

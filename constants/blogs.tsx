@@ -19,7 +19,7 @@ export const bp1 = {
   publishedAt: "2025-06-26",
   readingTime: "6 min read",
   image:
-    "/images/blogs/docusaurus-modern-documentation-framework-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/docusaurus-modern-documentation-framework-syed-ali-naqi-hasni.webp",
   category: `Tutorials`,
   tags: [
     "Docusaurus",
@@ -195,7 +195,7 @@ export const bp2 = {
   publishedAt: "2025-06-20",
   readingTime: "6 min read",
   image:
-    "/images/blogs/why-i-do-not-use-wordpress-and-you-should-not-either-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-wordpress-and-you-should-not-either-syed-ali-naqi-hasni.webp",
   category: `Opinions`,
   tags: ["WordPress", "CMS", "Backend Integration"],
   content: `<div>
@@ -250,7 +250,7 @@ export const bp3 = {
   publishedAt: "2024-01-19",
   readingTime: "6 min read",
   image:
-    "/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.webp",
   category: `Tutorials`,
   tags: ["Next.js", "Node.js", "Backend Integration"],
   content: `<div>
@@ -380,7 +380,7 @@ export const bp4 = {
   publishedAt: "2024-02-26",
   readingTime: "8 min read",
   image:
-    "/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.webp", // Recommend replacing with a relevant SEO/Schema image
+    "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.webp", // Recommend replacing with a relevant SEO/Schema image
   category: `Tips`,
   tags: ["SEO", "Web Development", "Digital Strategy"],
   content: `<div>
@@ -650,7 +650,7 @@ export const bp5 = {
   publishedAt: "2024-11-27",
   readingTime: "6 min read",
   image:
-    "/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.webp", // Consider updating this image to something Git/Dev-related
+    "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.webp", // Consider updating this image to something Git/Dev-related
   category: `Tips`,
   tags: ["Git", "Project Management", "Best Practices"],
   content: `<div>
@@ -762,7 +762,7 @@ export const bp6 = {
   publishedAt: "2024-11-27",
   readingTime: "6 min read",
   image:
-    "/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.webp", // Update the image filename to match topic
+    "https://www.syedalinaqihasni.com/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.webp", // Update the image filename to match topic
   category: `Tutorials`,
   tags: ["React", "WordPress", "Headless CMS"],
   content: `<div >
@@ -838,7 +838,7 @@ export const bp7 = {
   publishedAt: "2024-01-04",
   readingTime: "6 min read",
   image:
-    "/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["GitHub", "CLI Tools", "Developer Productivity"],
   content: `<div >
@@ -1053,7 +1053,7 @@ export const bp8 = {
   publishedAt: "2023-07-21",
   readingTime: "6 min read",
   image:
-    "/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.webp", // Consider updating this image to match the topic
+    "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.webp", // Consider updating this image to match the topic
   category: `Opinions`,
   tags: ["Teamwork", "Leadership", "Workplace Strategy"],
   content: `<div>
@@ -1119,7 +1119,7 @@ export const bp9 = {
   publishedAt: "2023-07-17",
   readingTime: "6 min read",
   image:
-    "/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["Headless CMS", "PWA", "Content Strategy"],
   content: `<div >
@@ -1168,7 +1168,7 @@ export const bp10 = {
   publishedAt: "2025-01-14",
   readingTime: "6 min read",
   image:
-    "/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.webp",
   category: `Opinions`,
   tags: ["Security", "GitHub", "Development Tools"],
   content: `<div >
@@ -1234,7 +1234,7 @@ export const bp10 = {
 <code>version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "https://www.syedalinaqihasni.com/"
     schedule:
       interval: "weekly"
 </code>
@@ -1326,7 +1326,7 @@ export const bp11 = {
   publishedAt: "2023-06-12",
   readingTime: "4 min read",
   image:
-    "/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["Shopify", "eCommerce", "Business Tools"],
   content: `<div>
@@ -1433,7 +1433,7 @@ export const bp12 = {
   publishedAt: "2025-04-28",
   readingTime: "4 min read",
   image:
-    "/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.webp",
   category: `Opinions`,
   tags: ["Programming", "Software Design", "Best Practices"],
   content: `<div>
@@ -1465,7 +1465,7 @@ export const bp12 = {
 </li>
 </ul>
 <p>
-    These principles were popularized by <a href="/in/robert-martin-7395b0/">Robert Martin</a> aka <strong>Uncle
+    These principles were popularized by <a href="https://www.syedalinaqihasni.com/in/robert-martin-7395b0/">Robert Martin</a> aka <strong>Uncle
       Bob</strong> and are especially powerful when working on <strong>large apps</strong> or <strong>team
       projects,</strong> including <strong>modern React.js</strong> applications.
   </p>
@@ -1820,7 +1820,7 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 <code>function ProductsList() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("/api/products")
+    fetch("https://www.syedalinaqihasni.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -1847,7 +1847,7 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 
 // Service layer
 const productService = {
-  fetchProducts: () => fetch("/api/products").then((res) => res.json()),
+  fetchProducts: () => fetch("https://www.syedalinaqihasni.com/api/products").then((res) => res.json()),
 };
 
 // Component
@@ -1906,7 +1906,7 @@ export const bp13 = {
   publishedAt: "2024-05-10",
   readingTime: "4 min read",
   image:
-    "/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["Shopify", "Career Growth", "Web Development"],
   content: `<div>
@@ -1994,7 +1994,7 @@ export const bp14 = {
   publishedAt: "2025-01-08",
   readingTime: "4 min read",
   image:
-    "/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too-syed-ali-naqi-hasni.webp",
   category: `Tutorials`,
   tags: ["WordPress", "Gutenberg", "Web Development"],
   content: `<div>
@@ -2092,7 +2092,7 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
 <code>function register_contact_form_block() {
     wp_register_script(
         'custom-contact-form-block',
-        get_template_directory_uri() . '/js/contact-form-block.js',
+        get_template_directory_uri() . 'https://www.syedalinaqihasni.com/js/contact-form-block.js',
         array('wp-blocks', 'wp-element', 'wp-editor'),
         null,
         true
@@ -2207,7 +2207,7 @@ export const bp15 = {
   publishedAt: "2024-05-10",
   readingTime: "4 min read",
   image:
-    "/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["WordPress", "Plugins", "User Engagement"],
   content: `<div>
@@ -2279,7 +2279,7 @@ export const bp16 = {
   publishedAt: "2022-11-02",
   readingTime: "6 min read",
   image:
-    "/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["WordPress", "ERP", "Business Tools"],
   content: `<div>
@@ -2400,7 +2400,7 @@ export const bp17 = {
   publishedAt: "2022-11-02",
   readingTime: "6 min read",
   image:
-    "/images/blogs/headless-wordpress-and-content-management-systems-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/blogs/headless-wordpress-and-content-management-systems-syed-ali-naqi-hasni.webp",
   category: `Tutorials`,
   tags: ["Wordpress", "CMS", "Headless"],
   content: `<div>
@@ -2559,7 +2559,7 @@ export const bp18 = {
   slug: "the-beginners-guide-to-seo",
   publishedAt: "2022-09-26",
   readingTime: "4 min read",
-  image: "/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.webp",
+  image: "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.webp",
   category: `Tips`,
   tags: ["SEO", "Getting Started", "Tutorial"],
   content: `<div>
@@ -3387,7 +3387,7 @@ export const bp22 = {
 </pre>
   <p>To test this, you can send a POST request using a tool like Postman or with <code>fetch</code> in your app:</p>
   <pre>
-<code>fetch('/api/hello', {
+<code>fetch('https://www.syedalinaqihasni.com/api/hello', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ name: 'John' }),
@@ -3626,7 +3626,7 @@ export const bp24 = {
   publishedAt: "2025-07-09",
   readingTime: "5 min read",
   image:
-    "/images/blogs/boost-efficiency-with-locatorjs-syed-ali-naqi-hasni.jpg",
+    "https://www.syedalinaqihasni.com/images/blogs/boost-efficiency-with-locatorjs-syed-ali-naqi-hasni.jpg",
   category: "Tutorial",
   tags: [
     "LocatorJS",
@@ -3776,7 +3776,7 @@ export const bp24 = {
 </span>
 </p>
 <pre>
-<code>&lt;script src="https://unpkg.com/@locator/runtime/dist/locator-runtime.umd.js"&gt;&lt;/script&gt;&lt;script&gt;window.**LOCATOR_CONFIG** = {editor: "vscode",projectRoot: "/Users/yourname/yourproject",};&lt;/script&gt;</code>
+<code>&lt;script src="https://unpkg.com/@locator/runtime/dist/locator-runtime.umd.js"&gt;&lt;/script&gt;&lt;script&gt;window.**LOCATOR_CONFIG** = {editor: "vscode",projectRoot: "https://www.syedalinaqihasni.com/Users/yourname/yourproject",};&lt;/script&gt;</code>
 </pre>
 <p>This makes it possible to use LocatorJS in internal tools, previews, or demos.</p>
 <h3>Example Use Cases</h3>

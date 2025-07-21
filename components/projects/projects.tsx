@@ -31,12 +31,12 @@ const Projects = ({ projects }: { projects: Project[] }) => {
               <Card className={"h-full overflow-hidden"}>
                 <div className={"relative h-56 w-full"}>
                   <Link
-                    href={`/projects/${project?.slug}`}
+                    href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}
                   >
                     <Image
                       src={
                         project?.image ||
-                        "/images/placeholder-syed-ali-naqi-hasni.webp"
+                        "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
                       }
                       alt={`${project?.title} - Syed Ali Naqi Hasni`}
                       fill
@@ -49,7 +49,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                 <CardContent className={"p-6"}>
                   <h3 className={"text-xl font-semibold mb-2"}>
                     <Link
-                      href={`/projects/${project?.slug}`}
+                      href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}
                     >
                       {" "}
                       {project?.title}
@@ -57,7 +57,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
                   </h3>
                   <p className={"text-muted-foreground mb-4"}>
                     <Link
-                      href={`/projects/${project?.slug}`}
+                      href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}
                     >
                       {project?.description}
                     </Link>

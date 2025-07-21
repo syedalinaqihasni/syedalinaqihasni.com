@@ -52,12 +52,12 @@ const EventsList = ({ events }: { events: Event[] }) => {
             {events?.map((event) => (
               <Card key={event?.id} className={card}>
                 <Link
-                  href={`/events/${event?.slug}`}
+                  href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}
                   passHref
                   className={imageWrapper}
                 >
                   <Image
-                    src={event?.image || '/images/placeholder-syed-ali-naqi-hasni.webp'}
+                    src={event?.image || 'https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp'}
                     alt={`${event?.title} - Syed Ali Naqi Hasni`}
                     fill
                     className={image}
@@ -75,7 +75,7 @@ const EventsList = ({ events }: { events: Event[] }) => {
                   </Badge>
 
                   <Link
-                    href={`/events/${event?.slug}`}
+                    href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}
                     passHref
                     className={eventTitle}
                   >
@@ -96,7 +96,7 @@ const EventsList = ({ events }: { events: Event[] }) => {
                   </div>
 
                   <Button asChild className={button}>
-                    <Link href={`/events/${event?.slug}`}>View Details</Link>
+                    <Link href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}>View Details</Link>
                   </Button>
                 </CardContent>
               </Card>
