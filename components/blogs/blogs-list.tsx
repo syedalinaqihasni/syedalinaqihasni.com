@@ -22,7 +22,8 @@ const styles = {
   grid: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
   card: "h-full overflow-hidden hover:shadow-md transition-shadow duration-300",
   image: "object-cover transition-transform duration-300 hover:scale-105",
-  categoriesWrapper: "flex flex-wrap gap-2 mb-3",tagsWrapper: "flex flex-wrap gap-2 mt-3",
+  categoriesWrapper: "flex flex-wrap gap-2 mb-3",
+  tagsWrapper: "flex flex-wrap gap-2 mt-3",
   categoryBadge: "text-xs",
   title: "text-xl font-semibold mb-2 hover:text-primary transition-colors",
   excerpt: "text-muted-foreground mb-4 line-clamp-2",
@@ -66,34 +67,46 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card className={styles?.card}>
-              <Link
-                href={`/blogs/${post?.slug}`}
-                className={"relative block h-48 w-full"}
-              >
-                <Image
-                  src={
-                    post?.image
-                      ? post?.image
-                      : "/images/placeholder-syed-ali-naqi-hasni.webp"
-                  }
-                  alt={`${post?.title} - Syed Ali Naqi Hasni`}
-                  fill
-                  className={
-                    styles?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"
-                  }
-                  priority={index < 3}
-                />
-              </Link>
+              {post?.image ? (
+                <Link
+                  href={`/blogs/${post.slug}`}
+                  className="relative block h-48 w-full rounded-lg overflow-hidden"
+                >
+                  <Image
+                    src={post.image}
+                    alt={`${post.title} - Syed Ali Naqi Hasni`}
+                    fill
+                    className="object-cover"
+                    priority={index < 3}
+                  />
+                </Link>
+              ) : (
+                <Link
+                  href={`/blogs/${post.slug}`}
+                  className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
+                >
+                  <h3 className="text-lg font-bold w-full mb-1">
+                    {post.title}
+                  </h3>
+                  <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">
+                    Syed Ali Naqi Hasni
+                  </div>
+                </Link>
+              )}
+
               <CardContent className={"p-6"}>
                 <div className={styles?.categoriesWrapper}>
-                  <a href={`/blogs/category/${post?.category.toLowerCase().replace(/[\s/]+/g, '-')}` }>
-                    
-                  <Badge
-                    variant={"secondary"}
-                    className={styles?.categoryBadge}
+                  <a
+                    href={`/blogs/category/${post?.category
+                      .toLowerCase()
+                      .replace(/[\s/]+/g, "-")}`}
                   >
-                    {post?.category}
-                  </Badge>
+                    <Badge
+                      variant={"secondary"}
+                      className={styles?.categoryBadge}
+                    >
+                      {post?.category}
+                    </Badge>
                   </a>
                 </div>
                 <Link href={`/blogs/${post?.slug}`}>
@@ -112,14 +125,19 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
                 </div>
                 <div className={styles?.tagsWrapper}>
                   {post?.tags.slice(0, 2)?.map((tag) => (
-                  <a href={`/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}` } 
-                      key={tag}>
-                    <Badge
-                      variant={"secondary"}
-                      className={styles?.categoryBadge}
+                    <a
+                      href={`/blogs/tag/${tag
+                        .toLowerCase()
+                        .replace(/[\s/]+/g, "-")}`}
+                      key={tag}
                     >
-                      {tag}
-                    </Badge></a>
+                      <Badge
+                        variant={"secondary"}
+                        className={styles?.categoryBadge}
+                      >
+                        {tag}
+                      </Badge>
+                    </a>
                   ))}
                   {post?.tags?.length > 2 && (
                     <Badge

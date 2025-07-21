@@ -74,14 +74,14 @@ const SingleBlogPage = ({ post }: { post: Post }) => {
         </div>
         {post?.image && (
           <div className={styles?.imageWrapper}>
-            <Image
+    <Image
               src={post?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"}
               alt={`${post?.title} - Syed Ali Naqi Hasni`}
               fill
               className={styles?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"}
             />
-          </div>
-        )}
+    </div>
+)}
         <div className={styles?.content}>
           <div>
             <HtmlRenderer  path="/blogs/tag" terms={allTags} html={post?.content}/>
