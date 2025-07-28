@@ -1,0 +1,181 @@
+# llms.txt for syedalinaqihasni.com
+# Website: https://syedalinaqihasni.com
+# Purpose: Declare LLM (Large Language Model) crawling and usage policy for AI agents and data trainers.
+# Based on evolving best practices as proposed by llms.txt specification.
+# See: https://llms.txt
+
+# Syed Ali Naqi Hasni
+
+## Profile
+Name: Syed Ali Naqi Hasni  
+Website: https://syedalinaqihasni.com  
+Profession: Web App Developer, Educator, AI/LLM Explorer  
+Location: Karachi, Pakistan  
+Experience: 5+ years  
+Specialties: React, Next.js, WordPress, SEO, AI, Clean Architecture  
+Availability: Remote/Freelance  
+Education:  
+- Developer & Solopreneur Program, Pakistan Institute of AI & Computing (2023–2024)  
+- Associate Degree – Computer Info Tech, SBTE (2013–2016)  
+- Pre-Engineering – Karachi Board (2011–2013)
+
+## Social & Technical Profiles
+GitHub: https://github.com/syedalinaqihasni  
+Gists: https://gist.github.com/syedalinaqihasni  
+LinkedIn: https://www.linkedin.com/in/syedalinaqihasni  
+Medium: https://medium.com/@syedalinaqihasni  
+YouTube: https://www.youtube.com/@syedalinaqihasni  
+Himalayas Resume: https://himalayas.app/@syedalinaqihasni
+
+## Featured Articles
+- [SOLID Principles in React (Apr 2025)](https://syedalinaqihasni.com/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards)  
+- [Boost Developer Efficiency with LocatorJS (Jul 2025)](https://syedalinaqihasni.com/blogs/boost-developer-efficiency-with-locatorjs)  
+- [GitHub Dependabot + CodeQL (Jan 2025)](https://syedalinaqihasni.com/blogs/stay-ahead-of-vulnerabilities-github-dependabot-codeql)  
+- [Custom Blocks in WordPress (Jan 2025)](https://syedalinaqihasni.com/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress)  
+- [GitHub CLI Guide](https://syedalinaqihasni.com/blogs/exploring-github-cli-a-comprehensive-guide-using-cli)  
+- [Headless CMS for PWAs](https://syedalinaqihasni.com/blogs/content-management-for-pwas-headless-cms-approach)  
+- [ReactPress Workflow](https://syedalinaqihasni.com/blogs/reactpress-seamless-react-app-workflow-with-wordpress-cms)  
+- [Structured Data for SEO](https://syedalinaqihasni.com/blogs/unveiling-the-power-of-structured-data-markup-script-seo)  
+- [Next.js + NodeMailer](https://syedalinaqihasni.com/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide)
+
+## Educational Resources
+- [LLM Fine-Tuning Guide (LLaMA 3.1)](https://github.com/syedalinaqihasni/panaversity-learn-fine-tuning-llms)  
+- Cloud-native PyTorch training repo for LLMs — hands-on with Groq, Ollama, Colab.
+
+## Projects & Code Repositories
+- [Main Website Repo](https://github.com/syedalinaqihasni/syedalinaqihasni-com)  
+- [Portfolio Site (GitHub Pages)](https://github.com/syedalinaqihasni/syedalinaqihasni.github.io)  
+- [Code Gists](https://gist.github.com/syedalinaqihasni): helper utilities like `metadata.js`, `layout.jsx`, `camelToSentenceCase.js`, `.gitignore`, etc.
+
+## Technical Stack
+Frontend: React.js, Next.js, Vue.js, TailwindCSS, TypeScript  
+Backend: PHP, WordPress, WooCommerce, REST API  
+DevOps: GitHub CLI, CodeQL, Dependabot, Netlify, Vercel  
+Mobile: Flutter / Dart  
+SEO: Structured data, keyword strategy, technical optimization  
+AI/ML: LLM fine-tuning with PyTorch, Ollama, Groq Playground  
+CMS: WordPress, Headless CMS, ReactPress architecture  
+Tools: Prisma, NodeMailer, Figma, Google Sheets, Excel
+
+## Experience Highlights
+- 50+ websites built remotely via Fiverr, Upwork, private clients  
+- Agencies: eSpark Consulting, Royal Apps, Seek Social Ltd., NUCAL, SofticEra  
+- Roles: Lead Frontend Dev, WordPress Expert, React/Next.js Developer
+
+## Services Offered
+- Custom website & SaaS development  
+- WordPress theme/plugin development  
+- Shopify stores & custom app integration  
+- Technical SEO implementation  
+- AI/LLM consulting & cloud deployment pipelines  
+- Developer mentoring & code audits
+
+## Contact
+Email: contact@syedalinaqihasni.com  
+Website: https://syedalinaqihasni.com/contact  
+Payment: https://syedalinaqihasni.com/payment
+
+
+########################################################################
+# 🧠 SITE & CONTENT OWNERSHIP
+########################################################################
+
+site: https://syedalinaqihasni.com
+owner: Syed Ali Naqi Hasni
+contact: mailto:contact@syedalinaqihasni.com
+created: 2025-07-28
+last_modified: 2025-07-28
+terms_of_service: https://syedalinaqihasni.com/terms
+license: All Rights Reserved
+use-case: Personal portfolio, blog, technical knowledgebase, SEO content
+
+########################################################################
+# 🚫 DEFAULT POLICY FOR AI TRAINING & GENERATIVE USE
+########################################################################
+
+# This website strictly prohibits the use of its content for training,
+# fine-tuning, evaluating, or generating content with large language models (LLMs)
+# or any AI system unless explicit written permission is granted by the owner.
+
+default_policy: disallow
+
+########################################################################
+# 🔍 AI CRAWLER-SPECIFIC RULES
+########################################################################
+
+# === OpenAI ===
+user-agent: GPTBot
+policy: disallow
+comment: Unauthorized use of portfolio, blog content, and private data is strictly prohibited.
+
+user-agent: ChatGPT-User
+policy: disallow
+comment: End-user scraping from ChatGPT browser plugin or related extensions not permitted.
+
+# === Google AI (Gemini / Bard) ===
+user-agent: Google-Extended
+policy: disallow
+comment: Google AI may not access site data for training or generative use.
+
+# === Anthropic (Claude) ===
+user-agent: ClaudeBot
+policy: disallow
+comment: No permission granted for content usage by Claude or associated tools.
+
+# === Perplexity AI ===
+user-agent: PerplexityBot
+policy: disallow
+comment: This AI agent is not allowed to train on or surface content.
+
+# === Meta (Facebook) ===
+user-agent: FacebookBot
+policy: disallow
+comment: No permission granted for Meta AI usage.
+
+# === Amazon AI ===
+user-agent: Amazonbot
+policy: disallow
+
+# === CCBot (Common Crawl / Open LLMs) ===
+user-agent: CCBot
+policy: disallow
+comment: Common Crawl is disallowed due to its use in many open-source LLM datasets.
+
+# === You.com ===
+user-agent: YouBot
+policy: disallow
+
+# === NeevaAI ===
+user-agent: NeevaAI
+policy: disallow
+
+# === Cohere ===
+user-agent: CohereBot
+policy: disallow
+
+# === AI21 Labs ===
+user-agent: AI21LabsBot
+policy: disallow
+
+# === Any unidentified or experimental AI agent ===
+user-agent: *
+policy: disallow
+comment: Blanket denial for all unidentified, future, or unlisted AI scrapers.
+
+########################################################################
+# 📄 LEGAL & ETHICAL STANCE
+########################################################################
+
+# All content including text, code, images, and media is copyrighted and cannot be reused
+# for model training, fine-tuning, distillation, dataset generation, or retrieval-based generation.
+
+# Anyone seeking permission must contact the owner directly and obtain a formal data usage agreement.
+
+########################################################################
+# 📎 REFERENCE
+########################################################################
+
+# Learn more at: https://llms.txt
+# Add this file to your robots.txt for visibility:
+# llms: https://syedalinaqihasni.com/llms.txt
+
