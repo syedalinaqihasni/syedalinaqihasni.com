@@ -21,39 +21,45 @@ export const CONSTANT = {
 };
 
 export const CONTACT_INFO = [
-  {
+  {id: 1,
     label: "Phone",
     value: "+92 (3**) ****948",
+    show: "+92 (316) 2265948",
     link: "tel:+923162265948",
     icon: Phone,
   },
-  {
+  {id: 2,
     label: "Phone",
     value: "+92 (3**) ****366",
+    show: "+92 (309) 2734366",
     link: "tel:+923092734366",
     icon: Phone,
   },
-  {
+  {id: 3,
     label: "Email",
     value: "syed***********@gmail.com",
+    show: "syedhasni151214@gmail.com",
     link: "mailto:syedhasni151214@gmail.com",
     icon: Mail,
   },
-  {
+  {id: 4,
     label: "Email",
     value: "engr***********@gmail.com",
+    show: "engr.syedalinaqihasni@gmail.com",
     link: "mailto:engr.syedalinaqihasni@gmail.com",
     icon: Mail,
   },
-  {
+  {id: 5,
     label: "Address",
-    value: "Saeedabad, Baldia Town, Karachi, Pakistan",
+    value: "K******, P******",
+    show: "Saeedabad, Baldia Town, Karachi, Pakistan",
     link: "https://g.co/kgs/wpXTGaH",
     icon: MapPin,
   },
-  {
+  {id: 6,
     label: "Address",
-    value: "BLock 1, Gulistn e Johr, Karachi, Pakistan",
+    value: "K******, P******",
+    show: "BLock 1, Gulistn e Johr, Karachi, Pakistan",
     link: "https://g.co/kgs/j2Uu9sd",
     icon: MapPin,
   },

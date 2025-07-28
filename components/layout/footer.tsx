@@ -1,5 +1,5 @@
 "use client";
-
+import { Eye, EyeOff } from "lucide-react";
 import {
   CONSTANT,
   CONTACT_INFO,
@@ -7,6 +7,7 @@ import {
   SOCIAL_LINKS,
 } from "@/constants/footer";
 import Link from "next/link";
+import { useState } from "react";
 
 const styles = {
   container: "w-full",
@@ -24,12 +25,23 @@ const styles = {
 };
 
 export default function Footer() {
+  const [revealedMap, setRevealedMap] = useState({});
+
+  const toggleReveal = (id) => {
+    setRevealedMap((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
   return (
     <footer className={"bg-muted py-12 mt-20"}>
       <div className={"container mx-auto px-4 md:px-6"}>
         <div className={"grid grid-cols-1 md:grid-cols-3 gap-8"}>
           <div>
-            <Link href={"https://www.syedalinaqihasni.com/"} className={"font-bold text-2xl mb-4"}>
+            <Link
+              href={"https://www.syedalinaqihasni.com/"}
+              className={"font-bold text-2xl mb-4"}
+            >
               <h3
                 className={
                   "mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500 dark:from-blue-400 dark:to-purple-400"
@@ -64,23 +76,47 @@ export default function Footer() {
           <div>
             <div className={styles?.contactBlock}>
               <h3 className={styles?.heading}>{CONSTANT?.connectHeading}</h3>
-              <ul className={styles?.contactList}>
-                {CONTACT_INFO?.map((item, idx) => (
-                  <li key={idx}>
-                    {item.link && (
-                      <>
-                        {item.label}: <Link href={item.link}>{item.value}</Link>
-                      </>
-                    )}
-                  </li>
-                ))}
-              </ul>
+               <ul className={styles?.contactList}>
+      {CONTACT_INFO?.map((item) => (
+        <li key={item.id}>
+          {item.link && (
+            <div className="flex items-center space-x-2">
+              <Link href={item.link}>
+                {revealedMap[item.id] ? item.show || item.value : item.value}
+              </Link>
+              <button
+                onClick={() => toggleReveal(item.id)}
+                className="focus:outline-none"
+              >
+                {revealedMap[item.id] ? (
+                  <EyeOff height={15} width={15} />
+                ) : (
+                  <Eye height={15} width={15} />
+                )}
+              </button>
+            </div>
+          )}
+        </li>
+      ))}
+    </ul>
             </div>
           </div>
         </div>
         <div className={styles?.footerBase}>
           <p className={"text-sm text-muted-foreground"}>
-            {CONSTANT?.copyright}{' | '}<span><Link href="https://www.syedalinaqihasni.com/term-and-conditions">Term and Conditions</Link></span>{' | '}<span><Link href="https://www.syedalinaqihasni.com/privacy-policy">Privacy Policy</Link></span>
+            {CONSTANT?.copyright}
+            {" | "}
+            <span>
+              <Link href="https://www.syedalinaqihasni.com/term-and-conditions">
+                Term and Conditions
+              </Link>
+            </span>
+            {" | "}
+            <span>
+              <Link href="https://www.syedalinaqihasni.com/privacy-policy">
+                Privacy Policy
+              </Link>
+            </span>
           </p>
           <div className={"mt-2 md:mt-0"}>
             <div className={styles?.socialIcons}>
