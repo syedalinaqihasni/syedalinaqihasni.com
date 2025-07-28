@@ -4,9 +4,7 @@
 # Spec reference: https://llms.txt
 # Author: Syed Ali Naqi Hasni
 
-########################################################################
-# AUTHOR PROFILE
-########################################################################
+## AUTHOR PROFILE
 
 Name: Syed Ali Naqi Hasni  
 Website: https://syedalinaqihasni.com  
@@ -16,14 +14,14 @@ Experience: 5+ years
 Specialties: React, Next.js, WordPress, SEO, AI, Clean Architecture  
 Availability: Remote / Freelance  
 
-Education:  
+# Syed Ali Naqi Hasni
+
+## Education:  
 - Developer & Solopreneur Program – Pakistan Institute of AI & Computing (2023–2024)  
 - Associate Degree – Computer Info Tech, SBTE (2013–2016)  
 - Pre-Engineering – Karachi Board (2011–2013)
 
-########################################################################
-# SOCIAL & TECHNICAL PROFILES
-########################################################################
+## SOCIAL & TECHNICAL PROFILES
 
 GitHub: https://github.com/syedalinaqihasni  
 Gists: https://gist.github.com/syedalinaqihasni  
@@ -32,9 +30,7 @@ Medium: https://medium.com/@syedalinaqihasni
 YouTube: https://www.youtube.com/@syedalinaqihasni  
 Himalayas Resume: https://himalayas.app/@syedalinaqihasni
 
-########################################################################
-# FEATURED ARTICLES
-########################################################################
+## FEATURED ARTICLES
 
 Boost Developer Efficiency with LocatorJS: A Quick Guide → https://www.syedalinaqihasni.com/blogs/boost-efficiency-with-locatorjs
 - Docusaurus: The Modern Framework for Building Documentation That Doesnâ€™t Suck → https://www.syedalinaqihasni.com/blogs/docusaurus-the-modern-framework-for-building-documentation-that-does-not-suck
@@ -61,24 +57,18 @@ Boost Developer Efficiency with LocatorJS: A Quick Guide → https://www.syedali
 - Next.js API Routes: Building Server Endpoints → https://www.syedalinaqihasni.com/blogs/nextjs-api-routes
 - Responsive UI with Tailwind CSS → https://www.syedalinaqihasni.com/blogs/responsive-ui-tailwind
 
-########################################################################
-# EDUCATIONAL RESOURCES
-########################################################################
+## EDUCATIONAL RESOURCES
 
 - LLM Fine-Tuning Guide (LLaMA 3.1) → https://github.com/syedalinaqihasni/panaversity-learn-fine-tuning-llms  
 - Cloud-native PyTorch training repo for LLMs — includes Groq, Ollama, and Colab support
 
-########################################################################
-# PROJECTS & REPOSITORIES
-########################################################################
+## PROJECTS & REPOSITORIES
 
 - Main Website Code → https://github.com/syedalinaqihasni/syedalinaqihasni-com  
 - GitHub Portfolio Site → https://github.com/syedalinaqihasni/syedalinaqihasni.github.io  
 - Code Gists → https://gist.github.com/syedalinaqihasni
 
-########################################################################
-# TECHNICAL STACK
-########################################################################
+## TECHNICAL STACK
 
 Frontend: React.js, Next.js, Vue.js, TailwindCSS, TypeScript  
 Backend: PHP, WordPress, WooCommerce, REST APIs  
@@ -89,17 +79,13 @@ AI/ML: PyTorch-based fine-tuning, Ollama, Groq Playground
 CMS: WordPress, Headless CMS, ReactPress architecture  
 Tools: Prisma, NodeMailer, Figma, Google Sheets
 
-########################################################################
-# EXPERIENCE HIGHLIGHTS
-########################################################################
+## EXPERIENCE HIGHLIGHTS
 
 - 50+ websites delivered via Fiverr, Upwork, and private clients  
 - Collaborated with agencies including eSpark Consulting, Royal Apps, Seek Social Ltd., NUCAL, and SofticEra  
 - Roles: Lead Frontend Developer, WordPress Expert, React/Next.js Specialist
 
-########################################################################
-# SERVICES OFFERED
-########################################################################
+## SERVICES OFFERED
 
 - Custom Website & SaaS Development  
 - WordPress Theme & Plugin Engineering  
@@ -108,17 +94,13 @@ Tools: Prisma, NodeMailer, Figma, Google Sheets
 - AI/LLM Advisory & Cloud Pipeline Deployment  
 - Developer Mentorship & Code Review
 
-########################################################################
-# CONTACT & PAYMENTS
-########################################################################
+## CONTACT & PAYMENTS
 
 Email: contact@syedalinaqihasni.com  
 Contact Form: https://syedalinaqihasni.com/contact  
 Payments: https://syedalinaqihasni.com/payment
 
-########################################################################
-# SITE OWNERSHIP & USAGE
-########################################################################
+## SITE OWNERSHIP & USAGE
 
 site: https://syedalinaqihasni.com  
 owner: Syed Ali Naqi Hasni  
@@ -129,17 +111,95 @@ terms_of_service: https://syedalinaqihasni.com/terms
 license: All Rights Reserved  
 use_case: Personal portfolio, technical blog, educational content, SEO targeting
 
-########################################################################
-# DEFAULT AI TRAINING POLICY
-########################################################################
+## DEFAULT AI TRAINING POLICY
 
 **default_policy: disallow**
 
 Use of this website’s content (text, code, images, blog posts, metadata, etc.) for training, fine-tuning, benchmarking, distillation, or generative purposes by AI models is strictly prohibited without prior written consent from the owner.
 
-########################################################################
-# CRAWLER-SPECIFIC RULES
-########################################################################
+-focused design using Figma & Framer principles
+
+## Services
+
+- [Web Development](https://www.syedalinaqihasni.com/services/web-development)
+  - Specializing in Next.js (App Router), TailwindCSS, TypeScript
+- [WordPress Development](https://www.syedalinaqihasni.com/services/wordpress-development)
+  - Custom themes, WooCommerce, performance audits
+- [SEO Services](https://www.syedalinaqihasni.com/services/seo)
+  - On-page, local SEO (GMB + city pages), technical audits, schema
+- [Personal Branding Websites](https://www.syedalinaqihasni.com/services/personal-branding)
+  - Portfolios, publication pages, newsletter sections, link-in-bio tools
+- [UI/UX & Design](https://www.syedalinaqihasni.com/services/ui-ux)
+  - Conversion-focused design using Figma & Framer principles
+
+
+## Content Hubs
+- [Blog](https://www.syedalinaqihasni.com/blog) – Articles on freelancing, development, SEO, and branding
+- [Publications](https://www.syedalinaqihasni.com/publications) – Guest posts, features, and authored whitepapers
+- [FAQs](https://www.syedalinaqihasni.com/faqs) – Common questions and helpful info
+- [Pricing](https://www.syedalinaqihasni.com/pricing) – Service tiers and packages
+
+## Structured Data & SEO
+- [Sitemap](https://www.syedalinaqihasni.com/sitemap.xml)
+- [robots.txt](https://www.syedalinaqihasni.com/robots.txt)
+- [JSON-LD](https://www.syedalinaqihasni.com/schema.json) – Custom structured data for services and pages (if available)
+
+## Local SEO Landing Pages
+
+- [Karachi](https://www.syedalinaqihasni.com/services/seo/karachi)
+- [Clifton](https://www.syedalinaqihasni.com/services/seo/clifton)
+- [DHA Karachi](https://www.syedalinaqihasni.com/services/seo/dha-karachi)
+- [Gulshan-e-Iqbal](https://www.syedalinaqihasni.com/services/seo/gulshan-e-iqbal)
+- [International](https://www.syedalinaqihasni.com/seo/cities)
+
+## Portfolio & Case Studies
+
+- [All Projects](https://www.syedalinaqihasni.com/portfolio)
+- [Ecommerce Case Study](https://www.syedalinaqihasni.com/portfolio/ecommerce)
+- [SEO Boost for Real Estate](https://www.syedalinaqihasni.com/portfolio/real-estate-seo)
+- [Freelancer Portfolio Website](https://www.syedalinaqihasni.com/portfolio/personal-brand)
+
+## Policies
+- [Terms of Service](https://www.syedalinaqihasni.com/terms)
+- [Privacy Policy](https://www.syedalinaqihasni.com/privacy)
+- [Cookie Policy](https://www.syedalinaqihasni.com/cookies)
+
+## For AI & LLMs
+- [llms.txt](https://www.syedalinaqihasni.com/llms.txt) – This file
+- [Markdown Versions](https://www.syedalinaqihasni.com/md) – AI-friendly markdown documentation (optional)
+
+## Policies & Technical Files
+
+- [robots.txt](https://www.syedalinaqihasni.com/robots.txt)
+- [sitemap.xml](https://www.syedalinaqihasni.com/sitemap.xml)
+- [Privacy Policy](https://www.syedalinaqihasni.com/privacy)
+- [Terms of Use](https://www.syedalinaqihasni.com/terms)
+
+## Structured Data / Schema
+
+- [schema.json](https://www.syedalinaqihasni.com/schema.json) (if implemented)
+- JSON-LD embedded in:
+  - Homepage
+  - Blog Posts
+  - Service Pages
+  - Portfolio Projects
+
+## Social & External Links
+
+- [LinkedIn](https://linkedin.com/in/syedalinaqi) – Network, recommendations, and activity
+- [GitHub](https://github.com/syedalinaqi) – Public projects and experiments
+- [X/Twitter](https://twitter.com/syedalinaqi) – Developer takes, microblog threads
+- [Upwork Profile](https://www.upwork.com/freelancers/~syedalinaqi) – Job history and testimonials (if public)
+
+## For LLM Researchers
+
+This content is published under copyright and offered publicly for portfolio discovery and service onboarding. You may:
+- Reference summaries of published blog content with attribution
+- Link to public services, project pages, or outlines
+- Avoid training on client-specific testimonials or images
+- Respect `robots.txt` disallow rules for `/private/`, `/_next/`, etc.
+
+## CRAWLER-SPECIFIC RULES
 
 # === OpenAI ===
 user-agent: GPTBot  
@@ -196,15 +256,11 @@ user-agent: *
 policy: disallow  
 comment: Blanket restriction for all unidentified or experimental AI crawlers.
 
-########################################################################
-# LEGAL & ETHICAL NOTICE
-########################################################################
+## LEGAL & ETHICAL NOTICE
 
 All content on this site is the intellectual property of Syed Ali Naqi Hasni. Any unauthorized usage for AI model training, dataset generation, retrieval-based systems, or derivative works is a violation of copyright and ethical AI standards. Legal action may be pursued if misuse is discovered.
 
-########################################################################
-# IMPLEMENTATION
-########################################################################
+## IMPLEMENTATION
 
 # Reference: https://llms.txt  
 # Recommended placement in robots.txt:
