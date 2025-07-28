@@ -61,6 +61,7 @@ export const CONTACT_INFO = [
 
 export const LINKS_GROUPS = [
   [
+    { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Experience", path: "/experience" },
     { name: "Skills", path: "/skills" },
