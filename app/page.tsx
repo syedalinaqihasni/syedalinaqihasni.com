@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FeaturedProjects from "@/components/home/projects";
 import HomeSkills from "@/components/home/skills";
-import Contact from "@/components/contact/contact-form";
+import Contact from "@/components/contact/contact";
 import { CONTENT } from "@/constants/home";
 import FeaturedBlogs from "@/components/blogs/featured-blogs";
 import { projects } from "@/constants/projects";

@@ -1,5 +1,4 @@
-
-import Contact from '@/components/contact/contact-form';
+import Contact from '@/components/contact/contact';
 import { CONSTANT, CONTACT_CARDS } from '@/constants/contact';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
