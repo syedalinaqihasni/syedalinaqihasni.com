@@ -225,8 +225,11 @@ export default function Page() {
         >
           <div className={styles?.containerSmall}>
             <h2 className={styles?.sectionHeader}>{contact.title}</h2>
-            <p className={styles?.contactText}>{contact.description}</p>
-            <Contact />
+            <p className="text-center text-muted-foreground mb-6">
+              If you have any queries, feel free to chat with me via <b>Tawk.to</b> (chat widget in the corner)! This step has been taken to enhance quick response.
+            </p>
+            {/* <p className={styles?.contactText}>{contact.description}</p>
+            <Contact /> */}
           </div>
         </section>
       </div>
