@@ -1,4 +1,4 @@
-export const certificatesData = [
+[
   {
     "id": 1,
     "src": "/certificates/cert213114935709-1-syed-ali-naqi-hasni.webp",
@@ -543,4 +543,4 @@ export const certificatesData = [
     "album": "default",
     "tags": []
   }
-];
+]

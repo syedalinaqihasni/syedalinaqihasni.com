@@ -5,7 +5,7 @@ import path from 'path';
 export async function GET() {
   try {
     const galleryPath = path.join(process.cwd(), 'public', 'gallery');
-    const dataFilePath =  path.join(process.cwd(), 'public','galleryData.js');
+    const dataFilePath =  path.join(process.cwd(), 'galleryData.js');
 
     if (!fs.existsSync(galleryPath)) {
       return NextResponse.json([]);
@@ -26,8 +26,8 @@ export async function GET() {
     });
 
     // Save images array to galleryData.js as a JS const
-    const jsContent = `export const galleryData = ${JSON.stringify(images, null, 2)};\n`;
-    fs.writeFileSync(dataFilePath, jsContent, 'utf8');
+    const jsonContent = JSON.stringify(images, null, 2);
+    fs.writeFileSync(dataFilePath, jsonContent, 'utf8');
 
     return NextResponse.json(images);
   } catch (error) {

@@ -1,4 +1,4 @@
-export const galleryData = [
+[
   {
     "id": 1,
     "src": "/gallery/syedalinaqihasni_1714194303_3355227458594540633_14685689414.webp",
@@ -1335,4 +1335,4 @@ export const galleryData = [
     "album": "default",
     "tags": []
   }
-];
+]

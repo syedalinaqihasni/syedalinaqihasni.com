@@ -5,7 +5,7 @@ import path from 'path';
 export async function GET() {
   try {
     const certificatesPath = path.join(process.cwd(), 'public', 'certificates');
-    const dataFilePath =  path.join(process.cwd(), 'public','certificatesData.js');
+    const dataFilePath =  path.join(process.cwd(), 'certificatesData.js');
 
     if (!fs.existsSync(certificatesPath)) {
       return NextResponse.json([]);
@@ -32,8 +32,10 @@ export async function GET() {
     });
 
     // Save images array to certificatesData.js as a JS const
-    const jsContent = `export const certificatesData = ${JSON.stringify(images, null, 2)};\n`;
-    fs.writeFileSync(dataFilePath, jsContent, 'utf8');
+
+    // Save images array to galleryData.js as a JS const
+    const jsonContent = JSON.stringify(images, null, 2);
+    fs.writeFileSync(dataFilePath, jsonContent, 'utf8');
 
     return NextResponse.json(images);
   } catch (error) {
