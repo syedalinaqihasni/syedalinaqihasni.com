@@ -4,13 +4,14 @@ import path from 'path';
 
 export async function GET() {
   try {
-    const galleryPath = path.join(process.cwd(), 'public', 'certificates');
+    const certificatesPath = path.join(process.cwd(), 'public', 'certificates');
+    const dataFilePath =  path.join(process.cwd(), 'public','certificatesData.js');
 
-    if (!fs.existsSync(galleryPath)) {
+    if (!fs.existsSync(certificatesPath)) {
       return NextResponse.json([]);
     }
 
-    const files = fs.readdirSync(galleryPath);
+    const files = fs.readdirSync(certificatesPath);
     const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.svg'];
 
     const imageFiles = files.filter(file => {
@@ -18,24 +19,24 @@ export async function GET() {
       return imageExtensions.includes(ext);
     });
 
-    const images = imageFiles.map((file, index) => {
-      const filePath = `https://www.syedalinaqihasni.com/certificates/${file}`;
-      const meta = CERTIFICATES.find(m => m.src === filePath);
-
+    const images = files.map((file, index) => {
+      const filePath = `/certificates/${file}`;
       return {
-        id: meta?.id ?? index + 1,
+        id: index + 1,
         src: filePath,
-        alt: meta?.alt ?? file,
-        caption: meta?.caption ?? 'No caption available',
-        album: meta?.album ?? 'default',
-        tags: meta?.tags ?? [],
-        link: meta?.link ?? '#',
+        alt: file,
+        caption: 'No caption available',
+        album: 'default',
+        tags: [],
       };
     });
 
+    // Save images array to certificatesData.js as a JS const
+    const jsContent = `export const certificatesData = ${JSON.stringify(images, null, 2)};\n`;
+    fs.writeFileSync(dataFilePath, jsContent, 'utf8');
+
     return NextResponse.json(images);
   } catch (error) {
-    // console.error('Error reading gallery directory:', error);
     return NextResponse.json([]);
   }
 }

@@ -2,40 +2,35 @@ import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-
 export async function GET() {
   try {
     const galleryPath = path.join(process.cwd(), 'public', 'gallery');
+    const dataFilePath =  path.join(process.cwd(), 'public','galleryData.js');
 
     if (!fs.existsSync(galleryPath)) {
       return NextResponse.json([]);
     }
 
     const files = fs.readdirSync(galleryPath);
-    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.svg', '.heic',];
 
-    const imageFiles = files.filter(file => {
-      const ext = path.extname(file).toLowerCase();
-      return imageExtensions.includes(ext);
-    });
-
-    const images = imageFiles.map((file, index) => {
-      const filePath = `https://www.syedalinaqihasni.com/gallery/${file}`;
-      const meta = GALLERY.find(m => m.src === filePath);
-
+    const images = files.map((file, index) => {
+      const filePath = `/gallery/${file}`;
       return {
-        id: meta?.id ?? index + 1,
+        id: index + 1,
         src: filePath,
-        alt: meta?.alt ?? file,
-        caption: meta?.caption ?? 'No caption available',
-        album: meta?.album ?? 'default',
-        tags: meta?.tags ?? [],
+        alt: file,
+        caption: 'No caption available',
+        album: 'default',
+        tags: [],
       };
     });
 
+    // Save images array to galleryData.js as a JS const
+    const jsContent = `export const galleryData = ${JSON.stringify(images, null, 2)};\n`;
+    fs.writeFileSync(dataFilePath, jsContent, 'utf8');
+
     return NextResponse.json(images);
   } catch (error) {
-    // console.error('Error reading gallery directory:', error);
     return NextResponse.json([]);
   }
 }

@@ -2,8 +2,7 @@ import { getMetadataForPath } from '@/lib/metadata';
 import StructuredData from '@/components/StructuredData';
 import { gallerySchema } from '@/constants/structuredData';
 import GalleryGrid from '@/components/gallery/gallery-grid';
-import { GALLERY, GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/gallery';
-import { Images } from '@/types/images';
+import {GALLERY, GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/gallery';
 
 export const metadata = getMetadataForPath('/gallery');
 
@@ -17,29 +16,30 @@ const DESCRIPTION =
 
 
 // Helper to fetch images from API
-async function fetchGalleryImages(): Promise<Images[]> {
-  try {
-    const res = await fetch(`https://www.syedalinaqihasni.com/api/gallery`, {
-      cache: 'no-store',
-    });
+// async function fetchGalleryImages(): Promise<Images[]> {
+//   try {
+//     const res = await fetch(`https://www.syedalinaqihasni.com/api/gallery`, {
+//       cache: 'no-store',
+//     });
 
-    if (!res.ok) {
-      // console.error('Failed to fetch gallery images');
-      return [];
-    }
+//     if (!res.ok) {
+//       // console.error('Failed to fetch gallery images');
+//       return [];
+//     }
 
-    const data = await res.json();
-    // console.log(data,'data');
+//     const data = await res.json();
+//     // console.log(data,'data');
     
-    return data|| [];
-  } catch (error) {
-    // console.error('Error fetching gallery images:', error);
-    return [];
-  }
-}
+//     return data|| [];
+//   } catch (error) {
+//     // console.error('Error fetching gallery images:', error);
+//     return [];
+//   }
+// }
 
 export default async function Page() {
-  const images = await fetchGalleryImages();
+  // const images = await fetchGalleryImages();
+  const images = GALLERY;
 
   return (
     <>
