@@ -12,7 +12,7 @@ import { Images } from "@/types/images";
 import Link from "next/link";
 import { ExternalLink, ArrowLeft, ArrowRight } from "lucide-react";
 
-export default function GalleryGrid({ images }: { images: Images[] }) {
+export default function GalleryGrid({ images,type }: { images: Images[], type:string }) {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [activeAlbum, setActiveAlbum] = useState("all");
 
@@ -94,7 +94,7 @@ export default function GalleryGrid({ images }: { images: Images[] }) {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className={"relative rounded-lg overflow-hidden"}>
+                <Link href={`/${type}/${image.alt.split(".")[0]}`} className={"relative rounded-lg overflow-hidden"}>
                   <Image
                     src={
                       image?.src ||
@@ -127,82 +127,12 @@ export default function GalleryGrid({ images }: { images: Images[] }) {
                       ))}
                     </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </Masonry>
         </motion.div>
       </AnimatePresence>
-
-      <Dialog
-        open={!!selectedImage}
-        onOpenChange={(open) => !open && setSelectedImage(null)}
-      >
-        <DialogContent className={"max-w-3xl"}>
-          {selectedImage && (
-            <div>
-              <div className={"relative w-full h-[60vh]"}>
-                <Image
-                  src={
-                    selectedImage.src ||
-                    "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
-                  }
-                  alt={`${selectedImage.alt} - Syed Ali Naqi Hasni`}
-                  fill
-                  className={"object-contain"}
-                />
-              </div>
-              <div className="flex items-center justify-between mb-2">
-                <button
-                  onClick={handlePrev}
-                  disabled={selectedIndex <= 0}
-                  className={`p-2 rounded hover:bg-gray-100 disabled:opacity-50`}
-                  aria-label="Previous image"
-                  type="button"
-                >
-                  <ArrowLeft />
-                </button>
-                <span className="text-sm text-gray-500">
-                  {selectedIndex + 1} / {filteredImages.length}
-                </span>
-                <button
-                  onClick={handleNext}
-                  disabled={selectedIndex >= filteredImages.length - 1}
-                  className={`p-2 rounded hover:bg-gray-100 disabled:opacity-50`}
-                  aria-label="Next image"
-                  type="button"
-                >
-                  <ArrowRight />
-                </button>
-              </div>
-              <div className={"mt-4"}>
-                {selectedImage?.link ? (
-                  <Link
-                    href={selectedImage?.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-xl font-medium mb-2 text-blue-600 hover:underline"
-                  >
-                    {selectedImage.caption}
-                    <ExternalLink />
-                  </Link>
-                ) : (
-                  <h3 className="text-xl font-medium mb-2">
-                    {selectedImage.caption}
-                  </h3>
-                )}
-                <div className={"flex flex-wrap gap-2"}>
-                  {selectedImage.tags?.map((tag) => (
-                    <Badge key={tag} variant={"secondary"}>
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }

@@ -52,7 +52,7 @@ export default async function Page() {
           </div>
 
           {images.length > 0 ? (
-            <GalleryGrid images={images} />
+            <GalleryGrid images={images} type='gallery' />
           ) : (
             <p className="text-center text-muted-foreground">
               Loading gallery or no images found.
