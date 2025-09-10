@@ -11,6 +11,8 @@ import {
   SERVICES,
 } from "@/constants/services";
 import { countries } from "@/constants/area-services";
+import { CERTIFICATES } from "@/constants/certificates";
+import { GALLERY } from "@/constants/gallery";
 // const normalizeString = (str: string) => str.toLowerCase().replace(/[\s/]+/g, "-");
 const normalizeString = (str: string) =>
   str
@@ -106,6 +108,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       )
     )
   );
+// Generate certificate routes dynamically
+const certificateRoutes = GALLERY.flatMap((cert) => [
+  {
+    url: `${cert.src.split(".w")[0]}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  },
+]);  
+// Generate certificate routes dynamically
+const galleryRoutes = CERTIFICATES.flatMap((cert) => [
+  {
+    url: `${cert.src.split(".w")[0]}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  },
+]);
 
   // Routes for related-services and related-jobs
   const relatedServiceRoutes = countries.flatMap((country) =>
@@ -229,5 +249,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...serviceRoutes,
     ...relatedServiceRoutes,
     ...relatedJobRoutes,
+    ...certificateRoutes,
+    ...galleryRoutes,
   ];
 }
