@@ -156,8 +156,8 @@ export default function CertificateGrid() {
             <div>
               <div className="relative w-full h-[60vh]">
                 <Image
-                  src={selectedImage.src || '/images/placeholder-syed-ali-naqi-hasni.webp'}
-                  alt={`${selectedImage.alt} - Syed Ali Naqi Hasni`}
+                  src={selectedImage?.src || '/images/placeholder-syed-ali-naqi-hasni.webp'}
+                  alt={`${selectedImage?.alt} - Syed Ali Naqi Hasni`}
                   fill
                   className="object-contain"
                 />
@@ -165,10 +165,10 @@ export default function CertificateGrid() {
               <div className="flex justify-between items-center">
                 <div className="mt-4">
                   <h3 className="text-xl font-medium mb-2">
-                    {selectedImage.caption}
+                    {selectedImage?.caption}
                   </h3>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {selectedImage.tags?.map((tag) => (
+                    {selectedImage?.tags?.map((tag) => (
                       <Badge key={tag} variant="secondary">
                         {tag}
                       </Badge>

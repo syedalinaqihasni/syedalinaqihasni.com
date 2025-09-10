@@ -39,7 +39,7 @@ export default function GalleryGrid({ images,type }: { images: Images[], type:st
 
   // Find index of selected image in filteredImages
   const selectedIndex = selectedImage
-    ? filteredImages.findIndex((img) => img.id === selectedImage.id)
+    ? filteredImages.findIndex((img) => img.id === selectedImage?.id)
     : -1;
 
   // Handlers for next/prev

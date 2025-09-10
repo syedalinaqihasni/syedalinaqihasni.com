@@ -64,8 +64,8 @@ export default function GallerySingle({
   return (
     <div className={MAX_WIDTH_WRAPPER}>
           <div className={HEADER_WRAPPER}>
-            <h1 className={TITLE}>{selectedImage.title.split("_")[0]}</h1>
-            <p className={DESCRIPTION}>{selectedImage.paragraph.split(".")[0]}</p>
+            <h1 className={TITLE}>{selectedImage?.title}</h1>
+            <p className={DESCRIPTION}>{selectedImage?.paragraph}</p>
           </div>
     <div className="max-w-4xl mx-auto">
  {/* Prev / Next */}
