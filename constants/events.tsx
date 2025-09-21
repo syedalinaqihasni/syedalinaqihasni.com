@@ -1,18 +1,19 @@
 import { Event } from "@/types/events";
 
-const events: Event []= [{
-  id: 1,
-  title: 'Sample Event Title',
-  description: 'This is a sample event description.',
-  excerpt:"",
-  category: 'Conference',
-  slug: 'sample-event',
-  image: 'https://www.syedalinaqihasni.com/sample-event?.webp',
-  date: '2024-07-01T18:00:00Z',
-  location: '123 Main St, City, Country',
-  virtual: false,
-  tags:['Event','Sample'],
-  content: `<div >
+const events: Event[] = [
+  {
+    id: 1,
+    title: "Sample Event Title",
+    description: "This is a sample event description.",
+    excerpt: "",
+    category: "Conference",
+    slug: "sample-event",
+    image: "/sample-event?.webp",
+    date: "2024-07-01T18:00:00Z",
+    location: "123 Main St, City, Country",
+    virtual: false,
+    tags: ["Event", "Sample"],
+    content: `<div >
   <h1>Project Title</h1>
   <h2>Overview</h2>
   <p>This project demonstrates the use of various <a href="#">HTML elements</a> within a styled container.</p>
@@ -84,7 +85,8 @@ greet("World");
   <h2>Conclusion</h2>
   <p>This sample covers all key HTML tags with scoped styles under <code>.single-project</code>. Modify as needed to match your project’s branding.</p>
 </div>
-`
-}];
+`,
+  },
+];
 
-export {events}
+export { events };

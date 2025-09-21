@@ -7,8 +7,11 @@ import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 import { notFound } from "next/navigation";
 import { formatDateTime } from "@/lib/utils";
 import { events } from "@/constants/events";
-import StructuredData from '@/components/StructuredData';
-import { generateEventSchema, generateBreadcrumbSchema } from '@/constants/structuredData';
+import StructuredData from "@/components/StructuredData";
+import {
+  generateEventSchema,
+  generateBreadcrumbSchema,
+} from "@/constants/structuredData";
 
 export async function generateMetadata({
   params,
@@ -23,7 +26,7 @@ export async function generateMetadata({
     description: event?.excerpt || event?.title,
     image: event?.image,
     publishedAt: event?.date,
-    path: `https://www.syedalinaqihasni.com/events/${event?.slug}`,
+    path: `/events/${event?.slug}`,
   });
 }
 
@@ -66,16 +69,16 @@ const Page = async ({ params }: { params: { slug: string } }) => {
 
   const eventSchema = generateEventSchema(event);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://www.syedalinaqihasni.com" },
-    { name: "Events", url: "https://www.syedalinaqihasni.com/events" },
-    { name: event?.title, url: `https://www.syedalinaqihasni.com/events/${event?.slug}` }
+    { name: "Home", url: "/" },
+    { name: "Events", url: "/events" },
+    { name: event?.title, url: `/events/${event?.slug}` },
   ]);
 
   return (
     <>
       <StructuredData data={eventSchema} />
       <StructuredData data={breadcrumbSchema} />
-      
+
       <div className={styles?.container}>
         <div className={styles?.wrapper}>
           <div className={styles?.header}>
@@ -91,10 +94,12 @@ const Page = async ({ params }: { params: { slug: string } }) => {
           </div>
           <div className={styles?.imageWrapper}>
             <Image
-              src={event?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
+              src={
+                event?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"
+              }
               alt={`${event?.title} - Syed Ali Naqi Hasni`}
               fill
-              className={styles?.image }
+              className={styles?.image}
             />
           </div>
           <Card className={styles?.card}>

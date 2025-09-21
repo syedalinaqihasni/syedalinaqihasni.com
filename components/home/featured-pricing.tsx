@@ -58,7 +58,7 @@ export default function FeaturedPricing({ plans }: { plans: Plan[] }) {
                   <div key={idx} className={styles?.featureItem}>
                     <Check className="h-4 w-4 text-green-500" />
                     <Link
-                      href={`https://www.syedalinaqihasni.com/term-and-conditions#${properCaseToDash(feature)}`}
+                      href={`/term-and-conditions#${properCaseToDash(feature)}`}
                     >
                       <span>{feature}</span>
                     </Link>
@@ -79,7 +79,7 @@ export default function FeaturedPricing({ plans }: { plans: Plan[] }) {
                 }
                 asChild
               >
-                <Link href="https://www.syedalinaqihasni.com/pricing">
+                <Link href="/pricing">
                   View Details
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

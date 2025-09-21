@@ -623,7 +623,7 @@ export const PRICING_PAGE_CONSTANT = {
     description:
       "Let's discuss your project and find the perfect solution for your needs.",
     buttonText: "Contact Me",
-    buttonLink: "https://www.syedalinaqihasni.com/contact",
+    buttonLink: "/contact",
   },
 };
 export type Plan = {

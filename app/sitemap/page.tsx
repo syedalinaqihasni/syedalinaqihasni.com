@@ -61,7 +61,7 @@ export default function SitemapStyleLinktreePage() {
         <ul className="space-y-2">
           {posts.slice(0, 20).map((post) => (
             <li key={post.slug}>
-              <Link href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`} className="hover:underline">
+              <Link href={`/blogs/${post.slug}`} className="hover:underline">
                 ✍️ {post.title}
               </Link>
             </li>
@@ -70,12 +70,14 @@ export default function SitemapStyleLinktreePage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">📚 Blogs Categories & Tags</h2>
+        <h2 className="text-2xl font-semibold mb-4">
+          📚 Blogs Categories & Tags
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {categories.map((cat) => (
             <Link
               key={cat}
-              href={`https://www.syedalinaqihasni.com/blogs/category/${formatSlug(cat)}`}
+              href={`/blogs/category/${formatSlug(cat)}`}
               className="hover:underline "
             >
               📂 {cat}
@@ -84,7 +86,7 @@ export default function SitemapStyleLinktreePage() {
           {tags.map((tag) => (
             <Link
               key={tag}
-              href={`https://www.syedalinaqihasni.com/blogs/tag/${formatSlug(tag)}`}
+              href={`/blogs/tag/${formatSlug(tag)}`}
               className="hover:underline "
             >
               🏷️ {tag}
@@ -99,7 +101,7 @@ export default function SitemapStyleLinktreePage() {
           {projects.map((project) => (
             <li key={project.slug}>
               <Link
-                href={`https://www.syedalinaqihasni.com/projects/${project.slug}`}
+                href={`/projects/${project.slug}`}
                 className="hover:underline"
               >
                 🚀 {project.title}
@@ -114,7 +116,7 @@ export default function SitemapStyleLinktreePage() {
         <ul className="space-y-2">
           {events.map((event) => (
             <li key={event.slug}>
-              <Link href={`https://www.syedalinaqihasni.com/events/${event.slug}`} className="hover:underline">
+              <Link href={`/events/${event.slug}`} className="hover:underline">
                 📌 {event.title}
               </Link>
             </li>
@@ -141,7 +143,7 @@ export default function SitemapStyleLinktreePage() {
                     {SERVICES.map((service) => (
                       <li key={service?.slug}>
                         <Link
-                          href={`https://www.syedalinaqihasni.com/services/${service?.slug}/${country.slug}`}
+                          href={`/services/${service?.slug}/${country.slug}`}
                           className="hover:underline"
                         >
                           👨🏻‍🔧 {service?.title} in {country.name}
@@ -165,7 +167,7 @@ export default function SitemapStyleLinktreePage() {
                             {SERVICES.map((service) => (
                               <li key={service?.slug}>
                                 <Link
-                                  href={`https://www.syedalinaqihasni.com/services/${service?.slug}/${country.slug}/${city.slug}`}
+                                  href={`/services/${service?.slug}/${country.slug}/${city.slug}`}
                                   className="hover:underline"
                                 >
                                   👨🏻‍🔧 {service?.title} in {city.name},{" "}
@@ -189,7 +191,7 @@ export default function SitemapStyleLinktreePage() {
                                   {SERVICES.map((service) => (
                                     <li key={service?.slug}>
                                       <Link
-                                        href={`https://www.syedalinaqihasni.com/services/${service?.slug}/${country.slug}/${city.slug}/${area.slug}`}
+                                        href={`/services/${service?.slug}/${country.slug}/${city.slug}/${area.slug}`}
                                         className="hover:underline"
                                       >
                                         👨🏻‍🔧 {service?.title} in {area.name},{" "}

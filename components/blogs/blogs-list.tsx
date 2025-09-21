@@ -40,7 +40,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
       return (
         post?.title.toLowerCase().includes(query) ||
         post?.excerpt.toLowerCase().includes(query) ||
-        post?.tags.some((cat) => cat.toLowerCase().includes(query))
+        post?.tags?.some((cat) => cat.toLowerCase().includes(query))
       );
     })
     ?.sort(
@@ -59,99 +59,101 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
         />
       </div>
       <div className={styles?.grid}>
-        {filteredPosts?.map((post, index) => (
-          <motion.div
-            key={post?.slug}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          >
-            <Card className={styles?.card}>
-              {post?.image ? (
-                <Link
-                  href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`}
-                  className="relative block h-48 w-full rounded-lg overflow-hidden"
-                >
-                  <Image
-                    src={post.image}
-                    alt={`${post.title} - Syed Ali Naqi Hasni`}
-                    fill
-                    className="object-cover"
-                    priority={index < 3}
-                  />
-                </Link>
-              ) : (
-                <Link
-                  href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`}
-                  className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
-                >
-                  <h3 className="text-lg font-bold w-full mb-1">
-                    {post.title}
-                  </h3>
-                  <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">
-                    Syed Ali Naqi Hasni
-                  </div>
-                </Link>
-              )}
-
-              <CardContent className={"p-6"}>
-                <div className={styles?.categoriesWrapper}>
-                  <a
-                    href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category
-                      .toLowerCase()
-                      .replace(/[\s/]+/g, "-")}`}
+        {filteredPosts
+          .filter((post) => post?.content && post.content.trim() !== "")
+          .map((post, index) => (
+            <motion.div
+              key={post?.slug}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Card className={styles?.card}>
+                {post?.image ? (
+                  <Link
+                    href={`/blogs/${post.slug}`}
+                    className="relative block h-48 w-full rounded-lg overflow-hidden"
                   >
-                    <Badge
-                      variant={"secondary"}
-                      className={styles?.categoryBadge}
-                    >
-                      {post?.category}
-                    </Badge>
-                  </a>
-                </div>
-                <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
-                  <h3 className={styles?.title}>{post?.title}</h3>
-                </Link>
-                <p className={styles?.excerpt}>{post?.excerpt}</p>
-                <div className={styles?.metaWrapper}>
-                  <div className={styles?.metaItem}>
-                    <Calendar className={styles?.icon} />
-                    {formatDate(post?.publishedAt)}
-                  </div>
-                  <div className={"flex items-center"}>
-                    <Clock className={styles?.icon} />
-                    {post?.readingTime}
-                  </div>
-                </div>
-                <div className={styles?.tagsWrapper}>
-                  {post?.tags.slice(0, 2)?.map((tag) => (
+                    <Image
+                      src={post.image}
+                      alt={`${post.title} - Syed Ali Naqi Hasni`}
+                      fill
+                      className="object-cover"
+                      priority={index < 3}
+                    />
+                  </Link>
+                ) : (
+                  <Link
+                    href={`/blogs/${post.slug}`}
+                    className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
+                  >
+                    <h3 className="text-lg font-bold w-full mb-1">
+                      {post.title}
+                    </h3>
+                    <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">
+                      Syed Ali Naqi Hasni
+                    </div>
+                  </Link>
+                )}
+
+                <CardContent className={"p-6"}>
+                  <div className={styles?.categoriesWrapper}>
                     <a
-                      href={`https://www.syedalinaqihasni.com/blogs/tag/${tag
+                      href={`/blogs/category/${post?.category
                         .toLowerCase()
                         .replace(/[\s/]+/g, "-")}`}
-                      key={tag}
                     >
                       <Badge
                         variant={"secondary"}
                         className={styles?.categoryBadge}
                       >
-                        {tag}
+                        {post?.category}
                       </Badge>
                     </a>
-                  ))}
-                  {post?.tags?.length > 2 && (
-                    <Badge
-                      variant={"outline"}
-                      className={styles?.categoryBadge}
-                    >
-                      +{post?.tags?.length - 3}
-                    </Badge>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        ))}
+                  </div>
+                  <Link href={`/blogs/${post?.slug}`}>
+                    <h3 className={styles?.title}>{post?.title}</h3>
+                  </Link>
+                  <p className={styles?.excerpt}>{post?.excerpt}</p>
+                  <div className={styles?.metaWrapper}>
+                    <div className={styles?.metaItem}>
+                      <Calendar className={styles?.icon} />
+                      {formatDate(post?.publishedAt)}
+                    </div>
+                    <div className={"flex items-center"}>
+                      <Clock className={styles?.icon} />
+                      {post?.readingTime}
+                    </div>
+                  </div>
+                  <div className={styles?.tagsWrapper}>
+                    {post?.tags?.slice(0, 2)?.map((tag) => (
+                      <a
+                        href={`/blogs/tag/${tag
+                          .toLowerCase()
+                          .replace(/[\s/]+/g, "-")}`}
+                        key={tag}
+                      >
+                        <Badge
+                          variant={"secondary"}
+                          className={styles?.categoryBadge}
+                        >
+                          {tag}
+                        </Badge>
+                      </a>
+                    ))}
+                    {post?.tags?.length > 2 && (
+                      <Badge
+                        variant={"outline"}
+                        className={styles?.categoryBadge}
+                      >
+                        +{post?.tags?.length - 3}
+                      </Badge>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
       </div>
     </div>
   );

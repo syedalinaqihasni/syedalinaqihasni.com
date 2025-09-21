@@ -641,14 +641,22 @@ export const SERVICES_PAGE_CONSTANT = {
     description:
       "Let's discuss your requirements and create something amazing together.",
     buttonText: "Get Started",
-    buttonLink: "https://www.syedalinaqihasni.com/contact",
+    buttonLink: "/contact",
   },
 };
 
-export const ALL_SERVS = SERVICES.flatMap(service => service?.servs);
-export const RELATED_JOB_TITLES = SERVICES.flatMap(service => service?.relatedJobTitles);
-export const ALL_TECHNILOGIES = SERVICES.flatMap(service => service?.technologies);
-export const ALL_FEATURES = SERVICES.flatMap(service => service?.features);
-export const ALL_DELIVERABLES = SERVICES.flatMap(service => service?.deliverables);
-export const ALL_REQUIREMENTS = SERVICES.flatMap(service => service?.requirements);
+export const ALL_SERVS = SERVICES.flatMap((service) => service?.servs);
+export const RELATED_JOB_TITLES = SERVICES.flatMap(
+  (service) => service?.relatedJobTitles
+);
+export const ALL_TECHNILOGIES = SERVICES.flatMap(
+  (service) => service?.technologies
+);
+export const ALL_FEATURES = SERVICES.flatMap((service) => service?.features);
+export const ALL_DELIVERABLES = SERVICES.flatMap(
+  (service) => service?.deliverables
+);
+export const ALL_REQUIREMENTS = SERVICES.flatMap(
+  (service) => service?.requirements
+);
 export const FEATURED_SERVICES = SERVICES.slice(0, 3);

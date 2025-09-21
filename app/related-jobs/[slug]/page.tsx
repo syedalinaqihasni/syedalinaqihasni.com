@@ -14,11 +14,13 @@ export async function generateMetadata({
 
   const slug = params.slug ? dashToProperCase(params.slug) : undefined;
 
-  const title = `${service?.title}${slug ? ` in ${slug}` : ""} | Syed Ali Naqi Hasni`;
+  const title = `${service?.title}${
+    slug ? ` in ${slug}` : ""
+  } | Syed Ali Naqi Hasni`;
   const description = service?.description;
 
-  const pathParts = ['https://www.syedalinaqihasni.com/services', params?.slug].filter(Boolean);
-  const path = pathParts.join('https://www.syedalinaqihasni.com/');
+  const pathParts = ["/services", params?.slug].filter(Boolean);
+  const path = pathParts.join("/");
 
   return generateDynamicMetadata({
     title,
@@ -51,11 +53,7 @@ const styles = {
   contactText: "text-center text-muted-foreground mb-10 max-w-2xl mx-auto",
 };
 
-export default function ServicePage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default function ServicePage({ params }: { params: { slug: string } }) {
   const { slug } = params;
 
   return (

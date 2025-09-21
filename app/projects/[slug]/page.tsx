@@ -36,7 +36,7 @@ export async function generateMetadata({
     description: project?.description || project?.title,
     image: project?.image,
     publishedAt: project?.publishedAt,
-    path: `https://www.syedalinaqihasni.com/projects/${project?.slug}`,
+    path: `/projects/${project?.slug}`,
   });
 }
 
@@ -48,11 +48,11 @@ const Page = async ({ params }: { params: { slug: string } }) => {
 
   const projectSchema = generateProjectSchema(project);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://www.syedalinaqihasni.com" },
-    { name: "Projects", url: "https://www.syedalinaqihasni.com/projects" },
+    { name: "Home", url: "/" },
+    { name: "Projects", url: "/projects" },
     {
       name: project.title,
-      url: `https://www.syedalinaqihasni.com/projects/${project.slug}`,
+      url: `/projects/${project.slug}`,
     },
   ]);
 
@@ -141,8 +141,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
           <div className={IMAGE_WRAPPER}>
             <Image
               src={
-                project?.image ||
-                "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                project?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"
               }
               alt={`${project?.title} - Syed Ali Naqi Hasni`}
               fill
@@ -178,7 +177,11 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                 </div>
               </div>
               <div className={LONG_DESCRIPTION}>
-                <HtmlRenderer  path="" terms={[]} html={project?.longDescription} />
+                <HtmlRenderer
+                  path=""
+                  terms={[]}
+                  html={project?.longDescription}
+                />
               </div>
             </CardContent>
           </Card>
@@ -189,7 +192,9 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                 <div key={index} className={GALLERY_IMAGE_WRAPPER}>
                   <Image
                     src={image}
-                    alt={`${project?.title} gallery image ${index + 1} - Syed Ali Naqi Hasni`}
+                    alt={`${project?.title} gallery image ${
+                      index + 1
+                    } - Syed Ali Naqi Hasni`}
                     fill
                     className={IMAGE_CLASS}
                   />
@@ -208,7 +213,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
                         <Image
                           src={
                             relatedProject?.image ||
-                            "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                            "/images/placeholder-syed-ali-naqi-hasni.webp"
                           }
                           alt={`${relatedProject?.title} - Syed Ali Naqi Hasni`}
                           fill

@@ -65,7 +65,7 @@ export default function ServicesPage() {
                   <Card key={service?.id} className={styles?.card}>
                     <CardContent className={styles?.cardContent}>
                       <div className={styles?.serviceIcon}>{service?.icon}</div>
-                      <Link href={`https://www.syedalinaqihasni.com/services/${service?.slug}`}>
+                      <Link href={`/services/${service?.slug}`}>
                         <h3 className={styles?.serviceTitle}>
                           {service?.title}
                         </h3>
@@ -78,8 +78,13 @@ export default function ServicesPage() {
                         {service?.features.slice(0, 4).map((feature, index) => (
                           <div key={index} className={styles?.featureItem}>
                             <Check className="h-4 w-4 text-green-500" />
-                            <Link href={`https://www.syedalinaqihasni.com/related-services/${properCaseToDash(feature)}`}>
-                            <span>{feature}</span></Link>
+                            <Link
+                              href={`/related-services/${properCaseToDash(
+                                feature
+                              )}`}
+                            >
+                              <span>{feature}</span>
+                            </Link>
                           </div>
                         ))}
                         {service?.features?.length > 4 && (
@@ -117,13 +122,11 @@ export default function ServicesPage() {
                         </span>
                       </div>
                       <div className="flex justify-between">
-                        <Link href={`https://www.syedalinaqihasni.com/services/${service?.slug}`}>
-                          <Button variant={"outline"}>
-                            More Details
-                          </Button>
+                        <Link href={`/services/${service?.slug}`}>
+                          <Button variant={"outline"}>More Details</Button>
                         </Link>
                         <Button className="w-50" asChild>
-                          <Link href="https://www.syedalinaqihasni.com/contact">
+                          <Link href="/contact">
                             Get Quote
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </Link>

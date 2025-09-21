@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 import { CONSTANT, posts } from "@/constants/blogs";
@@ -48,9 +48,9 @@ export async function generateMetadata({
   return generateDynamicMetadata({
     title: post?.title,
     description: post?.excerpt,
-    image: post?.image ?post?.image : 'https://www.syedalinaqihasni.com/apple-icon-180x180.webp',
+    image: post?.image ? post?.image : "/apple-icon-180x180.webp",
     publishedAt: post?.publishedAt,
-    path: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
+    path: `/blogs/${post?.slug}`,
   });
 }
 
@@ -67,11 +67,11 @@ const Page = async ({ params }: { params: { slug: string } }) => {
 
   const blogPostSchema = generateBlogPostSchema(post);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://www.syedalinaqihasni.com" },
-    { name: "Blogs", url: "https://www.syedalinaqihasni.com/blogs" },
+    { name: "Home", url: "/" },
+    { name: "Blogs", url: "/blogs" },
     {
       name: post?.title,
-      url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
+      url: `/blogs/${post?.slug}`,
     },
   ]);
 
@@ -87,7 +87,7 @@ const Page = async ({ params }: { params: { slug: string } }) => {
             <div className={styles2?.containerLarge}>
               <div className={styles2?.projectsHeaderWrapper}>
                 <h2 className={styles2?.sectionHeaderLeft}>Recent Blogs</h2>
-                <Link href={"https://www.syedalinaqihasni.com/blogs"}>
+                <Link href={"/blogs"}>
                   <Button variant={"outline"}>
                     View All Blogs
                     <ArrowRight className={"ml-2 h-4 w-4"} />

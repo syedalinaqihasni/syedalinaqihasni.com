@@ -12,7 +12,13 @@ import { Images } from "@/types/images";
 import Link from "next/link";
 import { ExternalLink, ArrowLeft, ArrowRight } from "lucide-react";
 
-export default function GalleryGrid({ images,type }: { images: Images[], type:string }) {
+export default function GalleryGrid({
+  images,
+  type,
+}: {
+  images: Images[];
+  type: string;
+}) {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [activeAlbum, setActiveAlbum] = useState("all");
 
@@ -94,11 +100,14 @@ export default function GalleryGrid({ images,type }: { images: Images[], type:st
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <Link href={`/${type}/${image.alt.split(".")[0]}`} className={"relative rounded-lg overflow-hidden"}>
+                <Link
+                  href={`/${type}/${image.alt.split(".")[0]}`}
+                  className={"relative rounded-lg overflow-hidden"}
+                >
                   <Image
                     src={
                       image?.src ||
-                      "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"
+                      "/images/placeholder-syed-ali-naqi-hasni.webp"
                     }
                     alt={image?.alt || `Syed Ali Naqi Hasni`}
                     width={500}

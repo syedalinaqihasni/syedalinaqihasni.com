@@ -5,7 +5,7 @@ const GALLERY_DESCRIPTION =
 const CERTIFICATES = [
   {
     id: 1,
-    src: "https://www.syedalinaqihasni.com/certificates/cert213114935709-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/cert213114935709-1-syed-ali-naqi-hasni.webp",
     alt: "cert213114935709-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -16,7 +16,7 @@ const CERTIFICATES = [
   },
   {
     id: 2,
-    src: "https://www.syedalinaqihasni.com/certificates/cert27111491543-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/cert27111491543-1-syed-ali-naqi-hasni.webp",
     alt: "cert27111491543-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -27,7 +27,7 @@ const CERTIFICATES = [
   },
   {
     id: 3,
-    src: "https://www.syedalinaqihasni.com/certificates/cert38011492493-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/cert38011492493-1-syed-ali-naqi-hasni.webp",
     alt: "cert38011492493-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -38,7 +38,7 @@ const CERTIFICATES = [
   },
   {
     id: 4,
-    src: "https://www.syedalinaqihasni.com/certificates/cert599114736639-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/cert599114736639-1-syed-ali-naqi-hasni.webp",
     alt: "cert599114736639-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -49,7 +49,7 @@ const CERTIFICATES = [
   },
   {
     id: 5,
-    src: "https://www.syedalinaqihasni.com/certificates/cert715114919890-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/cert715114919890-1-syed-ali-naqi-hasni.webp",
     alt: "cert715114919890-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -60,7 +60,7 @@ const CERTIFICATES = [
   },
   {
     id: 6,
-    src: "https://www.syedalinaqihasni.com/certificates/cert867114731630-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/cert867114731630-1-syed-ali-naqi-hasni.webp",
     alt: "cert867114731630-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -71,7 +71,7 @@ const CERTIFICATES = [
   },
   {
     id: 7,
-    src: "https://www.syedalinaqihasni.com/certificates/cert964114929724-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/cert964114929724-1-syed-ali-naqi-hasni.webp",
     alt: "cert964114929724-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -82,7 +82,7 @@ const CERTIFICATES = [
   },
   {
     id: 8,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-accessibilityfirst-design-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-accessibilityfirst-design-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-accessibilityfirst-design-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -93,7 +93,7 @@ const CERTIFICATES = [
   },
   {
     id: 9,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-building-restful-apis-with-node-js-and-express-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-building-restful-apis-with-node-js-and-express-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-building-restful-apis-with-node-js-and-express-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -104,7 +104,7 @@ const CERTIFICATES = [
   },
   {
     id: 10,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-creating-block-patterns-in-wordpress-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-creating-block-patterns-in-wordpress-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-creating-block-patterns-in-wordpress-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -115,7 +115,7 @@ const CERTIFICATES = [
   },
   {
     id: 11,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-dart-clean-code-writing-highefficiency-maintainable-dart-programs-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-dart-clean-code-writing-highefficiency-maintainable-dart-programs-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-dart-clean-code-writing-highefficiency-maintainable-dart-programs-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -126,7 +126,7 @@ const CERTIFICATES = [
   },
   {
     id: 12,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-develop-your-seo-skills-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-develop-your-seo-skills-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-develop-your-seo-skills-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -137,7 +137,7 @@ const CERTIFICATES = [
   },
   {
     id: 13,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-flutter-essential-training-build-for-multiple-platforms-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-flutter-essential-training-build-for-multiple-platforms-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-flutter-essential-training-build-for-multiple-platforms-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -148,7 +148,7 @@ const CERTIFICATES = [
   },
   {
     id: 14,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-html-essential-training-2020-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-html-essential-training-2020-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-html-essential-training-2020-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -159,7 +159,7 @@ const CERTIFICATES = [
   },
   {
     id: 15,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-introduction-to-dart-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-introduction-to-dart-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-introduction-to-dart-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -170,7 +170,7 @@ const CERTIFICATES = [
   },
   {
     id: 16,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-learning-git-and-github-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-learning-git-and-github-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-learning-git-and-github-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -181,7 +181,7 @@ const CERTIFICATES = [
   },
   {
     id: 17,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-learning-git-and-github-2021-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-learning-git-and-github-2021-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-learning-git-and-github-2021-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -192,7 +192,7 @@ const CERTIFICATES = [
   },
   {
     id: 18,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-learning-redux-toolkit-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-learning-redux-toolkit-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-learning-redux-toolkit-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -203,7 +203,7 @@ const CERTIFICATES = [
   },
   {
     id: 19,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-learning-rest-apis-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-learning-rest-apis-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-learning-rest-apis-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -214,7 +214,7 @@ const CERTIFICATES = [
   },
   {
     id: 20,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-making-sense-of-the-css-box-model-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-making-sense-of-the-css-box-model-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-making-sense-of-the-css-box-model-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -225,7 +225,7 @@ const CERTIFICATES = [
   },
   {
     id: 21,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-marketing-strategy-seo-content-writing-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-marketing-strategy-seo-content-writing-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-marketing-strategy-seo-content-writing-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -236,7 +236,7 @@ const CERTIFICATES = [
   },
   {
     id: 22,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-marketing-tools-seo-2021-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-marketing-tools-seo-2021-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-marketing-tools-seo-2021-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -247,7 +247,7 @@ const CERTIFICATES = [
   },
   {
     id: 23,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-node-js-essential-training-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-node-js-essential-training-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-node-js-essential-training-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -258,7 +258,7 @@ const CERTIFICATES = [
   },
   {
     id: 24,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-react-state-management-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-react-state-management-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-react-state-management-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -269,7 +269,7 @@ const CERTIFICATES = [
   },
   {
     id: 25,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-seo-foundations-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-seo-foundations-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-seo-foundations-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -280,7 +280,7 @@ const CERTIFICATES = [
   },
   {
     id: 26,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-seo-keyword-strategy-2022-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-seo-keyword-strategy-2022-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-seo-keyword-strategy-2022-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -291,7 +291,7 @@ const CERTIFICATES = [
   },
   {
     id: 27,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-seo-link-building-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-seo-link-building-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-seo-link-building-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -302,7 +302,7 @@ const CERTIFICATES = [
   },
   {
     id: 28,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-technical-seo-2021-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-technical-seo-2021-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-technical-seo-2021-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -313,7 +313,7 @@ const CERTIFICATES = [
   },
   {
     id: 29,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-troubleshoot-and-repair-your-wordpress-website-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-troubleshoot-and-repair-your-wordpress-website-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-troubleshoot-and-repair-your-wordpress-website-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -324,7 +324,7 @@ const CERTIFICATES = [
   },
   {
     id: 30,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-using-custom-meta-boxes-in-wordpress-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-using-custom-meta-boxes-in-wordpress-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-using-custom-meta-boxes-in-wordpress-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -335,7 +335,7 @@ const CERTIFICATES = [
   },
   {
     id: 31,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-accessibility-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-accessibility-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-accessibility-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -346,7 +346,7 @@ const CERTIFICATES = [
   },
   {
     id: 32,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-accessibility-2019-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-accessibility-2019-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-accessibility-2019-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -357,7 +357,7 @@ const CERTIFICATES = [
   },
   {
     id: 33,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-building-a-secure-site-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-building-a-secure-site-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-building-a-secure-site-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -368,7 +368,7 @@ const CERTIFICATES = [
   },
   {
     id: 34,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-essential-training-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-essential-training-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-essential-training-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -379,7 +379,7 @@ const CERTIFICATES = [
   },
   {
     id: 35,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-essential-training-2022-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-essential-training-2022-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-essential-training-2022-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -390,7 +390,7 @@ const CERTIFICATES = [
   },
   {
     id: 36,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-internationalization-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-internationalization-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-internationalization-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -401,7 +401,7 @@ const CERTIFICATES = [
   },
   {
     id: 37,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-rest-api-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-rest-api-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-rest-api-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -412,7 +412,7 @@ const CERTIFICATES = [
   },
   {
     id: 38,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-seo-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-seo-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-seo-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -423,7 +423,7 @@ const CERTIFICATES = [
   },
   {
     id: 39,
-    src: "https://www.syedalinaqihasni.com/certificates/certificate-of-completion-wordpress-staging-a-site-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/certificate-of-completion-wordpress-staging-a-site-1-syed-ali-naqi-hasni.webp",
     alt: "certificate-of-completion-wordpress-staging-a-site-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -434,7 +434,7 @@ const CERTIFICATES = [
   },
   {
     id: 40,
-    src: "https://www.syedalinaqihasni.com/certificates/coursera-9h6lvnnkkgg1-1-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/coursera-9h6lvnnkkgg1-1-1-syed-ali-naqi-hasni.webp",
     alt: "coursera-9h6lvnnkkgg1-1-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -445,7 +445,7 @@ const CERTIFICATES = [
   },
   {
     id: 41,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-4ysaznypq-freelancing-2-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-4ysaznypq-freelancing-2-1-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-4ysaznypq-freelancing-2-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -456,7 +456,7 @@ const CERTIFICATES = [
   },
   {
     id: 42,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-4ysaznypq-freelancing-page-0001-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-4ysaznypq-freelancing-page-0001-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-4ysaznypq-freelancing-page-0001-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -467,7 +467,7 @@ const CERTIFICATES = [
   },
   {
     id: 43,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-ekypdjxpq-writing-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-ekypdjxpq-writing-1-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-ekypdjxpq-writing-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -478,7 +478,7 @@ const CERTIFICATES = [
   },
   {
     id: 44,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-ekypdjxpq-writing-page-0001-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-ekypdjxpq-writing-page-0001-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-ekypdjxpq-writing-page-0001-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -489,7 +489,7 @@ const CERTIFICATES = [
   },
   {
     id: 45,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-hkdh25npq-wordpress-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-hkdh25npq-wordpress-1-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-hkdh25npq-wordpress-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -500,7 +500,7 @@ const CERTIFICATES = [
   },
   {
     id: 46,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-hkdh25npq-wordpress-page-0001-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-hkdh25npq-wordpress-page-0001-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-hkdh25npq-wordpress-page-0001-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -511,7 +511,7 @@ const CERTIFICATES = [
   },
   {
     id: 47,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-qhqny2ypq-autocad-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-qhqny2ypq-autocad-1-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-qhqny2ypq-autocad-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -522,7 +522,7 @@ const CERTIFICATES = [
   },
   {
     id: 48,
-    src: "https://www.syedalinaqihasni.com/certificates/dstp-certificate-qhqny2ypq-autocad-page-0001-syed-ali-naqi-hasni.webp",
+    src: "/certificates/dstp-certificate-qhqny2ypq-autocad-page-0001-syed-ali-naqi-hasni.webp",
     alt: "dstp-certificate-qhqny2ypq-autocad-page-0001-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -533,7 +533,7 @@ const CERTIFICATES = [
   },
   {
     id: 49,
-    src: "https://www.syedalinaqihasni.com/certificates/result107115631347-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result107115631347-1-syed-ali-naqi-hasni.webp",
     alt: "result107115631347-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -544,7 +544,7 @@ const CERTIFICATES = [
   },
   {
     id: 50,
-    src: "https://www.syedalinaqihasni.com/certificates/result109115636414-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result109115636414-1-syed-ali-naqi-hasni.webp",
     alt: "result109115636414-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -555,7 +555,7 @@ const CERTIFICATES = [
   },
   {
     id: 51,
-    src: "https://www.syedalinaqihasni.com/certificates/result254115633332-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result254115633332-1-syed-ali-naqi-hasni.webp",
     alt: "result254115633332-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -566,7 +566,7 @@ const CERTIFICATES = [
   },
   {
     id: 52,
-    src: "https://www.syedalinaqihasni.com/certificates/result48711552876-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result48711552876-1-syed-ali-naqi-hasni.webp",
     alt: "result48711552876-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -577,7 +577,7 @@ const CERTIFICATES = [
   },
   {
     id: 53,
-    src: "https://www.syedalinaqihasni.com/certificates/result52511553311-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result52511553311-1-syed-ali-naqi-hasni.webp",
     alt: "result52511553311-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -588,7 +588,7 @@ const CERTIFICATES = [
   },
   {
     id: 54,
-    src: "https://www.syedalinaqihasni.com/certificates/result543115536547-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result543115536547-1-syed-ali-naqi-hasni.webp",
     alt: "result543115536547-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -599,7 +599,7 @@ const CERTIFICATES = [
   },
   {
     id: 55,
-    src: "https://www.syedalinaqihasni.com/certificates/result561115532704-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result561115532704-1-syed-ali-naqi-hasni.webp",
     alt: "result561115532704-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -610,7 +610,7 @@ const CERTIFICATES = [
   },
   {
     id: 56,
-    src: "https://www.syedalinaqihasni.com/certificates/result590115530371-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result590115530371-1-syed-ali-naqi-hasni.webp",
     alt: "result590115530371-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -621,7 +621,7 @@ const CERTIFICATES = [
   },
   {
     id: 57,
-    src: "https://www.syedalinaqihasni.com/certificates/result593115638438-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result593115638438-1-syed-ali-naqi-hasni.webp",
     alt: "result593115638438-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -632,7 +632,7 @@ const CERTIFICATES = [
   },
   {
     id: 58,
-    src: "https://www.syedalinaqihasni.com/certificates/result673115639442-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result673115639442-1-syed-ali-naqi-hasni.webp",
     alt: "result673115639442-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -643,7 +643,7 @@ const CERTIFICATES = [
   },
   {
     id: 59,
-    src: "https://www.syedalinaqihasni.com/certificates/result771115423157-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result771115423157-1-syed-ali-naqi-hasni.webp",
     alt: "result771115423157-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -654,7 +654,7 @@ const CERTIFICATES = [
   },
   {
     id: 60,
-    src: "https://www.syedalinaqihasni.com/certificates/result85311547607-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result85311547607-1-syed-ali-naqi-hasni.webp",
     alt: "result85311547607-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -665,7 +665,7 @@ const CERTIFICATES = [
   },
   {
     id: 61,
-    src: "https://www.syedalinaqihasni.com/certificates/result858115532362-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result858115532362-1-syed-ali-naqi-hasni.webp",
     alt: "result858115532362-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -676,7 +676,7 @@ const CERTIFICATES = [
   },
   {
     id: 62,
-    src: "https://www.syedalinaqihasni.com/certificates/result927115629410-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result927115629410-1-syed-ali-naqi-hasni.webp",
     alt: "result927115629410-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -687,7 +687,7 @@ const CERTIFICATES = [
   },
   {
     id: 63,
-    src: "https://www.syedalinaqihasni.com/certificates/result946115643567-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result946115643567-1-syed-ali-naqi-hasni.webp",
     alt: "result946115643567-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -698,7 +698,7 @@ const CERTIFICATES = [
   },
   {
     id: 64,
-    src: "https://www.syedalinaqihasni.com/certificates/result987115529190-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/result987115529190-1-syed-ali-naqi-hasni.webp",
     alt: "result987115529190-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -709,7 +709,7 @@ const CERTIFICATES = [
   },
   {
     id: 65,
-    src: "https://www.syedalinaqihasni.com/certificates/scan17132793-syed-ali-naqi-hasni.webp",
+    src: "/certificates/scan17132793-syed-ali-naqi-hasni.webp",
     alt: "scan17132793-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -720,7 +720,7 @@ const CERTIFICATES = [
   },
   {
     id: 66,
-    src: "https://www.syedalinaqihasni.com/certificates/scan17331580-syed-ali-naqi-hasni.webp",
+    src: "/certificates/scan17331580-syed-ali-naqi-hasni.webp",
     alt: "scan17331580-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -731,7 +731,7 @@ const CERTIFICATES = [
   },
   {
     id: 67,
-    src: "https://www.syedalinaqihasni.com/certificates/view-transcript-1-syed-ali-naqi-hasni.webp",
+    src: "/certificates/view-transcript-1-syed-ali-naqi-hasni.webp",
     alt: "view-transcript-1-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",
@@ -742,7 +742,7 @@ const CERTIFICATES = [
   },
   {
     id: 68,
-    src: "https://www.syedalinaqihasni.com/certificates/view-transcript-11-01-2024-09-58-pm-syed-ali-naqi-hasni.webp",
+    src: "/certificates/view-transcript-11-01-2024-09-58-pm-syed-ali-naqi-hasni.webp",
     alt: "view-transcript-11-01-2024-09-58-pm-syed-ali-naqi-hasni.webp",
     caption: "No caption available",
     title: "Syed Ali Naqi Hasni",

@@ -1,27 +1,31 @@
-import { Metadata } from 'next';
-import BlogsList from '@/components/blogs/blogs-list';
-import { posts } from '@/constants/blogs';
-import { dashToProperCase, } from '@/lib/utils';
-
+import { Metadata } from "next";
+import BlogsList from "@/components/blogs/blogs-list";
+import { posts } from "@/constants/blogs";
+import { dashToProperCase } from "@/lib/utils";
 
 // Optional: You can add specific overrides here
 const DESCRIPTION_OVERRIDES: Record<string, string> = {
-  tutorials: 'These are tutorial blogs to help you learn by doing.',
-  freelance: 'These are freelance blogs about client work, projects, and lifestyle.',
-  design: 'These are design blogs focused on UI/UX and creative thinking.',
+  tutorials: "These are tutorial blogs to help you learn by doing.",
+  freelance:
+    "These are freelance blogs about client work, projects, and lifestyle.",
+  design: "These are design blogs focused on UI/UX and creative thinking.",
   // Add more if needed
 };
 
 const styles = {
-  container: 'container mx-auto px-4 py-32 md:py-40',
-  wrapper: 'max-w-6xl mx-auto',
-  header: 'text-center mb-16',
-  title: 'text-4xl md:text-5xl font-bold mb-6',
-  description: 'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto',
+  container: "container mx-auto px-4 py-32 md:py-40",
+  wrapper: "max-w-6xl mx-auto",
+  header: "text-center mb-16",
+  title: "text-4xl md:text-5xl font-bold mb-6",
+  description: "text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto",
 };
 
 // Generate <head> metadata dynamically
-export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { tag: string };
+}): Promise<Metadata> {
   const tag = params?.tag;
   const title = `${dashToProperCase(tag)} Blogs`;
   const description =
@@ -51,9 +55,14 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
 // Server component
 export default async function Page({ params }: { params: { tag: string } }) {
   const tag = params?.tag;
-  
-  const tagedPosts = posts.filter(post =>
-    post?.tags.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))
+
+  const tagedPosts = posts.filter((post) =>
+    post?.tags?.some((c) =>
+      c
+        .toLowerCase()
+        .replace(/[\s/]+/g, "-")
+        .includes(tag)
+    )
   );
 
   const title = `${dashToProperCase(tag)} Blogs`;

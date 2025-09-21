@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useCallback } from "react";
 import Image from "next/image";
 import { Calendar, Clock, Share2 } from "lucide-react";
@@ -25,78 +25,94 @@ const styles = {
 };
 
 const SingleBlogPage = ({ post }: { post: Post }) => {
- const shareArticle = useCallback(() => {
-  if (navigator.share) {
-    navigator
-      .share({
-        title: post?.title,
-        text: post?.excerpt,
-        url: window.location.href,
-      })
-      .catch((error) => console.error("Error sharing:", error));
-  } else {
-    // fallback for browsers that don't support navigator.share
-    alert("Sharing is not supported in your browser. Please copy the URL manually.");
-  }
-}, [post]);
+  const shareArticle = useCallback(() => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: post?.title,
+          text: post?.excerpt,
+          url: window.location.href,
+        })
+        .catch((error) => console.error("Error sharing:", error));
+    } else {
+      // fallback for browsers that don't support navigator.share
+      alert(
+        "Sharing is not supported in your browser. Please copy the URL manually."
+      );
+    }
+  }, [post]);
   return (
     <>
       <div className={styles?.container}>
-      <div className={styles?.wrapper}>
-        <div className={"mb-8"}>
-          <div className={styles?.categoryWrapper}>
-            <a href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category.toLowerCase()}`}>
-              <Badge variant={"secondary"}>{post?.category}</Badge>
-            </a>
-          </div>
-
-          <h1 className={styles?.title}>{post?.title}</h1>
-
-          <div className={styles?.metaRow}>
-            <div className={styles?.metaItem}>
-              <Calendar className={"h-4 w-4"} />
-              {formatDate(post?.publishedAt)}
-            </div>
-            <div className={styles?.metaItem}>
-              <Clock className={"h-4 w-4"} />
-              {post?.readingTime} {CONSTANT?.readUnit}
-            </div>
-          </div>
-          <div className={styles?.tagWrapper}>
-            {post?.tags?.map((tag: string) => (
-              <a href={`https://www.syedalinaqihasni.com/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}`} key={tag}>
-                <Badge key={tag} variant={"secondary"}>
-                  {tag}
-                </Badge>
+        <div className={styles?.wrapper}>
+          <div className={"mb-8"}>
+            <div className={styles?.categoryWrapper}>
+              <a href={`/blogs/category/${post?.category.toLowerCase()}`}>
+                <Badge variant={"secondary"}>{post?.category}</Badge>
               </a>
-            ))}
+            </div>
+
+            <h1 className={styles?.title}>{post?.title}</h1>
+
+            <div className={styles?.metaRow}>
+              <div className={styles?.metaItem}>
+                <Calendar className={"h-4 w-4"} />
+                {formatDate(post?.publishedAt)}
+              </div>
+              <div className={styles?.metaItem}>
+                <Clock className={"h-4 w-4"} />
+                {post?.readingTime} {CONSTANT?.readUnit}
+              </div>
+            </div>
+            <div className={styles?.tagWrapper}>
+              {post?.tags?.map((tag: string) => (
+                <a
+                  href={`/blogs/tag/${tag
+                    .toLowerCase()
+                    .replace(/[\s/]+/g, "-")}`}
+                  key={tag}
+                >
+                  <Badge key={tag} variant={"secondary"}>
+                    {tag}
+                  </Badge>
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-        {post?.image && (
-          <div className={styles?.imageWrapper}>
-    <Image
-              src={post?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
-              alt={`${post?.title} - Syed Ali Naqi Hasni`}
-              fill
-              className={styles?.image || "https://www.syedalinaqihasni.com/images/placeholder-syed-ali-naqi-hasni.webp"}
-            />
-    </div>
-)}
-        <div className={styles?.content}>
-          <div>
-            <HtmlRenderer  path="https://www.syedalinaqihasni.com/blogs/tag" terms={allTags} html={post?.content}/>
+          {post?.image && (
+            <div className={styles?.imageWrapper}>
+              <Image
+                src={
+                  post?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"
+                }
+                alt={`${post?.title} - Syed Ali Naqi Hasni`}
+                fill
+                className={
+                  styles?.image ||
+                  "/images/placeholder-syed-ali-naqi-hasni.webp"
+                }
+              />
+            </div>
+          )}
+          <div className={styles?.content}>
+            <div>
+              <HtmlRenderer
+                path="/blogs/tag"
+                terms={allTags}
+                html={post?.content}
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles?.shareWrapper}>
-          <Button variant={"outline"} onClick={shareArticle}>
-            <Share2 className={"h-4 w-4 mr-2"} />
-            {CONSTANT?.shareButton}
-          </Button>
+          <div className={styles?.shareWrapper}>
+            <Button variant={"outline"} onClick={shareArticle}>
+              <Share2 className={"h-4 w-4 mr-2"} />
+              {CONSTANT?.shareButton}
+            </Button>
+          </div>
         </div>
       </div>
-    </div>
     </>
-  )
-}
+  );
+};
 
-export default SingleBlogPage
+export default SingleBlogPage;

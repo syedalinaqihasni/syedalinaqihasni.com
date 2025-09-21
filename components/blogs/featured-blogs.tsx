@@ -48,12 +48,12 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
             <Card className={styles?.card}>
               {post?.image ? (
                 <Link
-                  href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`}
+                  href={`/blogs/${post?.slug}`}
                   className="relative block h-48 w-full rounded-lg overflow-hidden"
                 >
                   <Image
-                    src={post.image}
-                    alt={`${post.title} - Syed Ali Naqi Hasni`}
+                    src={post?.image}
+                    alt={`${post?.title} - Syed Ali Naqi Hasni`}
                     fill
                     className="object-cover"
                     priority={index < 3}
@@ -61,11 +61,11 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
                 </Link>
               ) : (
                 <Link
-                  href={`https://www.syedalinaqihasni.com/blogs/${post.slug}`}
+                  href={`/blogs/${post?.slug}`}
                   className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
                 >
                   <h3 className="text-lg font-bold w-full mb-1">
-                    {post.title}
+                    {post?.title}
                   </h3>
                   <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">
                     Syed Ali Naqi Hasni
@@ -74,7 +74,7 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
               )}
               <CardContent className={"p-6"}>
                 <div className={styles?.categoriesWrapper}>
-                  {post?.tags.slice(0, 2)?.map((tag) => (
+                  {post?.tags?.slice(0, 2)?.map((tag) => (
                     <Badge
                       key={tag}
                       variant={"secondary"}
@@ -83,12 +83,12 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
                       {tag}
                     </Badge>
                   ))}
-                  {post?.tags.length > 2 && (
+                  {post?.tags?.length > 2 && (
                     <Badge
                       variant={"outline"}
                       className={styles?.categoryBadge}
                     >
-                      +{post?.tags.length - 2}
+                      +{post?.tags?.length - 2}
                     </Badge>
                   )}
                   <Badge
@@ -98,7 +98,7 @@ const FeaturedBlogs = ({ posts }: { posts: Post[] }) => {
                     {post?.category}
                   </Badge>
                 </div>
-                <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
+                <Link href={`/blogs/${post?.slug}`}>
                   <h3 className={styles?.title}>{post?.title}</h3>
                 </Link>
                 <p className={styles?.excerpt}>{post?.excerpt}</p>

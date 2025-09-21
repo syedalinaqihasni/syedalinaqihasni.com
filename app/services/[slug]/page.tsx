@@ -32,7 +32,7 @@ export async function generateMetadata({
   return generateDynamicMetadata({
     title: `${service?.title} | Syed Ali Naqi Hasni`,
     description: service?.description,
-    path: `https://www.syedalinaqihasni.com/services/${service?.slug}`,
+    path: `/services/${service?.slug}`,
   });
 }
 
@@ -84,7 +84,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <Section title="Related Services">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
-                  <Link href={`https://www.syedalinaqihasni.com/related-services/${serv}`} key={serv}>
+                  <Link href={`/related-services/${serv}`} key={serv}>
                     <Badge variant="secondary" className="text-xs" key={serv}>
                       {toProperCase(serv).replace(/-/g, " ")}
                     </Badge>
@@ -122,13 +122,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               {service?.relatedJobTitles.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`https://www.syedalinaqihasni.com/related-jobs/${properCaseToDash(serv)}`}
+                    href={`/related-jobs/${properCaseToDash(serv)}`}
                     className="flex items-center gap-2 text-xs hover:underline"
                   >
                     <Briefcase size={14} className="text-muted-foreground" />
-                    <span>
-                      {dashToProperCase(serv).replace(/-/g, " ")}
-                    </span>
+                    <span>{dashToProperCase(serv).replace(/-/g, " ")}</span>
                   </Link>
                 </li>
               ))}
@@ -140,16 +138,14 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               {service?.technologies.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`https://www.syedalinaqihasni.com/related-services/${properCaseToDash(serv)}`}
+                    href={`/related-services/${properCaseToDash(serv)}`}
                     className="flex items-center gap-2 text-xs hover:underline"
                   >
                     <Badge
                       variant="secondary"
                       className="text-xs  hover:underline "
                     >
-                      <span>
-                        {dashToProperCase(serv).replace(/-/g, " ")}
-                      </span>
+                      <span>{dashToProperCase(serv).replace(/-/g, " ")}</span>
                     </Badge>
                   </Link>
                 </li>
@@ -214,7 +210,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className={styles?.containerLarge}>
           <div className={styles?.projectsHeaderWrapper}>
             <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="https://www.syedalinaqihasni.com/pricing">
+            <Link href="/pricing">
               <Button variant={"outline"}>
                 View All Plans
                 <ArrowRight className={"ml-2 h-4 w-4"} />
@@ -230,7 +226,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           Let’s talk about how I can help you with your project.
         </p>
         <Button size="lg" asChild>
-          <Link href="https://www.syedalinaqihasni.com/contact">
+          <Link href="/contact">
             Contact Me
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
@@ -271,7 +267,7 @@ function FeatureList({
           <Check className="w-4 h-4 text-green-500" />
           {link ? (
             <Link
-              href={`https://www.syedalinaqihasni.com/related-services/${properCaseToDash(feature)}-${link}`}
+              href={`/related-services/${properCaseToDash(feature)}-${link}`}
             >
               <span>{feature}</span>
             </Link>
