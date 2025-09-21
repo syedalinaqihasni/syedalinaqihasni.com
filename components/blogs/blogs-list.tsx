@@ -122,40 +122,52 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
     setCurrentPage(1);
   };
 
+  // Pagination generator (MUI-like)
   const renderPageNumbers = () => {
-    const delta = 1; // show current ±1
-    const range: (number | string)[] = [];
-    const rangeWithDots: (number | string)[] = [];
-    let last: number | undefined;
+    const siblingCount = 1; // show current ±1
+    const boundaryCount = 1; // always show first + last
+    const pages: (number | string)[] = [];
 
-    // Build full range
-    for (let i = 1; i <= totalPages; i++) {
-      if (
-        i === 1 || // always first
-        i === totalPages || // always last
-        (i >= currentPage - delta && i <= currentPage + delta) // around current
-      ) {
-        range.push(i);
+    if (totalPages <= 5) {
+      // If small number of pages, show all
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      const startPages = [1];
+      const endPages = [totalPages];
+
+      const start = Math.max(currentPage - siblingCount, boundaryCount + 2);
+      const end = Math.min(
+        currentPage + siblingCount,
+        totalPages - boundaryCount - 1
+      );
+
+      const middlePages: (number | string)[] = [];
+      for (let i = start; i <= end; i++) {
+        middlePages.push(i);
       }
+
+      pages.push(...startPages);
+
+      if (start > boundaryCount + 2) {
+        pages.push("...");
+      } else if (start === boundaryCount + 2) {
+        pages.push(boundaryCount + 1);
+      }
+
+      pages.push(...middlePages);
+
+      if (end < totalPages - boundaryCount - 1) {
+        pages.push("...");
+      } else if (end === totalPages - boundaryCount - 1) {
+        pages.push(totalPages - boundaryCount);
+      }
+
+      pages.push(...endPages);
     }
 
-    // Insert "..." for gaps
-    for (let i of range) {
-      if (last !== undefined) {
-        if (i - last === 2) {
-          rangeWithDots.push(last + 1); // fill small gap
-        } else if (i - last > 2) {
-          rangeWithDots.push("...");
-        }
-      }
-      rangeWithDots.push(i);
-      last = i;
-    }
-
-    // Render buttons
-    return rangeWithDots.map((page, idx) =>
+    return pages.map((page, idx) =>
       page === "..." ? (
-        <span key={idx} className="px-2">
+        <span key={`dots-${idx}`} className="px-2">
           ...
         </span>
       ) : (
