@@ -3,21 +3,22 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  output: "standalone",
   images: {
     unoptimized: true,
-    domains: ['syedalinaqihasni.com'],
+    domains: ["syedalinaqihasni.com"],
   },
   optimizeFonts: false,
   async redirects() {
     return [
       {
-        source: '/blog',
-        destination: '/blogs',
+        source: "/blog",
+        destination: "/blogs",
         permanent: true,
       },
       {
-        source: '/blog/:slug*',
-        destination: '/blogs/:slug*',
+        source: "/blog/:slug*",
+        destination: "/blogs/:slug*",
         permanent: true,
       },
     ];

@@ -6,8 +6,7 @@ export const OLD_TWEETS = [
     excerpt:
       "Building a hybrid WordPress + React site is not as straightforward as it sounds. In this article, I’ll walk through the major challenges I faced and the lessons learned while balancing speed, flexibility, and SEO.",
     readingTime: "5 min read",
-    image:
-      "https://via.placeholder.com/800x400?text=WordPress+%2B+React+Hybrid",
+    image: "",
     category: "Web Development",
     tags: ["WordPress", "React", "Hybrid", "Performance", "SEO"],
     content: ``,
