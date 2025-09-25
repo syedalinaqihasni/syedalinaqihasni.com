@@ -17,7 +17,7 @@ export const bp1 = {
     "Docusaurus: The Modern Framework for Building Documentation That Doesn’t Suck",
   excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
   slug: "docusaurus-the-modern-framework-for-building-documentation-that-does-not-suck",
-  publishedAt: "2025-06-26",
+  publishedAt: "26-06-2025",
   readingTime: "6 min read",
   image:
     "/images/blogs/docusaurus-modern-documentation-framework-syed-ali-naqi-hasni.webp",
@@ -193,7 +193,7 @@ export const bp2 = {
   title: "Why I Don't Use WordPress (And You Shouldn't Either)",
   excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
   slug: "why-i-do-not-use-wordpress-and-you-should-not-either",
-  publishedAt: "2025-06-20",
+  publishedAt: "20-06-2025",
   readingTime: "6 min read",
   image:
     "/images/blogs/why-i-do-not-use-wordpress-and-you-should-not-either-syed-ali-naqi-hasni.webp",
@@ -248,7 +248,7 @@ export const bp3 = {
   excerpt:
     "Learn how to set up and use NodeMailer in a Next.js application to send emails from your contact forms, authenticate with SMTP, and ensure secure, scalable communication.",
   slug: "integrating-nodemailer-with-nextjs-a-comprehensive-guide",
-  publishedAt: "2024-01-19",
+  publishedAt: "19-01-2024",
   readingTime: "6 min read",
   image:
     "/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.webp",
@@ -378,7 +378,7 @@ export const bp4 = {
   excerpt:
     "Discover how implementing structured data using schema markup can significantly improve your website's SEO, enhance search visibility, and drive richer results in SERPs.",
   slug: "unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo",
-  publishedAt: "2024-02-26",
+  publishedAt: "26-02-2024",
   readingTime: "8 min read",
   image:
     "/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.webp", // Recommend replacing with a relevant SEO/Schema image
@@ -648,7 +648,7 @@ export const bp5 = {
   excerpt:
     "Learn how to write clear, structured, and purposeful Git commits to improve collaboration, streamline reviews, and enhance your team's overall project management workflow.",
   slug: "how-to-optimize-your-commits-for-efficient-project-management",
-  publishedAt: "2024-11-27",
+  publishedAt: "27-11-2024",
   readingTime: "6 min read",
   image:
     "/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.webp", // Consider updating this image to something Git/Dev-related
@@ -760,7 +760,7 @@ export const bp6 = {
   excerpt:
     "Discover how to integrate React with WordPress CMS using a headless or hybrid approach. Streamline your frontend workflow while managing content efficiently on the backend.",
   slug: "reactpress-a-seamless-react-app-workflow-with-wordpress-cms",
-  publishedAt: "2024-11-27",
+  publishedAt: "27-11-2024",
   readingTime: "6 min read",
   image:
     "/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.webp", // Update the image filename to match topic
@@ -836,7 +836,7 @@ export const bp7 = {
   excerpt:
     "Unlock the full power of GitHub from your terminal. Learn how GitHub CLI simplifies repository management, PRs, issues, and workflows directly from the command line.",
   slug: "exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli",
-  publishedAt: "2024-01-04",
+  publishedAt: "04-01-2024",
   readingTime: "6 min read",
   image:
     "/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.webp",
@@ -1051,7 +1051,7 @@ export const bp8 = {
   excerpt:
     "Explore how balancing individual strengths with collective team dynamics leads to innovation, productivity, and high-performance collaboration in any professional environment.",
   slug: "the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration",
-  publishedAt: "2023-07-21",
+  publishedAt: "21-07-2023",
   readingTime: "6 min read",
   image:
     "/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.webp", // Consider updating this image to match the topic
@@ -1117,7 +1117,7 @@ export const bp9 = {
   excerpt:
     "Discover how headless CMS solutions can power content delivery for Progressive Web Apps (PWAs), offering improved performance, flexibility, and seamless omnichannel publishing.",
   slug: "content-management-for-pwas-embrace-the-headless-cms-approach",
-  publishedAt: "2023-07-17",
+  publishedAt: "17-07-2023",
   readingTime: "6 min read",
   image:
     "/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.webp",
@@ -1166,7 +1166,7 @@ export const bp10 = {
   excerpt:
     "Learn how GitHub Dependabot and CodeQL help developers detect and fix vulnerabilities early. Stay secure by automating security updates and code analysis in your development workflow.",
   slug: "stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql",
-  publishedAt: "2025-01-14",
+  publishedAt: "14-01-2025",
   readingTime: "6 min read",
   image:
     "/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.webp",
@@ -1324,7 +1324,7 @@ export const bp11 = {
   excerpt:
     "Discover the must-have apps for every Shopify store to boost sales, improve customer experience, and streamline operations. From marketing to inventory management, these tools can power your eCommerce success.",
   slug: "essential-apps-every-shopify-store-must-have",
-  publishedAt: "2023-06-12",
+  publishedAt: "12-06-2023",
   readingTime: "4 min read",
   image:
     "/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.webp",
@@ -1431,7 +1431,7 @@ export const bp12 = {
   excerpt:
     "Master the S.O.L.I.D principles of object-oriented design to write cleaner, more maintainable code. This quick guide breaks down each principle with real-world examples for modern developers.",
   slug: "solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards",
-  publishedAt: "2025-04-28",
+  publishedAt: "28-04-2025",
   readingTime: "4 min read",
   image:
     "/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.webp",
@@ -1904,7 +1904,7 @@ export const bp13 = {
   excerpt:
     "Learn how even basic Shopify app development skills can open up big career opportunities. Discover the benefits of becoming a Shopify app developer and how to get started.",
   slug: "how-small-shopify-app-development-skills-can-boost-your-career",
-  publishedAt: "2024-05-10",
+  publishedAt: "10-05-2024",
   readingTime: "4 min read",
   image:
     "/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career-syed-ali-naqi-hasni.webp",
@@ -1992,7 +1992,7 @@ export const bp14 = {
   excerpt:
     "Discover why moving from shortcodes to custom blocks in WordPress is a game-changer for performance, usability, and future-proofing your site. Learn how Gutenberg blocks can elevate your content editing experience.",
   slug: "why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too",
-  publishedAt: "2025-01-08",
+  publishedAt: "08-01-2025",
   readingTime: "4 min read",
   image:
     "/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too-syed-ali-naqi-hasni.webp",
@@ -2205,7 +2205,7 @@ export const bp15 = {
   excerpt:
     "Explore the best WordPress push notification plugins to boost user engagement across web, Android, and iOS platforms. Learn which tools offer real-time alerts, automation, and easy integration.",
   slug: "top-wordpress-push-notification-plugins-for-web-android-ios",
-  publishedAt: "2024-05-10",
+  publishedAt: "10-05-2024",
   readingTime: "4 min read",
   image:
     "/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios-syed-ali-naqi-hasni.webp",
@@ -2277,7 +2277,7 @@ export const bp16 = {
   excerpt:
     "Discover what an ERP (Enterprise Resource Planning) solution is, why it matters for WordPress-based businesses, and how to choose the right one to streamline your operations and improve efficiency.",
   slug: "what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress",
-  publishedAt: "2022-11-02",
+  publishedAt: "02-11-2022",
   readingTime: "6 min read",
   image:
     "/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress-syed-ali-naqi-hasni.webp",
@@ -2398,7 +2398,7 @@ export const bp17 = {
   excerpt:
     "Explore how Headless WordPress works and compare it with other modern content management systems for greater flexibility and performance.",
   slug: "headless-wordpress-and-content-management-systems",
-  publishedAt: "2022-11-02",
+  publishedAt: "02-11-2022",
   readingTime: "6 min read",
   image:
     "/images/blogs/headless-wordpress-and-content-management-systems-syed-ali-naqi-hasni.webp",
@@ -2558,7 +2558,7 @@ export const bp18 = {
   excerpt:
     "Discover the fundamentals of Search Engine Optimization (SEO) and learn how to improve your website's visibility on search engines.",
   slug: "the-beginners-guide-to-seo",
-  publishedAt: "2022-09-26",
+  publishedAt: "26-09-2022",
   readingTime: "4 min read",
   image: "/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.webp",
   category: `Tips`,
@@ -2767,7 +2767,7 @@ export const bp19 = {
   excerpt:
     "Learn how to set up a new Next.js project with Tailwind CSS to build fast, responsive UIs with ease.",
   slug: "getting-started-nextjs-tailwind",
-  publishedAt: "2023-01-01",
+  publishedAt: "01-01-2023",
   readingTime: "5 min read",
   content: `<div>
     <p>Web development continues to evolve at a rapid pace, and developers are constantly looking for tools that can streamline the development process while delivering modern, performant applications. Two popular tools that complement each other beautifully are <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.</p>
@@ -2893,7 +2893,7 @@ export const bp20 = {
   excerpt:
     "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
   slug: "state-management-react",
-  publishedAt: "2023-01-12",
+  publishedAt: "12-01-2023",
   readingTime: "6 min read",
   category: `Tutorials`,
   tags: ["React", "State Management", "Frontend Architecture"],
@@ -3086,7 +3086,7 @@ export const bp21 = {
   excerpt:
     "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
   slug: "framer-motion-animations",
-  publishedAt: "2023-01-22",
+  publishedAt: "22-01-2023",
   readingTime: "5 min read",
   category: `Tutorials`,
   tags: ["React", "Animations", "UI/UX"],
@@ -3332,7 +3332,7 @@ export const bp22 = {
   excerpt:
     "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
   slug: "nextjs-api-routes",
-  publishedAt: "2023-02-05",
+  publishedAt: "05-02-2023",
   readingTime: "6 min read",
   content: `
   <div>
@@ -3479,7 +3479,7 @@ export const bp23 = {
   excerpt:
     "Master responsive design using Tailwind's utility classes and variants — build adaptable layouts that look great on any device.",
   slug: "responsive-ui-tailwind",
-  publishedAt: "2023-03-12",
+  publishedAt: "12-03-2023",
   readingTime: "4 min read",
   category: `Tutorials`,
   tags: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
@@ -3624,7 +3624,7 @@ export const bp24 = {
   excerpt:
     "Discover how LocatorJS can streamline your development process by letting you click on elements in your app and instantly locate the code behind them.",
   slug: "boost-efficiency-with-locatorjs",
-  publishedAt: "2025-07-09",
+  publishedAt: "09-07-2025",
   readingTime: "5 min read",
   image:
     "/images/blogs/boost-efficiency-with-locatorjs-syed-ali-naqi-hasni.jpg",

@@ -92,21 +92,33 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
 
   // Filter + sort posts
   const filteredPosts = useMemo(() => {
-    const query = searchQuery.toLowerCase();
-    return posts
-      ?.filter((post) => {
-        return (
-          post?.content?.trim() !== "" &&
-          (post?.title.toLowerCase().includes(query) ||
-            post?.excerpt.toLowerCase().includes(query) ||
-            post?.tags?.some((tag) => tag.toLowerCase().includes(query)))
-        );
-      })
-      ?.sort(
-        (a, b) =>
-          new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  const query = searchQuery.toLowerCase();
+  const today = new Date();
+
+  return posts
+    ?.filter((post) => {
+      if (!post?.publishedAt) return false;
+
+      // Parse DD-MM-YYYY format safely
+      const [day, month, year] = post.publishedAt.split("-").map(Number);
+      const postDate = new Date(year, month - 1, day); // month is 0-based
+
+      return (
+        post?.content?.trim() !== "" &&
+        postDate <= today &&
+        (post?.title.toLowerCase().includes(query) ||
+          post?.excerpt.toLowerCase().includes(query) ||
+          post?.tags?.some((tag) => tag.toLowerCase().includes(query)))
       );
-  }, [posts, searchQuery]);
+    })
+    ?.sort((a, b) => {
+      const [dayA, monthA, yearA] = a.publishedAt.split("-").map(Number);
+      const [dayB, monthB, yearB] = b.publishedAt.split("-").map(Number);
+      const dateA = new Date(yearA, monthA - 1, dayA).getTime();
+      const dateB = new Date(yearB, monthB - 1, dayB).getTime();
+      return dateB - dateA; // latest first
+    });
+}, [posts, searchQuery]);
 
   // Pagination logic
   const totalPages = Math.ceil(filteredPosts.length / perPage);
@@ -212,7 +224,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
       {/* Grid View */}
       {viewMode === "grid" && (
         <div className={styles?.grid}>
-          {filteredPosts
+          {paginatedPosts
             .filter((post) => post?.content && post.content.trim() !== "")
             .map((post, index) => (
               <motion.div

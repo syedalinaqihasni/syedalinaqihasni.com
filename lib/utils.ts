@@ -5,12 +5,21 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const formatDate = (dateString: string) =>
-  new Date(dateString).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+export const formatDate = (dateString: string) => {
+  if (!dateString) return "";
+
+  // Parse DD-MM-YYYY
+  const [day, month, year] = dateString.split("-").map(Number);
+  const date = new Date(year, month - 1, day);
+
+  // Format: e.g. "25 September 2025"
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
+};
+
 
   export  const formatDateTime = (dateString: string) =>
     new Date(dateString).toLocaleDateString("en-US", {
