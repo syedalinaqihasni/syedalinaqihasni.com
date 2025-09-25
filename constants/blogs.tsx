@@ -1,5 +1,5 @@
 import { Post } from "@/types/blogs";
-import { OLD_TWEETS } from "@/constants/extra-blogs";
+// import { OLD_TWEETS } from "@/constants/extra-blogs";
 
 const CONSTANT = {
   pageTitle: "My Blogs",
@@ -12,7 +12,7 @@ const CONSTANT = {
 };
 
 export const bp1 = {
-  id: 1,
+  // id: 1,
   title:
     "Docusaurus: The Modern Framework for Building Documentation That Doesn’t Suck",
   excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
@@ -189,7 +189,7 @@ npm install my-package
 };
 
 export const bp2 = {
-  id: 2,
+  // id: 2,
   title: "Why I Don't Use WordPress (And You Shouldn't Either)",
   excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
   slug: "why-i-do-not-use-wordpress-and-you-should-not-either",
@@ -243,7 +243,7 @@ export const bp2 = {
 };
 
 export const bp3 = {
-  id: 16,
+  // id: 16,
   title: "Integrating NodeMailer with Next.js: A Comprehensive Guide",
   excerpt:
     "Learn how to set up and use NodeMailer in a Next.js application to send emails from your contact forms, authenticate with SMTP, and ensure secure, scalable communication.",
@@ -372,7 +372,7 @@ export default YourPage;
 };
 
 export const bp4 = {
-  id: 15,
+  // id: 15,
   title:
     "Unveiling the Power of Structured Data Markup Script: Elevating Your Website's SEO",
   excerpt:
@@ -643,7 +643,7 @@ export const bp4 = {
 };
 
 export const bp5 = {
-  id: 12,
+  // id: 12,
   title: "How to Optimize Your Commits for Efficient Project Management",
   excerpt:
     "Learn how to write clear, structured, and purposeful Git commits to improve collaboration, streamline reviews, and enhance your team's overall project management workflow.",
@@ -755,7 +755,7 @@ export const bp5 = {
 };
 
 export const bp6 = {
-  id: 13,
+  // id: 13,
   title: "ReactPress: A Seamless React App Workflow with WordPress CMS",
   excerpt:
     "Discover how to integrate React with WordPress CMS using a headless or hybrid approach. Streamline your frontend workflow while managing content efficiently on the backend.",
@@ -830,7 +830,7 @@ export const bp6 = {
 };
 
 export const bp7 = {
-  id: 14,
+  // id: 14,
   title:
     "Exploring GitHub CLI: A Comprehensive Guide to Streamlining Your Workflow using CLI",
   excerpt:
@@ -1045,7 +1045,7 @@ gh repo branch <branch-name>
 };
 
 export const bp8 = {
-  id: 11,
+  // id: 11,
   title:
     "The Synergy of Individuality and Team Skills: Unleashing the Full Potential of Collaboration",
   excerpt:
@@ -1112,7 +1112,7 @@ export const bp8 = {
 };
 
 export const bp9 = {
-  id: 10,
+  // id: 10,
   title: "Content Management for PWAs: Embrace the Headless CMS Approach",
   excerpt:
     "Discover how headless CMS solutions can power content delivery for Progressive Web Apps (PWAs), offering improved performance, flexibility, and seamless omnichannel publishing.",
@@ -1160,7 +1160,7 @@ export const bp9 = {
 };
 
 export const bp10 = {
-  id: 9,
+  // id: 9,
   title:
     "Stay Ahead of Vulnerabilities: A Guide to GitHub Dependabot and CodeQL",
   excerpt:
@@ -1319,7 +1319,7 @@ updates:
 };
 
 export const bp11 = {
-  id: 8,
+  // id: 8,
   title: "Essential Apps Every Shopify Store Must Have",
   excerpt:
     "Discover the must-have apps for every Shopify store to boost sales, improve customer experience, and streamline operations. From marketing to inventory management, these tools can power your eCommerce success.",
@@ -1425,7 +1425,7 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
 };
 
 export const bp12 = {
-  id: 7,
+  // id: 7,
   title:
     "S.O.L.I.D Principles of Object Oriented Design: A Quick Guide to Enhance Your Development Standards",
   excerpt:
@@ -1899,7 +1899,7 @@ function ProductsList() {
 };
 
 export const bp13 = {
-  id: 5,
+  // id: 5,
   title: "How Small Shopify App Development Skills Can Boost Your Career",
   excerpt:
     "Learn how even basic Shopify app development skills can open up big career opportunities. Discover the benefits of becoming a Shopify app developer and how to get started.",
@@ -1986,7 +1986,7 @@ export const bp13 = {
 };
 
 export const bp14 = {
-  id: 6,
+  // id: 6,
   title:
     "Why I'm Moving from Shortcodes to Custom Blocks in WordPress and You Should Too…",
   excerpt:
@@ -2200,7 +2200,7 @@ registerBlockType('custom/contact-form', {
 };
 
 export const bp15 = {
-  id: 4,
+  // id: 4,
   title: "Top WordPress Push Notification Plugins for Web, Android & iOS",
   excerpt:
     "Explore the best WordPress push notification plugins to boost user engagement across web, Android, and iOS platforms. Learn which tools offer real-time alerts, automation, and easy integration.",
@@ -2271,7 +2271,7 @@ export const bp15 = {
 };
 
 export const bp16 = {
-  id: 3,
+  // id: 3,
   title:
     "What Is an ERP Solution? How to Choose the Best One for Your WordPress?",
   excerpt:
@@ -2393,7 +2393,7 @@ utm_content=suza"
 };
 
 export const bp17 = {
-  id: 2,
+  // id: 2,
   title: "Headless WordPress and Content Management Systems",
   excerpt:
     "Explore how Headless WordPress works and compare it with other modern content management systems for greater flexibility and performance.",
@@ -2553,7 +2553,7 @@ export const bp17 = {
 };
 
 export const bp18 = {
-  id: 1,
+  // id: 1,
   title: "The Beginner's Guide to Search Engin Optimization",
   excerpt:
     "Discover the fundamentals of Search Engine Optimization (SEO) and learn how to improve your website's visibility on search engines.",
@@ -2762,7 +2762,7 @@ export const bp18 = {
 };
 
 export const bp19 = {
-  id: 1,
+  // id: 1,
   title: "Getting Started with Next.js and Tailwind",
   excerpt:
     "Learn how to set up a new Next.js project with Tailwind CSS to build fast, responsive UIs with ease.",
@@ -2888,7 +2888,7 @@ npx tailwindcss init -p</code>
 };
 
 export const bp20 = {
-  id: 2,
+  // id: 2,
   title: "State Management in React Applications",
   excerpt:
     "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
@@ -3081,7 +3081,7 @@ const [password, setPassword] = useState('');
 };
 
 export const bp21 = {
-  id: 3,
+  // id: 3,
   title: "Creating Animations with Framer Motion",
   excerpt:
     "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
@@ -3327,7 +3327,7 @@ Content that resizes smoothly<
 };
 
 export const bp22 = {
-  id: 4,
+  // id: 4,
   title: "Next.js API Routes: Building Server Endpoints",
   excerpt:
     "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
@@ -3474,7 +3474,7 @@ export default function handler(req, res) {
 };
 
 export const bp23 = {
-  id: 5,
+  // id: 5,
   title: "Responsive UI with Tailwind CSS",
   excerpt:
     "Master responsive design using Tailwind's utility classes and variants — build adaptable layouts that look great on any device.",
@@ -3619,7 +3619,7 @@ export const bp23 = {
 `,
 };
 export const bp24 = {
-  id: 5,
+  // id: 5,
   title: "Boost Developer Efficiency with LocatorJS: A Quick Guide",
   excerpt:
     "Discover how LocatorJS can streamline your development process by letting you click on elements in your app and instantly locate the code behind them.",

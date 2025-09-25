@@ -1,6 +1,6 @@
 export const OLD_TWEETS = [
   {
-    id: 1,
+    // id: 1,
     title: "How I Built a WordPress + React Hybrid Site: Challenges & Lessons",
     slug: "how-i-built-a-wordpress-+-react-hybrid-site-challenges-and-lessons",
     excerpt:
@@ -13,7 +13,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title:
       "Reviewing Popular Headless CMS Platforms: Strapi vs Sanity vs Ghost",
     slug: "reviewing-popular-headless-cms-platforms-strapi-vs-sanity-vs-ghost",
@@ -26,7 +26,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Vercel vs Netlify for Next.js: A Deep Dive & Real-World Experience",
     slug: "vercel-vs-netlify-for-next.js-a-deep-dive-and-real-world-experience",
     excerpt: "",
@@ -38,7 +38,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title:
       "What I Learned Building My Portfolio: syedalinaqihasni.com — A Review & Postmortem",
     slug: "what-i-learned-building-my-portfolio-syedalinaqihasni.com-—-a-review-and-postmortem",
@@ -51,7 +51,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "2025 Review: Tailwind CSS vs Bootstrap",
     slug: "2025-review-tailwind-css-vs-bootstrap",
     excerpt: "",
@@ -63,7 +63,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Astro vs Next.js vs Gatsby: Best Static Site Generator?",
     slug: "astro-vs-next.js-vs-gatsby-best-static-site-generator?",
     excerpt: "",
@@ -75,7 +75,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best AI Writing Tools for Developers in 2025",
     slug: "best-ai-writing-tools-for-developers-in-2025",
     excerpt: "",
@@ -87,7 +87,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free AI Tools for Code Review",
     slug: "best-free-ai-tools-for-code-review",
     excerpt: "",
@@ -99,7 +99,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free AI Tools for Content Creation",
     slug: "best-free-ai-tools-for-content-creation",
     excerpt: "",
@@ -111,7 +111,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Analytics Tools for Developers in 2025",
     slug: "best-free-analytics-tools-for-developers-in-2025",
     excerpt: "",
@@ -123,7 +123,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free APIs for Developers in 2025",
     slug: "best-free-apis-for-developers-in-2025",
     excerpt: "",
@@ -135,7 +135,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free CDN Providers for Websites in 2025",
     slug: "best-free-cdn-providers-for-websites-in-2025",
     excerpt: "",
@@ -147,7 +147,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Deployment Tools in 2025",
     slug: "best-free-deployment-tools-in-2025",
     excerpt: "",
@@ -159,7 +159,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Fonts for Modern Web Projects",
     slug: "best-free-fonts-for-modern-web-projects",
     excerpt: "",
@@ -171,7 +171,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Hosting for Node.js Apps",
     slug: "best-free-hosting-for-node.js-apps",
     excerpt: "",
@@ -183,7 +183,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Hosting for React Apps",
     slug: "best-free-hosting-for-react-apps",
     excerpt: "",
@@ -195,7 +195,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Hosting for Student Projects",
     slug: "best-free-hosting-for-student-projects",
     excerpt: "",
@@ -207,7 +207,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Icon Packs for Developers",
     slug: "best-free-icon-packs-for-developers",
     excerpt: "",
@@ -219,7 +219,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for A-B Testing",
     slug: "best-free-tools-for-a-b-testing",
     excerpt: "",
@@ -231,7 +231,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for AI Image Background Removal",
     slug: "best-free-tools-for-ai-image-background-removal",
     excerpt: "",
@@ -243,7 +243,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for AI Image Upscaling",
     slug: "best-free-tools-for-ai-image-upscaling",
     excerpt: "",
@@ -255,7 +255,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for AI Prompt Management",
     slug: "best-free-tools-for-ai-prompt-management",
     excerpt: "",
@@ -267,7 +267,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for AI Voice Generation",
     slug: "best-free-tools-for-ai-voice-generation",
     excerpt: "",
@@ -279,7 +279,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for AI-Powered Image Generation",
     slug: "best-free-tools-for-ai-powered-image-generation",
     excerpt: "",
@@ -291,7 +291,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for AI-Powered SEO",
     slug: "best-free-tools-for-ai-powered-seo",
     excerpt: "",
@@ -303,7 +303,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for AI-Powered Summaries",
     slug: "best-free-tools-for-ai-powered-summaries",
     excerpt: "",
@@ -315,7 +315,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Design",
     slug: "best-free-tools-for-api-design",
     excerpt: "",
@@ -327,7 +327,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Gateways",
     slug: "best-free-tools-for-api-gateways",
     excerpt: "",
@@ -339,7 +339,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Logging",
     slug: "best-free-tools-for-api-logging",
     excerpt: "",
@@ -351,7 +351,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Mocking",
     slug: "best-free-tools-for-api-mocking",
     excerpt: "",
@@ -363,7 +363,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Rate Limiting",
     slug: "best-free-tools-for-api-rate-limiting",
     excerpt: "",
@@ -375,7 +375,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Response Caching",
     slug: "best-free-tools-for-api-response-caching",
     excerpt: "",
@@ -387,7 +387,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Security Testing",
     slug: "best-free-tools-for-api-security-testing",
     excerpt: "",
@@ -399,7 +399,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Testing in 2025",
     slug: "best-free-tools-for-api-testing-in-2025",
     excerpt: "",
@@ -411,7 +411,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for API Versioning",
     slug: "best-free-tools-for-api-versioning",
     excerpt: "",
@@ -423,7 +423,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating API Testing",
     slug: "best-free-tools-for-automating-api-testing",
     excerpt: "",
@@ -435,7 +435,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Blog Publishing",
     slug: "best-free-tools-for-automating-blog-publishing",
     excerpt: "",
@@ -447,7 +447,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Data Backups",
     slug: "best-free-tools-for-automating-data-backups",
     excerpt: "",
@@ -459,7 +459,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Email Marketing",
     slug: "best-free-tools-for-automating-email-marketing",
     excerpt: "",
@@ -471,7 +471,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Form Submissions",
     slug: "best-free-tools-for-automating-form-submissions",
     excerpt: "",
@@ -483,7 +483,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Invoices",
     slug: "best-free-tools-for-automating-invoices",
     excerpt: "",
@@ -495,7 +495,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Social Media Analytics",
     slug: "best-free-tools-for-automating-social-media-analytics",
     excerpt: "",
@@ -507,7 +507,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Social Media Posts",
     slug: "best-free-tools-for-automating-social-media-posts",
     excerpt: "",
@@ -519,7 +519,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Spreadsheets in 2025",
     slug: "best-free-tools-for-automating-spreadsheets-in-2025",
     excerpt: "",
@@ -531,7 +531,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Automating Spreadsheets",
     slug: "best-free-tools-for-automating-spreadsheets",
     excerpt: "",
@@ -543,7 +543,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Blog SEO Optimization",
     slug: "best-free-tools-for-blog-seo-optimization",
     excerpt: "",
@@ -555,7 +555,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Browser Automation",
     slug: "best-free-tools-for-browser-automation",
     excerpt: "",
@@ -567,7 +567,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Browser Extensions",
     slug: "best-free-tools-for-browser-extensions",
     excerpt: "",
@@ -579,7 +579,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Browser Testing",
     slug: "best-free-tools-for-browser-testing",
     excerpt: "",
@@ -591,7 +591,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Building Chatbots",
     slug: "best-free-tools-for-building-chatbots",
     excerpt: "",
@@ -603,7 +603,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Building REST APIs",
     slug: "best-free-tools-for-building-rest-apis",
     excerpt: "",
@@ -615,7 +615,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Checking Domain Authority",
     slug: "best-free-tools-for-checking-domain-authority",
     excerpt: "",
@@ -627,7 +627,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for CI-CD Pipelines",
     slug: "best-free-tools-for-ci-cd-pipelines",
     excerpt: "",
@@ -639,7 +639,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Cloud Backups",
     slug: "best-free-tools-for-cloud-backups",
     excerpt: "",
@@ -651,7 +651,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Cloud Cost Management",
     slug: "best-free-tools-for-cloud-cost-management",
     excerpt: "",
@@ -663,7 +663,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Cloud File Storage",
     slug: "best-free-tools-for-cloud-file-storage",
     excerpt: "",
@@ -675,7 +675,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Cloud Monitoring",
     slug: "best-free-tools-for-cloud-monitoring",
     excerpt: "",
@@ -687,7 +687,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Cloud Security",
     slug: "best-free-tools-for-cloud-security",
     excerpt: "",
@@ -699,7 +699,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Code Collaboration",
     slug: "best-free-tools-for-code-collaboration",
     excerpt: "",
@@ -711,7 +711,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Code Documentation",
     slug: "best-free-tools-for-code-documentation",
     excerpt: "",
@@ -723,7 +723,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Content Audits",
     slug: "best-free-tools-for-content-audits",
     excerpt: "",
@@ -735,7 +735,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Content Planning",
     slug: "best-free-tools-for-content-planning",
     excerpt: "",
@@ -747,7 +747,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Continuous Integration",
     slug: "best-free-tools-for-continuous-integration",
     excerpt: "",
@@ -759,7 +759,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Converting CSV to JSON",
     slug: "best-free-tools-for-converting-csv-to-json",
     excerpt: "",
@@ -771,7 +771,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating AI Chatbots",
     slug: "best-free-tools-for-creating-ai-chatbots",
     excerpt: "",
@@ -783,7 +783,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating API Docs",
     slug: "best-free-tools-for-creating-api-docs",
     excerpt: "",
@@ -795,7 +795,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating Charts and Graphs",
     slug: "best-free-tools-for-creating-charts-and-graphs",
     excerpt: "",
@@ -807,7 +807,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating Dashboards",
     slug: "best-free-tools-for-creating-dashboards",
     excerpt: "",
@@ -819,7 +819,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating Documentation",
     slug: "best-free-tools-for-creating-documentation",
     excerpt: "",
@@ -831,7 +831,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating Flowcharts",
     slug: "best-free-tools-for-creating-flowcharts",
     excerpt: "",
@@ -843,7 +843,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating Mock Data",
     slug: "best-free-tools-for-creating-mock-data",
     excerpt: "",
@@ -855,7 +855,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating QR Codes",
     slug: "best-free-tools-for-creating-qr-codes",
     excerpt: "",
@@ -867,7 +867,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Creating Sitemaps",
     slug: "best-free-tools-for-creating-sitemaps",
     excerpt: "",
@@ -879,7 +879,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Daily Journaling",
     slug: "best-free-tools-for-daily-journaling",
     excerpt: "",
@@ -891,7 +891,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Data Pipelines",
     slug: "best-free-tools-for-data-pipelines",
     excerpt: "",
@@ -903,7 +903,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Data Transformation",
     slug: "best-free-tools-for-data-transformation",
     excerpt: "",
@@ -915,7 +915,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Database Diagramming",
     slug: "best-free-tools-for-database-diagramming",
     excerpt: "",
@@ -927,7 +927,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Designing Landing Pages",
     slug: "best-free-tools-for-designing-landing-pages",
     excerpt: "",
@@ -939,7 +939,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Designing Wireframes",
     slug: "best-free-tools-for-designing-wireframes",
     excerpt: "",
@@ -951,7 +951,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Diagram Collaboration",
     slug: "best-free-tools-for-diagram-collaboration",
     excerpt: "",
@@ -963,7 +963,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Diagram Creation",
     slug: "best-free-tools-for-diagram-creation",
     excerpt: "",
@@ -975,7 +975,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Digital Asset Management",
     slug: "best-free-tools-for-digital-asset-management",
     excerpt: "",
@@ -987,7 +987,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Digital Note-Taking",
     slug: "best-free-tools-for-digital-note-taking",
     excerpt: "",
@@ -999,7 +999,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Domain Name Suggestions",
     slug: "best-free-tools-for-domain-name-suggestions",
     excerpt: "",
@@ -1011,7 +1011,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Email Security",
     slug: "best-free-tools-for-email-security",
     excerpt: "",
@@ -1023,7 +1023,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Encrypting Files",
     slug: "best-free-tools-for-encrypting-files",
     excerpt: "",
@@ -1035,7 +1035,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Favicon Generation",
     slug: "best-free-tools-for-favicon-generation",
     excerpt: "",
@@ -1047,7 +1047,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for File Compression",
     slug: "best-free-tools-for-file-compression",
     excerpt: "",
@@ -1059,7 +1059,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for File Conversion",
     slug: "best-free-tools-for-file-conversion",
     excerpt: "",
@@ -1071,7 +1071,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for File Sharing",
     slug: "best-free-tools-for-file-sharing",
     excerpt: "",
@@ -1083,7 +1083,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Finding Expired Domains",
     slug: "best-free-tools-for-finding-expired-domains",
     excerpt: "",
@@ -1095,7 +1095,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Free SSL Certificates",
     slug: "best-free-tools-for-free-ssl-certificates",
     excerpt: "",
@@ -1107,7 +1107,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Generating JSON Data",
     slug: "best-free-tools-for-generating-json-data",
     excerpt: "",
@@ -1119,7 +1119,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Generating Open Graph Images",
     slug: "best-free-tools-for-generating-open-graph-images",
     excerpt: "",
@@ -1131,7 +1131,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Generating OpenAPI Docs",
     slug: "best-free-tools-for-generating-openapi-docs",
     excerpt: "",
@@ -1143,7 +1143,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Generating REST Clients",
     slug: "best-free-tools-for-generating-rest-clients",
     excerpt: "",
@@ -1155,7 +1155,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Git Branch Management",
     slug: "best-free-tools-for-git-branch-management",
     excerpt: "",
@@ -1167,7 +1167,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Git Repository Hosting",
     slug: "best-free-tools-for-git-repository-hosting",
     excerpt: "",
@@ -1179,7 +1179,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Headless CMS Management",
     slug: "best-free-tools-for-headless-cms-management",
     excerpt: "",
@@ -1191,7 +1191,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Hosting Images",
     slug: "best-free-tools-for-hosting-images",
     excerpt: "",
@@ -1203,7 +1203,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Hosting Static Websites",
     slug: "best-free-tools-for-hosting-static-websites",
     excerpt: "",
@@ -1215,7 +1215,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Image Background Removal",
     slug: "best-free-tools-for-image-background-removal",
     excerpt: "",
@@ -1227,7 +1227,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Image Compression",
     slug: "best-free-tools-for-image-compression",
     excerpt: "",
@@ -1239,7 +1239,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Image Optimization",
     slug: "best-free-tools-for-image-optimization",
     excerpt: "",
@@ -1251,7 +1251,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for JSON Formatting",
     slug: "best-free-tools-for-json-formatting",
     excerpt: "",
@@ -1263,7 +1263,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Keyword Research",
     slug: "best-free-tools-for-keyword-research",
     excerpt: "",
@@ -1275,7 +1275,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Learning Data Science",
     slug: "best-free-tools-for-learning-data-science",
     excerpt: "",
@@ -1287,7 +1287,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Learning DevOps",
     slug: "best-free-tools-for-learning-devops",
     excerpt: "",
@@ -1299,7 +1299,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Learning JavaScript",
     slug: "best-free-tools-for-learning-javascript",
     excerpt: "",
@@ -1311,7 +1311,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Learning Python in 2025",
     slug: "best-free-tools-for-learning-python-in-2025",
     excerpt: "",
@@ -1323,7 +1323,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Learning Rust in 2025",
     slug: "best-free-tools-for-learning-rust-in-2025",
     excerpt: "",
@@ -1335,7 +1335,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Learning SQL",
     slug: "best-free-tools-for-learning-sql",
     excerpt: "",
@@ -1347,7 +1347,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Learning TypeScript",
     slug: "best-free-tools-for-learning-typescript",
     excerpt: "",
@@ -1359,7 +1359,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Managing API Documentation",
     slug: "best-free-tools-for-managing-api-documentation",
     excerpt: "",
@@ -1371,7 +1371,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Managing API Keys",
     slug: "best-free-tools-for-managing-api-keys",
     excerpt: "",
@@ -1383,7 +1383,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Managing Git Commits",
     slug: "best-free-tools-for-managing-git-commits",
     excerpt: "",
@@ -1395,7 +1395,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Managing Remote Teams",
     slug: "best-free-tools-for-managing-remote-teams",
     excerpt: "",
@@ -1407,7 +1407,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Managing Remote Workflows",
     slug: "best-free-tools-for-managing-remote-workflows",
     excerpt: "",
@@ -1419,7 +1419,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Markdown Editing",
     slug: "best-free-tools-for-markdown-editing",
     excerpt: "",
@@ -1431,7 +1431,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Markdown Editors",
     slug: "best-free-tools-for-markdown-editors",
     excerpt: "",
@@ -1443,7 +1443,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Markdown Notes",
     slug: "best-free-tools-for-markdown-notes",
     excerpt: "",
@@ -1455,7 +1455,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Mindfulness Tracking",
     slug: "best-free-tools-for-mindfulness-tracking",
     excerpt: "",
@@ -1467,7 +1467,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Mobile App Wireframes",
     slug: "best-free-tools-for-mobile-app-wireframes",
     excerpt: "",
@@ -1479,7 +1479,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Mocking APIs",
     slug: "best-free-tools-for-mocking-apis",
     excerpt: "",
@@ -1491,7 +1491,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Monitoring APIs",
     slug: "best-free-tools-for-monitoring-apis",
     excerpt: "",
@@ -1503,7 +1503,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Monitoring Cloud Costs",
     slug: "best-free-tools-for-monitoring-cloud-costs",
     excerpt: "",
@@ -1515,7 +1515,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Newsletter Creation",
     slug: "best-free-tools-for-newsletter-creation",
     excerpt: "",
@@ -1527,7 +1527,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Brainstorming",
     slug: "best-free-tools-for-online-brainstorming",
     excerpt: "",
@@ -1539,7 +1539,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Communities",
     slug: "best-free-tools-for-online-communities",
     excerpt: "",
@@ -1551,7 +1551,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Course Creation",
     slug: "best-free-tools-for-online-course-creation",
     excerpt: "",
@@ -1563,7 +1563,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Diagramming",
     slug: "best-free-tools-for-online-diagramming",
     excerpt: "",
@@ -1575,7 +1575,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Polls",
     slug: "best-free-tools-for-online-polls",
     excerpt: "",
@@ -1587,7 +1587,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Surveys",
     slug: "best-free-tools-for-online-surveys",
     excerpt: "",
@@ -1599,7 +1599,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Whiteboarding",
     slug: "best-free-tools-for-online-whiteboarding",
     excerpt: "",
@@ -1611,7 +1611,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Open Source Contribution",
     slug: "best-free-tools-for-open-source-contribution",
     excerpt: "",
@@ -1623,7 +1623,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Open Source Docs",
     slug: "best-free-tools-for-open-source-docs",
     excerpt: "",
@@ -1635,7 +1635,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Organizing Bookmarks",
     slug: "best-free-tools-for-organizing-bookmarks",
     excerpt: "",
@@ -1647,7 +1647,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Organizing Design Assets",
     slug: "best-free-tools-for-organizing-design-assets",
     excerpt: "",
@@ -1659,7 +1659,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Organizing Online Courses",
     slug: "best-free-tools-for-organizing-online-courses",
     excerpt: "",
@@ -1671,7 +1671,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Organizing Online Research",
     slug: "best-free-tools-for-organizing-online-research",
     excerpt: "",
@@ -1683,7 +1683,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Password Management",
     slug: "best-free-tools-for-password-management",
     excerpt: "",
@@ -1695,7 +1695,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Passwordless Authentication",
     slug: "best-free-tools-for-passwordless-authentication",
     excerpt: "",
@@ -1707,7 +1707,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Performance Benchmarking",
     slug: "best-free-tools-for-performance-benchmarking",
     excerpt: "",
@@ -1719,7 +1719,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Personal Finance Tracking",
     slug: "best-free-tools-for-personal-finance-tracking",
     excerpt: "",
@@ -1731,7 +1731,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Privacy-Focused Analytics",
     slug: "best-free-tools-for-privacy-focused-analytics",
     excerpt: "",
@@ -1743,7 +1743,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Project Documentation",
     slug: "best-free-tools-for-project-documentation",
     excerpt: "",
@@ -1755,7 +1755,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Project Roadmapping",
     slug: "best-free-tools-for-project-roadmapping",
     excerpt: "",
@@ -1767,7 +1767,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Project Roadmaps",
     slug: "best-free-tools-for-project-roadmaps",
     excerpt: "",
@@ -1779,7 +1779,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Real-Time API Monitoring",
     slug: "best-free-tools-for-real-time-api-monitoring",
     excerpt: "",
@@ -1791,7 +1791,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Real-Time Collaboration",
     slug: "best-free-tools-for-real-time-collaboration",
     excerpt: "",
@@ -1803,7 +1803,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Real-Time Dashboards",
     slug: "best-free-tools-for-real-time-dashboards",
     excerpt: "",
@@ -1815,7 +1815,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Real-Time Notifications",
     slug: "best-free-tools-for-real-time-notifications",
     excerpt: "",
@@ -1827,7 +1827,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Remote Collaboration",
     slug: "best-free-tools-for-remote-collaboration",
     excerpt: "",
@@ -1839,7 +1839,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Remote File Storage",
     slug: "best-free-tools-for-remote-file-storage",
     excerpt: "",
@@ -1851,7 +1851,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Remote Pair Programming",
     slug: "best-free-tools-for-remote-pair-programming",
     excerpt: "",
@@ -1863,7 +1863,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Remote Whiteboarding",
     slug: "best-free-tools-for-remote-whiteboarding",
     excerpt: "",
@@ -1875,7 +1875,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for SaaS Billing",
     slug: "best-free-tools-for-saas-billing",
     excerpt: "",
@@ -1887,7 +1887,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Scheduling Meetings",
     slug: "best-free-tools-for-scheduling-meetings",
     excerpt: "",
@@ -1899,7 +1899,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Screen Recording",
     slug: "best-free-tools-for-screen-recording",
     excerpt: "",
@@ -1911,7 +1911,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Screenshot Automation",
     slug: "best-free-tools-for-screenshot-automation",
     excerpt: "",
@@ -1923,7 +1923,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Screenshot Editing",
     slug: "best-free-tools-for-screenshot-editing",
     excerpt: "",
@@ -1935,7 +1935,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Screenshot Sharing",
     slug: "best-free-tools-for-screenshot-sharing",
     excerpt: "",
@@ -1947,7 +1947,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Social Media Automation",
     slug: "best-free-tools-for-social-media-automation",
     excerpt: "",
@@ -1959,7 +1959,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Social Media Monitoring",
     slug: "best-free-tools-for-social-media-monitoring",
     excerpt: "",
@@ -1971,7 +1971,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Static Site Builders",
     slug: "best-free-tools-for-static-site-builders",
     excerpt: "",
@@ -1983,7 +1983,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Static Site Hosting",
     slug: "best-free-tools-for-static-site-hosting",
     excerpt: "",
@@ -1995,7 +1995,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Task Management",
     slug: "best-free-tools-for-task-management",
     excerpt: "",
@@ -2007,7 +2007,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Task Scheduling",
     slug: "best-free-tools-for-task-scheduling",
     excerpt: "",
@@ -2019,7 +2019,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Chat Management",
     slug: "best-free-tools-for-team-chat-management",
     excerpt: "",
@@ -2031,7 +2031,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Collaboration",
     slug: "best-free-tools-for-team-collaboration",
     excerpt: "",
@@ -2043,7 +2043,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Kanban Boards",
     slug: "best-free-tools-for-team-kanban-boards",
     excerpt: "",
@@ -2055,7 +2055,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Knowledge Management",
     slug: "best-free-tools-for-team-knowledge-management",
     excerpt: "",
@@ -2067,7 +2067,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Messaging",
     slug: "best-free-tools-for-team-messaging",
     excerpt: "",
@@ -2079,7 +2079,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Mind Mapping",
     slug: "best-free-tools-for-team-mind-mapping",
     excerpt: "",
@@ -2091,7 +2091,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Project Management",
     slug: "best-free-tools-for-team-project-management",
     excerpt: "",
@@ -2103,7 +2103,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Whiteboarding",
     slug: "best-free-tools-for-team-whiteboarding",
     excerpt: "",
@@ -2115,7 +2115,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Testing React Apps",
     slug: "best-free-tools-for-testing-react-apps",
     excerpt: "",
@@ -2127,7 +2127,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Time Tracking",
     slug: "best-free-tools-for-time-tracking",
     excerpt: "",
@@ -2139,7 +2139,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for To-Do List Management",
     slug: "best-free-tools-for-to-do-list-management",
     excerpt: "",
@@ -2151,7 +2151,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Tracking Coding Progress",
     slug: "best-free-tools-for-tracking-coding-progress",
     excerpt: "",
@@ -2163,7 +2163,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Tracking Domain Expiry",
     slug: "best-free-tools-for-tracking-domain-expiry",
     excerpt: "",
@@ -2175,7 +2175,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Tracking Page Speed",
     slug: "best-free-tools-for-tracking-page-speed",
     excerpt: "",
@@ -2187,7 +2187,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Tracking Productivity",
     slug: "best-free-tools-for-tracking-productivity",
     excerpt: "",
@@ -2199,7 +2199,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Tracking SEO Rankings",
     slug: "best-free-tools-for-tracking-seo-rankings",
     excerpt: "",
@@ -2211,7 +2211,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Tracking Software Bugs",
     slug: "best-free-tools-for-tracking-software-bugs",
     excerpt: "",
@@ -2223,7 +2223,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Tracking Website Analytics",
     slug: "best-free-tools-for-tracking-website-analytics",
     excerpt: "",
@@ -2235,7 +2235,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for UX Testing",
     slug: "best-free-tools-for-ux-testing",
     excerpt: "",
@@ -2247,7 +2247,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Vector Databases",
     slug: "best-free-tools-for-vector-databases",
     excerpt: "",
@@ -2259,7 +2259,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Version Control",
     slug: "best-free-tools-for-version-control",
     excerpt: "",
@@ -2271,7 +2271,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Video Conferencing",
     slug: "best-free-tools-for-video-conferencing",
     excerpt: "",
@@ -2283,7 +2283,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Video Hosting",
     slug: "best-free-tools-for-video-hosting",
     excerpt: "",
@@ -2295,7 +2295,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Visualizing Databases",
     slug: "best-free-tools-for-visualizing-databases",
     excerpt: "",
@@ -2307,7 +2307,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Web Accessibility",
     slug: "best-free-tools-for-web-accessibility",
     excerpt: "",
@@ -2319,7 +2319,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Web Design Inspiration",
     slug: "best-free-tools-for-web-design-inspiration",
     excerpt: "",
@@ -2331,7 +2331,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Web Performance Audits",
     slug: "best-free-tools-for-web-performance-audits",
     excerpt: "",
@@ -2343,7 +2343,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Web Performance Monitoring",
     slug: "best-free-tools-for-web-performance-monitoring",
     excerpt: "",
@@ -2355,7 +2355,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Web Scraping",
     slug: "best-free-tools-for-web-scraping",
     excerpt: "",
@@ -2367,7 +2367,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website A-B Testing",
     slug: "best-free-tools-for-website-a-b-testing",
     excerpt: "",
@@ -2379,7 +2379,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Accessibility Testing",
     slug: "best-free-tools-for-website-accessibility-testing",
     excerpt: "",
@@ -2391,7 +2391,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Analytics",
     slug: "best-free-tools-for-website-analytics",
     excerpt: "",
@@ -2403,7 +2403,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Backlinks",
     slug: "best-free-tools-for-website-backlinks",
     excerpt: "",
@@ -2415,7 +2415,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Backups",
     slug: "best-free-tools-for-website-backups",
     excerpt: "",
@@ -2427,7 +2427,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Builders",
     slug: "best-free-tools-for-website-builders",
     excerpt: "",
@@ -2439,7 +2439,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Downtime Alerts",
     slug: "best-free-tools-for-website-downtime-alerts",
     excerpt: "",
@@ -2451,7 +2451,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Feedback",
     slug: "best-free-tools-for-website-feedback",
     excerpt: "",
@@ -2463,7 +2463,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Heatmap Analysis",
     slug: "best-free-tools-for-website-heatmap-analysis",
     excerpt: "",
@@ -2475,7 +2475,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Heatmaps",
     slug: "best-free-tools-for-website-heatmaps",
     excerpt: "",
@@ -2487,7 +2487,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Localization",
     slug: "best-free-tools-for-website-localization",
     excerpt: "",
@@ -2499,7 +2499,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Mockups",
     slug: "best-free-tools-for-website-mockups",
     excerpt: "",
@@ -2511,7 +2511,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Monitoring",
     slug: "best-free-tools-for-website-monitoring",
     excerpt: "",
@@ -2523,7 +2523,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Performance",
     slug: "best-free-tools-for-website-performance",
     excerpt: "",
@@ -2535,7 +2535,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Prototyping in 2025",
     slug: "best-free-tools-for-website-prototyping-in-2025",
     excerpt: "",
@@ -2547,7 +2547,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Prototyping",
     slug: "best-free-tools-for-website-prototyping",
     excerpt: "",
@@ -2559,7 +2559,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website SSL Certificates",
     slug: "best-free-tools-for-website-ssl-certificates",
     excerpt: "",
@@ -2571,7 +2571,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Uptime Alerts",
     slug: "best-free-tools-for-website-uptime-alerts",
     excerpt: "",
@@ -2583,7 +2583,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Uptime Monitoring",
     slug: "best-free-tools-for-website-uptime-monitoring",
     excerpt: "",
@@ -2595,7 +2595,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Website Wireframing",
     slug: "best-free-tools-for-website-wireframing",
     excerpt: "",
@@ -2607,7 +2607,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for WebSocket Testing",
     slug: "best-free-tools-for-websocket-testing",
     excerpt: "",
@@ -2619,7 +2619,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Wireframe Design",
     slug: "best-free-tools-for-wireframe-design",
     excerpt: "",
@@ -2631,7 +2631,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Wireframing",
     slug: "best-free-tools-for-wireframing",
     excerpt: "",
@@ -2643,7 +2643,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Workflow Automation",
     slug: "best-free-tools-for-workflow-automation",
     excerpt: "",
@@ -2655,7 +2655,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Workflow Diagrams",
     slug: "best-free-tools-for-workflow-diagrams",
     excerpt: "",
@@ -2667,7 +2667,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Website Builders for Small Businesses",
     slug: "best-free-website-builders-for-small-businesses",
     excerpt: "",
@@ -2679,7 +2679,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Tools for Automating Developer Workflows",
     slug: "best-tools-for-automating-developer-workflows",
     excerpt: "",
@@ -2691,7 +2691,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Tools for SEO Audits in 2025",
     slug: "best-tools-for-seo-audits-in-2025",
     excerpt: "",
@@ -2703,7 +2703,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Tools for Website Speed Testing",
     slug: "best-tools-for-website-speed-testing",
     excerpt: "",
@@ -2715,7 +2715,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Building Faster Sites with Incremental Static Regeneration",
     slug: "building-faster-sites-with-incremental-static-regeneration",
     excerpt: "",
@@ -2727,7 +2727,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Docker Desktop Alternatives: A 2025 Review",
     slug: "docker-desktop-alternatives-a-2025-review",
     excerpt: "",
@@ -2739,7 +2739,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Essential SEO Practices for Next.js Developers",
     slug: "essential-seo-practices-for-next.js-developers",
     excerpt: "",
@@ -2751,7 +2751,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "How Cloudflare Workers Compare to AWS Lambda",
     slug: "how-cloudflare-workers-compare-to-aws-lambda",
     excerpt: "",
@@ -2763,7 +2763,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "How Figma Changed Web Development Workflows",
     slug: "how-figma-changed-web-development-workflows",
     excerpt: "",
@@ -2775,7 +2775,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "How GitLab Compares to GitHub in 2025",
     slug: "how-gitlab-compares-to-github-in-2025",
     excerpt: "",
@@ -2787,7 +2787,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "n8n vs Zapier: Which Automation Tool Wins?",
     slug: "n8n-vs-zapier-which-automation-tool-wins?",
     excerpt: "",
@@ -2799,7 +2799,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Next.js 15 Review: What’s New and Should You Upgrade?",
     slug: "next.js-15-review-what’s-new-and-should-you-upgrade?",
     excerpt: "",
@@ -2811,7 +2811,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Prisma ORM Review: Is It the Future of Databases?",
     slug: "prisma-orm-review-is-it-the-future-of-databases?",
     excerpt: "",
@@ -2823,7 +2823,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AI Agents Platforms Compared in 2025",
     slug: "review-ai-agents-platforms-compared-in-2025",
     excerpt: "",
@@ -2835,7 +2835,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AI Code Generators Compared in 2025",
     slug: "review-ai-code-generators-compared-in-2025",
     excerpt: "",
@@ -2847,7 +2847,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AI Code Interpreters Compared",
     slug: "review-ai-code-interpreters-compared",
     excerpt: "",
@@ -2859,7 +2859,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AI Website Builders Compared in 2025",
     slug: "review-ai-website-builders-compared-in-2025",
     excerpt: "",
@@ -2871,7 +2871,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Algolia AI Search vs Elastic AI",
     slug: "review-algolia-ai-search-vs-elastic-ai",
     excerpt: "",
@@ -2883,7 +2883,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Algolia AI Search vs ElasticSearch AI",
     slug: "review-algolia-ai-search-vs-elasticsearch-ai",
     excerpt: "",
@@ -2895,7 +2895,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Algolia AI vs Meilisearch vs Typesense",
     slug: "review-algolia-ai-vs-meilisearch-vs-typesense",
     excerpt: "",
@@ -2907,7 +2907,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Algolia Recommend vs Pinecone Vector Search",
     slug: "review-algolia-recommend-vs-pinecone-vector-search",
     excerpt: "",
@@ -2919,7 +2919,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Algolia vs Meilisearch for Search",
     slug: "review-algolia-vs-meilisearch-for-search",
     excerpt: "",
@@ -2931,7 +2931,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Algolia vs Meilisearch vs Typesense",
     slug: "review-algolia-vs-meilisearch-vs-typesense",
     excerpt: "",
@@ -2943,7 +2943,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Appwrite vs Supabase vs Firebase",
     slug: "review-appwrite-vs-supabase-vs-firebase",
     excerpt: "",
@@ -2955,7 +2955,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Astro Islands Architecture Explained",
     slug: "review-astro-islands-architecture-explained",
     excerpt: "",
@@ -2967,7 +2967,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Astro Islands vs Qwik Resumability",
     slug: "review-astro-islands-vs-qwik-resumability",
     excerpt: "",
@@ -2979,7 +2979,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Astro vs Hugo vs Eleventy",
     slug: "review-astro-vs-hugo-vs-eleventy",
     excerpt: "",
@@ -2991,7 +2991,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Astro vs Next.js vs SvelteKit Static Generation",
     slug: "review-astro-vs-next.js-vs-sveltekit-static-generation",
     excerpt: "",
@@ -3003,7 +3003,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Astro vs Nuxt vs SvelteKit for 2025",
     slug: "review-astro-vs-nuxt-vs-sveltekit-for-2025",
     excerpt: "",
@@ -3015,7 +3015,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Astro vs Qwik vs SvelteKit Performance",
     slug: "review-astro-vs-qwik-vs-sveltekit-performance",
     excerpt: "",
@@ -3027,7 +3027,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Astro vs SvelteKit vs Remix Performance",
     slug: "review-astro-vs-sveltekit-vs-remix-performance",
     excerpt: "",
@@ -3039,7 +3039,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Amplify Hosting vs Netlify vs Vercel",
     slug: "review-aws-amplify-hosting-vs-netlify-vs-vercel",
     excerpt: "",
@@ -3051,7 +3051,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Amplify Hosting vs Vercel",
     slug: "review-aws-amplify-hosting-vs-vercel",
     excerpt: "",
@@ -3063,7 +3063,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Amplify Studio vs Supabase Studio",
     slug: "review-aws-amplify-studio-vs-supabase-studio",
     excerpt: "",
@@ -3075,7 +3075,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Amplify vs Google Firebase vs Supabase",
     slug: "review-aws-amplify-vs-google-firebase-vs-supabase",
     excerpt: "",
@@ -3087,7 +3087,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Amplify vs Supabase",
     slug: "review-aws-amplify-vs-supabase",
     excerpt: "",
@@ -3099,7 +3099,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS App Runner vs Cloud Run vs Fly.io",
     slug: "review-aws-app-runner-vs-cloud-run-vs-fly.io",
     excerpt: "",
@@ -3111,7 +3111,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS App Runner vs Render vs Fly.io",
     slug: "review-aws-app-runner-vs-render-vs-fly.io",
     excerpt: "",
@@ -3123,7 +3123,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS AppSync vs Hasura vs GraphQL Yoga",
     slug: "review-aws-appsync-vs-hasura-vs-graphql-yoga",
     excerpt: "",
@@ -3135,7 +3135,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Aurora vs AlloyDB vs Neon",
     slug: "review-aws-aurora-vs-alloydb-vs-neon",
     excerpt: "",
@@ -3147,7 +3147,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Bedrock vs Google Vertex AI vs Azure OpenAI",
     slug: "review-aws-bedrock-vs-google-vertex-ai-vs-azure-openai",
     excerpt: "",
@@ -3159,7 +3159,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Bedrock vs Hugging Face Inference",
     slug: "review-aws-bedrock-vs-hugging-face-inference",
     excerpt: "",
@@ -3171,7 +3171,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS CloudFormation vs Pulumi vs Terraform",
     slug: "review-aws-cloudformation-vs-pulumi-vs-terraform",
     excerpt: "",
@@ -3183,7 +3183,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS CloudFront vs Akamai vs Fastly",
     slug: "review-aws-cloudfront-vs-akamai-vs-fastly",
     excerpt: "",
@@ -3195,7 +3195,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS CloudFront vs Cloudflare CDN",
     slug: "review-aws-cloudfront-vs-cloudflare-cdn",
     excerpt: "",
@@ -3207,7 +3207,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS DynamoDB vs Firestore vs MongoDB Atlas",
     slug: "review-aws-dynamodb-vs-firestore-vs-mongodb-atlas",
     excerpt: "",
@@ -3219,7 +3219,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Fargate vs ECS vs Kubernetes",
     slug: "review-aws-fargate-vs-ecs-vs-kubernetes",
     excerpt: "",
@@ -3231,7 +3231,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Kinesis vs Kafka vs Pulsar",
     slug: "review-aws-kinesis-vs-kafka-vs-pulsar",
     excerpt: "",
@@ -3243,7 +3243,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Lambda vs Google Cloud Functions",
     slug: "review-aws-lambda-vs-google-cloud-functions",
     excerpt: "",
@@ -3255,7 +3255,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Lightsail vs DigitalOcean vs Linode",
     slug: "review-aws-lightsail-vs-digitalocean-vs-linode",
     excerpt: "",
@@ -3267,7 +3267,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS RDS vs Google Cloud SQL vs Azure Database",
     slug: "review-aws-rds-vs-google-cloud-sql-vs-azure-database",
     excerpt: "",
@@ -3279,7 +3279,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS S3 Glacier vs Backblaze B2 Cold Storage",
     slug: "review-aws-s3-glacier-vs-backblaze-b2-cold-storage",
     excerpt: "",
@@ -3291,7 +3291,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS SageMaker vs Azure ML vs Vertex AI",
     slug: "review-aws-sagemaker-vs-azure-ml-vs-vertex-ai",
     excerpt: "",
@@ -3303,7 +3303,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Step Functions vs Temporal.io",
     slug: "review-aws-step-functions-vs-temporal.io",
     excerpt: "",
@@ -3315,7 +3315,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun Bundler vs Vite vs Webpack",
     slug: "review-bun-bundler-vs-vite-vs-webpack",
     excerpt: "",
@@ -3327,7 +3327,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun Runtime vs Node.js Performance",
     slug: "review-bun-runtime-vs-node.js-performance",
     excerpt: "",
@@ -3339,7 +3339,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun SQLite vs Turso vs Neon",
     slug: "review-bun-sqlite-vs-turso-vs-neon",
     excerpt: "",
@@ -3351,7 +3351,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun Test Runner vs Jest vs Vitest",
     slug: "review-bun-test-runner-vs-jest-vs-vitest",
     excerpt: "",
@@ -3363,7 +3363,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Deno vs Node.js in 2025",
     slug: "review-bun-vs-deno-vs-node.js-in-2025",
     excerpt: "",
@@ -3375,7 +3375,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Deno vs Node.js Security",
     slug: "review-bun-vs-deno-vs-node.js-security",
     excerpt: "",
@@ -3387,7 +3387,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Node vs Deno Developer Experience",
     slug: "review-bun-vs-node-vs-deno-developer-experience",
     excerpt: "",
@@ -3399,7 +3399,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Node.js for Full-Stack Apps",
     slug: "review-bun-vs-node.js-for-full-stack-apps",
     excerpt: "",
@@ -3411,7 +3411,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Node.js Package Managers",
     slug: "review-bun-vs-node.js-package-managers",
     excerpt: "",
@@ -3423,7 +3423,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Node.js Performance Benchmarks",
     slug: "review-bun-vs-node.js-performance-benchmarks",
     excerpt: "",
@@ -3435,7 +3435,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Node.js vs Deno Benchmarks",
     slug: "review-bun-vs-node.js-vs-deno-benchmarks",
     excerpt: "",
@@ -3447,7 +3447,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Node.js vs Deno in 2025",
     slug: "review-bun-vs-node.js-vs-deno-in-2025",
     excerpt: "",
@@ -3459,7 +3459,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun vs Node.js vs Deno in Production",
     slug: "review-bun-vs-node.js-vs-deno-in-production",
     excerpt: "",
@@ -3471,7 +3471,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Canva vs Figma for Web Design",
     slug: "review-canva-vs-figma-for-web-design",
     excerpt: "",
@@ -3483,7 +3483,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Capacitor vs Cordova vs Ionic",
     slug: "review-capacitor-vs-cordova-vs-ionic",
     excerpt: "",
@@ -3495,7 +3495,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Capacitor vs Expo vs FlutterFlow",
     slug: "review-capacitor-vs-expo-vs-flutterflow",
     excerpt: "",
@@ -3507,7 +3507,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Capacitor vs NativeScript vs Expo",
     slug: "review-capacitor-vs-nativescript-vs-expo",
     excerpt: "",
@@ -3519,7 +3519,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Capacitor vs React Native vs Flutter",
     slug: "review-capacitor-vs-react-native-vs-flutter",
     excerpt: "",
@@ -3531,7 +3531,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: ChatGPT Enterprise vs Gemini Advanced",
     slug: "review-chatgpt-enterprise-vs-gemini-advanced",
     excerpt: "",
@@ -3543,7 +3543,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: ChatGPT Plugins vs Custom GPTs",
     slug: "review-chatgpt-plugins-vs-custom-gpts",
     excerpt: "",
@@ -3555,7 +3555,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Clerk vs Auth.js vs NextAuth",
     slug: "review-clerk-vs-auth.js-vs-nextauth",
     excerpt: "",
@@ -3567,7 +3567,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Clerk vs Auth0 vs Firebase Authentication",
     slug: "review-clerk-vs-auth0-vs-firebase-authentication",
     excerpt: "",
@@ -3579,7 +3579,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Clerk vs Auth0 vs Supabase Auth",
     slug: "review-clerk-vs-auth0-vs-supabase-auth",
     excerpt: "",
@@ -3591,7 +3591,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Clerk vs Stytch vs Auth0",
     slug: "review-clerk-vs-stytch-vs-auth0",
     excerpt: "",
@@ -3603,7 +3603,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Clerk vs Stytch vs Supabase Auth",
     slug: "review-clerk-vs-stytch-vs-supabase-auth",
     excerpt: "",
@@ -3615,7 +3615,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare AI Gateway vs AWS API Gateway",
     slug: "review-cloudflare-ai-gateway-vs-aws-api-gateway",
     excerpt: "",
@@ -3627,7 +3627,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare AI Gateway vs AWS Bedrock",
     slug: "review-cloudflare-ai-gateway-vs-aws-bedrock",
     excerpt: "",
@@ -3639,7 +3639,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare AI Gateway vs LangSmith",
     slug: "review-cloudflare-ai-gateway-vs-langsmith",
     excerpt: "",
@@ -3651,7 +3651,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare AI Workers vs Vercel AI SDK",
     slug: "review-cloudflare-ai-workers-vs-vercel-ai-sdk",
     excerpt: "",
@@ -3663,7 +3663,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Cache Reserve vs Akamai Caching",
     slug: "review-cloudflare-cache-reserve-vs-akamai-caching",
     excerpt: "",
@@ -3675,7 +3675,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Cache Rules vs Akamai EdgeWorkers",
     slug: "review-cloudflare-cache-rules-vs-akamai-edgeworkers",
     excerpt: "",
@@ -3687,7 +3687,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare D1 vs Neon vs PlanetScale",
     slug: "review-cloudflare-d1-vs-neon-vs-planetscale",
     excerpt: "",
@@ -3699,7 +3699,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare D1 vs SQLite on Edge",
     slug: "review-cloudflare-d1-vs-sqlite-on-edge",
     excerpt: "",
@@ -3711,7 +3711,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Durable Objects vs Supabase Realtime",
     slug: "review-cloudflare-durable-objects-vs-supabase-realtime",
     excerpt: "",
@@ -3723,7 +3723,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Images vs Imgix vs Cloudinary",
     slug: "review-cloudflare-images-vs-imgix-vs-cloudinary",
     excerpt: "",
@@ -3735,7 +3735,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Images vs Imgix vs Uploadcare",
     slug: "review-cloudflare-images-vs-imgix-vs-uploadcare",
     excerpt: "",
@@ -3747,7 +3747,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare KV vs Redis Cloud",
     slug: "review-cloudflare-kv-vs-redis-cloud",
     excerpt: "",
@@ -3759,7 +3759,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare KV vs Redis vs DynamoDB",
     slug: "review-cloudflare-kv-vs-redis-vs-dynamodb",
     excerpt: "",
@@ -3771,7 +3771,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Magic WAN vs AWS Direct Connect",
     slug: "review-cloudflare-magic-wan-vs-aws-direct-connect",
     excerpt: "",
@@ -3783,7 +3783,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Pages vs GitHub Pages vs Netlify",
     slug: "review-cloudflare-pages-vs-github-pages-vs-netlify",
     excerpt: "",
@@ -3795,7 +3795,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Pages vs GitHub Pages",
     slug: "review-cloudflare-pages-vs-github-pages",
     excerpt: "",
@@ -3807,7 +3807,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Pages vs Vercel vs Netlify",
     slug: "review-cloudflare-pages-vs-vercel-vs-netlify",
     excerpt: "",
@@ -3819,7 +3819,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Queues vs AWS SQS vs RabbitMQ",
     slug: "review-cloudflare-queues-vs-aws-sqs-vs-rabbitmq",
     excerpt: "",
@@ -3831,7 +3831,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Queues vs Kafka vs RabbitMQ",
     slug: "review-cloudflare-queues-vs-kafka-vs-rabbitmq",
     excerpt: "",
@@ -3843,7 +3843,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Queues vs RabbitMQ vs Kafka",
     slug: "review-cloudflare-queues-vs-rabbitmq-vs-kafka",
     excerpt: "",
@@ -3855,7 +3855,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare R2 vs AWS S3 vs Backblaze B2",
     slug: "review-cloudflare-r2-vs-aws-s3-vs-backblaze-b2",
     excerpt: "",
@@ -3867,7 +3867,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare R2 vs AWS S3",
     slug: "review-cloudflare-r2-vs-aws-s3",
     excerpt: "",
@@ -3879,7 +3879,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare R2 vs Backblaze B2 vs Wasabi",
     slug: "review-cloudflare-r2-vs-backblaze-b2-vs-wasabi",
     excerpt: "",
@@ -3891,7 +3891,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare R2 vs S3 vs DigitalOcean Spaces",
     slug: "review-cloudflare-r2-vs-s3-vs-digitalocean-spaces",
     excerpt: "",
@@ -3903,7 +3903,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare R2 vs Supabase Storage",
     slug: "review-cloudflare-r2-vs-supabase-storage",
     excerpt: "",
@@ -3915,7 +3915,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Spectrum vs AWS Global Accelerator",
     slug: "review-cloudflare-spectrum-vs-aws-global-accelerator",
     excerpt: "",
@@ -3927,7 +3927,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Stream vs Mux vs Vimeo",
     slug: "review-cloudflare-stream-vs-mux-vs-vimeo",
     excerpt: "",
@@ -3939,7 +3939,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Stream vs Vimeo vs YouTube",
     slug: "review-cloudflare-stream-vs-vimeo-vs-youtube",
     excerpt: "",
@@ -3951,7 +3951,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Turnstile vs hCaptcha vs reCAPTCHA",
     slug: "review-cloudflare-turnstile-vs-hcaptcha-vs-recaptcha",
     excerpt: "",
@@ -3963,7 +3963,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Workers AI vs AWS Lambda AI",
     slug: "review-cloudflare-workers-ai-vs-aws-lambda-ai",
     excerpt: "",
@@ -3975,7 +3975,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Workers AI vs Hugging Face Inference",
     slug: "review-cloudflare-workers-ai-vs-hugging-face-inference",
     excerpt: "",
@@ -3987,7 +3987,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Workers AI vs OpenAI API",
     slug: "review-cloudflare-workers-ai-vs-openai-api",
     excerpt: "",
@@ -3999,7 +3999,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Workers vs AWS Lambda vs Deno Deploy",
     slug: "review-cloudflare-workers-vs-aws-lambda-vs-deno-deploy",
     excerpt: "",
@@ -4011,7 +4011,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Zaraz vs Google Tag Manager",
     slug: "review-cloudflare-zaraz-vs-google-tag-manager",
     excerpt: "",
@@ -4023,7 +4023,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Zaraz vs Segment vs RudderStack",
     slug: "review-cloudflare-zaraz-vs-segment-vs-rudderstack",
     excerpt: "",
@@ -4035,7 +4035,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Zaraz vs Tealium vs Segment",
     slug: "review-cloudflare-zaraz-vs-tealium-vs-segment",
     excerpt: "",
@@ -4047,7 +4047,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Zero Trust vs Zscaler vs Okta",
     slug: "review-cloudflare-zero-trust-vs-zscaler-vs-okta",
     excerpt: "",
@@ -4059,7 +4059,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare Zero Trust vs Zscaler",
     slug: "review-cloudflare-zero-trust-vs-zscaler",
     excerpt: "",
@@ -4071,7 +4071,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudinary vs ImageKit vs Uploadcare",
     slug: "review-cloudinary-vs-imagekit-vs-uploadcare",
     excerpt: "",
@@ -4083,7 +4083,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Contentful vs Strapi vs Sanity",
     slug: "review-contentful-vs-strapi-vs-sanity",
     excerpt: "",
@@ -4095,7 +4095,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno Deploy for Fullstack JavaScript Apps",
     slug: "review-deno-deploy-for-fullstack-javascript-apps",
     excerpt: "",
@@ -4107,7 +4107,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno Deploy vs Cloudflare Workers vs Vercel Edge",
     slug: "review-deno-deploy-vs-cloudflare-workers-vs-vercel-edge",
     excerpt: "",
@@ -4119,7 +4119,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno Deploy vs Cloudflare Workers",
     slug: "review-deno-deploy-vs-cloudflare-workers",
     excerpt: "",
@@ -4131,7 +4131,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno Deploy vs Fly.io vs Render Edge",
     slug: "review-deno-deploy-vs-fly.io-vs-render-edge",
     excerpt: "",
@@ -4143,7 +4143,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno Fresh vs Remix vs Qwik",
     slug: "review-deno-fresh-vs-remix-vs-qwik",
     excerpt: "",
@@ -4155,7 +4155,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno KV vs SQLite vs Turso",
     slug: "review-deno-kv-vs-sqlite-vs-turso",
     excerpt: "",
@@ -4167,7 +4167,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno vs Bun vs Node.js in 2025",
     slug: "review-deno-vs-bun-vs-node.js-in-2025",
     excerpt: "",
@@ -4179,7 +4179,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno vs Bun vs Node.js in Production",
     slug: "review-deno-vs-bun-vs-node.js-in-production",
     excerpt: "",
@@ -4191,7 +4191,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Deno vs Bun vs Node.js Performance Benchmarks",
     slug: "review-deno-vs-bun-vs-node.js-performance-benchmarks",
     excerpt: "",
@@ -4203,7 +4203,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Dgraph vs Neo4j for Graph Databases",
     slug: "review-dgraph-vs-neo4j-for-graph-databases",
     excerpt: "",
@@ -4215,7 +4215,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: DigitalOcean App Platform vs Heroku",
     slug: "review-digitalocean-app-platform-vs-heroku",
     excerpt: "",
@@ -4227,7 +4227,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: DigitalOcean App Platform vs Railway vs Render",
     slug: "review-digitalocean-app-platform-vs-railway-vs-render",
     excerpt: "",
@@ -4239,7 +4239,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: DigitalOcean Functions vs AWS Lambda",
     slug: "review-digitalocean-functions-vs-aws-lambda",
     excerpt: "",
@@ -4251,7 +4251,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: DigitalOcean Managed Databases vs AWS RDS",
     slug: "review-digitalocean-managed-databases-vs-aws-rds",
     excerpt: "",
@@ -4263,7 +4263,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: DigitalOcean Spaces vs Backblaze B2 vs Wasabi",
     slug: "review-digitalocean-spaces-vs-backblaze-b2-vs-wasabi",
     excerpt: "",
@@ -4275,7 +4275,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: DigitalOcean vs Linode vs Vultr",
     slug: "review-digitalocean-vs-linode-vs-vultr",
     excerpt: "",
@@ -4287,7 +4287,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Directus vs Sanity vs Strapi",
     slug: "review-directus-vs-sanity-vs-strapi",
     excerpt: "",
@@ -4299,7 +4299,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Directus vs Strapi vs KeystoneJS",
     slug: "review-directus-vs-strapi-vs-keystonejs",
     excerpt: "",
@@ -4311,7 +4311,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Docker Desktop vs Podman vs Rancher",
     slug: "review-docker-desktop-vs-podman-vs-rancher",
     excerpt: "",
@@ -4323,7 +4323,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Docker Swarm vs Kubernetes",
     slug: "review-docker-swarm-vs-kubernetes",
     excerpt: "",
@@ -4335,7 +4335,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Docusaurus vs GitBook vs ReadMe",
     slug: "review-docusaurus-vs-gitbook-vs-readme",
     excerpt: "",
@@ -4347,7 +4347,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Drizzle ORM vs Prisma ORM",
     slug: "review-drizzle-orm-vs-prisma-orm",
     excerpt: "",
@@ -4359,7 +4359,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Elastic Cloud vs Meilisearch Cloud",
     slug: "review-elastic-cloud-vs-meilisearch-cloud",
     excerpt: "",
@@ -4371,7 +4371,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Elasticsearch vs Meilisearch vs Typesense",
     slug: "review-elasticsearch-vs-meilisearch-vs-typesense",
     excerpt: "",
@@ -4383,7 +4383,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: FastAPI vs Django REST Framework",
     slug: "review-fastapi-vs-django-rest-framework",
     excerpt: "",
@@ -4395,7 +4395,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: FastAPI vs Express.js vs NestJS",
     slug: "review-fastapi-vs-express.js-vs-nestjs",
     excerpt: "",
@@ -4407,7 +4407,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: FastAPI vs Flask vs Django REST",
     slug: "review-fastapi-vs-flask-vs-django-rest",
     excerpt: "",
@@ -4419,7 +4419,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Fastify vs Express vs Hono",
     slug: "review-fastify-vs-express-vs-hono",
     excerpt: "",
@@ -4431,7 +4431,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Fastify vs Hono vs Express Performance",
     slug: "review-fastify-vs-hono-vs-express-performance",
     excerpt: "",
@@ -4443,7 +4443,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Fastify vs Hono vs Koa.js",
     slug: "review-fastify-vs-hono-vs-koa.js",
     excerpt: "",
@@ -4455,7 +4455,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Figma AI vs Canva Magic Design",
     slug: "review-figma-ai-vs-canva-magic-design",
     excerpt: "",
@@ -4467,7 +4467,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Figma Variables vs Sketch Libraries",
     slug: "review-figma-variables-vs-sketch-libraries",
     excerpt: "",
@@ -4479,7 +4479,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Firebase Emulator vs Supabase Local",
     slug: "review-firebase-emulator-vs-supabase-local",
     excerpt: "",
@@ -4491,7 +4491,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Firebase Extensions vs Supabase Integrations",
     slug: "review-firebase-extensions-vs-supabase-integrations",
     excerpt: "",
@@ -4503,7 +4503,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Firebase Firestore vs Supabase Postgres",
     slug: "review-firebase-firestore-vs-supabase-postgres",
     excerpt: "",
@@ -4515,7 +4515,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Firebase Hosting vs Vercel vs Netlify",
     slug: "review-firebase-hosting-vs-vercel-vs-netlify",
     excerpt: "",
@@ -4527,7 +4527,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Firebase ML vs OpenAI Vision API",
     slug: "review-firebase-ml-vs-openai-vision-api",
     excerpt: "",
@@ -4539,7 +4539,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Firebase vs Appwrite",
     slug: "review-firebase-vs-appwrite",
     excerpt: "",
@@ -4551,7 +4551,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: FlutterFlow vs Draftbit vs Bildr",
     slug: "review-flutterflow-vs-draftbit-vs-bildr",
     excerpt: "",
@@ -4563,7 +4563,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Fly.io Machines vs Render Autoscaling",
     slug: "review-fly.io-machines-vs-render-autoscaling",
     excerpt: "",
@@ -4575,7 +4575,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Fly.io vs Heroku vs Railway",
     slug: "review-fly.io-vs-heroku-vs-railway",
     excerpt: "",
@@ -4587,7 +4587,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Fly.io vs Heroku vs Render",
     slug: "review-fly.io-vs-heroku-vs-render",
     excerpt: "",
@@ -4599,7 +4599,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Fly.io vs Railway vs Render in 2025",
     slug: "review-fly.io-vs-railway-vs-render-in-2025",
     excerpt: "",
@@ -4611,7 +4611,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Framer AI vs Typedream vs Dorik",
     slug: "review-framer-ai-vs-typedream-vs-dorik",
     excerpt: "",
@@ -4623,7 +4623,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Framer CMS vs Webflow CMS",
     slug: "review-framer-cms-vs-webflow-cms",
     excerpt: "",
@@ -4635,7 +4635,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Framer vs Webflow for No-Code Websites",
     slug: "review-framer-vs-webflow-for-no-code-websites",
     excerpt: "",
@@ -4647,7 +4647,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Framer vs Webflow vs EditorX",
     slug: "review-framer-vs-webflow-vs-editorx",
     excerpt: "",
@@ -4659,7 +4659,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Gatsby vs Astro vs Hugo",
     slug: "review-gatsby-vs-astro-vs-hugo",
     excerpt: "",
@@ -4671,7 +4671,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Ghost CMS vs Hashnode vs Medium",
     slug: "review-ghost-cms-vs-hashnode-vs-medium",
     excerpt: "",
@@ -4683,7 +4683,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Ghost Pro vs Medium vs Substack",
     slug: "review-ghost-pro-vs-medium-vs-substack",
     excerpt: "",
@@ -4695,7 +4695,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Ghost Pro vs WordPress VIP",
     slug: "review-ghost-pro-vs-wordpress-vip",
     excerpt: "",
@@ -4707,7 +4707,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Ghost vs Medium vs Substack",
     slug: "review-ghost-vs-medium-vs-substack",
     excerpt: "",
@@ -4719,7 +4719,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Actions vs CircleCI vs TravisCI",
     slug: "review-github-actions-vs-circleci-vs-travisci",
     excerpt: "",
@@ -4731,7 +4731,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Advanced Security vs Snyk vs SonarQube",
     slug: "review-github-advanced-security-vs-snyk-vs-sonarqube",
     excerpt: "",
@@ -4743,7 +4743,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Codespaces vs Gitpod",
     slug: "review-github-codespaces-vs-gitpod",
     excerpt: "",
@@ -4755,7 +4755,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Codespaces vs GitPod",
     slug: "review-github-codespaces-vs-gitpod",
     excerpt: "",
@@ -4767,7 +4767,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Codespaces vs Replit",
     slug: "review-github-codespaces-vs-replit",
     excerpt: "",
@@ -4779,7 +4779,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Copilot Chat vs Replit Ghostwriter",
     slug: "review-github-copilot-chat-vs-replit-ghostwriter",
     excerpt: "",
@@ -4791,7 +4791,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Copilot Enterprise vs Replit AI Teams",
     slug: "review-github-copilot-enterprise-vs-replit-ai-teams",
     excerpt: "",
@@ -4803,7 +4803,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Copilot vs Amazon CodeWhisperer vs Tabnine",
     slug: "review-github-copilot-vs-amazon-codewhisperer-vs-tabnine",
     excerpt: "",
@@ -4815,7 +4815,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Copilot vs ChatGPT for Coding Assistance",
     slug: "review-github-copilot-vs-chatgpt-for-coding-assistance",
     excerpt: "",
@@ -4827,7 +4827,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Copilot Workspace vs Replit AI",
     slug: "review-github-copilot-workspace-vs-replit-ai",
     excerpt: "",
@@ -4839,7 +4839,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Issues vs Jira vs Linear",
     slug: "review-github-issues-vs-jira-vs-linear",
     excerpt: "",
@@ -4851,7 +4851,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Projects vs Linear vs Trello",
     slug: "review-github-projects-vs-linear-vs-trello",
     excerpt: "",
@@ -4863,7 +4863,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: GitHub Sponsors vs OpenCollective vs Patreon",
     slug: "review-github-sponsors-vs-opencollective-vs-patreon",
     excerpt: "",
@@ -4875,7 +4875,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google AlloyDB vs Amazon Aurora",
     slug: "review-google-alloydb-vs-amazon-aurora",
     excerpt: "",
@@ -4887,7 +4887,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Bard vs ChatGPT vs Claude",
     slug: "review-google-bard-vs-chatgpt-vs-claude",
     excerpt: "",
@@ -4899,7 +4899,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google BigQuery vs Snowflake vs Databricks",
     slug: "review-google-bigquery-vs-snowflake-vs-databricks",
     excerpt: "",
@@ -4911,7 +4911,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google BigQuery vs Snowflake vs Redshift",
     slug: "review-google-bigquery-vs-snowflake-vs-redshift",
     excerpt: "",
@@ -4923,7 +4923,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Cloud Run vs AWS App Runner vs Fly.io",
     slug: "review-google-cloud-run-vs-aws-app-runner-vs-fly.io",
     excerpt: "",
@@ -4935,7 +4935,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Cloud Run vs AWS App Runner",
     slug: "review-google-cloud-run-vs-aws-app-runner",
     excerpt: "",
@@ -4947,7 +4947,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Cloud Run vs AWS Fargate",
     slug: "review-google-cloud-run-vs-aws-fargate",
     excerpt: "",
@@ -4959,7 +4959,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Cloud Run vs Vercel Functions",
     slug: "review-google-cloud-run-vs-vercel-functions",
     excerpt: "",
@@ -4971,7 +4971,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Colab Pro vs Kaggle Notebooks",
     slug: "review-google-colab-pro-vs-kaggle-notebooks",
     excerpt: "",
@@ -4983,7 +4983,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Drive AI vs Dropbox AI vs Box AI",
     slug: "review-google-drive-ai-vs-dropbox-ai-vs-box-ai",
     excerpt: "",
@@ -4995,7 +4995,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Firebase Extensions vs Supabase Plugins",
     slug: "review-google-firebase-extensions-vs-supabase-plugins",
     excerpt: "",
@@ -5007,7 +5007,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Firebase Firestore vs MongoDB Atlas",
     slug: "review-google-firebase-firestore-vs-mongodb-atlas",
     excerpt: "",
@@ -5019,7 +5019,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Gemini AI vs ChatGPT vs Claude AI",
     slug: "review-google-gemini-ai-vs-chatgpt-vs-claude-ai",
     excerpt: "",
@@ -5031,7 +5031,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Gemini vs ChatGPT vs Claude",
     slug: "review-google-gemini-vs-chatgpt-vs-claude",
     excerpt: "",
@@ -5043,7 +5043,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Gemini vs GPT-5 vs Claude",
     slug: "review-google-gemini-vs-gpt-5-vs-claude",
     excerpt: "",
@@ -5055,7 +5055,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Search Console vs Ahrefs vs SEMrush",
     slug: "review-google-search-console-vs-ahrefs-vs-semrush",
     excerpt: "",
@@ -5067,7 +5067,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Vertex AI vs AWS Bedrock vs Azure OpenAI",
     slug: "review-google-vertex-ai-vs-aws-bedrock-vs-azure-openai",
     excerpt: "",
@@ -5079,7 +5079,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Vertex AI vs OpenAI API",
     slug: "review-google-vertex-ai-vs-openai-api",
     excerpt: "",
@@ -5091,7 +5091,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Hasura Cloud vs Apollo Federation",
     slug: "review-hasura-cloud-vs-apollo-federation",
     excerpt: "",
@@ -5103,7 +5103,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Hasura vs Apollo Server vs GraphQL Yoga",
     slug: "review-hasura-vs-apollo-server-vs-graphql-yoga",
     excerpt: "",
@@ -5115,7 +5115,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Hasura vs PostGraphile for GraphQL APIs",
     slug: "review-hasura-vs-postgraphile-for-graphql-apis",
     excerpt: "",
@@ -5127,7 +5127,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Hasura vs PostGraphile vs Apollo Server",
     slug: "review-hasura-vs-postgraphile-vs-apollo-server",
     excerpt: "",
@@ -5139,7 +5139,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Hasura vs Supabase GraphQL vs Apollo",
     slug: "review-hasura-vs-supabase-graphql-vs-apollo",
     excerpt: "",
@@ -5151,7 +5151,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Headless WordPress vs Ghost",
     slug: "review-headless-wordpress-vs-ghost",
     excerpt: "",
@@ -5163,7 +5163,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Hugging Face Inference API vs OpenAI",
     slug: "review-hugging-face-inference-api-vs-openai",
     excerpt: "",
@@ -5175,7 +5175,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Hugo vs Eleventy vs Astro",
     slug: "review-hugo-vs-eleventy-vs-astro",
     excerpt: "",
@@ -5187,7 +5187,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: JetBrains AI Assistant vs GitHub Copilot",
     slug: "review-jetbrains-ai-assistant-vs-github-copilot",
     excerpt: "",
@@ -5199,7 +5199,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: JetBrains AI Assistant vs VS Code Copilot",
     slug: "review-jetbrains-ai-assistant-vs-vs-code-copilot",
     excerpt: "",
@@ -5211,7 +5211,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: JetBrains Fleet vs VS Code",
     slug: "review-jetbrains-fleet-vs-vs-code",
     excerpt: "",
@@ -5223,7 +5223,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: JetBrains IDEs vs VS Code",
     slug: "review-jetbrains-ides-vs-vs-code",
     excerpt: "",
@@ -5235,7 +5235,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: JetBrains Rider vs Visual Studio",
     slug: "review-jetbrains-rider-vs-visual-studio",
     excerpt: "",
@@ -5247,7 +5247,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Jetpack Compose vs SwiftUI",
     slug: "review-jetpack-compose-vs-swiftui",
     excerpt: "",
@@ -5259,7 +5259,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Kubernetes vs Nomad vs Docker Swarm",
     slug: "review-kubernetes-vs-nomad-vs-docker-swarm",
     excerpt: "",
@@ -5271,7 +5271,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangChain Expression Language vs LangSmith",
     slug: "review-langchain-expression-language-vs-langsmith",
     excerpt: "",
@@ -5283,7 +5283,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangChain Hub vs OpenAI GPT Store",
     slug: "review-langchain-hub-vs-openai-gpt-store",
     excerpt: "",
@@ -5295,7 +5295,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangChain vs DSPy vs Semantic Kernel",
     slug: "review-langchain-vs-dspy-vs-semantic-kernel",
     excerpt: "",
@@ -5307,7 +5307,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangChain vs LlamaIndex for AI Apps",
     slug: "review-langchain-vs-llamaindex-for-ai-apps",
     excerpt: "",
@@ -5319,7 +5319,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangChain vs LlamaIndex vs AutoGPT",
     slug: "review-langchain-vs-llamaindex-vs-autogpt",
     excerpt: "",
@@ -5331,7 +5331,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangChain vs LlamaIndex vs Haystack",
     slug: "review-langchain-vs-llamaindex-vs-haystack",
     excerpt: "",
@@ -5343,7 +5343,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangChain vs Semantic Kernel vs Haystack",
     slug: "review-langchain-vs-semantic-kernel-vs-haystack",
     excerpt: "",
@@ -5355,7 +5355,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangGraph vs AutoGPT vs BabyAGI",
     slug: "review-langgraph-vs-autogpt-vs-babyagi",
     excerpt: "",
@@ -5367,7 +5367,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: LangGraph vs CrewAI vs AutoGen",
     slug: "review-langgraph-vs-crewai-vs-autogen",
     excerpt: "",
@@ -5379,7 +5379,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Linear vs ClickUp vs Monday.com",
     slug: "review-linear-vs-clickup-vs-monday.com",
     excerpt: "",
@@ -5391,7 +5391,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Linear vs Jira vs Asana",
     slug: "review-linear-vs-jira-vs-asana",
     excerpt: "",
@@ -5403,7 +5403,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Linear vs Jira vs Trello",
     slug: "review-linear-vs-jira-vs-trello",
     excerpt: "",
@@ -5415,7 +5415,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Mailgun vs SendGrid vs Postmark",
     slug: "review-mailgun-vs-sendgrid-vs-postmark",
     excerpt: "",
@@ -5427,7 +5427,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Meilisearch vs Typesense vs Algolia",
     slug: "review-meilisearch-vs-typesense-vs-algolia",
     excerpt: "",
@@ -5439,7 +5439,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Microsoft Fabric vs Google Looker Studio",
     slug: "review-microsoft-fabric-vs-google-looker-studio",
     excerpt: "",
@@ -5451,7 +5451,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MongoDB Atlas Search vs Meilisearch",
     slug: "review-mongodb-atlas-search-vs-meilisearch",
     excerpt: "",
@@ -5463,7 +5463,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MongoDB Atlas vs DocumentDB vs Couchbase",
     slug: "review-mongodb-atlas-vs-documentdb-vs-couchbase",
     excerpt: "",
@@ -5475,7 +5475,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MongoDB Atlas vs DynamoDB",
     slug: "review-mongodb-atlas-vs-dynamodb",
     excerpt: "",
@@ -5487,7 +5487,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MongoDB Atlas vs Firestore vs DynamoDB",
     slug: "review-mongodb-atlas-vs-firestore-vs-dynamodb",
     excerpt: "",
@@ -5499,7 +5499,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MongoDB Realm vs Firebase Firestore",
     slug: "review-mongodb-realm-vs-firebase-firestore",
     excerpt: "",
@@ -5511,7 +5511,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MongoDB vs CouchDB vs DynamoDB",
     slug: "review-mongodb-vs-couchdb-vs-dynamodb",
     excerpt: "",
@@ -5523,7 +5523,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MongoDB vs CouchDB vs FaunaDB",
     slug: "review-mongodb-vs-couchdb-vs-faunadb",
     excerpt: "",
@@ -5535,7 +5535,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: MySQL Heatwave vs AlloyDB vs Aurora",
     slug: "review-mysql-heatwave-vs-alloydb-vs-aurora",
     excerpt: "",
@@ -5547,7 +5547,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Branching vs PlanetScale Branching",
     slug: "review-neon-branching-vs-planetscale-branching",
     excerpt: "",
@@ -5559,7 +5559,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs AlloyDB vs PlanetScale",
     slug: "review-neon-database-vs-alloydb-vs-planetscale",
     excerpt: "",
@@ -5571,7 +5571,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs Aurora Serverless",
     slug: "review-neon-database-vs-aurora-serverless",
     excerpt: "",
@@ -5583,7 +5583,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs Aurora vs AlloyDB",
     slug: "review-neon-database-vs-aurora-vs-alloydb",
     excerpt: "",
@@ -5595,7 +5595,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs AWS Aurora vs AlloyDB",
     slug: "review-neon-database-vs-aws-aurora-vs-alloydb",
     excerpt: "",
@@ -5607,7 +5607,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs PlanetScale vs AlloyDB",
     slug: "review-neon-database-vs-planetscale-vs-alloydb",
     excerpt: "",
@@ -5619,7 +5619,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs Planetscale vs Supabase",
     slug: "review-neon-database-vs-planetscale-vs-supabase",
     excerpt: "",
@@ -5631,7 +5631,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs Supabase Database",
     slug: "review-neon-database-vs-supabase-database",
     excerpt: "",
@@ -5643,7 +5643,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs Supabase vs PlanetScale",
     slug: "review-neon-database-vs-supabase-vs-planetscale",
     excerpt: "",
@@ -5655,7 +5655,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs Turso vs LibSQL",
     slug: "review-neon-database-vs-turso-vs-libsql",
     excerpt: "",
@@ -5667,7 +5667,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Database vs Yugabyte vs CockroachDB",
     slug: "review-neon-database-vs-yugabyte-vs-cockroachdb",
     excerpt: "",
@@ -5679,7 +5679,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Postgres vs AlloyDB vs Aurora",
     slug: "review-neon-postgres-vs-alloydb-vs-aurora",
     excerpt: "",
@@ -5691,7 +5691,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Postgres vs Yugabyte vs TiDB",
     slug: "review-neon-postgres-vs-yugabyte-vs-tidb",
     excerpt: "",
@@ -5703,7 +5703,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Serverless Postgres vs Aurora Serverless",
     slug: "review-neon-serverless-postgres-vs-aurora-serverless",
     excerpt: "",
@@ -5715,7 +5715,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Serverless Postgres vs CockroachDB",
     slug: "review-neon-serverless-postgres-vs-cockroachdb",
     excerpt: "",
@@ -5727,7 +5727,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Serverless Postgres vs Planetscale",
     slug: "review-neon-serverless-postgres-vs-planetscale",
     excerpt: "",
@@ -5739,7 +5739,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Serverless vs CockroachDB vs Yugabyte",
     slug: "review-neon-serverless-vs-cockroachdb-vs-yugabyte",
     excerpt: "",
@@ -5751,7 +5751,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon vs AlloyDB vs YugabyteDB",
     slug: "review-neon-vs-alloydb-vs-yugabytedb",
     excerpt: "",
@@ -5763,7 +5763,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon vs PlanetScale vs LibSQL",
     slug: "review-neon-vs-planetscale-vs-libsql",
     excerpt: "",
@@ -5775,7 +5775,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon vs PlanetScale vs Yugabyte",
     slug: "review-neon-vs-planetscale-vs-yugabyte",
     excerpt: "",
@@ -5787,7 +5787,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon vs Turso vs PlanetScale",
     slug: "review-neon-vs-turso-vs-planetscale",
     excerpt: "",
@@ -5799,7 +5799,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Netlify CMS vs TinaCMS vs Decap CMS",
     slug: "review-netlify-cms-vs-tinacms-vs-decap-cms",
     excerpt: "",
@@ -5811,7 +5811,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Netlify Edge Functions vs Vercel Edge Functions",
     slug: "review-netlify-edge-functions-vs-vercel-edge-functions",
     excerpt: "",
@@ -5823,7 +5823,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Netlify Edge vs Cloudflare Workers",
     slug: "review-netlify-edge-vs-cloudflare-workers",
     excerpt: "",
@@ -5835,7 +5835,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Netlify Functions vs AWS Lambda",
     slug: "review-netlify-functions-vs-aws-lambda",
     excerpt: "",
@@ -5847,7 +5847,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js 15 vs Nuxt 4 vs Remix",
     slug: "review-next.js-15-vs-nuxt-4-vs-remix",
     excerpt: "",
@@ -5859,7 +5859,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js API Routes vs Express APIs",
     slug: "review-next.js-api-routes-vs-express-apis",
     excerpt: "",
@@ -5871,7 +5871,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js App Router vs Pages Router",
     slug: "review-next.js-app-router-vs-pages-router",
     excerpt: "",
@@ -5883,7 +5883,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js Middleware vs Cloudflare Workers",
     slug: "review-next.js-middleware-vs-cloudflare-workers",
     excerpt: "",
@@ -5895,7 +5895,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js Middleware vs Express Middleware",
     slug: "review-next.js-middleware-vs-express-middleware",
     excerpt: "",
@@ -5907,7 +5907,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js Server Actions vs Remix Loaders",
     slug: "review-next.js-server-actions-vs-remix-loaders",
     excerpt: "",
@@ -5919,7 +5919,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js Server Actions vs tRPC vs GraphQL",
     slug: "review-next.js-server-actions-vs-trpc-vs-graphql",
     excerpt: "",
@@ -5931,7 +5931,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js Static vs Dynamic Rendering",
     slug: "review-next.js-static-vs-dynamic-rendering",
     excerpt: "",
@@ -5943,7 +5943,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js vs Nuxt vs SvelteKit Performance",
     slug: "review-next.js-vs-nuxt-vs-sveltekit-performance",
     excerpt: "",
@@ -5955,7 +5955,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js vs Remix vs Nuxt",
     slug: "review-next.js-vs-remix-vs-nuxt",
     excerpt: "",
@@ -5967,7 +5967,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js vs SvelteKit vs Remix for SEO",
     slug: "review-next.js-vs-sveltekit-vs-remix-for-seo",
     excerpt: "",
@@ -5979,7 +5979,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js vs SvelteKit vs SolidStart",
     slug: "review-next.js-vs-sveltekit-vs-solidstart",
     excerpt: "",
@@ -5991,7 +5991,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: NextAuth.js vs Clerk for Authentication",
     slug: "review-nextauth.js-vs-clerk-for-authentication",
     excerpt: "",
@@ -6003,7 +6003,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: NextAuth.js vs Clerk vs Auth.js",
     slug: "review-nextauth.js-vs-clerk-vs-auth.js",
     excerpt: "",
@@ -6015,7 +6015,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: NextAuth.js vs Clerk vs Supabase Auth",
     slug: "review-nextauth.js-vs-clerk-vs-supabase-auth",
     excerpt: "",
@@ -6027,7 +6027,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Nginx vs Apache vs Caddy",
     slug: "review-nginx-vs-apache-vs-caddy",
     excerpt: "",
@@ -6039,7 +6039,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Notion AI vs ClickUp AI vs Coda AI",
     slug: "review-notion-ai-vs-clickup-ai-vs-coda-ai",
     excerpt: "",
@@ -6051,7 +6051,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Notion Calendar vs Cron vs Google Calendar",
     slug: "review-notion-calendar-vs-cron-vs-google-calendar",
     excerpt: "",
@@ -6063,7 +6063,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Notion vs Obsidian for Developers",
     slug: "review-notion-vs-obsidian-for-developers",
     excerpt: "",
@@ -6075,7 +6075,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Nuxt 4 vs Next.js 15",
     slug: "review-nuxt-4-vs-next.js-15",
     excerpt: "",
@@ -6087,7 +6087,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Nuxt 4 vs SvelteKit vs Astro",
     slug: "review-nuxt-4-vs-sveltekit-vs-astro",
     excerpt: "",
@@ -6099,7 +6099,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Open Source Analytics Tools Compared",
     slug: "review-open-source-analytics-tools-compared",
     excerpt: "",
@@ -6111,7 +6111,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI Fine-Tuning vs Hugging Face Training",
     slug: "review-openai-fine-tuning-vs-hugging-face-training",
     excerpt: "",
@@ -6123,7 +6123,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI GPT Store vs Hugging Face Hub",
     slug: "review-openai-gpt-store-vs-hugging-face-hub",
     excerpt: "",
@@ -6135,7 +6135,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI GPT-4.5 vs Anthropic Claude vs Gemini",
     slug: "review-openai-gpt-4.5-vs-anthropic-claude-vs-gemini",
     excerpt: "",
@@ -6147,7 +6147,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI GPT-5 vs Claude 3.5 vs Gemini Ultra",
     slug: "review-openai-gpt-5-vs-claude-3.5-vs-gemini-ultra",
     excerpt: "",
@@ -6159,7 +6159,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI GPTs vs Custom AI Agents",
     slug: "review-openai-gpts-vs-custom-ai-agents",
     excerpt: "",
@@ -6171,7 +6171,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI Sora vs Runway Gen-3 vs Pika Labs",
     slug: "review-openai-sora-vs-runway-gen-3-vs-pika-labs",
     excerpt: "",
@@ -6183,7 +6183,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI vs Anthropic vs Mistral APIs",
     slug: "review-openai-vs-anthropic-vs-mistral-apis",
     excerpt: "",
@@ -6195,7 +6195,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI Whisper vs AssemblyAI vs Deepgram",
     slug: "review-openai-whisper-vs-assemblyai-vs-deepgram",
     excerpt: "",
@@ -6207,7 +6207,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: OpenAI Whisper vs Deepgram vs AssemblyAI",
     slug: "review-openai-whisper-vs-deepgram-vs-assemblyai",
     excerpt: "",
@@ -6219,7 +6219,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Paddle vs Gumroad vs Lemon Squeezy",
     slug: "review-paddle-vs-gumroad-vs-lemon-squeezy",
     excerpt: "",
@@ -6231,7 +6231,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Plaid vs Teller vs Truelayer APIs",
     slug: "review-plaid-vs-teller-vs-truelayer-apis",
     excerpt: "",
@@ -6243,7 +6243,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PlanetScale Branching vs Neon Branching",
     slug: "review-planetscale-branching-vs-neon-branching",
     excerpt: "",
@@ -6255,7 +6255,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PlanetScale vs Neon for Serverless Databases",
     slug: "review-planetscale-vs-neon-for-serverless-databases",
     excerpt: "",
@@ -6267,7 +6267,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PlanetScale vs Neon vs AlloyDB",
     slug: "review-planetscale-vs-neon-vs-alloydb",
     excerpt: "",
@@ -6279,7 +6279,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Planetscale vs Neon vs Yugabyte",
     slug: "review-planetscale-vs-neon-vs-yugabyte",
     excerpt: "",
@@ -6291,7 +6291,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Plausible vs Google Analytics",
     slug: "review-plausible-vs-google-analytics",
     excerpt: "",
@@ -6303,7 +6303,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Playwright vs Cypress vs Selenium",
     slug: "review-playwright-vs-cypress-vs-selenium",
     excerpt: "",
@@ -6315,7 +6315,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Postgres Citus vs CockroachDB vs AlloyDB",
     slug: "review-postgres-citus-vs-cockroachdb-vs-alloydb",
     excerpt: "",
@@ -6327,7 +6327,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Postgres Citus vs CockroachDB vs YugabyteDB",
     slug: "review-postgres-citus-vs-cockroachdb-vs-yugabytedb",
     excerpt: "",
@@ -6339,7 +6339,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Postgres Extensions vs MySQL Plugins",
     slug: "review-postgres-extensions-vs-mysql-plugins",
     excerpt: "",
@@ -6351,7 +6351,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Postgres Foreign Data Wrappers vs Federated Queries",
     slug: "review-postgres-foreign-data-wrappers-vs-federated-queries",
     excerpt: "",
@@ -6363,7 +6363,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Postgres Foreign Tables vs MySQL Federated",
     slug: "review-postgres-foreign-tables-vs-mysql-federated",
     excerpt: "",
@@ -6375,7 +6375,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL Citus vs Yugabyte vs CockroachDB",
     slug: "review-postgresql-citus-vs-yugabyte-vs-cockroachdb",
     excerpt: "",
@@ -6387,7 +6387,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL Extensions vs MySQL Plugins",
     slug: "review-postgresql-extensions-vs-mysql-plugins",
     excerpt: "",
@@ -6399,7 +6399,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL Foreign Data Wrappers vs MongoDB Stitch",
     slug: "review-postgresql-foreign-data-wrappers-vs-mongodb-stitch",
     excerpt: "",
@@ -6411,7 +6411,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL JSONB vs MongoDB for Documents",
     slug: "review-postgresql-jsonb-vs-mongodb-for-documents",
     excerpt: "",
@@ -6423,7 +6423,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL JSONB vs MongoDB vs CouchDB",
     slug: "review-postgresql-jsonb-vs-mongodb-vs-couchdb",
     excerpt: "",
@@ -6435,7 +6435,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL Logical Replication vs MySQL Binlog",
     slug: "review-postgresql-logical-replication-vs-mysql-binlog",
     excerpt: "",
@@ -6447,7 +6447,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL Timescale vs InfluxDB vs QuestDB",
     slug: "review-postgresql-timescale-vs-influxdb-vs-questdb",
     excerpt: "",
@@ -6459,7 +6459,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL Timescale vs InfluxDB",
     slug: "review-postgresql-timescale-vs-influxdb",
     excerpt: "",
@@ -6471,7 +6471,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL TimescaleDB vs ClickHouse",
     slug: "review-postgresql-timescaledb-vs-clickhouse",
     excerpt: "",
@@ -6483,7 +6483,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL vs MySQL vs MariaDB",
     slug: "review-postgresql-vs-mysql-vs-mariadb",
     excerpt: "",
@@ -6495,7 +6495,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL vs MySQL vs SQLite",
     slug: "review-postgresql-vs-mysql-vs-sqlite",
     excerpt: "",
@@ -6507,7 +6507,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostgreSQL vs Yugabyte vs TiDB",
     slug: "review-postgresql-vs-yugabyte-vs-tidb",
     excerpt: "",
@@ -6519,7 +6519,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: PostHog vs Mixpanel vs Amplitude",
     slug: "review-posthog-vs-mixpanel-vs-amplitude",
     excerpt: "",
@@ -6531,7 +6531,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Postman vs Hoppscotch for API Testing",
     slug: "review-postman-vs-hoppscotch-for-api-testing",
     excerpt: "",
@@ -6543,7 +6543,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma Accelerate vs Drizzle Kit",
     slug: "review-prisma-accelerate-vs-drizzle-kit",
     excerpt: "",
@@ -6555,7 +6555,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma Accelerate vs Neon Storage Branching",
     slug: "review-prisma-accelerate-vs-neon-storage-branching",
     excerpt: "",
@@ -6567,7 +6567,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma Accelerate vs Supabase Edge Caching",
     slug: "review-prisma-accelerate-vs-supabase-edge-caching",
     excerpt: "",
@@ -6579,7 +6579,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma Accelerate vs Supabase Edge",
     slug: "review-prisma-accelerate-vs-supabase-edge",
     excerpt: "",
@@ -6591,7 +6591,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma Client Extensions vs Kysely",
     slug: "review-prisma-client-extensions-vs-kysely",
     excerpt: "",
@@ -6603,7 +6603,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma Migrate vs Drizzle Kit vs Liquibase",
     slug: "review-prisma-migrate-vs-drizzle-kit-vs-liquibase",
     excerpt: "",
@@ -6615,7 +6615,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma ORM vs Drizzle ORM vs Sequelize",
     slug: "review-prisma-orm-vs-drizzle-orm-vs-sequelize",
     excerpt: "",
@@ -6627,7 +6627,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma ORM vs Drizzle ORM vs TypeORM",
     slug: "review-prisma-orm-vs-drizzle-orm-vs-typeorm",
     excerpt: "",
@@ -6639,7 +6639,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma ORM vs Drizzle vs Kysely",
     slug: "review-prisma-orm-vs-drizzle-vs-kysely",
     excerpt: "",
@@ -6651,7 +6651,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma ORM vs Sequelize vs MikroORM",
     slug: "review-prisma-orm-vs-sequelize-vs-mikroorm",
     excerpt: "",
@@ -6663,7 +6663,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma ORM vs TypeORM vs MikroORM",
     slug: "review-prisma-orm-vs-typeorm-vs-mikroorm",
     excerpt: "",
@@ -6675,7 +6675,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma vs Drizzle ORM vs TypeORM",
     slug: "review-prisma-vs-drizzle-orm-vs-typeorm",
     excerpt: "",
@@ -6687,7 +6687,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma vs Drizzle vs Objection.js",
     slug: "review-prisma-vs-drizzle-vs-objection.js",
     excerpt: "",
@@ -6699,7 +6699,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Prisma vs Sequelize vs Knex.js",
     slug: "review-prisma-vs-sequelize-vs-knex.js",
     excerpt: "",
@@ -6711,7 +6711,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Qwik vs Astro vs Next.js Speed",
     slug: "review-qwik-vs-astro-vs-next.js-speed",
     excerpt: "",
@@ -6723,7 +6723,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Qwik vs Astro vs SolidStart",
     slug: "review-qwik-vs-astro-vs-solidstart",
     excerpt: "",
@@ -6735,7 +6735,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Qwik vs SolidJS vs Svelte",
     slug: "review-qwik-vs-solidjs-vs-svelte",
     excerpt: "",
@@ -6747,7 +6747,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Railway vs Render vs Fly.io for App Hosting",
     slug: "review-railway-vs-render-vs-fly.io-for-app-hosting",
     excerpt: "",
@@ -6759,7 +6759,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: React 19 vs Vue 4 vs Angular 16",
     slug: "review-react-19-vs-vue-4-vs-angular-16",
     excerpt: "",
@@ -6771,7 +6771,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: React Native vs Flutter vs Ionic",
     slug: "review-react-native-vs-flutter-vs-ionic",
     excerpt: "",
@@ -6783,7 +6783,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: React Query vs Apollo Client vs SWR",
     slug: "review-react-query-vs-apollo-client-vs-swr",
     excerpt: "",
@@ -6795,7 +6795,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: React Server Components vs Traditional SSR",
     slug: "review-react-server-components-vs-traditional-ssr",
     excerpt: "",
@@ -6807,7 +6807,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Cloud vs DragonflyDB vs Valkey",
     slug: "review-redis-cloud-vs-dragonflydb-vs-valkey",
     excerpt: "",
@@ -6819,7 +6819,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Enterprise vs KeyDB",
     slug: "review-redis-enterprise-vs-keydb",
     excerpt: "",
@@ -6831,7 +6831,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis JSON vs MongoDB JSON vs PostgreSQL JSONB",
     slug: "review-redis-json-vs-mongodb-json-vs-postgresql-jsonb",
     excerpt: "",
@@ -6843,7 +6843,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Stack vs Aerospike vs ScyllaDB",
     slug: "review-redis-stack-vs-aerospike-vs-scylladb",
     excerpt: "",
@@ -6855,7 +6855,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Stack vs DragonflyDB",
     slug: "review-redis-stack-vs-dragonflydb",
     excerpt: "",
@@ -6867,7 +6867,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Stack vs Valkey vs KeyDB",
     slug: "review-redis-stack-vs-valkey-vs-keydb",
     excerpt: "",
@@ -6879,7 +6879,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Streams vs Kafka vs Pulsar",
     slug: "review-redis-streams-vs-kafka-vs-pulsar",
     excerpt: "",
@@ -6891,7 +6891,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Vector vs Weaviate vs Pinecone",
     slug: "review-redis-vector-vs-weaviate-vs-pinecone",
     excerpt: "",
@@ -6903,7 +6903,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis vs DragonflyDB vs Valkey",
     slug: "review-redis-vs-dragonflydb-vs-valkey",
     excerpt: "",
@@ -6915,7 +6915,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis vs KeyDB vs Valkey Performance",
     slug: "review-redis-vs-keydb-vs-valkey-performance",
     excerpt: "",
@@ -6927,7 +6927,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis vs Memcached for Caching",
     slug: "review-redis-vs-memcached-for-caching",
     excerpt: "",
@@ -6939,7 +6939,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: RedisGraph vs TigerGraph vs Neo4j",
     slug: "review-redisgraph-vs-tigergraph-vs-neo4j",
     excerpt: "",
@@ -6951,7 +6951,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Remix vs Next.js vs Astro Islands",
     slug: "review-remix-vs-next.js-vs-astro-islands",
     excerpt: "",
@@ -6963,7 +6963,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Remix vs Next.js vs Nuxt for 2025",
     slug: "review-remix-vs-next.js-vs-nuxt-for-2025",
     excerpt: "",
@@ -6975,7 +6975,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Remix vs Next.js vs SvelteKit",
     slug: "review-remix-vs-next.js-vs-sveltekit",
     excerpt: "",
@@ -6987,7 +6987,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Remix vs SolidStart vs Astro Islands",
     slug: "review-remix-vs-solidstart-vs-astro-islands",
     excerpt: "",
@@ -6999,7 +6999,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Render AI Deploy vs Vercel AI Deploy",
     slug: "review-render-ai-deploy-vs-vercel-ai-deploy",
     excerpt: "",
@@ -7011,7 +7011,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Render vs DigitalOcean App Platform",
     slug: "review-render-vs-digitalocean-app-platform",
     excerpt: "",
@@ -7023,7 +7023,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Render vs Railway vs Fly.io",
     slug: "review-render-vs-railway-vs-fly.io",
     excerpt: "",
@@ -7035,7 +7035,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Render vs Vercel for Startups",
     slug: "review-render-vs-vercel-for-startups",
     excerpt: "",
@@ -7047,7 +7047,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Sanity Studio vs Directus vs KeystoneJS",
     slug: "review-sanity-studio-vs-directus-vs-keystonejs",
     excerpt: "",
@@ -7059,7 +7059,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Sanity Studio vs TinaCMS vs Directus",
     slug: "review-sanity-studio-vs-tinacms-vs-directus",
     excerpt: "",
@@ -7071,7 +7071,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Sanity vs Contentful vs Storyblok",
     slug: "review-sanity-vs-contentful-vs-storyblok",
     excerpt: "",
@@ -7083,7 +7083,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Sentry vs LogRocket for Error Monitoring",
     slug: "review-sentry-vs-logrocket-for-error-monitoring",
     excerpt: "",
@@ -7095,7 +7095,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: ShadCN UI vs Material UI",
     slug: "review-shadcn-ui-vs-material-ui",
     excerpt: "",
@@ -7107,7 +7107,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify AI Checkout vs Stripe AI",
     slug: "review-shopify-ai-checkout-vs-stripe-ai",
     excerpt: "",
@@ -7119,7 +7119,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify AI Storefront vs Wix AI vs Squarespace AI",
     slug: "review-shopify-ai-storefront-vs-wix-ai-vs-squarespace-ai",
     excerpt: "",
@@ -7131,7 +7131,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify AI Tools vs Squarespace AI vs Wix AI",
     slug: "review-shopify-ai-tools-vs-squarespace-ai-vs-wix-ai",
     excerpt: "",
@@ -7143,7 +7143,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify AI Tools vs Wix AI vs Framer AI",
     slug: "review-shopify-ai-tools-vs-wix-ai-vs-framer-ai",
     excerpt: "",
@@ -7155,7 +7155,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify B2B vs BigCommerce B2B",
     slug: "review-shopify-b2b-vs-bigcommerce-b2b",
     excerpt: "",
@@ -7167,7 +7167,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Checkout vs Stripe Checkout",
     slug: "review-shopify-checkout-vs-stripe-checkout",
     excerpt: "",
@@ -7179,7 +7179,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Flow vs Zapier vs Make",
     slug: "review-shopify-flow-vs-zapier-vs-make",
     excerpt: "",
@@ -7191,7 +7191,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Functions vs BigCommerce Apps",
     slug: "review-shopify-functions-vs-bigcommerce-apps",
     excerpt: "",
@@ -7203,7 +7203,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Functions vs Custom Apps",
     slug: "review-shopify-functions-vs-custom-apps",
     excerpt: "",
@@ -7215,7 +7215,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Hydrogen vs Next.js Commerce",
     slug: "review-shopify-hydrogen-vs-next.js-commerce",
     excerpt: "",
@@ -7227,7 +7227,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Hydrogen vs Remix Commerce",
     slug: "review-shopify-hydrogen-vs-remix-commerce",
     excerpt: "",
@@ -7239,7 +7239,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Markets Pro vs Global-e",
     slug: "review-shopify-markets-pro-vs-global-e",
     excerpt: "",
@@ -7251,7 +7251,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Markets vs WooCommerce Multi-Currency",
     slug: "review-shopify-markets-vs-woocommerce-multi-currency",
     excerpt: "",
@@ -7263,7 +7263,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Plus vs Adobe Commerce",
     slug: "review-shopify-plus-vs-adobe-commerce",
     excerpt: "",
@@ -7275,7 +7275,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Plus vs BigCommerce Enterprise",
     slug: "review-shopify-plus-vs-bigcommerce-enterprise",
     excerpt: "",
@@ -7287,7 +7287,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Plus vs Magento Commerce",
     slug: "review-shopify-plus-vs-magento-commerce",
     excerpt: "",
@@ -7299,7 +7299,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Plus vs Salesforce Commerce Cloud",
     slug: "review-shopify-plus-vs-salesforce-commerce-cloud",
     excerpt: "",
@@ -7311,7 +7311,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify POS vs Square POS",
     slug: "review-shopify-pos-vs-square-pos",
     excerpt: "",
@@ -7323,7 +7323,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify POS vs Square vs Lightspeed",
     slug: "review-shopify-pos-vs-square-vs-lightspeed",
     excerpt: "",
@@ -7335,7 +7335,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify Subscriptions vs Recharge vs Bold",
     slug: "review-shopify-subscriptions-vs-recharge-vs-bold",
     excerpt: "",
@@ -7347,7 +7347,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify vs Wix vs Squarespace",
     slug: "review-shopify-vs-wix-vs-squarespace",
     excerpt: "",
@@ -7359,7 +7359,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify vs WooCommerce vs BigCommerce",
     slug: "review-shopify-vs-woocommerce-vs-bigcommerce",
     excerpt: "",
@@ -7371,7 +7371,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify vs WooCommerce vs Magento",
     slug: "review-shopify-vs-woocommerce-vs-magento",
     excerpt: "",
@@ -7383,7 +7383,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Slack AI vs Microsoft Teams AI",
     slug: "review-slack-ai-vs-microsoft-teams-ai",
     excerpt: "",
@@ -7395,7 +7395,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Storyblok vs Sanity vs Strapi",
     slug: "review-storyblok-vs-sanity-vs-strapi",
     excerpt: "",
@@ -7407,7 +7407,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Strapi Cloud vs Sanity Studio vs Directus Cloud",
     slug: "review-strapi-cloud-vs-sanity-studio-vs-directus-cloud",
     excerpt: "",
@@ -7419,7 +7419,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Atlas vs Firstbase.io",
     slug: "review-stripe-atlas-vs-firstbase.io",
     excerpt: "",
@@ -7431,7 +7431,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Atlas vs Mercury Banking",
     slug: "review-stripe-atlas-vs-mercury-banking",
     excerpt: "",
@@ -7443,7 +7443,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Billing vs Paddle Billing",
     slug: "review-stripe-billing-vs-paddle-billing",
     excerpt: "",
@@ -7455,7 +7455,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Billing vs Paddle vs Chargebee",
     slug: "review-stripe-billing-vs-paddle-vs-chargebee",
     excerpt: "",
@@ -7467,7 +7467,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Checkout vs Braintree",
     slug: "review-stripe-checkout-vs-braintree",
     excerpt: "",
@@ -7479,7 +7479,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Checkout vs Paddle Checkout",
     slug: "review-stripe-checkout-vs-paddle-checkout",
     excerpt: "",
@@ -7491,7 +7491,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Connect vs Adyen vs Braintree",
     slug: "review-stripe-connect-vs-adyen-vs-braintree",
     excerpt: "",
@@ -7503,7 +7503,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Connect vs Adyen vs PayPal",
     slug: "review-stripe-connect-vs-adyen-vs-paypal",
     excerpt: "",
@@ -7515,7 +7515,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Connect vs PayPal Adaptive Payments",
     slug: "review-stripe-connect-vs-paypal-adaptive-payments",
     excerpt: "",
@@ -7527,7 +7527,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Connect vs PayPal Marketplace",
     slug: "review-stripe-connect-vs-paypal-marketplace",
     excerpt: "",
@@ -7539,7 +7539,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Issuing vs Payoneer vs Wise",
     slug: "review-stripe-issuing-vs-payoneer-vs-wise",
     excerpt: "",
@@ -7551,7 +7551,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe Terminal vs Square Terminal",
     slug: "review-stripe-terminal-vs-square-terminal",
     excerpt: "",
@@ -7563,7 +7563,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Stripe vs Razorpay vs Payoneer",
     slug: "review-stripe-vs-razorpay-vs-payoneer",
     excerpt: "",
@@ -7575,7 +7575,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Auth Helpers vs Firebase Extensions",
     slug: "review-supabase-auth-helpers-vs-firebase-extensions",
     excerpt: "",
@@ -7587,7 +7587,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Auth vs Clerk vs Auth0",
     slug: "review-supabase-auth-vs-clerk-vs-auth0",
     excerpt: "",
@@ -7599,7 +7599,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Auth vs Clerk vs Firebase Auth",
     slug: "review-supabase-auth-vs-clerk-vs-firebase-auth",
     excerpt: "",
@@ -7611,7 +7611,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Auth vs Firebase Auth vs Clerk",
     slug: "review-supabase-auth-vs-firebase-auth-vs-clerk",
     excerpt: "",
@@ -7623,7 +7623,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Database vs Firestore vs DynamoDB",
     slug: "review-supabase-database-vs-firestore-vs-dynamodb",
     excerpt: "",
@@ -7635,7 +7635,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Edge Caching vs Cloudflare Caching",
     slug: "review-supabase-edge-caching-vs-cloudflare-caching",
     excerpt: "",
@@ -7647,7 +7647,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Edge Functions vs Cloudflare Workers",
     slug: "review-supabase-edge-functions-vs-cloudflare-workers",
     excerpt: "",
@@ -7659,7 +7659,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Edge Functions vs Deno Deploy",
     slug: "review-supabase-edge-functions-vs-deno-deploy",
     excerpt: "",
@@ -7671,7 +7671,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Edge Functions vs Netlify Functions",
     slug: "review-supabase-edge-functions-vs-netlify-functions",
     excerpt: "",
@@ -7683,7 +7683,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Edge Runtime vs Cloudflare Workers",
     slug: "review-supabase-edge-runtime-vs-cloudflare-workers",
     excerpt: "",
@@ -7695,7 +7695,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Edge vs Cloudflare Edge",
     slug: "review-supabase-edge-vs-cloudflare-edge",
     excerpt: "",
@@ -7707,7 +7707,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Edge vs Deno Deploy vs Cloudflare Workers",
     slug: "review-supabase-edge-vs-deno-deploy-vs-cloudflare-workers",
     excerpt: "",
@@ -7719,7 +7719,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Functions vs AWS Lambda",
     slug: "review-supabase-functions-vs-aws-lambda",
     excerpt: "",
@@ -7731,7 +7731,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Functions vs Cloudflare Workers AI",
     slug: "review-supabase-functions-vs-cloudflare-workers-ai",
     excerpt: "",
@@ -7743,7 +7743,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Functions vs Vercel Functions",
     slug: "review-supabase-functions-vs-vercel-functions",
     excerpt: "",
@@ -7755,7 +7755,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase pgvector vs Chroma vs Milvus",
     slug: "review-supabase-pgvector-vs-chroma-vs-milvus",
     excerpt: "",
@@ -7767,7 +7767,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase pgvector vs Pinecone vs Weaviate",
     slug: "review-supabase-pgvector-vs-pinecone-vs-weaviate",
     excerpt: "",
@@ -7779,7 +7779,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase pgvector vs Qdrant vs Milvus",
     slug: "review-supabase-pgvector-vs-qdrant-vs-milvus",
     excerpt: "",
@@ -7791,7 +7791,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Realtime vs Ably vs PubNub",
     slug: "review-supabase-realtime-vs-ably-vs-pubnub",
     excerpt: "",
@@ -7803,7 +7803,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Realtime vs Ably vs Pusher",
     slug: "review-supabase-realtime-vs-ably-vs-pusher",
     excerpt: "",
@@ -7815,7 +7815,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Realtime vs Firebase Firestore",
     slug: "review-supabase-realtime-vs-firebase-firestore",
     excerpt: "",
@@ -7827,7 +7827,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Realtime vs Socket.io vs Pusher",
     slug: "review-supabase-realtime-vs-socket.io-vs-pusher",
     excerpt: "",
@@ -7839,7 +7839,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Storage vs AWS S3 vs GCP Storage",
     slug: "review-supabase-storage-vs-aws-s3-vs-gcp-storage",
     excerpt: "",
@@ -7851,7 +7851,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Storage vs Cloudinary vs Firebase Storage",
     slug: "review-supabase-storage-vs-cloudinary-vs-firebase-storage",
     excerpt: "",
@@ -7863,7 +7863,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Storage vs Firebase Storage",
     slug: "review-supabase-storage-vs-firebase-storage",
     excerpt: "",
@@ -7875,7 +7875,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Vector vs Pinecone vs Weaviate",
     slug: "review-supabase-vector-vs-pinecone-vs-weaviate",
     excerpt: "",
@@ -7887,7 +7887,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Vector vs Pinecone",
     slug: "review-supabase-vector-vs-pinecone",
     excerpt: "",
@@ -7899,7 +7899,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase vs Firebase vs Appwrite",
     slug: "review-supabase-vs-firebase-vs-appwrite",
     excerpt: "",
@@ -7911,7 +7911,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Svelte Native vs React Native",
     slug: "review-svelte-native-vs-react-native",
     excerpt: "",
@@ -7923,7 +7923,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: SvelteKit SSR vs Next.js RSC",
     slug: "review-sveltekit-ssr-vs-next.js-rsc",
     excerpt: "",
@@ -7935,7 +7935,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: SvelteKit vs Nuxt 4 vs Next.js",
     slug: "review-sveltekit-vs-nuxt-4-vs-next.js",
     excerpt: "",
@@ -7947,7 +7947,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: SvelteKit vs Remix vs Next.js in 2025",
     slug: "review-sveltekit-vs-remix-vs-next.js-in-2025",
     excerpt: "",
@@ -7959,7 +7959,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: SvelteKit vs SolidStart vs Qwik",
     slug: "review-sveltekit-vs-solidstart-vs-qwik",
     excerpt: "",
@@ -7971,7 +7971,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind CSS vs Bootstrap 6 vs Bulma",
     slug: "review-tailwind-css-vs-bootstrap-6-vs-bulma",
     excerpt: "",
@@ -7983,7 +7983,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind CSS vs Bootstrap vs Foundation",
     slug: "review-tailwind-css-vs-bootstrap-vs-foundation",
     excerpt: "",
@@ -7995,7 +7995,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind CSS vs Chakra UI vs Radix UI",
     slug: "review-tailwind-css-vs-chakra-ui-vs-radix-ui",
     excerpt: "",
@@ -8007,7 +8007,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind CSS vs Styled Components",
     slug: "review-tailwind-css-vs-styled-components",
     excerpt: "",
@@ -8019,7 +8019,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind CSS vs Windi CSS vs UnoCSS",
     slug: "review-tailwind-css-vs-windi-css-vs-unocss",
     excerpt: "",
@@ -8031,7 +8031,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind Play vs CodeSandbox vs StackBlitz",
     slug: "review-tailwind-play-vs-codesandbox-vs-stackblitz",
     excerpt: "",
@@ -8043,7 +8043,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind Play vs CodeSandbox",
     slug: "review-tailwind-play-vs-codesandbox",
     excerpt: "",
@@ -8055,7 +8055,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind UI vs DaisyUI vs Flowbite",
     slug: "review-tailwind-ui-vs-daisyui-vs-flowbite",
     excerpt: "",
@@ -8067,7 +8067,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind UI vs Flowbite vs DaisyUI",
     slug: "review-tailwind-ui-vs-flowbite-vs-daisyui",
     excerpt: "",
@@ -8079,7 +8079,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind UI vs Shadcn vs MUI",
     slug: "review-tailwind-ui-vs-shadcn-vs-mui",
     excerpt: "",
@@ -8091,7 +8091,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Tailwind vs Bootstrap vs Chakra UI",
     slug: "review-tailwind-vs-bootstrap-vs-chakra-ui",
     excerpt: "",
@@ -8103,7 +8103,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Terraform vs Pulumi vs AWS CDK",
     slug: "review-terraform-vs-pulumi-vs-aws-cdk",
     excerpt: "",
@@ -8115,7 +8115,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Turbopack vs ESBuild vs Vite",
     slug: "review-turbopack-vs-esbuild-vs-vite",
     excerpt: "",
@@ -8127,7 +8127,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Turbopack vs Vite vs Webpack",
     slug: "review-turbopack-vs-vite-vs-webpack",
     excerpt: "",
@@ -8139,7 +8139,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Turborepo vs Lerna vs Nx",
     slug: "review-turborepo-vs-lerna-vs-nx",
     excerpt: "",
@@ -8151,7 +8151,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Turborepo vs Monorepo Tools in 2025",
     slug: "review-turborepo-vs-monorepo-tools-in-2025",
     excerpt: "",
@@ -8163,7 +8163,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Turborepo vs Nx for Monorepos",
     slug: "review-turborepo-vs-nx-for-monorepos",
     excerpt: "",
@@ -8175,7 +8175,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Turso vs SQLite Cloud vs LiteFS",
     slug: "review-turso-vs-sqlite-cloud-vs-litefs",
     excerpt: "",
@@ -8187,7 +8187,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel AI SDK vs LangChain vs LlamaIndex",
     slug: "review-vercel-ai-sdk-vs-langchain-vs-llamaindex",
     excerpt: "",
@@ -8199,7 +8199,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel AI vs OpenAI Assistants API",
     slug: "review-vercel-ai-vs-openai-assistants-api",
     excerpt: "",
@@ -8211,7 +8211,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel Analytics vs Google Analytics 4",
     slug: "review-vercel-analytics-vs-google-analytics-4",
     excerpt: "",
@@ -8223,7 +8223,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel Analytics vs Plausible vs Umami",
     slug: "review-vercel-analytics-vs-plausible-vs-umami",
     excerpt: "",
@@ -8235,7 +8235,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel Edge Config vs Cloudflare KV",
     slug: "review-vercel-edge-config-vs-cloudflare-kv",
     excerpt: "",
@@ -8247,7 +8247,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel Edge Middleware vs Cloudflare Workers",
     slug: "review-vercel-edge-middleware-vs-cloudflare-workers",
     excerpt: "",
@@ -8259,7 +8259,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel KV vs Cloudflare KV vs Redis",
     slug: "review-vercel-kv-vs-cloudflare-kv-vs-redis",
     excerpt: "",
@@ -8271,7 +8271,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel KV vs Upstash Redis vs Turso",
     slug: "review-vercel-kv-vs-upstash-redis-vs-turso",
     excerpt: "",
@@ -8283,7 +8283,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel Storage vs Cloudflare R2",
     slug: "review-vercel-storage-vs-cloudflare-r2",
     excerpt: "",
@@ -8295,7 +8295,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel vs AWS Amplify vs Firebase Hosting",
     slug: "review-vercel-vs-aws-amplify-vs-firebase-hosting",
     excerpt: "",
@@ -8307,7 +8307,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel vs Render vs Netlify Pricing",
     slug: "review-vercel-vs-render-vs-netlify-pricing",
     excerpt: "",
@@ -8319,7 +8319,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vitest vs Jest for JavaScript Testing",
     slug: "review-vitest-vs-jest-for-javascript-testing",
     excerpt: "",
@@ -8331,7 +8331,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: VS Code Copilot Chat vs Cursor AI",
     slug: "review-vs-code-copilot-chat-vs-cursor-ai",
     excerpt: "",
@@ -8343,7 +8343,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vue 4 vs React 19",
     slug: "review-vue-4-vs-react-19",
     excerpt: "",
@@ -8355,7 +8355,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: VueUse vs React Hooks Library",
     slug: "review-vueuse-vs-react-hooks-library",
     excerpt: "",
@@ -8367,7 +8367,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Webflow AI vs Framer AI vs Wix AI",
     slug: "review-webflow-ai-vs-framer-ai-vs-wix-ai",
     excerpt: "",
@@ -8379,7 +8379,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Webflow CMS vs Framer CMS",
     slug: "review-webflow-cms-vs-framer-cms",
     excerpt: "",
@@ -8391,7 +8391,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Webflow vs Squarespace vs Wix",
     slug: "review-webflow-vs-squarespace-vs-wix",
     excerpt: "",
@@ -8403,7 +8403,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: WebRTC vs Agora vs Twilio Video",
     slug: "review-webrtc-vs-agora-vs-twilio-video",
     excerpt: "",
@@ -8415,7 +8415,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: WordPress Block Editor vs Classic Editor",
     slug: "review-wordpress-block-editor-vs-classic-editor",
     excerpt: "",
@@ -8427,7 +8427,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Zapier AI vs Make AI vs n8n AI",
     slug: "review-zapier-ai-vs-make-ai-vs-n8n-ai",
     excerpt: "",
@@ -8439,7 +8439,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Stripe vs PayPal: A Developer’s Guide to Payment Integration",
     slug: "stripe-vs-paypal-a-developer’s-guide-to-payment-integration",
     excerpt: "",
@@ -8451,7 +8451,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Supabase vs Firebase: A Backend Comparison",
     slug: "supabase-vs-firebase-a-backend-comparison",
     excerpt: "",
@@ -8463,7 +8463,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Tailwind UI vs Chakra UI: Which Should You Use in 2025?",
     slug: "tailwind-ui-vs-chakra-ui-which-should-you-use-in-2025?",
     excerpt: "",
@@ -8475,7 +8475,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "The Best JAMstack Starters in 2025",
     slug: "the-best-jamstack-starters-in-2025",
     excerpt: "",
@@ -8487,7 +8487,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "The Future of WebAssembly in 2025",
     slug: "the-future-of-webassembly-in-2025",
     excerpt: "",
@@ -8499,7 +8499,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "The Latest Trends in Jamstack for 2025",
     slug: "the-latest-trends-in-jamstack-for-2025",
     excerpt: "",
@@ -8511,7 +8511,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "The Rise of Micro-Frontends: Pros and Cons",
     slug: "the-rise-of-micro-frontends-pros-and-cons",
     excerpt: "",
@@ -8523,7 +8523,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Chrome Extensions for Productivity",
     slug: "top-10-ai-chrome-extensions-for-productivity",
     excerpt: "",
@@ -8535,7 +8535,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Design Tools in 2025",
     slug: "top-10-ai-design-tools-in-2025",
     excerpt: "",
@@ -8547,7 +8547,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI SEO Tools for 2025",
     slug: "top-10-ai-seo-tools-for-2025",
     excerpt: "",
@@ -8559,7 +8559,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools Every Web Developer Should Know",
     slug: "top-10-ai-tools-every-web-developer-should-know",
     excerpt: "",
@@ -8571,7 +8571,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Bloggers in 2025",
     slug: "top-10-ai-tools-for-bloggers-in-2025",
     excerpt: "",
@@ -8583,7 +8583,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Content Creators in 2025",
     slug: "top-10-ai-tools-for-content-creators-in-2025",
     excerpt: "",
@@ -8595,7 +8595,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Content Marketing in 2025",
     slug: "top-10-ai-tools-for-content-marketing-in-2025",
     excerpt: "",
@@ -8607,7 +8607,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Copywriting in 2025",
     slug: "top-10-ai-tools-for-copywriting-in-2025",
     excerpt: "",
@@ -8619,7 +8619,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Designers in 2025",
     slug: "top-10-ai-tools-for-designers-in-2025",
     excerpt: "",
@@ -8631,7 +8631,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Developers in 2025",
     slug: "top-10-ai-tools-for-developers-in-2025",
     excerpt: "",
@@ -8643,7 +8643,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Educators in 2025",
     slug: "top-10-ai-tools-for-educators-in-2025",
     excerpt: "",
@@ -8655,7 +8655,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Enterprise Teams in 2025",
     slug: "top-10-ai-tools-for-enterprise-teams-in-2025",
     excerpt: "",
@@ -8667,7 +8667,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Graphic Designers in 2025",
     slug: "top-10-ai-tools-for-graphic-designers-in-2025",
     excerpt: "",
@@ -8679,7 +8679,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Productivity in 2025",
     slug: "top-10-ai-tools-for-productivity-in-2025",
     excerpt: "",
@@ -8691,7 +8691,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Remote Teams in 2025",
     slug: "top-10-ai-tools-for-remote-teams-in-2025",
     excerpt: "",
@@ -8703,7 +8703,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for SEO in 2025",
     slug: "top-10-ai-tools-for-seo-in-2025",
     excerpt: "",
@@ -8715,7 +8715,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Small Businesses in 2025",
     slug: "top-10-ai-tools-for-small-businesses-in-2025",
     excerpt: "",
@@ -8727,7 +8727,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Startups in 2025",
     slug: "top-10-ai-tools-for-startups-in-2025",
     excerpt: "",
@@ -8739,7 +8739,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Students in 2025",
     slug: "top-10-ai-tools-for-students-in-2025",
     excerpt: "",
@@ -8751,7 +8751,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for Video Editing in 2025",
     slug: "top-10-ai-tools-for-video-editing-in-2025",
     excerpt: "",
@@ -8763,7 +8763,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 AI Tools for YouTube Creators in 2025",
     slug: "top-10-ai-tools-for-youtube-creators-in-2025",
     excerpt: "",
@@ -8775,7 +8775,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Blogging Platforms in 2025",
     slug: "top-10-blogging-platforms-in-2025",
     excerpt: "",
@@ -8787,7 +8787,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Chrome Extensions for Web Developers",
     slug: "top-10-chrome-extensions-for-web-developers",
     excerpt: "",
@@ -8799,7 +8799,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Cloud Security Tools in 2025",
     slug: "top-10-cloud-security-tools-in-2025",
     excerpt: "",
@@ -8811,7 +8811,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Hosting Providers for Static Sites in 2025",
     slug: "top-10-free-hosting-providers-for-static-sites-in-2025",
     excerpt: "",
@@ -8823,7 +8823,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for Blog SEO Optimization",
     slug: "top-10-free-tools-for-blog-seo-optimization",
     excerpt: "",
@@ -8835,7 +8835,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for Checking Backlinks",
     slug: "top-10-free-tools-for-checking-backlinks",
     excerpt: "",
@@ -8847,7 +8847,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for Keyword Tracking",
     slug: "top-10-free-tools-for-keyword-tracking",
     excerpt: "",
@@ -8859,7 +8859,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for Managing SaaS Products",
     slug: "top-10-free-tools-for-managing-saas-products",
     excerpt: "",
@@ -8871,7 +8871,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for SaaS Founders",
     slug: "top-10-free-tools-for-saas-founders",
     excerpt: "",
@@ -8883,7 +8883,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for Startup Pitch Decks",
     slug: "top-10-free-tools-for-startup-pitch-decks",
     excerpt: "",
@@ -8895,7 +8895,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for Tracking Core Web Vitals",
     slug: "top-10-free-tools-for-tracking-core-web-vitals",
     excerpt: "",
@@ -8907,7 +8907,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Free Tools for Website Accessibility",
     slug: "top-10-free-tools-for-website-accessibility",
     excerpt: "",
@@ -8919,7 +8919,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 GitHub Repositories Every Developer Should Star",
     slug: "top-10-github-repositories-every-developer-should-star",
     excerpt: "",
@@ -8931,7 +8931,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 SaaS Tools for Freelancers in 2025",
     slug: "top-10-saas-tools-for-freelancers-in-2025",
     excerpt: "",
@@ -8943,7 +8943,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Generated 3D Models",
     slug: "top-10-tools-for-ai-generated-3d-models",
     excerpt: "",
@@ -8955,7 +8955,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Ad Optimization",
     slug: "top-10-tools-for-ai-powered-ad-optimization",
     excerpt: "",
@@ -8967,7 +8967,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Blogging",
     slug: "top-10-tools-for-ai-powered-blogging",
     excerpt: "",
@@ -8979,7 +8979,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Business Growth",
     slug: "top-10-tools-for-ai-powered-business-growth",
     excerpt: "",
@@ -8991,7 +8991,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Code Generation",
     slug: "top-10-tools-for-ai-powered-code-generation",
     excerpt: "",
@@ -9003,7 +9003,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Content Creation",
     slug: "top-10-tools-for-ai-powered-content-creation",
     excerpt: "",
@@ -9015,7 +9015,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Content Writing",
     slug: "top-10-tools-for-ai-powered-content-writing",
     excerpt: "",
@@ -9027,7 +9027,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Copywriting in 2025",
     slug: "top-10-tools-for-ai-powered-copywriting-in-2025",
     excerpt: "",
@@ -9039,7 +9039,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Creative Writing",
     slug: "top-10-tools-for-ai-powered-creative-writing",
     excerpt: "",
@@ -9051,7 +9051,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Customer Experience",
     slug: "top-10-tools-for-ai-powered-customer-experience",
     excerpt: "",
@@ -9063,7 +9063,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered DevOps",
     slug: "top-10-tools-for-ai-powered-devops",
     excerpt: "",
@@ -9075,7 +9075,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered E-commerce Stores",
     slug: "top-10-tools-for-ai-powered-e-commerce-stores",
     excerpt: "",
@@ -9087,7 +9087,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered E-Commerce",
     slug: "top-10-tools-for-ai-powered-e-commerce",
     excerpt: "",
@@ -9099,7 +9099,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered EdTech",
     slug: "top-10-tools-for-ai-powered-edtech",
     excerpt: "",
@@ -9111,7 +9111,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Education",
     slug: "top-10-tools-for-ai-powered-education",
     excerpt: "",
@@ -9123,7 +9123,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Email Campaigns",
     slug: "top-10-tools-for-ai-powered-email-campaigns",
     excerpt: "",
@@ -9135,7 +9135,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-05-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Freelancers",
     slug: "top-10-tools-for-ai-powered-freelancers",
     excerpt: "",
@@ -9147,7 +9147,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Graphic Design",
     slug: "top-10-tools-for-ai-powered-graphic-design",
     excerpt: "",
@@ -9159,7 +9159,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered HR Management",
     slug: "top-10-tools-for-ai-powered-hr-management",
     excerpt: "",
@@ -9171,7 +9171,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered HR Platforms",
     slug: "top-10-tools-for-ai-powered-hr-platforms",
     excerpt: "",
@@ -9183,7 +9183,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Marketing Automation",
     slug: "top-10-tools-for-ai-powered-marketing-automation",
     excerpt: "",
@@ -9195,7 +9195,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Marketing",
     slug: "top-10-tools-for-ai-powered-marketing",
     excerpt: "",
@@ -9207,7 +9207,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Mobile Apps",
     slug: "top-10-tools-for-ai-powered-mobile-apps",
     excerpt: "",
@@ -9219,7 +9219,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Online Learning",
     slug: "top-10-tools-for-ai-powered-online-learning",
     excerpt: "",
@@ -9231,7 +9231,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Personal Branding",
     slug: "top-10-tools-for-ai-powered-personal-branding",
     excerpt: "",
@@ -9243,7 +9243,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Personal Productivity",
     slug: "top-10-tools-for-ai-powered-personal-productivity",
     excerpt: "",
@@ -9255,7 +9255,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Podcasting",
     slug: "top-10-tools-for-ai-powered-podcasting",
     excerpt: "",
@@ -9267,7 +9267,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Presentation Design",
     slug: "top-10-tools-for-ai-powered-presentation-design",
     excerpt: "",
@@ -9279,7 +9279,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Productivity",
     slug: "top-10-tools-for-ai-powered-productivity",
     excerpt: "",
@@ -9291,7 +9291,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered SaaS Growth",
     slug: "top-10-tools-for-ai-powered-saas-growth",
     excerpt: "",
@@ -9303,7 +9303,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Sales in 2025",
     slug: "top-10-tools-for-ai-powered-sales-in-2025",
     excerpt: "",
@@ -9315,7 +9315,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Sales Teams",
     slug: "top-10-tools-for-ai-powered-sales-teams",
     excerpt: "",
@@ -9327,7 +9327,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered SEO in 2025",
     slug: "top-10-tools-for-ai-powered-seo-in-2025",
     excerpt: "",
@@ -9339,7 +9339,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Social Media Marketing",
     slug: "top-10-tools-for-ai-powered-social-media-marketing",
     excerpt: "",
@@ -9351,7 +9351,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Startups",
     slug: "top-10-tools-for-ai-powered-startups",
     excerpt: "",
@@ -9363,7 +9363,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Video Editing",
     slug: "top-10-tools-for-ai-powered-video-editing",
     excerpt: "",
@@ -9375,7 +9375,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Web Development",
     slug: "top-10-tools-for-ai-powered-web-development",
     excerpt: "",
@@ -9387,7 +9387,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Writing Assistants",
     slug: "top-10-tools-for-ai-powered-writing-assistants",
     excerpt: "",
@@ -9399,7 +9399,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Writing in 2025",
     slug: "top-10-tools-for-ai-powered-writing-in-2025",
     excerpt: "",
@@ -9411,7 +9411,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Writing",
     slug: "top-10-tools-for-ai-powered-writing",
     excerpt: "",
@@ -9423,7 +9423,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for Cloud Cost Optimization",
     slug: "top-10-tools-for-cloud-cost-optimization",
     excerpt: "",
@@ -9435,7 +9435,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for Cloud Database Hosting",
     slug: "top-10-tools-for-cloud-database-hosting",
     excerpt: "",
@@ -9447,7 +9447,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for Headless CMS in 2025",
     slug: "top-10-tools-for-headless-cms-in-2025",
     excerpt: "",
@@ -9459,7 +9459,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for Remote Work Productivity",
     slug: "top-10-tools-for-remote-work-productivity",
     excerpt: "",
@@ -9471,7 +9471,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for Web Scraping in 2025",
     slug: "top-10-tools-for-web-scraping-in-2025",
     excerpt: "",
@@ -9483,7 +9483,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 UI Kits and Templates in 2025",
     slug: "top-10-ui-kits-and-templates-in-2025",
     excerpt: "",
@@ -9495,7 +9495,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 VS Code Extensions in 2025",
     slug: "top-10-vs-code-extensions-in-2025",
     excerpt: "",
@@ -9507,7 +9507,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Web Security Tools for Developers",
     slug: "top-10-web-security-tools-for-developers",
     excerpt: "",
@@ -9519,7 +9519,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Website Builders with AI Features",
     slug: "top-10-website-builders-with-ai-features",
     excerpt: "",
@@ -9531,7 +9531,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 AI Tools for Writing Code",
     slug: "top-5-ai-tools-for-writing-code",
     excerpt: "",
@@ -9543,7 +9543,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Developer Podcasts in 2025",
     slug: "top-5-developer-podcasts-in-2025",
     excerpt: "",
@@ -9555,7 +9555,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Email Marketing Platforms Reviewed",
     slug: "top-5-email-marketing-platforms-reviewed",
     excerpt: "",
@@ -9567,7 +9567,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Frameworks for Building Mobile Apps",
     slug: "top-5-frameworks-for-building-mobile-apps",
     excerpt: "",
@@ -9579,7 +9579,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Headless CMS Options Compared",
     slug: "top-5-headless-cms-options-compared",
     excerpt: "",
@@ -9591,7 +9591,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 NoSQL Databases Compared",
     slug: "top-5-nosql-databases-compared",
     excerpt: "",
@@ -9603,7 +9603,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Productivity Tools for Remote Developers",
     slug: "top-5-productivity-tools-for-remote-developers",
     excerpt: "",
@@ -9615,7 +9615,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Serverless Databases in 2025",
     slug: "top-5-serverless-databases-in-2025",
     excerpt: "",
@@ -9627,7 +9627,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Static CMS Solutions Reviewed",
     slug: "top-5-static-cms-solutions-reviewed",
     excerpt: "",
@@ -9639,7 +9639,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Static Site Generators for Blogs",
     slug: "top-5-static-site-generators-for-blogs",
     excerpt: "",
@@ -9651,7 +9651,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI Audio Transcription",
     slug: "top-5-tools-for-ai-audio-transcription",
     excerpt: "",
@@ -9663,7 +9663,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI Code Review",
     slug: "top-5-tools-for-ai-code-review",
     excerpt: "",
@@ -9675,7 +9675,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI Music Generation",
     slug: "top-5-tools-for-ai-music-generation",
     excerpt: "",
@@ -9687,7 +9687,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI Video Generation",
     slug: "top-5-tools-for-ai-video-generation",
     excerpt: "",
@@ -9699,7 +9699,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Generated Avatars",
     slug: "top-5-tools-for-ai-generated-avatars",
     excerpt: "",
@@ -9711,7 +9711,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Audio Editing",
     slug: "top-5-tools-for-ai-powered-audio-editing",
     excerpt: "",
@@ -9723,7 +9723,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Blog Writing",
     slug: "top-5-tools-for-ai-powered-blog-writing",
     excerpt: "",
@@ -9735,7 +9735,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Code Generation",
     slug: "top-5-tools-for-ai-powered-code-generation",
     excerpt: "",
@@ -9747,7 +9747,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Code Refactoring",
     slug: "top-5-tools-for-ai-powered-code-refactoring",
     excerpt: "",
@@ -9759,7 +9759,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Code Testing",
     slug: "top-5-tools-for-ai-powered-code-testing",
     excerpt: "",
@@ -9771,7 +9771,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Content Creation",
     slug: "top-5-tools-for-ai-powered-content-creation",
     excerpt: "",
@@ -9783,7 +9783,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Content Scheduling",
     slug: "top-5-tools-for-ai-powered-content-scheduling",
     excerpt: "",
@@ -9795,7 +9795,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Customer Support Chat",
     slug: "top-5-tools-for-ai-powered-customer-support-chat",
     excerpt: "",
@@ -9807,7 +9807,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Customer Support",
     slug: "top-5-tools-for-ai-powered-customer-support",
     excerpt: "",
@@ -9819,7 +9819,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Document Summaries",
     slug: "top-5-tools-for-ai-powered-document-summaries",
     excerpt: "",
@@ -9831,7 +9831,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered E-learning",
     slug: "top-5-tools-for-ai-powered-e-learning",
     excerpt: "",
@@ -9843,7 +9843,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Email Campaigns",
     slug: "top-5-tools-for-ai-powered-email-campaigns",
     excerpt: "",
@@ -9855,7 +9855,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Email Replies",
     slug: "top-5-tools-for-ai-powered-email-replies",
     excerpt: "",
@@ -9867,7 +9867,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Financial Planning",
     slug: "top-5-tools-for-ai-powered-financial-planning",
     excerpt: "",
@@ -9879,7 +9879,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Graphic Design",
     slug: "top-5-tools-for-ai-powered-graphic-design",
     excerpt: "",
@@ -9891,7 +9891,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Graphic Novels",
     slug: "top-5-tools-for-ai-powered-graphic-novels",
     excerpt: "",
@@ -9903,7 +9903,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Image Editing",
     slug: "top-5-tools-for-ai-powered-image-editing",
     excerpt: "",
@@ -9915,7 +9915,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-10-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Image Generation",
     slug: "top-5-tools-for-ai-powered-image-generation",
     excerpt: "",
@@ -9927,7 +9927,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Infographics",
     slug: "top-5-tools-for-ai-powered-infographics",
     excerpt: "",
@@ -9939,7 +9939,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Job Search",
     slug: "top-5-tools-for-ai-powered-job-search",
     excerpt: "",
@@ -9951,7 +9951,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Language Learning",
     slug: "top-5-tools-for-ai-powered-language-learning",
     excerpt: "",
@@ -9963,7 +9963,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Logo Design",
     slug: "top-5-tools-for-ai-powered-logo-design",
     excerpt: "",
@@ -9975,7 +9975,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Logo Generation",
     slug: "top-5-tools-for-ai-powered-logo-generation",
     excerpt: "",
@@ -9987,7 +9987,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Meeting Notes",
     slug: "top-5-tools-for-ai-powered-meeting-notes",
     excerpt: "",
@@ -9999,7 +9999,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Music Generation",
     slug: "top-5-tools-for-ai-powered-music-generation",
     excerpt: "",
@@ -10011,7 +10011,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Note-Taking",
     slug: "top-5-tools-for-ai-powered-note-taking",
     excerpt: "",
@@ -10023,7 +10023,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Personal Finance",
     slug: "top-5-tools-for-ai-powered-personal-finance",
     excerpt: "",
@@ -10035,7 +10035,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Podcast Editing",
     slug: "top-5-tools-for-ai-powered-podcast-editing",
     excerpt: "",
@@ -10047,7 +10047,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Portfolio Sites",
     slug: "top-5-tools-for-ai-powered-portfolio-sites",
     excerpt: "",
@@ -10059,7 +10059,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Presentation Design",
     slug: "top-5-tools-for-ai-powered-presentation-design",
     excerpt: "",
@@ -10071,7 +10071,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Presentations",
     slug: "top-5-tools-for-ai-powered-presentations",
     excerpt: "",
@@ -10083,7 +10083,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Resume Building",
     slug: "top-5-tools-for-ai-powered-resume-building",
     excerpt: "",
@@ -10095,7 +10095,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Resume Writing",
     slug: "top-5-tools-for-ai-powered-resume-writing",
     excerpt: "",
@@ -10107,7 +10107,7 @@ export const OLD_TWEETS = [
     publishedAt: "19-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Script Writing",
     slug: "top-5-tools-for-ai-powered-script-writing",
     excerpt: "",
@@ -10119,7 +10119,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Slide Decks",
     slug: "top-5-tools-for-ai-powered-slide-decks",
     excerpt: "",
@@ -10131,7 +10131,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Social Media Posts",
     slug: "top-5-tools-for-ai-powered-social-media-posts",
     excerpt: "",
@@ -10143,7 +10143,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Startup Pitch Decks",
     slug: "top-5-tools-for-ai-powered-startup-pitch-decks",
     excerpt: "",
@@ -10155,7 +10155,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Storytelling",
     slug: "top-5-tools-for-ai-powered-storytelling",
     excerpt: "",
@@ -10167,7 +10167,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-10-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Text Summarization",
     slug: "top-5-tools-for-ai-powered-text-summarization",
     excerpt: "",
@@ -10179,7 +10179,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Thumbnail Generation",
     slug: "top-5-tools-for-ai-powered-thumbnail-generation",
     excerpt: "",
@@ -10191,7 +10191,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Translation",
     slug: "top-5-tools-for-ai-powered-translation",
     excerpt: "",
@@ -10203,7 +10203,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered UX Design",
     slug: "top-5-tools-for-ai-powered-ux-design",
     excerpt: "",
@@ -10215,7 +10215,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Video Avatars",
     slug: "top-5-tools-for-ai-powered-video-avatars",
     excerpt: "",
@@ -10227,7 +10227,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Video Creation",
     slug: "top-5-tools-for-ai-powered-video-creation",
     excerpt: "",
@@ -10239,7 +10239,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Video Summaries",
     slug: "top-5-tools-for-ai-powered-video-summaries",
     excerpt: "",
@@ -10251,7 +10251,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Web Animations",
     slug: "top-5-tools-for-ai-powered-web-animations",
     excerpt: "",
@@ -10263,7 +10263,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Website Builders",
     slug: "top-5-tools-for-ai-powered-website-builders",
     excerpt: "",
@@ -10275,7 +10275,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Website Copywriting",
     slug: "top-5-tools-for-ai-powered-website-copywriting",
     excerpt: "",
@@ -10287,7 +10287,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Website Translation",
     slug: "top-5-tools-for-ai-powered-website-translation",
     excerpt: "",
@@ -10299,7 +10299,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Whiteboard Collaboration",
     slug: "top-5-tools-for-ai-powered-whiteboard-collaboration",
     excerpt: "",
@@ -10311,7 +10311,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Whitepapers",
     slug: "top-5-tools-for-ai-powered-whitepapers",
     excerpt: "",
@@ -10323,7 +10323,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-06-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Writing Assistance",
     slug: "top-5-tools-for-ai-powered-writing-assistance",
     excerpt: "",
@@ -10335,7 +10335,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for Automating Customer Support",
     slug: "top-5-tools-for-automating-customer-support",
     excerpt: "",
@@ -10347,7 +10347,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for Automating GitHub Issues",
     slug: "top-5-tools-for-automating-github-issues",
     excerpt: "",
@@ -10359,7 +10359,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for Building SaaS Products",
     slug: "top-5-tools-for-building-saas-products",
     excerpt: "",
@@ -10371,7 +10371,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for Generating Landing Pages",
     slug: "top-5-tools-for-generating-landing-pages",
     excerpt: "",
@@ -10383,7 +10383,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for Headless E-Commerce",
     slug: "top-5-tools-for-headless-e-commerce",
     excerpt: "",
@@ -10395,7 +10395,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for Server Monitoring",
     slug: "top-5-tools-for-server-monitoring",
     excerpt: "",
@@ -10407,7 +10407,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 WordPress Optimization Plugins (2025 Edition)",
     slug: "top-5-wordpress-optimization-plugins-2025-edition-",
     excerpt: "",
@@ -10419,7 +10419,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 API Marketplaces in 2025",
     slug: "top-7-api-marketplaces-in-2025",
     excerpt: "",
@@ -10431,7 +10431,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Cloud IDEs in 2025",
     slug: "top-7-cloud-ides-in-2025",
     excerpt: "",
@@ -10443,7 +10443,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Cloud Platforms for Startups",
     slug: "top-7-cloud-platforms-for-startups",
     excerpt: "",
@@ -10455,7 +10455,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Databases for Modern Web Apps",
     slug: "top-7-databases-for-modern-web-apps",
     excerpt: "",
@@ -10467,7 +10467,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Frameworks for Building Dashboards",
     slug: "top-7-frameworks-for-building-dashboards",
     excerpt: "",
@@ -10479,7 +10479,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Frameworks for Serverless Apps",
     slug: "top-7-frameworks-for-serverless-apps",
     excerpt: "",
@@ -10491,7 +10491,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Free Tools for SEO Keyword Research",
     slug: "top-7-free-tools-for-seo-keyword-research",
     excerpt: "",
@@ -10503,7 +10503,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Hosting Platforms for WordPress in 2025",
     slug: "top-7-hosting-platforms-for-wordpress-in-2025",
     excerpt: "",
@@ -10515,7 +10515,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 JavaScript Testing Frameworks in 2025",
     slug: "top-7-javascript-testing-frameworks-in-2025",
     excerpt: "",
@@ -10527,7 +10527,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 React Component Libraries in 2025",
     slug: "top-7-react-component-libraries-in-2025",
     excerpt: "",
@@ -10539,7 +10539,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Automation",
     slug: "top-7-tools-for-ai-powered-automation",
     excerpt: "",
@@ -10551,7 +10551,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Blogging",
     slug: "top-7-tools-for-ai-powered-blogging",
     excerpt: "",
@@ -10563,7 +10563,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-07-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Business Intelligence",
     slug: "top-7-tools-for-ai-powered-business-intelligence",
     excerpt: "",
@@ -10575,7 +10575,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Content Moderation",
     slug: "top-7-tools-for-ai-powered-content-moderation",
     excerpt: "",
@@ -10587,7 +10587,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Customer Engagement",
     slug: "top-7-tools-for-ai-powered-customer-engagement",
     excerpt: "",
@@ -10599,7 +10599,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Customer Insights",
     slug: "top-7-tools-for-ai-powered-customer-insights",
     excerpt: "",
@@ -10611,7 +10611,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Customer Service",
     slug: "top-7-tools-for-ai-powered-customer-service",
     excerpt: "",
@@ -10623,7 +10623,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Cybersecurity",
     slug: "top-7-tools-for-ai-powered-cybersecurity",
     excerpt: "",
@@ -10635,7 +10635,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Data Cleaning",
     slug: "top-7-tools-for-ai-powered-data-cleaning",
     excerpt: "",
@@ -10647,7 +10647,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Data Visualization",
     slug: "top-7-tools-for-ai-powered-data-visualization",
     excerpt: "",
@@ -10659,7 +10659,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Design in 2025",
     slug: "top-7-tools-for-ai-powered-design-in-2025",
     excerpt: "",
@@ -10671,7 +10671,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Design",
     slug: "top-7-tools-for-ai-powered-design",
     excerpt: "",
@@ -10683,7 +10683,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Education",
     slug: "top-7-tools-for-ai-powered-education",
     excerpt: "",
@@ -10695,7 +10695,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Healthcare Analytics",
     slug: "top-7-tools-for-ai-powered-healthcare-analytics",
     excerpt: "",
@@ -10707,7 +10707,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Healthcare Solutions",
     slug: "top-7-tools-for-ai-powered-healthcare-solutions",
     excerpt: "",
@@ -10719,7 +10719,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Hiring Platforms",
     slug: "top-7-tools-for-ai-powered-hiring-platforms",
     excerpt: "",
@@ -10731,7 +10731,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered HR Management",
     slug: "top-7-tools-for-ai-powered-hr-management",
     excerpt: "",
@@ -10743,7 +10743,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Knowledge Bases",
     slug: "top-7-tools-for-ai-powered-knowledge-bases",
     excerpt: "",
@@ -10755,7 +10755,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Knowledge Management",
     slug: "top-7-tools-for-ai-powered-knowledge-management",
     excerpt: "",
@@ -10767,7 +10767,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Lead Generation",
     slug: "top-7-tools-for-ai-powered-lead-generation",
     excerpt: "",
@@ -10779,7 +10779,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered LegalTech",
     slug: "top-7-tools-for-ai-powered-legaltech",
     excerpt: "",
@@ -10791,7 +10791,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-02-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Market Research",
     slug: "top-7-tools-for-ai-powered-market-research",
     excerpt: "",
@@ -10803,7 +10803,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered No-Code Development",
     slug: "top-7-tools-for-ai-powered-no-code-development",
     excerpt: "",
@@ -10815,7 +10815,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-08-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Productivity in 2025",
     slug: "top-7-tools-for-ai-powered-productivity-in-2025",
     excerpt: "",
@@ -10827,7 +10827,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Project Planning",
     slug: "top-7-tools-for-ai-powered-project-planning",
     excerpt: "",
@@ -10839,7 +10839,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Recruitment",
     slug: "top-7-tools-for-ai-powered-recruitment",
     excerpt: "",
@@ -10851,7 +10851,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Research Assistance",
     slug: "top-7-tools-for-ai-powered-research-assistance",
     excerpt: "",
@@ -10863,7 +10863,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Research Papers",
     slug: "top-7-tools-for-ai-powered-research-papers",
     excerpt: "",
@@ -10875,7 +10875,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Robotics in 2025",
     slug: "top-7-tools-for-ai-powered-robotics-in-2025",
     excerpt: "",
@@ -10887,7 +10887,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered SaaS Startups",
     slug: "top-7-tools-for-ai-powered-saas-startups",
     excerpt: "",
@@ -10899,7 +10899,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Sales Funnels",
     slug: "top-7-tools-for-ai-powered-sales-funnels",
     excerpt: "",
@@ -10911,7 +10911,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-12-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered SEO Optimization",
     slug: "top-7-tools-for-ai-powered-seo-optimization",
     excerpt: "",
@@ -10923,7 +10923,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Task Automation",
     slug: "top-7-tools-for-ai-powered-task-automation",
     excerpt: "",
@@ -10935,7 +10935,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered UI Testing",
     slug: "top-7-tools-for-ai-powered-ui-testing",
     excerpt: "",
@@ -10947,7 +10947,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Virtual Assistants",
     slug: "top-7-tools-for-ai-powered-virtual-assistants",
     excerpt: "",
@@ -10959,7 +10959,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Web Development",
     slug: "top-7-tools-for-ai-powered-web-development",
     excerpt: "",
@@ -10971,7 +10971,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Workflow Automation",
     slug: "top-7-tools-for-ai-powered-workflow-automation",
     excerpt: "",
@@ -10983,7 +10983,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-06-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Writing Assistance",
     slug: "top-7-tools-for-ai-powered-writing-assistance",
     excerpt: "",
@@ -10995,7 +10995,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for API Documentation",
     slug: "top-7-tools-for-api-documentation",
     excerpt: "",
@@ -11007,7 +11007,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Automating Customer Feedback",
     slug: "top-7-tools-for-automating-customer-feedback",
     excerpt: "",
@@ -11019,7 +11019,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Automating Git Workflows",
     slug: "top-7-tools-for-automating-git-workflows",
     excerpt: "",
@@ -11031,7 +11031,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-03-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Automating SEO Reports",
     slug: "top-7-tools-for-automating-seo-reports",
     excerpt: "",
@@ -11043,7 +11043,7 @@ export const OLD_TWEETS = [
     publishedAt: "31-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Automating Social Media Posts",
     slug: "top-7-tools-for-automating-social-media-posts",
     excerpt: "",
@@ -11055,7 +11055,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Building AI Agents",
     slug: "top-7-tools-for-building-ai-agents",
     excerpt: "",
@@ -11067,7 +11067,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Building Progressive Web Apps",
     slug: "top-7-tools-for-building-progressive-web-apps",
     excerpt: "",
@@ -11079,7 +11079,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-11-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Building SaaS Apps in 2025",
     slug: "top-7-tools-for-building-saas-apps-in-2025",
     excerpt: "",
@@ -11091,7 +11091,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Building Serverless Backends",
     slug: "top-7-tools-for-building-serverless-backends",
     excerpt: "",
@@ -11103,7 +11103,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Cloud Observability",
     slug: "top-7-tools-for-cloud-observability",
     excerpt: "",
@@ -11115,7 +11115,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-12-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Cloud Security Monitoring",
     slug: "top-7-tools-for-cloud-security-monitoring",
     excerpt: "",
@@ -11127,7 +11127,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Cloud-Native Databases",
     slug: "top-7-tools-for-cloud-native-databases",
     excerpt: "",
@@ -11139,7 +11139,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Continuous Deployment",
     slug: "top-7-tools-for-continuous-deployment",
     excerpt: "",
@@ -11151,7 +11151,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Continuous Integration",
     slug: "top-7-tools-for-continuous-integration",
     excerpt: "",
@@ -11163,7 +11163,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Cross-Browser Testing",
     slug: "top-7-tools-for-cross-browser-testing",
     excerpt: "",
@@ -11175,7 +11175,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Frontend State Management",
     slug: "top-7-tools-for-frontend-state-management",
     excerpt: "",
@@ -11187,7 +11187,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-01-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Low-Code Development",
     slug: "top-7-tools-for-low-code-development",
     excerpt: "",
@@ -11199,7 +11199,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Managing Cloud Infrastructure",
     slug: "top-7-tools-for-managing-cloud-infrastructure",
     excerpt: "",
@@ -11211,7 +11211,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Managing Edge Functions",
     slug: "top-7-tools-for-managing-edge-functions",
     excerpt: "",
@@ -11223,7 +11223,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Managing Microservices",
     slug: "top-7-tools-for-managing-microservices",
     excerpt: "",
@@ -11235,7 +11235,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Mobile App Testing",
     slug: "top-7-tools-for-mobile-app-testing",
     excerpt: "",
@@ -11247,7 +11247,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Multi-Cloud Deployments",
     slug: "top-7-tools-for-multi-cloud-deployments",
     excerpt: "",
@@ -11259,7 +11259,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Optimizing Cloud Spend",
     slug: "top-7-tools-for-optimizing-cloud-spend",
     excerpt: "",
@@ -11271,7 +11271,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Optimizing Database Queries",
     slug: "top-7-tools-for-optimizing-database-queries",
     excerpt: "",
@@ -11283,7 +11283,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Optimizing Website Performance",
     slug: "top-7-tools-for-optimizing-website-performance",
     excerpt: "",
@@ -11295,7 +11295,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Real-Time Collaboration in 2025",
     slug: "top-7-tools-for-real-time-collaboration-in-2025",
     excerpt: "",
@@ -11307,7 +11307,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Real-Time Data Streaming",
     slug: "top-7-tools-for-real-time-data-streaming",
     excerpt: "",
@@ -11319,7 +11319,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Video Conferencing in 2025",
     slug: "top-7-tools-for-video-conferencing-in-2025",
     excerpt: "",
@@ -11331,7 +11331,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for Web App Security Testing",
     slug: "top-7-tools-for-web-app-security-testing",
     excerpt: "",
@@ -11343,7 +11343,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-01-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Astro Could Replace Gatsby",
     slug: "why-astro-could-replace-gatsby",
     excerpt: "",
@@ -11355,7 +11355,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-09-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Bun is Challenging Node.js: My Experience",
     slug: "why-bun-is-challenging-node.js-my-experience",
     excerpt: "",
@@ -11367,7 +11367,7 @@ export const OLD_TWEETS = [
     publishedAt: "21-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Cloudflare Is Competing With AWS",
     slug: "why-cloudflare-is-competing-with-aws",
     excerpt: "",
@@ -11379,7 +11379,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Are Adopting Bun Runtime Quickly",
     slug: "why-developers-are-adopting-bun-runtime-quickly",
     excerpt: "",
@@ -11391,7 +11391,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Are Adopting Edge-First Architectures",
     slug: "why-developers-are-adopting-edge-first-architectures",
     excerpt: "",
@@ -11403,7 +11403,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Are Building With Remix in 2025",
     slug: "why-developers-are-building-with-remix-in-2025",
     excerpt: "",
@@ -11415,7 +11415,7 @@ export const OLD_TWEETS = [
     publishedAt: "01-04-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Are Moving to Edge Databases",
     slug: "why-developers-are-moving-to-edge-databases",
     excerpt: "",
@@ -11427,7 +11427,7 @@ export const OLD_TWEETS = [
     publishedAt: "15-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Choose pnpm over npm and Yarn",
     slug: "why-developers-choose-pnpm-over-npm-and-yarn",
     excerpt: "",
@@ -11439,7 +11439,7 @@ export const OLD_TWEETS = [
     publishedAt: "04-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Choose SolidJS in 2025",
     slug: "why-developers-choose-solidjs-in-2025",
     excerpt: "",
@@ -11451,7 +11451,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Prefer PostgreSQL in 2025",
     slug: "why-developers-prefer-postgresql-in-2025",
     excerpt: "",
@@ -11463,7 +11463,7 @@ export const OLD_TWEETS = [
     publishedAt: "20-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Developers Still Love jQuery in 2025",
     slug: "why-developers-still-love-jquery-in-2025",
     excerpt: "",
@@ -11475,7 +11475,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Edge Computing Is the Future of Web Apps",
     slug: "why-edge-computing-is-the-future-of-web-apps",
     excerpt: "",
@@ -11487,7 +11487,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Edge Computing is Transforming Web Apps",
     slug: "why-edge-computing-is-transforming-web-apps",
     excerpt: "",
@@ -11499,7 +11499,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Edge Databases Are the Next Big Thing",
     slug: "why-edge-databases-are-the-next-big-thing",
     excerpt: "",
@@ -11511,7 +11511,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-09-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Every Developer Needs a Personal Blog",
     slug: "why-every-developer-needs-a-personal-blog",
     excerpt: "",
@@ -11523,7 +11523,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-04-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Full-Stack Developers Love T3 Stack",
     slug: "why-full-stack-developers-love-t3-stack",
     excerpt: "",
@@ -11535,7 +11535,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why GitHub Actions Beats Other CI-CD Tools",
     slug: "why-github-actions-beats-other-ci-cd-tools",
     excerpt: "",
@@ -11547,7 +11547,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-05-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why GraphQL is Still Worth Learning in 2025",
     slug: "why-graphql-is-still-worth-learning-in-2025",
     excerpt: "",
@@ -11559,7 +11559,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Headless CMS Adoption Is Growing",
     slug: "why-headless-cms-adoption-is-growing",
     excerpt: "",
@@ -11571,7 +11571,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Headless Commerce is the Future",
     slug: "why-headless-commerce-is-the-future",
     excerpt: "",
@@ -11583,7 +11583,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Microservices Are Evolving into Modular Monoliths",
     slug: "why-microservices-are-evolving-into-modular-monoliths",
     excerpt: "",
@@ -11595,7 +11595,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Microservices Still Matter in 2025",
     slug: "why-microservices-still-matter-in-2025",
     excerpt: "",
@@ -11607,7 +11607,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-11-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Monolithic Architectures Are Coming Back",
     slug: "why-monolithic-architectures-are-coming-back",
     excerpt: "",
@@ -11619,7 +11619,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Monorepos Are Gaining Popularity",
     slug: "why-monorepos-are-gaining-popularity",
     excerpt: "",
@@ -11631,7 +11631,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-03-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why More Startups Are Choosing Supabase",
     slug: "why-more-startups-are-choosing-supabase",
     excerpt: "",
@@ -11643,7 +11643,7 @@ export const OLD_TWEETS = [
     publishedAt: "11-07-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why More Teams Are Using Monorepos",
     slug: "why-more-teams-are-using-monorepos",
     excerpt: "",
@@ -11655,7 +11655,7 @@ export const OLD_TWEETS = [
     publishedAt: "03-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Progressive Web Apps Are Still Relevant",
     slug: "why-progressive-web-apps-are-still-relevant",
     excerpt: "",
@@ -11667,7 +11667,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Remix is Still Relevant in 2025",
     slug: "why-remix-is-still-relevant-in-2025",
     excerpt: "",
@@ -11679,7 +11679,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-09-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why SaaS Founders Choose Serverless in 2025",
     slug: "why-saas-founders-choose-serverless-in-2025",
     excerpt: "",
@@ -11691,7 +11691,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-05-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Serverless Databases Are Growing Fast",
     slug: "why-serverless-databases-are-growing-fast",
     excerpt: "",
@@ -11703,7 +11703,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Serverless is the Future of Development",
     slug: "why-serverless-is-the-future-of-development",
     excerpt: "",
@@ -11715,7 +11715,7 @@ export const OLD_TWEETS = [
     publishedAt: "12-08-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why SvelteKit is Winning Developers in 2025",
     slug: "why-sveltekit-is-winning-developers-in-2025",
     excerpt: "",
@@ -11727,7 +11727,7 @@ export const OLD_TWEETS = [
     publishedAt: "27-12-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Turbopack Might Replace Webpack",
     slug: "why-turbopack-might-replace-webpack",
     excerpt: "",
@@ -11739,7 +11739,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Vite is Overtaking Webpack: A Review",
     slug: "why-vite-is-overtaking-webpack-a-review",
     excerpt: "",
@@ -11751,7 +11751,7 @@ export const OLD_TWEETS = [
     publishedAt: "05-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Why Web Developers Love TypeScript in 2025",
     slug: "why-web-developers-love-typescript-in-2025",
     excerpt: "",
@@ -11763,7 +11763,7 @@ export const OLD_TWEETS = [
     publishedAt: "14-08-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Bedrock vs Vertex AI vs Azure OpenAI",
     slug: "review-aws-bedrock-vs-vertex-ai-vs-azure-openai",
     excerpt: "",
@@ -11775,7 +11775,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-06-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Neon Serverless Postgres vs PlanetScale MySQL",
     slug: "review-neon-serverless-postgres-vs-planetscale-mysql",
     excerpt: "",
@@ -11787,7 +11787,7 @@ export const OLD_TWEETS = [
     publishedAt: "07-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun Runtime vs Node.js LTS vs Deno Stable",
     slug: "review-bun-runtime-vs-node.js-lts-vs-deno-stable",
     excerpt: "",
@@ -11799,7 +11799,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-10-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Project Management",
     slug: "top-7-tools-for-ai-powered-project-management",
     excerpt: "",
@@ -11811,7 +11811,7 @@ export const OLD_TWEETS = [
     publishedAt: "16-11-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Supabase Vector DB vs Pinecone vs Weaviate",
     slug: "review-supabase-vector-db-vs-pinecone-vs-weaviate",
     excerpt: "",
@@ -11823,7 +11823,7 @@ export const OLD_TWEETS = [
     publishedAt: "30-06-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Web Hosting in 2025",
     slug: "best-free-tools-for-web-hosting-in-2025",
     excerpt: "",
@@ -11835,7 +11835,7 @@ export const OLD_TWEETS = [
     publishedAt: "23-07-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare AI Workers vs OpenAI Function Calling",
     slug: "review-cloudflare-ai-workers-vs-openai-function-calling",
     excerpt: "",
@@ -11847,7 +11847,7 @@ export const OLD_TWEETS = [
     publishedAt: "09-02-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Resume Screening",
     slug: "top-5-tools-for-ai-powered-resume-screening",
     excerpt: "",
@@ -11859,7 +11859,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Next.js Middleware vs Remix Loaders vs Astro Islands",
     slug: "review-next.js-middleware-vs-remix-loaders-vs-astro-islands",
     excerpt: "",
@@ -11871,7 +11871,7 @@ export const OLD_TWEETS = [
     publishedAt: "24-08-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for File Encryption",
     slug: "best-free-tools-for-file-encryption",
     excerpt: "",
@@ -11883,7 +11883,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Redis Search vs Meilisearch vs ElasticSearch",
     slug: "review-redis-search-vs-meilisearch-vs-elasticsearch",
     excerpt: "",
@@ -11895,7 +11895,7 @@ export const OLD_TWEETS = [
     publishedAt: "17-02-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Marketing Analytics",
     slug: "top-10-tools-for-ai-powered-marketing-analytics",
     excerpt: "",
@@ -11907,7 +11907,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-09-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Vercel KV vs Upstash vs Turso KV",
     slug: "review-vercel-kv-vs-upstash-vs-turso-kv",
     excerpt: "",
@@ -11919,7 +11919,7 @@ export const OLD_TWEETS = [
     publishedAt: "29-01-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Team Time Tracking",
     slug: "best-free-tools-for-team-time-tracking",
     excerpt: "",
@@ -11931,7 +11931,7 @@ export const OLD_TWEETS = [
     publishedAt: "08-03-2023",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Shopify AI Chatbot vs Wix AI Chatbot",
     slug: "review-shopify-ai-chatbot-vs-wix-ai-chatbot",
     excerpt: "",
@@ -11943,7 +11943,7 @@ export const OLD_TWEETS = [
     publishedAt: "28-02-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Drizzle ORM vs Prisma ORM vs TypeORM",
     slug: "review-drizzle-orm-vs-prisma-orm-vs-typeorm",
     excerpt: "",
@@ -11955,7 +11955,7 @@ export const OLD_TWEETS = [
     publishedAt: "10-04-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Cloudflare D1 Database vs SQLite Cloud",
     slug: "review-cloudflare-d1-database-vs-sqlite-cloud",
     excerpt: "",
@@ -11967,7 +11967,7 @@ export const OLD_TWEETS = [
     publishedAt: "06-04-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 5 Tools for AI-Powered Customer Retention",
     slug: "top-5-tools-for-ai-powered-customer-retention",
     excerpt: "",
@@ -11979,7 +11979,7 @@ export const OLD_TWEETS = [
     publishedAt: "18-10-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Google Cloud Spanner vs YugabyteDB vs CockroachDB",
     slug: "review-google-cloud-spanner-vs-yugabytedb-vs-cockroachdb",
     excerpt: "",
@@ -11991,7 +11991,7 @@ export const OLD_TWEETS = [
     publishedAt: "02-01-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Online Form Creation",
     slug: "best-free-tools-for-online-form-creation",
     excerpt: "",
@@ -12003,7 +12003,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-11-2024",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: Bun Hot Reload vs Node.js Nodemon vs Deno Deploy",
     slug: "review-bun-hot-reload-vs-node.js-nodemon-vs-deno-deploy",
     excerpt: "",
@@ -12015,7 +12015,7 @@ export const OLD_TWEETS = [
     publishedAt: "25-03-2025",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 10 Tools for AI-Powered Data Analysis",
     slug: "top-10-tools-for-ai-powered-data-analysis",
     excerpt: "",
@@ -12027,7 +12027,7 @@ export const OLD_TWEETS = [
     publishedAt: "13-05-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Best Free Tools for Document Collaboration",
     slug: "best-free-tools-for-document-collaboration",
     excerpt: "",
@@ -12039,7 +12039,7 @@ export const OLD_TWEETS = [
     publishedAt: "22-12-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Review: AWS Step Functions vs Temporal vs Cadence",
     slug: "review-aws-step-functions-vs-temporal-vs-cadence",
     excerpt: "",
@@ -12051,7 +12051,7 @@ export const OLD_TWEETS = [
     publishedAt: "26-07-2022",
   },
   {
-    id: 1,
+    // id: 1,
     title: "Top 7 Tools for AI-Powered Knowledge Sharing",
     slug: "top-7-tools-for-ai-powered-knowledge-sharing",
     excerpt: "",
