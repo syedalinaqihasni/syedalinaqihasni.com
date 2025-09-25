@@ -216,7 +216,7 @@ export function generateMetadata({
       description: finalDescription,
       images: [`${defaultMetadata.image}`],
       site: "@syedalinaqi1997", // optional: Twitter handle
-      creator: "@@syedalinaqi1997",
+      creator: "@syedalinaqi1997",
     },
     authors: [
       {
