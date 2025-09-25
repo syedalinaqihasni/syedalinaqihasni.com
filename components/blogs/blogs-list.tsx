@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Clock, List, Grid3X3, FileText } from "lucide-react";
+import { Calendar, Clock, List, Grid3X3, LayoutList } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
@@ -26,16 +26,16 @@ const CONSTANT = {
   modes: {
     grid: { id: "grid", label: "Grid", icon: Grid3X3, defaultPerPage: 20 },
 
-    iconList: {
-      id: "iconList",
-      label: "Icon List",
-      icon: List,
+    imageList: {
+      id: "imageList",
+      label: "Image List",
+      icon: LayoutList,
       defaultPerPage: 30,
     },
     titleList: {
       id: "titleList",
       label: "Title List",
-      icon: FileText,
+      icon: List,
       defaultPerPage: 50,
     },
   },
@@ -61,7 +61,7 @@ const styles = {
 
 const BlogsList = ({ posts }: { posts: Post[] }) => {
   // LocalStorage persistence
-  const [viewMode, setViewMode] = useState<"grid" | "titleList" | "iconList">(
+  const [viewMode, setViewMode] = useState<"grid" | "titleList" | "imageList">(
     () =>
       (typeof window !== "undefined" &&
         (localStorage.getItem("viewMode") as any)) ||
@@ -116,7 +116,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
   );
 
   // Reset perPage when mode changes
-  const handleModeChange = (mode: "grid" | "titleList" | "iconList") => {
+  const handleModeChange = (mode: "grid" | "titleList" | "imageList") => {
     setViewMode(mode);
     setPerPage(CONSTANT.modes[mode].defaultPerPage);
     setCurrentPage(1);
@@ -212,46 +212,101 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
       {/* Grid View */}
       {viewMode === "grid" && (
         <div className={styles?.grid}>
-          {paginatedPosts.map((post, index) => (
-            <motion.div
-              key={post?.slug}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card className={styles?.card}>
-                {post?.image && (
-                  <Link
-                    href={`/blogs/${post.slug}`}
-                    className="relative block h-48 w-full rounded-lg overflow-hidden"
-                  >
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </Link>
-                )}
-                <CardContent className={"p-6"}>
-                  <Link href={`/blogs/${post?.slug}`}>
-                    <h3 className={styles?.title}>{post?.title}</h3>
-                  </Link>
-                  <p className={styles?.excerpt}>{post?.excerpt}</p>
-                  <div className={styles?.metaWrapper}>
-                    <div className={styles?.metaItem}>
-                      <Calendar className={styles?.icon} />
-                      {formatDate(post?.publishedAt)}
+          {filteredPosts
+            .filter((post) => post?.content && post.content.trim() !== "")
+            .map((post, index) => (
+              <motion.div
+                key={post?.slug}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className={styles?.card}>
+                  {post?.image ? (
+                    <Link
+                      href={`/blogs/${post.slug}`}
+                      className="relative block h-48 w-full rounded-lg overflow-hidden"
+                    >
+                      <Image
+                        src={post.image}
+                        alt={`${post.title} - Syed Ali Naqi Hasni`}
+                        fill
+                        className="object-cover"
+                        priority={index < 3}
+                      />
+                    </Link>
+                  ) : (
+                    <Link
+                      href={`/blogs/${post.slug}`}
+                      className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
+                    >
+                      <h3 className="text-lg font-bold w-full mb-1">
+                        {post.title}
+                      </h3>
+                      <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">
+                        Syed Ali Naqi Hasni
+                      </div>
+                    </Link>
+                  )}
+
+                  <CardContent className={"p-6"}>
+                    <div className={styles?.categoriesWrapper}>
+                      <a
+                        href={`/blogs/category/${post?.category
+                          .toLowerCase()
+                          .replace(/[\s/]+/g, "-")}`}
+                      >
+                        <Badge
+                          variant={"secondary"}
+                          className={styles?.categoryBadge}
+                        >
+                          {post?.category}
+                        </Badge>
+                      </a>
                     </div>
-                    <div className={"flex items-center"}>
-                      <Clock className={styles?.icon} />
-                      {post?.readingTime}
+                    <Link href={`/blogs/${post?.slug}`}>
+                      <h3 className={styles?.title}>{post?.title}</h3>
+                    </Link>
+                    <p className={styles?.excerpt}>{post?.excerpt}</p>
+                    <div className={styles?.metaWrapper}>
+                      <div className={styles?.metaItem}>
+                        <Calendar className={styles?.icon} />
+                        {formatDate(post?.publishedAt)}
+                      </div>
+                      <div className={"flex items-center"}>
+                        <Clock className={styles?.icon} />
+                        {post?.readingTime}
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
+                    <div className={styles?.tagsWrapper}>
+                      {post?.tags?.slice(0, 2)?.map((tag) => (
+                        <a
+                          href={`/blogs/tag/${tag
+                            .toLowerCase()
+                            .replace(/[\s/]+/g, "-")}`}
+                          key={tag}
+                        >
+                          <Badge
+                            variant={"secondary"}
+                            className={styles?.categoryBadge}
+                          >
+                            {tag}
+                          </Badge>
+                        </a>
+                      ))}
+                      {post?.tags?.length > 2 && (
+                        <Badge
+                          variant={"outline"}
+                          className={styles?.categoryBadge}
+                        >
+                          +{post?.tags?.length - 2}
+                        </Badge>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
         </div>
       )}
 
@@ -307,21 +362,33 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
         </ul>
       )}
 
-      {/* Icon List View */}
-      {viewMode === "iconList" && (
+      {/* Image List View */}
+      {viewMode === "imageList" && (
         <ul className="space-y-4">
           {paginatedPosts.map((post) => (
             <li
               key={post.slug}
               className="flex gap-4 items-start border-b pb-4"
             >
-              {post?.image && (
+              {post?.image ? (
                 <Link
                   href={`/blogs/${post.slug}`}
-                  className="flex-shrink-0 w-20 h-20 relative rounded-md overflow-hidden"
+                  className="flex-shrink-0 w-32 h-32 relative rounded-md overflow-hidden"
                 >
                   <Image
                     src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
+                </Link>
+              ) : (
+                <Link
+                  href={`/blogs/${post.slug}`}
+                  className="flex-shrink-0 w-32 h-32 relative rounded-md overflow-hidden"
+                >
+                  <Image
+                    src={"/images/placeholder-syed-ali-naqi-hasni.webp"}
                     alt={post.title}
                     fill
                     className="object-cover"
@@ -348,18 +415,18 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
                     {post?.readingTime}
                   </div>
                 </div>
-                {post?.category && (
-                  <Link
-                    href={`/blogs/category/${post?.category
-                      .toLowerCase()
-                      .replace(/[\s/]+/g, "-")}`}
-                  >
-                    <Badge variant="secondary" className="mr-2">
-                      {post.category}
-                    </Badge>
-                  </Link>
-                )}
                 <div className="flex flex-wrap gap-1 mt-2">
+                  {post?.category && (
+                    <Link
+                      href={`/blogs/category/${post?.category
+                        .toLowerCase()
+                        .replace(/[\s/]+/g, "-")}`}
+                    >
+                      <Badge variant="secondary" className="mr-2">
+                        {post.category}
+                      </Badge>
+                    </Link>
+                  )}
                   {post?.tags?.map((tag) => (
                     <Link
                       key={tag}
@@ -376,62 +443,63 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
           ))}
         </ul>
       )}
+      <div className="flex justify-evenly items-center mt-8">
+        {/* Pagination Controls */}
+        {totalPages > 1 && (
+          <div className={styles?.paginationWrapper}>
+            <Button
+              variant="outline"
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage(1)}
+            >
+              {"I<"}
+            </Button>
+            <Button
+              variant="outline"
+              disabled={currentPage === 1}
+              onClick={() => setCurrentPage((prev) => prev - 1)}
+            >
+              {"<<"}
+            </Button>
+            {renderPageNumbers()}
+            <Button
+              variant="outline"
+              disabled={currentPage === totalPages}
+              onClick={() => setCurrentPage((prev) => prev + 1)}
+            >
+              {">>"}
+            </Button>
+            <Button
+              variant="outline"
+              disabled={currentPage === totalPages}
+              onClick={() => setCurrentPage(totalPages)}
+            >
+              {">I"}
+            </Button>
+          </div>
+        )}
 
-      {/* Pagination Controls */}
-      {totalPages > 1 && (
-        <div className={styles?.paginationWrapper}>
-          <Button
-            variant="outline"
-            disabled={currentPage === 1}
-            onClick={() => setCurrentPage(1)}
+        {/* Per Page Selector */}
+        <div className="flex justify-center mt-4">
+          <Select
+            value={perPage.toString()}
+            onValueChange={(value) => {
+              setPerPage(Number(value));
+              setCurrentPage(1);
+            }}
           >
-            {"I<"}
-          </Button>
-          <Button
-            variant="outline"
-            disabled={currentPage === 1}
-            onClick={() => setCurrentPage((prev) => prev - 1)}
-          >
-            {"<<"}
-          </Button>
-          {renderPageNumbers()}
-          <Button
-            variant="outline"
-            disabled={currentPage === totalPages}
-            onClick={() => setCurrentPage((prev) => prev + 1)}
-          >
-            {">>"}
-          </Button>
-          <Button
-            variant="outline"
-            disabled={currentPage === totalPages}
-            onClick={() => setCurrentPage(totalPages)}
-          >
-            {">I"}
-          </Button>
+            <SelectTrigger className="w-[120px]">
+              <SelectValue placeholder="Per page" />
+            </SelectTrigger>
+            <SelectContent>
+              {CONSTANT.perPageOptions.map((num) => (
+                <SelectItem key={num} value={num.toString()}>
+                  {num} / page
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
-      )}
-
-      {/* Per Page Selector */}
-      <div className="flex justify-center mt-4">
-        <Select
-          value={perPage.toString()}
-          onValueChange={(value) => {
-            setPerPage(Number(value));
-            setCurrentPage(1);
-          }}
-        >
-          <SelectTrigger className="w-[120px]">
-            <SelectValue placeholder="Per page" />
-          </SelectTrigger>
-          <SelectContent>
-            {CONSTANT.perPageOptions.map((num) => (
-              <SelectItem key={num} value={num.toString()}>
-                {num} / page
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
       </div>
     </div>
   );

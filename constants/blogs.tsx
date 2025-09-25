@@ -2767,7 +2767,7 @@ export const bp19 = {
   excerpt:
     "Learn how to set up a new Next.js project with Tailwind CSS to build fast, responsive UIs with ease.",
   slug: "getting-started-nextjs-tailwind",
-  publishedAt: "2018-01-01",
+  publishedAt: "2023-01-01",
   readingTime: "5 min read",
   content: `<div>
     <p>Web development continues to evolve at a rapid pace, and developers are constantly looking for tools that can streamline the development process while delivering modern, performant applications. Two popular tools that complement each other beautifully are <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.</p>
@@ -2893,7 +2893,7 @@ export const bp20 = {
   excerpt:
     "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
   slug: "state-management-react",
-  publishedAt: "2018-01-01",
+  publishedAt: "2023-01-12",
   readingTime: "6 min read",
   category: `Tutorials`,
   tags: ["React", "State Management", "Frontend Architecture"],
@@ -3086,7 +3086,7 @@ export const bp21 = {
   excerpt:
     "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
   slug: "framer-motion-animations",
-  publishedAt: "2018-01-01",
+  publishedAt: "2023-01-22",
   readingTime: "5 min read",
   category: `Tutorials`,
   tags: ["React", "Animations", "UI/UX"],
@@ -3332,7 +3332,7 @@ export const bp22 = {
   excerpt:
     "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
   slug: "nextjs-api-routes",
-  publishedAt: "2018-01-01",
+  publishedAt: "2023-02-05",
   readingTime: "6 min read",
   content: `
   <div>
@@ -3479,7 +3479,7 @@ export const bp23 = {
   excerpt:
     "Master responsive design using Tailwind's utility classes and variants — build adaptable layouts that look great on any device.",
   slug: "responsive-ui-tailwind",
-  publishedAt: "2018-01-01",
+  publishedAt: "2023-03-12",
   readingTime: "4 min read",
   category: `Tutorials`,
   tags: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
