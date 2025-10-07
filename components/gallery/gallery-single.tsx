@@ -21,9 +21,9 @@ export default function GallerySingle({
   initialId: string;
 }) {
   const [activeAlbum, setActiveAlbum] = useState("all");
-  const [selectedImage, setSelectedImage] = useState<Images | null>(
-    images?.find((image) => image.alt.split(".")[0] === initialId) || null
-  );
+
+  const selectedImage =
+    images?.find((image) => image.alt.split(".")[0] === initialId) || null;
 
   // Build album list
   const albumList = useMemo(() => {
@@ -48,15 +48,6 @@ export default function GallerySingle({
     ? filteredImages.findIndex((image) => image?.id === selectedImage?.id)
     : -1;
 
-  // Navigation handlers
-  const handlePrev = () => {
-    if (selectedIndex > 0) setSelectedImage(filteredImages[selectedIndex - 1]);
-  };
-  const handleNext = () => {
-    if (selectedIndex < filteredImages.length - 1)
-      setSelectedImage(filteredImages[selectedIndex + 1]);
-  };
-
   if (!selectedImage) {
     return (
       <p className="text-center text-muted-foreground">No image selected.</p>
@@ -65,35 +56,52 @@ export default function GallerySingle({
 
   return (
     <div className={MAX_WIDTH_WRAPPER}>
+      {/* Header */}
       <div className={HEADER_WRAPPER}>
         <h1 className={TITLE}>{selectedImage?.title}</h1>
         <p className={DESCRIPTION}>{selectedImage?.paragraph}</p>
       </div>
+
       <div className="max-w-4xl mx-auto">
-        {/* Prev / Next */}
+        {/* Prev / Next Navigation */}
         <div className="flex items-center justify-between mb-4">
-          <button
-            onClick={handlePrev}
-            disabled={selectedIndex <= 0}
-            className="p-2 rounded hover:bg-gray-100 disabled:opacity-50"
-            aria-label="Previous image"
-            type="button"
-          >
-            <ArrowLeft />
-          </button>
+          {selectedIndex > 0 ? (
+            <Link
+              href={`/gallery/${
+                filteredImages[selectedIndex - 1]?.alt.split(".")[0]
+              }`}
+              className="p-2 rounded hover:bg-gray-100 hover:text-gray-700"
+              aria-label="Previous image"
+            >
+              <ArrowLeft />
+            </Link>
+          ) : (
+            <span className="p-2 opacity-50">
+              <ArrowLeft />
+            </span>
+          )}
+
           <span className="text-sm text-gray-500">
             {selectedIndex + 1} / {filteredImages.length}
           </span>
-          <button
-            onClick={handleNext}
-            disabled={selectedIndex >= filteredImages.length - 1}
-            className="p-2 rounded hover:bg-gray-100 disabled:opacity-50"
-            aria-label="Next image"
-            type="button"
-          >
-            <ArrowRight />
-          </button>
+
+          {selectedIndex < filteredImages.length - 1 ? (
+            <Link
+              href={`/gallery/${
+                filteredImages[selectedIndex + 1]?.alt.split(".")[0]
+              }`}
+              className="p-2 rounded hover:bg-gray-100 hover:text-gray-700"
+              aria-label="Next image"
+            >
+              <ArrowRight />
+            </Link>
+          ) : (
+            <span className="p-2 opacity-50">
+              <ArrowRight />
+            </span>
+          )}
         </div>
+
         {/* Selected Image */}
         <div className="relative w-full h-[60vh] mb-4">
           <Image
@@ -107,49 +115,66 @@ export default function GallerySingle({
           />
         </div>
 
-        {/* Prev / Next */}
+        {/* Prev / Next Navigation (Bottom) */}
         <div className="flex items-center justify-between mb-4">
-          <button
-            onClick={handlePrev}
-            disabled={selectedIndex <= 0}
-            className="p-2 rounded hover:bg-gray-100 disabled:opacity-50"
-            aria-label="Previous image"
-            type="button"
-          >
-            <ArrowLeft />
-          </button>
+          {selectedIndex > 0 ? (
+            <Link
+              href={`/gallery/${
+                filteredImages[selectedIndex - 1]?.alt.split(".")[0]
+              }`}
+              className="p-2 rounded hover:bg-gray-100 hover:text-gray-700"
+              aria-label="Previous image"
+            >
+              <ArrowLeft />
+            </Link>
+          ) : (
+            <span className="p-2 opacity-50">
+              <ArrowLeft />
+            </span>
+          )}
+
           <span className="text-sm text-gray-500">
             {selectedIndex + 1} / {filteredImages.length}
           </span>
-          <button
-            onClick={handleNext}
-            disabled={selectedIndex >= filteredImages.length - 1}
-            className="p-2 rounded hover:bg-gray-100 disabled:opacity-50"
-            aria-label="Next image"
-            type="button"
-          >
-            <ArrowRight />
-          </button>
+
+          {selectedIndex < filteredImages.length - 1 ? (
+            <Link
+              href={`/gallery/${
+                filteredImages[selectedIndex + 1]?.alt.split(".")[0]
+              }`}
+              className="p-2 rounded hover:bg-gray-100 hover:text-gray-700"
+              aria-label="Next image"
+            >
+              <ArrowRight />
+            </Link>
+          ) : (
+            <span className="p-2 opacity-50">
+              <ArrowRight />
+            </span>
+          )}
         </div>
 
         {/* Caption + Tags */}
         <div>
           {selectedImage?.link ? (
-            <Link
-              href={selectedImage?.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-xl font-medium mb-2 text-blue-600 hover:underline"
-            >
+            <div className="flex gap-2 mb-2">
               {selectedImage?.caption}
-              <ExternalLink />
-            </Link>
+              <Link
+                href={selectedImage?.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-xl font-medium mb-2 text-blue-600 hover:underline"
+              >
+                <ExternalLink />
+              </Link>
+            </div>
           ) : (
             <h3 className="text-xl font-medium mb-2">
               {selectedImage?.caption}
             </h3>
           )}
-          <div className="flex flex-wrap gap-2">
+
+          <div className="flex flex-wrap gap-2 capitalize">
             {selectedImage?.tags?.map((tag) => (
               <Badge key={tag} variant="secondary">
                 {tag}
