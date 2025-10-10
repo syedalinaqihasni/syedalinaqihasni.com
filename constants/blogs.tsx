@@ -2349,7 +2349,7 @@ export const bp16 = {
     you can keep track of every bit of your financials from the Accounting Dashboard alone is impressive. The
     dashboard is very intuitive as it shows a graphical representation to understand your expenditures better.</p>
 <p>With <a >HRM</a>, <a  >CRM</a>, and <a
-        href="http://www.wperp.com/accounting"  >Accounting</a> WP ERP
+        href="https://www.wperp.com/accounting"  >Accounting</a> WP ERP
     packs other crucial features as extensions. Here are some of the best extensions of WP ERP.</p>
 <ul>
     <li>Support for payment gateways: The plugin supports all popular payment gateways
@@ -2836,7 +2836,7 @@ npx tailwindcss init -p</code>
 <code>npm run dev</code>
 </code>
 </pre>
-    <p>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let's now replace it with something styled by Tailwind.</p>
+    <p>Visit <a href="https://localhost:3000">https://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let's now replace it with something styled by Tailwind.</p>
     <h2>Step 5: Creating a Simple Tailwind-Styled Component</h2>
     <p>Edit the <code>pages/index.js</code> file to use Tailwind classes. Here's a basic example:</p>
     <pre>
@@ -3356,7 +3356,7 @@ export const bp22 = {
 }</code>
 </code>
 </pre>
-  <p>Now, navigate to <a href="http://localhost:3000/api/hello">http://localhost:3000/api/hello</a> in your browser. You should see a JSON response:</p>
+  <p>Now, navigate to <a href="https://localhost:3000/api/hello">https://localhost:3000/api/hello</a> in your browser. You should see a JSON response:</p>
   <pre>
 <code>{ "message": "Hello from Next.js API!" }</code>
 </code>
@@ -3891,7 +3891,7 @@ export const bp25 = {
 <span>
 </span>store models, where smaller “atoms” or units are individually defined and composed. It supports side-effects via “effects” subscribers or actors, and aims to reduce boilerplate and friction. Many of Zedux’s design ideas seem inspired by patterns in Recoil, React Query, dependency injection, etc. There is some overlap with Redux’s intent, but the architecture is quite distinct.<span>
 </span>
-<a target="_self" tabindex="0" href="https://blog.logrocket.com/zedux-redux-comparison/?utm_source=chatgpt.com" data-test-app-aware-link="">LogRocket Blog+1</a>
+<a target="_self" tabindex="0" href="https://blog.logrocket.com/zedux-redux-comparison/?utm_source=chatgpt.com" data-test-app-aware-link="">LogRocket Blog</a>
 </li>
 </ul>
 </p>
@@ -3929,7 +3929,7 @@ export const bp25 = {
 </p>
 <p> Because Zedux encourages splitting state into many smaller units, you don’t have to “predeclare” everything in a monolithic shape. The code tends to live where it belongs (in each atom). Side effects, logging, etc., can be handled via effect subscribers, so you often don’t need a middleware layer like in Redux.<span>
 </span>
-<a target="_self" tabindex="0" href="http://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
 </p>
 <p> From a DX point of view, I found that with Zedux I wrote less boilerplate and felt more flexible; adding a new “piece” of state was simpler relative to Redux, with fewer “wiring” concerns.</p>
 <p> 
@@ -3965,7 +3965,7 @@ export const bp25 = {
 </p>
 <p> Redux encourages you to normalize state, keep slices shallow, and use memoized selectors (e.g. via reselect) to avoid performance pitfalls.<span>
 </span>
-<a target="_self" tabindex="0" href="http://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
+<a target="_self" tabindex="0" href="https://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
 </p>
 <h2
 > Zedux: Atomic / Composable Store Units</h3>
@@ -4049,8 +4049,8 @@ export const bp25 = {
 <span>
 </span>built into atoms or store units. You subscribe to state transitions or define logic that reacts when state changes.<span>
 </span>
-<a target="_self" tabindex="0" href="http://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
-<a target="_self" tabindex="0" href="https://zedux.dev/docs/about/redux-comparison?utm_source=chatgpt.com" data-test-app-aware-link="">+1</a>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<a target="_self" tabindex="0" href="https://zedux.dev/docs/about/redux-comparison?utm_source=chatgpt.com" data-test-app-aware-link=""></a>
 </p>
 <p> For example, instead of a logging middleware, you might do:</p>
 <pre>
@@ -4081,7 +4081,7 @@ export const bp25 = {
 <span>
 </span>many side effects can be handled by effects subscribers, and the atomic model helps reduce the need for batching or combining actions.<span>
 </span>
-<a target="_self" tabindex="0" href="http://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
 </p>
 <p> In practice, for many of my simpler async flows (fetch → set state → maybe act on success), Zedux’s model felt more succinct and less ceremony-heavy.</p>
 <hr>
@@ -4092,7 +4092,7 @@ export const bp25 = {
 > Redux: Optimizations &amp; Known Patterns</h3>
 <p> Redux (especially React-Redux) is heavily optimized. The official FAQ says React-Redux in v5 cuts down unnecessary re-renders.<span>
 </span>
-<a target="_self" tabindex="0" href="http://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
+<a target="_self" tabindex="0" href="https://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
 </p>
 <p> Some techniques I’ve used:</p>
 <p> 
@@ -4111,7 +4111,7 @@ export const bp25 = {
 </p>
 <p> Redux can handle large scale state if built properly, though it's not “free.” The time cost is from reducers, notifying subscribers, and React re-rendering.<span>
 </span>
-<a target="_self" tabindex="0" href="http://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
+<a target="_self" tabindex="0" href="https://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
 </p>
 <p> From my experience, a well-architected Redux app can scale fine but it demands discipline, especially around state shape and component subscription zones.</p>
 <h2
@@ -4126,15 +4126,15 @@ export const bp25 = {
 </p>
 <p> In some benchmark comparisons (on the Zedux site), they claim that Zedux can outperform Redux in complex apps when measuring end-to-end performance, especially because of its composable store model.<span>
 </span>
-<a target="_self" tabindex="0" href="http://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
 <span>
 </span>One example given: in a trivial store creation benchmark, Zedux: 213 million ops/sec vs Redux: 16 million ops/sec (though that’s highly specialized).<span>
 </span>
-<a target="_self" tabindex="0" href="http://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
 </p>
 <p> Of course, benchmarks are synthetic, and real-world performance depends on many variables  UI complexity, rendering, network, etc. Zedux docs themselves caution that objective performance comparisons are very hard and context-dependent.<span>
 </span>
-<a target="_self" tabindex="0" href="http://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
 </p>
 <p> From my trials, in medium-to-large apps, I felt Zedux had a slight edge in certain update-heavy scenarios, especially when many small independent atoms updated frequently.</p>
 <p> 
