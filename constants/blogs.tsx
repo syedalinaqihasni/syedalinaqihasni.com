@@ -4436,4 +4436,8 @@ export const allCategories: string[] = Array.from(
   new Set(posts.map((p) => p.category))
 );
 
+export const allTitles: string[] = Array.from(
+  new Set(posts.map((p) => p.slug))
+);
+
 export { CONSTANT, posts };
