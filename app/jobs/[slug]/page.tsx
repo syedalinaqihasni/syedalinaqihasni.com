@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { SERVICES } from "@/constants/services";
+import { JOBS } from "@/constants/jobs";
 import { dashToProperCase } from "@/lib/utils";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
@@ -9,17 +9,17 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const service = SERVICES.find((s) => s.slug === params?.slug);
-  if (!service) return {};
+  const job = JOBS.find((s) => s.slug === params?.slug);
+  if (!job) return {};
 
   const slug = params.slug ? dashToProperCase(params.slug) : undefined;
 
-  const title = `${service?.title}${
+  const title = `${job?.title}${
     slug ? ` in ${slug}` : ""
   } | Syed Ali Naqi Hasni`;
-  const description = service?.description;
+  const description = job?.description;
 
-  const pathParts = ["/services", params?.slug].filter(Boolean);
+  const pathParts = ["/jobs", params?.slug].filter(Boolean);
   const path = pathParts.join("/");
 
   return generateDynamicMetadata({
@@ -53,7 +53,7 @@ const styles = {
   contactText: "text-center text-muted-foreground mb-10 max-w-2xl mx-auto",
 };
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
+export default function JobPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
 
   return (

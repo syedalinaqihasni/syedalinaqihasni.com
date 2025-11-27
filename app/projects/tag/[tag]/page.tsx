@@ -31,7 +31,7 @@ const styles = {
 //   });
 
 //   // Return params in the format expected by Next.js
-//   return Array.from(tagsSet).map(tag => ({ tag }));
+//   return Array.from(tagsSet)?.map(tag => ({ tag }));
 // }
 
 // Generate <head> metadata dynamically

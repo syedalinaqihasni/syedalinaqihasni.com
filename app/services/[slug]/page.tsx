@@ -122,7 +122,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               {service?.relatedJobTitles.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-jobs/${properCaseToDash(serv)}`}
+                    href={`/jobs/${properCaseToDash(serv)}`}
                     className="flex items-center gap-2 text-xs hover:underline"
                   >
                     <Briefcase size={14} className="text-muted-foreground" />
@@ -138,7 +138,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               {service?.technologies.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-services/${properCaseToDash(serv)}`}
+                    href={`/technologies/${properCaseToDash(serv)}`}
                     className="flex items-center gap-2 text-xs hover:underline"
                   >
                     <Badge

@@ -61,7 +61,7 @@ export default function ServicesPage() {
                 {SERVICES.filter(
                   (service) =>
                     category.id === "all" || service?.category === category.id
-                ).map((service) => (
+                )?.map((service) => (
                   <Card key={service?.id} className={styles?.card}>
                     <CardContent className={styles?.cardContent}>
                       <div className={styles?.serviceIcon}>{service?.icon}</div>
@@ -75,7 +75,7 @@ export default function ServicesPage() {
                       </p>
 
                       <div className={styles?.featuresList}>
-                        {service?.features.slice(0, 4).map((feature, index) => (
+                        {service?.features?.slice(0, 4)?.map((feature, index) => (
                           <div key={index} className={styles?.featureItem}>
                             <Check className="h-4 w-4 text-green-500" />
                             <Link
@@ -97,14 +97,18 @@ export default function ServicesPage() {
                       </div>
 
                       <div className={styles?.techBadges}>
-                        {service?.technologies.slice(0, 3).map((tech) => (
-                          <Badge
-                            key={tech}
-                            variant="secondary"
-                            className="text-xs"
+                        {service?.technologies?.slice(0, 3)?.map((tech) => (
+                          <Link
+                            href={`/technologies/${properCaseToDash(tech)}`}
                           >
-                            {tech}
-                          </Badge>
+                            <Badge
+                              key={tech}
+                              variant="secondary"
+                              className="text-xs"
+                            >
+                              {tech}
+                            </Badge>
+                          </Link>
                         ))}
                         {service?.technologies?.length > 3 && (
                           <Badge variant="outline" className="text-xs">

@@ -6,7 +6,7 @@ import { projects } from "@/constants/projects";
 import { events } from "@/constants/events";
 import { LINKS_GROUPS } from "@/constants/footer";
 import { SERVICES } from "@/constants/services";
-import { countries } from "@/constants/area-services";
+import { countries } from "@/constants/countries";
 
 function formatSlug(text: string) {
   return text.toLowerCase().replace(/[\s/]+/g, "-");
@@ -59,7 +59,7 @@ export default function SitemapStyleLinktreePage() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">📝 Blog Posts</h2>
         <ul className="space-y-2">
-          {posts.slice(0, 20).map((post) => (
+          {posts.slice(0, 20)?.map((post) => (
             <li key={post.slug}>
               <Link href={`/blogs/${post.slug}`} className="hover:underline">
                 ✍️ {post.title}

@@ -375,6 +375,140 @@ const servicesSchema = {
     },
   ],
 };
+const jobsSchema = {
+  "@type": "Service",
+  name: "Web Development Services",
+  serviceType: "Professional Web Development",
+  description:
+    "Comprehensive web development services including React, Next.js, WordPress, e-commerce solutions, SEO, performance optimization, and maintenance.",
+  provider: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni",
+    url: "https://www.syedalinaqihasni.com",
+  },
+  areaServed: "Worldwide",
+  availableChannel: {
+    "@type": "ServiceChannel",
+    serviceUrl: "/services",
+  },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Frontend Development",
+      description:
+        "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies.",
+      price: "2500",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "WordPress Development",
+      description:
+        "Custom WordPress websites, themes, and plugins tailored to your business needs.",
+      price: "1500",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "E-commerce Solutions",
+      description:
+        "Complete online store solutions with secure payment processing and inventory management.",
+      price: "3000",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "SEO Optimization",
+      description:
+        "Technical and on-page SEO strategies to improve search visibility and organic traffic.",
+      price: "800",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "Performance Optimization",
+      description:
+        "Speed enhancements and performance tuning for faster, more efficient web experiences.",
+      price: "1000",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "Website Maintenance",
+      description:
+        "Ongoing support, updates, backups, and issue resolution for reliable website uptime.",
+      price: "500",
+      priceCurrency: "USD",
+    },
+  ],
+};
+const technologiesSchema = {
+  "@type": "Service",
+  name: "Web Development Services",
+  serviceType: "Professional Web Development",
+  description:
+    "Comprehensive web development services including React, Next.js, WordPress, e-commerce solutions, SEO, performance optimization, and maintenance.",
+  provider: {
+    "@type": "Person",
+    name: "Syed Ali Naqi Hasni",
+    url: "https://www.syedalinaqihasni.com",
+  },
+  areaServed: "Worldwide",
+  availableChannel: {
+    "@type": "ServiceChannel",
+    serviceUrl: "/services",
+  },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Frontend Development",
+      description:
+        "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies.",
+      price: "2500",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "WordPress Development",
+      description:
+        "Custom WordPress websites, themes, and plugins tailored to your business needs.",
+      price: "1500",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "E-commerce Solutions",
+      description:
+        "Complete online store solutions with secure payment processing and inventory management.",
+      price: "3000",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "SEO Optimization",
+      description:
+        "Technical and on-page SEO strategies to improve search visibility and organic traffic.",
+      price: "800",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "Performance Optimization",
+      description:
+        "Speed enhancements and performance tuning for faster, more efficient web experiences.",
+      price: "1000",
+      priceCurrency: "USD",
+    },
+    {
+      "@type": "Offer",
+      name: "Website Maintenance",
+      description:
+        "Ongoing support, updates, backups, and issue resolution for reliable website uptime.",
+      price: "500",
+      priceCurrency: "USD",
+    },
+  ],
+};
 
 const skillsSchema = {
   "@type": "ItemList",
@@ -954,4 +1088,6 @@ export {
   socialsSchema,
   testimonialsSchema,
   websiteSchema,
+  jobsSchema,
+  technologiesSchema,
 };

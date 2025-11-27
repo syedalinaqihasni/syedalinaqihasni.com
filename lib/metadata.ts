@@ -149,6 +149,18 @@ export const siteRoutes: {
       "Read the terms and conditions for using Syed Ali Naqi Hasni’s website and services.",
   },
   {
+    path: "/jobs",
+    title: "Jobs & Opportunities | Syed Ali Naqi Hasni",
+    description:
+      "Explore current job openings and career opportunities at Syed Ali Naqi Hasni’s organization.",
+  },
+  {
+    path: "/technologies",
+    title: "Technologies & Tools | Syed Ali Naqi Hasni",
+    description:
+      "Discover the technologies and tools utilized by Syed Ali Naqi Hasni in web development.",
+  },
+  {
     path: "/privacy-policy",
     title: "Privacy Policy | Syed Ali Naqi Hasni",
     description:

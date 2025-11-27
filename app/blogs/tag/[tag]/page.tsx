@@ -49,7 +49,7 @@ export async function generateMetadata({
 //   });
 
 //   // Return params in the format expected by Next.js
-//   return Array.from(tagsSet).map(tag => ({ tag }));
+//   return Array.from(tagsSet)?.map(tag => ({ tag }));
 // }
 
 // Server component

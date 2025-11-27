@@ -138,7 +138,7 @@ const TagCloud = ({ posts }: { posts: Post[] }) => {
                   </div>
                 </div>
                 <div className={styles?.tagsWrapper}>
-                  {post?.tags?.slice(0, 2).map((tag) => (
+                  {post?.tags?.slice(0, 2)?.map((tag) => (
                     <a
                       href={`/blogs/tag/${tag
                         .toLowerCase()

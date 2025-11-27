@@ -14,7 +14,7 @@ import { Check, ArrowRight, Quote, Briefcase } from "lucide-react";
 import { dashToProperCase, properCaseToDash } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
-import { countries } from "@/constants/area-services";
+import { countries } from "@/constants/countries";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
 export async function generateMetadata({
@@ -196,7 +196,7 @@ export default function ServicePage({
               {service?.relatedJobTitles.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-jobs/${properCaseToDash(
+                    href={`/jobs/${properCaseToDash(
                       serv
                     )}-in-${country}/`}
                     className="flex items-center gap-2 text-xs hover:underline"
@@ -217,7 +217,7 @@ export default function ServicePage({
               {service?.technologies.map((serv) => (
                 <li key={serv}>
                   <Link
-                    href={`/related-services/${properCaseToDash(
+                    href={`/technologies/${properCaseToDash(
                       serv
                     )}-in-${country}/`}
                     className="flex items-center gap-2 text-xs hover:underline"

@@ -54,7 +54,7 @@ export default function FeaturedPricing({ plans }: { plans: Plan[] }) {
               </div>
 
               <div className={styles?.featuresList}>
-                {plan?.features.slice(0, 5).map((feature, idx) => (
+                {plan?.features.slice(0, 5)?.map((feature, idx) => (
                   <div key={idx} className={styles?.featureItem}>
                     <Check className="h-4 w-4 text-green-500" />
                     <Link

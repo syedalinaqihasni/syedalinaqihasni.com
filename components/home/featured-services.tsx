@@ -48,7 +48,7 @@ export default function FeaturedServices({
               </p>
 
               <div className={styles?.featuresList}>
-                {service?.features.slice(0, 3).map((feature, idx) => (
+                {service?.features.slice(0, 3)?.map((feature, idx) => (
                   <div key={idx} className={styles?.featureItem}>
                     <Check className="h-4 w-4 text-green-500" />
                     <span>{feature}</span>
@@ -64,7 +64,7 @@ export default function FeaturedServices({
               </div>
 
               <div className={styles?.techBadges}>
-                {service?.technologies.slice(0, 3).map((tech) => (
+                {service?.technologies?.slice(0, 3)?.map((tech) => (
                   <Badge key={tech} variant="secondary" className="text-xs">
                     {tech}
                   </Badge>

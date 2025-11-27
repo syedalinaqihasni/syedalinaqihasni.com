@@ -100,7 +100,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
       if (!post?.publishedAt) return false;
 
       // Parse DD-MM-YYYY format safely
-      const [day, month, year] = post.publishedAt.split("-").map(Number);
+      const [day, month, year] = post.publishedAt.split("-")?.map(Number);
       const postDate = new Date(year, month - 1, day); // month is 0-based
 
       return (
@@ -112,8 +112,8 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
       );
     })
     ?.sort((a, b) => {
-      const [dayA, monthA, yearA] = a.publishedAt.split("-").map(Number);
-      const [dayB, monthB, yearB] = b.publishedAt.split("-").map(Number);
+      const [dayA, monthA, yearA] = a.publishedAt.split("-")?.map(Number);
+      const [dayB, monthB, yearB] = b.publishedAt.split("-")?.map(Number);
       const dateA = new Date(yearA, monthA - 1, dayA).getTime();
       const dateB = new Date(yearB, monthB - 1, dayB).getTime();
       return dateB - dateA; // latest first
@@ -208,7 +208,7 @@ const BlogsList = ({ posts }: { posts: Post[] }) => {
           className={styles?.inputField}
         />
         <div className={styles?.viewModes}>
-          {Object.values(CONSTANT.modes).map((mode) => (
+          {Object.values(CONSTANT.modes)?.map((mode) => (
             <Button
               key={mode.id}
               variant={viewMode === mode.id ? "default" : "outline"}

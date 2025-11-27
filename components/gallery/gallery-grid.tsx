@@ -35,7 +35,7 @@ export default function GalleryGrid({
   // Album list
   const albumList = [
     { id: "all", name: "All Photos" },
-    ...Array.from(new Set(images.map((img) => img.album))).map((album) => ({
+    ...Array.from(new Set(images.map((img) => img.album)))?.map((album) => ({
       id: album,
       name: album.charAt(0).toUpperCase() + album.slice(1),
     })),
@@ -264,7 +264,7 @@ export default function GalleryGrid({
         >
           &lt;&lt;
         </Button>
-        {renderPaginationNumbers().map((p, i) =>
+        {renderPaginationNumbers()?.map((p, i) =>
           typeof p === "number" ? (
             <Button
               key={i}

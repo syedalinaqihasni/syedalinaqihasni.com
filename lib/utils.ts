@@ -9,7 +9,7 @@ export const formatDate = (dateString: string) => {
   if (!dateString) return "";
 
   // Parse DD-MM-YYYY
-  const [day, month, year] = dateString.split("-").map(Number);
+  const [day, month, year] = dateString.split("-")?.map(Number);
   const date = new Date(year, month - 1, day);
 
   // Format: e.g. "25 September 2025"
