@@ -1,33 +1,82 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { JOBS } from "@/constants/jobs";
-import { dashToProperCase } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import Link from "next/link";
+import { Check, ArrowRight, Quote, Briefcase } from "lucide-react"; 
+import { dashToProperCase, properCaseToDash } from "@/lib/utils";
+import HtmlRenderer from "@/components/HtmlRenderer";
+import FeaturedPricing from "@/components/home/featured-pricing";
+import { countries } from "@/constants/countries";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: { slug: string; country?: string; city?: string; area?: string };
 }): Promise<Metadata> {
-  const job = JOBS.find((s) => s.slug === params?.slug);
+  const job = JOBS.find((s) => s.slug?.includes(params?.slug));
   if (!job) return {};
 
-  const slug = params.slug ? dashToProperCase(params.slug) : undefined;
+  // Convert dashed params to proper case
+  const country = params.country ? dashToProperCase(params.country) : undefined;
+  const city = params.city ? dashToProperCase(params.city) : undefined;
+  const area = params.area ? dashToProperCase(params.area) : undefined;
 
-  const title = `${job?.title}${
-    slug ? ` in ${slug}` : ""
-  } | Syed Ali Naqi Hasni`;
-  const description = job?.description;
+  // Create location string for SEO
+  const locationParts = [area, city, country].filter(Boolean);
+  const location = locationParts?.length
+    ? ` in ${locationParts?.join(", ")}`
+    : "";
 
-  const pathParts = ["/jobs", params?.slug].filter(Boolean);
+  const title = `${job?.title}${location} | Syed Ali Naqi Hasni`;
+  // const description = job?.description;
+
+  // Build dynamic path for full URL
+  const pathParts = ["/jobs", params?.slug, country, city, area].filter(
+    Boolean
+  );
   const path = pathParts.join("/");
 
   return generateDynamicMetadata({
     title,
-    description,
+    // description,
     path,
   });
 }
+
+// export async function generateStaticParams() {
+//   const params: {
+//     slug: string;
+//     country: string;
+//     city: string;
+//     area: string;
+//   }[] = [];
+
+//   for (const country of countries) {
+//     for (const city of country.cities) {
+//       for (const area of city.areas) {
+//         for (const job of JOBS) {
+//           params?.push({
+//             slug: job?.slug,
+//             country: country?.slug,
+//             city: city?.slug,
+//             area: area?.slug,
+//           });
+//         }
+//       }
+//     }
+//   }
+
+//   return params;
+// }
 
 const styles = {
   sectionPadding: " px-4",
@@ -53,17 +102,98 @@ const styles = {
   contactText: "text-center text-muted-foreground mb-10 max-w-2xl mx-auto",
 };
 
-export default function JobPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default function JobPage({
+  params,
+}: {
+  params: { slug: string; country?: string; city?: string; area?: string };
+}) {
+  const job = JOBS.find((s) => s.slug?.includes(params?.slug));
+  if (!job) return notFound();
+  const { country, city, area } = params;
+
+  // Validate country, city, area
+  let countryObj, cityObj, areaObj;
+
+  if (params?.country) {
+    countryObj = countries.find((c) => c.slug === params?.country);
+    if (!countryObj) return notFound();
+    if (params?.city) {
+      cityObj = countryObj.cities.find((ct) => ct.slug === params?.city);
+      if (!cityObj) return notFound();
+      if (params?.area) {
+        areaObj = cityObj.areas.find((a) => a.slug === params?.area);
+        if (!areaObj) return notFound();
+      }
+    }
+  }
 
   return (
     <section className="max-w-5xl mx-auto py-24 px-4">
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold">
-          {slug ? dashToProperCase(slug) : ""}
+          {job?.title} in {area ? dashToProperCase(area) : ""}{" "}
+          {city ? dashToProperCase(city) : ""}{" "}
+          {country ? dashToProperCase(country) : ""}
         </h1>
       </div>
+      
+      <div className="text-center mt-16">
+        <h3 className="text-2xl font-bold mb-2">Interested in this job?</h3>
+        <p className="text-muted-foreground mb-6">
+          Let’s talk about how I can help you with your project.
+        </p>
+        <Button size="lg" asChild>
+          <Link href="/contact">
+            Contact Me
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </div>
     </section>
+  );
+}
+
+// === Helpers ===
+
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="mb-12">
+      <h2 className="text-2xl font-semibold mb-4">{title}</h2>
+      {children}
+    </div>
+  );
+}
+
+function FeatureList({
+  features,
+  link,
+}: {
+  features: string[];
+  link?: string;
+}) {
+  return (
+    <div className="space-y-2">
+      {features.map((feature, i) => (
+        <div key={i} className="flex items-center gap-2 text-sm">
+          <Check className="w-4 h-4 text-green-500" />
+          {link ? (
+            <Link
+              href={`/jobs/${properCaseToDash(feature)}-${link}`}
+            >
+              <span>{feature}</span>
+            </Link>
+          ) : (
+            <span>{feature}</span>
+          )}
+        </div>
+      ))}
+    </div>
   );
 }

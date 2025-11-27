@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { SERVICES } from "@/constants/services";
+import { RELATED_SERVICES } from "@/constants/related-services";
 import { dashToProperCase } from "@/lib/utils";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
@@ -9,7 +9,7 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const service = SERVICES.find((s) => s.slug === params?.slug);
+  const service = RELATED_SERVICES.find((s) => s.slug === params?.slug);
   if (!service) return {};
 
   const slug = params.slug ? dashToProperCase(params.slug) : undefined;
@@ -17,14 +17,14 @@ export async function generateMetadata({
   const title = `${service?.title}${
     slug ? ` in ${slug}` : ""
   } | Syed Ali Naqi Hasni`;
-  const description = service?.description;
+  // const description = service?.description;
 
-  const pathParts = ["/services", params?.slug].filter(Boolean);
+  const pathParts = ["/related-services", params?.slug].filter(Boolean);
   const path = pathParts.join("/");
 
   return generateDynamicMetadata({
     title,
-    description,
+    // description,
     path,
   });
 }

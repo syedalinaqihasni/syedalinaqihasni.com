@@ -37,7 +37,7 @@ export async function generateMetadata({
     : "";
 
   const title = `${job?.title}${location} | Syed Ali Naqi Hasni`;
-  const description = job?.description;
+  // const description = job?.description;
 
   // Build dynamic path for full URL
   const pathParts = ["/jobs", params?.slug, country, city, area].filter(
@@ -47,7 +47,7 @@ export async function generateMetadata({
 
   return generateDynamicMetadata({
     title,
-    description,
+    // description,
     path,
   });
 }
@@ -136,176 +136,8 @@ export default function JobPage({
           {city ? dashToProperCase(city) : ""}{" "}
           {country ? dashToProperCase(country) : ""}
         </h1>
-        <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-          {job?.description}
-        </p>
       </div>
-
-      {/* Deliverables + Requirements side by side */}
-      {(job?.deliverables || job?.requirements) && (
-        <div className="mb-12 grid md:grid-cols-2 gap-8">
-          <Section title="What’s Included">
-            <FeatureList features={job?.features} link={`in-${area}`} />
-          </Section>
-          <div>
-            <Section title="Related Jobs in Your Area">
-              <div className="flex flex-wrap gap-2">
-                {job?.servs.map((serv) => {
-                  return (
-                    <Link
-                      href={`/jobs/${serv}-in-${area}`}
-                      key={serv}
-                    >
-                      <Badge
-                        variant="secondary"
-                        className="text-xs  hover:underline "
-                      >
-                        {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                        {area ? dashToProperCase(area) : ""}
-                      </Badge>
-                    </Link>
-                  );
-                })}
-              </div>
-            </Section>
-          </div>
-        </div>
-      )}
-      {(job?.deliverables || job?.requirements) && (
-        <div className="mb-12 grid md:grid-cols-2 gap-8">
-          {job?.deliverables && (
-            <div>
-              <h2 className="text-xl font-semibold mb-3">Deliverables</h2>
-              <FeatureList features={job?.deliverables} />
-            </div>
-          )}
-          {job?.requirements && (
-            <div>
-              <h2 className="text-xl font-semibold mb-3">
-                What I Need from You
-              </h2>
-              <FeatureList features={job?.requirements} />
-            </div>
-          )}
-        </div>
-      )}
-      {/* Deliverables + Requirements side by side */}
-      {(job?.relatedJobTitles || job?.technologies) && (
-        <div className="mb-12 grid md:grid-cols-2 gap-8">
-          {/* Related Job Titles as list with icons */}
-          <Section title="Related Job Titles">
-            <ul className="space-y-2">
-              {job?.relatedJobTitles.map((serv) => (
-                <li key={serv}>
-                  <Link
-                    href={`/jobs/${properCaseToDash(
-                      serv
-                    )}-in-${area}/`}
-                    className="flex items-center gap-2 text-xs hover:underline"
-                  >
-                    <Briefcase size={14} className="text-muted-foreground" />
-                    <span>
-                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                      {area ? dashToProperCase(area) : ""}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </Section>
-          {/* Technologies Used */}
-          <Section title="Technologies Used">
-            <ul className="space-y-2">
-              {job?.technologies.map((serv) => (
-                <li key={serv}>
-                  <Link
-                    href={`/technologies/${properCaseToDash(
-                      serv
-                    )}-in-${area}/`}
-                    className="flex items-center gap-2 text-xs hover:underline"
-                  >
-                    <Badge
-                      variant="secondary"
-                      className="text-xs  hover:underline "
-                    >
-                      <span>
-                        {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                        {area ? dashToProperCase(area) : ""}
-                      </span>
-                    </Badge>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </Section>
-        </div>
-      )}
-      {job?.detailedDescription && (
-        <Section title="More About This Job">
-          <div className="prose prose-neutral max-w-none">
-            <HtmlRenderer
-              path=""
-              terms={[]}
-              html={job?.detailedDescription}
-            />
-          </div>
-        </Section>
-      )}
-
-      {/* FAQs in Accordion */}
-      {job?.faqs?.length > 0 && (
-        <Section title="FAQs">
-          <Accordion type="single" collapsible className="w-full">
-            {job?.faqs.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`}>
-                <AccordionTrigger className="text-left">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </Section>
-      )}
-
-      {/* Testimonials Slider */}
-      {job?.testimonials?.length > 0 && (
-        <Section title={`Client Testimonials for ${job?.title}`}>
-          <div className="gap-6 py-2 px-1">
-            {job?.testimonials.map((t, i) => (
-              <div
-                key={i}
-                className="min-w-[300px] bg-muted/50 border rounded-xl p-4 my-3  flex-shrink-0"
-              >
-                <Quote className="w-5 h-5 text-primary mb-2" />
-                <p className="text-lg italic text-muted-foreground mb-2">
-                  {t.quote}
-                </p>
-                <div className="text-sm font-medium text-primary text-right">
-                  — {t.client}
-                </div>
-              </div>
-            ))}
-          </div>
-        </Section>
-      )}
-      {/* Pricing Section */}
-      <section className={`${styles?.sectionPadding} `} id={"pricing"}>
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="/pricing">
-              <Button variant={"outline"}>
-                View All Plans
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <FeaturedPricing plans={job?.plans} />
-        </div>
-      </section>
+      
       <div className="text-center mt-16">
         <h3 className="text-2xl font-bold mb-2">Interested in this job?</h3>
         <p className="text-muted-foreground mb-6">

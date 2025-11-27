@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-import { Check, ArrowRight, Quote, Briefcase } from "lucide-react";
+import { Check, ArrowRight, Quote, Briefcase } from "lucide-react"; 
 import { dashToProperCase, properCaseToDash } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
@@ -37,7 +37,7 @@ export async function generateMetadata({
     : "";
 
   const title = `${Technology?.title}${location} | Syed Ali Naqi Hasni`;
-  const description = Technology?.description;
+  // const description = Technology?.description;
 
   // Build dynamic path for full URL
   const pathParts = ["/technologies", params?.slug, country, city, area].filter(
@@ -47,7 +47,7 @@ export async function generateMetadata({
 
   return generateDynamicMetadata({
     title,
-    description,
+    // description,
     path,
   });
 }
@@ -136,169 +136,7 @@ export default function TechnologyPage({
           {city ? dashToProperCase(city) : ""}{" "}
           {country ? dashToProperCase(country) : ""}
         </h1>
-        <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
-          {Technology?.description}
-        </p>
       </div>
-
-      {/* Deliverables + Requirements side by side */}
-      {(Technology?.deliverables || Technology?.requirements) && (
-        <div className="mb-12 grid md:grid-cols-2 gap-8">
-          <Section title="What’s Included">
-            <FeatureList features={Technology?.features} link={`in-${city}`} />
-          </Section>
-          <div>
-            <Section title="Related Technologies in Your City">
-              <div className="flex flex-wrap gap-2">
-                {Technology?.servs.map((serv) => (
-                  <Link
-                    href={`/technologies/${serv}-in-${city}`}
-                    key={serv}
-                  >
-                    <Badge key={serv} variant="secondary" className="text-xs">
-                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                      {city ? dashToProperCase(city) : ""}{" "}
-                    </Badge>
-                  </Link>
-                ))}
-              </div>
-            </Section>
-          </div>
-        </div>
-      )}
-      {(Technology?.deliverables || Technology?.requirements) && (
-        <div className="mb-12 grid md:grid-cols-2 gap-8">
-          {Technology?.deliverables && (
-            <div>
-              <h2 className="text-xl font-semibold mb-3">Deliverables</h2>
-              <FeatureList features={Technology?.deliverables} />
-            </div>
-          )}
-          {Technology?.requirements && (
-            <div>
-              <h2 className="text-xl font-semibold mb-3">
-                What I Need from You
-              </h2>
-              <FeatureList features={Technology?.requirements} />
-            </div>
-          )}
-        </div>
-      )}
-      {/* Deliverables + Requirements side by side */}
-      {(Technology?.relatedJobTitles || Technology?.technologies) && (
-        <div className="mb-6 grid md:grid-cols-2 gap-8">
-          {/* Related Job Titles as list with icons */}
-          <Section title="Related Job Titles">
-            <ul className="space-y-2">
-              {Technology?.relatedJobTitles.map((serv) => (
-                <li key={serv}>
-                  <Link
-                    href={`/related-jobs/${properCaseToDash(serv)}-in-${city}/`}
-                    className="flex items-center gap-2 text-xs hover:underline"
-                  >
-                    <Briefcase size={14} className="text-muted-foreground" />
-                    <span>
-                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                      {city ? dashToProperCase(city) : ""}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </Section>
-          {/* Technologies Used */}
-          <Section title="Technologies Used">
-            <ul className="space-y-2">
-              {Technology?.technologies.map((serv) => (
-                <li key={serv}>
-                  <Link
-                    href={`/technologies/${properCaseToDash(
-                      serv
-                    )}-in-${city}/`}
-                    className="flex items-center gap-2 text-xs hover:underline"
-                  >
-                    <Badge
-                      variant="secondary"
-                      className="text-xs  hover:underline "
-                    >
-                      <span>
-                        {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                        {city ? dashToProperCase(city) : ""}
-                      </span>
-                    </Badge>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </Section>
-        </div>
-      )}
-      {Technology?.detailedDescription && (
-        <Section title="More About This Technology">
-          <div className="prose prose-neutral max-w-none">
-            <HtmlRenderer
-              path=""
-              terms={[]}
-              html={Technology?.detailedDescription}
-            />
-          </div>
-        </Section>
-      )}
-
-      {/* FAQs in Accordion */}
-      {Technology?.faqs?.length > 0 && (
-        <Section title="FAQs">
-          <Accordion type="single" collapsible className="w-full">
-            {Technology?.faqs.map((faq, i) => (
-              <AccordionItem key={i} value={`faq-${i}`}>
-                <AccordionTrigger className="text-left">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </Section>
-      )}
-
-      {/* Testimonials Slider */}
-      {Technology?.testimonials?.length > 0 && (
-        <Section title={`Client Testimonials for ${Technology?.title}`}>
-          <div className="gap-6 py-2 px-1">
-            {Technology?.testimonials.map((t, i) => (
-              <div
-                key={i}
-                className="min-w-[300px] bg-muted/50 border rounded-xl p-4 my-3  flex-shrink-0"
-              >
-                <Quote className="w-5 h-5 text-primary mb-2" />
-                <p className="text-lg italic text-muted-foreground mb-2">
-                  {t.quote}
-                </p>
-                <div className="text-sm font-medium text-primary text-right">
-                  — {t.client}
-                </div>
-              </div>
-            ))}
-          </div>
-        </Section>
-      )}
-      {/* Pricing Section */}
-      <section className={`${styles?.sectionPadding} `} id={"pricing"}>
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="/pricing">
-              <Button variant={"outline"}>
-                View All Plans
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <FeaturedPricing plans={Technology?.plans} />
-        </div>
-      </section>
       <div className="text-center mt-16">
         <h3 className="text-2xl font-bold mb-2">Interested in this Technology?</h3>
         <p className="text-muted-foreground mb-6">
