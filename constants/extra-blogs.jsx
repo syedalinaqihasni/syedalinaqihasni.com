@@ -10,7 +10,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["WordPress", "React", "Challenges", "Lessons"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-06-2026",
+    publishedAt: "07-06-2025",
   },
   {
     // id: 2,
@@ -23,7 +23,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Headless CMS", "Strapi", "Sanity", "Ghost"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-08-2026",
+    publishedAt: "10-08-2025",
   },
   {
     // id: 1,
@@ -42,7 +42,7 @@ export const OLD_TWEETS = [
       "World Experience",
     ],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-02-2026",
+    publishedAt: "18-02-2025",
   },
   {
     // id: 1,
@@ -55,20 +55,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["General"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-12-2026",
+    publishedAt: "24-12-2025",
   },
   {
     // id: 1,
-    title: "2026 Review: Tailwind CSS vs Bootstrap",
-    slug: "2026-review-tailwind-css-vs-bootstrap",
+    title: "2025 Review: Tailwind CSS vs Bootstrap",
+    slug: "2025-review-tailwind-css-vs-bootstrap",
     excerpt:
-      "A detailed comparison and review: 2026 Review: Tailwind CSS vs Bootstrap.",
+      "A detailed comparison and review: 2025 Review: Tailwind CSS vs Bootstrap.",
     readingTime: "5 min read",
-    //  image: "/2026-review-tailwind-css-vs-bootstrap.png",
+    //  image: "/2025-review-tailwind-css-vs-bootstrap.png",
     category: "AI Tools",
-    tags: ["2026", "Review", "Tailwind", "CSS", "Bootstrap"],
+    tags: ["2025", "Review", "Tailwind", "CSS", "Bootstrap"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-04-2026",
+    publishedAt: "03-04-2025",
   },
   {
     // id: 1,
@@ -81,20 +81,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Astro", "Next.js", "Gatsby", "Best", "Static", "Site", "Generator"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-11-2026",
+    publishedAt: "08-11-2025",
   },
   {
     // id: 1,
-    title: "Best AI Writing Tools for Developers in 2026",
-    slug: "best-ai-writing-tools-for-developers-in-2026",
+    title: "Best AI Writing Tools for Developers in 2025",
+    slug: "best-ai-writing-tools-for-developers-in-2025",
     excerpt:
-      "An in-depth guide on Best AI Writing Tools for Developers in 2026.",
+      "An in-depth guide on Best AI Writing Tools for Developers in 2025.",
     readingTime: "5 min read",
-    //  image: "/best-ai-writing-tools-for-developers-in-2026.png",
+    //  image: "/best-ai-writing-tools-for-developers-in-2025.png",
     category: "AI Tools",
-    tags: ["Best", "AI", "Writing Tools ", "Developers ", "2026"],
+    tags: ["Best", "AI", "Writing Tools ", "Developers ", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-03-2026",
+    publishedAt: "05-03-2025",
   },
   {
     // id: 1,
@@ -107,7 +107,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "AI", "Tools", "Code", "Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-01-2026",
+    publishedAt: "28-01-2025",
   },
   {
     // id: 1,
@@ -120,59 +120,59 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "AI", "Tools", "Content", "Creation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-08-2026",
+    publishedAt: "15-08-2025",
   },
   {
     // id: 1,
-    title: "Best Free Analytics Tools for Developers in 2026",
-    slug: "best-free-analytics-tools-for-developers-in-2026",
+    title: "Best Free Analytics Tools for Developers in 2025",
+    slug: "best-free-analytics-tools-for-developers-in-2025",
     excerpt:
-      "A curated list of best free analytics tools for developers in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free analytics tools for developers in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-analytics-tools-for-developers-in-2026.png",
+    //  image: "/best-free-analytics-tools-for-developers-in-2025.png",
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-07-2026",
+    publishedAt: "23-07-2025",
   },
   {
     // id: 1,
-    title: "Best Free APIs for Developers in 2026",
-    slug: "best-free-apis-for-developers-in-2026",
+    title: "Best Free APIs for Developers in 2025",
+    slug: "best-free-apis-for-developers-in-2025",
     excerpt:
-      "A curated list of best free apis for developers in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free apis for developers in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-apis-for-developers-in-2026.png",
+    //  image: "/best-free-apis-for-developers-in-2025.png",
     category: "APIs & Backend",
-    tags: ["Best", "APIs", "Developers", "2026"],
+    tags: ["Best", "APIs", "Developers", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-12-2026",
+    publishedAt: "20-12-2025",
   },
   {
     // id: 1,
-    title: "Best Free CDN Providers for Websites in 2026",
-    slug: "best-free-cdn-providers-for-websites-in-2026",
+    title: "Best Free CDN Providers for Websites in 2025",
+    slug: "best-free-cdn-providers-for-websites-in-2025",
     excerpt:
-      "A curated list of best free cdn providers for websites in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free cdn providers for websites in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-cdn-providers-for-websites-in-2026.png",
+    //  image: "/best-free-cdn-providers-for-websites-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-12-2026",
+    publishedAt: "09-12-2025",
   },
   {
     // id: 1,
-    title: "Best Free Deployment Tools in 2026",
-    slug: "best-free-deployment-tools-in-2026",
+    title: "Best Free Deployment Tools in 2025",
+    slug: "best-free-deployment-tools-in-2025",
     excerpt:
-      "A curated list of best free deployment tools in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free deployment tools in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-deployment-tools-in-2026.png",
+    //  image: "/best-free-deployment-tools-in-2025.png",
     category: "Web Hosting",
-    tags: ["Best", "Deployment", "Tools", "2026"],
+    tags: ["Best", "Deployment", "Tools", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-12-2026",
+    publishedAt: "06-12-2025",
   },
   {
     // id: 1,
@@ -185,7 +185,7 @@ export const OLD_TWEETS = [
     category: "Personal Projects",
     tags: ["Best", "Fonts", "Modern", "Web", "Projects"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-10-2026",
+    publishedAt: "01-10-2025",
   },
   {
     // id: 1,
@@ -198,7 +198,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Best", "Hosting", "Node.js", "Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-07-2026",
+    publishedAt: "03-07-2025",
   },
   {
     // id: 1,
@@ -211,7 +211,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Best", "Hosting", "React", "Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-08-2026",
+    publishedAt: "12-08-2025",
   },
   {
     // id: 1,
@@ -224,7 +224,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Best", "Hosting", "Student", "Projects"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-06-2026",
+    publishedAt: "25-06-2025",
   },
   {
     // id: 1,
@@ -237,7 +237,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Icon", "Packs", "Developers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-02-2026",
+    publishedAt: "02-02-2025",
   },
   {
     // id: 1,
@@ -250,7 +250,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "A/B Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-02-2026",
+    publishedAt: "04-02-2025",
   },
   {
     // id: 1,
@@ -263,7 +263,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-08-2026",
+    publishedAt: "09-08-2025",
   },
   {
     // id: 1,
@@ -276,7 +276,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "Tools", "AI", "Image", "Upscaling"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-01-2026",
+    publishedAt: "22-01-2025",
   },
   {
     // id: 1,
@@ -289,7 +289,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-02-2026",
+    publishedAt: "09-02-2025",
   },
   {
     // id: 1,
@@ -302,7 +302,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "Tools", "AI", "Voice", "Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-12-2026",
+    publishedAt: "15-12-2025",
   },
   {
     // id: 1,
@@ -315,7 +315,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "Tools", "AI", "AI Powered", "", "Image", "Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-10-2026",
+    publishedAt: "08-10-2025",
   },
   {
     // id: 1,
@@ -328,7 +328,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "Tools", "AI", "AI Powered", "", "SEO"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-04-2026",
+    publishedAt: "25-04-2025",
   },
   {
     // id: 1,
@@ -341,7 +341,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "Tools", "AI", "AI Powered", "", "Summaries"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-07-2026",
+    publishedAt: "15-07-2025",
   },
   {
     // id: 1,
@@ -354,7 +354,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "API", "Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-05-2026",
+    publishedAt: "11-05-2025",
   },
   {
     // id: 1,
@@ -367,7 +367,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "API", "Gateways"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-06-2026",
+    publishedAt: "06-06-2025",
   },
   {
     // id: 1,
@@ -380,7 +380,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "API", "Logging"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-03-2026",
+    publishedAt: "18-03-2025",
   },
   {
     // id: 1,
@@ -393,7 +393,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "API", "Mocking"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-03-2026",
+    publishedAt: "11-03-2025",
   },
   {
     // id: 1,
@@ -406,7 +406,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "API", "Rate", "Limiting"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-03-2026",
+    publishedAt: "13-03-2025",
   },
   {
     // id: 1,
@@ -419,7 +419,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-01-2026",
+    publishedAt: "02-01-2025",
   },
   {
     // id: 1,
@@ -432,20 +432,20 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-03-2026",
+    publishedAt: "04-03-2025",
   },
   {
     // id: 1,
-    title: "Best Free Tools for API Testing in 2026",
-    slug: "best-free-tools-for-api-testing-in-2026",
+    title: "Best Free Tools for API Testing in 2025",
+    slug: "best-free-tools-for-api-testing-in-2025",
     excerpt:
-      "A curated list of best free tools for api testing in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free tools for api testing in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-tools-for-api-testing-in-2026.png",
+    //  image: "/best-free-tools-for-api-testing-in-2025.png",
     category: "APIs & Backend",
-    tags: ["Best", "Tools", "API", "Testing", "2026"],
+    tags: ["Best", "Tools", "API", "Testing", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-05-2026",
+    publishedAt: "09-05-2025",
   },
   {
     // id: 1,
@@ -458,7 +458,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "API", "Versioning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-08-2026",
+    publishedAt: "04-08-2025",
   },
   {
     // id: 1,
@@ -471,7 +471,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-02-2026",
+    publishedAt: "01-02-2025",
   },
   {
     // id: 1,
@@ -484,7 +484,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-02-2026",
+    publishedAt: "06-02-2025",
   },
   {
     // id: 1,
@@ -497,7 +497,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-07-2026",
+    publishedAt: "25-07-2025",
   },
   {
     // id: 1,
@@ -510,7 +510,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-02-2026",
+    publishedAt: "12-02-2025",
   },
   {
     // id: 1,
@@ -523,7 +523,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-11-2026",
+    publishedAt: "29-11-2025",
   },
   {
     // id: 1,
@@ -536,7 +536,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Automating", "Invoices"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-01-2026",
+    publishedAt: "25-01-2025",
   },
   {
     // id: 1,
@@ -549,7 +549,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-01-2026",
+    publishedAt: "20-01-2025",
   },
   {
     // id: 1,
@@ -562,20 +562,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-06-2026",
+    publishedAt: "29-06-2025",
   },
   {
     // id: 1,
-    title: "Best Free Tools for Automating Spreadsheets in 2026",
-    slug: "best-free-tools-for-automating-spreadsheets-in-2026",
+    title: "Best Free Tools for Automating Spreadsheets in 2025",
+    slug: "best-free-tools-for-automating-spreadsheets-in-2025",
     excerpt:
-      "A curated list of best free tools for automating spreadsheets in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free tools for automating spreadsheets in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-tools-for-automating-spreadsheets-in-2026.png",
+    //  image: "/best-free-tools-for-automating-spreadsheets-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-07-2026",
+    publishedAt: "05-07-2025",
   },
   {
     // id: 1,
@@ -588,7 +588,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-05-2026",
+    publishedAt: "10-05-2025",
   },
   {
     // id: 1,
@@ -601,7 +601,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-07-2026",
+    publishedAt: "05-07-2025",
   },
   {
     // id: 1,
@@ -614,7 +614,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Browser", "Automation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -627,7 +627,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Browser", "Extensions"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-04-2026",
+    publishedAt: "08-04-2025",
   },
   {
     // id: 1,
@@ -640,7 +640,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Browser", "Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-05-2026",
+    publishedAt: "06-05-2025",
   },
   {
     // id: 1,
@@ -653,7 +653,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Building", "Chatbots"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-07-2026",
+    publishedAt: "21-07-2025",
   },
   {
     // id: 1,
@@ -666,7 +666,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "Building", "REST", "APIs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-12-2026",
+    publishedAt: "19-12-2025",
   },
   {
     // id: 1,
@@ -679,7 +679,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-03-2026",
+    publishedAt: "03-03-2025",
   },
   {
     // id: 1,
@@ -692,7 +692,7 @@ export const OLD_TWEETS = [
     category: "DevOps & Automation",
     tags: ["Best", "Tools", "CI", "CD", "Pipelines"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-11-2026",
+    publishedAt: "02-11-2025",
   },
   {
     // id: 1,
@@ -705,7 +705,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Cloud", "Backups"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -718,7 +718,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-12-2026",
+    publishedAt: "25-12-2025",
   },
   {
     // id: 1,
@@ -731,7 +731,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Cloud", "File", "Storage"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-10-2026",
+    publishedAt: "11-10-2025",
   },
   {
     // id: 1,
@@ -744,7 +744,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Cloud", "Monitoring"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-02-2026",
+    publishedAt: "14-02-2025",
   },
   {
     // id: 1,
@@ -757,7 +757,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Cloud", "Security"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-01-2026",
+    publishedAt: "19-01-2025",
   },
   {
     // id: 1,
@@ -770,7 +770,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Code", "Collaboration"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-03-2026",
+    publishedAt: "19-03-2025",
   },
   {
     // id: 1,
@@ -783,7 +783,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Code", "Documentation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-05-2026",
+    publishedAt: "03-05-2025",
   },
   {
     // id: 1,
@@ -796,7 +796,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Content", "Audits"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-03-2026",
+    publishedAt: "02-03-2025",
   },
   {
     // id: 1,
@@ -809,7 +809,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Content", "Planning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-03-2026",
+    publishedAt: "01-03-2025",
   },
   {
     // id: 1,
@@ -822,7 +822,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-08-2026",
+    publishedAt: "08-08-2025",
   },
   {
     // id: 1,
@@ -835,7 +835,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-07-2026",
+    publishedAt: "16-07-2025",
   },
   {
     // id: 1,
@@ -848,7 +848,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-07-2026",
+    publishedAt: "25-07-2025",
   },
   {
     // id: 1,
@@ -861,7 +861,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "Creating", "API", "Docs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-12-2026",
+    publishedAt: "12-12-2025",
   },
   {
     // id: 1,
@@ -874,7 +874,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-05-2026",
+    publishedAt: "30-05-2025",
   },
   {
     // id: 1,
@@ -887,7 +887,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Creating", "Dashboards"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-05-2026",
+    publishedAt: "11-05-2025",
   },
   {
     // id: 1,
@@ -900,7 +900,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-09-2026",
+    publishedAt: "21-09-2025",
   },
   {
     // id: 1,
@@ -913,7 +913,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Creating", "Flowcharts"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-03-2026",
+    publishedAt: "26-03-2025",
   },
   {
     // id: 1,
@@ -926,7 +926,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Best", "Tools", "Creating", "Mock", "Data"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-01-2026",
+    publishedAt: "09-01-2025",
   },
   {
     // id: 1,
@@ -939,7 +939,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Creating", "QR", "Codes"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-11-2026",
+    publishedAt: "21-11-2025",
   },
   {
     // id: 1,
@@ -952,7 +952,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Creating", "Sitemaps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-10-2026",
+    publishedAt: "05-10-2025",
   },
   {
     // id: 1,
@@ -965,7 +965,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "Tools", "Daily", "Journaling"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-12-2026",
+    publishedAt: "09-12-2025",
   },
   {
     // id: 1,
@@ -978,7 +978,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Best", "Tools", "Data", "Pipelines"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-09-2026",
+    publishedAt: "19-09-2025",
   },
   {
     // id: 1,
@@ -991,7 +991,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Best", "Tools", "Data", "Transformation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-05-2026",
+    publishedAt: "31-05-2025",
   },
   {
     // id: 1,
@@ -1004,7 +1004,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-05-2026",
+    publishedAt: "30-05-2025",
   },
   {
     // id: 1,
@@ -1017,7 +1017,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-05-2026",
+    publishedAt: "31-05-2025",
   },
   {
     // id: 1,
@@ -1030,7 +1030,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-09-2026",
+    publishedAt: "21-09-2025",
   },
   {
     // id: 1,
@@ -1043,7 +1043,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-10-2026",
+    publishedAt: "21-10-2025",
   },
   {
     // id: 1,
@@ -1056,7 +1056,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Diagram", "Creation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-06-2026",
+    publishedAt: "17-06-2025",
   },
   {
     // id: 1,
@@ -1069,7 +1069,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-02-2026",
+    publishedAt: "25-02-2025",
   },
   {
     // id: 1,
@@ -1082,7 +1082,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Digital", "Note", "Taking"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-05-2026",
+    publishedAt: "11-05-2025",
   },
   {
     // id: 1,
@@ -1095,7 +1095,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-09-2026",
+    publishedAt: "05-09-2025",
   },
   {
     // id: 1,
@@ -1108,7 +1108,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Best", "Tools", "Email", "Security"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-12-2026",
+    publishedAt: "25-12-2025",
   },
   {
     // id: 1,
@@ -1121,7 +1121,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Encrypting", "Files"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-04-2026",
+    publishedAt: "27-04-2025",
   },
   {
     // id: 1,
@@ -1134,7 +1134,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Favicon", "Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-12-2026",
+    publishedAt: "20-12-2025",
   },
   {
     // id: 1,
@@ -1147,7 +1147,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "File", "Compression"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-05-2026",
+    publishedAt: "31-05-2025",
   },
   {
     // id: 1,
@@ -1160,7 +1160,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "File", "Conversion"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-11-2026",
+    publishedAt: "11-11-2025",
   },
   {
     // id: 1,
@@ -1173,7 +1173,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "File", "Sharing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-12-2026",
+    publishedAt: "11-12-2025",
   },
   {
     // id: 1,
@@ -1186,7 +1186,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-12-2026",
+    publishedAt: "07-12-2025",
   },
   {
     // id: 1,
@@ -1199,7 +1199,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-11-2026",
+    publishedAt: "13-11-2025",
   },
   {
     // id: 1,
@@ -1212,7 +1212,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-01-2026",
+    publishedAt: "15-01-2025",
   },
   {
     // id: 1,
@@ -1225,7 +1225,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-01-2026",
+    publishedAt: "13-01-2025",
   },
   {
     // id: 1,
@@ -1238,7 +1238,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-09-2026",
+    publishedAt: "23-09-2025",
   },
   {
     // id: 1,
@@ -1251,7 +1251,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-09-2026",
+    publishedAt: "30-09-2025",
   },
   {
     // id: 1,
@@ -1264,7 +1264,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-02-2026",
+    publishedAt: "15-02-2025",
   },
   {
     // id: 1,
@@ -1277,7 +1277,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-09-2026",
+    publishedAt: "20-09-2025",
   },
   {
     // id: 1,
@@ -1290,7 +1290,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-02-2026",
+    publishedAt: "11-02-2025",
   },
   {
     // id: 1,
@@ -1303,7 +1303,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Best", "Tools", "Hosting", "Images"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-05-2026",
+    publishedAt: "24-05-2025",
   },
   {
     // id: 1,
@@ -1316,7 +1316,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-02-2026",
+    publishedAt: "12-02-2025",
   },
   {
     // id: 1,
@@ -1329,7 +1329,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-03-2026",
+    publishedAt: "13-03-2025",
   },
   {
     // id: 1,
@@ -1342,7 +1342,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Image", "Compression"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-08-2026",
+    publishedAt: "27-08-2025",
   },
   {
     // id: 1,
@@ -1355,7 +1355,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Image", "Optimization"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-02-2026",
+    publishedAt: "19-02-2025",
   },
   {
     // id: 1,
@@ -1368,7 +1368,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "JSON", "Formatting"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-01-2026",
+    publishedAt: "20-01-2025",
   },
   {
     // id: 1,
@@ -1381,7 +1381,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Keyword", "Research"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-03-2026",
+    publishedAt: "25-03-2025",
   },
   {
     // id: 1,
@@ -1394,7 +1394,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-12-2026",
+    publishedAt: "03-12-2025",
   },
   {
     // id: 1,
@@ -1407,7 +1407,7 @@ export const OLD_TWEETS = [
     category: "DevOps & Automation",
     tags: ["Best", "Tools", "Learning", "DevOps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-12-2026",
+    publishedAt: "03-12-2025",
   },
   {
     // id: 1,
@@ -1420,33 +1420,33 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Learning", "JavaScript"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-05-2026",
+    publishedAt: "14-05-2025",
   },
   {
     // id: 1,
-    title: "Best Free Tools for Learning Python in 2026",
-    slug: "best-free-tools-for-learning-python-in-2026",
+    title: "Best Free Tools for Learning Python in 2025",
+    slug: "best-free-tools-for-learning-python-in-2025",
     excerpt:
-      "A curated list of best free tools for learning python in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free tools for learning python in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-tools-for-learning-python-in-2026.png",
+    //  image: "/best-free-tools-for-learning-python-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-05-2026",
+    publishedAt: "01-05-2025",
   },
   {
     // id: 1,
-    title: "Best Free Tools for Learning Rust in 2026",
-    slug: "best-free-tools-for-learning-rust-in-2026",
+    title: "Best Free Tools for Learning Rust in 2025",
+    slug: "best-free-tools-for-learning-rust-in-2025",
     excerpt:
-      "A curated list of best free tools for learning rust in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free tools for learning rust in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-tools-for-learning-rust-in-2026.png",
+    //  image: "/best-free-tools-for-learning-rust-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-12-2026",
+    publishedAt: "12-12-2025",
   },
   {
     // id: 1,
@@ -1459,7 +1459,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Learning", "SQL"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-12-2026",
+    publishedAt: "07-12-2025",
   },
   {
     // id: 1,
@@ -1472,7 +1472,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Learning", "TypeScript"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-08-2026",
+    publishedAt: "17-08-2025",
   },
   {
     // id: 1,
@@ -1485,7 +1485,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-02-2026",
+    publishedAt: "22-02-2025",
   },
   {
     // id: 1,
@@ -1498,7 +1498,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "Managing", "API", "Keys"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-11-2026",
+    publishedAt: "18-11-2025",
   },
   {
     // id: 1,
@@ -1511,7 +1511,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-05-2026",
+    publishedAt: "29-05-2025",
   },
   {
     // id: 1,
@@ -1524,7 +1524,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -1537,7 +1537,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-12-2026",
+    publishedAt: "30-12-2025",
   },
   {
     // id: 1,
@@ -1550,7 +1550,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Markdown", "Editing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-01-2026",
+    publishedAt: "28-01-2025",
   },
   {
     // id: 1,
@@ -1563,7 +1563,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Markdown", "Editors"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-07-2026",
+    publishedAt: "25-07-2025",
   },
   {
     // id: 1,
@@ -1576,7 +1576,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Markdown", "Notes"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-09-2026",
+    publishedAt: "08-09-2025",
   },
   {
     // id: 1,
@@ -1589,7 +1589,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-04-2026",
+    publishedAt: "28-04-2025",
   },
   {
     // id: 1,
@@ -1602,7 +1602,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-12-2026",
+    publishedAt: "13-12-2025",
   },
   {
     // id: 1,
@@ -1615,7 +1615,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "Mocking", "APIs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-12-2026",
+    publishedAt: "10-12-2025",
   },
   {
     // id: 1,
@@ -1628,7 +1628,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "Monitoring", "APIs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-06-2026",
+    publishedAt: "15-06-2025",
   },
   {
     // id: 1,
@@ -1641,7 +1641,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-07-2026",
+    publishedAt: "28-07-2025",
   },
   {
     // id: 1,
@@ -1654,7 +1654,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Newsletter", "Creation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-09-2026",
+    publishedAt: "10-09-2025",
   },
   {
     // id: 1,
@@ -1667,7 +1667,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-06-2026",
+    publishedAt: "01-06-2025",
   },
   {
     // id: 1,
@@ -1680,7 +1680,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Online", "Communities"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-09-2026",
+    publishedAt: "14-09-2025",
   },
   {
     // id: 1,
@@ -1693,7 +1693,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-09-2026",
+    publishedAt: "15-09-2025",
   },
   {
     // id: 1,
@@ -1706,7 +1706,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Online", "Diagramming"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-07-2026",
+    publishedAt: "06-07-2025",
   },
   {
     // id: 1,
@@ -1719,7 +1719,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Online", "Polls"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-03-2026",
+    publishedAt: "13-03-2025",
   },
   {
     // id: 1,
@@ -1732,7 +1732,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Online", "Surveys"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-03-2026",
+    publishedAt: "01-03-2025",
   },
   {
     // id: 1,
@@ -1745,7 +1745,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-12-2026",
+    publishedAt: "20-12-2025",
   },
   {
     // id: 1,
@@ -1758,7 +1758,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-08-2026",
+    publishedAt: "14-08-2025",
   },
   {
     // id: 1,
@@ -1771,7 +1771,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Open", "Source", "Docs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-08-2026",
+    publishedAt: "07-08-2025",
   },
   {
     // id: 1,
@@ -1784,7 +1784,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-05-2026",
+    publishedAt: "26-05-2025",
   },
   {
     // id: 1,
@@ -1797,7 +1797,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-10-2026",
+    publishedAt: "07-10-2025",
   },
   {
     // id: 1,
@@ -1810,7 +1810,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-06-2026",
+    publishedAt: "07-06-2025",
   },
   {
     // id: 1,
@@ -1823,7 +1823,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-04-2026",
+    publishedAt: "21-04-2025",
   },
   {
     // id: 1,
@@ -1836,7 +1836,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Password", "Management"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-11-2026",
+    publishedAt: "21-11-2025",
   },
   {
     // id: 1,
@@ -1849,7 +1849,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-08-2026",
+    publishedAt: "17-08-2025",
   },
   {
     // id: 1,
@@ -1862,7 +1862,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-03-2026",
+    publishedAt: "09-03-2025",
   },
   {
     // id: 1,
@@ -1875,7 +1875,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-03-2026",
+    publishedAt: "23-03-2025",
   },
   {
     // id: 1,
@@ -1888,7 +1888,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: ["Best", "Tools", "Privacy", "Focused", "Analytics"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-06-2026",
+    publishedAt: "12-06-2025",
   },
   {
     // id: 1,
@@ -1901,7 +1901,7 @@ export const OLD_TWEETS = [
     category: "Personal Projects",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
@@ -1914,7 +1914,7 @@ export const OLD_TWEETS = [
     category: "Personal Projects",
     tags: ["Best", "Tools", "Project", "Roadmapping"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-11-2026",
+    publishedAt: "09-11-2025",
   },
   {
     // id: 1,
@@ -1927,7 +1927,7 @@ export const OLD_TWEETS = [
     category: "Personal Projects",
     tags: ["Best", "Tools", "Project", "Roadmaps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-01-2026",
+    publishedAt: "29-01-2025",
   },
   {
     // id: 1,
@@ -1940,7 +1940,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "Real", "Time", "API", "Monitoring"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-05-2026",
+    publishedAt: "10-05-2025",
   },
   {
     // id: 1,
@@ -1953,7 +1953,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Real", "Time", "Collaboration"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-02-2026",
+    publishedAt: "10-02-2025",
   },
   {
     // id: 1,
@@ -1966,7 +1966,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Real", "Time", "Dashboards"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-12-2026",
+    publishedAt: "02-12-2025",
   },
   {
     // id: 1,
@@ -1979,7 +1979,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Real", "Time", "Notifications"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-12-2026",
+    publishedAt: "29-12-2025",
   },
   {
     // id: 1,
@@ -1992,7 +1992,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
@@ -2005,7 +2005,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Remote", "File", "Storage"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-06-2026",
+    publishedAt: "21-06-2025",
   },
   {
     // id: 1,
@@ -2018,7 +2018,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-03-2026",
+    publishedAt: "14-03-2025",
   },
   {
     // id: 1,
@@ -2031,7 +2031,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-04-2026",
+    publishedAt: "12-04-2025",
   },
   {
     // id: 1,
@@ -2044,7 +2044,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "SaaS", "Billing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-06-2026",
+    publishedAt: "19-06-2025",
   },
   {
     // id: 1,
@@ -2057,7 +2057,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Scheduling", "Meetings"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-01-2026",
+    publishedAt: "11-01-2025",
   },
   {
     // id: 1,
@@ -2070,7 +2070,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Screen", "Recording"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-04-2026",
+    publishedAt: "11-04-2025",
   },
   {
     // id: 1,
@@ -2083,7 +2083,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-06-2026",
+    publishedAt: "15-06-2025",
   },
   {
     // id: 1,
@@ -2096,7 +2096,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Screenshot", "Editing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-10-2026",
+    publishedAt: "11-10-2025",
   },
   {
     // id: 1,
@@ -2109,7 +2109,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Screenshot", "Sharing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-03-2026",
+    publishedAt: "16-03-2025",
   },
   {
     // id: 1,
@@ -2122,7 +2122,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-04-2026",
+    publishedAt: "04-04-2025",
   },
   {
     // id: 1,
@@ -2135,7 +2135,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-02-2026",
+    publishedAt: "18-02-2025",
   },
   {
     // id: 1,
@@ -2148,7 +2148,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-09-2026",
+    publishedAt: "05-09-2025",
   },
   {
     // id: 1,
@@ -2161,7 +2161,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Best", "Tools", "Static", "Site", "Hosting"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-06-2026",
+    publishedAt: "23-06-2025",
   },
   {
     // id: 1,
@@ -2174,7 +2174,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Task", "Management"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-05-2026",
+    publishedAt: "18-05-2025",
   },
   {
     // id: 1,
@@ -2187,7 +2187,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Task", "Scheduling"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-06-2026",
+    publishedAt: "05-06-2025",
   },
   {
     // id: 1,
@@ -2200,7 +2200,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-09-2026",
+    publishedAt: "06-09-2025",
   },
   {
     // id: 1,
@@ -2213,7 +2213,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Team", "Collaboration"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-11-2026",
+    publishedAt: "07-11-2025",
   },
   {
     // id: 1,
@@ -2226,7 +2226,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Team", "Kanban", "Boards"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-10-2026",
+    publishedAt: "17-10-2025",
   },
   {
     // id: 1,
@@ -2239,7 +2239,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-01-2026",
+    publishedAt: "28-01-2025",
   },
   {
     // id: 1,
@@ -2252,7 +2252,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Team", "Messaging"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-02-2026",
+    publishedAt: "16-02-2025",
   },
   {
     // id: 1,
@@ -2265,7 +2265,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Team", "Mind", "Mapping"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-11-2026",
+    publishedAt: "04-11-2025",
   },
   {
     // id: 1,
@@ -2278,7 +2278,7 @@ export const OLD_TWEETS = [
     category: "Personal Projects",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-04-2026",
+    publishedAt: "24-04-2025",
   },
   {
     // id: 1,
@@ -2291,7 +2291,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Team", "Whiteboarding"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-10-2026",
+    publishedAt: "29-10-2025",
   },
   {
     // id: 1,
@@ -2304,7 +2304,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Testing", "React", "Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-01-2026",
+    publishedAt: "11-01-2025",
   },
   {
     // id: 1,
@@ -2317,7 +2317,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Time", "Tracking"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-03-2026",
+    publishedAt: "23-03-2025",
   },
   {
     // id: 1,
@@ -2330,7 +2330,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "ToDo", "List", "Management"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-06-2026",
+    publishedAt: "26-06-2025",
   },
   {
     // id: 1,
@@ -2343,7 +2343,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-10-2026",
+    publishedAt: "29-10-2025",
   },
   {
     // id: 1,
@@ -2356,7 +2356,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-06-2026",
+    publishedAt: "18-06-2025",
   },
   {
     // id: 1,
@@ -2369,7 +2369,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Tracking", "Page", "Speed"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-06-2026",
+    publishedAt: "25-06-2025",
   },
   {
     // id: 1,
@@ -2382,7 +2382,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-11-2026",
+    publishedAt: "21-11-2025",
   },
   {
     // id: 1,
@@ -2395,7 +2395,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-03-2026",
+    publishedAt: "16-03-2025",
   },
   {
     // id: 1,
@@ -2408,7 +2408,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-08-2026",
+    publishedAt: "18-08-2025",
   },
   {
     // id: 1,
@@ -2421,7 +2421,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-09-2026",
+    publishedAt: "08-09-2025",
   },
   {
     // id: 1,
@@ -2434,7 +2434,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "UX", "Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-04-2026",
+    publishedAt: "01-04-2025",
   },
   {
     // id: 1,
@@ -2447,7 +2447,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Best", "Tools", "Vector", "Databases"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-09-2026",
+    publishedAt: "21-09-2025",
   },
   {
     // id: 1,
@@ -2460,7 +2460,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Version", "Control"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -2473,7 +2473,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Video", "Conferencing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-03-2026",
+    publishedAt: "19-03-2025",
   },
   {
     // id: 1,
@@ -2486,7 +2486,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Best", "Tools", "Video", "Hosting"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-10-2026",
+    publishedAt: "02-10-2025",
   },
   {
     // id: 1,
@@ -2499,7 +2499,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-11-2026",
+    publishedAt: "26-11-2025",
   },
   {
     // id: 1,
@@ -2512,7 +2512,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Web", "Accessibility"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-09-2026",
+    publishedAt: "15-09-2025",
   },
   {
     // id: 1,
@@ -2525,7 +2525,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-08-2026",
+    publishedAt: "31-08-2025",
   },
   {
     // id: 1,
@@ -2538,7 +2538,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-04-2026",
+    publishedAt: "25-04-2025",
   },
   {
     // id: 1,
@@ -2551,7 +2551,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-09-2026",
+    publishedAt: "04-09-2025",
   },
   {
     // id: 1,
@@ -2564,7 +2564,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Best", "Tools", "Web", "Scraping"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-03-2026",
+    publishedAt: "05-03-2025",
   },
   {
     // id: 1,
@@ -2577,7 +2577,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "A/B Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-01-2026",
+    publishedAt: "15-01-2025",
   },
   {
     // id: 1,
@@ -2590,7 +2590,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-09-2026",
+    publishedAt: "29-09-2025",
   },
   {
     // id: 1,
@@ -2603,7 +2603,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: ["Best", "Tools", "Website", "Analytics"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-07-2026",
+    publishedAt: "07-07-2025",
   },
   {
     // id: 1,
@@ -2616,7 +2616,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Backlinks"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-05-2026",
+    publishedAt: "05-05-2025",
   },
   {
     // id: 1,
@@ -2629,7 +2629,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Backups"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-03-2026",
+    publishedAt: "01-03-2025",
   },
   {
     // id: 1,
@@ -2642,7 +2642,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Builders"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-01-2026",
+    publishedAt: "25-01-2025",
   },
   {
     // id: 1,
@@ -2655,7 +2655,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-10-2026",
+    publishedAt: "23-10-2025",
   },
   {
     // id: 1,
@@ -2668,7 +2668,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Feedback"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-04-2026",
+    publishedAt: "25-04-2025",
   },
   {
     // id: 1,
@@ -2681,7 +2681,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-12-2026",
+    publishedAt: "04-12-2025",
   },
   {
     // id: 1,
@@ -2694,7 +2694,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Heatmaps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-01-2026",
+    publishedAt: "11-01-2025",
   },
   {
     // id: 1,
@@ -2707,7 +2707,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-07-2026",
+    publishedAt: "09-07-2025",
   },
   {
     // id: 1,
@@ -2720,7 +2720,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Mockups"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-04-2026",
+    publishedAt: "17-04-2025",
   },
   {
     // id: 1,
@@ -2733,7 +2733,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Monitoring"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-12-2026",
+    publishedAt: "13-12-2025",
   },
   {
     // id: 1,
@@ -2746,20 +2746,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Performance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-08-2026",
+    publishedAt: "17-08-2025",
   },
   {
     // id: 1,
-    title: "Best Free Tools for Website Prototyping in 2026",
-    slug: "best-free-tools-for-website-prototyping-in-2026",
+    title: "Best Free Tools for Website Prototyping in 2025",
+    slug: "best-free-tools-for-website-prototyping-in-2025",
     excerpt:
-      "A curated list of best free tools for website prototyping in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free tools for website prototyping in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-tools-for-website-prototyping-in-2026.png",
+    //  image: "/best-free-tools-for-website-prototyping-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-07-2026",
+    publishedAt: "07-07-2025",
   },
   {
     // id: 1,
@@ -2772,7 +2772,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Prototyping"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-03-2026",
+    publishedAt: "03-03-2025",
   },
   {
     // id: 1,
@@ -2785,7 +2785,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-04-2026",
+    publishedAt: "12-04-2025",
   },
   {
     // id: 1,
@@ -2798,7 +2798,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-02-2026",
+    publishedAt: "04-02-2025",
   },
   {
     // id: 1,
@@ -2811,7 +2811,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-05-2026",
+    publishedAt: "17-05-2025",
   },
   {
     // id: 1,
@@ -2824,7 +2824,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Wireframing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-08-2026",
+    publishedAt: "27-08-2025",
   },
   {
     // id: 1,
@@ -2837,7 +2837,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "WebSocket", "Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-06-2026",
+    publishedAt: "13-06-2025",
   },
   {
     // id: 1,
@@ -2850,7 +2850,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Wireframe", "Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-01-2026",
+    publishedAt: "26-01-2025",
   },
   {
     // id: 1,
@@ -2863,7 +2863,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Wireframing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-05-2026",
+    publishedAt: "19-05-2025",
   },
   {
     // id: 1,
@@ -2876,7 +2876,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Workflow", "Automation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-10-2026",
+    publishedAt: "12-10-2025",
   },
   {
     // id: 1,
@@ -2889,7 +2889,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Workflow", "Diagrams"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-02-2026",
+    publishedAt: "27-02-2025",
   },
   {
     // id: 1,
@@ -2902,7 +2902,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-11-2026",
+    publishedAt: "17-11-2025",
   },
   {
     // id: 1,
@@ -2915,19 +2915,19 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-01-2026",
+    publishedAt: "05-01-2025",
   },
   {
     // id: 1,
-    title: "Best Tools for SEO Audits in 2026",
-    slug: "best-tools-for-seo-audits-in-2026",
-    excerpt: "An in-depth guide on Best Tools for SEO Audits in 2026.",
+    title: "Best Tools for SEO Audits in 2025",
+    slug: "best-tools-for-seo-audits-in-2025",
+    excerpt: "An in-depth guide on Best Tools for SEO Audits in 2025.",
     readingTime: "5 min read",
-    //  image: "/best-tools-for-seo-audits-in-2026.png",
+    //  image: "/best-tools-for-seo-audits-in-2025.png",
     category: "SEO & Analytics",
-    tags: ["Best", "Tools", "SEO", "Audits", "2026"],
+    tags: ["Best", "Tools", "SEO", "Audits", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-08-2026",
+    publishedAt: "13-08-2025",
   },
   {
     // id: 1,
@@ -2939,7 +2939,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Website", "Speed", "Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-05-2026",
+    publishedAt: "26-05-2025",
   },
   {
     // id: 1,
@@ -2952,20 +2952,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-10-2026",
+    publishedAt: "26-10-2025",
   },
   {
     // id: 1,
-    title: "Docker Desktop Alternatives: A 2026 Review",
-    slug: "docker-desktop-alternatives-a-2026-review",
+    title: "Docker Desktop Alternatives: A 2025 Review",
+    slug: "docker-desktop-alternatives-a-2025-review",
     excerpt:
-      "A detailed comparison and review: Docker Desktop Alternatives: A 2026 Review.",
+      "A detailed comparison and review: Docker Desktop Alternatives: A 2025 Review.",
     readingTime: "5 min read",
-    //  image: "/docker-desktop-alternatives-a-2026-review.png",
+    //  image: "/docker-desktop-alternatives-a-2025-review.png",
     category: "Web Development",
-    tags: ["Docker", "Desktop", "Alternatives", "A", "2026", "Review"],
+    tags: ["Docker", "Desktop", "Alternatives", "A", "2025", "Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-08-2026",
+    publishedAt: "21-08-2025",
   },
   {
     // id: 1,
@@ -2978,7 +2978,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-09-2026",
+    publishedAt: "09-09-2025",
   },
   {
     // id: 1,
@@ -2991,7 +2991,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-10-2026",
+    publishedAt: "03-10-2025",
   },
   {
     // id: 1,
@@ -3004,19 +3004,19 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-08-2026",
+    publishedAt: "15-08-2025",
   },
   {
     // id: 1,
-    title: "How GitLab Compares to GitHub in 2026",
-    slug: "how-gitlab-compares-to-github-in-2026",
-    excerpt: "An in-depth guide on How GitLab Compares to GitHub in 2026.",
+    title: "How GitLab Compares to GitHub in 2025",
+    slug: "how-gitlab-compares-to-github-in-2025",
+    excerpt: "An in-depth guide on How GitLab Compares to GitHub in 2025.",
     readingTime: "5 min read",
-    //  image: "/how-gitlab-compares-to-github-in-2026.png",
+    //  image: "/how-gitlab-compares-to-github-in-2025.png",
     category: "Web Development",
-    tags: ["How", "GitLab", "Compares", "GitHub", "2026"],
+    tags: ["How", "GitLab", "Compares", "GitHub", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-08-2026",
+    publishedAt: "04-08-2025",
   },
   {
     // id: 1,
@@ -3029,7 +3029,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["n8n", "Zapier", "Which", "Automation", "Tool", "Wins"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-03-2026",
+    publishedAt: "19-03-2025",
   },
   {
     // id: 1,
@@ -3052,7 +3052,7 @@ export const OLD_TWEETS = [
       "Upgrade",
     ],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-01-2026",
+    publishedAt: "24-01-2025",
   },
   {
     // id: 1,
@@ -3075,33 +3075,33 @@ export const OLD_TWEETS = [
       "Databases",
     ],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-09-2026",
+    publishedAt: "24-09-2025",
   },
   {
     // id: 1,
-    title: "Review: AI Agents Platforms Compared in 2026",
-    slug: "review-ai-agents-platforms-compared-in-2026",
+    title: "Review: AI Agents Platforms Compared in 2025",
+    slug: "review-ai-agents-platforms-compared-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: AI Agents Platforms Compared in 2026.",
+      "A detailed comparison and review: Review: AI Agents Platforms Compared in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-ai-agents-platforms-compared-in-2026.png",
+    //  image: "/review-ai-agents-platforms-compared-in-2025.png",
     category: "AI Tools",
-    tags: ["Review", "AI", "Agents", "Platforms", "Compared", "2026"],
+    tags: ["Review", "AI", "Agents", "Platforms", "Compared", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-01-2026",
+    publishedAt: "04-01-2025",
   },
   {
     // id: 1,
-    title: "Review: AI Code Generators Compared in 2026",
-    slug: "review-ai-code-generators-compared-in-2026",
+    title: "Review: AI Code Generators Compared in 2025",
+    slug: "review-ai-code-generators-compared-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: AI Code Generators Compared in 2026.",
+      "A detailed comparison and review: Review: AI Code Generators Compared in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-ai-code-generators-compared-in-2026.png",
+    //  image: "/review-ai-code-generators-compared-in-2025.png",
     category: "AI Tools",
-    tags: ["Review", "AI", "Code", "Generators", "Compared", "2026"],
+    tags: ["Review", "AI", "Code", "Generators", "Compared", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-12-2026",
+    publishedAt: "31-12-2025",
   },
   {
     // id: 1,
@@ -3114,20 +3114,20 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "AI", "Code", "Interpreters", "Compared"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-07-2026",
+    publishedAt: "06-07-2025",
   },
   {
     // id: 1,
-    title: "Review: AI Website Builders Compared in 2026",
-    slug: "review-ai-website-builders-compared-in-2026",
+    title: "Review: AI Website Builders Compared in 2025",
+    slug: "review-ai-website-builders-compared-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: AI Website Builders Compared in 2026.",
+      "A detailed comparison and review: Review: AI Website Builders Compared in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-ai-website-builders-compared-in-2026.png",
+    //  image: "/review-ai-website-builders-compared-in-2025.png",
     category: "AI Tools",
-    tags: ["Review", "AI", "Website", "Builders", "Compared", "2026"],
+    tags: ["Review", "AI", "Website", "Builders", "Compared", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-08-2026",
+    publishedAt: "23-08-2025",
   },
   {
     // id: 1,
@@ -3140,7 +3140,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Algolia", "AI", "Search", "Elastic", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-09-2026",
+    publishedAt: "23-09-2025",
   },
   {
     // id: 1,
@@ -3153,7 +3153,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Algolia", "AI", "Search", "ElasticSearch", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-04-2026",
+    publishedAt: "22-04-2025",
   },
   {
     // id: 1,
@@ -3166,7 +3166,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Algolia", "AI", "Meilisearch", "Typesense"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-10-2026",
+    publishedAt: "01-10-2025",
   },
   {
     // id: 1,
@@ -3179,7 +3179,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-07-2026",
+    publishedAt: "25-07-2025",
   },
   {
     // id: 1,
@@ -3192,7 +3192,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Algolia", "Meilisearch", "Search"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-12-2026",
+    publishedAt: "23-12-2025",
   },
   {
     // id: 1,
@@ -3205,7 +3205,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Algolia", "Meilisearch", "Typesense"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-05-2026",
+    publishedAt: "04-05-2025",
   },
   {
     // id: 1,
@@ -3218,7 +3218,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Appwrite", "Supabase", "Firebase"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-01-2026",
+    publishedAt: "14-01-2025",
   },
   {
     // id: 1,
@@ -3231,7 +3231,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Astro", "Islands", "Architecture", "Explained"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-12-2026",
+    publishedAt: "27-12-2025",
   },
   {
     // id: 1,
@@ -3244,7 +3244,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Astro", "Islands", "Qwik", "Resumability"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-03-2026",
+    publishedAt: "04-03-2025",
   },
   {
     // id: 1,
@@ -3257,7 +3257,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Astro", "Hugo", "Eleventy"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-01-2026",
+    publishedAt: "31-01-2025",
   },
   {
     // id: 1,
@@ -3270,20 +3270,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-01-2026",
+    publishedAt: "23-01-2025",
   },
   {
     // id: 1,
-    title: "Review: Astro vs Nuxt vs SvelteKit for 2026",
-    slug: "review-astro-vs-nuxt-vs-sveltekit-for-2026",
+    title: "Review: Astro vs Nuxt vs SvelteKit for 2025",
+    slug: "review-astro-vs-nuxt-vs-sveltekit-for-2025",
     excerpt:
-      "A detailed comparison and review: Review: Astro vs Nuxt vs SvelteKit for 2026.",
+      "A detailed comparison and review: Review: Astro vs Nuxt vs SvelteKit for 2025.",
     readingTime: "5 min read",
-    //  image: "/review-astro-vs-nuxt-vs-sveltekit-for-2026.png",
+    //  image: "/review-astro-vs-nuxt-vs-sveltekit-for-2025.png",
     category: "Web Development",
-    tags: ["Review", "Astro", "Nuxt", "SvelteKit", "2026"],
+    tags: ["Review", "Astro", "Nuxt", "SvelteKit", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-04-2026",
+    publishedAt: "07-04-2025",
   },
   {
     // id: 1,
@@ -3296,7 +3296,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Astro", "Qwik", "SvelteKit", "Performance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-05-2026",
+    publishedAt: "11-05-2025",
   },
   {
     // id: 1,
@@ -3309,7 +3309,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Astro", "SvelteKit", "Remix", "Performance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-11-2026",
+    publishedAt: "29-11-2025",
   },
   {
     // id: 1,
@@ -3322,7 +3322,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-10-2026",
+    publishedAt: "29-10-2025",
   },
   {
     // id: 1,
@@ -3335,7 +3335,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "AWS", "Amplify", "Hosting", "Vercel"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-12-2026",
+    publishedAt: "21-12-2025",
   },
   {
     // id: 1,
@@ -3348,7 +3348,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Amplify", "Studio", "Supabase", "Studio"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-06-2026",
+    publishedAt: "20-06-2025",
   },
   {
     // id: 1,
@@ -3361,7 +3361,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-12-2026",
+    publishedAt: "22-12-2025",
   },
   {
     // id: 1,
@@ -3374,7 +3374,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Amplify", "Supabase"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-12-2026",
+    publishedAt: "25-12-2025",
   },
   {
     // id: 1,
@@ -3387,7 +3387,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "App", "Runner", "Cloud", "Run", "Fly.io"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-09-2026",
+    publishedAt: "12-09-2025",
   },
   {
     // id: 1,
@@ -3400,7 +3400,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "App", "Runner", "Render", "Fly.io"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-12-2026",
+    publishedAt: "06-12-2025",
   },
   {
     // id: 1,
@@ -3413,7 +3413,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "AppSync", "Hasura", "GraphQL", "Yoga"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-05-2026",
+    publishedAt: "01-05-2025",
   },
   {
     // id: 1,
@@ -3426,7 +3426,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Aurora", "AlloyDB", "Neon"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-05-2026",
+    publishedAt: "06-05-2025",
   },
   {
     // id: 1,
@@ -3439,7 +3439,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-04-2026",
+    publishedAt: "13-04-2025",
   },
   {
     // id: 1,
@@ -3452,7 +3452,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Bedrock", "Hugging", "Face", "Inference"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-01-2026",
+    publishedAt: "08-01-2025",
   },
   {
     // id: 1,
@@ -3465,7 +3465,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-08-2026",
+    publishedAt: "05-08-2025",
   },
   {
     // id: 1,
@@ -3478,7 +3478,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "AWS", "CloudFront", "Akamai", "Fastly"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-07-2026",
+    publishedAt: "18-07-2025",
   },
   {
     // id: 1,
@@ -3491,7 +3491,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "CloudFront", "Cloudflare", "CDN"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-05-2026",
+    publishedAt: "31-05-2025",
   },
   {
     // id: 1,
@@ -3504,7 +3504,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-10-2026",
+    publishedAt: "19-10-2025",
   },
   {
     // id: 1,
@@ -3517,7 +3517,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Fargate", "ECS", "Kubernetes"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-08-2026",
+    publishedAt: "30-08-2025",
   },
   {
     // id: 1,
@@ -3530,7 +3530,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Kinesis", "Kafka", "Pulsar"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-01-2026",
+    publishedAt: "07-01-2025",
   },
   {
     // id: 1,
@@ -3543,7 +3543,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Lambda", "Google", "Cloud", "Functions"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-05-2026",
+    publishedAt: "26-05-2025",
   },
   {
     // id: 1,
@@ -3556,7 +3556,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "AWS", "Lightsail", "DigitalOcean", "Linode"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-05-2026",
+    publishedAt: "29-05-2025",
   },
   {
     // id: 1,
@@ -3569,7 +3569,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-11-2026",
+    publishedAt: "13-11-2025",
   },
   {
     // id: 1,
@@ -3582,7 +3582,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-02-2026",
+    publishedAt: "28-02-2025",
   },
   {
     // id: 1,
@@ -3595,7 +3595,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "AWS", "SageMaker", "Azure", "ML", "Vertex", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-12-2026",
+    publishedAt: "21-12-2025",
   },
   {
     // id: 1,
@@ -3608,7 +3608,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "AWS", "Step", "Functions", "Temporal.io"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-04-2026",
+    publishedAt: "04-04-2025",
   },
   {
     // id: 1,
@@ -3621,7 +3621,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Bundler", "Vite", "Webpack"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-09-2026",
+    publishedAt: "06-09-2025",
   },
   {
     // id: 1,
@@ -3634,7 +3634,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Runtime", "Node.js", "Performance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-02-2026",
+    publishedAt: "16-02-2025",
   },
   {
     // id: 1,
@@ -3647,7 +3647,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "SQLite", "Turso", "Neon"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
@@ -3660,20 +3660,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Test", "Runner", "Jest", "Vitest"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-03-2026",
+    publishedAt: "22-03-2025",
   },
   {
     // id: 1,
-    title: "Review: Bun vs Deno vs Node.js in 2026",
-    slug: "review-bun-vs-deno-vs-node.js-in-2026",
+    title: "Review: Bun vs Deno vs Node.js in 2025",
+    slug: "review-bun-vs-deno-vs-node.js-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: Bun vs Deno vs Node.js in 2026.",
+      "A detailed comparison and review: Review: Bun vs Deno vs Node.js in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-bun-vs-deno-vs-node.js-in-2026.png",
+    //  image: "/review-bun-vs-deno-vs-node.js-in-2025.png",
     category: "Web Development",
-    tags: ["Review", "Bun", "Deno", "Node.js", "2026"],
+    tags: ["Review", "Bun", "Deno", "Node.js", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-12-2026",
+    publishedAt: "15-12-2025",
   },
   {
     // id: 1,
@@ -3686,7 +3686,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Deno", "Node.js", "Security"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-01-2026",
+    publishedAt: "30-01-2025",
   },
   {
     // id: 1,
@@ -3699,7 +3699,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-01-2026",
+    publishedAt: "07-01-2025",
   },
   {
     // id: 1,
@@ -3712,7 +3712,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Node.js", "Full", "Stack", "Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-06-2026",
+    publishedAt: "03-06-2025",
   },
   {
     // id: 1,
@@ -3725,7 +3725,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Node.js", "Package", "Managers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-08-2026",
+    publishedAt: "11-08-2025",
   },
   {
     // id: 1,
@@ -3738,7 +3738,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Node.js", "Performance", "Benchmarks"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-04-2026",
+    publishedAt: "16-04-2025",
   },
   {
     // id: 1,
@@ -3751,20 +3751,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Node.js", "Deno", "Benchmarks"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-11-2026",
+    publishedAt: "07-11-2025",
   },
   {
     // id: 1,
-    title: "Review: Bun vs Node.js vs Deno in 2026",
-    slug: "review-bun-vs-node.js-vs-deno-in-2026",
+    title: "Review: Bun vs Node.js vs Deno in 2025",
+    slug: "review-bun-vs-node.js-vs-deno-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: Bun vs Node.js vs Deno in 2026.",
+      "A detailed comparison and review: Review: Bun vs Node.js vs Deno in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-bun-vs-node.js-vs-deno-in-2026.png",
+    //  image: "/review-bun-vs-node.js-vs-deno-in-2025.png",
     category: "Web Development",
-    tags: ["Review", "Bun", "Node.js", "Deno", "2026"],
+    tags: ["Review", "Bun", "Node.js", "Deno", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-11-2026",
+    publishedAt: "28-11-2025",
   },
   {
     // id: 1,
@@ -3777,7 +3777,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Bun", "Node.js", "Deno", "Production"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-12-2026",
+    publishedAt: "04-12-2025",
   },
   {
     // id: 1,
@@ -3790,7 +3790,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Canva", "Figma", "Web", "Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-01-2026",
+    publishedAt: "19-01-2025",
   },
   {
     // id: 1,
@@ -3803,7 +3803,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Capacitor", "Cordova", "Ionic"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-08-2026",
+    publishedAt: "17-08-2025",
   },
   {
     // id: 1,
@@ -3816,7 +3816,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Capacitor", "Expo", "FlutterFlow"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-03-2026",
+    publishedAt: "06-03-2025",
   },
   {
     // id: 1,
@@ -3829,7 +3829,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Capacitor", "NativeScript", "Expo"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-09-2026",
+    publishedAt: "24-09-2025",
   },
   {
     // id: 1,
@@ -3842,7 +3842,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Capacitor", "React", "Native", "Flutter"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-12-2026",
+    publishedAt: "08-12-2025",
   },
   {
     // id: 1,
@@ -3855,7 +3855,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "ChatGPT", "Enterprise", "Gemini", "Advanced"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-06-2026",
+    publishedAt: "30-06-2025",
   },
   {
     // id: 1,
@@ -3868,7 +3868,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "ChatGPT", "Plugins", "Custom", "GPTs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-08-2026",
+    publishedAt: "20-08-2025",
   },
   {
     // id: 1,
@@ -3881,7 +3881,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Clerk", "Auth.js", "NextAuth"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-10-2026",
+    publishedAt: "14-10-2025",
   },
   {
     // id: 1,
@@ -3894,7 +3894,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-04-2026",
+    publishedAt: "27-04-2025",
   },
   {
     // id: 1,
@@ -3907,7 +3907,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Clerk", "Auth0", "Supabase", "Auth"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-02-2026",
+    publishedAt: "16-02-2025",
   },
   {
     // id: 1,
@@ -3920,7 +3920,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Clerk", "Stytch", "Auth0"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-03-2026",
+    publishedAt: "28-03-2025",
   },
   {
     // id: 1,
@@ -3933,7 +3933,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Clerk", "Stytch", "Supabase", "Auth"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-12-2026",
+    publishedAt: "05-12-2025",
   },
   {
     // id: 1,
@@ -3946,7 +3946,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-09-2026",
+    publishedAt: "17-09-2025",
   },
   {
     // id: 1,
@@ -3959,7 +3959,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Cloudflare", "AI", "Gateway", "AWS", "Bedrock"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-01-2026",
+    publishedAt: "30-01-2025",
   },
   {
     // id: 1,
@@ -3972,7 +3972,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Cloudflare", "AI", "Gateway", "LangSmith"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-09-2026",
+    publishedAt: "10-09-2025",
   },
   {
     // id: 1,
@@ -3985,7 +3985,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Cloudflare", "AI", "Workers", "Vercel", "AI", "SDK"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-08-2026",
+    publishedAt: "29-08-2025",
   },
   {
     // id: 1,
@@ -3998,7 +3998,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-02-2026",
+    publishedAt: "06-02-2025",
   },
   {
     // id: 1,
@@ -4011,7 +4011,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-02-2026",
+    publishedAt: "06-02-2025",
   },
   {
     // id: 1,
@@ -4024,7 +4024,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "D1", "Neon", "PlanetScale"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-08-2026",
+    publishedAt: "02-08-2025",
   },
   {
     // id: 1,
@@ -4037,7 +4037,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "D1", "SQLite", "on", "Edge"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-10-2026",
+    publishedAt: "29-10-2025",
   },
   {
     // id: 1,
@@ -4050,7 +4050,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-05-2026",
+    publishedAt: "20-05-2025",
   },
   {
     // id: 1,
@@ -4063,7 +4063,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-03-2026",
+    publishedAt: "15-03-2025",
   },
   {
     // id: 1,
@@ -4076,7 +4076,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-02-2026",
+    publishedAt: "16-02-2025",
   },
   {
     // id: 1,
@@ -4089,7 +4089,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "KV", "Redis", "Cloud"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-03-2026",
+    publishedAt: "08-03-2025",
   },
   {
     // id: 1,
@@ -4102,7 +4102,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "KV", "Redis", "DynamoDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-05-2026",
+    publishedAt: "20-05-2025",
   },
   {
     // id: 1,
@@ -4115,7 +4115,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-04-2026",
+    publishedAt: "21-04-2025",
   },
   {
     // id: 1,
@@ -4128,7 +4128,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-07-2026",
+    publishedAt: "18-07-2025",
   },
   {
     // id: 1,
@@ -4141,7 +4141,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Pages", "GitHub", "Pages"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-05-2026",
+    publishedAt: "01-05-2025",
   },
   {
     // id: 1,
@@ -4154,7 +4154,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Cloudflare", "Pages", "Vercel", "Netlify"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-07-2026",
+    publishedAt: "24-07-2025",
   },
   {
     // id: 1,
@@ -4167,7 +4167,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-03-2026",
+    publishedAt: "29-03-2025",
   },
   {
     // id: 1,
@@ -4180,7 +4180,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Queues", "Kafka", "RabbitMQ"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-07-2026",
+    publishedAt: "11-07-2025",
   },
   {
     // id: 1,
@@ -4193,7 +4193,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Queues", "RabbitMQ", "Kafka"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-07-2026",
+    publishedAt: "31-07-2025",
   },
   {
     // id: 1,
@@ -4206,7 +4206,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "R2", "AWS", "S3", "Backblaze", "B2"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-03-2026",
+    publishedAt: "13-03-2025",
   },
   {
     // id: 1,
@@ -4219,7 +4219,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "R2", "AWS", "S3"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-05-2026",
+    publishedAt: "22-05-2025",
   },
   {
     // id: 1,
@@ -4232,7 +4232,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "R2", "Backblaze", "B2", "Wasabi"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-09-2026",
+    publishedAt: "08-09-2025",
   },
   {
     // id: 1,
@@ -4245,7 +4245,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-08-2026",
+    publishedAt: "28-08-2025",
   },
   {
     // id: 1,
@@ -4258,7 +4258,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "R2", "Supabase", "Storage"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-11-2026",
+    publishedAt: "11-11-2025",
   },
   {
     // id: 1,
@@ -4271,7 +4271,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-08-2026",
+    publishedAt: "27-08-2025",
   },
   {
     // id: 1,
@@ -4284,7 +4284,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Stream", "Mux", "Vimeo"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-12-2026",
+    publishedAt: "06-12-2025",
   },
   {
     // id: 1,
@@ -4297,7 +4297,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Stream", "Vimeo", "YouTube"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-09-2026",
+    publishedAt: "18-09-2025",
   },
   {
     // id: 1,
@@ -4310,7 +4310,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-11-2026",
+    publishedAt: "22-11-2025",
   },
   {
     // id: 1,
@@ -4323,7 +4323,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Cloudflare", "Workers", "AI", "AWS", "Lambda", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-06-2026",
+    publishedAt: "11-06-2025",
   },
   {
     // id: 1,
@@ -4336,7 +4336,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-12-2026",
+    publishedAt: "16-12-2025",
   },
   {
     // id: 1,
@@ -4349,7 +4349,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Cloudflare", "Workers", "AI", "OpenAI", "API"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-11-2026",
+    publishedAt: "01-11-2025",
   },
   {
     // id: 1,
@@ -4362,7 +4362,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-12-2026",
+    publishedAt: "12-12-2025",
   },
   {
     // id: 1,
@@ -4375,7 +4375,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Zaraz", "Google", "Tag", "Manager"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-03-2026",
+    publishedAt: "11-03-2025",
   },
   {
     // id: 1,
@@ -4388,7 +4388,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-04-2026",
+    publishedAt: "18-04-2025",
   },
   {
     // id: 1,
@@ -4401,7 +4401,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Zaraz", "Tealium", "Segment"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-05-2026",
+    publishedAt: "22-05-2025",
   },
   {
     // id: 1,
@@ -4414,7 +4414,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-10-2026",
+    publishedAt: "23-10-2025",
   },
   {
     // id: 1,
@@ -4427,7 +4427,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudflare", "Zero", "Trust", "Zscaler"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-05-2026",
+    publishedAt: "19-05-2025",
   },
   {
     // id: 1,
@@ -4440,7 +4440,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Cloudinary", "ImageKit", "Uploadcare"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-11-2026",
+    publishedAt: "03-11-2025",
   },
   {
     // id: 1,
@@ -4453,7 +4453,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Contentful", "Strapi", "Sanity"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-07-2026",
+    publishedAt: "18-07-2025",
   },
   {
     // id: 1,
@@ -4466,7 +4466,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-10-2026",
+    publishedAt: "04-10-2025",
   },
   {
     // id: 1,
@@ -4479,7 +4479,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-04-2026",
+    publishedAt: "03-04-2025",
   },
   {
     // id: 1,
@@ -4492,7 +4492,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Deno", "Deploy", "Cloudflare", "Workers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-07-2026",
+    publishedAt: "27-07-2025",
   },
   {
     // id: 1,
@@ -4505,7 +4505,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Deno", "Deploy", "Fly.io", "Render", "Edge"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-09-2026",
+    publishedAt: "05-09-2025",
   },
   {
     // id: 1,
@@ -4518,7 +4518,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Deno", "Fresh", "Remix", "Qwik"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-04-2026",
+    publishedAt: "15-04-2025",
   },
   {
     // id: 1,
@@ -4531,20 +4531,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Deno", "KV", "SQLite", "Turso"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-01-2026",
+    publishedAt: "09-01-2025",
   },
   {
     // id: 1,
-    title: "Review: Deno vs Bun vs Node.js in 2026",
-    slug: "review-deno-vs-bun-vs-node.js-in-2026",
+    title: "Review: Deno vs Bun vs Node.js in 2025",
+    slug: "review-deno-vs-bun-vs-node.js-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: Deno vs Bun vs Node.js in 2026.",
+      "A detailed comparison and review: Review: Deno vs Bun vs Node.js in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-deno-vs-bun-vs-node.js-in-2026.png",
+    //  image: "/review-deno-vs-bun-vs-node.js-in-2025.png",
     category: "Web Development",
-    tags: ["Review", "Deno", "Bun", "Node.js", "2026"],
+    tags: ["Review", "Deno", "Bun", "Node.js", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-01-2026",
+    publishedAt: "31-01-2025",
   },
   {
     // id: 1,
@@ -4557,7 +4557,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Deno", "Bun", "Node.js", "Production"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-03-2026",
+    publishedAt: "19-03-2025",
   },
   {
     // id: 1,
@@ -4570,7 +4570,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-10-2026",
+    publishedAt: "23-10-2025",
   },
   {
     // id: 1,
@@ -4583,7 +4583,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Dgraph", "Neo4j", "Graph", "Databases"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-09-2026",
+    publishedAt: "01-09-2025",
   },
   {
     // id: 1,
@@ -4596,7 +4596,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "DigitalOcean", "App", "Platform", "Heroku"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-04-2026",
+    publishedAt: "20-04-2025",
   },
   {
     // id: 1,
@@ -4609,7 +4609,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-12-2026",
+    publishedAt: "11-12-2025",
   },
   {
     // id: 1,
@@ -4622,7 +4622,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "DigitalOcean", "Functions", "AWS", "Lambda"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-08-2026",
+    publishedAt: "20-08-2025",
   },
   {
     // id: 1,
@@ -4635,7 +4635,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -4648,7 +4648,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-12-2026",
+    publishedAt: "31-12-2025",
   },
   {
     // id: 1,
@@ -4661,7 +4661,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "DigitalOcean", "Linode", "Vultr"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-06-2026",
+    publishedAt: "02-06-2025",
   },
   {
     // id: 1,
@@ -4674,7 +4674,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Directus", "Sanity", "Strapi"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-07-2026",
+    publishedAt: "29-07-2025",
   },
   {
     // id: 1,
@@ -4687,7 +4687,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Directus", "Strapi", "KeystoneJS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-06-2026",
+    publishedAt: "09-06-2025",
   },
   {
     // id: 1,
@@ -4700,7 +4700,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Docker", "Desktop", "Podman", "Rancher"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-10-2026",
+    publishedAt: "30-10-2025",
   },
   {
     // id: 1,
@@ -4713,7 +4713,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Docker", "Swarm", "Kubernetes"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-05-2026",
+    publishedAt: "28-05-2025",
   },
   {
     // id: 1,
@@ -4726,7 +4726,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Docusaurus", "GitBook", "ReadMe"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-05-2026",
+    publishedAt: "20-05-2025",
   },
   {
     // id: 1,
@@ -4739,7 +4739,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Drizzle", "ORM", "Prisma", "ORM"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-07-2026",
+    publishedAt: "20-07-2025",
   },
   {
     // id: 1,
@@ -4752,7 +4752,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Elastic", "Cloud", "Meilisearch", "Cloud"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-11-2026",
+    publishedAt: "27-11-2025",
   },
   {
     // id: 1,
@@ -4765,7 +4765,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-02-2026",
+    publishedAt: "07-02-2025",
   },
   {
     // id: 1,
@@ -4778,7 +4778,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "FastAPI", "Django", "REST", "Framework"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-05-2026",
+    publishedAt: "21-05-2025",
   },
   {
     // id: 1,
@@ -4791,7 +4791,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "FastAPI", "Express.js", "NestJS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-11-2026",
+    publishedAt: "25-11-2025",
   },
   {
     // id: 1,
@@ -4804,7 +4804,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "FastAPI", "Flask", "Django", "REST"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-04-2026",
+    publishedAt: "28-04-2025",
   },
   {
     // id: 1,
@@ -4817,7 +4817,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Fastify", "Express", "Hono"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-11-2026",
+    publishedAt: "09-11-2025",
   },
   {
     // id: 1,
@@ -4830,7 +4830,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Fastify", "Hono", "Express", "Performance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-08-2026",
+    publishedAt: "04-08-2025",
   },
   {
     // id: 1,
@@ -4843,7 +4843,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Fastify", "Hono", "Koa.js"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-02-2026",
+    publishedAt: "26-02-2025",
   },
   {
     // id: 1,
@@ -4856,7 +4856,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Figma", "AI", "Canva", "Magic", "Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-06-2026",
+    publishedAt: "28-06-2025",
   },
   {
     // id: 1,
@@ -4869,7 +4869,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Figma", "Variables", "Sketch", "Libraries"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-05-2026",
+    publishedAt: "25-05-2025",
   },
   {
     // id: 1,
@@ -4882,7 +4882,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Firebase", "Emulator", "Supabase", "Local"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-01-2026",
+    publishedAt: "26-01-2025",
   },
   {
     // id: 1,
@@ -4895,7 +4895,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-03-2026",
+    publishedAt: "25-03-2025",
   },
   {
     // id: 1,
@@ -4908,7 +4908,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Firebase", "Firestore", "Supabase", "Postgres"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-10-2026",
+    publishedAt: "26-10-2025",
   },
   {
     // id: 1,
@@ -4921,7 +4921,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Firebase", "Hosting", "Vercel", "Netlify"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-07-2026",
+    publishedAt: "29-07-2025",
   },
   {
     // id: 1,
@@ -4934,7 +4934,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Firebase", "ML", "OpenAI", "Vision", "API"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-07-2026",
+    publishedAt: "09-07-2025",
   },
   {
     // id: 1,
@@ -4946,7 +4946,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Firebase", "Appwrite"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-04-2026",
+    publishedAt: "02-04-2025",
   },
   {
     // id: 1,
@@ -4959,7 +4959,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "FlutterFlow", "Draftbit", "Bildr"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-08-2026",
+    publishedAt: "16-08-2025",
   },
   {
     // id: 1,
@@ -4972,7 +4972,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Fly.io", "Machines", "Render", "Autoscaling"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-08-2026",
+    publishedAt: "12-08-2025",
   },
   {
     // id: 1,
@@ -4985,7 +4985,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Fly.io", "Heroku", "Railway"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-11-2026",
+    publishedAt: "14-11-2025",
   },
   {
     // id: 1,
@@ -4998,20 +4998,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Fly.io", "Heroku", "Render"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-03-2026",
+    publishedAt: "19-03-2025",
   },
   {
     // id: 1,
-    title: "Review: Fly.io vs Railway vs Render in 2026",
-    slug: "review-fly.io-vs-railway-vs-render-in-2026",
+    title: "Review: Fly.io vs Railway vs Render in 2025",
+    slug: "review-fly.io-vs-railway-vs-render-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: Fly.io vs Railway vs Render in 2026.",
+      "A detailed comparison and review: Review: Fly.io vs Railway vs Render in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-fly.io-vs-railway-vs-render-in-2026.png",
+    //  image: "/review-fly.io-vs-railway-vs-render-in-2025.png",
     category: "AI Tools",
-    tags: ["Review", "Fly.io", "Railway", "Render", "2026"],
+    tags: ["Review", "Fly.io", "Railway", "Render", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-11-2026",
+    publishedAt: "10-11-2025",
   },
   {
     // id: 1,
@@ -5024,7 +5024,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Framer", "AI", "Typedream", "Dorik"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-01-2026",
+    publishedAt: "05-01-2025",
   },
   {
     // id: 1,
@@ -5037,7 +5037,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review", "Framer", "CMS", "Webflow", "CMS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-02-2026",
+    publishedAt: "21-02-2025",
   },
   {
     // id: 1,
@@ -5050,7 +5050,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Framer", "Webflow", "No", "Code", "Websites"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-12-2026",
+    publishedAt: "18-12-2025",
   },
   {
     // id: 1,
@@ -5063,7 +5063,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Framer", "Webflow", "EditorX"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-06-2026",
+    publishedAt: "18-06-2025",
   },
   {
     // id: 1,
@@ -5076,7 +5076,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Gatsby", "Astro", "Hugo"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-05-2026",
+    publishedAt: "18-05-2025",
   },
   {
     // id: 1,
@@ -5089,7 +5089,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review", "Ghost", "CMS", "Hashnode", "Medium"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-05-2026",
+    publishedAt: "04-05-2025",
   },
   {
     // id: 1,
@@ -5102,7 +5102,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Ghost", "Pro", "Medium", "Substack"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-02-2026",
+    publishedAt: "14-02-2025",
   },
   {
     // id: 1,
@@ -5115,7 +5115,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review", "Ghost", "Pro", "WordPress", "VIP"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-01-2026",
+    publishedAt: "23-01-2025",
   },
   {
     // id: 1,
@@ -5128,7 +5128,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Ghost", "Medium", "Substack"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-12-2026",
+    publishedAt: "22-12-2025",
   },
   {
     // id: 1,
@@ -5141,7 +5141,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "GitHub", "Actions", "CircleCI", "TravisCI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-08-2026",
+    publishedAt: "19-08-2025",
   },
   {
     // id: 1,
@@ -5154,7 +5154,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-08-2026",
+    publishedAt: "25-08-2025",
   },
   {
     // id: 1,
@@ -5167,7 +5167,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "GitHub", "Codespaces", "Gitpod"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-11-2026",
+    publishedAt: "29-11-2025",
   },
   {
     // id: 1,
@@ -5180,7 +5180,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "GitHub", "Codespaces", "GitPod"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-10-2026",
+    publishedAt: "24-10-2025",
   },
   {
     // id: 1,
@@ -5193,7 +5193,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "GitHub", "Codespaces", "Replit"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-03-2026",
+    publishedAt: "09-03-2025",
   },
   {
     // id: 1,
@@ -5206,7 +5206,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-07-2026",
+    publishedAt: "02-07-2025",
   },
   {
     // id: 1,
@@ -5219,7 +5219,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-12-2026",
+    publishedAt: "26-12-2025",
   },
   {
     // id: 1,
@@ -5232,7 +5232,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-07-2026",
+    publishedAt: "17-07-2025",
   },
   {
     // id: 1,
@@ -5245,7 +5245,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-03-2026",
+    publishedAt: "03-03-2025",
   },
   {
     // id: 1,
@@ -5258,7 +5258,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "GitHub", "Copilot", "Workspace", "Replit", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-05-2026",
+    publishedAt: "02-05-2025",
   },
   {
     // id: 1,
@@ -5271,7 +5271,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "GitHub", "Issues", "Jira", "Linear"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-03-2026",
+    publishedAt: "08-03-2025",
   },
   {
     // id: 1,
@@ -5284,7 +5284,7 @@ export const OLD_TWEETS = [
     category: "Personal Projects",
     tags: ["Review", "GitHub", "Projects", "Linear", "Trello"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-01-2026",
+    publishedAt: "25-01-2025",
   },
   {
     // id: 1,
@@ -5297,7 +5297,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-07-2026",
+    publishedAt: "26-07-2025",
   },
   {
     // id: 1,
@@ -5310,7 +5310,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Google", "AlloyDB", "Amazon", "Aurora"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-01-2026",
+    publishedAt: "20-01-2025",
   },
   {
     // id: 1,
@@ -5323,7 +5323,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Google", "Bard", "ChatGPT", "Claude"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-04-2026",
+    publishedAt: "10-04-2025",
   },
   {
     // id: 1,
@@ -5336,7 +5336,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-10-2026",
+    publishedAt: "14-10-2025",
   },
   {
     // id: 1,
@@ -5349,7 +5349,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-07-2026",
+    publishedAt: "08-07-2025",
   },
   {
     // id: 1,
@@ -5362,7 +5362,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-06-2026",
+    publishedAt: "23-06-2025",
   },
   {
     // id: 1,
@@ -5375,7 +5375,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Google", "Cloud", "Run", "AWS", "App", "Runner"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-09-2026",
+    publishedAt: "16-09-2025",
   },
   {
     // id: 1,
@@ -5388,7 +5388,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Google", "Cloud", "Run", "AWS", "Fargate"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-01-2026",
+    publishedAt: "27-01-2025",
   },
   {
     // id: 1,
@@ -5401,7 +5401,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Google", "Cloud", "Run", "Vercel", "Functions"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-01-2026",
+    publishedAt: "28-01-2025",
   },
   {
     // id: 1,
@@ -5414,7 +5414,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Google", "Colab", "Pro", "Kaggle", "Notebooks"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-03-2026",
+    publishedAt: "21-03-2025",
   },
   {
     // id: 1,
@@ -5427,7 +5427,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Google", "Drive", "AI", "Dropbox", "AI", "Box", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-10-2026",
+    publishedAt: "11-10-2025",
   },
   {
     // id: 1,
@@ -5440,7 +5440,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-02-2026",
+    publishedAt: "25-02-2025",
   },
   {
     // id: 1,
@@ -5453,7 +5453,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-08-2026",
+    publishedAt: "22-08-2025",
   },
   {
     // id: 1,
@@ -5466,7 +5466,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-12-2026",
+    publishedAt: "26-12-2025",
   },
   {
     // id: 1,
@@ -5479,7 +5479,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Google", "Gemini", "ChatGPT", "Claude"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-11-2026",
+    publishedAt: "23-11-2025",
   },
   {
     // id: 1,
@@ -5492,7 +5492,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Google", "Gemini", "GPT", "5", "Claude"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-11-2026",
+    publishedAt: "17-11-2025",
   },
   {
     // id: 1,
@@ -5505,7 +5505,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -5518,7 +5518,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-08-2026",
+    publishedAt: "27-08-2025",
   },
   {
     // id: 1,
@@ -5531,7 +5531,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Google", "Vertex", "AI", "OpenAI", "API"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-04-2026",
+    publishedAt: "19-04-2025",
   },
   {
     // id: 1,
@@ -5544,7 +5544,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Hasura", "Cloud", "Apollo", "Federation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-01-2026",
+    publishedAt: "23-01-2025",
   },
   {
     // id: 1,
@@ -5557,7 +5557,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Hasura", "Apollo", "Server", "GraphQL", "Yoga"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-08-2026",
+    publishedAt: "07-08-2025",
   },
   {
     // id: 1,
@@ -5570,7 +5570,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Hasura", "PostGraphile", "GraphQL", "APIs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-08-2026",
+    publishedAt: "27-08-2025",
   },
   {
     // id: 1,
@@ -5583,7 +5583,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Hasura", "PostGraphile", "Apollo", "Server"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-04-2026",
+    publishedAt: "16-04-2025",
   },
   {
     // id: 1,
@@ -5596,7 +5596,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Hasura", "Supabase", "GraphQL", "Apollo"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-05-2026",
+    publishedAt: "06-05-2025",
   },
   {
     // id: 1,
@@ -5609,7 +5609,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review", "Headless", "WordPress", "Ghost"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-03-2026",
+    publishedAt: "06-03-2025",
   },
   {
     // id: 1,
@@ -5622,7 +5622,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Hugging", "Face", "Inference", "API", "OpenAI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -5635,7 +5635,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Hugo", "Eleventy", "Astro"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-08-2026",
+    publishedAt: "22-08-2025",
   },
   {
     // id: 1,
@@ -5648,7 +5648,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-10-2026",
+    publishedAt: "09-10-2025",
   },
   {
     // id: 1,
@@ -5661,7 +5661,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-04-2026",
+    publishedAt: "17-04-2025",
   },
   {
     // id: 1,
@@ -5674,7 +5674,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "JetBrains", "Fleet", "VS", "Code"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-03-2026",
+    publishedAt: "23-03-2025",
   },
   {
     // id: 1,
@@ -5687,7 +5687,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "JetBrains", "IDEs", "VS", "Code"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-01-2026",
+    publishedAt: "08-01-2025",
   },
   {
     // id: 1,
@@ -5700,7 +5700,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "JetBrains", "Rider", "Visual", "Studio"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-06-2026",
+    publishedAt: "26-06-2025",
   },
   {
     // id: 1,
@@ -5713,7 +5713,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Jetpack", "Compose", "SwiftUI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-07-2026",
+    publishedAt: "13-07-2025",
   },
   {
     // id: 1,
@@ -5726,7 +5726,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Kubernetes", "Nomad", "Docker", "Swarm"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-05-2026",
+    publishedAt: "31-05-2025",
   },
   {
     // id: 1,
@@ -5739,7 +5739,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-05-2026",
+    publishedAt: "09-05-2025",
   },
   {
     // id: 1,
@@ -5752,7 +5752,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "LangChain", "Hub", "OpenAI", "GPT", "Store"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-01-2026",
+    publishedAt: "23-01-2025",
   },
   {
     // id: 1,
@@ -5765,7 +5765,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "LangChain", "DSPy", "Semantic", "Kernel"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-08-2026",
+    publishedAt: "02-08-2025",
   },
   {
     // id: 1,
@@ -5778,7 +5778,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "LangChain", "LlamaIndex", "AI", "Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-08-2026",
+    publishedAt: "01-08-2025",
   },
   {
     // id: 1,
@@ -5791,7 +5791,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "LangChain", "LlamaIndex", "AutoGPT"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-01-2026",
+    publishedAt: "20-01-2025",
   },
   {
     // id: 1,
@@ -5804,7 +5804,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "LangChain", "LlamaIndex", "Haystack"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-06-2026",
+    publishedAt: "11-06-2025",
   },
   {
     // id: 1,
@@ -5817,7 +5817,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-12-2026",
+    publishedAt: "06-12-2025",
   },
   {
     // id: 1,
@@ -5830,7 +5830,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "LangGraph", "AutoGPT", "BabyAGI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-11-2026",
+    publishedAt: "07-11-2025",
   },
   {
     // id: 1,
@@ -5843,7 +5843,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "LangGraph", "CrewAI", "AutoGen"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-09-2026",
+    publishedAt: "20-09-2025",
   },
   {
     // id: 1,
@@ -5856,7 +5856,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Linear", "ClickUp", "Monday.com"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-11-2026",
+    publishedAt: "22-11-2025",
   },
   {
     // id: 1,
@@ -5869,7 +5869,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Linear", "Jira", "Asana"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-08-2026",
+    publishedAt: "17-08-2025",
   },
   {
     // id: 1,
@@ -5882,7 +5882,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Linear", "Jira", "Trello"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-01-2026",
+    publishedAt: "21-01-2025",
   },
   {
     // id: 1,
@@ -5895,7 +5895,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Mailgun", "SendGrid", "Postmark"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-06-2026",
+    publishedAt: "16-06-2025",
   },
   {
     // id: 1,
@@ -5908,7 +5908,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Meilisearch", "Typesense", "Algolia"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-06-2026",
+    publishedAt: "18-06-2025",
   },
   {
     // id: 1,
@@ -5921,7 +5921,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-10-2026",
+    publishedAt: "25-10-2025",
   },
   {
     // id: 1,
@@ -5934,7 +5934,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "MongoDB", "Atlas", "Search", "Meilisearch"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-11-2026",
+    publishedAt: "13-11-2025",
   },
   {
     // id: 1,
@@ -5947,7 +5947,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-12-2026",
+    publishedAt: "09-12-2025",
   },
   {
     // id: 1,
@@ -5960,7 +5960,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "MongoDB", "Atlas", "DynamoDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-01-2026",
+    publishedAt: "25-01-2025",
   },
   {
     // id: 1,
@@ -5973,7 +5973,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "MongoDB", "Atlas", "Firestore", "DynamoDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-11-2026",
+    publishedAt: "13-11-2025",
   },
   {
     // id: 1,
@@ -5986,7 +5986,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "MongoDB", "Realm", "Firebase", "Firestore"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-05-2026",
+    publishedAt: "26-05-2025",
   },
   {
     // id: 1,
@@ -5999,7 +5999,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "MongoDB", "CouchDB", "DynamoDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-07-2026",
+    publishedAt: "11-07-2025",
   },
   {
     // id: 1,
@@ -6012,7 +6012,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "MongoDB", "CouchDB", "FaunaDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-03-2026",
+    publishedAt: "01-03-2025",
   },
   {
     // id: 1,
@@ -6025,7 +6025,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "MySQL", "Heatwave", "AlloyDB", "Aurora"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-02-2026",
+    publishedAt: "06-02-2025",
   },
   {
     // id: 1,
@@ -6038,7 +6038,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "Branching", "PlanetScale", "Branching"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-12-2026",
+    publishedAt: "26-12-2025",
   },
   {
     // id: 1,
@@ -6051,7 +6051,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Neon", "Database", "AlloyDB", "PlanetScale"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-01-2026",
+    publishedAt: "20-01-2025",
   },
   {
     // id: 1,
@@ -6064,7 +6064,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Neon", "Database", "Aurora", "Serverless"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-03-2026",
+    publishedAt: "12-03-2025",
   },
   {
     // id: 1,
@@ -6077,7 +6077,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Neon", "Database", "Aurora", "AlloyDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-09-2026",
+    publishedAt: "19-09-2025",
   },
   {
     // id: 1,
@@ -6090,7 +6090,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Neon", "Database", "AWS", "Aurora", "AlloyDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-09-2026",
+    publishedAt: "12-09-2025",
   },
   {
     // id: 1,
@@ -6103,7 +6103,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Neon", "Database", "PlanetScale", "AlloyDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-05-2026",
+    publishedAt: "18-05-2025",
   },
   {
     // id: 1,
@@ -6116,7 +6116,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-04-2026",
+    publishedAt: "26-04-2025",
   },
   {
     // id: 1,
@@ -6129,7 +6129,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Neon", "Database", "Supabase", "Database"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-09-2026",
+    publishedAt: "13-09-2025",
   },
   {
     // id: 1,
@@ -6142,7 +6142,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-04-2026",
+    publishedAt: "24-04-2025",
   },
   {
     // id: 1,
@@ -6155,7 +6155,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Neon", "Database", "Turso", "LibSQL"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-02-2026",
+    publishedAt: "18-02-2025",
   },
   {
     // id: 1,
@@ -6168,7 +6168,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-08-2026",
+    publishedAt: "10-08-2025",
   },
   {
     // id: 1,
@@ -6181,7 +6181,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "Postgres", "AlloyDB", "Aurora"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-01-2026",
+    publishedAt: "11-01-2025",
   },
   {
     // id: 1,
@@ -6194,7 +6194,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "Postgres", "Yugabyte", "TiDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-10-2026",
+    publishedAt: "12-10-2025",
   },
   {
     // id: 1,
@@ -6207,7 +6207,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-08-2026",
+    publishedAt: "12-08-2025",
   },
   {
     // id: 1,
@@ -6220,7 +6220,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "Serverless", "Postgres", "CockroachDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-08-2026",
+    publishedAt: "04-08-2025",
   },
   {
     // id: 1,
@@ -6233,7 +6233,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "Serverless", "Postgres", "Planetscale"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-03-2026",
+    publishedAt: "31-03-2025",
   },
   {
     // id: 1,
@@ -6246,7 +6246,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-12-2026",
+    publishedAt: "24-12-2025",
   },
   {
     // id: 1,
@@ -6259,7 +6259,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "AlloyDB", "YugabyteDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-07-2026",
+    publishedAt: "07-07-2025",
   },
   {
     // id: 1,
@@ -6272,7 +6272,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "PlanetScale", "LibSQL"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-04-2026",
+    publishedAt: "22-04-2025",
   },
   {
     // id: 1,
@@ -6285,7 +6285,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "PlanetScale", "Yugabyte"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-06-2026",
+    publishedAt: "06-06-2025",
   },
   {
     // id: 1,
@@ -6298,7 +6298,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Neon", "Turso", "PlanetScale"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-12-2026",
+    publishedAt: "15-12-2025",
   },
   {
     // id: 1,
@@ -6311,7 +6311,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review", "Netlify", "CMS", "TinaCMS", "Decap", "CMS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-07-2026",
+    publishedAt: "21-07-2025",
   },
   {
     // id: 1,
@@ -6324,7 +6324,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -6337,7 +6337,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Netlify", "Edge", "Cloudflare", "Workers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-06-2026",
+    publishedAt: "04-06-2025",
   },
   {
     // id: 1,
@@ -6350,7 +6350,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Netlify", "Functions", "AWS", "Lambda"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-12-2026",
+    publishedAt: "25-12-2025",
   },
   {
     // id: 1,
@@ -6363,7 +6363,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Next.js", "15", "Nuxt", "4", "Remix"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-04-2026",
+    publishedAt: "03-04-2025",
   },
   {
     // id: 1,
@@ -6376,7 +6376,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Next.js", "API", "Routes", "Express", "APIs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-07-2026",
+    publishedAt: "23-07-2025",
   },
   {
     // id: 1,
@@ -6389,7 +6389,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Next.js", "App", "Router", "Pages", "Router"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-11-2026",
+    publishedAt: "25-11-2025",
   },
   {
     // id: 1,
@@ -6402,7 +6402,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-06-2026",
+    publishedAt: "30-06-2025",
   },
   {
     // id: 1,
@@ -6415,7 +6415,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-06-2026",
+    publishedAt: "05-06-2025",
   },
   {
     // id: 1,
@@ -6428,7 +6428,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Next.js", "Server", "Actions", "Remix", "Loaders"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-04-2026",
+    publishedAt: "01-04-2025",
   },
   {
     // id: 1,
@@ -6441,7 +6441,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-08-2026",
+    publishedAt: "08-08-2025",
   },
   {
     // id: 1,
@@ -6454,7 +6454,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Next.js", "Static", "Dynamic", "Rendering"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-03-2026",
+    publishedAt: "23-03-2025",
   },
   {
     // id: 1,
@@ -6467,7 +6467,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-07-2026",
+    publishedAt: "04-07-2025",
   },
   {
     // id: 1,
@@ -6480,7 +6480,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Next.js", "Remix", "Nuxt"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-05-2026",
+    publishedAt: "21-05-2025",
   },
   {
     // id: 1,
@@ -6493,7 +6493,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: ["Review", "Next.js", "SvelteKit", "Remix", "SEO"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-08-2026",
+    publishedAt: "19-08-2025",
   },
   {
     // id: 1,
@@ -6506,7 +6506,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Next.js", "SvelteKit", "SolidStart"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-12-2026",
+    publishedAt: "25-12-2025",
   },
   {
     // id: 1,
@@ -6519,7 +6519,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "NextAuth.js", "Clerk", "Authentication"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-04-2026",
+    publishedAt: "07-04-2025",
   },
   {
     // id: 1,
@@ -6532,7 +6532,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "NextAuth.js", "Clerk", "Auth.js"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-03-2026",
+    publishedAt: "13-03-2025",
   },
   {
     // id: 1,
@@ -6545,7 +6545,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "NextAuth.js", "Clerk", "Supabase", "Auth"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-08-2026",
+    publishedAt: "10-08-2025",
   },
   {
     // id: 1,
@@ -6558,7 +6558,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Nginx", "Apache", "Caddy"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-10-2026",
+    publishedAt: "14-10-2025",
   },
   {
     // id: 1,
@@ -6571,7 +6571,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Notion", "AI", "ClickUp", "AI", "Coda", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-12-2026",
+    publishedAt: "12-12-2025",
   },
   {
     // id: 1,
@@ -6584,7 +6584,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-02-2026",
+    publishedAt: "20-02-2025",
   },
   {
     // id: 1,
@@ -6597,7 +6597,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Notion", "Obsidian", "Developers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
@@ -6609,7 +6609,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Nuxt", "4", "Next.js", "15"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-03-2026",
+    publishedAt: "18-03-2025",
   },
   {
     // id: 1,
@@ -6622,7 +6622,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Nuxt", "4", "SvelteKit", "Astro"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-07-2026",
+    publishedAt: "09-07-2025",
   },
   {
     // id: 1,
@@ -6635,7 +6635,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: ["Review", "Open", "Source", "Analytics", "Tools", "Compared"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-08-2026",
+    publishedAt: "20-08-2025",
   },
   {
     // id: 1,
@@ -6648,7 +6648,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "OpenAI", "Fine", "Tuning", "Hugging", "Face", "Training"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-12-2026",
+    publishedAt: "31-12-2025",
   },
   {
     // id: 1,
@@ -6661,7 +6661,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "OpenAI", "GPT", "Store", "Hugging", "Face", "Hub"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-12-2026",
+    publishedAt: "27-12-2025",
   },
   {
     // id: 1,
@@ -6674,7 +6674,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "OpenAI", "GPT", "4.5", "Anthropic", "Claude", "Gemini"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-09-2026",
+    publishedAt: "21-09-2025",
   },
   {
     // id: 1,
@@ -6687,7 +6687,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "OpenAI", "GPT", "5", "Claude", "3.5", "Gemini", "Ultra"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-09-2026",
+    publishedAt: "23-09-2025",
   },
   {
     // id: 1,
@@ -6700,7 +6700,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "OpenAI", "GPTs", "Custom", "AI", "Agents"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-10-2026",
+    publishedAt: "03-10-2025",
   },
   {
     // id: 1,
@@ -6713,7 +6713,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "OpenAI", "Sora", "Runway", "Gen", "3", "Pika", "Labs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-08-2026",
+    publishedAt: "25-08-2025",
   },
   {
     // id: 1,
@@ -6726,7 +6726,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "OpenAI", "Anthropic", "Mistral", "APIs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-05-2026",
+    publishedAt: "27-05-2025",
   },
   {
     // id: 1,
@@ -6739,7 +6739,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-07-2026",
+    publishedAt: "19-07-2025",
   },
   {
     // id: 1,
@@ -6752,7 +6752,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-05-2026",
+    publishedAt: "24-05-2025",
   },
   {
     // id: 1,
@@ -6765,7 +6765,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Paddle", "Gumroad", "Lemon", "Squeezy"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-09-2026",
+    publishedAt: "30-09-2025",
   },
   {
     // id: 1,
@@ -6778,7 +6778,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Plaid", "Teller", "Truelayer", "APIs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-11-2026",
+    publishedAt: "08-11-2025",
   },
   {
     // id: 1,
@@ -6791,7 +6791,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PlanetScale", "Branching", "Neon", "Branching"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-11-2026",
+    publishedAt: "11-11-2025",
   },
   {
     // id: 1,
@@ -6804,7 +6804,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-01-2026",
+    publishedAt: "25-01-2025",
   },
   {
     // id: 1,
@@ -6817,7 +6817,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PlanetScale", "Neon", "AlloyDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-09-2026",
+    publishedAt: "02-09-2025",
   },
   {
     // id: 1,
@@ -6830,7 +6830,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Planetscale", "Neon", "Yugabyte"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-08-2026",
+    publishedAt: "13-08-2025",
   },
   {
     // id: 1,
@@ -6843,7 +6843,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: ["Review", "Plausible", "Google", "Analytics"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-05-2026",
+    publishedAt: "15-05-2025",
   },
   {
     // id: 1,
@@ -6856,7 +6856,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Playwright", "Cypress", "Selenium"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-08-2026",
+    publishedAt: "12-08-2025",
   },
   {
     // id: 1,
@@ -6869,7 +6869,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-04-2026",
+    publishedAt: "27-04-2025",
   },
   {
     // id: 1,
@@ -6882,7 +6882,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-08-2026",
+    publishedAt: "29-08-2025",
   },
   {
     // id: 1,
@@ -6895,7 +6895,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Postgres", "Extensions", "MySQL", "Plugins"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-05-2026",
+    publishedAt: "07-05-2025",
   },
   {
     // id: 1,
@@ -6908,7 +6908,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-12-2026",
+    publishedAt: "16-12-2025",
   },
   {
     // id: 1,
@@ -6921,7 +6921,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-05-2026",
+    publishedAt: "22-05-2025",
   },
   {
     // id: 1,
@@ -6934,7 +6934,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-04-2026",
+    publishedAt: "17-04-2025",
   },
   {
     // id: 1,
@@ -6947,7 +6947,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostgreSQL", "Extensions", "MySQL", "Plugins"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-05-2026",
+    publishedAt: "23-05-2025",
   },
   {
     // id: 1,
@@ -6960,7 +6960,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-10-2026",
+    publishedAt: "21-10-2025",
   },
   {
     // id: 1,
@@ -6973,7 +6973,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-10-2026",
+    publishedAt: "16-10-2025",
   },
   {
     // id: 1,
@@ -6986,7 +6986,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostgreSQL", "JSONB", "MongoDB", "CouchDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-08-2026",
+    publishedAt: "06-08-2025",
   },
   {
     // id: 1,
@@ -6999,7 +6999,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-11-2026",
+    publishedAt: "20-11-2025",
   },
   {
     // id: 1,
@@ -7012,7 +7012,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-11-2026",
+    publishedAt: "14-11-2025",
   },
   {
     // id: 1,
@@ -7025,7 +7025,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostgreSQL", "Timescale", "InfluxDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-11-2026",
+    publishedAt: "30-11-2025",
   },
   {
     // id: 1,
@@ -7038,7 +7038,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostgreSQL", "TimescaleDB", "ClickHouse"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-05-2026",
+    publishedAt: "20-05-2025",
   },
   {
     // id: 1,
@@ -7051,7 +7051,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostgreSQL", "MySQL", "MariaDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-04-2026",
+    publishedAt: "14-04-2025",
   },
   {
     // id: 1,
@@ -7064,7 +7064,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostgreSQL", "MySQL", "SQLite"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-09-2026",
+    publishedAt: "20-09-2025",
   },
   {
     // id: 1,
@@ -7077,7 +7077,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostgreSQL", "Yugabyte", "TiDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-10-2026",
+    publishedAt: "28-10-2025",
   },
   {
     // id: 1,
@@ -7090,7 +7090,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "PostHog", "Mixpanel", "Amplitude"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-05-2026",
+    publishedAt: "22-05-2025",
   },
   {
     // id: 1,
@@ -7103,7 +7103,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Postman", "Hoppscotch", "API", "Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-04-2026",
+    publishedAt: "13-04-2025",
   },
   {
     // id: 1,
@@ -7116,7 +7116,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "Accelerate", "Drizzle", "Kit"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-03-2026",
+    publishedAt: "26-03-2025",
   },
   {
     // id: 1,
@@ -7129,7 +7129,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-01-2026",
+    publishedAt: "07-01-2025",
   },
   {
     // id: 1,
@@ -7142,7 +7142,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-03-2026",
+    publishedAt: "15-03-2025",
   },
   {
     // id: 1,
@@ -7155,7 +7155,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "Accelerate", "Supabase", "Edge"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-07-2026",
+    publishedAt: "13-07-2025",
   },
   {
     // id: 1,
@@ -7168,7 +7168,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "Client", "Extensions", "Kysely"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-06-2026",
+    publishedAt: "09-06-2025",
   },
   {
     // id: 1,
@@ -7181,7 +7181,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-06-2026",
+    publishedAt: "09-06-2025",
   },
   {
     // id: 1,
@@ -7194,7 +7194,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "ORM", "Drizzle", "ORM", "Sequelize"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-10-2026",
+    publishedAt: "14-10-2025",
   },
   {
     // id: 1,
@@ -7207,7 +7207,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "ORM", "Drizzle", "ORM", "TypeORM"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-04-2026",
+    publishedAt: "22-04-2025",
   },
   {
     // id: 1,
@@ -7220,7 +7220,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "ORM", "Drizzle", "Kysely"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-06-2026",
+    publishedAt: "18-06-2025",
   },
   {
     // id: 1,
@@ -7233,7 +7233,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "ORM", "Sequelize", "MikroORM"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-03-2026",
+    publishedAt: "02-03-2025",
   },
   {
     // id: 1,
@@ -7246,7 +7246,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "ORM", "TypeORM", "MikroORM"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-11-2026",
+    publishedAt: "17-11-2025",
   },
   {
     // id: 1,
@@ -7259,7 +7259,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "Drizzle", "ORM", "TypeORM"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-11-2026",
+    publishedAt: "07-11-2025",
   },
   {
     // id: 1,
@@ -7272,7 +7272,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "Drizzle", "Objection.js"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-07-2026",
+    publishedAt: "09-07-2025",
   },
   {
     // id: 1,
@@ -7285,7 +7285,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Prisma", "Sequelize", "Knex.js"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-05-2026",
+    publishedAt: "02-05-2025",
   },
   {
     // id: 1,
@@ -7298,7 +7298,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Qwik", "Astro", "Next.js", "Speed"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-07-2026",
+    publishedAt: "28-07-2025",
   },
   {
     // id: 1,
@@ -7311,7 +7311,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Qwik", "Astro", "SolidStart"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-05-2026",
+    publishedAt: "20-05-2025",
   },
   {
     // id: 1,
@@ -7324,7 +7324,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Qwik", "SolidJS", "Svelte"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-03-2026",
+    publishedAt: "11-03-2025",
   },
   {
     // id: 1,
@@ -7337,7 +7337,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-08-2026",
+    publishedAt: "05-08-2025",
   },
   {
     // id: 1,
@@ -7350,7 +7350,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "React", "19", "Vue", "4", "Angular", "16"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-07-2026",
+    publishedAt: "09-07-2025",
   },
   {
     // id: 1,
@@ -7363,7 +7363,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "React", "Native", "Flutter", "Ionic"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-02-2026",
+    publishedAt: "15-02-2025",
   },
   {
     // id: 1,
@@ -7376,7 +7376,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "React", "Query", "Apollo", "Client", "SWR"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-04-2026",
+    publishedAt: "20-04-2025",
   },
   {
     // id: 1,
@@ -7389,7 +7389,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-01-2026",
+    publishedAt: "24-01-2025",
   },
   {
     // id: 1,
@@ -7402,7 +7402,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Cloud", "DragonflyDB", "Valkey"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-10-2026",
+    publishedAt: "03-10-2025",
   },
   {
     // id: 1,
@@ -7415,7 +7415,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Enterprise", "KeyDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-11-2026",
+    publishedAt: "16-11-2025",
   },
   {
     // id: 1,
@@ -7428,7 +7428,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-07-2026",
+    publishedAt: "06-07-2025",
   },
   {
     // id: 1,
@@ -7441,7 +7441,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Stack", "Aerospike", "ScyllaDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-06-2026",
+    publishedAt: "17-06-2025",
   },
   {
     // id: 1,
@@ -7454,7 +7454,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Stack", "DragonflyDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-12-2026",
+    publishedAt: "29-12-2025",
   },
   {
     // id: 1,
@@ -7467,7 +7467,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Stack", "Valkey", "KeyDB"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-05-2026",
+    publishedAt: "10-05-2025",
   },
   {
     // id: 1,
@@ -7480,7 +7480,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Streams", "Kafka", "Pulsar"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-01-2026",
+    publishedAt: "06-01-2025",
   },
   {
     // id: 1,
@@ -7493,7 +7493,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Vector", "Weaviate", "Pinecone"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-10-2026",
+    publishedAt: "08-10-2025",
   },
   {
     // id: 1,
@@ -7506,7 +7506,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "DragonflyDB", "Valkey"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-12-2026",
+    publishedAt: "01-12-2025",
   },
   {
     // id: 1,
@@ -7519,7 +7519,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "KeyDB", "Valkey", "Performance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-01-2026",
+    publishedAt: "31-01-2025",
   },
   {
     // id: 1,
@@ -7532,7 +7532,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Redis", "Memcached", "Caching"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-04-2026",
+    publishedAt: "12-04-2025",
   },
   {
     // id: 1,
@@ -7545,7 +7545,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "RedisGraph", "TigerGraph", "Neo4j"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-04-2026",
+    publishedAt: "22-04-2025",
   },
   {
     // id: 1,
@@ -7558,20 +7558,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Remix", "Next.js", "Astro", "Islands"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-07-2026",
+    publishedAt: "24-07-2025",
   },
   {
     // id: 1,
-    title: "Review: Remix vs Next.js vs Nuxt for 2026",
-    slug: "review-remix-vs-next.js-vs-nuxt-for-2026",
+    title: "Review: Remix vs Next.js vs Nuxt for 2025",
+    slug: "review-remix-vs-next.js-vs-nuxt-for-2025",
     excerpt:
-      "A detailed comparison and review: Review: Remix vs Next.js vs Nuxt for 2026.",
+      "A detailed comparison and review: Review: Remix vs Next.js vs Nuxt for 2025.",
     readingTime: "5 min read",
-    //  image: "/review-remix-vs-next.js-vs-nuxt-for-2026.png",
+    //  image: "/review-remix-vs-next.js-vs-nuxt-for-2025.png",
     category: "Web Development",
-    tags: ["Review", "Remix", "Next.js", "Nuxt", "2026"],
+    tags: ["Review", "Remix", "Next.js", "Nuxt", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-03-2026",
+    publishedAt: "18-03-2025",
   },
   {
     // id: 1,
@@ -7584,7 +7584,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Remix", "Next.js", "SvelteKit"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-02-2026",
+    publishedAt: "17-02-2025",
   },
   {
     // id: 1,
@@ -7597,7 +7597,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Remix", "SolidStart", "Astro", "Islands"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-10-2026",
+    publishedAt: "08-10-2025",
   },
   {
     // id: 1,
@@ -7610,7 +7610,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Render", "AI", "Deploy", "Vercel", "AI", "Deploy"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-12-2026",
+    publishedAt: "12-12-2025",
   },
   {
     // id: 1,
@@ -7623,7 +7623,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Render", "DigitalOcean", "App", "Platform"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-07-2026",
+    publishedAt: "12-07-2025",
   },
   {
     // id: 1,
@@ -7636,7 +7636,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Render", "Railway", "Fly.io"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-02-2026",
+    publishedAt: "27-02-2025",
   },
   {
     // id: 1,
@@ -7649,7 +7649,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Render", "Vercel", "Startups"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-02-2026",
+    publishedAt: "10-02-2025",
   },
   {
     // id: 1,
@@ -7662,7 +7662,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Sanity", "Studio", "Directus", "KeystoneJS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-06-2026",
+    publishedAt: "11-06-2025",
   },
   {
     // id: 1,
@@ -7675,7 +7675,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review", "Sanity", "Studio", "TinaCMS", "Directus"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-11-2026",
+    publishedAt: "09-11-2025",
   },
   {
     // id: 1,
@@ -7688,7 +7688,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Sanity", "Contentful", "Storyblok"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -7701,7 +7701,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-10-2026",
+    publishedAt: "03-10-2025",
   },
   {
     // id: 1,
@@ -7714,7 +7714,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "ShadCN", "UI", "Material", "UI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-08-2026",
+    publishedAt: "13-08-2025",
   },
   {
     // id: 1,
@@ -7727,7 +7727,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Shopify", "AI", "Checkout", "Stripe", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-05-2026",
+    publishedAt: "14-05-2025",
   },
   {
     // id: 1,
@@ -7740,7 +7740,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-10-2026",
+    publishedAt: "02-10-2025",
   },
   {
     // id: 1,
@@ -7753,7 +7753,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-12-2026",
+    publishedAt: "09-12-2025",
   },
   {
     // id: 1,
@@ -7766,7 +7766,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Shopify", "AI", "Tools", "Wix", "AI", "Framer", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-12-2026",
+    publishedAt: "07-12-2025",
   },
   {
     // id: 1,
@@ -7779,7 +7779,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "B2B", "BigCommerce", "B2B"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-02-2026",
+    publishedAt: "03-02-2025",
   },
   {
     // id: 1,
@@ -7792,7 +7792,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Checkout", "Stripe", "Checkout"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-10-2026",
+    publishedAt: "02-10-2025",
   },
   {
     // id: 1,
@@ -7805,7 +7805,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Shopify", "Flow", "Zapier", "Make"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-01-2026",
+    publishedAt: "22-01-2025",
   },
   {
     // id: 1,
@@ -7818,7 +7818,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Functions", "BigCommerce", "Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-08-2026",
+    publishedAt: "18-08-2025",
   },
   {
     // id: 1,
@@ -7831,7 +7831,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Functions", "Custom", "Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-06-2026",
+    publishedAt: "27-06-2025",
   },
   {
     // id: 1,
@@ -7844,7 +7844,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Hydrogen", "Next.js", "Commerce"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-09-2026",
+    publishedAt: "03-09-2025",
   },
   {
     // id: 1,
@@ -7857,7 +7857,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Hydrogen", "Remix", "Commerce"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-06-2026",
+    publishedAt: "19-06-2025",
   },
   {
     // id: 1,
@@ -7870,7 +7870,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Markets", "Pro", "Global", "e"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-04-2026",
+    publishedAt: "03-04-2025",
   },
   {
     // id: 1,
@@ -7883,7 +7883,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Markets", "WooCommerce", "Multi", "Currency"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-07-2026",
+    publishedAt: "19-07-2025",
   },
   {
     // id: 1,
@@ -7896,7 +7896,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Plus", "Adobe", "Commerce"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-02-2026",
+    publishedAt: "01-02-2025",
   },
   {
     // id: 1,
@@ -7909,7 +7909,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Plus", "BigCommerce", "Enterprise"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-11-2026",
+    publishedAt: "14-11-2025",
   },
   {
     // id: 1,
@@ -7922,7 +7922,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Plus", "Magento", "Commerce"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-10-2026",
+    publishedAt: "22-10-2025",
   },
   {
     // id: 1,
@@ -7935,7 +7935,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-10-2026",
+    publishedAt: "07-10-2025",
   },
   {
     // id: 1,
@@ -7948,7 +7948,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "POS", "Square", "POS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-04-2026",
+    publishedAt: "27-04-2025",
   },
   {
     // id: 1,
@@ -7961,7 +7961,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "POS", "Square", "Lightspeed"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-02-2026",
+    publishedAt: "18-02-2025",
   },
   {
     // id: 1,
@@ -7974,7 +7974,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-09-2026",
+    publishedAt: "15-09-2025",
   },
   {
     // id: 1,
@@ -7987,7 +7987,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "Wix", "Squarespace"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-01-2026",
+    publishedAt: "01-01-2025",
   },
   {
     // id: 1,
@@ -8000,7 +8000,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "WooCommerce", "BigCommerce"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-09-2026",
+    publishedAt: "20-09-2025",
   },
   {
     // id: 1,
@@ -8013,7 +8013,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Shopify", "WooCommerce", "Magento"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-04-2026",
+    publishedAt: "09-04-2025",
   },
   {
     // id: 1,
@@ -8026,7 +8026,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Slack", "AI", "Microsoft", "Teams", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-10-2026",
+    publishedAt: "12-10-2025",
   },
   {
     // id: 1,
@@ -8039,7 +8039,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Storyblok", "Sanity", "Strapi"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-05-2026",
+    publishedAt: "08-05-2025",
   },
   {
     // id: 1,
@@ -8052,7 +8052,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-11-2026",
+    publishedAt: "27-11-2025",
   },
   {
     // id: 1,
@@ -8065,7 +8065,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Atlas", "Firstbase.io"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-01-2026",
+    publishedAt: "10-01-2025",
   },
   {
     // id: 1,
@@ -8078,7 +8078,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Atlas", "Mercury", "Banking"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-12-2026",
+    publishedAt: "08-12-2025",
   },
   {
     // id: 1,
@@ -8091,7 +8091,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Billing", "Paddle", "Billing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-01-2026",
+    publishedAt: "01-01-2025",
   },
   {
     // id: 1,
@@ -8104,7 +8104,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Billing", "Paddle", "Chargebee"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-04-2026",
+    publishedAt: "16-04-2025",
   },
   {
     // id: 1,
@@ -8117,7 +8117,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Stripe", "Checkout", "Braintree"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-11-2026",
+    publishedAt: "26-11-2025",
   },
   {
     // id: 1,
@@ -8130,7 +8130,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Checkout", "Paddle", "Checkout"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-07-2026",
+    publishedAt: "06-07-2025",
   },
   {
     // id: 1,
@@ -8143,7 +8143,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Stripe", "Connect", "Adyen", "Braintree"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-05-2026",
+    publishedAt: "19-05-2025",
   },
   {
     // id: 1,
@@ -8156,7 +8156,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Connect", "Adyen", "PayPal"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-11-2026",
+    publishedAt: "21-11-2025",
   },
   {
     // id: 1,
@@ -8169,7 +8169,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-11-2026",
+    publishedAt: "21-11-2025",
   },
   {
     // id: 1,
@@ -8182,7 +8182,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Connect", "PayPal", "Marketplace"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-05-2026",
+    publishedAt: "11-05-2025",
   },
   {
     // id: 1,
@@ -8195,7 +8195,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Issuing", "Payoneer", "Wise"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-10-2026",
+    publishedAt: "11-10-2025",
   },
   {
     // id: 1,
@@ -8208,7 +8208,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Terminal", "Square", "Terminal"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-03-2026",
+    publishedAt: "06-03-2025",
   },
   {
     // id: 1,
@@ -8221,7 +8221,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Stripe", "Razorpay", "Payoneer"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-09-2026",
+    publishedAt: "06-09-2025",
   },
   {
     // id: 1,
@@ -8234,7 +8234,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-06-2026",
+    publishedAt: "01-06-2025",
   },
   {
     // id: 1,
@@ -8247,7 +8247,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Auth", "Clerk", "Auth0"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-02-2026",
+    publishedAt: "02-02-2025",
   },
   {
     // id: 1,
@@ -8260,7 +8260,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Auth", "Clerk", "Firebase", "Auth"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-03-2026",
+    publishedAt: "27-03-2025",
   },
   {
     // id: 1,
@@ -8273,7 +8273,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Auth", "Firebase", "Auth", "Clerk"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-10-2026",
+    publishedAt: "25-10-2025",
   },
   {
     // id: 1,
@@ -8286,7 +8286,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-10-2026",
+    publishedAt: "15-10-2025",
   },
   {
     // id: 1,
@@ -8299,7 +8299,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-07-2026",
+    publishedAt: "16-07-2025",
   },
   {
     // id: 1,
@@ -8312,7 +8312,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-01-2026",
+    publishedAt: "17-01-2025",
   },
   {
     // id: 1,
@@ -8325,7 +8325,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Edge", "Functions", "Deno", "Deploy"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-02-2026",
+    publishedAt: "26-02-2025",
   },
   {
     // id: 1,
@@ -8338,7 +8338,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-08-2026",
+    publishedAt: "13-08-2025",
   },
   {
     // id: 1,
@@ -8351,7 +8351,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-10-2026",
+    publishedAt: "06-10-2025",
   },
   {
     // id: 1,
@@ -8364,7 +8364,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Edge", "Cloudflare", "Edge"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-06-2026",
+    publishedAt: "30-06-2025",
   },
   {
     // id: 1,
@@ -8377,7 +8377,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -8390,7 +8390,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Functions", "AWS", "Lambda"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-06-2026",
+    publishedAt: "15-06-2025",
   },
   {
     // id: 1,
@@ -8403,7 +8403,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-02-2026",
+    publishedAt: "28-02-2025",
   },
   {
     // id: 1,
@@ -8416,7 +8416,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Supabase", "Functions", "Vercel", "Functions"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-02-2026",
+    publishedAt: "09-02-2025",
   },
   {
     // id: 1,
@@ -8429,7 +8429,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "pgvector", "Chroma", "Milvus"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-06-2026",
+    publishedAt: "14-06-2025",
   },
   {
     // id: 1,
@@ -8442,7 +8442,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
@@ -8455,7 +8455,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "pgvector", "Qdrant", "Milvus"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-04-2026",
+    publishedAt: "24-04-2025",
   },
   {
     // id: 1,
@@ -8468,7 +8468,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Realtime", "Ably", "PubNub"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-06-2026",
+    publishedAt: "01-06-2025",
   },
   {
     // id: 1,
@@ -8481,7 +8481,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Realtime", "Ably", "Pusher"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-02-2026",
+    publishedAt: "13-02-2025",
   },
   {
     // id: 1,
@@ -8494,7 +8494,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Review", "Supabase", "Realtime", "Firebase", "Firestore"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-05-2026",
+    publishedAt: "19-05-2025",
   },
   {
     // id: 1,
@@ -8507,7 +8507,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-11-2026",
+    publishedAt: "25-11-2025",
   },
   {
     // id: 1,
@@ -8520,7 +8520,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-08-2026",
+    publishedAt: "25-08-2025",
   },
   {
     // id: 1,
@@ -8533,7 +8533,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-07-2026",
+    publishedAt: "17-07-2025",
   },
   {
     // id: 1,
@@ -8546,7 +8546,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Storage", "Firebase", "Storage"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-03-2026",
+    publishedAt: "16-03-2025",
   },
   {
     // id: 1,
@@ -8559,7 +8559,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Vector", "Pinecone", "Weaviate"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-03-2026",
+    publishedAt: "14-03-2025",
   },
   {
     // id: 1,
@@ -8572,7 +8572,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Vector", "Pinecone"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-02-2026",
+    publishedAt: "07-02-2025",
   },
   {
     // id: 1,
@@ -8585,7 +8585,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Supabase", "Firebase", "Appwrite"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-09-2026",
+    publishedAt: "24-09-2025",
   },
   {
     // id: 1,
@@ -8598,7 +8598,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Svelte", "Native", "React", "Native"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-01-2026",
+    publishedAt: "19-01-2025",
   },
   {
     // id: 1,
@@ -8611,7 +8611,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "SvelteKit", "SSR", "Next.js", "RSC"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-09-2026",
+    publishedAt: "26-09-2025",
   },
   {
     // id: 1,
@@ -8624,20 +8624,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "SvelteKit", "Nuxt", "4", "Next.js"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-01-2026",
+    publishedAt: "22-01-2025",
   },
   {
     // id: 1,
-    title: "Review: SvelteKit vs Remix vs Next.js in 2026",
-    slug: "review-sveltekit-vs-remix-vs-next.js-in-2026",
+    title: "Review: SvelteKit vs Remix vs Next.js in 2025",
+    slug: "review-sveltekit-vs-remix-vs-next.js-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: SvelteKit vs Remix vs Next.js in 2026.",
+      "A detailed comparison and review: Review: SvelteKit vs Remix vs Next.js in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-sveltekit-vs-remix-vs-next.js-in-2026.png",
+    //  image: "/review-sveltekit-vs-remix-vs-next.js-in-2025.png",
     category: "Web Development",
-    tags: ["Review", "SvelteKit", "Remix", "Next.js", "2026"],
+    tags: ["Review", "SvelteKit", "Remix", "Next.js", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-10-2026",
+    publishedAt: "23-10-2025",
   },
   {
     // id: 1,
@@ -8650,7 +8650,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "SvelteKit", "SolidStart", "Qwik"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-06-2026",
+    publishedAt: "21-06-2025",
   },
   {
     // id: 1,
@@ -8663,7 +8663,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "CSS", "Bootstrap", "6", "Bulma"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-01-2026",
+    publishedAt: "21-01-2025",
   },
   {
     // id: 1,
@@ -8676,7 +8676,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "CSS", "Bootstrap", "Foundation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-04-2026",
+    publishedAt: "21-04-2025",
   },
   {
     // id: 1,
@@ -8689,7 +8689,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "CSS", "Chakra", "UI", "Radix", "UI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-07-2026",
+    publishedAt: "07-07-2025",
   },
   {
     // id: 1,
@@ -8702,7 +8702,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "CSS", "Styled", "Components"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-06-2026",
+    publishedAt: "14-06-2025",
   },
   {
     // id: 1,
@@ -8715,7 +8715,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "CSS", "Windi", "CSS", "UnoCSS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-11-2026",
+    publishedAt: "03-11-2025",
   },
   {
     // id: 1,
@@ -8728,7 +8728,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-05-2026",
+    publishedAt: "04-05-2025",
   },
   {
     // id: 1,
@@ -8741,7 +8741,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "Play", "CodeSandbox"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-09-2026",
+    publishedAt: "12-09-2025",
   },
   {
     // id: 1,
@@ -8754,7 +8754,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "UI", "DaisyUI", "Flowbite"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-02-2026",
+    publishedAt: "11-02-2025",
   },
   {
     // id: 1,
@@ -8767,7 +8767,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "UI", "Flowbite", "DaisyUI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-06-2026",
+    publishedAt: "10-06-2025",
   },
   {
     // id: 1,
@@ -8780,7 +8780,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "UI", "Shadcn", "MUI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-12-2026",
+    publishedAt: "06-12-2025",
   },
   {
     // id: 1,
@@ -8793,7 +8793,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Tailwind", "Bootstrap", "Chakra", "UI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-03-2026",
+    publishedAt: "19-03-2025",
   },
   {
     // id: 1,
@@ -8806,7 +8806,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Terraform", "Pulumi", "AWS", "CDK"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-02-2026",
+    publishedAt: "20-02-2025",
   },
   {
     // id: 1,
@@ -8819,7 +8819,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Turbopack", "ESBuild", "Vite"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-01-2026",
+    publishedAt: "15-01-2025",
   },
   {
     // id: 1,
@@ -8832,7 +8832,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Turbopack", "Vite", "Webpack"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-09-2026",
+    publishedAt: "04-09-2025",
   },
   {
     // id: 1,
@@ -8845,20 +8845,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Turborepo", "Lerna", "Nx"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-10-2026",
+    publishedAt: "05-10-2025",
   },
   {
     // id: 1,
-    title: "Review: Turborepo vs Monorepo Tools in 2026",
-    slug: "review-turborepo-vs-monorepo-tools-in-2026",
+    title: "Review: Turborepo vs Monorepo Tools in 2025",
+    slug: "review-turborepo-vs-monorepo-tools-in-2025",
     excerpt:
-      "A detailed comparison and review: Review: Turborepo vs Monorepo Tools in 2026.",
+      "A detailed comparison and review: Review: Turborepo vs Monorepo Tools in 2025.",
     readingTime: "5 min read",
-    //  image: "/review-turborepo-vs-monorepo-tools-in-2026.png",
+    //  image: "/review-turborepo-vs-monorepo-tools-in-2025.png",
     category: "Web Development",
-    tags: ["Review", "Turborepo", "Monorepo", "Tools", "2026"],
+    tags: ["Review", "Turborepo", "Monorepo", "Tools", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-09-2026",
+    publishedAt: "03-09-2025",
   },
   {
     // id: 1,
@@ -8871,7 +8871,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Turborepo", "Nx", "Monorepos"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-11-2026",
+    publishedAt: "06-11-2025",
   },
   {
     // id: 1,
@@ -8884,7 +8884,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Turso", "SQLite", "Cloud", "LiteFS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-09-2026",
+    publishedAt: "03-09-2025",
   },
   {
     // id: 1,
@@ -8897,7 +8897,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-01-2026",
+    publishedAt: "06-01-2025",
   },
   {
     // id: 1,
@@ -8910,7 +8910,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Vercel", "AI", "OpenAI", "Assistants", "API"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-04-2026",
+    publishedAt: "15-04-2025",
   },
   {
     // id: 1,
@@ -8923,7 +8923,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "Analytics", "Google", "Analytics", "4"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-09-2026",
+    publishedAt: "29-09-2025",
   },
   {
     // id: 1,
@@ -8936,7 +8936,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "Analytics", "Plausible", "Umami"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-10-2026",
+    publishedAt: "08-10-2025",
   },
   {
     // id: 1,
@@ -8949,7 +8949,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "Edge", "Config", "Cloudflare", "KV"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-11-2026",
+    publishedAt: "11-11-2025",
   },
   {
     // id: 1,
@@ -8962,7 +8962,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-08-2026",
+    publishedAt: "30-08-2025",
   },
   {
     // id: 1,
@@ -8975,7 +8975,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "KV", "Cloudflare", "KV", "Redis"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-06-2026",
+    publishedAt: "08-06-2025",
   },
   {
     // id: 1,
@@ -8988,7 +8988,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "KV", "Upstash", "Redis", "Turso"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-02-2026",
+    publishedAt: "21-02-2025",
   },
   {
     // id: 1,
@@ -9001,7 +9001,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "Storage", "Cloudflare", "R2"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-06-2026",
+    publishedAt: "19-06-2025",
   },
   {
     // id: 1,
@@ -9014,7 +9014,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-11-2026",
+    publishedAt: "03-11-2025",
   },
   {
     // id: 1,
@@ -9027,7 +9027,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "Render", "Netlify", "Pricing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-11-2026",
+    publishedAt: "09-11-2025",
   },
   {
     // id: 1,
@@ -9040,7 +9040,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Vitest", "Jest", "JavaScript", "Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-11-2026",
+    publishedAt: "16-11-2025",
   },
   {
     // id: 1,
@@ -9053,7 +9053,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "VS", "Code", "Copilot", "Chat", "Cursor", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-07-2026",
+    publishedAt: "07-07-2025",
   },
   {
     // id: 1,
@@ -9065,7 +9065,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Vue", "4", "React", "19"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-11-2026",
+    publishedAt: "28-11-2025",
   },
   {
     // id: 1,
@@ -9078,7 +9078,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "VueUse", "React", "Hooks", "Library"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-10-2026",
+    publishedAt: "21-10-2025",
   },
   {
     // id: 1,
@@ -9091,7 +9091,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Webflow", "AI", "Framer", "AI", "Wix", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-08-2026",
+    publishedAt: "10-08-2025",
   },
   {
     // id: 1,
@@ -9104,7 +9104,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review", "Webflow", "CMS", "Framer", "CMS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-03-2026",
+    publishedAt: "27-03-2025",
   },
   {
     // id: 1,
@@ -9117,7 +9117,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Webflow", "Squarespace", "Wix"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-04-2026",
+    publishedAt: "21-04-2025",
   },
   {
     // id: 1,
@@ -9130,7 +9130,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "WebRTC", "Agora", "Twilio", "Video"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-08-2026",
+    publishedAt: "19-08-2025",
   },
   {
     // id: 1,
@@ -9143,7 +9143,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-11-2026",
+    publishedAt: "24-11-2025",
   },
   {
     // id: 1,
@@ -9156,7 +9156,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Zapier", "AI", "Make", "AI", "n8n", "AI"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-12-2026",
+    publishedAt: "31-12-2025",
   },
   {
     // id: 1,
@@ -9169,7 +9169,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Stripe vs PayPal"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-10-2026",
+    publishedAt: "15-10-2025",
   },
   {
     // id: 1,
@@ -9182,56 +9182,56 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Supabase vs Firebase", "A Backend Comparison"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-12-2026",
+    publishedAt: "09-12-2025",
   },
   {
     // id: 1,
-    title: "Tailwind UI vs Chakra UI: Which Should You Use in 2026?",
-    slug: "tailwind-ui-vs-chakra-ui-which-should-you-use-in-2026",
+    title: "Tailwind UI vs Chakra UI: Which Should You Use in 2025?",
+    slug: "tailwind-ui-vs-chakra-ui-which-should-you-use-in-2025",
     excerpt:
-      "A detailed comparison and review: Tailwind UI vs Chakra UI: Which Should You Use in 2026?.",
+      "A detailed comparison and review: Tailwind UI vs Chakra UI: Which Should You Use in 2025?.",
     readingTime: "5 min read",
-    //  image: "/tailwind-ui-vs-chakra-ui-which-should-you-use-in-2026?.png",
+    //  image: "/tailwind-ui-vs-chakra-ui-which-should-you-use-in-2025?.png",
     category: "AI Tools",
-    tags: ["Tailwind UI vs Chakra UI", "Which Should You Use in 2026?"],
+    tags: ["Tailwind UI vs Chakra UI", "Which Should You Use in 2025?"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-02-2026",
+    publishedAt: "10-02-2025",
   },
   {
     // id: 1,
-    title: "The Best JAMstack Starters in 2026",
-    slug: "the-best-jamstack-starters-in-2026",
-    excerpt: "An in-depth guide on The Best JAMstack Starters in 2026.",
+    title: "The Best JAMstack Starters in 2025",
+    slug: "the-best-jamstack-starters-in-2025",
+    excerpt: "An in-depth guide on The Best JAMstack Starters in 2025.",
     readingTime: "5 min read",
-    //  image: "/the-best-jamstack-starters-in-2026.png",
+    //  image: "/the-best-jamstack-starters-in-2025.png",
     category: "Web Development",
-    tags: ["Best ", "JAMstack Starters", "2026"],
+    tags: ["Best ", "JAMstack Starters", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-08-2026",
+    publishedAt: "07-08-2025",
   },
   {
     // id: 1,
-    title: "The Future of WebAssembly in 2026",
-    slug: "the-future-of-webassembly-in-2026",
-    excerpt: "An in-depth guide on The Future of WebAssembly in 2026.",
+    title: "The Future of WebAssembly in 2025",
+    slug: "the-future-of-webassembly-in-2025",
+    excerpt: "An in-depth guide on The Future of WebAssembly in 2025.",
     readingTime: "5 min read",
-    //  image: "/the-future-of-webassembly-in-2026.png",
+    //  image: "/the-future-of-webassembly-in-2025.png",
     category: "Web Development",
-    tags: ["The Future of WebAssembly", "2026"],
+    tags: ["The Future of WebAssembly", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-05-2026",
+    publishedAt: "31-05-2025",
   },
   {
     // id: 1,
-    title: "The Latest Trends in Jamstack for 2026",
-    slug: "the-latest-trends-in-jamstack-for-2026",
-    excerpt: "An in-depth guide on The Latest Trends in Jamstack for 2026.",
+    title: "The Latest Trends in Jamstack for 2025",
+    slug: "the-latest-trends-in-jamstack-for-2025",
+    excerpt: "An in-depth guide on The Latest Trends in Jamstack for 2025.",
     readingTime: "5 min read",
-    //  image: "/the-latest-trends-in-jamstack-for-2026.png",
+    //  image: "/the-latest-trends-in-jamstack-for-2025.png",
     category: "Web Development",
-    tags: ["The Latest Trends in Jamstack for 2026"],
+    tags: ["The Latest Trends in Jamstack for 2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-05-2026",
+    publishedAt: "13-05-2025",
   },
   {
     // id: 1,
@@ -9243,7 +9243,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["The Rise of Micro", "Frontends", "Pros and Cons"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-09-2026",
+    publishedAt: "13-09-2025",
   },
   {
     // id: 1,
@@ -9256,31 +9256,31 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-01-2026",
+    publishedAt: "29-01-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Design Tools in 2026",
-    slug: "top-10-ai-design-tools-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Design Tools in 2026.",
+    title: "Top 10 AI Design Tools in 2025",
+    slug: "top-10-ai-design-tools-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Design Tools in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-design-tools-in-2026.png",
+    //  image: "/top-10-ai-design-tools-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Design Tools", "2026"],
+    tags: ["Top 10 AI Design Tools", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-12-2026",
+    publishedAt: "06-12-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI SEO Tools for 2026",
-    slug: "top-10-ai-seo-tools-for-2026",
-    excerpt: "An in-depth guide on Top 10 AI SEO Tools for 2026.",
+    title: "Top 10 AI SEO Tools for 2025",
+    slug: "top-10-ai-seo-tools-for-2025",
+    excerpt: "An in-depth guide on Top 10 AI SEO Tools for 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-seo-tools-for-2026.png",
+    //  image: "/top-10-ai-seo-tools-for-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI SEO Tools for 2026"],
+    tags: ["Top 10 AI SEO Tools for 2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-10-2026",
+    publishedAt: "06-10-2025",
   },
   {
     // id: 1,
@@ -9293,229 +9293,229 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-06-2026",
+    publishedAt: "26-06-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Bloggers in 2026",
-    slug: "top-10-ai-tools-for-bloggers-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Bloggers in 2026.",
+    title: "Top 10 AI Tools for Bloggers in 2025",
+    slug: "top-10-ai-tools-for-bloggers-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Bloggers in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-bloggers-in-2026.png",
+    //  image: "/top-10-ai-tools-for-bloggers-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for Bloggers", "2026"],
+    tags: ["Top 10 AI Tools for Bloggers", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-12-2026",
+    publishedAt: "04-12-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Content Creators in 2026",
-    slug: "top-10-ai-tools-for-content-creators-in-2026",
+    title: "Top 10 AI Tools for Content Creators in 2025",
+    slug: "top-10-ai-tools-for-content-creators-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 AI Tools for Content Creators in 2026.",
+      "An in-depth guide on Top 10 AI Tools for Content Creators in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-content-creators-in-2026.png",
+    //  image: "/top-10-ai-tools-for-content-creators-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-06-2026",
+    publishedAt: "29-06-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Content Marketing in 2026",
-    slug: "top-10-ai-tools-for-content-marketing-in-2026",
+    title: "Top 10 AI Tools for Content Marketing in 2025",
+    slug: "top-10-ai-tools-for-content-marketing-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 AI Tools for Content Marketing in 2026.",
+      "An in-depth guide on Top 10 AI Tools for Content Marketing in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-content-marketing-in-2026.png",
+    //  image: "/top-10-ai-tools-for-content-marketing-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-09-2026",
+    publishedAt: "09-09-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Copywriting in 2026",
-    slug: "top-10-ai-tools-for-copywriting-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Copywriting in 2026.",
+    title: "Top 10 AI Tools for Copywriting in 2025",
+    slug: "top-10-ai-tools-for-copywriting-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Copywriting in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-copywriting-in-2026.png",
+    //  image: "/top-10-ai-tools-for-copywriting-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for Copywriting", "2026"],
+    tags: ["Top 10 AI Tools for Copywriting", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-12-2026",
+    publishedAt: "18-12-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Designers in 2026",
-    slug: "top-10-ai-tools-for-designers-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Designers in 2026.",
+    title: "Top 10 AI Tools for Designers in 2025",
+    slug: "top-10-ai-tools-for-designers-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Designers in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-designers-in-2026.png",
+    //  image: "/top-10-ai-tools-for-designers-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for Designers", "2026"],
+    tags: ["Top 10 AI Tools for Designers", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-06-2026",
+    publishedAt: "16-06-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Developers in 2026",
-    slug: "top-10-ai-tools-for-developers-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Developers in 2026.",
+    title: "Top 10 AI Tools for Developers in 2025",
+    slug: "top-10-ai-tools-for-developers-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Developers in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-developers-in-2026.png",
+    //  image: "/top-10-ai-tools-for-developers-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for Developers", "2026"],
+    tags: ["Top 10 AI Tools for Developers", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-08-2026",
+    publishedAt: "18-08-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Educators in 2026",
-    slug: "top-10-ai-tools-for-educators-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Educators in 2026.",
+    title: "Top 10 AI Tools for Educators in 2025",
+    slug: "top-10-ai-tools-for-educators-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Educators in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-educators-in-2026.png",
+    //  image: "/top-10-ai-tools-for-educators-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for Educators", "2026"],
+    tags: ["Top 10 AI Tools for Educators", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-08-2026",
+    publishedAt: "12-08-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Enterprise Teams in 2026",
-    slug: "top-10-ai-tools-for-enterprise-teams-in-2026",
+    title: "Top 10 AI Tools for Enterprise Teams in 2025",
+    slug: "top-10-ai-tools-for-enterprise-teams-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 AI Tools for Enterprise Teams in 2026.",
+      "An in-depth guide on Top 10 AI Tools for Enterprise Teams in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-enterprise-teams-in-2026.png",
+    //  image: "/top-10-ai-tools-for-enterprise-teams-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-10-2026",
+    publishedAt: "28-10-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Graphic Designers in 2026",
-    slug: "top-10-ai-tools-for-graphic-designers-in-2026",
+    title: "Top 10 AI Tools for Graphic Designers in 2025",
+    slug: "top-10-ai-tools-for-graphic-designers-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 AI Tools for Graphic Designers in 2026.",
+      "An in-depth guide on Top 10 AI Tools for Graphic Designers in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-graphic-designers-in-2026.png",
+    //  image: "/top-10-ai-tools-for-graphic-designers-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-11-2026",
+    publishedAt: "07-11-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Productivity in 2026",
-    slug: "top-10-ai-tools-for-productivity-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Productivity in 2026.",
+    title: "Top 10 AI Tools for Productivity in 2025",
+    slug: "top-10-ai-tools-for-productivity-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Productivity in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-productivity-in-2026.png",
+    //  image: "/top-10-ai-tools-for-productivity-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-04-2026",
+    publishedAt: "27-04-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Remote Teams in 2026",
-    slug: "top-10-ai-tools-for-remote-teams-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Remote Teams in 2026.",
+    title: "Top 10 AI Tools for Remote Teams in 2025",
+    slug: "top-10-ai-tools-for-remote-teams-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Remote Teams in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-remote-teams-in-2026.png",
+    //  image: "/top-10-ai-tools-for-remote-teams-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-03-2026",
+    publishedAt: "09-03-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for SEO in 2026",
-    slug: "top-10-ai-tools-for-seo-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for SEO in 2026.",
+    title: "Top 10 AI Tools for SEO in 2025",
+    slug: "top-10-ai-tools-for-seo-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for SEO in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-seo-in-2026.png",
+    //  image: "/top-10-ai-tools-for-seo-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for SEO", "2026"],
+    tags: ["Top 10 AI Tools for SEO", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-07-2026",
+    publishedAt: "09-07-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Small Businesses in 2026",
-    slug: "top-10-ai-tools-for-small-businesses-in-2026",
+    title: "Top 10 AI Tools for Small Businesses in 2025",
+    slug: "top-10-ai-tools-for-small-businesses-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 AI Tools for Small Businesses in 2026.",
+      "An in-depth guide on Top 10 AI Tools for Small Businesses in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-small-businesses-in-2026.png",
+    //  image: "/top-10-ai-tools-for-small-businesses-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-06-2026",
+    publishedAt: "17-06-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Startups in 2026",
-    slug: "top-10-ai-tools-for-startups-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Startups in 2026.",
+    title: "Top 10 AI Tools for Startups in 2025",
+    slug: "top-10-ai-tools-for-startups-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Startups in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-startups-in-2026.png",
+    //  image: "/top-10-ai-tools-for-startups-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for Startups", "2026"],
+    tags: ["Top 10 AI Tools for Startups", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-05-2026",
+    publishedAt: "30-05-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Students in 2026",
-    slug: "top-10-ai-tools-for-students-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Students in 2026.",
+    title: "Top 10 AI Tools for Students in 2025",
+    slug: "top-10-ai-tools-for-students-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Students in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-students-in-2026.png",
+    //  image: "/top-10-ai-tools-for-students-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 AI Tools for Students", "2026"],
+    tags: ["Top 10 AI Tools for Students", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-05-2026",
+    publishedAt: "13-05-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for Video Editing in 2026",
-    slug: "top-10-ai-tools-for-video-editing-in-2026",
-    excerpt: "An in-depth guide on Top 10 AI Tools for Video Editing in 2026.",
+    title: "Top 10 AI Tools for Video Editing in 2025",
+    slug: "top-10-ai-tools-for-video-editing-in-2025",
+    excerpt: "An in-depth guide on Top 10 AI Tools for Video Editing in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-video-editing-in-2026.png",
+    //  image: "/top-10-ai-tools-for-video-editing-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-03-2026",
+    publishedAt: "06-03-2025",
   },
   {
     // id: 1,
-    title: "Top 10 AI Tools for YouTube Creators in 2026",
-    slug: "top-10-ai-tools-for-youtube-creators-in-2026",
+    title: "Top 10 AI Tools for YouTube Creators in 2025",
+    slug: "top-10-ai-tools-for-youtube-creators-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 AI Tools for YouTube Creators in 2026.",
+      "An in-depth guide on Top 10 AI Tools for YouTube Creators in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ai-tools-for-youtube-creators-in-2026.png",
+    //  image: "/top-10-ai-tools-for-youtube-creators-in-2025.png",
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-03-2026",
+    publishedAt: "27-03-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Blogging Platforms in 2026",
-    slug: "top-10-blogging-platforms-in-2026",
-    excerpt: "An in-depth guide on Top 10 Blogging Platforms in 2026.",
+    title: "Top 10 Blogging Platforms in 2025",
+    slug: "top-10-blogging-platforms-in-2025",
+    excerpt: "An in-depth guide on Top 10 Blogging Platforms in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-blogging-platforms-in-2026.png",
+    //  image: "/top-10-blogging-platforms-in-2025.png",
     category: "Web Development",
-    tags: ["Top 10 Blogging Platforms", "2026"],
+    tags: ["Top 10 Blogging Platforms", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-09-2026",
+    publishedAt: "07-09-2025",
   },
   {
     // id: 1,
@@ -9528,32 +9528,32 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-07-2026",
+    publishedAt: "27-07-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Cloud Security Tools in 2026",
-    slug: "top-10-cloud-security-tools-in-2026",
-    excerpt: "An in-depth guide on Top 10 Cloud Security Tools in 2026.",
+    title: "Top 10 Cloud Security Tools in 2025",
+    slug: "top-10-cloud-security-tools-in-2025",
+    excerpt: "An in-depth guide on Top 10 Cloud Security Tools in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-cloud-security-tools-in-2026.png",
+    //  image: "/top-10-cloud-security-tools-in-2025.png",
     category: "Web Development",
-    tags: ["Top 10 Cloud Security Tools", "2026"],
+    tags: ["Top 10 Cloud Security Tools", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-01-2026",
+    publishedAt: "06-01-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Free Hosting Providers for Static Sites in 2026",
-    slug: "top-10-free-hosting-providers-for-static-sites-in-2026",
+    title: "Top 10 Free Hosting Providers for Static Sites in 2025",
+    slug: "top-10-free-hosting-providers-for-static-sites-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 Free Hosting Providers for Static Sites in 2026.",
+      "An in-depth guide on Top 10 Free Hosting Providers for Static Sites in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-free-hosting-providers-for-static-sites-in-2026.png",
+    //  image: "/top-10-free-hosting-providers-for-static-sites-in-2025.png",
     category: "Web Hosting",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-04-2026",
+    publishedAt: "07-04-2025",
   },
   {
     // id: 1,
@@ -9566,7 +9566,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-02-2026",
+    publishedAt: "03-02-2025",
   },
   {
     // id: 1,
@@ -9578,7 +9578,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-04-2026",
+    publishedAt: "15-04-2025",
   },
   {
     // id: 1,
@@ -9590,7 +9590,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 10 Free Tools for Keyword Tracking"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-02-2026",
+    publishedAt: "18-02-2025",
   },
   {
     // id: 1,
@@ -9603,7 +9603,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-03-2026",
+    publishedAt: "05-03-2025",
   },
   {
     // id: 1,
@@ -9615,7 +9615,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 10 Free Tools for SaaS Founders"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-01-2026",
+    publishedAt: "31-01-2025",
   },
   {
     // id: 1,
@@ -9627,7 +9627,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-10-2026",
+    publishedAt: "26-10-2025",
   },
   {
     // id: 1,
@@ -9640,7 +9640,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-05-2026",
+    publishedAt: "20-05-2025",
   },
   {
     // id: 1,
@@ -9653,7 +9653,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -9666,19 +9666,19 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-12-2026",
+    publishedAt: "09-12-2025",
   },
   {
     // id: 1,
-    title: "Top 10 SaaS Tools for Freelancers in 2026",
-    slug: "top-10-saas-tools-for-freelancers-in-2026",
-    excerpt: "An in-depth guide on Top 10 SaaS Tools for Freelancers in 2026.",
+    title: "Top 10 SaaS Tools for Freelancers in 2025",
+    slug: "top-10-saas-tools-for-freelancers-in-2025",
+    excerpt: "An in-depth guide on Top 10 SaaS Tools for Freelancers in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-saas-tools-for-freelancers-in-2026.png",
+    //  image: "/top-10-saas-tools-for-freelancers-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-06-2026",
+    publishedAt: "07-06-2025",
   },
   {
     // id: 1,
@@ -9690,7 +9690,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "Generated 3D Models"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-01-2026",
+    publishedAt: "18-01-2025",
   },
   {
     // id: 1,
@@ -9703,7 +9703,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Ad Optimization"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-03-2026",
+    publishedAt: "26-03-2025",
   },
   {
     // id: 1,
@@ -9715,7 +9715,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Blogging"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-01-2026",
+    publishedAt: "08-01-2025",
   },
   {
     // id: 1,
@@ -9728,7 +9728,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Business Growth"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-06-2026",
+    publishedAt: "17-06-2025",
   },
   {
     // id: 1,
@@ -9741,7 +9741,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Code Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-01-2026",
+    publishedAt: "16-01-2025",
   },
   {
     // id: 1,
@@ -9754,7 +9754,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Content Creation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-07-2026",
+    publishedAt: "02-07-2025",
   },
   {
     // id: 1,
@@ -9767,20 +9767,20 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Content Writing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-05-2026",
+    publishedAt: "08-05-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Tools for AI-Powered Copywriting in 2026",
-    slug: "top-10-tools-for-ai-powered-copywriting-in-2026",
+    title: "Top 10 Tools for AI-Powered Copywriting in 2025",
+    slug: "top-10-tools-for-ai-powered-copywriting-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 Tools for AI-Powered Copywriting in 2026.",
+      "An in-depth guide on Top 10 Tools for AI-Powered Copywriting in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-tools-for-ai-powered-copywriting-in-2026.png",
+    //  image: "/top-10-tools-for-ai-powered-copywriting-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 ", "AI Tools", "AI Powered", "Copywriting", "2026"],
+    tags: ["Top 10 ", "AI Tools", "AI Powered", "Copywriting", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-02-2026",
+    publishedAt: "09-02-2025",
   },
   {
     // id: 1,
@@ -9793,7 +9793,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Creative Writing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-07-2026",
+    publishedAt: "15-07-2025",
   },
   {
     // id: 1,
@@ -9806,7 +9806,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Customer Experience"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-02-2026",
+    publishedAt: "26-02-2025",
   },
   {
     // id: 1,
@@ -9818,7 +9818,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "DevOps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-12-2026",
+    publishedAt: "04-12-2025",
   },
   {
     // id: 1,
@@ -9831,7 +9831,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "E", "commerce Stores"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-09-2026",
+    publishedAt: "25-09-2025",
   },
   {
     // id: 1,
@@ -9843,7 +9843,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "E", "Commerce"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-10-2026",
+    publishedAt: "04-10-2025",
   },
   {
     // id: 1,
@@ -9855,7 +9855,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "EdTech"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-08-2026",
+    publishedAt: "23-08-2025",
   },
   {
     // id: 1,
@@ -9867,7 +9867,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Education"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-12-2026",
+    publishedAt: "16-12-2025",
   },
   {
     // id: 1,
@@ -9880,7 +9880,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Email Campaigns"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-05-2026",
+    publishedAt: "12-05-2025",
   },
   {
     // id: 1,
@@ -9892,7 +9892,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Freelancers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-10-2026",
+    publishedAt: "12-10-2025",
   },
   {
     // id: 1,
@@ -9904,7 +9904,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Graphic Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-12-2026",
+    publishedAt: "29-12-2025",
   },
   {
     // id: 1,
@@ -9916,7 +9916,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "HR Management"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-07-2026",
+    publishedAt: "07-07-2025",
   },
   {
     // id: 1,
@@ -9928,7 +9928,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "HR Platforms"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-02-2026",
+    publishedAt: "22-02-2025",
   },
   {
     // id: 1,
@@ -9941,7 +9941,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Marketing Automation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-11-2026",
+    publishedAt: "13-11-2025",
   },
   {
     // id: 1,
@@ -9953,7 +9953,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Marketing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-09-2026",
+    publishedAt: "26-09-2025",
   },
   {
     // id: 1,
@@ -9965,7 +9965,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Mobile Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-11-2026",
+    publishedAt: "23-11-2025",
   },
   {
     // id: 1,
@@ -9978,7 +9978,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Online Learning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-06-2026",
+    publishedAt: "13-06-2025",
   },
   {
     // id: 1,
@@ -9991,7 +9991,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Personal Branding"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-02-2026",
+    publishedAt: "01-02-2025",
   },
   {
     // id: 1,
@@ -10004,7 +10004,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Personal Productivity"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-11-2026",
+    publishedAt: "26-11-2025",
   },
   {
     // id: 1,
@@ -10016,7 +10016,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Podcasting"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-11-2026",
+    publishedAt: "29-11-2025",
   },
   {
     // id: 1,
@@ -10029,7 +10029,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Presentation Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-08-2026",
+    publishedAt: "13-08-2025",
   },
   {
     // id: 1,
@@ -10041,7 +10041,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Productivity"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-06-2026",
+    publishedAt: "19-06-2025",
   },
   {
     // id: 1,
@@ -10053,19 +10053,19 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "SaaS Growth"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-03-2026",
+    publishedAt: "31-03-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Tools for AI-Powered Sales in 2026",
-    slug: "top-10-tools-for-ai-powered-sales-in-2026",
-    excerpt: "An in-depth guide on Top 10 Tools for AI-Powered Sales in 2026.",
+    title: "Top 10 Tools for AI-Powered Sales in 2025",
+    slug: "top-10-tools-for-ai-powered-sales-in-2025",
+    excerpt: "An in-depth guide on Top 10 Tools for AI-Powered Sales in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-tools-for-ai-powered-sales-in-2026.png",
+    //  image: "/top-10-tools-for-ai-powered-sales-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 ", "AI Tools", "AI Powered", "Sales", "2026"],
+    tags: ["Top 10 ", "AI Tools", "AI Powered", "Sales", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-11-2026",
+    publishedAt: "29-11-2025",
   },
   {
     // id: 1,
@@ -10077,19 +10077,19 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Sales Teams"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-09-2026",
+    publishedAt: "17-09-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Tools for AI-Powered SEO in 2026",
-    slug: "top-10-tools-for-ai-powered-seo-in-2026",
-    excerpt: "An in-depth guide on Top 10 Tools for AI-Powered SEO in 2026.",
+    title: "Top 10 Tools for AI-Powered SEO in 2025",
+    slug: "top-10-tools-for-ai-powered-seo-in-2025",
+    excerpt: "An in-depth guide on Top 10 Tools for AI-Powered SEO in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-tools-for-ai-powered-seo-in-2026.png",
+    //  image: "/top-10-tools-for-ai-powered-seo-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 ", "AI Tools", "AI Powered", "SEO", "2026"],
+    tags: ["Top 10 ", "AI Tools", "AI Powered", "SEO", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-12-2026",
+    publishedAt: "31-12-2025",
   },
   {
     // id: 1,
@@ -10102,7 +10102,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Social Media Marketing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-06-2026",
+    publishedAt: "25-06-2025",
   },
   {
     // id: 1,
@@ -10114,7 +10114,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Startups"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-08-2026",
+    publishedAt: "26-08-2025",
   },
   {
     // id: 1,
@@ -10126,7 +10126,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Video Editing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-12-2026",
+    publishedAt: "17-12-2025",
   },
   {
     // id: 1,
@@ -10139,7 +10139,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Web Development"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-06-2026",
+    publishedAt: "03-06-2025",
   },
   {
     // id: 1,
@@ -10152,20 +10152,20 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Writing Assistants"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Tools for AI-Powered Writing in 2026",
-    slug: "top-10-tools-for-ai-powered-writing-in-2026",
+    title: "Top 10 Tools for AI-Powered Writing in 2025",
+    slug: "top-10-tools-for-ai-powered-writing-in-2025",
     excerpt:
-      "An in-depth guide on Top 10 Tools for AI-Powered Writing in 2026.",
+      "An in-depth guide on Top 10 Tools for AI-Powered Writing in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-tools-for-ai-powered-writing-in-2026.png",
+    //  image: "/top-10-tools-for-ai-powered-writing-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 10 ", "AI Tools", "AI Powered", "Writing", "2026"],
+    tags: ["Top 10 ", "AI Tools", "AI Powered", "Writing", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-06-2026",
+    publishedAt: "02-06-2025",
   },
   {
     // id: 1,
@@ -10177,7 +10177,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Writing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-01-2026",
+    publishedAt: "21-01-2025",
   },
   {
     // id: 1,
@@ -10189,7 +10189,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-09-2026",
+    publishedAt: "04-09-2025",
   },
   {
     // id: 1,
@@ -10201,19 +10201,19 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Top 10", "Tools", "Cloud Database Hosting"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-04-2026",
+    publishedAt: "27-04-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Tools for Headless CMS in 2026",
-    slug: "top-10-tools-for-headless-cms-in-2026",
-    excerpt: "An in-depth guide on Top 10 Tools for Headless CMS in 2026.",
+    title: "Top 10 Tools for Headless CMS in 2025",
+    slug: "top-10-tools-for-headless-cms-in-2025",
+    excerpt: "An in-depth guide on Top 10 Tools for Headless CMS in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-tools-for-headless-cms-in-2026.png",
+    //  image: "/top-10-tools-for-headless-cms-in-2025.png",
     category: "Content Management",
-    tags: ["Top 10", "Tools", "Headless CMS", "2026"],
+    tags: ["Top 10", "Tools", "Headless CMS", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -10225,44 +10225,44 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-08-2026",
+    publishedAt: "09-08-2025",
   },
   {
     // id: 1,
-    title: "Top 10 Tools for Web Scraping in 2026",
-    slug: "top-10-tools-for-web-scraping-in-2026",
-    excerpt: "An in-depth guide on Top 10 Tools for Web Scraping in 2026.",
+    title: "Top 10 Tools for Web Scraping in 2025",
+    slug: "top-10-tools-for-web-scraping-in-2025",
+    excerpt: "An in-depth guide on Top 10 Tools for Web Scraping in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-tools-for-web-scraping-in-2026.png",
+    //  image: "/top-10-tools-for-web-scraping-in-2025.png",
     category: "APIs & Backend",
-    tags: ["Top 10", "Tools", "Web Scraping", "2026"],
+    tags: ["Top 10", "Tools", "Web Scraping", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-05-2026",
+    publishedAt: "17-05-2025",
   },
   {
     // id: 1,
-    title: "Top 10 UI Kits and Templates in 2026",
-    slug: "top-10-ui-kits-and-templates-in-2026",
-    excerpt: "An in-depth guide on Top 10 UI Kits and Templates in 2026.",
+    title: "Top 10 UI Kits and Templates in 2025",
+    slug: "top-10-ui-kits-and-templates-in-2025",
+    excerpt: "An in-depth guide on Top 10 UI Kits and Templates in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-ui-kits-and-templates-in-2026.png",
+    //  image: "/top-10-ui-kits-and-templates-in-2025.png",
     category: "Web Development",
-    tags: ["Top 10 UI Kits and Templates", "2026"],
+    tags: ["Top 10 UI Kits and Templates", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-11-2026",
+    publishedAt: "01-11-2025",
   },
   {
     // id: 1,
-    title: "Top 10 VS Code Extensions in 2026",
-    slug: "top-10-vs-code-extensions-in-2026",
+    title: "Top 10 VS Code Extensions in 2025",
+    slug: "top-10-vs-code-extensions-in-2025",
     excerpt:
-      "A detailed comparison and review: Top 10 VS Code Extensions in 2026.",
+      "A detailed comparison and review: Top 10 VS Code Extensions in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-10-vs-code-extensions-in-2026.png",
+    //  image: "/top-10-vs-code-extensions-in-2025.png",
     category: "Web Development",
-    tags: ["Top 10 VS Code Extensions", "2026"],
+    tags: ["Top 10 VS Code Extensions", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-10-2026",
+    publishedAt: "24-10-2025",
   },
   {
     // id: 1,
@@ -10274,7 +10274,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-01-2026",
+    publishedAt: "27-01-2025",
   },
   {
     // id: 1,
@@ -10286,7 +10286,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-03-2026",
+    publishedAt: "15-03-2025",
   },
   {
     // id: 1,
@@ -10298,19 +10298,19 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5 AI Tools for Writing Code"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-01-2026",
+    publishedAt: "27-01-2025",
   },
   {
     // id: 1,
-    title: "Top 5 Developer Podcasts in 2026",
-    slug: "top-5-developer-podcasts-in-2026",
-    excerpt: "An in-depth guide on Top 5 Developer Podcasts in 2026.",
+    title: "Top 5 Developer Podcasts in 2025",
+    slug: "top-5-developer-podcasts-in-2025",
+    excerpt: "An in-depth guide on Top 5 Developer Podcasts in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-5-developer-podcasts-in-2026.png",
+    //  image: "/top-5-developer-podcasts-in-2025.png",
     category: "Web Development",
-    tags: ["Top 5 Developer Podcasts", "2026"],
+    tags: ["Top 5 Developer Podcasts", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-03-2026",
+    publishedAt: "29-03-2025",
   },
   {
     // id: 1,
@@ -10323,7 +10323,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-03-2026",
+    publishedAt: "11-03-2025",
   },
   {
     // id: 1,
@@ -10335,7 +10335,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-06-2026",
+    publishedAt: "04-06-2025",
   },
   {
     // id: 1,
@@ -10347,7 +10347,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Top 5 Headless CMS Options Compared"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-09-2026",
+    publishedAt: "29-09-2025",
   },
   {
     // id: 1,
@@ -10359,7 +10359,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Top 5 NoSQL Databases Compared"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-04-2026",
+    publishedAt: "12-04-2025",
   },
   {
     // id: 1,
@@ -10372,19 +10372,19 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-09-2026",
+    publishedAt: "24-09-2025",
   },
   {
     // id: 1,
-    title: "Top 5 Serverless Databases in 2026",
-    slug: "top-5-serverless-databases-in-2026",
-    excerpt: "An in-depth guide on Top 5 Serverless Databases in 2026.",
+    title: "Top 5 Serverless Databases in 2025",
+    slug: "top-5-serverless-databases-in-2025",
+    excerpt: "An in-depth guide on Top 5 Serverless Databases in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-5-serverless-databases-in-2026.png",
+    //  image: "/top-5-serverless-databases-in-2025.png",
     category: "Data & Databases",
-    tags: ["Top 5 Serverless Databases", "2026"],
+    tags: ["Top 5 Serverless Databases", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-10-2026",
+    publishedAt: "31-10-2025",
   },
   {
     // id: 1,
@@ -10397,7 +10397,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Top 5 Static CMS Solutions Reviewed"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-01-2026",
+    publishedAt: "21-01-2025",
   },
   {
     // id: 1,
@@ -10409,7 +10409,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 5 Static Site Generators for Blogs"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-10-2026",
+    publishedAt: "01-10-2025",
   },
   {
     // id: 1,
@@ -10421,7 +10421,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5 Tools for AI Audio Transcription"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-12-2026",
+    publishedAt: "31-12-2025",
   },
   {
     // id: 1,
@@ -10434,7 +10434,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5 Tools for AI Code Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-08-2026",
+    publishedAt: "29-08-2025",
   },
   {
     // id: 1,
@@ -10446,7 +10446,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5 Tools for AI Music Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-10-2026",
+    publishedAt: "27-10-2025",
   },
   {
     // id: 1,
@@ -10458,7 +10458,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5 Tools for AI Video Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-04-2026",
+    publishedAt: "05-04-2025",
   },
   {
     // id: 1,
@@ -10470,7 +10470,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "Generated Avatars"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-04-2026",
+    publishedAt: "06-04-2025",
   },
   {
     // id: 1,
@@ -10482,7 +10482,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Audio Editing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-11-2026",
+    publishedAt: "17-11-2025",
   },
   {
     // id: 1,
@@ -10494,7 +10494,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Blog Writing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-09-2026",
+    publishedAt: "30-09-2025",
   },
   {
     // id: 1,
@@ -10506,7 +10506,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Code Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-11-2026",
+    publishedAt: "27-11-2025",
   },
   {
     // id: 1,
@@ -10519,7 +10519,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Code Refactoring"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-12-2026",
+    publishedAt: "04-12-2025",
   },
   {
     // id: 1,
@@ -10531,7 +10531,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Code Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-10-2026",
+    publishedAt: "02-10-2025",
   },
   {
     // id: 1,
@@ -10544,7 +10544,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Content Creation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-10-2026",
+    publishedAt: "04-10-2025",
   },
   {
     // id: 1,
@@ -10557,7 +10557,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Content Scheduling"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-07-2026",
+    publishedAt: "20-07-2025",
   },
   {
     // id: 1,
@@ -10570,7 +10570,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Customer Support Chat"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-12-2026",
+    publishedAt: "23-12-2025",
   },
   {
     // id: 1,
@@ -10583,7 +10583,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Customer Support"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-06-2026",
+    publishedAt: "21-06-2025",
   },
   {
     // id: 1,
@@ -10596,7 +10596,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Document Summaries"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-06-2026",
+    publishedAt: "28-06-2025",
   },
   {
     // id: 1,
@@ -10608,7 +10608,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "E", "learning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-11-2026",
+    publishedAt: "08-11-2025",
   },
   {
     // id: 1,
@@ -10620,7 +10620,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Email Campaigns"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-04-2026",
+    publishedAt: "15-04-2025",
   },
   {
     // id: 1,
@@ -10632,7 +10632,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Email Replies"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-03-2026",
+    publishedAt: "21-03-2025",
   },
   {
     // id: 1,
@@ -10645,7 +10645,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Financial Planning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-06-2026",
+    publishedAt: "04-06-2025",
   },
   {
     // id: 1,
@@ -10657,7 +10657,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Graphic Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-02-2026",
+    publishedAt: "14-02-2025",
   },
   {
     // id: 1,
@@ -10669,7 +10669,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Graphic Novels"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-05-2026",
+    publishedAt: "18-05-2025",
   },
   {
     // id: 1,
@@ -10681,7 +10681,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Image Editing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-10-2026",
+    publishedAt: "28-10-2025",
   },
   {
     // id: 1,
@@ -10694,7 +10694,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Image Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-07-2026",
+    publishedAt: "24-07-2025",
   },
   {
     // id: 1,
@@ -10706,7 +10706,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Infographics"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-01-2026",
+    publishedAt: "03-01-2025",
   },
   {
     // id: 1,
@@ -10718,7 +10718,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Job Search"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-07-2026",
+    publishedAt: "14-07-2025",
   },
   {
     // id: 1,
@@ -10731,7 +10731,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Language Learning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-12-2026",
+    publishedAt: "12-12-2025",
   },
   {
     // id: 1,
@@ -10743,7 +10743,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Logo Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-03-2026",
+    publishedAt: "06-03-2025",
   },
   {
     // id: 1,
@@ -10755,7 +10755,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Logo Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-05-2026",
+    publishedAt: "09-05-2025",
   },
   {
     // id: 1,
@@ -10767,7 +10767,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Meeting Notes"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-07-2026",
+    publishedAt: "01-07-2025",
   },
   {
     // id: 1,
@@ -10780,7 +10780,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Music Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-10-2026",
+    publishedAt: "15-10-2025",
   },
   {
     // id: 1,
@@ -10792,7 +10792,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Note", "Taking"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-08-2026",
+    publishedAt: "25-08-2025",
   },
   {
     // id: 1,
@@ -10805,7 +10805,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Personal Finance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-11-2026",
+    publishedAt: "16-11-2025",
   },
   {
     // id: 1,
@@ -10817,7 +10817,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Podcast Editing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-09-2026",
+    publishedAt: "13-09-2025",
   },
   {
     // id: 1,
@@ -10829,7 +10829,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Portfolio Sites"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-08-2026",
+    publishedAt: "02-08-2025",
   },
   {
     // id: 1,
@@ -10842,7 +10842,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Presentation Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-07-2026",
+    publishedAt: "05-07-2025",
   },
   {
     // id: 1,
@@ -10854,7 +10854,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Presentations"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-02-2026",
+    publishedAt: "24-02-2025",
   },
   {
     // id: 1,
@@ -10866,7 +10866,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Resume Building"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-12-2026",
+    publishedAt: "31-12-2025",
   },
   {
     // id: 1,
@@ -10878,7 +10878,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Resume Writing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "19-06-2026",
+    publishedAt: "19-06-2025",
   },
   {
     // id: 1,
@@ -10890,7 +10890,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Script Writing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-10-2026",
+    publishedAt: "09-10-2025",
   },
   {
     // id: 1,
@@ -10902,7 +10902,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Slide Decks"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-12-2026",
+    publishedAt: "05-12-2025",
   },
   {
     // id: 1,
@@ -10915,7 +10915,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Social Media Posts"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-08-2026",
+    publishedAt: "12-08-2025",
   },
   {
     // id: 1,
@@ -10928,7 +10928,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Startup Pitch Decks"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
@@ -10940,7 +10940,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Storytelling"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-10-2026",
+    publishedAt: "14-10-2025",
   },
   {
     // id: 1,
@@ -10953,7 +10953,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Text Summarization"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-04-2026",
+    publishedAt: "13-04-2025",
   },
   {
     // id: 1,
@@ -10966,7 +10966,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Thumbnail Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-04-2026",
+    publishedAt: "28-04-2025",
   },
   {
     // id: 1,
@@ -10978,7 +10978,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Translation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-06-2026",
+    publishedAt: "26-06-2025",
   },
   {
     // id: 1,
@@ -10990,7 +10990,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "UX Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-02-2026",
+    publishedAt: "16-02-2025",
   },
   {
     // id: 1,
@@ -11002,7 +11002,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Video Avatars"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-03-2026",
+    publishedAt: "11-03-2025",
   },
   {
     // id: 1,
@@ -11014,7 +11014,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Video Creation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-08-2026",
+    publishedAt: "26-08-2025",
   },
   {
     // id: 1,
@@ -11026,7 +11026,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Video Summaries"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-05-2026",
+    publishedAt: "04-05-2025",
   },
   {
     // id: 1,
@@ -11038,7 +11038,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Web Animations"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-05-2026",
+    publishedAt: "14-05-2025",
   },
   {
     // id: 1,
@@ -11051,7 +11051,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Website Builders"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-07-2026",
+    publishedAt: "12-07-2025",
   },
   {
     // id: 1,
@@ -11064,7 +11064,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Website Copywriting"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-11-2026",
+    publishedAt: "27-11-2025",
   },
   {
     // id: 1,
@@ -11077,7 +11077,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Website Translation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-12-2026",
+    publishedAt: "17-12-2025",
   },
   {
     // id: 1,
@@ -11090,7 +11090,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Whiteboard Collaboration"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-03-2026",
+    publishedAt: "10-03-2025",
   },
   {
     // id: 1,
@@ -11102,7 +11102,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Whitepapers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-06-2026",
+    publishedAt: "16-06-2025",
   },
   {
     // id: 1,
@@ -11115,7 +11115,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Writing Assistance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-03-2026",
+    publishedAt: "01-03-2025",
   },
   {
     // id: 1,
@@ -11128,7 +11128,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-06-2026",
+    publishedAt: "30-06-2025",
   },
   {
     // id: 1,
@@ -11140,7 +11140,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-05-2026",
+    publishedAt: "27-05-2025",
   },
   {
     // id: 1,
@@ -11152,7 +11152,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 5 Tools for Building SaaS Products"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-06-2026",
+    publishedAt: "25-06-2025",
   },
   {
     // id: 1,
@@ -11164,7 +11164,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-12-2026",
+    publishedAt: "24-12-2025",
   },
   {
     // id: 1,
@@ -11176,7 +11176,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 5 Tools for Headless E", "Commerce"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-04-2026",
+    publishedAt: "22-04-2025",
   },
   {
     // id: 1,
@@ -11188,44 +11188,44 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 5 Tools for Server Monitoring"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-11-2026",
+    publishedAt: "09-11-2025",
   },
   {
     // id: 1,
-    title: "Top 5 WordPress Optimization Plugins (2026 Edition)",
-    slug: "top-5-wordpress-optimization-plugins-2026-edition-",
+    title: "Top 5 WordPress Optimization Plugins (2025 Edition)",
+    slug: "top-5-wordpress-optimization-plugins-2025-edition-",
     excerpt:
-      "An in-depth guide on Top 5 WordPress Optimization Plugins (2026 Edition).",
+      "An in-depth guide on Top 5 WordPress Optimization Plugins (2025 Edition).",
     readingTime: "5 min read",
-    //  image: "/top-5-wordpress-optimization-plugins-2026-edition-.png",
+    //  image: "/top-5-wordpress-optimization-plugins-2025-edition-.png",
     category: "Content Management",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-11-2026",
+    publishedAt: "16-11-2025",
   },
   {
     // id: 1,
-    title: "Top 7 API Marketplaces in 2026",
-    slug: "top-7-api-marketplaces-in-2026",
-    excerpt: "An in-depth guide on Top 7 API Marketplaces in 2026.",
+    title: "Top 7 API Marketplaces in 2025",
+    slug: "top-7-api-marketplaces-in-2025",
+    excerpt: "An in-depth guide on Top 7 API Marketplaces in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-api-marketplaces-in-2026.png",
+    //  image: "/top-7-api-marketplaces-in-2025.png",
     category: "APIs & Backend",
-    tags: ["Top 7 API Marketplaces", "2026"],
+    tags: ["Top 7 API Marketplaces", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-01-2026",
+    publishedAt: "14-01-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Cloud IDEs in 2026",
-    slug: "top-7-cloud-ides-in-2026",
-    excerpt: "An in-depth guide on Top 7 Cloud IDEs in 2026.",
+    title: "Top 7 Cloud IDEs in 2025",
+    slug: "top-7-cloud-ides-in-2025",
+    excerpt: "An in-depth guide on Top 7 Cloud IDEs in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-cloud-ides-in-2026.png",
+    //  image: "/top-7-cloud-ides-in-2025.png",
     category: "Web Development",
-    tags: ["Top 7 Cloud IDEs", "2026"],
+    tags: ["Top 7 Cloud IDEs", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-02-2026",
+    publishedAt: "18-02-2025",
   },
   {
     // id: 1,
@@ -11237,7 +11237,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7 Cloud Platforms for Startups"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-09-2026",
+    publishedAt: "14-09-2025",
   },
   {
     // id: 1,
@@ -11249,7 +11249,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Top 7 Databases for Modern Web Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -11261,7 +11261,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-10-2026",
+    publishedAt: "25-10-2025",
   },
   {
     // id: 1,
@@ -11273,7 +11273,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7 Frameworks for Serverless Apps"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-10-2026",
+    publishedAt: "04-10-2025",
   },
   {
     // id: 1,
@@ -11285,45 +11285,45 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Hosting Platforms for WordPress in 2026",
-    slug: "top-7-hosting-platforms-for-wordpress-in-2026",
+    title: "Top 7 Hosting Platforms for WordPress in 2025",
+    slug: "top-7-hosting-platforms-for-wordpress-in-2025",
     excerpt:
-      "An in-depth guide on Top 7 Hosting Platforms for WordPress in 2026.",
+      "An in-depth guide on Top 7 Hosting Platforms for WordPress in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-hosting-platforms-for-wordpress-in-2026.png",
+    //  image: "/top-7-hosting-platforms-for-wordpress-in-2025.png",
     category: "Content Management",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-03-2026",
+    publishedAt: "10-03-2025",
   },
   {
     // id: 1,
-    title: "Top 7 JavaScript Testing Frameworks in 2026",
-    slug: "top-7-javascript-testing-frameworks-in-2026",
+    title: "Top 7 JavaScript Testing Frameworks in 2025",
+    slug: "top-7-javascript-testing-frameworks-in-2025",
     excerpt:
-      "An in-depth guide on Top 7 JavaScript Testing Frameworks in 2026.",
+      "An in-depth guide on Top 7 JavaScript Testing Frameworks in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-javascript-testing-frameworks-in-2026.png",
+    //  image: "/top-7-javascript-testing-frameworks-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-02-2026",
+    publishedAt: "01-02-2025",
   },
   {
     // id: 1,
-    title: "Top 7 React Component Libraries in 2026",
-    slug: "top-7-react-component-libraries-in-2026",
-    excerpt: "An in-depth guide on Top 7 React Component Libraries in 2026.",
+    title: "Top 7 React Component Libraries in 2025",
+    slug: "top-7-react-component-libraries-in-2025",
+    excerpt: "An in-depth guide on Top 7 React Component Libraries in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-react-component-libraries-in-2026.png",
+    //  image: "/top-7-react-component-libraries-in-2025.png",
     category: "Web Development",
-    tags: ["Top 7 React Component Libraries", "2026"],
+    tags: ["Top 7 React Component Libraries", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-11-2026",
+    publishedAt: "27-11-2025",
   },
   {
     // id: 1,
@@ -11335,7 +11335,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Automation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-08-2026",
+    publishedAt: "20-08-2025",
   },
   {
     // id: 1,
@@ -11347,7 +11347,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Blogging"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-07-2026",
+    publishedAt: "03-07-2025",
   },
   {
     // id: 1,
@@ -11360,7 +11360,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Business Intelligence"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-06-2026",
+    publishedAt: "11-06-2025",
   },
   {
     // id: 1,
@@ -11373,7 +11373,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Content Moderation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-01-2026",
+    publishedAt: "25-01-2025",
   },
   {
     // id: 1,
@@ -11386,7 +11386,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Customer Engagement"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-03-2026",
+    publishedAt: "18-03-2025",
   },
   {
     // id: 1,
@@ -11399,7 +11399,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Customer Insights"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-09-2026",
+    publishedAt: "29-09-2025",
   },
   {
     // id: 1,
@@ -11412,7 +11412,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Customer Service"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-04-2026",
+    publishedAt: "09-04-2025",
   },
   {
     // id: 1,
@@ -11424,7 +11424,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Cybersecurity"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-04-2026",
+    publishedAt: "17-04-2025",
   },
   {
     // id: 1,
@@ -11436,7 +11436,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Data Cleaning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-11-2026",
+    publishedAt: "24-11-2025",
   },
   {
     // id: 1,
@@ -11449,19 +11449,19 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Data Visualization"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-04-2026",
+    publishedAt: "25-04-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Tools for AI-Powered Design in 2026",
-    slug: "top-7-tools-for-ai-powered-design-in-2026",
-    excerpt: "An in-depth guide on Top 7 Tools for AI-Powered Design in 2026.",
+    title: "Top 7 Tools for AI-Powered Design in 2025",
+    slug: "top-7-tools-for-ai-powered-design-in-2025",
+    excerpt: "An in-depth guide on Top 7 Tools for AI-Powered Design in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-tools-for-ai-powered-design-in-2026.png",
+    //  image: "/top-7-tools-for-ai-powered-design-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 7 ", "AI Tools", "AI Powered", "Design", "2026"],
+    tags: ["Top 7 ", "AI Tools", "AI Powered", "Design", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-03-2026",
+    publishedAt: "20-03-2025",
   },
   {
     // id: 1,
@@ -11473,7 +11473,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Design"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-04-2026",
+    publishedAt: "09-04-2025",
   },
   {
     // id: 1,
@@ -11485,7 +11485,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Education"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-06-2026",
+    publishedAt: "04-06-2025",
   },
   {
     // id: 1,
@@ -11498,7 +11498,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Healthcare Analytics"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-07-2026",
+    publishedAt: "05-07-2025",
   },
   {
     // id: 1,
@@ -11511,7 +11511,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Healthcare Solutions"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-03-2026",
+    publishedAt: "20-03-2025",
   },
   {
     // id: 1,
@@ -11524,7 +11524,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Hiring Platforms"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-11-2026",
+    publishedAt: "17-11-2025",
   },
   {
     // id: 1,
@@ -11536,7 +11536,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "HR Management"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-08-2026",
+    publishedAt: "05-08-2025",
   },
   {
     // id: 1,
@@ -11548,7 +11548,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Knowledge Bases"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-11-2026",
+    publishedAt: "25-11-2025",
   },
   {
     // id: 1,
@@ -11561,7 +11561,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Knowledge Management"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-01-2026",
+    publishedAt: "05-01-2025",
   },
   {
     // id: 1,
@@ -11573,7 +11573,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Lead Generation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-12-2026",
+    publishedAt: "03-12-2025",
   },
   {
     // id: 1,
@@ -11585,7 +11585,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "LegalTech"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-02-2026",
+    publishedAt: "27-02-2025",
   },
   {
     // id: 1,
@@ -11597,7 +11597,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Market Research"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-07-2026",
+    publishedAt: "21-07-2025",
   },
   {
     // id: 1,
@@ -11610,20 +11610,20 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "No", "Code Development"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-08-2026",
+    publishedAt: "15-08-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Tools for AI-Powered Productivity in 2026",
-    slug: "top-7-tools-for-ai-powered-productivity-in-2026",
+    title: "Top 7 Tools for AI-Powered Productivity in 2025",
+    slug: "top-7-tools-for-ai-powered-productivity-in-2025",
     excerpt:
-      "An in-depth guide on Top 7 Tools for AI-Powered Productivity in 2026.",
+      "An in-depth guide on Top 7 Tools for AI-Powered Productivity in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-tools-for-ai-powered-productivity-in-2026.png",
+    //  image: "/top-7-tools-for-ai-powered-productivity-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 7 ", "AI Tools", "AI Powered", "Productivity", "2026"],
+    tags: ["Top 7 ", "AI Tools", "AI Powered", "Productivity", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-08-2026",
+    publishedAt: "27-08-2025",
   },
   {
     // id: 1,
@@ -11636,7 +11636,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Project Planning"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-03-2026",
+    publishedAt: "03-03-2025",
   },
   {
     // id: 1,
@@ -11648,7 +11648,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Recruitment"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-04-2026",
+    publishedAt: "05-04-2025",
   },
   {
     // id: 1,
@@ -11661,7 +11661,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Research Assistance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-08-2026",
+    publishedAt: "16-08-2025",
   },
   {
     // id: 1,
@@ -11673,20 +11673,20 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Research Papers"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-10-2026",
+    publishedAt: "09-10-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Tools for AI-Powered Robotics in 2026",
-    slug: "top-7-tools-for-ai-powered-robotics-in-2026",
+    title: "Top 7 Tools for AI-Powered Robotics in 2025",
+    slug: "top-7-tools-for-ai-powered-robotics-in-2025",
     excerpt:
-      "An in-depth guide on Top 7 Tools for AI-Powered Robotics in 2026.",
+      "An in-depth guide on Top 7 Tools for AI-Powered Robotics in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-tools-for-ai-powered-robotics-in-2026.png",
+    //  image: "/top-7-tools-for-ai-powered-robotics-in-2025.png",
     category: "AI Tools",
-    tags: ["Top 7 ", "AI Tools", "AI Powered", "Robotics", "2026"],
+    tags: ["Top 7 ", "AI Tools", "AI Powered", "Robotics", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-03-2026",
+    publishedAt: "29-03-2025",
   },
   {
     // id: 1,
@@ -11698,7 +11698,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "SaaS Startups"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-09-2026",
+    publishedAt: "15-09-2025",
   },
   {
     // id: 1,
@@ -11710,7 +11710,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Sales Funnels"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-12-2026",
+    publishedAt: "06-12-2025",
   },
   {
     // id: 1,
@@ -11723,7 +11723,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "SEO Optimization"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-09-2026",
+    publishedAt: "30-09-2025",
   },
   {
     // id: 1,
@@ -11735,7 +11735,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Task Automation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-02-2026",
+    publishedAt: "02-02-2025",
   },
   {
     // id: 1,
@@ -11747,7 +11747,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "UI Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-01-2026",
+    publishedAt: "03-01-2025",
   },
   {
     // id: 1,
@@ -11760,7 +11760,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Virtual Assistants"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-09-2026",
+    publishedAt: "28-09-2025",
   },
   {
     // id: 1,
@@ -11772,7 +11772,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Web Development"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-03-2026",
+    publishedAt: "16-03-2025",
   },
   {
     // id: 1,
@@ -11785,7 +11785,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Workflow Automation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-06-2026",
+    publishedAt: "08-06-2025",
   },
   {
     // id: 1,
@@ -11798,7 +11798,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Writing Assistance"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-01-2026",
+    publishedAt: "27-01-2025",
   },
   {
     // id: 1,
@@ -11810,7 +11810,7 @@ export const OLD_TWEETS = [
     category: "APIs & Backend",
     tags: ["Top 7", "Tools", "API Documentation"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-04-2026",
+    publishedAt: "15-04-2025",
   },
   {
     // id: 1,
@@ -11823,7 +11823,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-03-2026",
+    publishedAt: "29-03-2025",
   },
   {
     // id: 1,
@@ -11835,7 +11835,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-03-2026",
+    publishedAt: "13-03-2025",
   },
   {
     // id: 1,
@@ -11847,7 +11847,7 @@ export const OLD_TWEETS = [
     category: "SEO & Analytics",
     tags: ["Top 7", "Tools", "Automating SEO Reports"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "31-07-2026",
+    publishedAt: "31-07-2025",
   },
   {
     // id: 1,
@@ -11860,7 +11860,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-08-2026",
+    publishedAt: "20-08-2025",
   },
   {
     // id: 1,
@@ -11872,7 +11872,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7", "Tools", "Building AI Agents"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-11-2026",
+    publishedAt: "21-11-2025",
   },
   {
     // id: 1,
@@ -11885,19 +11885,19 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-11-2026",
+    publishedAt: "27-11-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Tools for Building SaaS Apps in 2026",
-    slug: "top-7-tools-for-building-saas-apps-in-2026",
-    excerpt: "An in-depth guide on Top 7 Tools for Building SaaS Apps in 2026.",
+    title: "Top 7 Tools for Building SaaS Apps in 2025",
+    slug: "top-7-tools-for-building-saas-apps-in-2025",
+    excerpt: "An in-depth guide on Top 7 Tools for Building SaaS Apps in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-tools-for-building-saas-apps-in-2026.png",
+    //  image: "/top-7-tools-for-building-saas-apps-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-05-2026",
+    publishedAt: "21-05-2025",
   },
   {
     // id: 1,
@@ -11910,7 +11910,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-08-2026",
+    publishedAt: "11-08-2025",
   },
   {
     // id: 1,
@@ -11922,7 +11922,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Cloud Observability"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-12-2026",
+    publishedAt: "10-12-2025",
   },
   {
     // id: 1,
@@ -11934,7 +11934,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-11-2026",
+    publishedAt: "04-11-2025",
   },
   {
     // id: 1,
@@ -11946,7 +11946,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Top 7", "Tools", "Cloud", "Native Databases"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-08-2026",
+    publishedAt: "04-08-2025",
   },
   {
     // id: 1,
@@ -11958,7 +11958,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Top 7", "Tools", "Continuous Deployment"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -11970,7 +11970,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Continuous Integration"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-05-2026",
+    publishedAt: "04-05-2025",
   },
   {
     // id: 1,
@@ -11982,7 +11982,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Cross", "Browser Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-08-2026",
+    publishedAt: "30-08-2025",
   },
   {
     // id: 1,
@@ -11994,7 +11994,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-01-2026",
+    publishedAt: "03-01-2025",
   },
   {
     // id: 1,
@@ -12006,7 +12006,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Low", "Code Development"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-02-2026",
+    publishedAt: "22-02-2025",
   },
   {
     // id: 1,
@@ -12019,7 +12019,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-03-2026",
+    publishedAt: "30-03-2025",
   },
   {
     // id: 1,
@@ -12031,7 +12031,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Managing Edge Functions"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-05-2026",
+    publishedAt: "17-05-2025",
   },
   {
     // id: 1,
@@ -12043,7 +12043,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Managing Microservices"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-07-2026",
+    publishedAt: "10-07-2025",
   },
   {
     // id: 1,
@@ -12055,7 +12055,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Mobile App Testing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-04-2026",
+    publishedAt: "02-04-2025",
   },
   {
     // id: 1,
@@ -12067,7 +12067,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Top 7", "Tools", "Multi", "Cloud Deployments"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-09-2026",
+    publishedAt: "08-09-2025",
   },
   {
     // id: 1,
@@ -12079,7 +12079,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Top 7", "Tools", "Optimizing Cloud Spend"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-02-2026",
+    publishedAt: "28-02-2025",
   },
   {
     // id: 1,
@@ -12092,7 +12092,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-11-2026",
+    publishedAt: "06-11-2025",
   },
   {
     // id: 1,
@@ -12105,20 +12105,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-08-2026",
+    publishedAt: "01-08-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Tools for Real-Time Collaboration in 2026",
-    slug: "top-7-tools-for-real-time-collaboration-in-2026",
+    title: "Top 7 Tools for Real-Time Collaboration in 2025",
+    slug: "top-7-tools-for-real-time-collaboration-in-2025",
     excerpt:
-      "An in-depth guide on Top 7 Tools for Real-Time Collaboration in 2026.",
+      "An in-depth guide on Top 7 Tools for Real-Time Collaboration in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-tools-for-real-time-collaboration-in-2026.png",
+    //  image: "/top-7-tools-for-real-time-collaboration-in-2025.png",
     category: "Web Development",
-    tags: ["Top 7", "Tools", "Real", "Time Collaboration", "2026"],
+    tags: ["Top 7", "Tools", "Real", "Time Collaboration", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-08-2026",
+    publishedAt: "22-08-2025",
   },
   {
     // id: 1,
@@ -12130,19 +12130,19 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Top 7", "Tools", "Real", "Time Data Streaming"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-11-2026",
+    publishedAt: "26-11-2025",
   },
   {
     // id: 1,
-    title: "Top 7 Tools for Video Conferencing in 2026",
-    slug: "top-7-tools-for-video-conferencing-in-2026",
-    excerpt: "An in-depth guide on Top 7 Tools for Video Conferencing in 2026.",
+    title: "Top 7 Tools for Video Conferencing in 2025",
+    slug: "top-7-tools-for-video-conferencing-in-2025",
+    excerpt: "An in-depth guide on Top 7 Tools for Video Conferencing in 2025.",
     readingTime: "5 min read",
-    //  image: "/top-7-tools-for-video-conferencing-in-2026.png",
+    //  image: "/top-7-tools-for-video-conferencing-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-11-2026",
+    publishedAt: "21-11-2025",
   },
   {
     // id: 1,
@@ -12154,7 +12154,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-01-2026",
+    publishedAt: "04-01-2025",
   },
   {
     // id: 1,
@@ -12166,7 +12166,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Astro Could Replace Gatsby"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-09-2026",
+    publishedAt: "21-09-2025",
   },
   {
     // id: 1,
@@ -12179,7 +12179,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Bun is Challenging Node.js", "My Experience"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "21-02-2026",
+    publishedAt: "21-02-2025",
   },
   {
     // id: 1,
@@ -12191,7 +12191,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Cloudflare Is Competing With AWS"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-10-2026",
+    publishedAt: "26-10-2025",
   },
   {
     // id: 1,
@@ -12204,7 +12204,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-09-2026",
+    publishedAt: "10-09-2025",
   },
   {
     // id: 1,
@@ -12217,20 +12217,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Developers Are Adopting Edge", "First Architectures"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-02-2026",
+    publishedAt: "16-02-2025",
   },
   {
     // id: 1,
-    title: "Why Developers Are Building With Remix in 2026",
-    slug: "why-developers-are-building-with-remix-in-2026",
+    title: "Why Developers Are Building With Remix in 2025",
+    slug: "why-developers-are-building-with-remix-in-2025",
     excerpt:
-      "An in-depth guide on Why Developers Are Building With Remix in 2026.",
+      "An in-depth guide on Why Developers Are Building With Remix in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-developers-are-building-with-remix-in-2026.png",
+    //  image: "/why-developers-are-building-with-remix-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "01-04-2026",
+    publishedAt: "01-04-2025",
   },
   {
     // id: 1,
@@ -12243,7 +12243,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "15-06-2026",
+    publishedAt: "15-06-2025",
   },
   {
     // id: 1,
@@ -12256,43 +12256,43 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "04-05-2026",
+    publishedAt: "04-05-2025",
   },
   {
     // id: 1,
-    title: "Why Developers Choose SolidJS in 2026",
-    slug: "why-developers-choose-solidjs-in-2026",
-    excerpt: "An in-depth guide on Why Developers Choose SolidJS in 2026.",
+    title: "Why Developers Choose SolidJS in 2025",
+    slug: "why-developers-choose-solidjs-in-2025",
+    excerpt: "An in-depth guide on Why Developers Choose SolidJS in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-developers-choose-solidjs-in-2026.png",
+    //  image: "/why-developers-choose-solidjs-in-2025.png",
     category: "Web Development",
-    tags: ["Why Developers Choose SolidJS", "2026"],
+    tags: ["Why Developers Choose SolidJS", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-05-2026",
+    publishedAt: "27-05-2025",
   },
   {
     // id: 1,
-    title: "Why Developers Prefer PostgreSQL in 2026",
-    slug: "why-developers-prefer-postgresql-in-2026",
-    excerpt: "An in-depth guide on Why Developers Prefer PostgreSQL in 2026.",
+    title: "Why Developers Prefer PostgreSQL in 2025",
+    slug: "why-developers-prefer-postgresql-in-2025",
+    excerpt: "An in-depth guide on Why Developers Prefer PostgreSQL in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-developers-prefer-postgresql-in-2026.png",
-    category: "Web Development",
-    tags: [],
-    content: `<h1>Coming Soon</h1>`,
-    publishedAt: "20-04-2026",
-  },
-  {
-    // id: 1,
-    title: "Why Developers Still Love jQuery in 2026",
-    slug: "why-developers-still-love-jquery-in-2026",
-    excerpt: "An in-depth guide on Why Developers Still Love jQuery in 2026.",
-    readingTime: "5 min read",
-    //  image: "/why-developers-still-love-jquery-in-2026.png",
+    //  image: "/why-developers-prefer-postgresql-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-07-2026",
+    publishedAt: "20-04-2025",
+  },
+  {
+    // id: 1,
+    title: "Why Developers Still Love jQuery in 2025",
+    slug: "why-developers-still-love-jquery-in-2025",
+    excerpt: "An in-depth guide on Why Developers Still Love jQuery in 2025.",
+    readingTime: "5 min read",
+    //  image: "/why-developers-still-love-jquery-in-2025.png",
+    category: "Web Development",
+    tags: [],
+    content: `<h1>Coming Soon</h1>`,
+    publishedAt: "29-07-2025",
   },
   {
     // id: 1,
@@ -12305,7 +12305,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-07-2026",
+    publishedAt: "13-07-2025",
   },
   {
     // id: 1,
@@ -12318,7 +12318,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-01-2026",
+    publishedAt: "23-01-2025",
   },
   {
     // id: 1,
@@ -12330,7 +12330,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-09-2026",
+    publishedAt: "06-09-2025",
   },
   {
     // id: 1,
@@ -12342,7 +12342,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-04-2026",
+    publishedAt: "02-04-2025",
   },
   {
     // id: 1,
@@ -12354,7 +12354,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Full", "Stack Developers Love T3 Stack"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-10-2026",
+    publishedAt: "22-10-2025",
   },
   {
     // id: 1,
@@ -12366,20 +12366,20 @@ export const OLD_TWEETS = [
     category: "DevOps & Automation",
     tags: ["Why GitHub Actions Beats Other CI", "CD Tools"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-05-2026",
+    publishedAt: "29-05-2025",
   },
   {
     // id: 1,
-    title: "Why GraphQL is Still Worth Learning in 2026",
-    slug: "why-graphql-is-still-worth-learning-in-2026",
+    title: "Why GraphQL is Still Worth Learning in 2025",
+    slug: "why-graphql-is-still-worth-learning-in-2025",
     excerpt:
-      "An in-depth guide on Why GraphQL is Still Worth Learning in 2026.",
+      "An in-depth guide on Why GraphQL is Still Worth Learning in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-graphql-is-still-worth-learning-in-2026.png",
+    //  image: "/why-graphql-is-still-worth-learning-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-09-2026",
+    publishedAt: "25-09-2025",
   },
   {
     // id: 1,
@@ -12391,7 +12391,7 @@ export const OLD_TWEETS = [
     category: "Content Management",
     tags: ["Why Headless CMS Adoption Is Growing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -12403,7 +12403,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Headless Commerce is the Future"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-04-2026",
+    publishedAt: "23-04-2025",
   },
   {
     // id: 1,
@@ -12416,19 +12416,19 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-07-2026",
+    publishedAt: "12-07-2025",
   },
   {
     // id: 1,
-    title: "Why Microservices Still Matter in 2026",
-    slug: "why-microservices-still-matter-in-2026",
-    excerpt: "An in-depth guide on Why Microservices Still Matter in 2026.",
+    title: "Why Microservices Still Matter in 2025",
+    slug: "why-microservices-still-matter-in-2025",
+    excerpt: "An in-depth guide on Why Microservices Still Matter in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-microservices-still-matter-in-2026.png",
+    //  image: "/why-microservices-still-matter-in-2025.png",
     category: "Web Development",
-    tags: ["Why Microservices Still Matter", "2026"],
+    tags: ["Why Microservices Still Matter", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-11-2026",
+    publishedAt: "18-11-2025",
   },
   {
     // id: 1,
@@ -12441,7 +12441,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-06-2026",
+    publishedAt: "27-06-2025",
   },
   {
     // id: 1,
@@ -12453,7 +12453,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Why Monorepos Are Gaining Popularity"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-03-2026",
+    publishedAt: "25-03-2025",
   },
   {
     // id: 1,
@@ -12465,7 +12465,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why More Startups Are Choosing Supabase"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "11-07-2026",
+    publishedAt: "11-07-2025",
   },
   {
     // id: 1,
@@ -12477,7 +12477,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why More Teams Are Using Monorepos"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "03-08-2026",
+    publishedAt: "03-08-2025",
   },
   {
     // id: 1,
@@ -12490,32 +12490,32 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-01-2026",
+    publishedAt: "27-01-2025",
   },
   {
     // id: 1,
-    title: "Why Remix is Still Relevant in 2026",
-    slug: "why-remix-is-still-relevant-in-2026",
-    excerpt: "An in-depth guide on Why Remix is Still Relevant in 2026.",
+    title: "Why Remix is Still Relevant in 2025",
+    slug: "why-remix-is-still-relevant-in-2025",
+    excerpt: "An in-depth guide on Why Remix is Still Relevant in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-remix-is-still-relevant-in-2026.png",
+    //  image: "/why-remix-is-still-relevant-in-2025.png",
     category: "Web Development",
-    tags: ["Why Remix is Still Relevant", "2026"],
+    tags: ["Why Remix is Still Relevant", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-09-2026",
+    publishedAt: "02-09-2025",
   },
   {
     // id: 1,
-    title: "Why SaaS Founders Choose Serverless in 2026",
-    slug: "why-saas-founders-choose-serverless-in-2026",
+    title: "Why SaaS Founders Choose Serverless in 2025",
+    slug: "why-saas-founders-choose-serverless-in-2025",
     excerpt:
-      "An in-depth guide on Why SaaS Founders Choose Serverless in 2026.",
+      "An in-depth guide on Why SaaS Founders Choose Serverless in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-saas-founders-choose-serverless-in-2026.png",
+    //  image: "/why-saas-founders-choose-serverless-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-05-2026",
+    publishedAt: "13-05-2025",
   },
   {
     // id: 1,
@@ -12527,7 +12527,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-04-2026",
+    publishedAt: "30-04-2025",
   },
   {
     // id: 1,
@@ -12540,20 +12540,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "12-08-2026",
+    publishedAt: "12-08-2025",
   },
   {
     // id: 1,
-    title: "Why SvelteKit is Winning Developers in 2026",
-    slug: "why-sveltekit-is-winning-developers-in-2026",
+    title: "Why SvelteKit is Winning Developers in 2025",
+    slug: "why-sveltekit-is-winning-developers-in-2025",
     excerpt:
-      "An in-depth guide on Why SvelteKit is Winning Developers in 2026.",
+      "An in-depth guide on Why SvelteKit is Winning Developers in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-sveltekit-is-winning-developers-in-2026.png",
+    //  image: "/why-sveltekit-is-winning-developers-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "27-12-2026",
+    publishedAt: "27-12-2025",
   },
   {
     // id: 1,
@@ -12565,7 +12565,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Turbopack Might Replace Webpack"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-01-2026",
+    publishedAt: "23-01-2025",
   },
   {
     // id: 1,
@@ -12578,19 +12578,19 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Why Vite is Overtaking Webpack", "A Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "05-02-2026",
+    publishedAt: "05-02-2025",
   },
   {
     // id: 1,
-    title: "Why Web Developers Love TypeScript in 2026",
-    slug: "why-web-developers-love-typescript-in-2026",
-    excerpt: "An in-depth guide on Why Web Developers Love TypeScript in 2026.",
+    title: "Why Web Developers Love TypeScript in 2025",
+    slug: "why-web-developers-love-typescript-in-2025",
+    excerpt: "An in-depth guide on Why Web Developers Love TypeScript in 2025.",
     readingTime: "5 min read",
-    //  image: "/why-web-developers-love-typescript-in-2026.png",
+    //  image: "/why-web-developers-love-typescript-in-2025.png",
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "14-08-2026",
+    publishedAt: "14-08-2025",
   },
   {
     // id: 1,
@@ -12603,7 +12603,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-06-2026",
+    publishedAt: "17-06-2025",
   },
   {
     // id: 1,
@@ -12616,7 +12616,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "07-04-2026",
+    publishedAt: "07-04-2025",
   },
   {
     // id: 1,
@@ -12629,7 +12629,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-10-2026",
+    publishedAt: "23-10-2025",
   },
   {
     // id: 1,
@@ -12642,7 +12642,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Project Management"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "16-11-2026",
+    publishedAt: "16-11-2025",
   },
   {
     // id: 1,
@@ -12655,20 +12655,20 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "30-06-2026",
+    publishedAt: "30-06-2025",
   },
   {
     // id: 1,
-    title: "Best Free Tools for Web Hosting in 2026",
-    slug: "best-free-tools-for-web-hosting-in-2026",
+    title: "Best Free Tools for Web Hosting in 2025",
+    slug: "best-free-tools-for-web-hosting-in-2025",
     excerpt:
-      "A curated list of best free tools for web hosting in 2026 - highlighting the most useful free tools.",
+      "A curated list of best free tools for web hosting in 2025 - highlighting the most useful free tools.",
     readingTime: "5 min read",
-    //  image: "/best-free-tools-for-web-hosting-in-2026.png",
+    //  image: "/best-free-tools-for-web-hosting-in-2025.png",
     category: "Web Hosting",
-    tags: ["Best", "Tools", "Web", "Hosting", "2026"],
+    tags: ["Best", "Tools", "Web", "Hosting", "2025"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "23-07-2026",
+    publishedAt: "23-07-2025",
   },
   {
     // id: 1,
@@ -12681,7 +12681,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "09-02-2026",
+    publishedAt: "09-02-2025",
   },
   {
     // id: 1,
@@ -12694,7 +12694,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Resume Screening"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-04-2026",
+    publishedAt: "24-04-2025",
   },
   {
     // id: 1,
@@ -12707,7 +12707,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "24-08-2026",
+    publishedAt: "24-08-2025",
   },
   {
     // id: 1,
@@ -12720,7 +12720,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "File", "Encryption"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-12-2026",
+    publishedAt: "08-12-2025",
   },
   {
     // id: 1,
@@ -12733,7 +12733,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "17-02-2026",
+    publishedAt: "17-02-2025",
   },
   {
     // id: 1,
@@ -12746,7 +12746,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Marketing Analytics"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-09-2026",
+    publishedAt: "22-09-2025",
   },
   {
     // id: 1,
@@ -12759,7 +12759,7 @@ export const OLD_TWEETS = [
     category: "Web Hosting",
     tags: ["Review", "Vercel", "KV", "Upstash", "Turso", "KV"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "29-01-2026",
+    publishedAt: "29-01-2025",
   },
   {
     // id: 1,
@@ -12772,7 +12772,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Best", "Tools", "Team", "Time", "Tracking"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "08-03-2026",
+    publishedAt: "08-03-2025",
   },
   {
     // id: 1,
@@ -12785,7 +12785,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Review", "Shopify", "Chatbot", "Wix", "AI", "Chatbot"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "28-02-2026",
+    publishedAt: "28-02-2025",
   },
   {
     // id: 1,
@@ -12798,7 +12798,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review", "Drizzle", "ORM", "Prisma", "ORM", "TypeORM"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "10-04-2026",
+    publishedAt: "10-04-2025",
   },
   {
     // id: 1,
@@ -12811,7 +12811,7 @@ export const OLD_TWEETS = [
     category: "Data & Databases",
     tags: ["Review", "Cloudflare", "D1", "Database", "SQLite", "Cloud"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-04-2026",
+    publishedAt: "06-04-2025",
   },
   {
     // id: 1,
@@ -12824,7 +12824,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 5", "AI Tools", "AI Powered", "Customer Retention"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "18-10-2026",
+    publishedAt: "18-10-2025",
   },
   {
     // id: 1,
@@ -12837,7 +12837,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "02-01-2026",
+    publishedAt: "02-01-2025",
   },
   {
     // id: 1,
@@ -12850,7 +12850,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-11-2026",
+    publishedAt: "22-11-2025",
   },
   {
     // id: 1,
@@ -12863,7 +12863,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "25-03-2026",
+    publishedAt: "25-03-2025",
   },
   {
     // id: 1,
@@ -12875,7 +12875,7 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 10 ", "AI Tools", "AI Powered", "Data Analysis"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "13-05-2026",
+    publishedAt: "13-05-2025",
   },
   {
     // id: 1,
@@ -12888,7 +12888,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: [],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "22-12-2026",
+    publishedAt: "22-12-2025",
   },
   {
     // id: 1,
@@ -12901,7 +12901,7 @@ export const OLD_TWEETS = [
     category: "Web Development",
     tags: ["Review"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "26-07-2026",
+    publishedAt: "26-07-2025",
   },
   {
     // id: 1,
@@ -12914,6 +12914,6 @@ export const OLD_TWEETS = [
     category: "AI Tools",
     tags: ["Top 7 ", "AI Tools", "AI Powered", "Knowledge Sharing"],
     content: `<h1>Coming Soon</h1>`,
-    publishedAt: "06-03-2026",
+    publishedAt: "06-03-2025",
   },
 ];
