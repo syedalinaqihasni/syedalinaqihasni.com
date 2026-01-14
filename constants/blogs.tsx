@@ -4424,7 +4424,6 @@ const posts: Post[] = [
   bp23,
   bp24,
   bp25,
-  ...OLD_TWEETS,
 ];
 
 // --- FLATMAP OF TAGS AND CATEGORIES ---
