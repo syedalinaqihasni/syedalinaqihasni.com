@@ -22,9 +22,9 @@ import { Post } from "@/types/blogs";
 
 const CONSTANT = {
   searchPlaceholder: "Search articles...",
-  perPageOptions: [10, 20, 30, 40, 50, 100],
+  perPageOptions: [9, 21, 30, 42, 51, 90, 150, 300],
   modes: {
-    grid: { id: "grid", label: "Grid", icon: Grid3X3, defaultPerPage: 20 },
+    grid: { id: "grid", label: "Grid", icon: Grid3X3, defaultPerPage: 21 },
 
     imageList: {
       id: "imageList",
@@ -36,7 +36,7 @@ const CONSTANT = {
       id: "titleList",
       label: "Title List",
       icon: List,
-      defaultPerPage: 50,
+      defaultPerPage: 51,
     },
   },
 };
