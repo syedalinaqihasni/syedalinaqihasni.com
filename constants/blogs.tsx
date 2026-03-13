@@ -2767,6 +2767,7 @@ export const bp19 = {
   excerpt:
     "Learn how to set up a new Next.js project with Tailwind CSS to build fast, responsive UIs with ease.",
   slug: "getting-started-nextjs-tailwind",
+  image: "/images/blogs/getting-started-nextjs-tailwind.jpg",
   publishedAt: "01-01-2023",
   readingTime: "5 min read",
   content: `<div>
@@ -2890,6 +2891,7 @@ npx tailwindcss init -p</code>
 export const bp20 = {
   // id: 2,
   title: "State Management in React Applications",
+  image: "/images/blogs/state-management-react.png",
   excerpt:
     "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
   slug: "state-management-react",
@@ -3086,6 +3088,7 @@ export const bp21 = {
   excerpt:
     "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
   slug: "framer-motion-animations",
+  image: "/images/blogs/framer-motion-animations.png",
   publishedAt: "22-01-2023",
   readingTime: "5 min read",
   category: `Tutorials`,
@@ -3332,6 +3335,7 @@ export const bp22 = {
   excerpt:
     "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
   slug: "nextjs-api-routes",
+  image: "/images/blogs/nextjs-api-routes.png",
   publishedAt: "05-02-2023",
   readingTime: "6 min read",
   content: `
@@ -3479,6 +3483,7 @@ export const bp23 = {
   excerpt:
     "Master responsive design using Tailwind's utility classes and variants — build adaptable layouts that look great on any device.",
   slug: "responsive-ui-tailwind",
+  image: "/images/blogs/responsive-ui-tailwind.jpg",
   publishedAt: "12-03-2023",
   readingTime: "4 min read",
   category: `Tutorials`,
