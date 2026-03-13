@@ -4403,6 +4403,20 @@ fetchCount(5);
 </div>`,
 };
 
+export const bp26 = {
+  // id: 5,
+  title: "Next.js API Routes: Building Server Endpoints",
+  excerpt:
+    "Next.js API routes allow you to create serverless functions as part of your Next.js application. This means you can build backend functionality without needing a separate server, making it easier to handle tasks like form submissions, authentication, and data fetching directly within your Next.js app.",
+  slug: "nextjs-api-routes-building-server-endpoints",
+  publishedAt: "14-01-2026",
+  readingTime: "15 min read",
+  image:
+    "/images/blogs/next-js-api-routes-building-server-endpoints.webp",
+  category: "Opinion",
+  tags: ["Next.js", "API Routes", "Serverless", "Backend Development"],
+  content: `<div><div>`,
+};
 const posts: Post[] = [
   bp1,
   bp2,
@@ -4429,6 +4443,7 @@ const posts: Post[] = [
   bp23,
   bp24,
   bp25,
+  bp26,
   // ...OLD_TWEETS,
 ];
 
