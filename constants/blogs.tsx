@@ -1,4 +1,5 @@
 import { Post } from "@/types/blogs";
+import { OLD_TWEETS } from "@/constants/extra-blogs";
 
 const CONSTANT = {
   pageTitle: "My Blogs",
@@ -10,17 +11,24 @@ const CONSTANT = {
   readUnit: "min read",
 };
 
-const posts: Post[] = [
-  { id: 25,
-    title: "Docusaurus: The Modern Framework for Building Documentation That Doesn’t Suck",
-    excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
-    slug: "docusaurus-the-modern-framework-for-building-documentation-that-does-not-suck",
-    publishedAt: "2025-06-26",
+export const bp1 = {
+  // id: 1,
+  title:
+    "Docusaurus: The Modern Framework for Building Documentation That Doesn’t Suck",
+  excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
+  slug: "docusaurus-the-modern-framework-for-building-documentation-that-does-not-suck",
+  publishedAt: "26-06-2025",
   readingTime: "6 min read",
-  image: "https://www.syedalinaqihasni.com/images/blogs/docusaurus-modern-documentation-framework-syed-ali-naqi-hasni.webp",
+  image:
+    "/images/blogs/docusaurus-modern-documentation-framework-syed-ali-naqi-hasni.webp",
   category: `Tutorials`,
-    tags: ["Docusaurus", "Technical Writing", "Documentation Framework", "Jamstack"],
-    content: `<div>
+  tags: [
+    "Docusaurus",
+    "Technical Writing",
+    "Documentation Framework",
+    "Jamstack",
+  ],
+  content: `<div>
 <h2>What is Docusaurus?</h2>
   <p>Docusaurus is a modern <strong>static site generator (SSG)</strong> built by Meta to help developers quickly create beautiful, versioned documentation websites. It uses <strong>React</strong>, <strong>MDX</strong> (Markdown + JSX), and a modular plugin system to empower technical teams with minimal setup.</p>
 <blockquote>
@@ -38,21 +46,26 @@ const posts: Post[] = [
   </ul>
   <p>Top companies using it include <strong>React Native</strong>, <strong>Redux Toolkit</strong>, <strong>Snapchat</strong>, and <strong>Supabase</strong>.</p>
 <h2>Getting Started with Docusaurus</h2>
-  <pre><code>npx create-docusaurus@latest my-docs classic
+  <pre>
+<code>npx create-docusaurus@latest my-docs classic
 cd my-docs
 npm run start
-</code></pre>
+</code>
+</pre>
 <h3>Project Structure</h3>
-  <pre><code>my-docs/
+  <pre>
+<code>my-docs/
 ├── docs/
 ├── blog/
 ├── src/
 ├── static/
 ├── docusaurus.config.js
-</code></pre>
+</code>
+</pre>
 <h2>Writing with Markdown + React (MDX)</h2>
   <p>You can write regular Markdown and embed React components:</p>
-  <pre><code>## Hello World
+  <pre>
+<code>## Hello World
 
 Here’s a button:
 
@@ -64,7 +77,8 @@ npm install my-package
 
 </CodeBlock>
 
-</code></pre>
+</code>
+</pre>
 <h2>Plugin System</h2>
   <ul>
     <li>Docs plugin</li>
@@ -75,11 +89,15 @@ npm install my-package
   </ul>
 <h2>Versioning and i18n</h2>
   <h3>Versioned Docs</h3>
-  <pre><code>npm run docusaurus docs:version 1.0.0
-</code></pre>
+  <pre>
+<code>npm run docusaurus docs:version 1.0.0
+</code>
+</pre>
   <h3>Translations</h3>
-  <pre><code>docusaurus write-translations --locale fr
-</code></pre>
+  <pre>
+<code>docusaurus write-translations --locale fr
+</code>
+</pre>
 <h2>Theming and Customization</h2>
   <p>Override styles, layouts, and components using React. Customize sidebars, navigation, CTA banners, and more using <code>/src/theme</code>.</p>
 <h2>Deployment Options</h2>
@@ -90,8 +108,10 @@ npm install my-package
     <li>Netlify</li>
     <li>Cloudflare Pages</li>
   </ul>
-  <pre><code>GIT_USER=<your-username> USE_SSH=true npm run deploy </your-username>
-</code></pre>
+  <pre>
+<code>GIT_USER=<your-username> USE_SSH=true npm run deploy </your-username>
+</code>
+</pre>
 <h2>Pros of Docusaurus</h2>
   <ul>
     <li>Developer-centric</li>
@@ -165,26 +185,30 @@ npm install my-package
   <p>Have you tried Docusaurus? What was your experience like? Drop your thoughts or share your setup in the comments section.</p>
 
 </div>
-`
-  },
-  {
-    id: 25,
-    title: "Why I Don't Use WordPress (And You Shouldn't Either)",
-    excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
-    slug: "why-i-do-not-use-word-press-and-you-should-not-either",
-    publishedAt: "2025-06-20",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/why-i-do-not-use-word-press-and-you-should-not-either-syed-ali-naqi-hasni.png",
-    category: `Opinions`,
-    tags: ["WordPress", "CMS", "Backend Integration"],
-    content: `<div>
-  <p>Let me say the quiet part out loud: <strong>WordPress is not the magical solution clients think it is.</strong></p>
+`,
+};
+
+export const bp2 = {
+  // id: 2,
+  title: "Why I Don't Use WordPress (And You Shouldn't Either)",
+  excerpt: `Discover why I chose to move away from WordPress—and why you might want to do the same. From performance pitfalls to developer freedom, here's the unfiltered truth.`,
+  slug: "why-i-do-not-use-wordpress-and-you-should-not-either",
+  publishedAt: "20-06-2025",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/why-i-do-not-use-wordpress-and-you-should-not-either-syed-ali-naqi-hasni.webp",
+  category: `Opinions`,
+  tags: ["WordPress", "CMS", "Backend Integration"],
+  content: `<div>
+  <p>Let me say the quiet part out loud: <strong>WordPress is not the magical solution clients think it is.</strong>
+</p>
   <p>I've seen too many businesses - startups, agencies, even government projects - bloated, broken, and buried under plugins, insecure code, and sluggish load times. And in 90% of those cases? WordPress was the culprit.</p>
-  <p>Now, before the WordPress army shows up with pitchforks: I'm not here to bash the CMS. It had its time. It still <em>works</em> for certain use cases. But in 2025? For serious businesses that want speed, scalability, security, and sanity — <strong>you need something better.</strong></p>
+  <p>Now, before the WordPress army shows up with pitchforks: I'm not here to bash the CMS. It had its time. It still <em>works</em> for certain use cases. But in 2025? For serious businesses that want speed, scalability, security, and sanity — <strong>you need something better.</strong>
+</p>
   <h2>1. It's Not Developer-Friendly (and That Costs You)</h2>
   <p>You want custom features? Clean APIs? CI/CD pipelines? Welcome to a spaghetti factory of PHP functions, theme overrides, and plugin conflicts.</p>
-  <p><strong>Translation:</strong> You're paying for complexity, not progress.</p>
+  <p>
+<strong>Translation:</strong> You're paying for complexity, not progress.</p>
   <h2>2. Speed? Forget About It</h2>
   <p>Want a fast site? WordPress makes you fight for every millisecond.<br>
   A Next.js static site, even with some dynamic content, will <em>outperform</em> a plugin-heavy WordPress site <strong>every single time</strong>.</p>
@@ -204,26 +228,33 @@ npm install my-package
     <li>That give you full control with no "Update Theme" anxiety</li>
     <li>That aren't held hostage by third-party plugin developers</li>
   </ul>
-  <p><strong>You own it. You scale it. You're not dependent.</strong></p>
+  <p>
+<strong>You own it. You scale it. You're not dependent.</strong>
+</p>
   <h2>TL;DR?</h2>
   <p>WordPress had a good run. But if you're serious about performance, security, and owning your digital presence — it's time to move forward.</p>
   <p>🚀 I build fast, secure, scalable sites using a modern tech stack that grows with you — not against you.</p>
-  <p><strong><a href="https://wa.me/923162265948">Let's talk →</a></strong></p>
+  <p>
+<strong>
+<a href="https://wa.me/923162265948">Let's talk →</a>
+</strong>
+</p>
 </div>`,
-  },
-  {
-    id: 16,
-    title: "Integrating NodeMailer with Next.js: A Comprehensive Guide",
-    excerpt:
-      "Learn how to set up and use NodeMailer in a Next.js application to send emails from your contact forms, authenticate with SMTP, and ensure secure, scalable communication.",
-    slug: "integrating-nodemailer-with-nextjs-a-comprehensive-guide",
-    publishedAt: "2024-01-19",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.jpg",
-    category: `Tutorials`,
-    tags: ["Next.js", "Node.js", "Backend Integration"],
-    content: `<div>
+};
+
+export const bp3 = {
+  // id: 16,
+  title: "Integrating NodeMailer with Next.js: A Comprehensive Guide",
+  excerpt:
+    "Learn how to set up and use NodeMailer in a Next.js application to send emails from your contact forms, authenticate with SMTP, and ensure secure, scalable communication.",
+  slug: "integrating-nodemailer-with-nextjs-a-comprehensive-guide",
+  publishedAt: "19-01-2024",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/integrating-nodemailer-with-nextjs-a-comprehensive-guide-syed-ali-naqi-hasni.webp",
+  category: `Tutorials`,
+  tags: ["Next.js", "Node.js", "Backend Integration"],
+  content: `<div>
 <h2>Introduction</h2>
 <p>
   In the realm of web development, sending emails is a common requirement, whether for user authentication, notifications, or newsletters. This article will guide you through the process of integrating NodeMailer, a popular Node.js module, with Next.js, a React framework for building server-side rendered applications.
@@ -235,22 +266,28 @@ npm install my-package
 <h2>Why NodeMailer?</h2>
 <h3>Pros:</h3>
 <ol>
-<li><strong>Versatility:</strong> NodeMailer supports multiple email transport methods, allowing you to choose the one that best fits your needs.</li>
-<li><strong>Ease of Use:</strong> Setting up and sending emails is straightforward with NodeMailer, making it accessible for developers at all levels.</li>
-<li><strong>Active Community:</strong> With a large and active community, NodeMailer benefits from continuous improvement, bug fixes, and community-driven plugins.</li>
+<li>
+<strong>Versatility:</strong> NodeMailer supports multiple email transport methods, allowing you to choose the one that best fits your needs.</li>
+<li>
+<strong>Ease of Use:</strong> Setting up and sending emails is straightforward with NodeMailer, making it accessible for developers at all levels.</li>
+<li>
+<strong>Active Community:</strong> With a large and active community, NodeMailer benefits from continuous improvement, bug fixes, and community-driven plugins.</li>
 </ol>
 <h2>Setting Up NodeMailer in Next.js</h2>
 <h3>Step 1: Install NodeMailer</h3>
 <p>
   Start by installing NodeMailer in your Next.js project:
 </p>
-<pre><code>npm install nodemailer
-</code></pre>
+<pre>
+<code>npm install nodemailer
+</code>
+</pre>
 <h3>Step 2: Create an Email Utility Function</h3>
 <p>
   Create a utility function to handle email sending. Replace the placeholder credentials with your own:
 </p>
-<pre><code>import nodemailer from 'nodemailer';
+<pre>
+<code>import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -276,12 +313,14 @@ const sendEmail = async (to, subject, html) => {
 };
 
 export default sendEmail;
-</code></pre>
+</code>
+</pre>
 <h3>Step 3: Use the Utility Function in Next.js Pages</h3>
 <p>
   Integrate the sendEmail function in your Next.js pages where email functionality is required.
 </p>
-<pre><code>import React from 'react';
+<pre>
+<code>import React from 'react';
 
 import sendEmail from '../utils/email';
 
@@ -299,15 +338,19 @@ const App = () => {
 };
 
 export default YourPage;
-</code></pre>
+</code>
+</pre>
 <h2>Alternatives to NodeMailer</h2>
 <p>
   While NodeMailer is a robust solution, it's essential to explore alternatives based on your specific needs. Some notable alternatives include:
 </p>
 <ol>
-<li><a href="https://www.linkedin.com/company/sendgrid/">SendGrid</a> <strong>-Transport:</strong> An alternative with SendGrid Email service?.</li>
-<li><strong>Email.js:</strong> A simpler alternative with a focus on ease of use.</li>
-<li><a href="https://www.linkedin.com/company/smtp-com/">SMTP.js:</a> A lightweight library for sending emails using the SMTP protocol (Node.js).</li>
+<li>
+<a href="https://www.linkedin.com/company/sendgrid/">SendGrid</a> <strong>-Transport:</strong> An alternative with SendGrid Email service?.</li>
+<li>
+<strong>Email.js:</strong> A simpler alternative with a focus on ease of use.</li>
+<li>
+<a href="https://www.linkedin.com/company/smtp-com/">SMTP.js:</a> A lightweight library for sending emails using the SMTP protocol (Node.js).</li>
 </ol>
 <p>
   Choose the tool that aligns best with your project requirements and preferences.
@@ -319,28 +362,29 @@ export default YourPage;
 <p>
 <strong>#NodeMailerIntegration #NextJSDevelopment #EmailFunctionality #WebDevTips #NodeJSCommunity #EmailIntegrationGuide #TechTutorials #CodingTips #WebDevelopment #ProgrammingHowTo</strong>
 </p>
-<hr>
+
 <h2>Looking for a Skilled Web Developer?</h2>
 <p>
   I specialize in crafting outstanding user experiences for web applications. Whether you're looking to develop a new Progressive Web App (PWA) or enhance an existing one, we seamlessly integrate headless Content Management Systems (CMS) for efficient content management. Stay ahead of the curve with our future-proof solutions. Get in touch today to enhance your web and mobile presence through a user-friendly PWA. Let's collaborate to create a remarkable digital experience together!
 </p>
 </div>
 `,
-  },
-  {
-    id: 15,
-    title:
-      "Unveiling the Power of Structured Data Markup Script: Elevating Your Website's SEO",
-    excerpt:
-      "Discover how implementing structured data using schema markup can significantly improve your website's SEO, enhance search visibility, and drive richer results in SERPs.",
-    slug: "unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo",
-    publishedAt: "2024-02-26",
-    readingTime: "8 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.png", // Recommend replacing with a relevant SEO/Schema image
-    category: `Tips`,
-    tags: ["SEO", "Web Development", "Digital Strategy"],
-    content: `<div>
+};
+
+export const bp4 = {
+  // id: 15,
+  title:
+    "Unveiling the Power of Structured Data Markup Script: Elevating Your Website's SEO",
+  excerpt:
+    "Discover how implementing structured data using schema markup can significantly improve your website's SEO, enhance search visibility, and drive richer results in SERPs.",
+  slug: "unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo",
+  publishedAt: "26-02-2024",
+  readingTime: "8 min read",
+  image:
+    "/images/blogs/unveiling-the-power-of-structured-data-markup-script-elevating-your-websites-seo-syed-ali-naqi-hasni.webp", // Recommend replacing with a relevant SEO/Schema image
+  category: `Tips`,
+  tags: ["SEO", "Web Development", "Digital Strategy"],
+  content: `<div>
 <p>
     In the dynamic realm of search engine optimization (SEO), staying ahead necessitates not only keeping pace with trends but also understanding and leveraging innovative tools. One such tool that has emerged as a game-changer is structured data markup script. This comprehensive guide explores what structured data markup script entails, how it functions, and most importantly, how you can utilize it to turbocharge your website's SEO performance.
   </p>
@@ -359,13 +403,15 @@ export default YourPage;
 <p>
     Implementing a structured data markup script on your website is relatively straightforward, thanks to its intuitive syntax and flexibility. Let's walk through a basic example of how to use a structured data markup script to describe an organization:
   </p>
-<pre><code><script type="application/ld+json">
+<pre>
+<code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Your Company Name",
   "url": "https://www.yourwebsite.com/",
-  "logo": "https://www.yourwebsite.com/logo.png",
+  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.webp",
   "description": "Brief description of your company",
   "address": {
     "@type": "PostalAddress",
@@ -382,7 +428,8 @@ export default YourPage;
   }
 }
 </script>
-</code></pre>
+</code>
+</pre>
 <p>
     In this example, we're utilizing a structured data markup script to describe an organization. We begin by defining the context (@context) as "<a href="https://schema.org/">https://schema.org</a>", indicating the usage of the Schema.org vocabulary for structured data. Next, we specify the type (@type) of data being described, which in this case, is an organization. We then provide various properties such as the organization's name, URL, logo, description, address, and contact information.
   </p>
@@ -398,31 +445,37 @@ export default YourPage;
 <p>
     <strong>1. People:</strong> Structured data markup script enables the representation of information about individuals, such as employees, founders, or authors, using the Person type. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre>
+<code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "John Doe",
   "jobTitle": "Founder & CEO",
   "url": "https://www.example.com/john-doe",
-  "image": "https://www.example.com/john-doe.jpg",
+  "image": "https://www.example.com/john-doe.webp",
   "description": "Brief description of John Doe"
 }
 </script>
-</code></pre>
+</code>
+</pre>
 <p>
     In this example, a structured data markup script is employed to provide information about a person named John Doe, encompassing details such as name, job title, URL, image, and description. By including this script on relevant web pages, website owners can furnish search engines with explicit information about individuals associated with their organization, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>2. Organization:</strong> The representation of an organization using a structured data markup script was demonstrated in the basic example. Here's a recap:
   </p>
-<pre><code><script type="application/ld+json"></script>
+<pre>
+<code>
+<script type="application/ld+json">
+</script>
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Your Company Name",
   "url": "https://www.yourwebsite.com/",
-  "logo": "https://www.yourwebsite.com/logo.png",
+  "logo": "https://www.yourwebsite.com/about-us-syed-ali-naqi-hasni.webp",
   "description": "Brief description of your company",
   "address": {
     "@type": "PostalAddress",
@@ -439,14 +492,17 @@ export default YourPage;
   }
 }
 </script>
-</code></pre>
+</code>
+</pre>
 <p>
     This script encapsulates details about an organization, including its name, URL, logo, description, address, and contact information. By integrating structured data markup scripts into web pages, website owners can facilitate search engines in comprehending organizational information, potentially amplifying their visibility in search results.
   </p>
 <p>
     <strong>3. Products:</strong> For websites engaged in e-commerce, structured data markup scripts can be utilized to provide information about products. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre>
+<code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -464,14 +520,17 @@ export default YourPage;
   }
 }
 </script>
-</code></pre>
+</code>
+</pre>
 <p>
     This script delineates details about a product, encompassing attributes such as name, description, brand, and pricing. By incorporating structured data markup scripts on product pages, website owners can aid search engines in comprehending the products being offered, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>4. Services:</strong> For websites offering services, a structured data markup script can be employed to furnish information about those services. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre>
+<code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -483,14 +542,17 @@ export default YourPage;
   }
 }
 </script>
-</code></pre>
+</code>
+</pre>
 <p>
     This script elucidates details about a service, including its name, description, and provider. By integrating structured data markup scripts on service pages, website owners can assist search engines in comprehending the services being offered, potentially augmenting their visibility in search results.
   </p>
 <p>
     <strong>5. FAQs:</strong> For websites featuring frequently asked questions (FAQs), a structured data markup script can be employed to provide information about those FAQs. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre>
+<code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -514,14 +576,17 @@ export default YourPage;
   ]
 }
 </script>
-</code></pre>
+</code>
+</pre>
 <p>
     This script delineates an FAQ page, comprising a list of questions and answers. By incorporating structured data markup scripts of this nature on FAQ pages, website owners can aid search engines in comprehending the content of their FAQs, potentially enhancing their visibility in search results.
   </p>
 <p>
     <strong>6. Locations:</strong> For websites featuring physical locations, a structured data markup script can be employed to provide information about those locations. Here's an example:
   </p>
-<pre><code><script type="application/ld+json">
+<pre>
+<code>
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Place",
@@ -536,7 +601,8 @@ export default YourPage;
   }
 }
 </script>
-</code></pre>
+</code>
+</pre>
 <p>
     This script delineates details about a location, comprising its name and address. By integrating structured data markup scripts on location pages, website owners can assist search engines in comprehending the locations associated with their business, potentially amplifying their visibility in search results.
   </p>
@@ -551,37 +617,44 @@ export default YourPage;
     Pros:
   </h3>
 <ol>
-    <li><strong>Enhanced Visibility:</strong> By furnishing search engines with structured data, website owners can assist them in comprehending and indexing web page content more effectively, potentially leading to enhanced visibility in search results.</li>
-    <li><strong>Rich Snippets:</strong> Proper implementation of structured data markup script can result in rich snippets, which can enhance the appearance of search results and attract more clicks from users.</li>
-    <li><strong>Improved User Experience:</strong> By providing search engines with structured data, website owners can facilitate a better user experience for search engine users, leading to higher engagement and satisfaction.</li>
+    <li>
+<strong>Enhanced Visibility:</strong> By furnishing search engines with structured data, website owners can assist them in comprehending and indexing web page content more effectively, potentially leading to enhanced visibility in search results.</li>
+    <li>
+<strong>Rich Snippets:</strong> Proper implementation of structured data markup script can result in rich snippets, which can enhance the appearance of search results and attract more clicks from users.</li>
+    <li>
+<strong>Improved User Experience:</strong> By providing search engines with structured data, website owners can facilitate a better user experience for search engine users, leading to higher engagement and satisfaction.</li>
 </ol>
 <h3>
     Cons:
   </h3>
 <ol>
-    <li><strong>Complexity:</strong> Implementing structured data markup script correctly can be complex, particularly for websites with extensive structured data or complex data structures.</li>
-    <li><strong>Maintenance:</strong> Maintaining structured data markup scripts can be time-consuming, especially as websites evolve and change over time.</li>
-    <li><strong>Dependency on Search Engines:</strong> Structured data markup script relies on search engines to interpret and utilize the provided structured data, making it susceptible to changes in search engine algorithms or policies.</li>
+    <li>
+<strong>Complexity:</strong> Implementing structured data markup script correctly can be complex, particularly for websites with extensive structured data or complex data structures.</li>
+    <li>
+<strong>Maintenance:</strong> Maintaining structured data markup scripts can be time-consuming, especially as websites evolve and change over time.</li>
+    <li>
+<strong>Dependency on Search Engines:</strong> Structured data markup script relies on search engines to interpret and utilize the provided structured data, making it susceptible to changes in search engine algorithms or policies.</li>
 </ol>
 <p>
     Structured data markup script is a potent tool for enhancing SEO performance and maximizing online visibility. By providing search engines with structured data about web page content, website owners can facilitate better understanding and indexing of their pages, potentially leading to higher rankings and increased organic traffic. While implementing and maintaining a structured data markup script may require effort and technical expertise, the benefits far outweigh the challenges. So, using structured data markup script as an integral component of your SEO strategy can help your website to new heights of success in the digital landscape.
   </p>
 </div>
 `,
-  },
-  {
-    id: 12,
-    title: "How to Optimize Your Commits for Efficient Project Management",
-    excerpt:
-      "Learn how to write clear, structured, and purposeful Git commits to improve collaboration, streamline reviews, and enhance your team's overall project management workflow.",
-    slug: "how-to-optimize-your-commits-for-efficient-project-management",
-    publishedAt: "2024-11-27",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.jpg", // Consider updating this image to something Git/Dev-related
-    category: `Tips`,
-    tags: ["Git", "Project Management", "Best Practices"],
-    content: `<div>
+};
+
+export const bp5 = {
+  // id: 12,
+  title: "How to Optimize Your Commits for Efficient Project Management",
+  excerpt:
+    "Learn how to write clear, structured, and purposeful Git commits to improve collaboration, streamline reviews, and enhance your team's overall project management workflow.",
+  slug: "how-to-optimize-your-commits-for-efficient-project-management",
+  publishedAt: "27-11-2024",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/how-to-optimize-your-commits-for-efficient-project-management-syed-ali-naqi-hasni.webp", // Consider updating this image to something Git/Dev-related
+  category: `Tips`,
+  tags: ["Git", "Project Management", "Best Practices"],
+  content: `<div>
 <p>
     In software development, version control is the backbone of smooth collaboration and project evolution. One of the most debated questions is: <em>How many commits should a project have?</em> While there's no definitive number, the key lies in structuring and managing your commits. In this article, we'll dive into the best practices for making commits that ensure your project remains clean, maintainable, and easy to debug.
   </p>
@@ -657,9 +730,12 @@ export default YourPage;
     The ideal number of commits depends on the project size:
   </p>
 <ul>
-    <li><strong>Small Projects:</strong> 20-50 commits, covering features, fixes, and refinements.</li>
-    <li><strong>Medium Projects:</strong> 100-500 commits, accommodating iterative development and team contributions.</li>
-    <li><strong>Large Projects:</strong> 1000+ commits, especially for projects spanning months or years.</li>
+    <li>
+<strong>Small Projects:</strong> 20-50 commits, covering features, fixes, and refinements.</li>
+    <li>
+<strong>Medium Projects:</strong> 100-500 commits, accommodating iterative development and team contributions.</li>
+    <li>
+<strong>Large Projects:</strong> 1000+ commits, especially for projects spanning months or years.</li>
 </ul>
 <p>
     The goal isn't to hit a specific number but to ensure that commits add value and maintain clarity.
@@ -676,25 +752,28 @@ export default YourPage;
   </p>
 </div>
 `,
-  },
-  {
-    id: 13,
-    title: "ReactPress: A Seamless React App Workflow with WordPress CMS",
-    excerpt:
-      "Discover how to integrate React with WordPress CMS using a headless or hybrid approach. Streamline your frontend workflow while managing content efficiently on the backend.",
-    slug: "reactpress-a-seamless-react-app-workflow-with-wordpress-cms",
-    publishedAt: "2024-11-27",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.png", // Update the image filename to match topic
-    category: `Tutorials`,
-    tags: ["React", "WordPress", "Headless CMS"],
-    content: `<div >
+};
+
+export const bp6 = {
+  // id: 13,
+  title: "ReactPress: A Seamless React App Workflow with WordPress CMS",
+  excerpt:
+    "Discover how to integrate React with WordPress CMS using a headless or hybrid approach. Streamline your frontend workflow while managing content efficiently on the backend.",
+  slug: "reactpress-a-seamless-react-app-workflow-with-wordpress-cms",
+  publishedAt: "27-11-2024",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/reactpress-a-seamless-react-app-workflow-with-wordpress-cms-syed-ali-naqi-hasni.webp", // Update the image filename to match topic
+  category: `Tutorials`,
+  tags: ["React", "WordPress", "Headless CMS"],
+  content: `<div >
 <p>
     Exciting news! I'm thrilled to share insights into how I seamlessly integrate <a href="https://www.linkedin.com/company/reactofficial/">React</a> apps into WordPress using the powerful <a href="https://wordpress.org/plugins/reactpress/">ReactPress plugin</a>. The combination of WordPress and React proves to be a game-changer for web app development, offering not only easy content management and robust user handling but also the unparalleled flexibility to evolve your site over time.
   </p>
 <h2>Why This Combo Works So Well:</h2>
-<p><strong>✨ WordPress Benefits:</strong></p>
+<p>
+<strong>✨ WordPress Benefits:</strong>
+</p>
 <ul>
     <li>Effortless content management for pages, landing pages, blogs, and marketing activities.</li>
     <li>Secure and proven user management.</li>
@@ -720,15 +799,24 @@ export default YourPage;
   </p>
 <h3>The Streamlined Process:</h3>
 <ol>
-    <li><strong>Set Up Your Local Dev Environment:</strong> Ensure access to Node.js, npm or yarn, and a POSIX-compatible system. (Experimental Windows support available through WSL-2).</li>
-    <li><strong>Install ReactPress Locally:</strong> Navigate to the plugin installation menu on your local WordPress, search for ReactPress, and install and activate the plugin.</li>
-    <li><strong>Create a New React App:</strong> Open a terminal, navigate to the apps directory of the ReactPress plugin, and use npx create-react-app [your-app-name].</li>
-    <li><strong>Configure Your App in WordPress:</strong> Access the ReactPress page in your WordPress admin, choose a unique URL Slug, and configure your new app.</li>
-    <li><strong>Develop Your React App:</strong> Utilize WordPress's built-in REST-API or opt for the WPGraphQL plugin if you prefer GraphQL.</li>
-    <li><strong>Build Your App for Deployment:</strong> Execute yarn build in the command line to prepare your app for deployment.</li>
-    <li><strong>Install ReactPress on Your Live Site:</strong> Just as you did on your local installation, install ReactPress on your live WordPress site.</li>
-    <li><strong>Mirror Your App Folder on Live System:</strong> Create the same React app folder on your live system using the exact directory name from your development server.</li>
-    <li><strong>Upload the Build to Deploy:</strong> Finally, upload the build of your React app to the live site, placing it in the corresponding app folder.</li>
+    <li>
+<strong>Set Up Your Local Dev Environment:</strong> Ensure access to Node.js, npm or yarn, and a POSIX-compatible system. (Experimental Windows support available through WSL-2).</li>
+    <li>
+<strong>Install ReactPress Locally:</strong> Navigate to the plugin installation menu on your local WordPress, search for ReactPress, and install and activate the plugin.</li>
+    <li>
+<strong>Create a New React App:</strong> Open a terminal, navigate to the apps directory of the ReactPress plugin, and use npx create-react-app [your-app-name].</li>
+    <li>
+<strong>Configure Your App in WordPress:</strong> Access the ReactPress page in your WordPress admin, choose a unique URL Slug, and configure your new app.</li>
+    <li>
+<strong>Develop Your React App:</strong> Utilize WordPress's built-in REST-API or opt for the WPGraphQL plugin if you prefer GraphQL.</li>
+    <li>
+<strong>Build Your App for Deployment:</strong> Execute yarn build in the command line to prepare your app for deployment.</li>
+    <li>
+<strong>Install ReactPress on Your Live Site:</strong> Just as you did on your local installation, install ReactPress on your live WordPress site.</li>
+    <li>
+<strong>Mirror Your App Folder on Live System:</strong> Create the same React app folder on your live system using the exact directory name from your development server.</li>
+    <li>
+<strong>Upload the Build to Deploy:</strong> Finally, upload the build of your React app to the live site, placing it in the corresponding app folder.</li>
 </ol>
 <p>
     Repeat these steps until your app is complete, ensuring a smooth development-to-deployment transition with ReactPress.
@@ -739,21 +827,22 @@ export default YourPage;
   </p>
 </div>
 `,
-  },
-  {
-    id: 14,
-    title:
-      "Exploring GitHub CLI: A Comprehensive Guide to Streamlining Your Workflow using CLI",
-    excerpt:
-      "Unlock the full power of GitHub from your terminal. Learn how GitHub CLI simplifies repository management, PRs, issues, and workflows directly from the command line.",
-    slug: "exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli",
-    publishedAt: "2024-01-04",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.png",
-    category: `Tips`,
-    tags: ["GitHub", "CLI Tools", "Developer Productivity"],
-    content: `<div >
+};
+
+export const bp7 = {
+  // id: 14,
+  title:
+    "Exploring GitHub CLI: A Comprehensive Guide to Streamlining Your Workflow using CLI",
+  excerpt:
+    "Unlock the full power of GitHub from your terminal. Learn how GitHub CLI simplifies repository management, PRs, issues, and workflows directly from the command line.",
+  slug: "exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli",
+  publishedAt: "04-01-2024",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/exploring-github-cli-a-comprehensive-guide-to-streamlining-your-workflow-using-cli-syed-ali-naqi-hasni.webp",
+  category: `Tips`,
+  tags: ["GitHub", "CLI Tools", "Developer Productivity"],
+  content: `<div >
 <p>
   In the ever-evolving landscape of software development, efficiency is paramount. GitHub, the leading platform for version control and collaboration, has introduced a powerful tool that takes efficiency to the command line—the GitHub CLI, or gh. This article will delve into the fundamentals of GitHub CLI, its applications in resolving day-to-day tasks, essential commands, and both the advantages and disadvantages of incorporating it into your workflow.
 </p>
@@ -772,12 +861,14 @@ export default YourPage;
 <p>
   Before diving into the capabilities of GitHub CLI, it's essential to have it installed. Installation is typically straightforward, with precompiled binaries available for various operating systems. For instance, on a Unix-based system, you can use:
 </p>
-<pre><code># Install GitHub CLI on Unix-based systems
+<pre>
+<code># Install GitHub CLI on Unix-based systems
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages 
 sudo apt update 
 sudo apt install gh
-</code></pre>
+</code>
+</pre>
 <p>
   For other platforms, consult the official GitHub CLI documentation.
 </p>
@@ -787,8 +878,10 @@ sudo apt install gh
 <p>
   Once installed, the next step is authentication. You need to authenticate gh with your GitHub account, allowing it to interact with your repositories seamlessly. Use the following command to authenticate:
 </p>
-<pre><code>gh auth login
-</code></pre>
+<pre>
+<code>gh auth login
+</code>
+</pre>
 <p>
   Follow the prompts to complete the authentication process.
 </p>
@@ -801,36 +894,46 @@ sudo apt install gh
 <p>
   GitHub CLI simplifies the process of creating issues directly from the command line. Use the following command:
 </p>
-<pre><code>gh issue create
-</code></pre>
+<pre>
+<code>gh issue create
+</code>
+</pre>
 <p>
   This command will prompt you for details such as the issue title, body, labels, and assignees. For example:
 </p>
-<pre><code>gh issue create --title "Fix Bug in Authentication Module" --body "The authentication module is throwing errors when handling certain edge cases."
-</code></pre>
+<pre>
+<code>gh issue create --title "Fix Bug in Authentication Module" --body "The authentication module is throwing errors when handling certain edge cases."
+</code>
+</pre>
 <h3>
   2. Creating a Pull Request
 </h3>
 <p>
   Initiating a pull request from the command line is as easy as creating an issue. Execute the following command:
 </p>
-<pre><code>gh pr create
-</code></pre>
+<pre>
+<code>gh pr create
+</code>
+</pre>
 <p>
   Similar to creating an issue, you'll be prompted for details such as the pull request title, body, base branch, and head branch. For example:
 </p>
-<pre><code>gh pr create --title "Feature: New User Registration" --body "This pull request adds functionality for new user registration." --base main --head feature-branch
-</code></pre>
+<pre>
+<code>gh pr create --title "Feature: New User Registration" --body "This pull request adds functionality for new user registration." --base main --head feature-branch
+</code>
+</pre>
 <h3>
   3. Pushing Changes
 </h3>
 <p>
   gh simplifies pushing changes to your repository with the following command:
 </p>
-<pre><code>gh repo view --clone
+<pre>
+<code>gh repo view --clone
 # Make changes to files
 gh repo sync
-</code></pre>
+</code>
+</pre>
 <p>
   This sequence of commands fetches the repository, makes the necessary changes, and syncs them back to GitHub.
 </p>
@@ -840,8 +943,10 @@ gh repo sync
 <p>
   To pull changes from a remote repository, use the following command:
 </p>
-<pre><code>gh repo sync
-</code></pre>
+<pre>
+<code>gh repo sync
+</code>
+</pre>
 <p>
   This command fetches changes from the remote repository and merges them into your local branch.
 </p>
@@ -851,10 +956,12 @@ gh repo sync
 <p>
   Checking out a branch is a common operation, and GitHub CLI provides an easy way to do so:
 </p>
-<pre><code>gh repo clone <repository>
+<pre>
+<code>gh repo clone <repository>
 cd <repository>
 gh repo branch <branch-name>
-</code></pre>
+</code>
+</pre>
 <p>
   Replace <repository> with the name of the repository and <branch-name> with the desired branch.
 </p>
@@ -864,13 +971,17 @@ gh repo branch <branch-name>
 <p>
   Releasing new versions of your software is a crucial part of the development lifecycle. GitHub CLI allows you to create releases seamlessly:
 </p>
-<pre><code>gh release create <tag> <files> --notes <notes>
-</code></pre>
+<pre>
+<code>gh release create <tag> <files> --notes <notes>
+</code>
+</pre>
 <p>
   Replace <tag> with the version tag, <files> with the files to be included in the release, and <notes> with the release notes. For example:
 </p>
-<pre><code>gh release create v1.0.0 dist/* --notes "Release notes for version 1.0.0"
-</code></pre>
+<pre>
+<code>gh release create v1.0.0 dist/* --notes "Release notes for version 1.0.0"
+</code>
+</pre>
 <h3>
   Advantages of GitHub CLI
 </h3>
@@ -931,21 +1042,22 @@ gh repo branch <branch-name>
 
 </div>
 `,
-  },
-  {
-    id: 11,
-    title:
-      "The Synergy of Individuality and Team Skills: Unleashing the Full Potential of Collaboration",
-    excerpt:
-      "Explore how balancing individual strengths with collective team dynamics leads to innovation, productivity, and high-performance collaboration in any professional environment.",
-    slug: "the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration",
-    publishedAt: "2023-07-21",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.png", // Consider updating this image to match the topic
-    category: `Opinions`,
-    tags: ["Teamwork", "Leadership", "Workplace Strategy"],
-    content: `<div>
+};
+
+export const bp8 = {
+  // id: 11,
+  title:
+    "The Synergy of Individuality and Team Skills: Unleashing the Full Potential of Collaboration",
+  excerpt:
+    "Explore how balancing individual strengths with collective team dynamics leads to innovation, productivity, and high-performance collaboration in any professional environment.",
+  slug: "the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration",
+  publishedAt: "21-07-2023",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/the-synergy-of-individuality-and-team-skills-unleashing-the-full-potential-of-collaboration-syed-ali-naqi-hasni.webp", // Consider updating this image to match the topic
+  category: `Opinions`,
+  tags: ["Teamwork", "Leadership", "Workplace Strategy"],
+  content: `<div>
 <p>
     In the pursuit of success and progress, teams have become the cornerstone of modern society. From business enterprises to sports teams and community organizations, the collective power of individuals working together towards a common goal is undeniable. However, it is essential to recognize that the value of individuality is equally crucial in the context of team dynamics. In this article, we will explore how embracing and fostering individuality can enhance team skills, leading to unprecedented levels of innovation, creativity, and overall effectiveness.
   </p>
@@ -997,20 +1109,21 @@ gh repo branch <branch-name>
   </p>
 </div>
 `,
-  },
-  {
-    id: 10,
-    title: "Content Management for PWAs: Embrace the Headless CMS Approach",
-    excerpt:
-      "Discover how headless CMS solutions can power content delivery for Progressive Web Apps (PWAs), offering improved performance, flexibility, and seamless omnichannel publishing.",
-    slug: "content-management-for-pwas-embrace-the-headless-cms-approach",
-    publishedAt: "2023-07-17",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.png",
-    category: `Tips`,
-    tags: ["Headless CMS", "PWA", "Content Strategy"],
-    content: `<div >
+};
+
+export const bp9 = {
+  // id: 10,
+  title: "Content Management for PWAs: Embrace the Headless CMS Approach",
+  excerpt:
+    "Discover how headless CMS solutions can power content delivery for Progressive Web Apps (PWAs), offering improved performance, flexibility, and seamless omnichannel publishing.",
+  slug: "content-management-for-pwas-embrace-the-headless-cms-approach",
+  publishedAt: "17-07-2023",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/content-management-for-pwas-embrace-the-headless-cms-approach-syed-ali-naqi-hasni.webp",
+  category: `Tips`,
+  tags: ["Headless CMS", "PWA", "Content Strategy"],
+  content: `<div >
 <p>
     Progressive Web Applications (PWAs) have gained immense popularity due to their ability to offer a seamless user experience across different platforms. To build a robust PWA, a reliable Content Management System (CMS) is essential to manage content efficiently. Headless CMS solutions have emerged as a popular choice for PWA development, offering flexibility, scalability, and a decoupled architecture that suits modern development requirements. In this article, we explore some of the top headless CMS options that you can use for your PWA web and mobile applications.
   </p>
@@ -1044,21 +1157,22 @@ gh repo branch <branch-name>
   </p>
 </div>
 `,
-  },
-  {
-    id: 9,
-    title:
-      "Stay Ahead of Vulnerabilities: A Guide to GitHub Dependabot and CodeQL",
-    excerpt:
-      "Learn how GitHub Dependabot and CodeQL help developers detect and fix vulnerabilities early. Stay secure by automating security updates and code analysis in your development workflow.",
-    slug: "stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql",
-    publishedAt: "2025-01-14",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.jpg",
-    category: `Opinions`,
-    tags: ["Security", "GitHub", "Development Tools"],
-    content: `<div >
+};
+
+export const bp10 = {
+  // id: 9,
+  title:
+    "Stay Ahead of Vulnerabilities: A Guide to GitHub Dependabot and CodeQL",
+  excerpt:
+    "Learn how GitHub Dependabot and CodeQL help developers detect and fix vulnerabilities early. Stay secure by automating security updates and code analysis in your development workflow.",
+  slug: "stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql",
+  publishedAt: "14-01-2025",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/stay-ahead-of-vulnerabilities-a-guide-to-github-dependabot-and-codeql-syed-ali-naqi-hasni.webp",
+  category: `Opinions`,
+  tags: ["Security", "GitHub", "Development Tools"],
+  content: `<div >
 <h3>
     What is GitHub Dependabot?
   </h3>
@@ -1072,10 +1186,14 @@ gh repo branch <branch-name>
     Dependabot works by:
   </p>
 <ul>
-    <li><strong>Dependency Scanning:</strong> It monitors your project for outdated or vulnerable dependencies. Dependabot uses GitHub's vulnerability database to identify potential security risks.</li>
-    <li><strong>Pull Request Creation:</strong> Once it detects an outdated or insecure dependency, it creates a pull request with the suggested update.</li>
-    <li><strong>Version Compatibility Check:</strong> Dependabot ensures that the updated dependency version won't break your project by running any existing CI/CD tests.</li>
-    <li><strong>Automated Updates:</strong> You can configure Dependabot to automatically merge updates if all tests pass.</li>
+    <li>
+<strong>Dependency Scanning:</strong> It monitors your project for outdated or vulnerable dependencies. Dependabot uses GitHub's vulnerability database to identify potential security risks.</li>
+    <li>
+<strong>Pull Request Creation:</strong> Once it detects an outdated or insecure dependency, it creates a pull request with the suggested update.</li>
+    <li>
+<strong>Version Compatibility Check:</strong> Dependabot ensures that the updated dependency version won't break your project by running any existing CI/CD tests.</li>
+    <li>
+<strong>Automated Updates:</strong> You can configure Dependabot to automatically merge updates if all tests pass.</li>
 </ul>
 <h3>
     What is CodeQL?
@@ -1087,9 +1205,12 @@ gh repo branch <branch-name>
     When integrated into your GitHub repository, CodeQL:
   </p>
 <ul>
-    <li><strong>Analyzes Code:</strong> It creates a database of your project's code structure, allowing for advanced querying and analysis.</li>
-    <li><strong>Detects Security Issues:</strong> Predefined queries scan your codebase for common security vulnerabilities.</li>
-    <li><strong>Supports Custom Queries:</strong> You can write custom queries to meet specific security needs.</li>
+    <li>
+<strong>Analyzes Code:</strong> It creates a database of your project's code structure, allowing for advanced querying and analysis.</li>
+    <li>
+<strong>Detects Security Issues:</strong> Predefined queries scan your codebase for common security vulnerabilities.</li>
+    <li>
+<strong>Supports Custom Queries:</strong> You can write custom queries to meet specific security needs.</li>
 </ul>
 <h2>
     How to Enable and Configure Dependabot
@@ -1110,13 +1231,15 @@ gh repo branch <branch-name>
     <li>Create a .github/dependabot.yml file in your repository.</li>
     <li>Add the following configuration (example for npm):</li>
 </ul>
-<pre><code>version: 2
+<pre>
+<code>version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "https://www.syedalinaqihasni.com/"
+    directory: "/"
     schedule:
       interval: "weekly"
-</code></pre>
+</code>
+</pre>
 <ul>
     <li>Replace <strong>npm</strong> with the relevant ecosystem for your project <strong>(e.g., pip, maven, etc.)</strong>.</li>
 </ul>
@@ -1172,10 +1295,14 @@ updates:
     Using Dependabot and CodeQL together offers a powerful approach to managing project dependencies and maintaining code security. Here are some tips for effective implementation:
   </p>
 <ul>
-    <li><strong>Enable Both Tools Early:</strong> Start using Dependabot and CodeQL from the beginning of your project to establish strong security and update practices.</li>
-    <li><strong>Automate Where Possible:</strong> Use automated tests and auto-merge features to streamline the update process.</li>
-    <li><strong>Monitor Alerts:</strong> Regularly review Dependabot and CodeQL alerts to address issues promptly.</li>
-    <li><strong>Leverage CI/CD Pipelines:</strong> Ensure robust testing workflows are in place to validate updates and security patches.</li>
+    <li>
+<strong>Enable Both Tools Early:</strong> Start using Dependabot and CodeQL from the beginning of your project to establish strong security and update practices.</li>
+    <li>
+<strong>Automate Where Possible:</strong> Use automated tests and auto-merge features to streamline the update process.</li>
+    <li>
+<strong>Monitor Alerts:</strong> Regularly review Dependabot and CodeQL alerts to address issues promptly.</li>
+    <li>
+<strong>Leverage CI/CD Pipelines:</strong> Ensure robust testing workflows are in place to validate updates and security patches.</li>
 </ul>
 <p>
     By adopting these practices, you can ensure your projects remain secure and up-to-date, giving you more confidence in your codebase.
@@ -1189,20 +1316,21 @@ updates:
 <br>
 </div>
 `,
-  },
-  {
-    id: 8,
-    title: "Essential Apps Every Shopify Store Must Have",
-    excerpt:
-      "Discover the must-have apps for every Shopify store to boost sales, improve customer experience, and streamline operations. From marketing to inventory management, these tools can power your eCommerce success.",
-    slug: "essential-apps-every-shopify-store-must-have",
-    publishedAt: "2023-06-12",
-    readingTime: "4 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.png",
-    category: `Tips`,
-    tags: ["Shopify", "eCommerce", "Business Tools"],
-    content: `<div>
+};
+
+export const bp11 = {
+  // id: 8,
+  title: "Essential Apps Every Shopify Store Must Have",
+  excerpt:
+    "Discover the must-have apps for every Shopify store to boost sales, improve customer experience, and streamline operations. From marketing to inventory management, these tools can power your eCommerce success.",
+  slug: "essential-apps-every-shopify-store-must-have",
+  publishedAt: "12-06-2023",
+  readingTime: "4 min read",
+  image:
+    "/images/blogs/essential-apps-every-shopify-store-must-have-syed-ali-naqi-hasni.webp",
+  category: `Tips`,
+  tags: ["Shopify", "eCommerce", "Business Tools"],
+  content: `<div>
      <p>
     When it comes to running a successful Shopify store, having the right apps can make all the difference. These apps can enhance your store's functionality, streamline operations, and boost sales. In this article, we have compiled a list of 30 essential apps that every Shopify store must have. Each app comes with a link to its Shopify App Store page, making it easy for you to explore and install them for your store.
   </p>
@@ -1294,21 +1422,22 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
 <p>
     These essential apps cover a range of functionalities, from drop-shipping to marketing, customer support, and optimization. Incorporating these apps into your Shopify store can enhance your operations, improve customer experience, and drive sales. Each app comes with its own unique features and benefits, so explore their links to learn more and determine which ones best suit the needs of your business.
   </p> </div>`,
-  },
-  {
-    id: 7,
-    title:
-      "S.O.L.I.D Principles of Object Oriented Design: A Quick Guide to Enhance Your Development Standards",
-    excerpt:
-      "Master the S.O.L.I.D principles of object-oriented design to write cleaner, more maintainable code. This quick guide breaks down each principle with real-world examples for modern developers.",
-    slug: "solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards",
-    publishedAt: "2025-04-28",
-    readingTime: "4 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.jpg",
-    category: `Opinions`,
-    tags: ["Programming", "Software Design", "Best Practices"],
-    content: `<div>
+};
+
+export const bp12 = {
+  // id: 7,
+  title:
+    "S.O.L.I.D Principles of Object Oriented Design: A Quick Guide to Enhance Your Development Standards",
+  excerpt:
+    "Master the S.O.L.I.D principles of object-oriented design to write cleaner, more maintainable code. This quick guide breaks down each principle with real-world examples for modern developers.",
+  slug: "solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards",
+  publishedAt: "28-04-2025",
+  readingTime: "4 min read",
+  image:
+    "/images/blogs/solid-principles-of-object-oriented-design-a-quick-guide-to-enhance-your-development-standards-syed-ali-naqi-hasni.webp",
+  category: `Opinions`,
+  tags: ["Programming", "Software Design", "Best Practices"],
+  content: `<div>
 <p>
     When you're early in React development, you focus on making things work. Later, as projects grow, you realize
     <strong>that architecture</strong> and <strong>design principles</strong> are <strong>even more important</strong>
@@ -1323,13 +1452,21 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
     <strong>SOLID</strong> is an acronym for 5 software design principles that help developers:
   </p>
 <ul>
-    <li><strong>Write better-structured code</strong></li>
-    <li><strong>Reduce complexity</strong></li>
-    <li><strong>Avoid code rot and technical debt</strong></li>
-    <li><strong>Make systems easier to understand, extend, and test</strong></li>
+    <li>
+<strong>Write better-structured code</strong>
+</li>
+    <li>
+<strong>Reduce complexity</strong>
+</li>
+    <li>
+<strong>Avoid code rot and technical debt</strong>
+</li>
+    <li>
+<strong>Make systems easier to understand, extend, and test</strong>
+</li>
 </ul>
 <p>
-    These principles were popularized by <a href="https://www.syedalinaqihasni.com/in/robert-martin-7395b0/">Robert Martin</a> aka <strong>Uncle
+    These principles were popularized by <a href="/in/robert-martin-7395b0/">Robert Martin</a> aka <strong>Uncle
       Bob</strong> and are especially powerful when working on <strong>large apps</strong> or <strong>team
       projects,</strong> including <strong>modern React.js</strong> applications.
   </p>
@@ -1346,12 +1483,18 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
 </p>
 <h3>Why It Matters:</h3>
 <ul>
-    <li><strong>Separation of concerns:</strong> Easier to understand what each piece of the system does.</li>
-    <li><strong>Easier maintenance:</strong> When a bug occurs, you know exactly where to look.</li>
-    <li><strong>Better reusability:</strong> Components and hooks become more generic and reusable.</li>
-    <li><strong>Simpler testing:</strong> Single-responsibility units are easier to mock and test.</li>
+    <li>
+<strong>Separation of concerns:</strong> Easier to understand what each piece of the system does.</li>
+    <li>
+<strong>Easier maintenance:</strong> When a bug occurs, you know exactly where to look.</li>
+    <li>
+<strong>Better reusability:</strong> Components and hooks become more generic and reusable.</li>
+    <li>
+<strong>Simpler testing:</strong> Single-responsibility units are easier to mock and test.</li>
 </ul>
-<p><strong>Without SRP:</strong></p>
+<p>
+<strong>Without SRP:</strong>
+</p>
 <ul>
     <li>Components become bloated ("God Components").</li>
     <li>Minor changes risk breaking unrelated features.</li>
@@ -1362,7 +1505,8 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
         rendering</strong> simultaneously.</li>
 </ul>
 <h3>Example of Bad SRP:</h3>
-<pre><code>function UserProfile({ userId }) {
+<pre>
+<code>function UserProfile({ userId }) {
   const [user, setUser] = useState(null);
   useEffect(() => {
     fetch(&#96;
@@ -1381,17 +1525,22 @@ A sections, Yotpo enhances the shopping experience and drives conversions.
   );
 
 }
-</code></pre>
+</code>
+</pre>
 <ul>
-    <li><strong>Problem:</strong> Fetching logic + display logic = mixed responsibilities.</li>
+    <li>
+<strong>Problem:</strong> Fetching logic + display logic = mixed responsibilities.</li>
 </ul>
 <h3>Applying SRP Correctly:</h3>
 <p>Break it into two:</p>
 <ul>
-    <li><strong>Hook</strong> for fetching user data.</li>
-    <li><strong>Component</strong> for displaying.</li>
+    <li>
+<strong>Hook</strong> for fetching user data.</li>
+    <li>
+<strong>Component</strong> for displaying.</li>
 </ul>
-<pre><code>function useUser(userId) {
+<pre>
+<code>function useUser(userId) {
   const [user, setUser] = useState(null);
   useEffect(() => {
     fetch(&#96;
@@ -1417,7 +1566,8 @@ function UserProfile({ userId }) {
   );
 
 }
-</code></pre>
+</code>
+</pre>
 <ul>
     <li>useUser → Data fetching</li>
     <li>UserProfile → UI</li>
@@ -1436,14 +1586,20 @@ function UserProfile({ userId }) {
 </p>
 <h3>Why It Matters:</h3>
 <ul>
-    <li><strong>Future-proofing:</strong> You can evolve systems by adding new features without touching stable, tested
+    <li>
+<strong>Future-proofing:</strong> You can evolve systems by adding new features without touching stable, tested
       code.</li>
-    <li><strong>Reduces bugs:</strong> Modifying old code always carries risk.</li>
-    <li><strong>Enables safe scaling:</strong> New requirements don't destroy your architecture.</li>
-    <li><strong>Cleaner team collaboration:</strong> Developers can extend behavior safely without fighting over old
+    <li>
+<strong>Reduces bugs:</strong> Modifying old code always carries risk.</li>
+    <li>
+<strong>Enables safe scaling:</strong> New requirements don't destroy your architecture.</li>
+    <li>
+<strong>Cleaner team collaboration:</strong> Developers can extend behavior safely without fighting over old
       files.</li>
 </ul>
-<p><strong>Without OCP:</strong></p>
+<p>
+<strong>Without OCP:</strong>
+</p>
 <ul>
     <li>Adding features feels like playing Jenga — every change risks a collapse.</li>
 </ul>
@@ -1451,21 +1607,27 @@ function UserProfile({ userId }) {
 <ul>
     <li>Hardcoding new behavior into old components.</li>
 </ul>
-<p><strong>Bad Example:</strong></p>
-<pre><code>function Notification({ type, message }) {
+<p>
+<strong>Bad Example:</strong>
+</p>
+<pre>
+<code>function Notification({ type, message }) {
   if (type === "success") return <div className="success">{message}</div>;
   if (type === "error") return <div className="error">{message}</div>;
   if (type === "info") return <div className="info">{message}</div>;
 
 }
-</code></pre>
+</code>
+</pre>
 <ul>
-    <li><strong>Problem:</strong> Every time a new type comes (warning, alert), we have to <strong>edit</strong> this
+    <li>
+<strong>Problem:</strong> Every time a new type comes (warning, alert), we have to <strong>edit</strong> this
       component.</li>
 </ul>
 <h3>Applying OCP Correctly:</h3>
 <p>Use a <strong>mapping</strong> or <strong>configuration-based approach</strong>.</p>
-<pre><code>const notificationStyles = {
+<pre>
+<code>const notificationStyles = {
   success: "success",
   error: "error",
   info: "info",
@@ -1476,10 +1638,12 @@ function Notification({ type, message }) {
   return <div className={className}>{message}</div>;
 
 }
-</code></pre>
+</code>
+</pre>
 <ul>
     <li>To add new types, just update notificationStyles.</li>
-    <li><strong>No core code change needed</strong>.</li>
+    <li>
+<strong>No core code change needed</strong>.</li>
 </ul>
 <h3>Best Practice Tip:</h3>
 <blockquote>
@@ -1496,12 +1660,18 @@ function Notification({ type, message }) {
 </p>
 <h3>Why It Matters:</h3>
 <ul>
-    <li><strong>Predictable behavior:</strong> Child components/hooks don't cause unexpected bugs.</li>
-    <li><strong>Encourages abstraction:</strong> Forces you to design general, flexible contracts.</li>
-    <li><strong>Boosts composability:</strong> New features are easier to plug in.</li>
-    <li><strong>Helps unit testing:</strong> Substitutes (mocks/stubs) can easily replace real services.</li>
+    <li>
+<strong>Predictable behavior:</strong> Child components/hooks don't cause unexpected bugs.</li>
+    <li>
+<strong>Encourages abstraction:</strong> Forces you to design general, flexible contracts.</li>
+    <li>
+<strong>Boosts composability:</strong> New features are easier to plug in.</li>
+    <li>
+<strong>Helps unit testing:</strong> Substitutes (mocks/stubs) can easily replace real services.</li>
 </ul>
-<p><strong>Without LSP:</strong></p>
+<p>
+<strong>Without LSP:</strong>
+</p>
 <ul>
     <li>Extending systems causes fragile bugs that are hard to detect.</li>
 </ul>
@@ -1510,7 +1680,8 @@ function Notification({ type, message }) {
     <li>Components that <strong>expect specific implementations</strong>, not abstractions.</li>
 </ul>
 <h3>Bad Example:</h3>
-<pre><code>function PaymentProcessor({ payment }) {
+<pre>
+<code>function PaymentProcessor({ payment }) {
   if (payment.type === "paypal") {
     return <PaypalComponent />;
   }
@@ -1518,13 +1689,16 @@ function Notification({ type, message }) {
     return <StripeComponent />;
   }
 }
-</code></pre>
+</code>
+</pre>
 <ul>
-    <li><strong>Problem:</strong> Tight coupling to specific services.</li>
+    <li>
+<strong>Problem:</strong> Tight coupling to specific services.</li>
 </ul>
 <h3>Applying LSP Correctly:</h3>
 <p>Pass <strong>components</strong> or <strong>handlers</strong> dynamically.</p>
-<pre><code>function PaymentProcessor({ PaymentComponent }) {
+<pre>
+<code>function PaymentProcessor({ PaymentComponent }) {
   return <PaymentComponent />;
 
 }
@@ -1532,7 +1706,8 @@ function Notification({ type, message }) {
 // Usage
 <PaymentProcessor PaymentComponent={PaypalComponent} />
 <PaymentProcessor PaymentComponent={StripeComponent} />
-</code></pre>
+</code>
+</pre>
 <ul>
     <li>Now, any payment method can be passed without changing PaymentProcessor.</li>
 </ul>
@@ -1549,12 +1724,18 @@ function Notification({ type, message }) {
 </p>
 <h3>Why It Matters:</h3>
 <ul>
-    <li><strong>Simplifies usage:</strong> Components receive only what they need.</li>
-    <li><strong>Easier maintenance:</strong> Changes in one part don't break unrelated users.</li>
-    <li><strong>Improves readability:</strong> Developers instantly understand a component's API.</li>
-    <li><strong>Enables flexibility:</strong> Specialized components for different situations.</li>
+    <li>
+<strong>Simplifies usage:</strong> Components receive only what they need.</li>
+    <li>
+<strong>Easier maintenance:</strong> Changes in one part don't break unrelated users.</li>
+    <li>
+<strong>Improves readability:</strong> Developers instantly understand a component's API.</li>
+    <li>
+<strong>Enables flexibility:</strong> Specialized components for different situations.</li>
 </ul>
-<p><strong>Without ISP:</strong></p>
+<p>
+<strong>Without ISP:</strong>
+</p>
 <ul>
     <li>Developers are forced to provide unnecessary props, causing confusion.</li>
 </ul>
@@ -1563,16 +1744,20 @@ function Notification({ type, message }) {
     <li>Huge components are expecting <strong>too many props</strong>.</li>
 </ul>
 <h3>Bad Example:</h3>
-<pre><code>function DataTable({ data, onSort, onFilter, onExport, onPaginate }) {
+<pre>
+<code>function DataTable({ data, onSort, onFilter, onExport, onPaginate }) {
   // Basic table that might not even need export or pagination
 }
-</code></pre>
+</code>
+</pre>
 <ul>
-    <li><strong>Problem:</strong> Most consumers may not need all these actions.</li>
+    <li>
+<strong>Problem:</strong> Most consumers may not need all these actions.</li>
 </ul>
 <h3>Applying ISP Correctly:</h3>
 <p>Split the components:</p>
-<pre><code>function BasicTable({ data }) {
+<pre>
+<code>function BasicTable({ data }) {
   return (
     <table>
       {/* Basic table rendering */}
@@ -1589,7 +1774,8 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
   );
 
 }
-</code></pre>
+</code>
+</pre>
 <ul>
     <li>Basic consumers stay simple.</li>
     <li>Advanced consumers opt into complexity.</li>
@@ -1609,12 +1795,18 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 </p>
 <h3>Why It Matters:</h3>
 <ul>
-    <li><strong>Testability:</strong> You can mock external services easily.</li>
-    <li><strong>Decoupling:</strong> Changes in API layers or databases don't ripple into UI layers.</li>
-    <li><strong>Flexibility:</strong> Easily swap APIs, services, storage methods.</li>
-    <li><strong>Cleaner architecture:</strong> Business logic stays business logic.</li>
+    <li>
+<strong>Testability:</strong> You can mock external services easily.</li>
+    <li>
+<strong>Decoupling:</strong> Changes in API layers or databases don't ripple into UI layers.</li>
+    <li>
+<strong>Flexibility:</strong> Easily swap APIs, services, storage methods.</li>
+    <li>
+<strong>Cleaner architecture:</strong> Business logic stays business logic.</li>
 </ul>
-<p><strong>Without DIP:</strong></p>
+<p>
+<strong>Without DIP:</strong>
+</p>
 <ul>
     <li>Changing an API requires rewriting your UI.</li>
 </ul>
@@ -1622,24 +1814,30 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 <ul>
     <li>UI components directly calling APIs.</li>
 </ul>
-<p><strong>Bad Example:</strong></p>
-<pre><code>function ProductsList() {
+<p>
+<strong>Bad Example:</strong>
+</p>
+<pre>
+<code>function ProductsList() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://www.syedalinaqihasni.com/api/products")
+    fetch("/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
   return products.map((p) => <div>{p.name}</div>);
 
 }
-</code></pre>
+</code>
+</pre>
 <ul>
-    <li><strong>Problem:</strong> tightly coupled to API details.</li>
+    <li>
+<strong>Problem:</strong> tightly coupled to API details.</li>
 </ul>
 <h3>Applying DIP Correctly:</h3>
 <p>Abstract fetching logic:</p>
-<pre><code>function useProducts(service) {
+<pre>
+<code>function useProducts(service) {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     service?.fetchProducts().then(setProducts);
@@ -1650,7 +1848,7 @@ function AdvancedTable({ data, onSort, onFilter, onExport, onPaginate }) {
 
 // Service layer
 const productService = {
-  fetchProducts: () => fetch("https://www.syedalinaqihasni.com/api/products").then((res) => res.json()),
+  fetchProducts: () => fetch("/api/products").then((res) => res.json()),
 };
 
 // Component
@@ -1659,7 +1857,8 @@ function ProductsList() {
   return products.map((p) => <div key={p.id}>{p.name}</div>);
 
 }
-</code></pre>
+</code>
+</pre>
 <ul>
     <li>Want to test with mock products? Inject a <strong>mock service</strong>.</li>
 </ul>
@@ -1676,12 +1875,14 @@ function ProductsList() {
     When you apply SOLID in React:
   </p>
 <ul>
-    <li><strong>SOLID</strong> teaches you how to structure code for <strong>long-term success</strong> — not just
+    <li>
+<strong>SOLID</strong> teaches you how to structure code for <strong>long-term success</strong> — not just
       "quick working prototypes."</li>
     <li>In React, it leads to <strong>smaller components</strong>, <strong>better hooks</strong>, <strong>easier
         testing</strong>, and <strong>more scalable apps</strong>.</li>
     <li>Mastering SOLID is the difference between <strong>"I can build apps"</strong> and <strong>"I can build
-        systems."</strong></li>
+        systems."</strong>
+</li>
 </ul>
 <p>
     It's what separates <strong>“hacky apps”</strong> from <strong>“professional-grade systems.”</strong>
@@ -1695,20 +1896,21 @@ function ProductsList() {
     #ReactJS #SOLIDPrinciples #FrontendEngineering #SoftwareArchitecture #CleanCode #ReactBestPractices
   </p>
 </div>`,
-  },
-  {
-    id: 5,
-    title: "How Small Shopify App Development Skills Can Boost Your Career",
-    excerpt:
-      "Learn how even basic Shopify app development skills can open up big career opportunities. Discover the benefits of becoming a Shopify app developer and how to get started.",
-    slug: "how-small-shopify-app-development-skills-can-boost-your-career",
-    publishedAt: "2024-05-10",
-    readingTime: "4 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career-syed-ali-naqi-hasni.webp",
-    category: `Tips`,
-    tags: ["Shopify", "Career Growth", "Web Development"],
-    content: `<div>
+};
+
+export const bp13 = {
+  // id: 5,
+  title: "How Small Shopify App Development Skills Can Boost Your Career",
+  excerpt:
+    "Learn how even basic Shopify app development skills can open up big career opportunities. Discover the benefits of becoming a Shopify app developer and how to get started.",
+  slug: "how-small-shopify-app-development-skills-can-boost-your-career",
+  publishedAt: "10-05-2024",
+  readingTime: "4 min read",
+  image:
+    "/images/blogs/how-small-shopify-app-development-skills-can-boost-your-career-syed-ali-naqi-hasni.webp",
+  category: `Tips`,
+  tags: ["Shopify", "Career Growth", "Web Development"],
+  content: `<div>
     <p>
     In today's digital era, e-commerce continues to thrive, and platforms like Shopify
     have revolutionized the way businesses operate online. While many entrepreneurs utilize Shopify to build their
@@ -1781,21 +1983,22 @@ function ProductsList() {
     as a valuable asset in the digital marketplace. Embrace the world of Shopify app development, and unlock a world
     of career possibilities and professional growth.</p>
     </div>`,
-  },
-  {
-    id: 6,
-    title:
-      "Why I'm Moving from Shortcodes to Custom Blocks in WordPress and You Should Too…",
-    excerpt:
-      "Discover why moving from shortcodes to custom blocks in WordPress is a game-changer for performance, usability, and future-proofing your site. Learn how Gutenberg blocks can elevate your content editing experience.",
-    slug: "why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too",
-    publishedAt: "2025-01-08",
-    readingTime: "4 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too-syed-ali-naqi-hasni.webp",
-    category: `Tutorials`,
-    tags: ["WordPress", "Gutenberg", "Web Development"],
-    content: `<div>
+};
+
+export const bp14 = {
+  // id: 6,
+  title:
+    "Why I'm Moving from Shortcodes to Custom Blocks in WordPress and You Should Too…",
+  excerpt:
+    "Discover why moving from shortcodes to custom blocks in WordPress is a game-changer for performance, usability, and future-proofing your site. Learn how Gutenberg blocks can elevate your content editing experience.",
+  slug: "why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too",
+  publishedAt: "08-01-2025",
+  readingTime: "4 min read",
+  image:
+    "/images/blogs/why-im-moving-from-shortcodes-to-custom-blocks-in-wordpress-and-you-should-too-syed-ali-naqi-hasni.webp",
+  category: `Tutorials`,
+  tags: ["WordPress", "Gutenberg", "Web Development"],
+  content: `<div>
     
     <p>
     For years, I relied on shortcodes in WordPress to add functionality to my websites.
@@ -1816,12 +2019,15 @@ function ProductsList() {
     of how I used to create a custom shortcode:</p>
 <p>
     Example: A Simple Contact Form Shortcode</p>
-<pre><code>// Add this to functions.php or a custom plugin
+<pre>
+<code>// Add this to functions.php or a custom plugin
 function custom_contact_form_shortcode() {
     return '
         <form>
-            <input type="text" placeholder="Your Name"><br>
-            <input type="email" placeholder="Your Email"><br>
+            <input type="text" placeholder="Your Name">
+<br>
+            <input type="email" placeholder="Your Email">
+<br>
             <button type="submit">Submit</button>
         </form>
     ';
@@ -1829,7 +2035,8 @@ function custom_contact_form_shortcode() {
 }
 add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
 
-</code></pre>
+</code>
+</pre>
 <h1>
     What Are Custom Blocks?</h1>
 <p>
@@ -1882,7 +2089,8 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
     Step 1: Register a Custom Block</h1>
 <p>
     I added this code to my theme's functions.php file or a custom plugin:</p>
-<pre><code>function register_contact_form_block() {
+<pre>
+<code>function register_contact_form_block() {
     wp_register_script(
         'custom-contact-form-block',
         get_template_directory_uri() . '/js/contact-form-block.js',
@@ -1897,10 +2105,12 @@ add_shortcode('add_contact_form', 'custom_contact_form_shortcode');
 }
 add_action('init', 'register_contact_form_block');
 
-</code></pre>
+</code>
+</pre>
 <h1>
     Step 2: Create the Block Script (contact-form-block.js)</h1>
-<pre><code>const { registerBlockType } = wp.blocks;
+<pre>
+<code>const { registerBlockType } = wp.blocks;
 
 const { createElement } = wp.element;
 
@@ -1930,7 +2140,8 @@ registerBlockType('custom/contact-form', {
         ),
 });
 
-</code></pre>
+</code>
+</pre>
 <p>
     With this, I now have a custom block that I can add directly in the editor,
     complete with a visual preview.</p>
@@ -1986,20 +2197,21 @@ registerBlockType('custom/contact-form', {
     you need help navigating the transition!</p>
     
     </div>`,
-  },
-  {
-    id: 4,
-    title: "Top WordPress Push Notification Plugins for Web, Android & iOS",
-    excerpt:
-      "Explore the best WordPress push notification plugins to boost user engagement across web, Android, and iOS platforms. Learn which tools offer real-time alerts, automation, and easy integration.",
-    slug: "top-wordpress-push-notification-plugins-for-web-android-ios",
-    publishedAt: "2024-05-10",
-    readingTime: "4 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios-syed-ali-naqi-hasni.webp",
-    category: `Tips`,
-    tags: ["WordPress", "Plugins", "User Engagement"],
-    content: `<div>
+};
+
+export const bp15 = {
+  // id: 4,
+  title: "Top WordPress Push Notification Plugins for Web, Android & iOS",
+  excerpt:
+    "Explore the best WordPress push notification plugins to boost user engagement across web, Android, and iOS platforms. Learn which tools offer real-time alerts, automation, and easy integration.",
+  slug: "top-wordpress-push-notification-plugins-for-web-android-ios",
+  publishedAt: "10-05-2024",
+  readingTime: "4 min read",
+  image:
+    "/images/blogs/top-wordpress-push-notification-plugins-for-web-android-ios-syed-ali-naqi-hasni.webp",
+  category: `Tips`,
+  tags: ["WordPress", "Plugins", "User Engagement"],
+  content: `<div>
     <p>
     WordPress push notification plugins are powerful tools that help website owners
     engage with their audience by sending instant notifications to web, Android, and iOS users. These plugins enable
@@ -2056,21 +2268,22 @@ registerBlockType('custom/contact-form', {
     Note: The provided links are subject to change. Please search for the respective
     plugins to access the latest links.</p>
     </div>`,
-  },
-  {
-    id: 3,
-    title:
-      "What Is an ERP Solution? How to Choose the Best One for Your WordPress?",
-    excerpt:
-      "Discover what an ERP (Enterprise Resource Planning) solution is, why it matters for WordPress-based businesses, and how to choose the right one to streamline your operations and improve efficiency.",
-    slug: "what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress",
-    publishedAt: "2022-11-02",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress-syed-ali-naqi-hasni.webp",
-    category: `Tips`,
-    tags: ["WordPress", "ERP", "Business Tools"],
-    content: `<div>
+};
+
+export const bp16 = {
+  // id: 3,
+  title:
+    "What Is an ERP Solution? How to Choose the Best One for Your WordPress?",
+  excerpt:
+    "Discover what an ERP (Enterprise Resource Planning) solution is, why it matters for WordPress-based businesses, and how to choose the right one to streamline your operations and improve efficiency.",
+  slug: "what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress",
+  publishedAt: "02-11-2022",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/what-is-an-erp-solution-how-to-choose-the-best-one-for-your-wordpress-syed-ali-naqi-hasni.webp",
+  category: `Tips`,
+  tags: ["WordPress", "ERP", "Business Tools"],
+  content: `<div>
     <p>Before using an ERP Solution, you must know what is ERP. Otherwise, you wouldn't be
     able to get the point of using an ERP solution in the first place.</p>
 <p>Well, in simple words, ERP means Enterprise Resource Planning. ERP solutions
@@ -2084,7 +2297,8 @@ registerBlockType('custom/contact-form', {
 <p>Managing a large organization can be tough. Employee management is one of the
     toughest jobs in the world. Bill Gates prophetically stated a few years ago:</p>
 <blockquote>
-    <p><em>“The competition to hire the best will increase in the years
+    <p>
+<em>“The competition to hire the best will increase in the years
             ahead. Companies that give extra flexibility to their employees will have the edge in this area.”</em>
     </p>
 </blockquote>
@@ -2105,8 +2319,12 @@ registerBlockType('custom/contact-form', {
 <p>There are a few popular WordPress ERP Solutions that you can use for your business.
     The most popular ERP solutions are:</p>
 <ul>
-    <li><a  >WP ERP</a></li>
-    <li><a  >Business Manager</a></li>
+    <li>
+<a  >WP ERP</a>
+</li>
+    <li>
+<a  >Business Manager</a>
+</li>
 </ul>
 <p>When you consider an ERP solution for WordPress — there is no better plugin than WP
     ERP, to be honest. It is the first of its kind and the oldest amongst the bunch. The plugin is comprehensive,
@@ -2131,7 +2349,7 @@ registerBlockType('custom/contact-form', {
     you can keep track of every bit of your financials from the Accounting Dashboard alone is impressive. The
     dashboard is very intuitive as it shows a graphical representation to understand your expenditures better.</p>
 <p>With <a >HRM</a>, <a  >CRM</a>, and <a
-        href="http://www.wperp.com/accounting"  >Accounting</a> WP ERP
+        href="https://www.wperp.com/accounting"  >Accounting</a> WP ERP
     packs other crucial features as extensions. Here are some of the best extensions of WP ERP.</p>
 <ul>
     <li>Support for payment gateways: The plugin supports all popular payment gateways
@@ -2157,7 +2375,8 @@ utm_content=suza"
         self-check-in and checkout and IP restriction — your employees can check in to the system after they arrive
         at your office physically. You do not have to worry about setting up another punch card, or a biometric
         device for that.</li>
-    <li>Integration with WooCommerce: Superb compatibility with WooCommerce? <a >Check!</a></li>
+    <li>Integration with WooCommerce: Superb compatibility with WooCommerce? <a >Check!</a>
+</li>
     <li>Payroll management, Reimbursement service, Document Management, Inventory
         management: WP ERP already offers most of the enterprise features that a business might need. Features like
         payroll management, reimbursement services, document management, asset management, HR automation, inventory
@@ -2171,20 +2390,21 @@ utm_content=suza"
     close considering features and value. The plugin helps you to execute most of the tasks for your business,
     maximize the output and helps to manage resource planning and management more seamlessly.</p>
 </div>`,
-  },
-  {
-    id: 2,
-    title: "Headless WordPress and Content Management Systems",
-    excerpt:
-      "Explore how Headless WordPress works and compare it with other modern content management systems for greater flexibility and performance.",
-    slug: "headless-wordpress-and-content-management-systems",
-    publishedAt: "2022-11-02",
-    readingTime: "6 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/headless-wordpress-and-content-management-systems-syed-ali-naqi-hasni.webp",
-    category: `Tutorials`,
-    tags: ["Wordpress", "CMS", "Headless"],
-    content: `<div>
+};
+
+export const bp17 = {
+  // id: 2,
+  title: "Headless WordPress and Content Management Systems",
+  excerpt:
+    "Explore how Headless WordPress works and compare it with other modern content management systems for greater flexibility and performance.",
+  slug: "headless-wordpress-and-content-management-systems",
+  publishedAt: "02-11-2022",
+  readingTime: "6 min read",
+  image:
+    "/images/blogs/headless-wordpress-and-content-management-systems-syed-ali-naqi-hasni.webp",
+  category: `Tutorials`,
+  tags: ["Wordpress", "CMS", "Headless"],
+  content: `<div>
     <p>
         Keeping up with the ever-expanding Internet of Things (IoT) can be a scramble for
         content developers and programmers alike. Repackaging content from a traditional WordPress implementation for
@@ -2330,20 +2550,20 @@ utm_content=suza"
         platform-specific aspects of your site. This includes troubleshooting REST API issues and standard WordPress
         functionality problems, along with providing fast and reliable hosting services.</p>
 </div>`,
-  },
-  {
-    id: 1,
-    title: "The Beginner's Guide to Search Engin Optimization",
-    excerpt:
-      "Discover the fundamentals of Search Engine Optimization (SEO) and learn how to improve your website's visibility on search engines.",
-    slug: "the-beginners-guide-to-seo",
-    publishedAt: "2022-09-26",
-    readingTime: "4 min read",
-    image:
-      "https://www.syedalinaqihasni.com/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.jpg",
-    category: `Tips`,
-    tags: ["SEO", "Getting Started", "Tutorial"],
-    content: `<div>
+};
+
+export const bp18 = {
+  // id: 1,
+  title: "The Beginner's Guide to Search Engin Optimization",
+  excerpt:
+    "Discover the fundamentals of Search Engine Optimization (SEO) and learn how to improve your website's visibility on search engines.",
+  slug: "the-beginners-guide-to-seo",
+  publishedAt: "26-09-2022",
+  readingTime: "4 min read",
+  image: "/images/blogs/the-beginners-guide-to-seo-syed-ali-naqi-hasni.webp",
+  category: `Tips`,
+  tags: ["SEO", "Getting Started", "Tutorial"],
+  content: `<div>
     <h2>
         Welcome to your SEO learning journey!</h2>
     <p>
@@ -2539,22 +2759,26 @@ utm_content=suza"
             seminars</a>.
     </p>
 </div>`,
-  },
-  {
-    id: 1,
-    title: "Getting Started with Next.js and Tailwind",
-    excerpt:
-      "Learn how to set up a new Next.js project with Tailwind CSS to build fast, responsive UIs with ease.",
-    slug: "getting-started-nextjs-tailwind",
-    publishedAt: "2018-01-01",
-    readingTime: "5 min read",
-    content: `<div>
+};
+
+export const bp19 = {
+  // id: 1,
+  title: "Getting Started with Next.js and Tailwind",
+  excerpt:
+    "Learn how to set up a new Next.js project with Tailwind CSS to build fast, responsive UIs with ease.",
+  slug: "getting-started-nextjs-tailwind",
+  image: "/images/blogs/getting-started-nextjs-tailwind.jpg",
+  publishedAt: "01-01-2023",
+  readingTime: "5 min read",
+  content: `<div>
     <p>Web development continues to evolve at a rapid pace, and developers are constantly looking for tools that can streamline the development process while delivering modern, performant applications. Two popular tools that complement each other beautifully are <strong>Next.js</strong> and <strong>Tailwind CSS</strong>.</p>
     <p>Next.js is a React-based framework that simplifies building scalable web applications by providing features like server-side rendering, static site generation, API routes, and more—out of the box. On the other hand, Tailwind CSS is a utility-first CSS framework that enables developers to rapidly build custom UIs directly in their HTML or JSX without leaving the markup.</p>
     <p>This guide will walk you through creating a modern, responsive web application using both Next.js and Tailwind CSS.</p>
     <h2>Why Choose Next.js and Tailwind CSS?</h2>
-    <p><strong>Next.js</strong> provides a production-ready framework for building React applications. Unlike vanilla React, which requires additional configuration for routing, SSR (server-side rendering), and code splitting, Next.js includes these features by default.</p>
-    <p><strong>Tailwind CSS</strong> allows for rapid UI development using utility classes. Instead of writing custom CSS for every component, Tailwind provides low-level utility classes like <code>flex</code>, <code>p-4</code>, <code>bg-blue-500</code>, etc., to construct designs efficiently and maintain consistency.</p>
+    <p>
+<strong>Next.js</strong> provides a production-ready framework for building React applications. Unlike vanilla React, which requires additional configuration for routing, SSR (server-side rendering), and code splitting, Next.js includes these features by default.</p>
+    <p>
+<strong>Tailwind CSS</strong> allows for rapid UI development using utility classes. Instead of writing custom CSS for every component, Tailwind provides low-level utility classes like <code>flex</code>, <code>p-4</code>, <code>bg-blue-500</code>, etc., to construct designs efficiently and maintain consistency.</p>
     <h2>Prerequisites</h2>
     <p>Before getting started, ensure that you have the following installed on your system:</p>
     <ul>
@@ -2564,21 +2788,28 @@ utm_content=suza"
     </ul>
     <h2>Step 1: Creating a Next.js Application</h2>
     <p>Open your terminal and run the following command to bootstrap a new Next.js app:</p>
-    <pre><code>npx create-next-app@latest my-next-tailwind-app</code>
-</code></pre>
+    <pre>
+<code>npx create-next-app@latest my-next-tailwind-app</code>
+</code>
+</pre>
     <p>This command will prompt you with a few setup questions (like TypeScript, ESLint, etc.). You can choose the defaults or customize them as needed.</p>
     <p>Navigate into your project directory:</p>
-    <pre><code>cd my-next-tailwind-app</code>
-</code></pre>
+    <pre>
+<code>cd my-next-tailwind-app</code>
+</code>
+</pre>
     <h2>Step 2: Installing Tailwind CSS</h2>
     <p>Now that your Next.js app is set up, it's time to install Tailwind CSS. Tailwind requires a few dependencies, including PostCSS and Autoprefixer:</p>
-    <pre><code>npm install -D tailwindcss postcss autoprefixer
+    <pre>
+<code>npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p</code>
-</code></pre>
+</code>
+</pre>
     <p>This command creates two configuration files in the root of your project: <code>tailwind.config.js</code> and <code>postcss.config.js</code>.</p>
     <h2>Step 3: Configuring Tailwind</h2>
     <p>Open <code>tailwind.config.js</code> and configure the <code>content</code> property so Tailwind knows where to look for class names:</p>
-    <pre><code>module.exports = {
+    <pre>
+<code>module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -2588,41 +2819,54 @@ npx tailwindcss init -p</code>
   },
   plugins: [],
 }</code>
-</code></pre>
+</code>
+</pre>
     <p>Next, open <code>styles/globals.css</code> and replace its contents with the Tailwind directives:</p>
-    <pre><code>@tailwind base;
+    <pre>
+<code>@tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;</code>
-</code></pre>
+</code>
+</pre>
     <p>This tells Tailwind to inject its base styles, component classes, and utility classes globally.</p>
     <h2>Step 4: Running the Development Server</h2>
     <p>Start your app with the following command:</p>
-    <pre><code>npm run dev</code>
-</code></pre>
-    <p>Visit <a href="http://localhost:3000">http://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let's now replace it with something styled by Tailwind.</p>
+    <pre>
+<code>npm run dev</code>
+</code>
+</pre>
+    <p>Visit <a href="https://localhost:3000">https://localhost:3000</a> in your browser. You should see the default Next.js welcome screen. Let's now replace it with something styled by Tailwind.</p>
     <h2>Step 5: Creating a Simple Tailwind-Styled Component</h2>
     <p>Edit the <code>pages/index.js</code> file to use Tailwind classes. Here's a basic example:</p>
-    <pre><code>export default function Home() {
+    <pre>
+<code>export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100"></div>
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+</div>
       <h1 className="text-4xl font-bold text-blue-600">
         Hello, Next.js with Tailwind CSS!
       </h1>
     </div>
   )
 }</code>
-</code></pre>
+</code>
+</pre>
     <p>After saving, your browser should display a clean, centered message styled with Tailwind.</p>
     <h2>Step 6: Using Tailwind Responsively</h2>
     <p>Tailwind makes it easy to build responsive layouts. Try updating the text size with responsive classes:</p>
-    <pre><code><h1 className="text-2xl md:text-4xl lg:text-6xl">Responsive Text</h1></code>
-</code></pre>
+    <pre>
+<code>
+<h1 className="text-2xl md:text-4xl lg:text-6xl">Responsive Text</h1>
+</code>
+</code>
+</pre>
     <p>This will render different font sizes depending on the screen width.</p>
     <h2>Step 7: Customizing Your Theme</h2>
     <p>You can customize Tailwind's design system in the <code>tailwind.config.js</code> file. For example, to add a custom color:</p>
-    <pre><code>module.exports = {
+    <pre>
+<code>module.exports = {
   theme: {
     extend: {
       colors: {
@@ -2631,32 +2875,38 @@ npx tailwindcss init -p</code>
     },
   },
 }</code>
-</code></pre>
+</code>
+</pre>
     <p>Now you can use <code>bg-brand</code>, <code>text-brand</code>, etc., throughout your components.</p>
     <h2>Conclusion</h2>
     <p>Next.js and Tailwind CSS together form a powerful stack for building modern web applications. Next.js handles routing, rendering, and performance optimizations, while Tailwind CSS empowers you to craft responsive UIs without writing a single line of custom CSS.</p>
     <p>With just a few commands, you now have a fully functional development environment that's fast, scalable, and easy to work with. From here, explore Tailwind's plugin ecosystem, create reusable components, and build your project with confidence.</p>
     <p>If you'd like to go further, consider exploring additional features like Next.js API routes, dynamic routing, Tailwind dark mode, and integrating third-party libraries like Headless UI or Heroicons.</p>
-    <p>Happy coding!</p></div>`,
-    category: `Tutorials`,
-    tags: ["Next.js", "Tailwind CSS", "Frontend Development"],
-  },
-  {
-    id: 2,
-    title: "State Management in React Applications",
-    excerpt:
-      "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
-    slug: "state-management-react",
-    publishedAt: "2018-01-01",
-    readingTime: "6 min read",
-    category: `Tutorials`,
-    tags: ["React", "State Management", "Frontend Architecture"],
-    content: `<div>
+    <p>Happy coding!</p>
+</div>`,
+  category: `Tutorials`,
+  tags: ["Next.js", "Tailwind CSS", "Frontend Development"],
+};
+
+export const bp20 = {
+  // id: 2,
+  title: "State Management in React Applications",
+  image: "/images/blogs/state-management-react.png",
+  excerpt:
+    "Explore different state management approaches in React—Context API, Redux, Zustand, and more—to keep your UI predictable and maintainable.",
+  slug: "state-management-react",
+  publishedAt: "12-01-2023",
+  readingTime: "6 min read",
+  category: `Tutorials`,
+  tags: ["React", "State Management", "Frontend Architecture"],
+  content: `<div>
   <p>As your React application grows, managing state becomes more complex. From local UI toggles to global user data and API responses, choosing the right state management approach can make your application easier to maintain, scale, and debug.</p>
   <p>In this article, we'll explore how state works in React, when to lift state, and when to consider advanced solutions like Context API, Redux, Zustand, or Recoil.</p>
   <h2>What is State in React?</h2>
-  <p><strong>State</strong> is a JavaScript object that holds dynamic data in a React component. State changes trigger re-renders, allowing the UI to respond to user interactions and asynchronous updates.</p>
-  <pre><code>import{ useState } from 'react';
+  <p>
+<strong>State</strong> is a JavaScript object that holds dynamic data in a React component. State changes trigger re-renders, allowing the UI to respond to user interactions and asynchronous updates.</p>
+  <pre>
+<code>import{ useState } from 'react';
 
 function Counter(){
   const [count, setCount] = useState(0);
@@ -2667,16 +2917,20 @@ function Counter(){
   </div>
   );
 }
-</code></pre>
+</code>
+</pre>
   <h2>Local vs Global State</h2>
   <p>React state generally falls into two categories:</p>
   <ul>
-    <li><strong>Local State</strong>: Used in a single component (e.g., form inputs, modals)</li>
-    <li><strong>Global State</strong>: Shared across multiple components (e.g., user session, theme)</li>
+    <li>
+<strong>Local State</strong>: Used in a single component (e.g., form inputs, modals)</li>
+    <li>
+<strong>Global State</strong>: Shared across multiple components (e.g., user session, theme)</li>
   </ul>
   <h2>Lifting State Up</h2>
   <p>If multiple sibling components need access to the same piece of state, lift it to their common parent:</p>
-  <pre><code>function Parent(){
+  <pre>
+<code>function Parent(){
   const [value, setValue] = useState('');
   return (
     <>
@@ -2685,11 +2939,14 @@ function Counter(){
     </>
   );
 }
-</code></pre>
+</code>
+</pre>
   <p>This keeps your data flow predictable and contained.</p>
   <h2>When to Use the Context API</h2>
-  <p><strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It's great for themes, authentication, or language settings.</p>
-  <pre><code>import{ createContext, useContext, useState } from 'react';
+  <p>
+<strong>Context API</strong> is ideal for passing data to deeply nested components without prop drilling. It's great for themes, authentication, or language settings.</p>
+  <pre>
+<code>import{ createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext();
 
@@ -2706,12 +2963,15 @@ function Layout(){
   const{ theme } = useContext(ThemeContext);
   return <div className={\`theme-$&#123;theme&#125\`}>Welcome</div>;
 }
-</code></pre>
+</code>
+</pre>
   <p>✅ Use Context for low-frequency global state.</p>
   <p>🚫 Avoid storing frequently-updated values (like form inputs) in Context—it can cause unnecessary re-renders.</p>
   <h2>Redux: Industrial-Strength State Management</h2>
-  <p><strong>Redux</strong> is a predictable state container ideal for large applications with complex state logic, time travel debugging, and middleware needs.</p>
-  <pre><code>import{ createSlice, configureStore } from '@reduxjs/toolkit';
+  <p>
+<strong>Redux</strong> is a predictable state container ideal for large applications with complex state logic, time travel debugging, and middleware needs.</p>
+  <pre>
+<code>import{ createSlice, configureStore } from '@reduxjs/toolkit';
 
 const counterSlice = createSlice({
   name: 'counter',
@@ -2726,9 +2986,11 @@ export const{ increment } = counterSlice.actions;
 const store = configureStore({
   reducer:{ counter: counterSlice.reducer },
 });
-</code></pre>
+</code>
+</pre>
   <p>Connect to components using <code>useSelector</code> and <code>useDispatch</code>:</p>
-  <pre><code>import{ useSelector, useDispatch } from 'react-redux';
+  <pre>
+<code>import{ useSelector, useDispatch } from 'react-redux';
 import{ increment } from './store';
 
 function Counter(){
@@ -2738,10 +3000,13 @@ function Counter(){
   <button onClick={() => dispatch(increment())}>{count}</button>
   );
 }
-</code></pre>
+</code>
+</pre>
   <h2>Zustand: Simpler Global State</h2>
-  <p><strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It's ideal for simpler applications that still need shared global state.</p>
-  <pre><code>import create from 'zustand';
+  <p>
+<strong>Zustand</strong> is a minimal state management library that avoids boilerplate. It's ideal for simpler applications that still need shared global state.</p>
+  <pre>
+<code>import create from 'zustand';
 
 const useStore = create((set) => ({
   count: 0,
@@ -2752,11 +3017,14 @@ function Counter(){
   const{ count, increment } = useStore();
   return <button onClick={increment}>{count}</button>;
 }
-</code></pre>
+</code>
+</pre>
   <p>Zustand is reactive, fast, and doesn't require a Provider component.</p>
   <h2>Recoil: React-Friendly Atom-Based State</h2>
-  <p><strong>Recoil</strong> is a state management library from Facebook that works with React's Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
-  <pre><code>import{ atom, useRecoilState } from 'recoil';
+  <p>
+<strong>Recoil</strong> is a state management library from Facebook that works with React's Concurrent Mode and allows for fine-grained control of state dependencies via <em>atoms</em> and <em>selectors</em>.</p>
+  <pre>
+<code>import{ atom, useRecoilState } from 'recoil';
 
 const countAtom = atom({
   key: 'count',
@@ -2767,7 +3035,8 @@ function Counter(){
   const [count, setCount] = useRecoilState(countAtom);
   return <button onClick={() => setCount(count + 1)}>{count}</button>;
 }
-</code></pre>
+</code>
+</pre>
   <p>Recoil is useful when you need shared, reactive state without excessive boilerplate.</p>
   <h2>State Management Tips</h2>
   <ul>
@@ -2778,40 +3047,53 @@ function Counter(){
   </ul>
   <h2>When to Split State</h2>
   <p>If a component's state becomes too complex, break it into smaller chunks:</p>
-  <pre><code>const [form, setForm] = useState({
+  <pre>
+<code>const [form, setForm] = useState({
   name: '',
   email: '',
   password: '',
 });
-</code></pre>
+</code>
+</pre>
   <p>Or manage each input individually for clarity:</p>
-  <pre><code>const [name, setName] = useState('');
+  <pre>
+<code>const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
-</code></pre>
+</code>
+</pre>
   <h2>Conclusion</h2>
   <p>State is the heart of a React application. Choosing the right tool depends on your app's size, complexity, and team preferences.</p>
   <ul>
-    <li><strong>Small apps:</strong> use <code>useState</code> and lift state</li>
-    <li><strong>Shared config:</strong> use <code>Context</code></li>
-    <li><strong>Complex state:</strong> try Redux or Zustand</li>
-    <li><strong>Fine-grained reactivity:</strong> consider Recoil</li>
+    <li>
+<strong>Small apps:</strong> use <code>useState</code> and lift state</li>
+    <li>
+<strong>Shared config:</strong> use <code>Context</code>
+</li>
+    <li>
+<strong>Complex state:</strong> try Redux or Zustand</li>
+    <li>
+<strong>Fine-grained reactivity:</strong> consider Recoil</li>
   </ul>
   <p>As always, start simple and refactor when your state needs outgrow local management.</p>
-  <p><strong>Happy state managing!</strong></p>
+  <p>
+<strong>Happy state managing!</strong>
+</p>
 </div>`,
-  },
-  {
-    id: 3,
-    title: "Creating Animations with Framer Motion",
-    excerpt:
-      "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
-    slug: "framer-motion-animations",
-    publishedAt: "2018-01-01",
-    readingTime: "5 min read",
-    category: `Tutorials`,
-    tags: ["React", "Animations", "UI/UX"],
-    content: `
+};
+
+export const bp21 = {
+  // id: 3,
+  title: "Creating Animations with Framer Motion",
+  excerpt:
+    "Learn how to add beautiful, performant animations to your React apps using Framer Motion — for fluid transitions, gestures, and more.",
+  slug: "framer-motion-animations",
+  image: "/images/blogs/framer-motion-animations.png",
+  publishedAt: "22-01-2023",
+  readingTime: "5 min read",
+  category: `Tutorials`,
+  tags: ["React", "Animations", "UI/UX"],
+  content: `
   <div>
     <p>Animation can breathe life into your web application, enhancing user experience and making your interface more engaging. <strong>Framer Motion</strong> is a popular React animation library that makes it easy to create beautiful and smooth animations with minimal code.</p>
     <p>Whether you're building hover effects, page transitions, or complex motion sequences, Framer Motion provides an intuitive API for creating animations declaratively in React—including in Next.js apps.</p>
@@ -2825,14 +3107,19 @@ const [password, setPassword] = useState('');
     </ul>
     <h2>Getting Started</h2>
     <p>First, you need to install the library:</p>
-    <pre><code>npm install framer-motion
-</code></pre>
+    <pre>
+<code>npm install framer-motion
+</code>
+</pre>
     <p>Or with Yarn:</p>
-    <pre><code>yarn add framer-motion
-</code></pre>
+    <pre>
+<code>yarn add framer-motion
+</code>
+</pre>
     <h2>Basic Animation</h2>
     <p>To animate an element, you use the <code>motion</code> component instead of a regular HTML element. For example:</p>
-    <pre><code>import { motion } from 'framer-motion';
+    <pre>
+<code>import { motion } from 'framer-motion';
 
 export default function Box() {
   return (
@@ -2848,12 +3135,17 @@ motion.div
   );
 
 }
-</code></pre>
-    <p>This code makes a <code><
-div></code> fade in over one second when it's mounted.</p>
+</code>
+</pre>
+    <p>This code makes a <code>
+<
+div>
+</code> fade in over one second when it's mounted.</p>
     <h2>Animating Position and Scale</h2>
     <p>You can animate multiple properties at once—such as scale, x/y position, and rotation:</p>
-    <pre><code><
+    <pre>
+<code>
+<
 motion.div
   initial={{ x: -100, scale: 0.5 }}
   animate={{ x: 0, scale: 1 }}
@@ -2863,10 +3155,13 @@ motion.div
  Scale
 <
 /motion.div>
-</code></pre>
+</code>
+</pre>
     <h2>Hover and Tap Animations</h2>
     <p>Framer Motion makes it easy to add interaction-based animations using <code>whileHover</code> and <code>whileTap</code> props:</p>
-    <pre><code><
+    <pre>
+<code>
+<
 motion.button
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
@@ -2874,11 +3169,14 @@ motion.button
   Click Me
 <
 /motion.button>
-</code></pre>
+</code>
+</pre>
     <p>This provides subtle feedback when users interact with UI elements.</p>
     <h2>Variants: Coordinated Animation</h2>
-    <p><strong>Variants</strong> are a powerful feature that let you define shared animation states for groups of components.</p>
-    <pre><code>const container = {
+    <p>
+<strong>Variants</strong> are a powerful feature that let you define shared animation states for groups of components.</p>
+    <pre>
+<code>const container = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -2892,9 +3190,12 @@ const item = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
 };
-</code></pre>
+</code>
+</pre>
     <p>Now use them:</p>
-    <pre><code><
+    <pre>
+<code>
+<
 motion.ul
   variants={container}
   initial="hidden"
@@ -2918,11 +3219,14 @@ Item 3<
 
 <
 /motion.ul>
-</code></pre>
+</code>
+</pre>
     <p>Each list item will animate in sequence thanks to <code>staggerChildren</code>.</p>
     <h2>AnimatePresence: Exit Animations</h2>
-    <p><code>AnimatePresence</code> is used to animate components when they are removed from the React tree—such as modals or pages.</p>
-    <pre><code>import { AnimatePresence, motion } from 'framer-motion';
+    <p>
+<code>AnimatePresence</code> is used to animate components when they are removed from the React tree—such as modals or pages.</p>
+    <pre>
+<code>import { AnimatePresence, motion } from 'framer-motion';
 
 function Modal({ isOpen }) {
   return (
@@ -2946,11 +3250,13 @@ motion.div
   );
 
 }
-</code></pre>
+</code>
+</pre>
     <p>This ensures smooth exit transitions instead of instantly removing elements.</p>
     <h2>Page Transitions in Next.js</h2>
     <p>In a Next.js app, you can use Framer Motion with <code>AnimatePresence</code> to animate between pages. Here's a basic example:</p>
-    <pre><code>// _app.js
+    <pre>
+<code>// _app.js
 import { AnimatePresence } from 'framer-motion';
 
 export default function App({ Component, pageProps, router }) {
@@ -2964,9 +3270,11 @@ Component {...pageProps} key={router.route} />
   );
 
 }
-</code></pre>
+</code>
+</pre>
     <p>Then add page-level animation inside each component:</p>
-    <pre><code>import { motion } from 'framer-motion';
+    <pre>
+<code>import { motion } from 'framer-motion';
 
 export default function HomePage() {
   return (
@@ -2982,10 +3290,13 @@ motion.div
   );
 
 }
-</code></pre>
+</code>
+</pre>
     <h2>Motion Layout: Smart Animations</h2>
     <p>Framer Motion also includes a powerful feature called <code>layout</code> that lets you animate between different layouts intelligently without defining the animation manually.</p>
-    <pre><code><
+    <pre>
+<code>
+<
 motion.div layout>
 
 <
@@ -2995,33 +3306,39 @@ Content that resizes smoothly<
 
 <
 /motion.div>
-</code></pre>
+</code>
+</pre>
     <p>This is great for expanding cards, resizing elements, or toggling visibility with animation.</p>
     <h2>Performance Tips</h2>
     <ul>
       <li>Use <code>layoutId</code> for shared layout animations</li>
       <li>Use <code>AnimatePresence</code> for exit transitions</li>
       <li>Keep animations lightweight on mobile</li>
-      <li>Avoid animating expensive properties like <code>box-shadow</code></li>
+      <li>Avoid animating expensive properties like <code>box-shadow</code>
+</li>
     </ul>
     <h2>Conclusion</h2>
     <p>Framer Motion is one of the best tools for adding animation to React and Next.js projects. Its API is expressive, simple, and powerful—making it perfect for both beginners and pros.</p>
     <p>By integrating animations thoughtfully, you can significantly improve user experience and create interfaces that feel smooth and modern.</p>
     <p>Start small with hover effects, and soon you'll be building full-blown interactive motion UIs with coordinated transitions and animated layouts.</p>
-    <p><strong>Go ahead—add some motion to your next project and make it feel alive!</strong></p>
+    <p>
+<strong>Go ahead—add some motion to your next project and make it feel alive!</strong>
+</p>
   </div>
 
 `,
-  },
-  {
-    id: 4,
-    title: "Next.js API Routes: Building Server Endpoints",
-    excerpt:
-      "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
-    slug: "nextjs-api-routes",
-    publishedAt: "2018-01-01",
-    readingTime: "6 min read",
-    content: `
+};
+
+export const bp22 = {
+  // id: 4,
+  title: "Next.js API Routes: Building Server Endpoints",
+  excerpt:
+    "Discover how to create API routes in Next.js for backend logic — authentication, form handling, data fetching — right inside your frontend framework.",
+  slug: "nextjs-api-routes",
+  image: "/images/blogs/nextjs-api-routes.png",
+  publishedAt: "05-02-2023",
+  readingTime: "6 min read",
+  content: `
   <div>
   <p>One of the most powerful features of <strong>Next.js</strong> is its ability to handle backend logic directly within your frontend application. With <strong>API Routes</strong>, you can create server-side endpoints as part of your project—no need to set up a separate backend service?.</p>
   <p>Whether you need to fetch data, handle forms, authenticate users, or integrate third-party services, Next.js API Routes let you write server-side code using the same stack and tools you're already using on the frontend.</p>
@@ -3029,22 +3346,29 @@ Content that resizes smoothly<
   <p>API Routes in Next.js allow you to define server-side functions that run in a Node.js environment. These functions are deployed as serverless functions when you host your app (e.g., on Vercel).</p>
   <p>They are placed inside the <code>/pages/api</code> directory and are automatically mapped to the corresponding route.</p>
   <p>Example:</p>
-  <pre><code>pages/api/hello.js → /api/hello</code>
-</code></pre>
+  <pre>
+<code>pages/api/hello.js → /api/hello</code>
+</code>
+</pre>
   <h2>Creating Your First API Route</h2>
   <p>Let's create a simple API endpoint that returns a greeting message.</p>
   <p>Create a file at <code>pages/api/hello.js</code>:</p>
-  <pre><code>export default function handler(req, res) {
+  <pre>
+<code>export default function handler(req, res) {
   res.status(200).json({ message: 'Hello from Next.js API!' });
 
 }</code>
-</code></pre>
-  <p>Now, navigate to <a href="http://localhost:3000/api/hello">http://localhost:3000/api/hello</a> in your browser. You should see a JSON response:</p>
-  <pre><code>{ "message": "Hello from Next.js API!" }</code>
-</code></pre>
+</code>
+</pre>
+  <p>Now, navigate to <a href="https://localhost:3000/api/hello">https://localhost:3000/api/hello</a> in your browser. You should see a JSON response:</p>
+  <pre>
+<code>{ "message": "Hello from Next.js API!" }</code>
+</code>
+</pre>
   <h2>Request Methods and Routing</h2>
   <p>Each API route can handle different HTTP methods such as GET, POST, PUT, and DELETE. Use conditional logic inside your handler function to respond accordingly.</p>
-  <pre><code>export default function handler(req, res) {
+  <pre>
+<code>export default function handler(req, res) {
   if (req.method === 'GET') {
   res.status(200).json({ message: 'This is a GET request' });
   } else if (req.method === 'POST') {
@@ -3054,63 +3378,78 @@ Content that resizes smoothly<
   res.status(405).end(\`Method \${req.method} Not Allowed\`);
   }
 }</code>
-</code></pre>
+</code>
+</pre>
   <h2>Parsing Request Data</h2>
   <p>For <code>POST</code> or <code>PUT</code> requests, you often need to access data sent in the request body. By default, Next.js automatically parses JSON request bodies for you.</p>
-  <pre><code>export default function handler(req, res) {
+  <pre>
+<code>export default function handler(req, res) {
   const { name } = req.body;
   res.status(200).json({ message: \`Hello, \${name}\` });
 
 }</code>
-</code></pre>
+</code>
+</pre>
   <p>To test this, you can send a POST request using a tool like Postman or with <code>fetch</code> in your app:</p>
-  <pre><code>fetch('/api/hello', {
+  <pre>
+<code>fetch('/api/hello', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ name: 'John' }),
 });</code>
-</code></pre>
+</code>
+</pre>
   <h2>Using Query Parameters</h2>
   <p>You can also handle URL query parameters with <code>req.query</code>:</p>
-  <pre><code>// pages/api/greet.js
+  <pre>
+<code>// pages/api/greet.js
 export default function handler(req, res) {
   const { name } = req.query;
   res.status(200).json({ greeting: \`Hello, \${name || 'Guest'}\` });
 
 }</code>
-</code></pre>
+</code>
+</pre>
   <p>Access it by visiting <code>/api/greet?name=Sarah</code>.</p>
   <h2>Creating Dynamic API Routes</h2>
   <p>API routes can be dynamic by using square brackets in filenames. For example:</p>
-  <pre><code>// pages/api/user/[id].js
+  <pre>
+<code>// pages/api/user/[id].js
 export default function handler(req, res) {
   const { id } = req.query;
   res.status(200).json({ userId: id });
 
 }</code>
-</code></pre>
+</code>
+</pre>
   <p>Now you can hit <code>/api/user/123</code> and receive a dynamic response:</p>
-  <pre><code>{ "userId": "123" }</code>
-</code></pre>
+  <pre>
+<code>{ "userId": "123" }</code>
+</code>
+</pre>
   <h2>Error Handling</h2>
   <p>It's important to return proper HTTP status codes and messages for errors:</p>
-  <pre><code>export default function handler(req, res) {
+  <pre>
+<code>export default function handler(req, res) {
   try {
   throw new Error('Something went wrong!');
   } catch (error) {
   res.status(500).json({ error: error.message });
   }
 }</code>
-</code></pre>
+</code>
+</pre>
   <h2>Working with External APIs</h2>
   <p>You can use API routes as a proxy for third-party services. For example, calling an external weather API:</p>
-  <pre><code>export default async function handler(req, res) {
+  <pre>
+<code>export default async function handler(req, res) {
   const response = await fetch('https://api.weatherapi.com/v1/current.json?key=YOUR_KEY&q=London');
   const data = await response.json();
   res.status(200).json(data);
 
 }</code>
-</code></pre>
+</code>
+</pre>
   <h2>When to Use API Routes</h2>
   <p>Use API Routes in Next.js when:</p>
   <ul>
@@ -3130,22 +3469,26 @@ export default function handler(req, res) {
   <p>Next.js API Routes offer a fast and seamless way to build server-side functionality within your frontend app. You can create custom endpoints, interact with databases, perform authentication, or fetch external data—all using familiar JavaScript/TypeScript syntax and tools.</p>
   <p>This eliminates the need for an additional Express or Node.js backend and simplifies your project architecture. Whether you're building a simple form handler or a proxy to a third-party API, API Routes in Next.js are a powerful tool in your development toolkit.</p>
   <p>As your project grows, you can easily refactor your API logic into reusable functions, integrate with middleware, or even connect to full-fledged backend platforms like Supabase or Prisma.</p>
-  <p><strong>Happy coding—and enjoy the power of full-stack development with Next.js!</strong></p>
+  <p>
+<strong>Happy coding—and enjoy the power of full-stack development with Next.js!</strong>
+</p>
   </div>`,
-    category: `Tutorials`,
-    tags: ["Next.js", "API", "Full‑Stack Development"],
-  },
-  {
-    id: 5,
-    title: "Responsive UI with Tailwind CSS",
-    excerpt:
-      "Master responsive design using Tailwind's utility classes and variants — build adaptable layouts that look great on any device.",
-    slug: "responsive-ui-tailwind",
-    publishedAt: "2018-01-01",
-    readingTime: "4 min read",
-    category: `Tutorials`,
-    tags: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
-    content: ` <div>
+  category: `Tutorials`,
+  tags: ["Next.js", "API", "Full‑Stack Development"],
+};
+
+export const bp23 = {
+  // id: 5,
+  title: "Responsive UI with Tailwind CSS",
+  excerpt:
+    "Master responsive design using Tailwind's utility classes and variants — build adaptable layouts that look great on any device.",
+  slug: "responsive-ui-tailwind",
+  image: "/images/blogs/responsive-ui-tailwind.jpg",
+  publishedAt: "12-03-2023",
+  readingTime: "4 min read",
+  category: `Tutorials`,
+  tags: ["Tailwind CSS", "Responsive Design", "Frontend Development"],
+  content: ` <div>
     <p>Building responsive user interfaces has become a standard requirement in modern web development. With a growing variety of screen sizes and devices, it's essential to design layouts that adapt smoothly. <strong>Tailwind CSS</strong> offers a powerful utility-based approach that makes creating responsive designs easier and more maintainable.</p>
     <p>In this article, we'll dive into how Tailwind CSS simplifies the process of building responsive UIs, including an explanation of breakpoints, layout techniques, and real-world examples.</p>
     <h2>What Makes a UI Responsive?</h2>
@@ -3160,50 +3503,76 @@ export default function handler(req, res) {
     <h2>Understanding Tailwind's Breakpoints</h2>
     <p>Tailwind CSS is mobile-first, meaning styles are applied by default to the smallest screens and can be overridden at larger breakpoints. Tailwind uses these default breakpoints:</p>
     <ul>
-      <li><code>sm</code> - 640px</li>
-      <li><code>md</code> - 768px</li>
-      <li><code>lg</code> - 1024px</li>
-      <li><code>xl</code> - 1280px</li>
-      <li><code>2xl</code> - 1536px</li>
+      <li>
+<code>sm</code> - 640px</li>
+      <li>
+<code>md</code> - 768px</li>
+      <li>
+<code>lg</code> - 1024px</li>
+      <li>
+<code>xl</code> - 1280px</li>
+      <li>
+<code>2xl</code> - 1536px</li>
     </ul>
     <p>Using these is as simple as prefixing utility classes. For example:</p>
-    <pre><code><div class="text-base md:text-lg lg:text-xl">Responsive Text</div></code>
-</code></pre>
+    <pre>
+<code>
+<div class="text-base md:text-lg lg:text-xl">Responsive Text</div>
+</code>
+</code>
+</pre>
     <p>This applies <code>text-base</code> on all screens, <code>text-lg</code> on medium screens (768px+), and <code>text-xl</code> on large screens (1024px+).</p>
     <h2>Responsive Layouts with Flex and Grid</h2>
     <p>Tailwind provides utility classes for creating flexible and grid-based layouts. Let's look at a responsive two-column layout that stacks on mobile:</p>
-    <pre><code><div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <pre>
+<code>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
   <div class="bg-blue-100 p-4">Left Column</div>
   <div class="bg-green-100 p-4">Right Column</div>
-</div></code>
-</code></pre>
+</div>
+</code>
+</code>
+</pre>
     <p>Here, we use <code>grid-cols-1</code> for small screens (1 column), and <code>md:grid-cols-2</code> to switch to a 2-column layout on medium screens and above.</p>
     <h2>Controlling Visibility Based on Screen Size</h2>
     <p>Tailwind allows you to easily show or hide elements depending on screen size. This is useful for things like mobile menus or device-specific content:</p>
-    <pre><code><div class="block md:hidden">Mobile Only</div>
-<div class="hidden md:block">Desktop Only</div></code>
-</code></pre>
+    <pre>
+<code>
+<div class="block md:hidden">Mobile Only</div>
+<div class="hidden md:block">Desktop Only</div>
+</code>
+</code>
+</pre>
     <p>This approach avoids JavaScript toggling and provides fine-grained control using only CSS classes.</p>
     <h2>Responsive Spacing and Sizing</h2>
     <p>Tailwind's spacing utilities (padding, margin, width, height) can also be made responsive by prefixing them with breakpoints:</p>
-    <pre><code><div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
-<img class="w-full md:w-1/2" src="image.jpg" alt="Example" />
-</code></pre>
+    <pre>
+<code>
+<div class="p-2 md:p-6 lg:p-10">Responsive Padding</div>
+<img class="w-full md:w-1/2" src="image.webp" alt="Example" />
+</code>
+</pre>
     <p>This enables developers to scale spacing and sizing progressively as the screen size increases, without writing custom CSS.</p>
     <h2>Responsive Typography and Text Alignment</h2>
     <p>Typography plays a major role in UI readability. Tailwind provides responsive control over font size, alignment, and spacing:</p>
-    <pre><code><h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
+    <pre>
+<code>
+<h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">
   Responsive Heading
 </h1>
 
 <p class="text-center md:text-left">
   This paragraph centers on small screens and aligns left on larger screens.
-</p></code>
-</code></pre>
+</p>
+</code>
+</code>
+</pre>
     <p>This fluidity ensures your content is both readable and visually appealing across devices.</p>
     <h2>Building a Responsive Navbar</h2>
     <p>Here's an example of a responsive navigation bar using Tailwind's utilities:</p>
-    <pre><code><nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+    <pre>
+<code>
+<nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
   <div class="text-lg font-bold">Brand</div>
   <div class="hidden md:flex gap-4">
     <a href="#">Home</a>
@@ -3213,19 +3582,26 @@ export default function handler(req, res) {
   <div class="md:hidden">
     <button>☰</button>
   </div>
-</nav></code>
-</code></pre>
+</nav>
+</code>
+</code>
+</pre>
     <p>This layout hides the full navigation on smaller screens and replaces it with a menu button. On larger screens, the full navigation is displayed.</p>
     <h2>Dark Mode Responsiveness</h2>
     <p>Tailwind also supports dark mode, which you can combine with responsiveness. For instance:</p>
-    <pre><code><div class="bg-white dark:bg-gray-900 text-black dark:text-white p-4 md:p-8">
+    <pre>
+<code>
+<div class="bg-white dark:bg-gray-900 text-black dark:text-white p-4 md:p-8">
   Responsive and Themed Box
-</div></code>
-</code></pre>
+</div>
+</code>
+</code>
+</pre>
     <p>This allows you to create UI components that respond to both screen size and user color preferences.</p>
     <h2>Custom Breakpoints</h2>
     <p>If the default breakpoints don't fit your design needs, you can customize them in <code>tailwind.config.js</code>:</p>
-    <pre><code>module.exports = {
+    <pre>
+<code>module.exports = {
   theme: {
     extend: {},
     screens: {
@@ -3234,16 +3610,1191 @@ export default function handler(req, res) {
     },
   },
 }</code>
-</code></pre>
+</code>
+</pre>
     <p>With this, you can now use <code>xs:</code> to target screens as small as 480px.</p>
     <h2>Conclusion</h2>
     <p>Responsive design no longer needs to be a headache. With Tailwind CSS, you can build highly adaptive interfaces using concise, expressive utility classes—without writing a single line of media query CSS. By mastering its mobile-first breakpoints and combining utilities for layout, spacing, and typography, you can create polished, scalable designs quickly.</p>
     <p>Whether you're building a landing page, dashboard, or mobile-first app, Tailwind gives you the control to craft beautiful and responsive UIs that just work.</p>
     <p>Now that you have a foundation, keep experimenting with layout strategies, explore Tailwind's plugin ecosystem, and consider using components like Headless UI for more advanced, responsive interactions.</p>
-    <p><strong>Happy building!</strong></p>
+    <p>
+<strong>Happy building!</strong>
+</p>
   </div>
 `,
+};
+export const bp24 = {
+  // id: 5,
+  title: "Boost Developer Efficiency with LocatorJS: A Quick Guide",
+  excerpt:
+    "Discover how LocatorJS can streamline your development process by letting you click on elements in your app and instantly locate the code behind them.",
+  slug: "boost-efficiency-with-locatorjs",
+  publishedAt: "09-07-2025",
+  readingTime: "5 min read",
+  image:
+    "/images/blogs/boost-efficiency-with-locatorjs-syed-ali-naqi-hasni.jpg",
+  category: "Tutorial",
+  tags: [
+    "LocatorJS",
+    "Developer Tools",
+    "Productivity",
+    "Frontend Development",
+  ],
+  content: ` <div>
+<p>As developers, we're constantly looking for tools that streamline our workflow, reduce cognitive overhead, and improve the overall developer experience (DX). Over the years, we've seen a host of dev tools revolutionize how we write, debug, and refactor code—Prettier for formatting, ESLint for linting, Vite for blazing-fast development servers, and so on.</p>
+<p>But even with all these advancements, there’s one persistent pain point, especially in large-scale component-based applications:</p>
+<p>
+<strong>"Where the heck is this component defined?"</strong>
+</p>
+<p>Whether you're working on a Next.js app with hundreds of React components or a monorepo managed by multiple teams, tracing UI elements back to their source code can be a frustrating time-sink.</p>
+<p>Enter<span>
+</span>
+<strong>LocatorJS</strong>
+<span>
+</span>— a devtool that addresses this exact problem with simplicity and elegance.</p>
+<h3>What is LocatorJS?</h3>
+<p>
+<strong>LocatorJS</strong>
+<span>
+</span>is an open-source developer tool that helps you<span>
+</span>
+<strong>locate the source code of React, Vue, SolidJS, or Qwik components directly from the browser UI</strong>.</p>
+<p>Imagine inspecting a button on your app and with a single ⌘+click (or Ctrl+click on Windows), your code editor instantly opens the file and line where that button component is defined.</p>
+<p>That’s the magic of LocatorJS.</p>
+<p>It bridges the gap between your browser’s UI and your editor’s file system. No more guessing, Ctrl+F, or hunting through nested folders.</p>
+<h3>Why Should You Use LocatorJS?</h3>
+<p>If you’ve ever found yourself asking:</p>
+<p>
+<ul>
+<li>“Where’s this component defined?”</li>
+<li>“Which file contains this button?”</li>
+<li>“What’s the actual source of this modal?”</li>
+</ul>
+</p>
+<p>…then LocatorJS is a no-brainer.</p>
+<p>Here’s what it brings to the table:</p>
+<h3>Pros of LocatorJS</h3>
+<p>
+<ol>
+<li>
+<strong>Massive DX Boost</strong>
+</li>
+<li>
+<strong>Editor Integration</strong>
+</li>
+<li>
+<strong>Minimal Setup</strong>
+</li>
+<li>
+<strong>Multi-Framework Support</strong>
+</li>
+<li>
+<strong>Configurable &amp; Lightweight</strong>
+</li>
+</ol>
+</p>
+<h3>Cons of LocatorJS</h3>
+<p>No tool is perfect. While LocatorJS offers great productivity, it's good to understand its limitations.</p>
+<p>
+<ol>
+<li>
+<strong>Requires Editor Integration</strong>
+</li>
+<li>
+<strong>Not Yet Mainstream</strong>
+</li>
+<li>
+<strong>Doesn’t Support All Frameworks</strong>
+</li>
+<li>
+<strong>Slight Overhead in Production</strong>
+</li>
+</ol>
+</p>
+<h3>How LocatorJS Works (Behind the Scenes)</h3>
+<p>LocatorJS adds metadata to DOM elements during the build or dev process. This metadata includes:</p>
+<p>
+<ul>
+<li>File path</li>
+<li>Line number</li>
+<li>Component name</li>
+</ul>
+</p>
+<p>It injects this metadata as a special HTML attribute, e.g., data-locatorjs-id, that can be picked up by the LocatorJS browser extension or browser script. When you click an element, it reads the attribute and opens the relevant file in your editor.</p>
+<p>Under the hood, it uses source maps and Babel/AST parsing to trace back the rendered elements to their origin in the source code.</p>
+<h3>🛠️ How to Use LocatorJS in Your Project</h3>
+<p>Let’s go step-by-step on getting LocatorJS up and running in a<span>
+</span>
+<strong>React</strong>
+<span>
+</span>or<span>
+</span>
+<strong>Next.js</strong>
+<span>
+</span>project.</p>
+<h3>1. Install the Plugin</h3>
+<pre>
+<code>npm install --save-dev @locator/runtime</code>
+</pre>
+<p>For Vite or Next.js, you’ll also need the respective plugin.</p>
+<h3>2. Add LocatorJS Plugin</h3>
+<p>
+<strong>For Next.js:</strong>
+</p>
+<p>Use the @locator/next plugin:</p>
+<pre>
+<code>npm install --save-dev @locator/next</code>
+</pre>
+<p>Add this to pages/_app.jsx or app/layout.jsx (or any other global file):</p>
+<pre>
+<code>import setupLocatorUI from "@locator/runtime";if (process.env.NODE_ENV === "development") {setupLocatorUI();}</code>
+</pre>
+<h3>3. Install the Browser Extension</h3>
+<p>Grab the official<span>
+</span>
+<strong>LocatorJS browser extension</strong>
+<span>
+</span>for:</p>
+<p>
+<ul>
+<li>Chrome:<span>
+</span>
+<a>Link</a>
+</li>
+<li>Firefox:<span>
+</span>
+<a>Link</a>
+</li>
+</ul>
+</p>
+<p>This extension reads the DOM metadata and lets you click on any component in the browser and open it in your code editor.</p>
+<h3>4. Use It!</h3>
+<p>
+<ol>
+<li>Run your app in dev mode.</li>
+<li>Open the browser with LocatorJS enabled.</li>
+<li>Hover over UI components — you’ll see component names in a tooltip.</li>
+<li>Alt + Click on the component — it opens in your editor at the exact location.</li>
+</ol>
+</p>
+<h3>Optional: Use Without Extension (Manual Script)</h3>
+<p>If you prefer not to use the browser extension, you can inject the LocatorJS script manually:<span>
+</span>
+</p>
+<pre>
+<code>&lt;script src="https://unpkg.com/@locator/runtime/dist/locator-runtime.umd.js"&gt;&lt;/script&gt;&lt;script&gt;window.**LOCATOR_CONFIG** = {editor: "vscode",projectRoot: "/Users/yourname/yourproject",};&lt;/script&gt;</code>
+</pre>
+<p>This makes it possible to use LocatorJS in internal tools, previews, or demos.</p>
+<h3>Example Use Cases</h3>
+<h3>1. Large Component Libraries</h3>
+<p>If you're working on a design system or component library with dozens of shared UI elements, LocatorJS helps pinpoint exact file locations quickly.</p>
+<h3>2. Agency or Freelance Projects</h3>
+<p>Jumping into a legacy client project? LocatorJS can drastically reduce orientation time.</p>
+<h3>3. Team Collaboration</h3>
+<p>Reviewing a PR and wondering where a component came from? Open the running app, click, and jump to the source.</p>
+<h3>Advanced Configuration</h3>
+<p>You can customize how LocatorJS works via environment variables and options:</p>
+<pre>
+<code>locatorPlugin({rootDir: './src',editor: 'vscode',useRuntime: true,// Adds tooltip and hover info});</code>
+</pre>
+<p>You can also integrate with JetBrains editors (like WebStorm) using custom URL schemes or open-file plugins.</p>
+<h3>Security &amp; Production Considerations</h3>
+<p>LocatorJS is safe to use in dev environments, but in production:</p>
+<p>
+<ul>
+<li>
+<strong>Remove metadata attributes</strong>
+<span>
+</span>before deployment.</li>
+<li>
+<strong>Disable runtime scripts</strong>
+<span>
+</span>to avoid exposing file paths to users.</li>
+</ul>
+</p>
+<p>Most plugins automatically strip LocatorJS metadata during production builds unless explicitly configured to do otherwise.</p>
+<h3>Final Thoughts: Why I’m Betting on LocatorJS</h3>
+<p>I’ve personally added LocatorJS to few of my React/Next.js freelance and personal projects. The time it saves when jumping between UI and code cannot be overstated.</p>
+<p>It's one of those tools that once you try, you wonder how you lived without it—like Prettier, but for navigation.</p>
+<p>If you’re working on complex UIs, collaborating across teams, or onboarding new devs regularly, I highly recommend giving it a spin.</p>
+<h3>Useful Links</h3>
+<p>
+<ul>
+<li>Website:<span>
+</span>
+<a>https://www.locator.dev/</a>
+</li>
+<li>GitHub:<span>
+</span>
+<a>https://github.com/infi-pc/locatorjs</a>
+</li>
+<li>Developer:<span>
+</span>
+<a>https://x.com/_michaelmusil</a>
+</li>
+<li>Support:<span>
+</span>
+<a>https://x.com/locatorjs</a>
+</li>
+</ul>
+</p>
+<h3>Let’s Discuss</h3>
+<p>
+<ul>
+<li>Have you tried LocatorJS?</li>
+<li>Planning to integrate it in your stack?</li>
+<li>Got tips, tricks, or questions?</li>
+</ul>
+</p>
+<p>Drop a comment below or DM me — always happy to geek out about devtools that make life easier.</p>
+<p>Want more developer-first content like this? Follow me here on<span>
+</span>
+<a>LinkedIn</a>
+<span>
+</span>and check out<span>
+</span>
+<a>syedalinaqihasni.com/blogs</a>
+<span>
+</span>for blogs, code tips, and freelance resources.</p>
+</div>
+`,
+};
+
+export const bp25 = {
+  // id: 5,
+  title: "Redux vs Zedux : My Journey & Perspective",
+  excerpt:
+    "State management in React (or React-adjacent) apps is a subject that has evolved rapidly. Over time, I’ve used Redux, experimented with Context, swallowed the bitter pill of boilerplate, and most recently explored Zedux.",
+  slug: "redux-vs-zedux-my-journey-perspective",
+  publishedAt: "10-10-2025",
+  readingTime: "15 min read",
+  image:
+    "/images/blogs/redux-vs-zedux-my-journey-perspective-syed-ali-naqi-hasni.png",
+  category: "Opinion",
+  tags: ["Redux", "Zedux", "State management", "Frontend Development"],
+  content: `<div>
+<p> State management in React (or React-adjacent) apps is a subject that has evolved rapidly. Over time, I’ve used Redux, experimented with Context, swallowed the bitter pill of boilerplate, and most recently explored<span>
+</span>
+<strong>Zedux</strong>. In this article I want to compare Redux and Zedux from my vantage point, what they bring, where they struggle, how they differ, and when I might lean to one over the other.</p>
+<p> I hope this serves as a practical, honest, hands-on guide for engineers, team leads, or even curious developers evaluating state tools for their next project.</p>
+<hr>
+<h2
+> Setting the Stage: What Redux and Zedux Are (to Me)</h3>
+<p> Before diving into side-by-side comparisons, it’s worth explaining how I think of these two libraries, and how they enter my workflow.</p>
+<p> 
+<ul>
+<li>
+<strong>Redux</strong>: The granddaddy of flux-style state management in React. You have actions, reducers, a global store, and optionally middleware (thunks, sagas, etc.). Over the years, Redux has matured, with tools like Redux Toolkit (RTK) lowering boilerplate and improving ergonomics. Redux is battle-tested, well-documented, and has a large ecosystem.</li>
+<li>
+<strong>Zedux</strong>: A newer entrant (still relatively fresh). It takes a different approach: rather than a big monolithic store, it encourages<span>
+</span>
+<strong>atomic</strong>
+<span>
+</span>or<span>
+</span>
+<strong>composable</strong>
+<span>
+</span>store models, where smaller “atoms” or units are individually defined and composed. It supports side-effects via “effects” subscribers or actors, and aims to reduce boilerplate and friction. Many of Zedux’s design ideas seem inspired by patterns in Recoil, React Query, dependency injection, etc. There is some overlap with Redux’s intent, but the architecture is quite distinct.<span>
+</span>
+<a target="_self" tabindex="0" href="https://blog.logrocket.com/zedux-redux-comparison/?utm_source=chatgpt.com" data-test-app-aware-link="">LogRocket Blog</a>
+</li>
+</ul>
+</p>
+<p> With that in mind, let me walk you through how I compare them on multiple dimensions.</p>
+<hr>
+<h2
+> 1. Boilerplate, DX (Developer Experience), and Setup</h3>
+<p> One of the first things I notice when adopting a state library is how heavy or light its setup feels. Time-to-value matters.</p>
+<h2
+> Redux (especially with Redux Toolkit)</h3>
+<p> In my experience, pure Redux (without Toolkit) is quite verbose. You define action types, action creators, reducers, combine reducers, configure the store, wire up middleware, etc. There’s significant ceremony. Over time, many teams adopt<span>
+</span>
+<strong>Redux Toolkit</strong>
+<span>
+</span>to reduce boilerplate: createSlice, createAsyncThunk, configureStore, etc. That helps a lot.</p>
+<p> Still, there is some ceremony:</p>
+<p> 
+<ul>
+<li>You must define a root store (even if your app is small).</li>
+<li>You must register slices in the store upfront.</li>
+<li>Using RTK, you get some nicer defaults, but you still write slices and reducers.</li>
+<li>If your app is modular or has feature-based code splits, you often deal with lazy-loaded slices or dynamic reducers (which is doable but nontrivial).</li>
+</ul>
+</p>
+<p> Redux has strong patterns and conventions, which is a virtue, but sometimes it feels heavy in smaller apps.</p>
+<h2
+> Zedux</h3>
+<p> With Zedux, the story is more lightweight in my trials. The<span>
+</span>
+<strong>zero-config</strong>
+<span>
+</span>mindset is appealing you don’t necessarily need to define a global store or wire up lots of plumbing. You define atoms (or stores) and actors (actions) closer to feature boundaries.<span>
+</span>
+<a target="_self" tabindex="0" href="https://blog.logrocket.com/zedux-redux-comparison/?utm_source=chatgpt.com" data-test-app-aware-link="">LogRocket Blog</a>
+</p>
+<p> Because Zedux encourages splitting state into many smaller units, you don’t have to “predeclare” everything in a monolithic shape. The code tends to live where it belongs (in each atom). Side effects, logging, etc., can be handled via effect subscribers, so you often don’t need a middleware layer like in Redux.<span>
+</span>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+</p>
+<p> From a DX point of view, I found that with Zedux I wrote less boilerplate and felt more flexible; adding a new “piece” of state was simpler relative to Redux, with fewer “wiring” concerns.</p>
+<p> 
+<strong>Verdict on boilerplate/DX</strong>: Zedux has the upper hand (for me) in simpler setup and reduced ceremony. Redux (with Toolkit) closes the gap but still carries more structural overhead.</p>
+<hr>
+<h2
+> 2. Architecture &amp; State Modeling</h3>
+<p> How you model your application's state aggregate vs. atomic, centralized vs. modular is a critical point.</p>
+<h2
+> Redux: A Single State Tree (with slices)</h3>
+<p> Redux operates with a<span>
+</span>
+<strong>single store</strong>
+<span>
+</span>(state tree). All your application’s state is usually centralized. You break it into slices, but ultimately it's one object. Actions flow in, reducers update state, and components subscribe to pieces.</p>
+<h2
+> Pros of this approach:</h3>
+<p> 
+<ul>
+<li>Predictability: there's one source of truth.</li>
+<li>Debuggability: tools like Redux DevTools give you time-traveling, action replay, snapshots.</li>
+<li>Consistency: everyone on the team understands where global state lives.</li>
+</ul>
+</p>
+<h2
+> But it has drawbacks:</h3>
+<p> 
+<ul>
+<li>Large state can become monolithic and harder to reason about.</li>
+<li>You may unintentionally affect distant parts of the tree.</li>
+<li>Scaling can introduce coupling between features.</li>
+</ul>
+</p>
+<p> Redux encourages you to normalize state, keep slices shallow, and use memoized selectors (e.g. via reselect) to avoid performance pitfalls.<span>
+</span>
+<a target="_self" tabindex="0" href="https://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
+</p>
+<h2
+> Zedux: Atomic / Composable Store Units</h3>
+<p> Zedux embraces<span>
+</span>
+<strong>atomic/composable</strong>
+<span>
+</span>store units. Each atom or unit encapsulates:</p>
+<p> 
+<ul>
+<li>Its piece of state</li>
+<li>Possibly its side-effects (via actors or effects)</li>
+<li>Interactions with dependencies (via dependency injection style)</li>
+</ul>
+</p>
+<p> The idea is that rather than bundling everything into one store, you break it into smaller stores or atoms, and compose them.<span>
+</span>
+<a target="_self" tabindex="0" href="https://blog.logrocket.com/zedux-redux-comparison/?utm_source=chatgpt.com" data-test-app-aware-link="">LogRocket Blog</a>
+</p>
+<h2
+> Benefits I observed:</h3>
+<p> 
+<ul>
+<li>Better modularity: each unit is self-contained, easier to reason, easier to test in isolation.</li>
+<li>Reduced coupling: changes in one module less likely to impact unrelated modules.</li>
+<li>Potential for better performance because updates are more localized.</li>
+</ul>
+</p>
+<h2
+> However, there are also trade-offs:</h3>
+<p> 
+<ul>
+<li>You lose some of the holistic snapshot visibility you get in Redux DevTools (unless Zedux has instrumentation).</li>
+<li>You may need to manage interdependencies explicitly (if atom A depends on atom B).</li>
+<li>The mental shift from “one state tree” to “many atoms” takes discipline.</li>
+</ul>
+</p>
+<p> From my usage, I liked that I could co-locate state logic with features, and not worry about overloading a global store.</p>
+<hr>
+<h2
+> 3. Side-Effects, Asynchronous Logic &amp; Middleware</h3>
+<p> State changes often don’t happen in isolation you need async calls, logging, side-effects, etc. How each library handles that is key.</p>
+<h2
+> Redux: Middlewares, Thunks, Sagas, etc.</h3>
+<p> Redux’s approach is mature: you insert middleware in the dispatch pipeline. Examples:</p>
+<p> 
+<ul>
+<li>Redux Thunk (for simple async logic)</li>
+<li>Redux Saga (for complex orchestration)</li>
+<li>Redux Observable (RxJS style)</li>
+<li>Middleware for logging, error reporting, etc.</li>
+</ul>
+</p>
+<h2
+> Pros:</h3>
+<p> 
+<ul>
+<li>Flexible you can intercept actions, chain them, cancel them, perform advanced orchestration.</li>
+<li>Ecosystem: many well-known middleware exist.</li>
+<li>Composability: middleware stacks let you layer behaviors.</li>
+</ul>
+</p>
+<h2
+> Cons:</h3>
+<p> 
+<ul>
+<li>Complexity: middleware can become hard to reason about.</li>
+<li>Boilerplate: writing sagas or complex middleware has its own overhead.</li>
+<li>Testing middleware + reducers + dispatch flows can be complex.</li>
+</ul>
+</p>
+<h2
+> Zedux: Effects subscribers &amp; actors</h3>
+<p> With Zedux, side-effects are more integrated: rather than middleware per se, you have<span>
+</span>
+<strong>effects subscribers</strong>
+<span>
+</span>or<span>
+</span>
+<strong>actors</strong>
+<span>
+</span>built into atoms or store units. You subscribe to state transitions or define logic that reacts when state changes.<span>
+</span>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<a target="_self" tabindex="0" href="https://zedux.dev/docs/about/redux-comparison?utm_source=chatgpt.com" data-test-app-aware-link=""></a>
+</p>
+<p> For example, instead of a logging middleware, you might do:</p>
+<pre>
+<code>store.subscribe({effects: ({ newState, oldState }) =&gt; {console.log('state changed', { newState, oldState });}});<span>
+</span>
+</code>
+</pre>
+<h2
+> Some advantages I saw:</h3>
+<p> 
+<ul>
+<li>Less plumbing: you don’t need a separate middleware layer; effects are more first-class.</li>
+<li>Co-location of logic: side-effects related to a state unit can live near that unit.</li>
+<li>Simplification: simpler use cases (fetching, logging) feel more natural.</li>
+</ul>
+</p>
+<h2
+> However:</h3>
+<p> 
+<ul>
+<li>More complex orchestration (cancellations, batching, time-travel) may be harder or require patterns external to Zedux.</li>
+<li>Middleware-style plugin systems are less emphasized, so some cross-cutting concerns may need custom wiring.</li>
+</ul>
+</p>
+<p> Interestingly, Zedux’s documentation states that<span>
+</span>
+<strong>middleware is not strictly necessary</strong>
+<span>
+</span>many side effects can be handled by effects subscribers, and the atomic model helps reduce the need for batching or combining actions.<span>
+</span>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+</p>
+<p> In practice, for many of my simpler async flows (fetch → set state → maybe act on success), Zedux’s model felt more succinct and less ceremony-heavy.</p>
+<hr>
+<h2
+> 4. Performance &amp; Re-renders</h3>
+<p> In a real-world app, performance and avoiding unnecessary re-renders is often decisive.</p>
+<h2
+> Redux: Optimizations &amp; Known Patterns</h3>
+<p> Redux (especially React-Redux) is heavily optimized. The official FAQ says React-Redux in v5 cuts down unnecessary re-renders.<span>
+</span>
+<a target="_self" tabindex="0" href="https://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
+</p>
+<p> Some techniques I’ve used:</p>
+<p> 
+<ul>
+<li>
+<strong>Memoized selectors</strong>
+<span>
+</span>(via reselect) to compute derived data and prevent recomputation.</li>
+<li>
+<strong>Normalization</strong>
+<span>
+</span>of state to avoid deep nested objects and reduce unnecessary copying.</li>
+<li>Splitting state into slices and connecting components to small parts of state.</li>
+<li>Using connect or useSelector smartly so that components re-render only when necessary.</li>
+</ul>
+</p>
+<p> Redux can handle large scale state if built properly, though it's not “free.” The time cost is from reducers, notifying subscribers, and React re-rendering.<span>
+</span>
+<a target="_self" tabindex="0" href="https://redux.js.org" data-test-app-aware-link="">redux.js.org</a>
+</p>
+<p> From my experience, a well-architected Redux app can scale fine but it demands discipline, especially around state shape and component subscription zones.</p>
+<h2
+> Zedux: Localized Updates, Atom Granularity</h3>
+<p> Because Zedux encourages smaller state units (atoms/composable store units), updates tend to be more localized. That means:</p>
+<p> 
+<ul>
+<li>Fewer cascading re-renders across unrelated parts of the UI.</li>
+<li>Potentially smaller diffing and change propagation.</li>
+<li>More granular subscriptions, so only concerned components re-render.</li>
+</ul>
+</p>
+<p> In some benchmark comparisons (on the Zedux site), they claim that Zedux can outperform Redux in complex apps when measuring end-to-end performance, especially because of its composable store model.<span>
+</span>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+<span>
+</span>One example given: in a trivial store creation benchmark, Zedux: 213 million ops/sec vs Redux: 16 million ops/sec (though that’s highly specialized).<span>
+</span>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+</p>
+<p> Of course, benchmarks are synthetic, and real-world performance depends on many variables  UI complexity, rendering, network, etc. Zedux docs themselves caution that objective performance comparisons are very hard and context-dependent.<span>
+</span>
+<a target="_self" tabindex="0" href="https://zedux.dev" data-test-app-aware-link="">zedux.dev</a>
+</p>
+<p> From my trials, in medium-to-large apps, I felt Zedux had a slight edge in certain update-heavy scenarios, especially when many small independent atoms updated frequently.</p>
+<p> 
+<strong>But caveat</strong>: If I misuse atomic granularity (too many tiny atoms or unnecessary subscription overhead), performance could degrade. It requires thoughtful granularity.</p>
+<hr>
+<h2
+> 5. Tooling, Ecosystem &amp; Maturity</h3>
+<p> A library’s maturity and ecosystem are often deciding factors in adoption. Here’s how I see Redux vs Zedux in 2025 (as of this writing).</p>
+<h2
+> Redux: Battle-Tested &amp; Rich Ecosystem</h3>
+<p> 
+<ul>
+<li>Redux has been around for years; it’s used widely in industry.</li>
+<li>Rich ecosystem: DevTools, middleware, integration with other frameworks (React, Angular, etc).</li>
+<li>Great documentation, many tutorials, community support.</li>
+<li>Well-known pain points and best practices are well-documented.</li>
+<li>Many existing libraries and enterprise projects already use Redux, so ramping in or integrating is easier.</li>
+</ul>
+</p>
+<p> Also, because Redux is older, many associated tools (debugging, logging, dev-time tooling) are more mature and polished.</p>
+<h2
+> Zedux: Emerging but Promising</h3>
+<p> 
+<ul>
+<li>Zedux is newer and still evolving.<span>
+</span>
+<a target="_self" tabindex="0" href="https://blog.logrocket.com/zedux-redux-comparison/?utm_source=chatgpt.com" data-test-app-aware-link="">LogRocket Blog</a>
+</li>
+<li>The documentation is growing, and comparisons with Redux are already published.<span>
+</span>
+<a target="_self" tabindex="0" href="https://blog.logrocket.com/zedux-redux-comparison/?utm_source=chatgpt.com" data-test-app-aware-link="">LogRocket Blog</a>
+</li>
+<li>Tooling is less mature: DevTools support, plugin ecosystems, community examples are fewer.</li>
+<li>Because it’s newer, there is more risk (breaking changes, less battle-tested for edge cases).</li>
+</ul>
+</p>
+<p> In my usage, I found that for new projects or prototyping, Zedux offers a lot of promise. But in established or large teams, the Redux ecosystem is still safer.</p>
+<p> For example, if you want deep integration with existing middleware, analytics, state persistence, or third-party plugins, Redux wins by default.</p>
+<hr>
+<h2
+> 6. Migration, Interoperability &amp; Learning Curve</h3>
+<p> Switching or blending tools is common in the lifecycle of projects.</p>
+<h2
+> Learning Curve</h3>
+<p> 
+<ul>
+<li>Redux has a steeper learning curve (for beginners) actions, reducers, middleware, selectors, normalization, boilerplate.</li>
+<li>Redux Toolkit lowers the barrier substantially.</li>
+<li>Zedux (for me) felt more intuitive in many cases: define your atom, define actors, subscribe to effects. Fewer mental hoops to jump through.</li>
+</ul>
+</p>
+<p> However, Zedux’s new patterns (atoms, effects, injection) may require a paradigm shift for teams used to Redux.</p>
+<h2
+> Migration or Hybrid Strategy</h3>
+<p> In some cases, you may want to adopt Zedux gradually in a Redux-based app (or vice versa). The ability to integrate or cohabitate matters.</p>
+<p> I tried a hybrid approach: keep core global state in Redux, but use Zedux for “module-local” or “feature-level” isolated state. This allowed me to move incrementally. But it also adds complexity two models to think about, potential coupling.</p>
+<p> If a project already uses Redux heavily, migrating to Zedux is non-trivial, especially in large codebases. Tooling, patterns, and conventions must be rebuilt.</p>
+<hr>
+<h2
+> 7. Use Cases &amp; When I’d Prefer One over the Other</h3>
+<p> Given all the above, here’s my heuristic: when I’d pick Redux, and when I’d lean to Zedux (for my usage).</p>
+<h2
+> When I prefer Redux</h3>
+<p> 
+<ul>
+<li>Enterprise or large-scale apps where many teams share state and conventions.</li>
+<li>If I need mature integrations (analytics, logging, persistence) out-of-the-box.</li>
+<li>When consistency, predictability, and debug-ability are top priorities.</li>
+<li>When I’m working on an existing Redux codebase and want to extend, not rewrite.</li>
+<li>When a more opinionated, battle-tested approach is safer for long-term maintainability.</li>
+</ul>
+</p>
+<h2
+> When I prefer Zedux</h3>
+<p> 
+<ul>
+<li>For greenfield or new modules where I want minimal boilerplate and modularity.</li>
+<li>For apps with many small, loosely coupled state units, e.g. dashboards, widget-like UIs.</li>
+<li>When I want co-located state logic and side-effects, and want to avoid large wiring.</li>
+<li>For prototyping or smaller to medium apps where developer velocity is more important.</li>
+<li>When I’m comfortable accepting some risk in tooling and ecosystem maturity.</li>
+</ul>
+</p>
+<p> I can imagine a scenario: I build a non-critical subsystem of a product using Zedux, and if it proves stable, gradually expand. Meanwhile, the core remains in Redux.</p>
+<hr>
+<h2
+> 8. Sample Comparisons &amp; Code Sketches</h3>
+<p> To make it more concrete, here’s a simplified “counter with async fetch” example in both Redux (with Toolkit) and Zedux.</p>
+<h2
+> Redux (with Redux Toolkit)</h3>
+<pre><code>
+// counterSlice.js
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
+export const fetchCount = createAsyncThunk('counter/fetchCount', async (amount) => {
+  const response = await fetch(\`/api/count?n=\${amount}\`);
+  const data = await response.json();
+  return data.count;
+});
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState: { value: 0, status: 'idle' },
+  reducers: {
+    increment: (state) => { state.value += 1 },
+    decrement: (state) => { state.value -= 1 },
   },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchCount.pending, (state) => { state.status = 'loading'; })
+      .addCase(fetchCount.fulfilled, (state, action) => {
+        state.value = action.payload;
+        state.status = 'succeeded';
+      })
+      .addCase(fetchCount.rejected, (state) => { state.status = 'failed'; });
+  },
+});
+
+export const { increment, decrement } = counterSlice.actions;
+export default counterSlice.reducer;
+</code></pre>
+
+<p>Then you would configure the store:</p>
+
+<pre><code>
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './counterSlice';
+
+const store = configureStore({
+  reducer: { counter: counterReducer }
+});
+
+export default store;
+</code></pre>
+
+<p>In React components, you hook <code>useSelector</code>, <code>useDispatch</code>, and use thunk actions.</p>
+
+<h2>Zedux (sketch)</h2>
+
+<pre><code>
+import { atom } from '@zedux/react';
+
+// define an atom
+const countAtom = atom('count', 0);
+
+// define an actor for async fetch
+countAtom.defineActor('fetchCount', async (ctx, amount) => {
+  ctx.setLoading(true);
+  const response = await fetch(\`/api/count?n=\${amount}\`);
+  const json = await response.json();
+  ctx.set(json.count);
+  ctx.setLoading(false);
+});
+
+// Somewhere in component
+const [count, { fetchCount, set }] = useAtomState(countAtom);
+
+// to fetch
+fetchCount(5);
+</code></pre>
+<p> You can also subscribe to effects:</p>
+<pre>
+<code>countAtom.subscribe({effects: ({ newState, oldState }) =&gt; {console.log('count changed', newState, oldState);}});<span>
+</span>
+</code>
+</pre>
+<p> As you see, the setup is more localized, and side-effects live next to the atom. The code feels more direct and less spread across slices, actions, reducers, etc.</p>
+<hr>
+<h2
+> 9. Trade-Offs &amp; Pitfalls I Encountered</h3>
+<p> No tool is perfect. Here are some of the gotchas I encountered while using Zedux (and comparing with Redux) in real apps:</p>
+<p> 
+<ol>
+<li>
+<strong>Tooling gaps</strong>: lack of mature DevTools, code generation, or plugins. Debugging cross-atom state transitions is harder.</li>
+<li>
+<strong>Atomic explosion</strong>: defining too many atoms makes the mental model noisy. You need discipline in granularity.</li>
+<li>
+<strong>Inter-atom dependencies</strong>: you sometimes need to derive or coordinate state across atoms, so you need custom wiring or dependencies. It can become messy.</li>
+<li>
+<strong>Migration friction</strong>: integrating Zedux into existing Redux apps adds complexity, because you carry two state models.</li>
+<li>
+<strong>Edge-case orchestration</strong>: advanced side-effects (cancellation, retries, batching, time-travel) may require more architecture overhead or workaround.</li>
+<li>
+<strong>Overhead of subscription management</strong>: with many atoms, the overhead of subscribing/unsubscribing can add up if not optimized.</li>
+<li>
+<strong>Risk of evolving APIs</strong>: being newer, Zedux might evolve more aggressively, causing breaking changes or instability.</li>
+</ol>
+</p>
+<p> By contrast, some pitfalls in Redux that I’m all too familiar with:</p>
+<p> 
+<ul>
+<li>Boilerplate becomes unwieldy in large apps.</li>
+<li>Deep nesting or unnormalized state leads to performance issues.</li>
+<li>Too much coupling across reducers or slices.</li>
+<li>Middleware becomes spaghetti, making flows hard to trace.</li>
+<li>Hard to maintain or onboard new devs to complex Redux patterns.</li>
+</ul>
+</p>
+<p> Given these trade-offs, the choice is about balance: you lean to the tool whose trade-offs you are more comfortable managing.</p>
+<hr>
+<h2
+> 10. My Verdict &amp; Recommendations</h3>
+<p> If I were starting a new React (or React-like) application today, which would I pick? (Spoiler: it’s context-dependent.)</p>
+<p> 
+<ul>
+<li>If the project is small-to-medium, or modular, and performance is not extremely critical at first, I’d lean<span>
+</span>
+<strong>Zedux</strong>
+<span>
+</span>for its simplicity and velocity.</li>
+<li>If the project is large, enterprise scale, or needs guaranteed stability, I’d stick with<span>
+</span>
+<strong>Redux (with Toolkit)</strong>
+<span>
+</span>and only consider migrating to Zedux in modules later.</li>
+<li>If a codebase is already on Redux and stable, I might introduce Zedux only where it brings value (isolated features), but I probably won’t swap the core.</li>
+</ul>
+</p>
+<p> I believe Zedux is a promising direction in state management. It addresses many of the pain points in Redux (boilerplate, coupling) while preserving many benefits. But it’s not yet a complete replacement in every scenario. In many engineering decisions, “good enough” and “developer ergonomics” win over theoretical elegance.</p>
+<p> So in short:<span>
+</span>
+<strong>Redux</strong>
+<span>
+</span>is tried-and-true, with stability and ecosystem;<span>
+</span>
+<strong>Zedux</strong>
+<span>
+</span>is fresh, modular, and ergonomic. Use the right tool for the job.</p>
+<hr>
+<h2
+> 11. Suggested Outline for Readers to Evaluate</h3>
+<p> If you (or your team) are considering Redux vs Zedux, here’s a short checklist I’d follow (and often did) to make a decision:</p>
+<p> 
+<ol>
+<li>
+<strong>Scale &amp; Longevity</strong>: Will your app grow large? Will multiple teams work on it?</li>
+<li>
+<strong>State coupling</strong>: Do features share many overlapping state pieces, or can you isolate them?</li>
+<li>
+<strong>Tooling needs</strong>: Do you need mature DevTools, middleware, persistence, etc?</li>
+<li>
+<strong>Performance constraints</strong>: Are updates frequent and heavy, or mostly occasional?</li>
+<li>
+<strong>Development velocity vs robustness</strong>: Do you favor speed and DX or rigorous structure?</li>
+<li>
+<strong>Migration cost / existing codebase</strong>: If you already have Redux, can you gradually adopt Zedux?</li>
+<li>
+<strong>Team familiarity &amp; onboarding</strong>: Are engineers comfortable with Redux patterns or willing to learn new ones?</li>
+<li>
+<strong>Future-proofing vs risk appetite</strong>: Do you accept that Zedux is newer and might evolve?</li>
+</ol>
+</p>
+<p> By evaluating these, you can choose the tool whose trade-offs align with your priorities.</p>
+<hr>
+<h2
+> Closing Thoughts</h3>
+<p> Writing this article forced me to reflect on my own assumptions and experiences. Redux has been a reliable workhorse for many projects, and there is wisdom in its patterns. But I believe the state management landscape is changing, and Zedux (and similar atomic/composable libraries) point to a future where state is more modular, side-effects more first-class, and boilerplate minimized.</p>
+<p> If you’re reading this because you’re considering migrating or deciding for a new project, I encourage you to prototype with both (on a small module) and measure not just performance, but developer joy, maintainability, readability, and architectural clarity.</p>
+</div>`,
+};
+
+export const bp26 = {
+  // id: 5,
+  title: "Next.js API Routes: Building Server Endpoints",
+  excerpt:
+    "Next.js API routes allow you to create serverless functions as part of your Next.js application. This means you can build backend functionality without needing a separate server, making it easier to handle tasks like form submissions, authentication, and data fetching directly within your Next.js app.",
+  slug: "nextjs-api-routes-building-server-endpoints",
+  publishedAt: "14-01-2026",
+  readingTime: "15 min read",
+  image: "/images/blogs/next-js-api-routes-building-server-endpoints.webp",
+  category: "Opinion",
+  tags: ["Next.js", "API Routes", "Serverless", "Backend Development"],
+  content: `<div data-scaffold-immersive-reader-content="">
+<div>
+<div dir="ltr">
+<div>
+
+<p id="ember190">
+Next.js 16 represents a major milestone in the evolution of the Next.js framework one of the most widely used full‑stack React frameworks. Unlike previous releases that introduced dramatic paradigm shifts, Next.js 16 is about<span> </span><strong>refinement</strong>,<span> </span><strong>clarity</strong>,<span> </span><strong>performance</strong>, and<span> </span><strong>explicit control</strong>. This article breaks down every major change in detail: what’s new, what’s enhanced, what’s deprecated or removed, and what this means for developers building modern web applications.
+</p>
+<p id="ember191">
+The content below is based on the official<span> </span><strong>Next.js 16 release notes</strong><span> </span>and corroborated with community summaries and upgrade guides.
+</p>
+<h3 id="ember192">
+Introduction: Why Next.js 16 Matters
+</h3>
+<p id="ember193">
+Next.js 16 is not a dramatic rewrite, but a<span> </span><em>strategic progression</em><span> </span>of the framework. Many releases focus on new abstractions new data‑fetching hooks, new routing APIs, or new rendering strategies. Next.js 16 instead revisits long‑standing developer pain points: caching surprises, unpredictable behavior, and mismatched expectations between static and dynamic content.
+</p>
+<p id="ember194">
+At its core,<span> </span><strong>Next.js 16 formalizes control</strong><span> </span>giving developers the ability to explicitly declare caching behavior, refresh strategies, and runtime boundaries while making performance behavior more predictable and transparent.
+</p>
+<h3 id="ember195">
+The New Caching Paradigm
+</h3>
+<h3 id="ember196">
+Cache Components and “use cache”
+</h3>
+<p id="ember197">
+One of the most significant changes in Next.js 16 is the introduction of<span> </span><strong>Cache Components</strong>, which completely changes how caching works in the App Router. Previously, Next.js had<span> </span><em>implicit caching rules</em>. Pages and components were statically optimized or cached based on a combination of conventions and heuristics. This could be powerful, but also confusing: static pages could inadvertently end up dynamic, and caching behaviors were hard to reason about.
+</p>
+<h3 id="ember198">
+What “use cache” Means
+</h3>
+<p id="ember199">
+With Next.js 16, caching is<span> </span><em>opt‑in</em>. Developers now explicitly mark components, pages, or functions with a "use cache" directive:
+</p>
+<pre><code>'use cache';
+export async function fetchData(url) {
+const res = await fetch(url, { next: { revalidate: 60 } });
+return res.json();}</code></pre>
+<p id="ember200">
+When "use cache" is present, Next.js will<span> </span><strong>cache the output of that function or component</strong><span> </span>across requests. The framework uses its compiler to<span> </span><strong>generate cache keys automatically</strong><span> </span>based on build ID, function location, and arguments.
+</p>
+<p id="ember201">
+Importantly:
+</p>
+<p id="ember202">
+
+<ul><li>If<span> </span><strong>no “use cache”</strong><span> </span>is present, Next.js executes code<span> </span><em>on every request</em><span> </span>by default.</li><li>This explicit caching model brings predictability: only what you<span> </span><em>declare</em><span> </span>as cacheable gets cached.</li></ul>
+</p>
+<h3 id="ember203">
+Partial Pre‑Rendering (PPR) and Cache Components
+</h3>
+<p id="ember204">
+Partial Pre‑Rendering (PPR) was introduced in earlier versions to give a middle ground between static and dynamic. Next.js 16 completes the PPR story by integrating it directly into Cache Components. The old experimental.ppr configuration flag has been removed in favor of the unified Cache Components model.
+</p>
+<h3 id="ember205">
+Default Dynamic Execution
+</h3>
+<p id="ember206">
+Because caching is now explicit,<span> </span><strong>everything is dynamic by default</strong>. This means:
+</p>
+<p id="ember207">
+
+<ul><li>Initial behavior is similar to classic server rendering: always fresh.</li><li>Caching happens only where developers choose it.</li><li>This reduces accidental stale data and makes behavior easier to reason about.</li></ul>
+</p>
+<p id="ember208">
+Compared to older releases, this pivot can change how developers think about data fetching and performance optimization.
+</p>
+<h3 id="ember209">
+Refined Caching APIs
+</h3>
+<p id="ember210">
+Next.js 16 not only changes how caching is opt‑in, but expands and refines the APIs around runtime cache control.
+</p>
+<h3 id="ember211">
+revalidateTag()
+</h3>
+<p id="ember212">
+The revalidateTag() function used to mark cached data stale now<span> </span><strong>requires a second argument called a<span> </span></strong>cacheLife<strong><span> </span>profile</strong>:
+</p>
+<pre><code>import { revalidateTag } from 'next/cache';
+revalidateTag('blog-posts', 'max');</code></pre>
+<p id="ember213">
+cacheLife can be:
+</p>
+<p id="ember214">
+
+<ul><li>Built‑in profiles (max, hours, days)</li><li>Custom objects like { expire: 3600 }</li></ul>
+</p>
+<p id="ember215">
+The old one‑argument signature (just the tag) is deprecated.
+</p>
+<h3 id="ember216">
+updateTag()
+</h3>
+<p id="ember217">
+updateTag() is a<span> </span><strong>new Server Actions–only API</strong><span> </span>that provides<span> </span><em>read‑your‑writes semantics</em>:
+</p>
+<pre><code>import { updateTag } from 'next/cache';
+export async function updateUserProfile(userId, profile) {
+await db.users.update(userId, profile);
+updateTag(\`user-\${userId}\`)}</code></pre>
+<p id="ember218">
+This ensures that after an update, the cache is immediately invalidated and refreshed in the same request perfect for forms, user settings, or any interactive mutation that should reflect instantly without waiting for stale data to revalidate.
+</p>
+<h3 id="ember219">
+refresh()
+</h3>
+<p id="ember220">
+Another new API, refresh(), triggers a<span> </span><strong>router refresh from inside a Server Action</strong><span> </span><em>without touching the cache</em>:
+</p>
+<pre><code>import { refresh } from 'next/cache';
+export async function markNotificationAsRead(notificationId) {
+await db.notifications.markAsRead(notificationId);
+refresh();}</code></pre>
+<p id="ember221">
+Unlike router.refresh() on the client, this refreshes only uncached data (the existing cache remains intact). This is especially useful for things like notification counts that should update immediately while keeping the rest of the page’s static shell intact.
+</p>
+<h3 id="ember222">
+Stable cacheLife and cacheTag
+</h3>
+<p id="ember223">
+Previously unstable cache APIs (unstable_cacheLife, unstable_cacheTag) are now stable and no longer require the unstable_ prefix, simplifying imports and usage.
+</p>
+<h3 id="ember224">
+Turbopack Becomes the Default Bundler
+</h3>
+<p id="ember225">
+Turbopack originally introduced as a next‑generation bundler alongside Webpack alternatives is now the<span> </span><strong>default bundler</strong><span> </span>in Next.js 16. This is a major architectural shift in how developers build and serve Next.js apps.
+</p>
+<h3 id="ember226">
+Why Turbopack?
+</h3>
+<p id="ember227">
+Turbopack is designed for<span> </span><strong>performance and developer experience</strong>:
+</p>
+<p id="ember228">
+
+<ul><li><strong>2–5× faster production builds</strong><span> </span>compared to Webpack</li><li><strong>Up to 10× faster Fast Refresh</strong><span> </span>during development</li></ul>
+</p>
+<p id="ember229">
+For most apps, no configuration is needed Turbopack just becomes the default.
+</p>
+<h3 id="ember230">
+Filesystem Caching
+</h3>
+<p id="ember231">
+Turbopack now supports<span> </span><strong>filesystem caching in development</strong>, storing compiler artifacts on disk between runs. In large projects, this translates to significantly faster compile times when restarting the dev server. To enable it:
+</p>
+<pre><code>const nextConfig = {
+experimental: {
+turbopackFileSystemCacheForDev: true,
+},};
+export default nextConfig;</code></pre>
+<p id="ember232">
+This is currently experimental, but shows how the bundler continues to optimize dev workflows.
+</p>
+<h3 id="ember233">
+Webpack Fallback
+</h3>
+<p id="ember234">
+For apps using custom Webpack setups, Next.js still allows fallback to Webpack:
+</p>
+<pre><code>next dev --webpacknext build --webpack</code></pre>
+<p id="ember235">
+This ensures existing build configurations aren’t broken immediately, while encouraging migration to Turbopack.
+</p>
+<h3 id="ember236">
+Routing and Navigation Enhancements
+</h3>
+<p id="ember237">
+Next.js has always been praised for its routing model. Next.js 16 refines this with<span> </span><em>smarter prefetching</em><span> </span>and<span> </span><em>layout reuse</em><span> </span>strategies:
+</p>
+<h3 id="ember238">
+Layout Deduplication
+</h3>
+<p id="ember239">
+When prefetching multiple URLs that share the same layout, only one copy of that layout is downloaded instead of multiple times. For example, if a page with 50 links all share a common layout, the layout HTML/JS is fetched just once. This significantly reduces network transfer sizes and speeds up navigation.
+</p>
+<h3 id="ember240">
+Incremental Prefetching
+</h3>
+<p id="ember241">
+Next.js now prefetches<span> </span><strong>only the parts of a route that are not yet in cache</strong>. Rather than fetching entire page bundles ahead of time, it:
+</p>
+<p id="ember242">
+
+<ul><li>Cancels prefetch requests when links leave the viewport</li><li>Prioritizes prefetch on hover</li><li>Re‑prefetches when data is invalidated</li></ul>
+</p>
+<p id="ember243">
+This can increase the number of individual requests, but dramatically lowers total bytes transferred, improving perceived performance.
+</p>
+<p id="ember244">
+These improvements are<span> </span><em>optical</em><span> </span>rather than requiring code changes they apply automatically to all apps.
+</p>
+<h3 id="ember245">
+DevTools and Debugging Improvements
+</h3>
+<p id="ember246">
+Next.js 16 introduces<span> </span><strong>Next.js DevTools MCP (Model Context Protocol)</strong>. This integration provides richer debugging context and tooling support:
+</p>
+<p id="ember247">
+
+<ul><li><strong>Unified logs</strong><span> </span>combine server and client logs for easier debugging</li><li><strong>Automatic error access</strong><span> </span>detailed stack traces without manual copy/paste</li><li><strong>Route awareness</strong><span> </span>DevTools understands current routes and their cache status</li><li><strong>AI tool integration</strong><span> </span>enables AI assistants (like in editors) to diagnose issues with routing, rendering, and caching</li></ul>
+</p>
+<p id="ember248">
+These improvements make it easier to diagnose and optimize application behavior, especially in large or complex apps.
+</p>
+<h3 id="ember249">
+proxy.ts: Replacing middleware.ts
+</h3>
+<p id="ember250">
+Next.js has renamed and redefined how request interception works in the framework.
+</p>
+<h3 id="ember251">
+Why the Change?
+</h3>
+<p id="ember252">
+In previous versions, developers placed code in a file named middleware.ts to intercept requests and modify responses (redirects, rewrites, etc.). Next.js 16 replaces this with<span> </span><strong>proxy.ts</strong><span> </span>to make the intent clearer explicitly defining a<span> </span><strong>network boundary</strong><span> </span>within the Node.js runtime.
+</p>
+<h3 id="ember253">
+How it Works
+</h3>
+<p id="ember254">
+To migrate:
+</p>
+<p id="ember255">
+
+<ol><li>Rename middleware.ts to proxy.ts.</li><li>Rename the exported function from middleware to proxy.</li></ol>
+</p>
+<p id="ember256">
+Example:
+</p>
+<pre><code>export default function proxy(request: NextRequest) {
+return NextResponse.redirect(new URL('/home', request.url));}</code></pre>
+<p id="ember257">
+The logic remains the same, but the naming makes responsibilities clearer.
+</p>
+<h3 id="ember258">
+Deprecated Behavior
+</h3>
+<p id="ember259">
+middleware.ts is still available for Edge runtime use cases, but it’s deprecated and scheduled for removal in a future version. This means migrating to proxy.ts soon is advised.
+</p>
+<h3 id="ember260">
+React Compiler and React 19.x Support
+</h3>
+<p id="ember261">
+Next.js 16 embraces the<span> </span><strong>React Compiler</strong>, which integrates deeply with upcoming React 19.x features:
+</p>
+<p id="ember262">
+
+<ul><li>Automatic memoization and bundler optimizations</li><li>Reduced need for manual performance hooks (useCallback, useMemo)</li><li>Better integration with caching and server components</li></ul>
+</p>
+<p id="ember263">
+These improvements are enabled via configuration:
+</p>
+<pre><code>const nextConfig = {
+reactCompiler: true,};
+export default nextConfig;</code></pre>
+<p id="ember264">
+You may need to install the latest React Compiler plugin:
+</p>
+<pre><code>npm install babel-plugin-react-compiler@latest</code></pre>
+<p id="ember265">
+Additionally, React 19.2 support brings experimental features such as<span> </span><em>View Transitions</em>, useEffectEvent, and the Activity API, although these features land at different stability tiers in React itself.
+</p>
+<h3 id="ember266">
+Other Architectural Improvements
+</h3>
+<h3 id="ember267">
+Simplified create‑next‑app
+</h3>
+<p id="ember268">
+Next.js 16 updates the default project scaffolding with a simpler setup flow that includes TypeScript first configuration, App Router usage, and Tailwind CSS defaults. The redesigned create-next-app improves DX for new projects.
+</p>
+<h3 id="ember269">
+Improved Logging and Build Insights
+</h3>
+<p id="ember270">
+Build logs and development request logs are now more detailed, helping you identify performance bottlenecks faster. This is part of a broader push toward<span> </span><em>observable performance metrics</em><span> </span>without third‑party tooling.
+</p>
+<h3 id="ember271">
+Deprecations and Breaking Changes
+</h3>
+<p id="ember272">
+Next.js 16 introduces a few important deprecations and breaking changes you should be aware of before upgrading:
+</p>
+<h3 id="ember273">
+Removed Features
+</h3>
+<p id="ember274">
+
+<ul><li><strong>AMP support is completely removed</strong><span> </span>if your project still uses AMP, that code must be migrated.<span> </span><a target="_self" tabindex="0" href="https://peerlist.io/spandanm110/articles/nextjs-16-updates?utm_source=chatgpt.com" data-test-app-aware-link="">Peerlist</a></li></ul>
+</p>
+<h3 id="ember275">
+Renamed / Deprecated APIs
+</h3>
+<p id="ember276">
+
+<ul><li>middleware.ts → replaced with proxy.ts (middleware deprecated).</li></ul>
+</p>
+<h3 id="ember277">
+Updated Requirements
+</h3>
+<p id="ember278">
+
+<ul><li>Minimum<span> </span><strong>Node.js version 20.9.0</strong><span> </span>or greater.</li><li>Minimum<span> </span><strong>TypeScript 5.1.</strong></li></ul>
+</p>
+<p id="ember279">
+These environment requirements ensure support for modern JavaScript capabilities and reduce complexity around legacy Node versions.
+</p>
+<h3 id="ember280">
+Upgrade Considerations
+</h3>
+<p id="ember281">
+Upgrading to Next.js 16 is straightforward in many apps, but a few things deserve attention:
+</p>
+<p id="ember282">
+
+<ol><li><strong>Caching behavior changes</strong><span> </span>because caching is opt‑in, auditing your existing pages and components for cache needs is crucial.</li><li><strong>proxy.ts migration</strong><span> </span>rename and test all middleware behavior.</li><li><strong>Node/TypeScript minimums</strong><span> </span>ensure your deployment environment supports the newer Node.js and TypeScript versions.</li><li><strong>Third‑party caching libraries</strong><span> </span>some packages built around older caching semantics may need updates.</li></ol>
+</p>
+<p id="ember283">
+Community posts show that some edge cases remain with Cache Components and dynamic routes, particularly around Suspense boundaries, so testing is important.
+</p>
+<h3 id="ember284">
+Conclusion: Where Next.js 16 Takes Us
+</h3>
+<p id="ember285">
+Next.js 16 is a<span> </span><strong>thoughtful evolution</strong><span> </span>of the framework not a reinvention. It tackles hard problems around performance predictability, caching clarity, routing efficiency, and observability without upending the core developer experience. By making caching explicit and aligning the framework more closely with modern React patterns and tooling, Next.js 16 sets the stage for more scalable, maintainable applications.
+</p>
+<p id="ember286">
+Whether you’re building a small marketing site or a large enterprise app, understanding these changes especially around cache control, Turbopack defaulting, and refined APIs will help ensure your app takes full advantage of Next.js’s capabilities.
+</p>
+</div>
+</div>
+</div>
+
+</div>`,
+};
+const posts: Post[] = [
+  bp1,
+  bp2,
+  bp3,
+  bp4,
+  bp5,
+  bp6,
+  bp7,
+  bp8,
+  bp9,
+  bp10,
+  bp11,
+  bp12,
+  bp13,
+  bp14,
+  bp15,
+  bp16,
+  bp17,
+  bp18,
+  bp19,
+  bp20,
+  bp21,
+  bp22,
+  bp23,
+  bp24,
+  bp25,
+  bp26,
+  // ...OLD_TWEETS,
 ];
+
+// --- FLATMAP OF TAGS AND CATEGORIES ---
+export const allTags: string[] = Array.from(
+  new Set(posts.flatMap((p) => p.tags)),
+);
+
+export const allCategories: string[] = Array.from(
+  new Set(posts.map((p) => p.category)),
+);
+
+export const allTitles: string[] = Array.from(
+  new Set(posts.map((p) => p.slug)),
+);
 
 export { CONSTANT, posts };

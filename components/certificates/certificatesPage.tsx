@@ -17,7 +17,7 @@ export default function CertificatePage() {
           <h1 className={TITLE}>{'Professional Certifications'}</h1>
           <p className={DESCRIPTION}>{'Here are some of the certificates I have earned throughout my career and education.'}</p>
         </div>
-        <CertificateGrid />
+        <CertificateGrid  />
       </div>
     </div>
   );

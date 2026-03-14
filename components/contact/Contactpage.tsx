@@ -1,5 +1,4 @@
-
-import Contact from '@/components/contact/contact-form';
+import Contact from '@/components/contact/contact';
 import { CONSTANT, CONTACT_CARDS } from '@/constants/contact';
 import { Card, CardContent } from '@/components/ui/card';
 import Link from 'next/link';
@@ -43,7 +42,10 @@ export default function ContactPage() {
 
         <div className={styles?.messageBox}>
           <h2 className={styles?.messageTitle}>{CONSTANT?.sendMessageTitle}</h2>
-          <Contact />
+            <p className="text-center text-muted-foreground mb-6">
+              If you have any queries, feel free to chat with me via <b>Tawk.to</b> (chat widget in the corner)! This step has been taken to enhance quick response.
+            </p>
+          {/* <Contact /> */}
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import { projects } from "@/constants/projects";
 import { events } from "@/constants/events";
 import { LINKS_GROUPS } from "@/constants/footer";
 import { SERVICES } from "@/constants/services";
-import { countries } from "@/constants/area-services";
+import { countries } from "@/constants/countries";
 
 function formatSlug(text: string) {
   return text.toLowerCase().replace(/[\s/]+/g, "-");
@@ -59,7 +59,7 @@ export default function SitemapStyleLinktreePage() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">📝 Blog Posts</h2>
         <ul className="space-y-2">
-          {posts.slice(0, 20).map((post) => (
+          {posts.slice(0, 20)?.map((post) => (
             <li key={post.slug}>
               <Link href={`/blogs/${post.slug}`} className="hover:underline">
                 ✍️ {post.title}
@@ -70,7 +70,9 @@ export default function SitemapStyleLinktreePage() {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">📚 Blogs Categories & Tags</h2>
+        <h2 className="text-2xl font-semibold mb-4">
+          📚 Blogs Categories & Tags
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {categories.map((cat) => (
             <Link
@@ -139,12 +141,12 @@ export default function SitemapStyleLinktreePage() {
                 <>
                   <ul className="ml-4 mb-4 space-y-1">
                     {SERVICES.map((service) => (
-                      <li key={service.slug}>
+                      <li key={service?.slug}>
                         <Link
-                          href={`/services/${service.slug}/${country.slug}`}
+                          href={`/services/${service?.slug}/${country.slug}`}
                           className="hover:underline"
                         >
-                          👨🏻‍🔧 {service.title} in {country.name}
+                          👨🏻‍🔧 {service?.title} in {country.name}
                         </Link>
                       </li>
                     ))}
@@ -163,12 +165,12 @@ export default function SitemapStyleLinktreePage() {
                         <>
                           <ul className="ml-4 mb-2 space-y-1">
                             {SERVICES.map((service) => (
-                              <li key={service.slug}>
+                              <li key={service?.slug}>
                                 <Link
-                                  href={`/services/${service.slug}/${country.slug}/${city.slug}`}
+                                  href={`/services/${service?.slug}/${country.slug}/${city.slug}`}
                                   className="hover:underline"
                                 >
-                                  👨🏻‍🔧 {service.title} in {city.name},{" "}
+                                  👨🏻‍🔧 {service?.title} in {city.name},{" "}
                                   {country.name}
                                 </Link>
                               </li>
@@ -187,12 +189,12 @@ export default function SitemapStyleLinktreePage() {
                               {openAreas[area.slug] && (
                                 <ul className="ml-4 space-y-1">
                                   {SERVICES.map((service) => (
-                                    <li key={service.slug}>
+                                    <li key={service?.slug}>
                                       <Link
-                                        href={`/services/${service.slug}/${country.slug}/${city.slug}/${area.slug}`}
+                                        href={`/services/${service?.slug}/${country.slug}/${city.slug}/${area.slug}`}
                                         className="hover:underline"
                                       >
-                                        👨🏻‍🔧 {service.title} in {area.name},{" "}
+                                        👨🏻‍🔧 {service?.title} in {area.name},{" "}
                                         {city.name}, {country.name}
                                       </Link>
                                     </li>

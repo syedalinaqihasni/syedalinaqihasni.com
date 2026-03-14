@@ -11,8 +11,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default function FeaturedProjects() {
- const featuredProjects = projects?.filter((p) => p.isFeatured === true);
-if (!featuredProjects?.length) return notFound();
+  const featuredProjects = projects?.filter((p) => p.isFeatured === true);
+  if (!featuredProjects?.length) return notFound();
   return (
     <div className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"}>
       {featuredProjects?.map((project, index) => (
@@ -28,9 +28,12 @@ if (!featuredProjects?.length) return notFound();
             }
           >
             <div className={"relative h-48 w-full"}>
-              <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>
+              <Link href={`/projects/${project?.slug}`}>
                 <Image
-                  src={project?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg'}
+                  src={
+                    project?.image ||
+                    "/images/placeholder-syed-ali-naqi-hasni.webp"
+                  }
                   alt={`${project?.title} - Syed Ali Naqi Hasni`}
                   fill
                   className={"object-cover"}
@@ -39,10 +42,12 @@ if (!featuredProjects?.length) return notFound();
             </div>
             <CardContent className={"p-6"}>
               <h3 className={"text-xl font-semibold mb-2"}>
-                <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>{project?.title}</Link>
+                <Link href={`/projects/${project?.slug}`}>
+                  {project?.title}
+                </Link>
               </h3>
               <p className={"text-muted-foreground mb-4 line-clamp-2"}>
-                <Link href={`https://www.syedalinaqihasni.com/projects/${project?.slug}`}>
+                <Link href={`/projects/${project?.slug}`}>
                   {" "}
                   {project?.description}
                 </Link>

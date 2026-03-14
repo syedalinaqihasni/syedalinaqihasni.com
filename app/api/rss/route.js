@@ -6,12 +6,12 @@ export async function GET() {
     const feed = new RSS({
         title: "My Blog",
         description: "Latest articles from my blog",
-        site_url: "https://syedalinaqihasni.com",
+        site_url: "https://www.syedalinaqihasni.com",
         feed_url: "https://www.syedalinaqihasni.com/api/rss",
         language: "en",
         pubDate: new Date(),
         ttl: '60',
-        image_url: "https://www.syedalinaqihasni.com/logo.png", // Example
+        image_url: "https://www.syedalinaqihasni.com/about-us-syed-ali-naqi-hasni.webp", // Example
         copyright: "Copyright © Syed Ali Naqi Hasni",
         managingEditor: "Syed Ali Naqi Hasni",
         webMaster: "Syed Ali Naqi Hasni",

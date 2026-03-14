@@ -623,8 +623,20 @@ export const PRICING_PAGE_CONSTANT = {
     description:
       "Let's discuss your project and find the perfect solution for your needs.",
     buttonText: "Contact Me",
-    buttonLink: "https://www.syedalinaqihasni.com/contact",
+    buttonLink: "/contact",
   },
 };
-
+export type Plan = {
+  id: number;
+  name: string;
+  description: string;
+  slug: string;
+  pricing: string;
+  period: string;
+  popular: boolean;
+  features: string[];
+  buttonText: string;
+  limitations?: string[];
+  category: string;
+};
 export const FEATURED_PRICING = FRONTEND_DEVELOPMENT_PLANS.slice(0, 3);

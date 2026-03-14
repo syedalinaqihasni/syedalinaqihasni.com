@@ -10,32 +10,30 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-import { Check, ArrowRight, Quote } from "lucide-react";
-import { toProperCase } from "@/lib/utils";
+import { Check, ArrowRight, Quote, Briefcase } from "lucide-react";
+import { dashToProperCase, properCaseToDash, toProperCase } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
+import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
-export async function generateStaticParams() {
-  const allSlugs = SERVICES.flatMap((service) => service?.slug || []);
-  return allSlugs.map((slug) => ({ slug }));
-}
+// export async function generateStaticParams() {
+//   const allSlugs = SERVICES.flatMap((service) => service?.slug || []);
+//   return allSlugs.map((slug) => ({ slug }));
+// }
 
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return {};
-  return {
+
+  return generateDynamicMetadata({
     title: `${service?.title} | Syed Ali Naqi Hasni`,
     description: service?.description,
-    openGraph: {
-      title: `${service?.title} | Syed Ali Naqi Hasni`,
-      description: service?.description,
-      url: `https://www.syedalinaqihasni.com/${params.slug}`,
-    },
-  };
+    path: `/services/${service?.slug}`,
+  });
 }
 
 const styles = {
@@ -63,7 +61,7 @@ const styles = {
 };
 
 export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return notFound();
 
   return (
@@ -83,20 +81,11 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             <FeatureList features={service?.features} />
           </Section>
           <div>
-            {/* <Section title="Technologies Used">
-              <div className="flex flex-wrap gap-2">
-                {service?.technologies.map((tech) => (
-                  <Badge key={tech} variant="secondary" className="text-xs">
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </Section> */}
-            <Section title="Related Serivices">
+            <Section title="Related Services">
               <div className="flex flex-wrap gap-2">
                 {service?.servs.map((serv) => (
-                  <Link href={serv} key={serv}>
-                    <Badge variant="secondary" className="text-xs">
+                  <Link href={`/related-services/${serv}`} key={serv}>
+                    <Badge variant="secondary" className="text-xs" key={serv}>
                       {toProperCase(serv).replace(/-/g, " ")}
                     </Badge>
                   </Link>
@@ -124,30 +113,58 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           )}
         </div>
       )}
+      {/* Deliverables + Requirements side by side */}
+      {(service?.relatedJobTitles || service?.technologies) && (
+        <div className="mb-6 grid md:grid-cols-2 gap-8">
+          {/* Related Job Titles as list with icons */}
+          <Section title="Related Job Titles">
+            <ul className="space-y-2">
+              {service?.relatedJobTitles.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/jobs/${properCaseToDash(serv)}`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Briefcase size={14} className="text-muted-foreground" />
+                    <span>{dashToProperCase(serv).replace(/-/g, " ")}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+          {/* Technologies Used */}
+          <Section title="Technologies Used">
+            <ul className="space-y-2">
+              {service?.technologies.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/technologies/${properCaseToDash(serv)}`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Badge
+                      variant="secondary"
+                      className="text-xs  hover:underline "
+                    >
+                      <span>{dashToProperCase(serv).replace(/-/g, " ")}</span>
+                    </Badge>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        </div>
+      )}
       {service?.detailedDescription && (
         <Section title="More About This Service">
           <div className="prose prose-neutral max-w-none">
-            <HtmlRenderer html={service?.detailedDescription} />
+            <HtmlRenderer
+              path=""
+              terms={[]}
+              html={service?.detailedDescription}
+            />
           </div>
         </Section>
       )}
-      {/* <section
-        className={`${styles?.sectionPadding} pt-10`}
-        id={"pricing"}
-      >
-        <div className={styles?.containerLarge}>
-          <div className={styles?.projectsHeaderWrapper}>
-            <h2 className={styles?.sectionHeaderLeft}>Similar Projects </h2>
-            <Link href="https://www.syedalinaqihasni.com/projects">
-              <Button variant={"outline"}>
-                View All Projects
-                <ArrowRight className={"ml-2 h-4 w-4"} />
-              </Button>
-            </Link>
-          </div>
-          <Projects projects={projects.slice(0,3)} />
-        </div>
-      </section> */}
 
       {/* FAQs in Accordion */}
       {service?.faqs?.length > 0 && (
@@ -193,14 +210,14 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className={styles?.containerLarge}>
           <div className={styles?.projectsHeaderWrapper}>
             <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="https://www.syedalinaqihasni.com/pricing">
+            <Link href="/pricing">
               <Button variant={"outline"}>
                 View All Plans
                 <ArrowRight className={"ml-2 h-4 w-4"} />
               </Button>
             </Link>
           </div>
-          <FeaturedPricing />
+          <FeaturedPricing plans={service?.plans} />
         </div>
       </section>
       <div className="text-center mt-16">
@@ -209,7 +226,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
           Let’s talk about how I can help you with your project.
         </p>
         <Button size="lg" asChild>
-          <Link href="https://www.syedalinaqihasni.com/contact">
+          <Link href="/contact">
             Contact Me
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
@@ -236,13 +253,27 @@ function Section({
   );
 }
 
-function FeatureList({ features }: { features: string[] }) {
+function FeatureList({
+  features,
+  link,
+}: {
+  features: string[];
+  link?: string;
+}) {
   return (
     <div className="space-y-2">
       {features.map((feature, i) => (
         <div key={i} className="flex items-center gap-2 text-sm">
           <Check className="w-4 h-4 text-green-500" />
-          <span>{feature}</span>
+          {link ? (
+            <Link
+              href={`/related-services/${properCaseToDash(feature)}-${link}`}
+            >
+              <span>{feature}</span>
+            </Link>
+          ) : (
+            <span>{feature}</span>
+          )}
         </div>
       ))}
     </div>

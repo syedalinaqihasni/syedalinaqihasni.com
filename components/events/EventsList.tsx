@@ -9,8 +9,8 @@ import { Event } from "@/types/events";
 import { getMetadataForPath } from "@/lib/metadata";
 import { formatDateTime } from "@/lib/utils";
 import { events } from "@/constants/events";
-import StructuredData from '@/components/StructuredData';
-import { eventsSchema } from '@/constants/structuredData';
+import StructuredData from "@/components/StructuredData";
+import { eventsSchema } from "@/constants/structuredData";
 
 const PAGE_TITLE = "Upcoming Events";
 const PAGE_DESCRIPTION =
@@ -19,7 +19,7 @@ const METADATA_TITLE = "Events | Syed Ali Naqi Hasni";
 const METADATA_DESCRIPTION =
   "Check out my upcoming speaking engagements, workshops, and other events";
 
-export const metadata = getMetadataForPath('/events');
+export const metadata = getMetadataForPath("/events");
 
 const container = "container mx-auto px-4 py-32 md:py-40";
 const maxWidthWrapper = "max-w-6xl mx-auto";
@@ -49,60 +49,64 @@ const button = "w-full";
 const EventsList = ({ events }: { events: Event[] }) => {
   return (
     <section className={grid}>
-            {events?.map((event) => (
-              <Card key={event?.id} className={card}>
-                <Link
-                  href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}
-                  passHref
-                  className={imageWrapper}
-                >
-                  <Image
-                    src={event?.image || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg'}
-                    alt={`${event?.title} - Syed Ali Naqi Hasni`}
-                    fill
-                    className={image}
-                  />
-                  {event?.virtual && (
-                    <Badge className={virtualBadge} variant={"secondary"}>
-                      Virtual Event
-                    </Badge>
-                  )}
-                </Link>
+      {events?.map((event) => (
+        <Card key={event?.id} className={card}>
+          <Link
+            href={`/events/${event?.slug}`}
+            passHref
+            className={imageWrapper}
+          >
+            <Image
+              src={
+                event?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"
+              }
+              alt={`${event?.title} - Syed Ali Naqi Hasni`}
+              fill
+              className={image}
+            />
+            {event?.virtual && (
+              <Badge className={virtualBadge} variant={"secondary"}>
+                Virtual Event
+              </Badge>
+            )}
+          </Link>
 
-                <CardContent className={"p-6"}>
-                  <Badge variant={"outline"} className={badge}>
-                    {event?.category}
-                  </Badge>
+          <CardContent className={"p-6"}>
+            <Badge variant={"outline"} className={badge}>
+              {event?.category}
+            </Badge>
 
-                  <Link
-                    href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}
-                    passHref
-                    className={eventTitle}
-                  >
-                    {event?.title}
-                  </Link>
+            <Link
+              href={`/events/${event?.slug}`}
+              passHref
+              className={eventTitle}
+            >
+              {event?.title}
+            </Link>
 
-                  <p className={eventDescription}>{event?.description}</p>
+            <p className={eventDescription}>{event?.description}</p>
 
-                  <div className={eventDetails}>
-                    <div className={eventDetailRow}>
-                      <Calendar className={"h-4 w-4"} />
-                      <time dateTime={event?.date}>{formatDateTime(event?.date)}</time>
-                    </div>
-                    <div className={eventDetailRow}>
-                      <MapPin className={"h-4 w-4"} />
-                      {event?.location}
-                    </div>
-                  </div>
+            <div className={eventDetails}>
+              <div className={eventDetailRow}>
+                <Calendar className={"h-4 w-4"} />
+                <time dateTime={event?.date}>
+                  {formatDateTime(event?.date)}
+                </time>
+              </div>
+              <div className={eventDetailRow}>
+                <MapPin className={"h-4 w-4"} />
+                {event?.location}
+              </div>
+            </div>
 
-                  <Button asChild className={button}>
-                    <Link href={`https://www.syedalinaqihasni.com/events/${event?.slug}`}>View Details</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </section>
-  )
-}
+            <Button asChild className={button}>
+              <Link href={`/events/${event?.slug}`}>View Details</Link>
+            </Button>
+          </CardContent>
+        </Card>
+      ))}
+    </section>
+  );
+};
 
-export default EventsList
+export default EventsList;

@@ -21,22 +21,22 @@ const styles = {
 };
 
 // Generate static params for all tags
-export async function generateStaticParams() {
-  // Collect all unique tags from projects
-  const tagsSet = new Set<string>();
-  projects.forEach(project => {
-    project.tags.forEach(tag => {
-      tagsSet.add(tag.toLowerCase().replace(/[\s/]+/g, '-'));
-    });
-  });
+// export async function generateStaticParams() {
+//   // Collect all unique tags from projects
+//   const tagsSet = new Set<string>();
+//   projects.forEach(project => {
+//     project.tags.forEach(tag => {
+//       tagsSet.add(tag.toLowerCase().replace(/[\s/]+/g, '-'));
+//     });
+//   });
 
-  // Return params in the format expected by Next.js
-  return Array.from(tagsSet).map(tag => ({ tag }));
-}
+//   // Return params in the format expected by Next.js
+//   return Array.from(tagsSet)?.map(tag => ({ tag }));
+// }
 
 // Generate <head> metadata dynamically
 export async function generateMetadata({ params }: { params: { tag: string } }): Promise<Metadata> {
-  const tag = params.tag;
+  const tag = params?.tag;
   const title = `${dashToProperCase(tag)} Blogs`;
   const description =
     DESCRIPTION_OVERRIDES[tag.toLowerCase()] ||
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: { tag: string } }):
 
 // Server component
 export default async function Page({ params }: { params: { tag: string } }) {
-  const tag = params.tag;
+  const tag = params?.tag;
   
 const tagedPosts = projects?.filter(project =>
   project?.tags?.some(c => c.toLowerCase().replace(/[\s/]+/g, '-').includes(tag))

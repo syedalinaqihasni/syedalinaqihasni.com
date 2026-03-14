@@ -75,31 +75,43 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
         <AnimatePresence>
           {filteredPosts.map((post, index) => (
             <motion.div
-              key={post?.id}
+              key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               <Card className={styles?.card}>
-                <Link
-                  href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}
-                  className="relative block aspect-[3/2]"
-                  aria-label={`Read more about ${post?.title}`}
-                >
-                  <Image
-                    src={post?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder-syed-ali-naqi-hasni.jpg"}
-                    alt={`${post?.title} - Syed Ali Naqi Hasni`}
-                    fill
-                    className={styles?.image}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    priority={index < 3}
-                  />
-                </Link>
+                {post?.image ? (
+                  <Link
+                    href={`/blogs/${post.slug}`}
+                    className="relative block h-48 w-full rounded-lg overflow-hidden"
+                  >
+                    <Image
+                      src={post.image}
+                      alt={`${post.title} - Syed Ali Naqi Hasni`}
+                      fill
+                      className="object-cover"
+                      priority={index < 3}
+                    />
+                  </Link>
+                ) : (
+                  <Link
+                    href={`/blogs/${post.slug}`}
+                    className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
+                  >
+                    <h3 className="text-lg font-bold w-full mb-1">
+                      {post.title}
+                    </h3>
+                    <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">
+                      Syed Ali Naqi Hasni
+                    </div>
+                  </Link>
+                )}
                 <CardContent className="p-6">
                   <div className={styles?.categoriesWrapper}>
                     <Link
-                      href={`https://www.syedalinaqihasni.com/blogs/category/${categoryToSlug(post?.category)}`}
+                      href={`/blogs/category/${categoryToSlug(post?.category)}`}
                     >
                       <Badge
                         variant="secondary"
@@ -109,7 +121,7 @@ const CategoryCloud = ({ posts }: { posts: Post[] }) => {
                       </Badge>
                     </Link>
                   </div>
-                  <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
+                  <Link href={`/blogs/${post?.slug}`}>
                     <h3 className={styles?.title}>{post?.title}</h3>
                   </Link>
                   <p className={styles?.excerpt}>{post?.excerpt}</p>

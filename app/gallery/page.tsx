@@ -1,19 +1,21 @@
-import { getMetadataForPath } from '@/lib/metadata';
-import StructuredData from '@/components/StructuredData';
-import { gallerySchema } from '@/constants/structuredData';
-import GalleryGrid from '@/components/gallery/gallery-grid';
-import { GALLERY, GALLERY_DESCRIPTION, GALLERY_TITLE } from '@/constants/gallery';
-import { Images } from '@/types/images';
+import { getMetadataForPath } from "@/lib/metadata";
+import StructuredData from "@/components/StructuredData";
+import { gallerySchema } from "@/constants/structuredData";
+import GalleryGrid from "@/components/gallery/gallery-grid";
+import {
+  GALLERY,
+  GALLERY_DESCRIPTION,
+  GALLERY_TITLE,
+} from "@/constants/gallery";
 
-export const metadata = getMetadataForPath('/gallery');
+export const metadata = getMetadataForPath("/gallery");
 
-const CONTAINER = 'container mx-auto px-4 py-32 md:py-40';
-const MAX_WIDTH_WRAPPER = 'max-w-6xl mx-auto';
-const HEADER_WRAPPER = 'text-center mb-16';
-const TITLE = 'text-4xl md:text-5xl font-bold mb-6';
+const CONTAINER = "container mx-auto px-4 py-32 md:py-40";
+const MAX_WIDTH_WRAPPER = "max-w-6xl mx-auto";
+const HEADER_WRAPPER = "text-center mb-16";
+const TITLE = "text-4xl md:text-5xl font-bold mb-6";
 const DESCRIPTION =
-  'text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto';
-
+  "text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto";
 
 export default async function Page() {
   const images = GALLERY;
@@ -29,7 +31,7 @@ export default async function Page() {
           </div>
 
           {images.length > 0 ? (
-            <GalleryGrid images={images} />
+            <GalleryGrid images={images} type="gallery" />
           ) : (
             <p className="text-center text-muted-foreground">
               Loading gallery or no images found.

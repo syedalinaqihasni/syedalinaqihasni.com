@@ -10,76 +10,73 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
-import { Check, ArrowRight, Quote } from "lucide-react";
-import { dashToProperCase } from "@/lib/utils";
+import { Check, ArrowRight, Quote, Briefcase } from "lucide-react"; 
+import { dashToProperCase, properCaseToDash } from "@/lib/utils";
 import HtmlRenderer from "@/components/HtmlRenderer";
 import FeaturedPricing from "@/components/home/featured-pricing";
-import { countries } from "@/constants/area-services";
+import { countries } from "@/constants/countries";
+import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string; country?: string; city?: string; area?: string };
 }): Promise<Metadata> {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return {};
 
-  const { country, city, area } = params;
+  // Convert dashed params to proper case
+  const country = params.country ? dashToProperCase(params.country) : undefined;
+  const city = params.city ? dashToProperCase(params.city) : undefined;
+  const area = params.area ? dashToProperCase(params.area) : undefined;
 
-  // Helper to build location string
+  // Create location string for SEO
   const locationParts = [area, city, country].filter(Boolean);
-  const location = locationParts.length
-    ? ` in ${locationParts.join(", ")}`
+  const location = locationParts?.length
+    ? ` in ${locationParts?.join(", ")}`
     : "";
 
-  const title = `${service.title}${location} | Syed Ali Naqi Hasni`;
-  const description = service.description;
+  const title = `${service?.title}${location} | Syed Ali Naqi Hasni`;
+  const description = service?.description;
 
-  // Build URL parts safely
-  const urlParts = [
-    "https://www.syedalinaqihasni.com",
-    params.slug,
-    country,
-    city,
-    area,
-  ].filter(Boolean);
-  const url = urlParts.join("/");
+  // Build dynamic path for full URL
+  const pathParts = ["/services", params?.slug, country, city, area].filter(
+    Boolean
+  );
+  const path = pathParts.join("/");
 
-  return {
+  return generateDynamicMetadata({
     title,
     description,
-    openGraph: {
-      title,
-      description,
-      url,
-    },
-  };
+    path,
+  });
 }
-export async function generateStaticParams() {
-  const params: {
-    slug: string;
-    country: string;
-    city: string;
-    area: string;
-  }[] = [];
 
-  for (const country of countries) {
-    for (const city of country.cities) {
-      for (const area of city.areas) {
-        for (const service of SERVICES) {
-          params.push({
-            slug: service?.slug,
-            country: country?.slug,
-            city: city?.slug,
-            area: area?.slug,
-          });
-        }
-      }
-    }
-  }
+// export async function generateStaticParams() {
+//   const params: {
+//     slug: string;
+//     country: string;
+//     city: string;
+//     area: string;
+//   }[] = [];
 
-  return params;
-}
+//   for (const country of countries) {
+//     for (const city of country.cities) {
+//       for (const area of city.areas) {
+//         for (const service of SERVICES) {
+//           params?.push({
+//             slug: service?.slug,
+//             country: country?.slug,
+//             city: city?.slug,
+//             area: area?.slug,
+//           });
+//         }
+//       }
+//     }
+//   }
+
+//   return params;
+// }
 
 const styles = {
   sectionPadding: " px-4",
@@ -110,21 +107,21 @@ export default function ServicePage({
 }: {
   params: { slug: string; country?: string; city?: string; area?: string };
 }) {
-  const service = SERVICES.find((s) => s.slug?.includes(params.slug));
+  const service = SERVICES.find((s) => s.slug?.includes(params?.slug));
   if (!service) return notFound();
   const { country, city, area } = params;
 
   // Validate country, city, area
   let countryObj, cityObj, areaObj;
 
-  if (params.country) {
-    countryObj = countries.find((c) => c.slug === params.country);
+  if (params?.country) {
+    countryObj = countries.find((c) => c.slug === params?.country);
     if (!countryObj) return notFound();
-    if (params.city) {
-      cityObj = countryObj.cities.find((ct) => ct.slug === params.city);
+    if (params?.city) {
+      cityObj = countryObj.cities.find((ct) => ct.slug === params?.city);
       if (!cityObj) return notFound();
-      if (params.area) {
-        areaObj = cityObj.areas.find((a) => a.slug === params.area);
+      if (params?.area) {
+        areaObj = cityObj.areas.find((a) => a.slug === params?.area);
         if (!areaObj) return notFound();
       }
     }
@@ -148,19 +145,27 @@ export default function ServicePage({
       {(service?.deliverables || service?.requirements) && (
         <div className="mb-12 grid md:grid-cols-2 gap-8">
           <Section title="What’s Included">
-            <FeatureList features={service?.features} />
+            <FeatureList features={service?.features} link={`in-${area}`} />
           </Section>
           <div>
-            <Section title="Related Serivices in this Area">
+            <Section title="Related Services in Your Area">
               <div className="flex flex-wrap gap-2">
-                {service?.servs.map((serv) => (
-                  <Badge key={serv} variant="secondary" className="text-xs">
-                    {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
-                    {area ? dashToProperCase(area) : ""}{" "}
-                    {city ? dashToProperCase(city) : ""}{" "}
-                    {country ? dashToProperCase(country) : ""}
-                  </Badge>
-                ))}
+                {service?.servs.map((serv) => {
+                  return (
+                    <Link
+                      href={`/related-services/${serv}-in-${area}`}
+                      key={serv}
+                    >
+                      <Badge
+                        variant="secondary"
+                        className="text-xs  hover:underline "
+                      >
+                        {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                        {area ? dashToProperCase(area) : ""}
+                      </Badge>
+                    </Link>
+                  );
+                })}
               </div>
             </Section>
           </div>
@@ -184,10 +189,65 @@ export default function ServicePage({
           )}
         </div>
       )}
+      {/* Deliverables + Requirements side by side */}
+      {(service?.relatedJobTitles || service?.technologies) && (
+        <div className="mb-12 grid md:grid-cols-2 gap-8">
+          {/* Related Job Titles as list with icons */}
+          <Section title="Related Job Titles">
+            <ul className="space-y-2">
+              {service?.relatedJobTitles.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/jobs/${properCaseToDash(
+                      serv
+                    )}-in-${area}/`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Briefcase size={14} className="text-muted-foreground" />
+                    <span>
+                      {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                      {area ? dashToProperCase(area) : ""}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+          {/* Technologies Used */}
+          <Section title="Technologies Used">
+            <ul className="space-y-2">
+              {service?.technologies.map((serv) => (
+                <li key={serv}>
+                  <Link
+                    href={`/technologies/${properCaseToDash(
+                      serv
+                    )}-in-${area}/`}
+                    className="flex items-center gap-2 text-xs hover:underline"
+                  >
+                    <Badge
+                      variant="secondary"
+                      className="text-xs  hover:underline "
+                    >
+                      <span>
+                        {dashToProperCase(serv).replace(/-/g, " ")} in{" "}
+                        {area ? dashToProperCase(area) : ""}
+                      </span>
+                    </Badge>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        </div>
+      )}
       {service?.detailedDescription && (
         <Section title="More About This Service">
           <div className="prose prose-neutral max-w-none">
-            <HtmlRenderer html={service?.detailedDescription} />
+            <HtmlRenderer
+              path=""
+              terms={[]}
+              html={service?.detailedDescription}
+            />
           </div>
         </Section>
       )}
@@ -236,14 +296,14 @@ export default function ServicePage({
         <div className={styles?.containerLarge}>
           <div className={styles?.projectsHeaderWrapper}>
             <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-            <Link href="https://www.syedalinaqihasni.com/pricing">
+            <Link href="/pricing">
               <Button variant={"outline"}>
                 View All Plans
                 <ArrowRight className={"ml-2 h-4 w-4"} />
               </Button>
             </Link>
           </div>
-          <FeaturedPricing />
+          <FeaturedPricing plans={service?.plans} />
         </div>
       </section>
       <div className="text-center mt-16">
@@ -252,7 +312,7 @@ export default function ServicePage({
           Let’s talk about how I can help you with your project.
         </p>
         <Button size="lg" asChild>
-          <Link href="https://www.syedalinaqihasni.com/contact">
+          <Link href="/contact">
             Contact Me
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
@@ -279,13 +339,27 @@ function Section({
   );
 }
 
-function FeatureList({ features }: { features: string[] }) {
+function FeatureList({
+  features,
+  link,
+}: {
+  features: string[];
+  link?: string;
+}) {
   return (
     <div className="space-y-2">
       {features.map((feature, i) => (
         <div key={i} className="flex items-center gap-2 text-sm">
           <Check className="w-4 h-4 text-green-500" />
-          <span>{feature}</span>
+          {link ? (
+            <Link
+              href={`/related-services/${properCaseToDash(feature)}-${link}`}
+            >
+              <span>{feature}</span>
+            </Link>
+          ) : (
+            <span>{feature}</span>
+          )}
         </div>
       ))}
     </div>
