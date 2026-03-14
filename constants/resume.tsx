@@ -19,7 +19,7 @@ const RESUME = {
       link: "https://www.vu.edu.pk/",
     },
     {
-      degree: "Artificial Intelligence Specialization (In Progress)",
+      degree: "•	Certified Cloud Applied Generative AI Engineer (WMD)",
       period: "Jan 2024 - Jun 2025",
       institution:
         "PIAIC - Presidential Initiative for Artificial Intelligence & Computing",
@@ -146,8 +146,8 @@ const RESUME = {
       ],
     },
     {
-      role: "I.T Technician",
-      period: "Dec 2013 - Nov 2016",
+      role: "I.T Technician - Hardware",
+      period: "Dec 2013 - Aug 2016",
       company: "N.S Computers",
       link: "", // Local business - update if available
       details: [
