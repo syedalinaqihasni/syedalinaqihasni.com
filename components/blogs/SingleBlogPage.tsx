@@ -13,7 +13,7 @@ import { Post } from "@/types/blogs";
 
 const styles = {
   container: "container mx-auto px-4 py-32 md:py-40",
-  wrapper: "max-w-8xl mx-auto",
+  wrapper: "max-w-6xl mx-auto",
   categoryWrapper: "flex flex-wrap gap-2 mb-4",
   tagWrapper: "flex flex-wrap gap-2 mt-4",
   title: "text-4xl md:text-5xl font-bold mb-6",
