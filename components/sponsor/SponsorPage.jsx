@@ -59,7 +59,7 @@ return (
         </div>
 
         {/* Manual Payment Options */}
-        <Card>
+        {/* <Card>
             <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-2 text-lg font-semibold">
                     <Banknote className="w-5 h-5 text-green-600" />
@@ -101,7 +101,7 @@ return (
                     </p>
                 </div>
             </CardContent>
-        </Card>
+        </Card> */}
     </div>
 )
 }
