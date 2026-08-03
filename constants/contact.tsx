@@ -8,13 +8,13 @@ export const CONTACT_CARDS = [
   {
     icon: <Mail className={'h-10 w-10 text-primary'} />,
     title: 'Email',
-    details: 'engr****************@gmail.com',
-    link: 'mailto:engr.syedalinaqihasni@gmail.com',
+    details: 'syedhasni151214@gmail.com',
+    link: 'mailto:syedhasni151214@gmail.com',
   },
   {
     icon: <Phone className={'h-10 w-10 text-primary'} />,
     title: 'Phone',
-    details: '+92 (3**) *****948',
+    details: '+92 (316) 226-5948',
     link: 'tel:+923162265948',
   },
   {

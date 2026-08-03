@@ -1,6 +1,6 @@
 const styles = {
   container: 'container mx-auto px-4 py-32 md:py-40',
-  wrapper: 'max-w-6xl mx-auto',
+  wrapper: 'max-w-4xl mx-auto',
   categoryWrapper: 'flex flex-wrap gap-2 mb-4',
   title: 'text-4xl md:text-5xl font-bold mb-6',
   metaRow: 'flex items-center gap-6 text-muted-foreground',

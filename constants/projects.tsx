@@ -22,7 +22,7 @@ export const projects = [
   //     revenue: '$1M+',
   //   },
   //   isFeatured: true,
-  //   relatedProjects: ['/images/placeholder-syed-ali-naqi-hasni.webp','/images/placeholder-syed-ali-naqi-hasni.webp','/images/placeholder-syed-ali-naqi-hasni.webp',],
+  //   relatedProjects: ['https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg','https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg',],
   //   longDescription: `
   //     <h2>Project Overview</h2>
   //     <p>This e-commerce platform provides a complete solution for online stores...</p>
@@ -34,15 +34,16 @@ export const projects = [
     slug: "espark-talent-dashboard",
     description:
       "A management dashboard for Employers, Employees, and HR with modern frontend development.",
-    image: "/images/placeholder-syed-ali-naqi-hasni.webp",
-    // image: '/images/projects/espark-talent-dashboard.webp',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+    // image: 'https://www.syedalinaqihasni.com/images/projects/espark-talent-dashboard.jpg',
     gallery: [
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     ],
     technologies: [
       "Next.js",
@@ -61,7 +62,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: true,
-    relatedProjects: [],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
       <p>
@@ -93,15 +94,16 @@ export const projects = [
     title: "Real Buyerz",
     slug: "real-buyerz",
     description: "Online realtors portal for agents and common users.",
-    // image: '/images/projects/real-buyerz.webp',
-    image: "/images/placeholder-syed-ali-naqi-hasni.webp",
+    // image: 'https://www.syedalinaqihasni.com/images/projects/real-buyerz.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     ],
     technologies: ["Next.js", "React.js", "State Management"],
     githubUrl: "https://github.com",
@@ -115,7 +117,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -146,15 +148,16 @@ export const projects = [
     slug: "cartx-shopify",
     description:
       "Redesigned Shopify app from PHP/Laravel to React-based architecture.",
-    // image: '/images/projects/cartx.webp',
-    image: "/images/placeholder-syed-ali-naqi-hasni.webp",
+    // image: 'https://www.syedalinaqihasni.com/images/projects/cartx.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     ],
     technologies: ["Shopify", "React.js", "Web Design"],
     githubUrl: "https://github.com",
@@ -168,7 +171,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -197,15 +200,16 @@ export const projects = [
     title: "HasniTube",
     slug: "hasnitube-wordpress",
     description: "A WordPress-based entertainment portal.",
-    // image: '/images/projects/hasnitube.webp',
-    image: "/images/placeholder-syed-ali-naqi-hasni.webp",
+    // image: 'https://www.syedalinaqihasni.com/images/projects/hasnitube.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     ],
     technologies: ["WordPress"],
     githubUrl: "https://github.com",
@@ -219,7 +223,7 @@ export const projects = [
       revenue: "$1M+",
     },
     isFeatured: false,
-    relatedProjects: [],
+    relatedProjects: [ ],
     longDescription: `
       <h2>Project Overview</h2>
     <p>
@@ -248,15 +252,16 @@ export const projects = [
     title: "Assets Management System (AMS)",
     slug: "assets-management-system",
     description: "A PHP-based inventory management system developed for SBTE.",
-    // image: '/images/projects/ams.webp',
-    image: "/images/placeholder-syed-ali-naqi-hasni.webp",
+    // image: 'https://www.syedalinaqihasni.com/images/projects/ams.jpg',
+    image:
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     gallery: [
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
-      "/images/placeholder-syed-ali-naqi-hasni.webp",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
+      "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg",
     ],
     technologies: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com",

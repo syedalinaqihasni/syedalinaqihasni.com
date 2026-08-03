@@ -1,5 +1,5 @@
 type Post = {
-  // id: number;
+  id: number;
   title: string;
   excerpt: string;
   slug: string;
@@ -10,4 +10,4 @@ type Post = {
   tags: string[];
   content: string;
 };
-export type { Post };
+export type { Post, };

@@ -120,8 +120,8 @@ export default function CertificateGrid() {
               >
                 <div className="relative rounded-lg overflow-hidden">
                   <Image
-                    src={image?.src  || '/images/placeholder-syed-ali-naqi-hasni.webp'}
-                    alt={image?.alt || `Syed Ali Naqi Hasni`}
+                    src={image?.src  || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'}
+                    alt={image?.alt}
                     width={500}
                     height={300}
                     className="w-full h-auto object-cover"
@@ -156,8 +156,8 @@ export default function CertificateGrid() {
             <div>
               <div className="relative w-full h-[60vh]">
                 <Image
-                  src={selectedImage?.src || '/images/placeholder-syed-ali-naqi-hasni.webp'}
-                  alt={`${selectedImage?.alt} - Syed Ali Naqi Hasni`}
+                  src={selectedImage.src || 'https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg'}
+                  alt={selectedImage.alt}
                   fill
                   className="object-contain"
                 />
@@ -165,10 +165,10 @@ export default function CertificateGrid() {
               <div className="flex justify-between items-center">
                 <div className="mt-4">
                   <h3 className="text-xl font-medium mb-2">
-                    {selectedImage?.caption}
+                    {selectedImage.caption}
                   </h3>
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {selectedImage?.tags?.map((tag) => (
+                    {selectedImage.tags?.map((tag) => (
                       <Badge key={tag} variant="secondary">
                         {tag}
                       </Badge>

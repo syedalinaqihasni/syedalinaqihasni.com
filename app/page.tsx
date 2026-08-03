@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import FeaturedProjects from "@/components/home/projects";
 import HomeSkills from "@/components/home/skills";
-import Contact from "@/components/contact/contact";
+import Contact from "@/components/contact/contact-form";
 import { CONTENT } from "@/constants/home";
 import FeaturedBlogs from "@/components/blogs/featured-blogs";
 import { projects } from "@/constants/projects";
@@ -12,14 +12,8 @@ import { SKILLS } from "@/constants/skills";
 import { posts } from "@/constants/blogs";
 import FeaturedServices from "@/components/home/featured-services";
 import FeaturedPricing from "@/components/home/featured-pricing";
-import StructuredData from "@/components/StructuredData";
-import {
-  aboutMe,
-  websiteSchema,
-  organizationSchema,
-} from "@/constants/structuredData";
-import { FEATURED_PRICING } from "@/constants/pricing";
-import { FEATURED_SERVICES } from "@/constants/services";
+import StructuredData from '@/components/StructuredData';
+import { aboutMe, websiteSchema, organizationSchema } from '@/constants/structuredData';
 
 const styles = {
   sectionPadding: "py-16 px-4",
@@ -95,7 +89,7 @@ export default function Page() {
       <StructuredData data={aboutMe} />
       <StructuredData data={websiteSchema} />
       <StructuredData data={organizationSchema} />
-
+      
       <div>
         <section className={styles?.heroPadding}>
           <div className={styles?.containerMedium}>
@@ -131,10 +125,7 @@ export default function Page() {
               <div className={styles?.heroImageCol}>
                 <div className={styles?.heroImageWrapper}>
                   <Image
-                    src={
-                      hero?.imageSrc ||
-                      "/images/placeholder-syed-ali-naqi-hasni.webp"
-                    }
+                    src={hero?.imageSrc || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
                     alt={hero?.imageAlt}
                     fill
                     className={"object-cover"}
@@ -145,7 +136,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-
+        
         {/* Services Section */}
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
@@ -154,14 +145,14 @@ export default function Page() {
           <div className={styles?.containerLarge}>
             <div className={styles?.projectsHeaderWrapper}>
               <h2 className={styles?.sectionHeaderLeft}>My Services</h2>
-              <Link href="/services">
+              <Link href="https://www.syedalinaqihasni.com/services">
                 <Button variant={"outline"}>
                   View All Services
                   <ArrowRight className={"ml-2 h-4 w-4"} />
                 </Button>
               </Link>
             </div>
-            <FeaturedServices services={FEATURED_SERVICES} />
+            <FeaturedServices />
           </div>
         </section>
 
@@ -180,7 +171,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-
+        
         {/* Pricing Section */}
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
@@ -189,35 +180,38 @@ export default function Page() {
           <div className={styles?.containerLarge}>
             <div className={styles?.projectsHeaderWrapper}>
               <h2 className={styles?.sectionHeaderLeft}>Pricing Plans</h2>
-              <Link href="/pricing">
+              <Link href="https://www.syedalinaqihasni.com/pricing">
                 <Button variant={"outline"}>
                   View All Plans
                   <ArrowRight className={"ml-2 h-4 w-4"} />
                 </Button>
               </Link>
             </div>
-            <FeaturedPricing plans={FEATURED_PRICING} />
+            <FeaturedPricing />
           </div>
         </section>
 
         {/* Blogs Section */}
         {posts?.length != 0 && (
-          <section className={`${styles?.sectionPadding}`} id={"blogs"}>
+          <section
+            className={`${styles?.sectionPadding}`}
+            id={"blogs"}
+          >
             <div className={styles?.containerLarge}>
               <div className={styles?.projectsHeaderWrapper}>
                 <h2 className={styles?.sectionHeaderLeft}>Recent Blogs</h2>
-                <Link href={"/blogs"}>
+                <Link href={"https://www.syedalinaqihasni.com/blogs"}>
                   <Button variant={"outline"}>
                     View All Blogs
                     <ArrowRight className={"ml-2 h-4 w-4"} />
                   </Button>
                 </Link>
               </div>
-              <FeaturedBlogs posts={posts} />
+              <FeaturedBlogs  posts={posts}/>
             </div>
           </section>
         )}
-
+        
         {/* Contact Section */}
         <section
           className={`${styles?.sectionPadding} bg-muted/50`}
@@ -225,13 +219,8 @@ export default function Page() {
         >
           <div className={styles?.containerSmall}>
             <h2 className={styles?.sectionHeader}>{contact.title}</h2>
-            <p className="text-center text-muted-foreground mb-6">
-              If you have any queries, feel free to chat with me via{" "}
-              <b>Tawk.to</b> (chat widget in the corner)! This step has been
-              taken to enhance quick response.
-            </p>
-            {/* <p className={styles?.contactText}>{contact.description}</p>
-            <Contact /> */}
+            <p className={styles?.contactText}>{contact.description}</p>
+            <Contact />
           </div>
         </section>
       </div>

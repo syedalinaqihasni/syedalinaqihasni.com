@@ -10,9 +10,27 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import StructuredData from "@/components/StructuredData";
 import {
   aboutMe,
+  archiveSchema,
+  blogSchema,
+  certificatesSchema,
+  contactSchema,
+  eventsSchema,
+  experienceSchema,
+  faqSchema,
+  gallerySchema,
+  generateBlogPostSchema,
+  generateBreadcrumbSchema,
+  generateEventSchema,
+  generateProjectSchema,
+  linksSchema,
   localBusinessSchema,
   organizationSchema,
   portfolioSchema,
+  pricingSchema,
+  resumeSchema,
+  servicesSchema,
+  skillsSchema,
+  socialsSchema,
   testimonialsSchema,
   websiteSchema,
 } from "@/constants/structuredData";
@@ -42,25 +60,6 @@ export default function RootLayout({
         <meta
           name="p:domain_verify"
           content="b94552a212fadbb6448eace9230bec35"
-        />
-        <meta
-          name="google-adsense-account"
-          content="ca-pub-7687484682420626"
-        ></meta>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-              (function(){
-                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                s1.async=true;
-                s1.src='https://embed.tawk.to/689376b063300d1924bc567e/1j200f8tb';
-                s1.charset='UTF-8';
-                s1.setAttribute('crossorigin','*');
-                s0.parentNode.insertBefore(s1,s0);
-              })();
-            `,
-          }}
         />
         <GoogleTagManager gtmId="GTM-NBKH9P8G" />
         <GoogleAnalytics gaId="G-5TPNEKJMLD" />

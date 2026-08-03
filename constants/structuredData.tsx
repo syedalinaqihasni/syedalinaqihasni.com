@@ -5,7 +5,7 @@ const aboutMe = {
   description:
     "Full-stack developer, freelancer, and tech content creator specializing in web technologies, freelancing, and developer humor.",
   url: "https://www.syedalinaqihasni.com",
-  image: "/images/about-us-syed-ali-naqi-hasni.webp",
+  image: "https://www.syedalinaqihasni.com/images/syed-ali-naqi-hasni.jpg",
   jobTitle: "Full-Stack Developer",
   worksFor: {
     "@type": "Organization",
@@ -156,7 +156,7 @@ const websiteSchema = {
   },
   potentialAction: {
     "@type": "SearchAction",
-    target: "/search?q={search_term_string}",
+    target: "https://www.syedalinaqihasni.com/search?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -165,7 +165,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Hasni Developers",
   url: "https://www.syedalinaqihasni.com",
-  logo: "/images/about-us-syed-ali-naqi-hasni.webp",
+  logo: "https://www.syedalinaqihasni.com/images/logo.png",
   description:
     "Professional web development services specializing in React, Next.js, WordPress, and modern web technologies.",
   founder: {
@@ -245,7 +245,7 @@ const organizationSchema = {
         "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies",
       price: "2500",
       priceCurrency: "USD",
-      url: "/services",
+      url: "https://www.syedalinaqihasni.com/services",
     },
     {
       "@type": "Offer",
@@ -254,7 +254,7 @@ const organizationSchema = {
         "Custom WordPress websites, themes, and plugins tailored to your business needs",
       price: "1500",
       priceCurrency: "USD",
-      url: "/services",
+      url: "https://www.syedalinaqihasni.com/services",
     },
     {
       "@type": "Offer",
@@ -263,7 +263,7 @@ const organizationSchema = {
         "Complete online store solutions with secure payment processing and inventory management",
       price: "3000",
       priceCurrency: "USD",
-      url: "/services",
+      url: "https://www.syedalinaqihasni.com/services",
     },
   ],
   aggregateRating: {
@@ -322,141 +322,7 @@ const servicesSchema = {
   areaServed: "Worldwide",
   availableChannel: {
     "@type": "ServiceChannel",
-    serviceUrl: "/services",
-  },
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Frontend Development",
-      description:
-        "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies.",
-      price: "2500",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "WordPress Development",
-      description:
-        "Custom WordPress websites, themes, and plugins tailored to your business needs.",
-      price: "1500",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "E-commerce Solutions",
-      description:
-        "Complete online store solutions with secure payment processing and inventory management.",
-      price: "3000",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "SEO Optimization",
-      description:
-        "Technical and on-page SEO strategies to improve search visibility and organic traffic.",
-      price: "800",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "Performance Optimization",
-      description:
-        "Speed enhancements and performance tuning for faster, more efficient web experiences.",
-      price: "1000",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "Website Maintenance",
-      description:
-        "Ongoing support, updates, backups, and issue resolution for reliable website uptime.",
-      price: "500",
-      priceCurrency: "USD",
-    },
-  ],
-};
-const jobsSchema = {
-  "@type": "Service",
-  name: "Web Development Services",
-  serviceType: "Professional Web Development",
-  description:
-    "Comprehensive web development services including React, Next.js, WordPress, e-commerce solutions, SEO, performance optimization, and maintenance.",
-  provider: {
-    "@type": "Person",
-    name: "Syed Ali Naqi Hasni",
-    url: "https://www.syedalinaqihasni.com",
-  },
-  areaServed: "Worldwide",
-  availableChannel: {
-    "@type": "ServiceChannel",
-    serviceUrl: "/services",
-  },
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Frontend Development",
-      description:
-        "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies.",
-      price: "2500",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "WordPress Development",
-      description:
-        "Custom WordPress websites, themes, and plugins tailored to your business needs.",
-      price: "1500",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "E-commerce Solutions",
-      description:
-        "Complete online store solutions with secure payment processing and inventory management.",
-      price: "3000",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "SEO Optimization",
-      description:
-        "Technical and on-page SEO strategies to improve search visibility and organic traffic.",
-      price: "800",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "Performance Optimization",
-      description:
-        "Speed enhancements and performance tuning for faster, more efficient web experiences.",
-      price: "1000",
-      priceCurrency: "USD",
-    },
-    {
-      "@type": "Offer",
-      name: "Website Maintenance",
-      description:
-        "Ongoing support, updates, backups, and issue resolution for reliable website uptime.",
-      price: "500",
-      priceCurrency: "USD",
-    },
-  ],
-};
-const technologiesSchema = {
-  "@type": "Service",
-  name: "Web Development Services",
-  serviceType: "Professional Web Development",
-  description:
-    "Comprehensive web development services including React, Next.js, WordPress, e-commerce solutions, SEO, performance optimization, and maintenance.",
-  provider: {
-    "@type": "Person",
-    name: "Syed Ali Naqi Hasni",
-    url: "https://www.syedalinaqihasni.com",
-  },
-  areaServed: "Worldwide",
-  availableChannel: {
-    "@type": "ServiceChannel",
-    serviceUrl: "/services",
+    serviceUrl: "https://www.syedalinaqihasni.com/services",
   },
   offers: [
     {
@@ -545,14 +411,14 @@ const portfolioSchema = {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
   },
-  url: "/projects",
+  url: "https://www.syedalinaqihasni.com/projects",
   workExample: [
     {
       "@type": "CreativeWork",
       name: "E-Commerce Platform",
       description:
         "Full-featured e-commerce platform with cart, checkout, and payment integration",
-      url: "/projects/e-commerce-platform",
+      url: "https://www.syedalinaqihasni.com/projects/e-commerce-platform",
     },
   ],
 };
@@ -562,7 +428,7 @@ const blogSchema = {
   name: "Syed Ali Naqi Hasni Blog",
   description:
     "Technical blog covering web development, React, Next.js, and modern web technologies",
-  url: "/blogs",
+  url: "https://www.syedalinaqihasni.com/blogs",
   author: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
@@ -577,7 +443,7 @@ const contactSchema = {
   "@type": "ContactPage",
   name: "Contact Syed Ali Naqi Hasni",
   description: "Get in touch for web development projects and collaborations",
-  url: "/contact",
+  url: "https://www.syedalinaqihasni.com/contact",
   mainEntity: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
@@ -591,13 +457,13 @@ const resumeSchema = {
   name: "Resume - Syed Ali Naqi Hasni",
   description:
     "Professional resume showcasing experience, skills, and achievements in web development",
-  url: "/resume",
+  url: "https://www.syedalinaqihasni.com/resume",
   author: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
   },
   fileFormat: "text/html",
-  downloadUrl: "/resume-syed-ali-naqi-hasni.pdf",
+  downloadUrl: "https://www.syedalinaqihasni.com/resume.pdf",
 };
 
 const experienceSchema = {
@@ -626,21 +492,21 @@ const certificatesSchema = {
   "@type": "ItemList",
   name: "Professional Certifications",
   description: "List of professional certifications and achievements",
-  url: "/certificates",
+  url: "https://www.syedalinaqihasni.com/certificates",
 };
 
 const gallerySchema = {
   "@type": "ImageGallery",
   name: "Portfolio Gallery",
   description: "Visual showcase of projects, work, and creative moments",
-  url: "/gallery",
+  url: "https://www.syedalinaqihasni.com/gallery",
 };
 
 const pricingSchema = {
   "@type": "ItemList",
   name: "Web Development Pricing",
   description: "Transparent pricing for web development services",
-  url: "/pricing",
+  url: "https://www.syedalinaqihasni.com/pricing",
   itemListElement: [
     {
       "@type": "ListItem",
@@ -683,28 +549,28 @@ const archiveSchema = {
   name: "Development Archive",
   description:
     "Collection of articles, discussions, and contributions across various platforms",
-  url: "/archive",
+  url: "https://www.syedalinaqihasni.com/archive",
 };
 
 const linksSchema = {
   "@type": "LinkRole",
   name: "Social Links",
   description: "Collection of social media profiles and professional links",
-  url: "/links",
+  url: "https://www.syedalinaqihasni.com/links",
 };
 
 const socialsSchema = {
   "@type": "CollectionPage",
   name: "Social Media",
   description: "Latest posts and activities across social media platforms",
-  url: "/socials",
+  url: "https://www.syedalinaqihasni.com/socials",
 };
 
 const eventsSchema = {
   "@type": "ItemList",
   name: "Events",
   description: "Tech talks, meetups, and events",
-  url: "/events",
+  url: "https://www.syedalinaqihasni.com/events",
 };
 
 // Function to generate blog post schema
@@ -724,12 +590,12 @@ const generateBlogPostSchema = (post: any) => ({
   },
   datePublished: post?.publishedAt,
   dateModified: post?.publishedAt,
-  url: `/blogs/${post?.slug}`,
+  url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
   mainEntityOfPage: {
     "@type": "WebPage",
-    "@id": `/blogs/${post?.slug}`,
+    "@id": `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
   },
-  keywords: post?.tags?.join(", "),
+  keywords: post?.tags.join(", "),
   articleSection: post?.category,
   wordCount: post?.content.split(" ")?.length,
   timeRequired: post?.readingTime,
@@ -741,7 +607,7 @@ const generateProjectSchema = (project: any) => ({
   name: project.title,
   description: project.description,
   image: project.image,
-  url: `/projects/${project.slug}`,
+  url: `https://www.syedalinaqihasni.com/projects/${project.slug}`,
   author: {
     "@type": "Person",
     name: "Syed Ali Naqi Hasni",
@@ -758,13 +624,11 @@ const generateProjectSchema = (project: any) => ({
 
 // Function to generate event schema
 const generateEventSchema = (event: any) => ({
-  "@context": "https://schema.org",
   "@type": "Event",
   name: event?.title,
   description: event?.description,
   image: event?.image,
   startDate: event?.date,
-  endDate: event?.endDate || event?.date, // fallback to startDate if endDate is missing
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: event?.virtual
     ? "https://schema.org/OnlineEventAttendanceMode"
@@ -772,7 +636,7 @@ const generateEventSchema = (event: any) => ({
   location: event?.virtual
     ? {
         "@type": "VirtualLocation",
-        url: `/events/${event?.slug}`,
+        url: `https://www.syedalinaqihasni.com/events/${event?.slug}`,
       }
     : {
         "@type": "Place",
@@ -781,22 +645,10 @@ const generateEventSchema = (event: any) => ({
       },
   organizer: {
     "@type": "Person",
-    name: event?.organizer || "Syed Ali Naqi Hasni",
-    url: event?.organizerUrl || "https://www.syedalinaqihasni.com",
+    name: "Syed Ali Naqi Hasni",
+    url: "https://www.syedalinaqihasni.com",
   },
-  performer: {
-    "@type": "Person",
-    name: event?.performer || "Syed Ali Naqi Hasni",
-  },
-  offers: {
-    "@type": "Offer",
-    url: `/events/${event?.slug}`,
-    price: event?.price || "0",
-    priceCurrency: event?.currency || "USD",
-    availability: "https://schema.org/InStock",
-    validFrom: event?.offerStartDate || new Date().toISOString(),
-  },
-  url: `/events/${event?.slug}`,
+  url: `https://www.syedalinaqihasni.com/events/${event?.slug}`,
 });
 
 // Breadcrumb schema generator
@@ -816,8 +668,8 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Hasni Developers",
   image: [
-    "/images/about-us-syed-ali-naqi-hasni.webp",
-    "/images/about-us-syed-ali-naqi-hasni.webp",
+    "https://www.syedalinaqihasni.com/images/logo.png",
+    "https://www.syedalinaqihasni.com/images/office.jpg",
   ],
   description:
     "Professional web development services in Karachi, specializing in React, Next.js, WordPress, and e-commerce solutions.",
@@ -906,7 +758,7 @@ const localBusinessSchema = {
         "Modern, responsive web applications built with React, Next.js, and cutting-edge technologies",
       price: "2500",
       priceCurrency: "USD",
-      url: "/services",
+      url: "https://www.syedalinaqihasni.com/services",
     },
     {
       "@type": "Offer",
@@ -915,7 +767,7 @@ const localBusinessSchema = {
         "Custom WordPress websites, themes, and plugins tailored to your business needs",
       price: "1500",
       priceCurrency: "USD",
-      url: "/services",
+      url: "https://www.syedalinaqihasni.com/services",
     },
     {
       "@type": "Offer",
@@ -924,15 +776,58 @@ const localBusinessSchema = {
         "Complete online store solutions with secure payment processing and inventory management",
       price: "3000",
       priceCurrency: "USD",
-      url: "/services",
+      url: "https://www.syedalinaqihasni.com/services",
     },
   ],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5",
-    reviewCount: "4",
-    bestRating: "5",
+    reviewCount: "120",
   },
+  review: [
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Client A",
+      },
+      datePublished: "2023-10-01",
+      reviewBody:
+        "Outstanding web development services and great communication.",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+      },
+    },
+  ],
+  paymentAccepted: ["Cash", "Credit Card", "PayPal", "Bank Transfer"],
+  currenciesAccepted: "USD,PKR",
+  areaServed: ["PK", "US", "GB", "CA", "AU", "AE"],
+  serviceArea: {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: ["PK", "US", "GB", "CA", "AU", "AE"],
+    },
+  },
+  hasMap: "https://maps.app.goo.gl/Sj48e6dCo6GiYviy5",
+  logo: "https://www.syedalinaqihasni.com/images/logo.png",
+  isAccessibleForFree: true,
+  numberOfEmployees: 1,
+  slogan: "Empowering Your Digital Presence",
+  award: ["Top Rated Freelancer on Upwork", "GitHub Open Source Contributor"],
+  brand: {
+    "@type": "Brand",
+    name: "Hasni Developers",
+  },
+};
+const testimonialsSchema = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  name: "Client Testimonials",
+  description:
+    "Verified reviews from clients who have worked with Syed Ali Naqi Hasni.",
+  url: "https://www.syedalinaqihasni.com/testimonials",
   review: [
     {
       "@type": "Review",
@@ -974,54 +869,7 @@ const localBusinessSchema = {
       },
       reviewBody: "Very responsive and professional. Highly recommended!",
     },
-    {
-      "@type": "Review",
-      author: {
-        "@type": "Person",
-        name: "Client A",
-      },
-      datePublished: "2023-10-01",
-      reviewBody:
-        "Outstanding web development services and great communication.",
-      reviewRating: {
-        "@type": "Rating",
-        ratingValue: "5",
-      },
-    },
   ],
-  paymentAccepted: ["Cash", "Credit Card", "PayPal", "Bank Transfer"],
-  currenciesAccepted: "USD,PKR",
-  areaServed: ["PK", "US", "GB", "CA", "AU", "AE"],
-  serviceArea: {
-    "@type": "Place",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: ["PK", "US", "GB", "CA", "AU", "AE"],
-    },
-  },
-  hasMap: "https://maps.app.goo.gl/Sj48e6dCo6GiYviy5",
-  logo: "/images/about-us-syed-ali-naqi-hasni.webp",
-  isAccessibleForFree: true,
-  numberOfEmployees: 1,
-  slogan: "Empowering Your Digital Presence",
-  award: ["Top Rated Freelancer on Upwork", "GitHub Open Source Contributor"],
-  brand: {
-    "@type": "Brand",
-    name: "Hasni Developers",
-  },
-};
-const testimonialsSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "Freelance Web Development by Syed Ali Naqi Hasni",
-  provider: {
-    "@type": "Person",
-    name: "Syed Ali Naqi Hasni",
-    url: "https://www.syedalinaqihasni.com",
-  },
-  url: "/testimonials",
-  description:
-    "Frontend development services specializing in React, Next.js, and UI performance.",
 };
 
 const faqSchema = {
@@ -1088,6 +936,4 @@ export {
   socialsSchema,
   testimonialsSchema,
   websiteSchema,
-  jobsSchema,
-  technologiesSchema,
 };

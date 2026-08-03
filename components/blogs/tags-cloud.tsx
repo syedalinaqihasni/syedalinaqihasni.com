@@ -36,17 +36,10 @@ const TagCloud = ({ posts }: { posts: Post[] }) => {
   }, [posts]);
 
   const filteredPosts = useMemo(() => {
-    if (!selectedTag)
-      return posts.sort(
-        (a, b) =>
-          new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-      );
+    if (!selectedTag) return posts.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
     return posts
-      .filter((post) => post?.tags?.includes(selectedTag))
-      .sort(
-        (a, b) =>
-          new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-      );
+      .filter((post) => post?.tags.includes(selectedTag))
+      .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
   }, [posts, selectedTag]);
 
   return (
@@ -57,14 +50,12 @@ const TagCloud = ({ posts }: { posts: Post[] }) => {
             key={tag}
             variant={selectedTag === tag ? "default" : "secondary"}
             onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
-            className={`${styles?.categoryBadge} ${
-              selectedTag === tag ? styles?.activeTag : ""
-            }`}
+            className={`${styles?.categoryBadge} ${selectedTag === tag ? styles?.activeTag : ""}`}
           >
             {tag}
           </Badge>
         ))}
-        {selectedTag && (
+         {selectedTag && (
           <button
             onClick={() => setSelectedTag(null)}
             className="ml-4 text-sm text-blue-600 hover:underline"
@@ -76,54 +67,33 @@ const TagCloud = ({ posts }: { posts: Post[] }) => {
       <div className={styles?.grid}>
         {filteredPosts.map((post, index) => (
           <motion.div
-            key={index}
+            key={post?.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <Card className={styles?.card}>
-              {post?.image ? (
-                <Link
-                  href={`/blogs/${post.slug}`}
-                  className="relative block h-48 w-full rounded-lg overflow-hidden"
-                >
-                  <Image
-                    src={post.image}
-                    alt={`${post.title} - Syed Ali Naqi Hasni`}
-                    fill
-                    className="object-cover"
-                    priority={index < 3}
-                  />
-                </Link>
-              ) : (
-                <Link
-                  href={`/blogs/${post.slug}`}
-                  className="h-48 w-full rounded-lg bg-gray-100 dark:bg-gray-800 p-4 flex flex-col justify-center items-center text-center"
-                >
-                  <h3 className="text-lg font-bold w-full mb-1">
-                    {post.title}
-                  </h3>
-                  <div className="text-sm text-gray-600 dark:text-gray-300 mb-1">
-                    Syed Ali Naqi Hasni
-                  </div>
-                </Link>
-              )}
+              <Link
+                href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}
+                className={"relative block h-48 w-full"}
+              >
+                <Image
+                  src={post?.image ? post?.image : "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
+                  alt={post?.title}
+                  fill
+                  className={styles?.image}
+                  priority={index < 3}
+                />
+              </Link>
               <CardContent className={"p-6"}>
                 <div className={styles?.categoriesWrapper}>
-                  <a
-                    href={`/blogs/category/${post?.category
-                      .toLowerCase()
-                      .replace(/[\s/]+/g, "-")}`}
-                  >
-                    <Badge
-                      variant={"secondary"}
-                      className={styles?.categoryBadge}
-                    >
+                  <a href={`https://www.syedalinaqihasni.com/blogs/category/${post?.category.toLowerCase().replace(/[\s/]+/g, '-')}` }>
+                    <Badge variant={"secondary"} className={styles?.categoryBadge}>
                       {post?.category}
                     </Badge>
                   </a>
                 </div>
-                <Link href={`/blogs/${post?.slug}`}>
+                <Link href={`https://www.syedalinaqihasni.com/blogs/${post?.slug}`}>
                   <h3 className={styles?.title}>{post?.title}</h3>
                 </Link>
                 <p className={styles?.excerpt}>{post?.excerpt}</p>
@@ -138,27 +108,19 @@ const TagCloud = ({ posts }: { posts: Post[] }) => {
                   </div>
                 </div>
                 <div className={styles?.tagsWrapper}>
-                  {post?.tags?.slice(0, 2)?.map((tag) => (
+                  {post?.tags.slice(0, 2).map((tag) => (
                     <a
-                      href={`/blogs/tag/${tag
-                        .toLowerCase()
-                        .replace(/[\s/]+/g, "-")}`}
+                      href={`https://www.syedalinaqihasni.com/blogs/tag/${tag.toLowerCase().replace(/[\s/]+/g, '-')}`}
                       key={tag}
                     >
-                      <Badge
-                        variant={"secondary"}
-                        className={styles?.categoryBadge}
-                      >
+                      <Badge variant={"secondary"} className={styles?.categoryBadge}>
                         {tag}
                       </Badge>
                     </a>
                   ))}
-                  {post?.tags?.length > 2 && (
-                    <Badge
-                      variant={"outline"}
-                      className={styles?.categoryBadge}
-                    >
-                      +{post?.tags?.length - 3}
+                  {post?.tags.length > 2 && (
+                    <Badge variant={"outline"} className={styles?.categoryBadge}>
+                      +{post?.tags.length - 3}
                     </Badge>
                   )}
                 </div>

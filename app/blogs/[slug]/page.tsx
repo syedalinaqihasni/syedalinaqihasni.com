@@ -1,9 +1,15 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { PortableText } from "@portabletext/react";
+import { ArrowRight, Calendar, Clock, Share2 } from "lucide-react";
+
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Post } from "@/types/blogs";
 import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 import { CONSTANT, posts } from "@/constants/blogs";
 import { notFound } from "next/navigation";
+import { formatDate } from "@/lib/utils";
+import HtmlRenderer from "@/components/HtmlRenderer";
 import SingleBlogPage from "@/components/blogs/SingleBlogPage";
 import StructuredData from "@/components/StructuredData";
 import {
@@ -12,6 +18,7 @@ import {
 } from "@/constants/structuredData";
 import Link from "next/link";
 import FeaturedBlogs from "@/components/blogs/featured-blogs";
+
 
 const styles2 = {
   sectionPadding: "py-2 px-4",
@@ -48,9 +55,9 @@ export async function generateMetadata({
   return generateDynamicMetadata({
     title: post?.title,
     description: post?.excerpt,
-    image: post?.image ? post?.image : "/apple-icon-180x180.webp",
+    image: post?.image,
     publishedAt: post?.publishedAt,
-    path: `/blogs/${post?.slug}`,
+    path: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
   });
 }
 
@@ -62,16 +69,17 @@ export async function generateStaticParams() {
 }
 
 const Page = async ({ params }: { params: { slug: string } }) => {
-  const post = posts.find((post) => post.slug === params?.slug);
+  const post = posts.find((post) => post.slug === params.slug);
   if (!post) return notFound();
+
 
   const blogPostSchema = generateBlogPostSchema(post);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "Blogs", url: "/blogs" },
+    { name: "Home", url: "https://www.syedalinaqihasni.com" },
+    { name: "Blogs", url: "https://www.syedalinaqihasni.com/blogs" },
     {
       name: post?.title,
-      url: `/blogs/${post?.slug}`,
+      url: `https://www.syedalinaqihasni.com/blogs/${post?.slug}`,
     },
   ]);
 
@@ -80,14 +88,14 @@ const Page = async ({ params }: { params: { slug: string } }) => {
       <StructuredData data={blogPostSchema} />
       <StructuredData data={breadcrumbSchema} />
       <SingleBlogPage post={post} />
-      <div className="container mx-auto">
+      <div className="container">
         {/* Blogs Section */}
         {posts?.length != 0 && (
           <section className={`${styles2?.sectionPadding}`} id={"blogs"}>
             <div className={styles2?.containerLarge}>
               <div className={styles2?.projectsHeaderWrapper}>
                 <h2 className={styles2?.sectionHeaderLeft}>Recent Blogs</h2>
-                <Link href={"/blogs"}>
+                <Link href={"https://www.syedalinaqihasni.com/blogs"}>
                   <Button variant={"outline"}>
                     View All Blogs
                     <ArrowRight className={"ml-2 h-4 w-4"} />

@@ -7,11 +7,8 @@ import { generateDynamicMetadata } from "@/lib/generateDynamicMetadata";
 import { notFound } from "next/navigation";
 import { formatDateTime } from "@/lib/utils";
 import { events } from "@/constants/events";
-import StructuredData from "@/components/StructuredData";
-import {
-  generateEventSchema,
-  generateBreadcrumbSchema,
-} from "@/constants/structuredData";
+import StructuredData from '@/components/StructuredData';
+import { generateEventSchema, generateBreadcrumbSchema } from '@/constants/structuredData';
 
 export async function generateMetadata({
   params,
@@ -26,7 +23,7 @@ export async function generateMetadata({
     description: event?.excerpt || event?.title,
     image: event?.image,
     publishedAt: event?.date,
-    path: `/events/${event?.slug}`,
+    path: `https://www.syedalinaqihasni.com/events/${event?.slug}`,
   });
 }
 
@@ -54,11 +51,11 @@ const styles = {
 };
 
 // Correct version of generateStaticParams
-// export async function generateStaticParams() {
-//   return events.map((event) => ({
-//     slug: event.slug,
-//   }));
-// }
+export async function generateStaticParams() {
+  return events.map((event) => ({
+    slug: event.slug,
+  }));
+}
 
 const Page = async ({ params }: { params: { slug: string } }) => {
   const event = events.find((event) => event?.slug === params?.slug);
@@ -69,16 +66,16 @@ const Page = async ({ params }: { params: { slug: string } }) => {
 
   const eventSchema = generateEventSchema(event);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "/" },
-    { name: "Events", url: "/events" },
-    { name: event?.title, url: `/events/${event?.slug}` },
+    { name: "Home", url: "https://www.syedalinaqihasni.com" },
+    { name: "Events", url: "https://www.syedalinaqihasni.com/events" },
+    { name: event?.title, url: `https://www.syedalinaqihasni.com/events/${event?.slug}` }
   ]);
 
   return (
     <>
       <StructuredData data={eventSchema} />
       <StructuredData data={breadcrumbSchema} />
-
+      
       <div className={styles?.container}>
         <div className={styles?.wrapper}>
           <div className={styles?.header}>
@@ -94,12 +91,10 @@ const Page = async ({ params }: { params: { slug: string } }) => {
           </div>
           <div className={styles?.imageWrapper}>
             <Image
-              src={
-                event?.image || "/images/placeholder-syed-ali-naqi-hasni.webp"
-              }
-              alt={`${event?.title} - Syed Ali Naqi Hasni`}
+              src={event?.image || "https://www.syedalinaqihasni.com/images/blogs/blogs-placeholder.jpg"}
+              alt={event?.title}
               fill
-              className={styles?.image}
+              className={styles?.image }
             />
           </div>
           <Card className={styles?.card}>

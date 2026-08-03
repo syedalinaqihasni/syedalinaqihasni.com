@@ -1,58 +1,58 @@
-import { Github, Briefcase, FileText } from "lucide-react";
+import { Github, Briefcase, FileText } from 'lucide-react';
 
 const CONTENT = {
   hero: {
-    name: "Syed Hasni",
-    title: "Frontend Web Designer",
+    name: 'Syed Hasni',
+    title: 'Frontend Web Designer',
     description:
       "I build exceptional digital experiences that are fast, accessible, and visually appealing. Let's create something amazing together.",
-    imageSrc: "/images/home-syed-ali-naqi-hasni.webp",
-    imageAlt: "Syed Ali Naqi Hasni - Web Developer",
+    imageSrc: 'https://www.syedalinaqihasni.com/images/syedalinaqihasni.webp',
+    imageAlt: 'Syed Ali Naqi Hasni - Web Developer',
   },
   buttons: {
     projects: {
-      label: "View Projects",
-      href: "/projects",
+      label: 'View Projects',
+      href: 'https://www.syedalinaqihasni.com/projects',
     },
     hireMe: {
-      label: "Hire Me",
-      href: "/contact",
+      label: 'Hire Me',
+      href: 'https://www.syedalinaqihasni.com/contact',
     },
   },
   socialLinks: [
     {
-      label: "GitHub",
-      href: "https://github.com/syedalinaqihasni",
+      label: 'GitHub',
+      href: 'https://github.com/syedalinaqihasni',
       icon: Github,
     },
     {
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/syedalinaqihasni",
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/syedalinaqihasni',
       icon: Briefcase,
     },
     {
-      label: "Resume",
-      href: "/resume-syed-ali-naqi-hasni.pdf",
+      label: 'Resume',
+      href: 'https://www.syedalinaqihasni.com/resume.pdf',
       icon: FileText,
       isExternal: true,
     },
   ],
   sections: {
     featuredProjects: {
-      title: "Featured Projects",
-      viewAllLabel: "View All",
-      viewAllHref: "/projects",
+      title: 'Featured Projects',
+      viewAllLabel: 'View All',
+      viewAllHref: 'https://www.syedalinaqihasni.com/projects',
     },
     skills: {
-      title: "Skills & Expertise",
-      seeAllLabel: "See All Skills",
-      seeAllHref: "/skills",
+      title: 'Skills & Expertise',
+      seeAllLabel: 'See All Skills',
+      seeAllHref: 'https://www.syedalinaqihasni.com/skills',
     },
     contact: {
-      title: "Get In Touch",
+      title: 'Get In Touch',
       description:
         "Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Let's make something great together.",
     },
   },
 };
-export { CONTENT };
+export {CONTENT}

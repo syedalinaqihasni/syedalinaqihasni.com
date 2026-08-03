@@ -21,7 +21,7 @@ const styles = {
 
 // Generate <head> metadata dynamically
 export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
-  const category = params?.category;
+  const category = params.category;
   
   const title = `${dashToProperCase(category)} Blogs`;
   const description =
@@ -34,9 +34,22 @@ export async function generateMetadata({ params }: { params: { category: string 
   };
 }
 
+// Generate static params for category pages
+export async function generateStaticParams() {
+  // Get unique categories from posts
+  const categories = Array.from(
+    new Set(
+      posts
+        .map(post => post?.category?.toLowerCase().replace(/[\s/]+/g, '-'))
+        .filter(Boolean)
+    )
+  );
+  return categories.map(category => ({ category }));
+}
+
 // Server component
 export default async function Page({ params }: { params: { category: string } }) {
-  const category = params?.category;
+  const category = params.category;
   
   const categorizedPosts = posts.filter(post =>
     post?.category.toLowerCase().replace(/[\s/]+/g, '-') == category

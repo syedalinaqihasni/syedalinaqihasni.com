@@ -5,21 +5,12 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const formatDate = (dateString: string) => {
-  if (!dateString) return "";
-
-  // Parse DD-MM-YYYY
-  const [day, month, year] = dateString.split("-")?.map(Number);
-  const date = new Date(year, month - 1, day);
-
-  // Format: e.g. "25 September 2025"
-  return date.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+export const formatDate = (dateString: string) =>
+  new Date(dateString).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   });
-};
-
 
   export  const formatDateTime = (dateString: string) =>
     new Date(dateString).toLocaleDateString("en-US", {
@@ -43,15 +34,6 @@ export const formatDate = (dateString: string) => {
     .replace(/[\s/]+/g, '-'); // replace all spaces (including multiple) with a dash
 }
 
-    /**
-     * Converts a dash-separated string to Proper Case (each word capitalized and separated by spaces).
-     *
-     * @param text - The dash-separated string to convert.
-     * @returns The converted string in Proper Case.
-     *
-     * @example
-     * dashToProperCase('hello-world'); // returns 'Hello World'
-     */
     export function dashToProperCase(text: string): string {
   return text
     .toLowerCase()
@@ -59,20 +41,3 @@ export const formatDate = (dateString: string) => {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 }
-
-   /**
-     * Converts a Proper Case string (words separated by spaces) to dash-separated lowercase.
-     *
-     * @param text - The Proper Case string to convert.
-     * @returns The converted string in dash-separated lowercase.
-     *
-     * @example
-     * properCaseToDash('Hello World'); // returns 'hello-world'
-     */
-    export function properCaseToDash(text: string): string {
-      return text
-        .trim()
-        .replace(/&/g, 'and') // replace ampersand with 'and'
-        .replace(/[\s/]+/g, '-') // replace spaces and slashes with dash
-        .toLowerCase();
-    }
